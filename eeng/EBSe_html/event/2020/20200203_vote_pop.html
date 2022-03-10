@@ -1,0 +1,312 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+<title>EBS English</title>
+<link rel="stylesheet" type="text/css" href="../../../css/NotoSansKR-Hestia.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/common.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/circle.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/sub.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/sub_new.css"/>
+<script src="http://renew.ebse.co.kr/js/jquery-2.2.0.min.js"></script>
+</head>
+<style type="text/css">
+</style>
+<body>
+<style media="screen, print" type="text/css">
+	/* 2020-02-03 EBSe 투표 이벤트 팝업 CSS*/
+	.blind {visibility: hidden;overflow: hidden;position: absolute;top: 0;left: 0;width: 0;height: 0;font-size: 0;line-height: 0;}
+	.popup {width:940px;margin:0 auto; background-color:#f1ecce;}
+	.popup .inner {position:relative;background-repeat:no-repeat;background-size:cover;}
+	.popup .cont01 .inner {padding-top:33.93%;background-image: url('../../../images/event/2020/0203_vote/pop_cont_01.png');}
+	.popup .cont02 .inner {position:relative; padding-top:38.5%;background-image: url('../../../images/event/2020/0203_vote/pop_cont_02.png');}
+	.popup .cont03 .inner {padding-top:59.468%;background-image: url('../../../images/event/2020/0203_vote/pop_cont_03.png');}
+	.popup .cont02 {position:relative;}
+	.popup .cont02.banner .inner, .popup .cont02.banner .ranking , .popup .cont02.banner .txt {display:none;}
+	.popup .cont02.banner {padding-top:90%;background-image: url('../../../images/event/2020/0203_vote/event_banner.png');background-repeat:no-repeat;background-size:cover;}
+	.popup .cont02 .ranking { display:table; margin: 0 6.38%; padding:85px 40px 50px; background:white; }
+	.popup .cont02 .ranking ._row { display: table-row; }
+	.popup .cont02 .ranking ._row > div { position:relative; display: table-cell; padding:10px 0; width:48.5%; font-size:24px; color:#333125;
+							letter-spacing: -1px; line-height:27px;  vertical-align: top; }
+	.popup .cont02 .ranking ._row > div:first-child {padding-right:1.5%;}
+	.popup .cont02 .ranking ._row > div:last-child {padding-left:1.5%}
+	.popup .cont02 .ranking ._row > div.rank_01 span, #vertgraph .graph_01 .gBar {background:#fd5c7e;}
+	.popup .cont02 .ranking ._row > div.rank_02 span, #vertgraph .graph_02 .gBar {background:#f86c52;}
+	.popup .cont02 .ranking ._row > div.rank_03 span, #vertgraph .graph_03 .gBar {background:#ffbd4d;}
+	.popup .cont02 .ranking ._row > div.rank_04 span, #vertgraph .graph_04 .gBar {background:#6dc17b;}
+	.popup .cont02 .ranking ._row > div.rank_05 span, #vertgraph .graph_05 .gBar {background:#a67eeb;}
+	.popup .cont02 .ranking ._row > div.rank_06 span, #vertgraph .graph_06 .gBar {background:#617bd1;}
+	.popup .cont02 .ranking ._row > div.rank_07 span, #vertgraph .graph_07 .gBar {background:#a1c4ff;}
+	.popup .cont02 .ranking ._row > div.rank_08 span, #vertgraph .graph_08 .gBar {background:#ffa69e;}
+	.popup .cont02 .ranking ._row > div.rank_09 span, #vertgraph .graph_09 .gBar {background:#cb805a;}
+	.popup .cont02 .ranking ._row > div.rank_10 span, #vertgraph .graph_10 .gBar {background:#847a6e;}
+	.popup .cont02 .ranking ._row > div span {display:inline-block; width:26px; height:26px; margin-right:9px;
+							border-radius:20px; text-align:center; color:white; font-size:16px; line-height:26px; vertical-align:top; }
+	.popup .cont02 .ranking ._row > div > p {display:inline-block; width:87%;}
+	.popup .cont02 .txt {margin: 0 6.38%; text-align:center; line-height:60px; font-size:26px; font-weight:bold; color:#fff;
+							background: #c2b3a4; border-radius:0 0 10px 10px; }
+	.popup .myChoice {position:absolute; bottom:0; left: 28%; width: 44%; height: 31%; font-size:0; background:#f86c51; opacity:0; }
+	.popup .mybest {margin:40px 60px; padding:22px; text-align:left;font-size:32px;color:#343025; font-weight: 500;
+							border:3px solid #343025; border-radius:8px; line-height: 35px;letter-spacing: -1.4px; word-break: keep-all; }
+	.popup .mybest > span { color:#fd5c7e; }
+	.popup .closeBtn {position:absolute; top: 66.5%;left: 28%;width: 44%;height: 17.5%;font-size:0;background-color:#292929;opacity:0;}
+	/* 그래프 */
+	#vertgraph { position:absolute; top:0; margin:6.5% 11.7% 0; width: 76.59%; height: 83%; }
+    #vertgraph ul { width: 100%; height: 100%; margin: 0; padding-bottom: 2px; font-size: 0; }
+    #vertgraph ul li { position:relative; display:inline-block; width: 8%; height: 100%; margin: 0 0.97%; vertical-align:bottom; }
+	#vertgraph .gBar {position:absolute; bottom:0; width:100%; border-radius: 5px 5px 0 0; }
+	#vertgraph .percent {position:absolute; bottom: -34px; display:block; width: 100%; text-align: center; font-size: 24px; color:#6b4532; font-weight:500; }
+	/* 레이어팝업 */
+	article.popup .box.full { width:940px; }
+	article.popup .pop_cont { padding: 0 50px; }
+	article.popup .pop_cont .filter .bind.find {float:right; width:50%;}
+	article.popup .pop_cont .list li { margin: 25px 0;}
+	article.popup .pop_cont .list li:nth-child(3n-1) { margin: 25px 5%; }
+	article.popup .pop_cont .list li .card .bg {  position: static; height: auto; padding: 10px 0;}
+	article.popup .pop_cont .list li .card .bt { position: static; }
+	article.popup .pop_cont .card { text-align:center; }
+	article.popup .pop_cont .card:before { display:none; }
+	article.popup .pop_cont .card img {margin-bottom:0; }
+	article.popup .pop_cont .card .card_tit { overflow:hidden; height:50px; margin:10px 0; padding: 0 10px; text-align:left; font-size:20px; line-height:25px; color:#000; }
+
+	/* mobile ( 980 px 이하) */
+	@media screen and (max-width:980px) {
+		.popup {width:100%;}
+		/* 레이어팝업 */
+		article.popup .box.full { min-width: 360px; width: auto; }
+		article.popup .pop_cont { padding: 0 20px; }
+		article.popup .pop_cont .list.three li { width: 47%; margin: 30px 0; }
+		article.popup .pop_cont .list.three li:nth-child(odd) { margin-right: 3%; clear: both;}
+		article.popup .pop_cont .list.three li:nth-child(even) { margin-left: 3%; }
+	}
+	/* mobile ( 740 px 이하) */
+	@media screen and (max-width:740px) {
+		.popup .cont01 .inner {padding-top:65.37%;background-image: url('../../../images/event/2020/0203_vote/m_pop_cont_01.png');}
+		.popup .cont02 .inner {padding-top:47%;background-image: url('../../../images/event/2020/0203_vote/m_pop_cont_02.png');}
+		.popup .cont03 .inner {padding-top:102.3%;background-image: url('../../../images/event/2020/0203_vote/m_pop_cont_03.png');}
+		.popup .mybest { margin: 7% 6.25%; padding: 17px 5%; font-size: 5vw; line-height: 6vw; }
+		.popup .myChoice { left: 18%; width: 64%; height: 23%; }
+		.popup .cont02.banner {padding-top:154%;background-image: url('../../../images/event/2020/0203_vote/m_event_banner.png');background-repeat:no-repeat;background-size:cover;}
+		.popup .cont02 .ranking {display:block; margin: 0px 6.25%; padding: 12% 6% 5%;}
+		.popup .cont02 .ranking ._row { display:block; }
+		.popup .cont02 .ranking ._row > div {display: block; width:100%; padding: 7px 0 7px 1% !important; font-size:16px; line-height: 20px; }
+		.popup .cont02 .ranking ._row > div:first-child {padding-right:0;}
+		.popup .cont02 .ranking ._row > div span { width:22px; height:22px;border-radius:20px; font-size:16px; line-height:22px; }
+		.popup .cont02 .txt {margin: 0px 6.25%; padding: 13px 5%; line-height: 26px; font-size: 18px;}
+		.popup .closeBtn { top: 71%; left: 17.5%; width: 65%; height: 15%; }
+		/* 그래프 */
+		#vertgraph { margin: 9.5% 10.9% 0; width: 78.1%; height: 79.6%; }
+		#vertgraph ul { padding-bottom: 1px; }
+		#vertgraph ul li { margin: 0 1%; }
+		#vertgraph .percent { bottom: -27px; font-size: 2.5vw; }
+		/* 레이어팝업 */
+		article.popup .pop_cont .filter .bind.find {float:right; width:100%;}
+		article.popup .pop_cont .card { min-height:auto; }
+		article.popup .pop_cont .card .card_tit { height:41px; font-size:17px; line-height:20px; }
+		article.popup .box .pop_cont .list { padding: 0; }
+	}
+</style>
+</head>
+<body>
+<div class="popup" >
+	<div class="cont01">
+		<div class="inner">
+			<button class="myChoice">내 최애 선택하기</button>
+		</div>
+		<div class="mybest">
+			내 최애 방송프로그램: <span>매일 10분 영어 - 이근철의 하루 딱! 한문장 try again</span>
+		</div>
+	</div>
+	<div class="cont02 banner"> <!-- 2020-02-10 투표전 banner 클래스 추가 -->
+		<div class="inner">
+			<div id="vertgraph">
+				<ul>
+					<li class="graph_01"><span class="percent">22%</span><span class="gBar" style="height:22%"></li>
+					<li class="graph_02"><span class="percent">19%</span><span class="gBar" style="height:19%"></li>
+					<li class="graph_03"><span class="percent">15%</span><span class="gBar" style="height:15%"></li>
+					<li class="graph_04"><span class="percent">12%</span><span class="gBar" style="height:12%"></li>
+					<li class="graph_05"><span class="percent">10%</span><span class="gBar" style="height:10%"></li>
+					<li class="graph_06"><span class="percent">8%</span><span class="gBar" style="height:8%"></li>
+					<li class="graph_07"><span class="percent">6%</span><span class="gBar" style="height:6%"></li>
+					<li class="graph_08"><span class="percent">5%</span><span class="gBar" style="height:5%"></li>
+					<li class="graph_09"><span class="percent">2%</span><span class="gBar" style="height:2%"></li>
+					<li class="graph_10"><span class="percent">1%</span><span class="gBar" style="height:1%"></li>
+				</ul>
+			</div>
+		</div>
+		<div class="ranking">
+			<div class="_row">
+				<div class="rank_01">
+					<span>1</span><p>왕초보 영어</p>
+				</div>
+				<div class="rank_02">
+					<span>2</span><p>매일 10분 영어 - 메이슨의 어순 트레이닝</p>
+				</div>
+			</div>
+			<div class="_row">
+				<div class="rank_03">
+					<span>3</span><p>영어로 하는 세계 테마 기행</p>
+				</div>
+				<div class="rank_04">
+					<span>4</span><p>파닉스 헌터</p>
+				</div>
+			</div>
+			<div class="_row">
+				<div class="rank_05">
+					<span>5</span><p>왕초보 영어</p>
+				</div>
+				<div class="rank_06">
+					<span>6</span><p>매일 10분 영어 - 이근철의 하루 딱! 한문장 try again</p>
+				</div>
+			</div>
+			<div class="_row">
+				<div class="rank_07">
+					<span>7</span><p>영어로 하는 세계 테마 기행</p>
+				</div>
+				<div class="rank_08">
+					<span>8</span><p>매일 10분 영어 - 메이슨의 어순 트레이닝</p>
+				</div>
+			</div>
+			<div class="_row">
+				<div class="rank_09">
+					<span>9</span><p>매일 10분 영어 - 메이슨의 어순 트레이닝</p>
+				</div>
+				<div class="rank_10">
+					<span>10</span><p>왕초보 영어</p>
+				</div>
+			</div>
+		</div>
+		<div class="txt">상위에 랭크된 10개 방송프로그램만 보여집니다.</div>
+	</div>
+	<div class="cont03">
+		<div class="inner">
+			<button type="button" class="closeBtn">이전페이지 가기</button>
+			<div class="blind">
+				<h2>유의사항</h2>
+				<ul>
+					<li>이벤트 시작일부터 각 방송프로그램별로 누적 조회수를 집계합니다.</li>
+					<li>누적 조회수가 많을수록 상위에 랭크됩니다.</li>
+					<li>내가 추천한 방송프로그램이 TOP3에 선정되면 당첨대상이 됩니다.</li>
+					<li>한번 선택한 방송프로그램은 수정할 수 없습니다. 신중히 선택해 주세요.</li>
+				</ul>
+				<button>이전페이지 가기</button>
+			</div>
+		</div>
+	</div>
+</div><!-- // popup end -->
+
+
+<!-- 방송프로그램 찾기 팝업 :: 확인용 -->
+<script type="text/javascript">
+	// 개인정보수집 팝업 확인용
+	$(document).ready(function(){
+		$('.myChoice').click(function(e){
+			e.preventDefault();
+			$('article.popup').removeClass('hide');
+			return false;
+		});
+		$('article.popup .bt.x').click(function(){
+			$('article.popup').addClass('hide');
+		});
+	});
+</script>
+<article class="popup share bg_dim event hide" id="popShare2"><!-- 숨김은 hide 클래스 추가 -->
+	<div class="wrap">
+		<div class="inner">
+			<div class="box full event_terms_info">
+				<div class="title">
+					<button type="button" onclick="layerPopClose('02');" class="bt ico x2 x">닫기</button>
+					<h6>방송프로그램 찾기</h6>
+				</div>
+				<div class="pop_cont">
+					<ul class="category mmb20">
+						<li class="on"><p>전체</p></li>
+						<li><p>파닉스</p></li>
+						<li><p>어휘</p></li>
+						<li><p>문법</p></li>
+						<li><p>듣기</p></li>
+						<li><p>읽기</p></li>
+						<li><p>쓰기</p></li>
+						<li><p>말하기</p></li>
+						<li><p>공통</p></li>
+					</ul>
+					<div class="filter">
+						<div class="order mmb10">
+							<button type="button" class="bt txt s bd on">최신순</button>
+							<button type="button" class="bt txt s bd">인기순</button>
+						</div>
+						<div class="bind find">
+							<input type="text" class="input" placeholder="프로그램명을 입력해주세요">
+							<button type="button" class="bt ico find">검색</button>
+						</div>
+					</div>
+					<ul class="list three">
+						<li class="mmb0">
+							<div class="card">
+								<a href="program_intro.html" target="_blank">
+									<img src="https://static.ebs.co.kr/images/public/courses/2019/11/21/15/10203080/9f282946-6d3b-405a-a333-6aeeb2d66b92.jpg" alt="">
+									<p class="card_tit">Choo! 파닉스 게임 파닉스 게임 파닉스 게임 파닉스 게임</p>
+								</a>
+								<button type="button" class="bt txt s">선택하기</button>
+							</div>
+						</li>
+						<li class="mmb0">
+							<div class="card">
+								<a href="program_intro.html" target="_blank">
+									<img src="https://static.ebs.co.kr/images/public/courses/2019/08/26/10/ER2012M0ENR01ZZ/200600d3-f36b-467d-a674-4b0ae162b5dc.jpg" alt="">
+									<p class="card_tit">영자 신문 읽기</p>
+								</a>
+								<button type="button" class="bt txt s">선택하기</button>
+							</div>
+						</li>
+						<li class="mmb0">
+							<div class="card">
+								<a href="program_intro.html" target="_blank">
+									<img src="https://static.ebs.co.kr/images/public/courses/2019/08/20/13/10201772/d5c294d2-28db-4a6d-83ec-ba58ffb23351.jpg" alt="">
+									<p class="card_tit">매일 10분 영어 - 크리스틴 조의 깨알 English</p>
+								</a>
+								<button type="button" class="bt txt s">선택하기</button>
+							</div>
+						</li>
+						<li class="mmb0">
+							<div class="card">
+								<a href="program_intro.html" target="_blank">
+									<img src="https://static.ebs.co.kr/images/public/courses/2019/11/21/15/10203080/9f282946-6d3b-405a-a333-6aeeb2d66b92.jpg" alt="">
+									<p class="card_tit">Choo! 파닉스 게임 파닉스 게임 파닉스 게임 파닉스 게임</p>
+								</a>
+								<button type="button" class="bt txt s">선택하기</button>
+							</div>
+						</li>
+						<li class="mmb0">
+							<div class="card">
+								<a href="program_intro.html" target="_blank">
+									<img src="https://static.ebs.co.kr/images/public/courses/2019/08/20/14/10201775/43237715-672d-487d-91f8-b471f85c004e.jpg" alt="">
+									<p class="card_tit">Peppa pig</p>
+								</a>
+								<button type="button" class="bt txt s">선택하기</button>
+							</div>
+						</li>
+						<li class="mmb0">
+							<div class="card">
+								<a href="program_intro.html" target="_blank">
+									<img src="https://static.ebs.co.kr/images/public/courses/2019/11/21/15/10203080/9f282946-6d3b-405a-a333-6aeeb2d66b92.jpg" alt="">
+									<p class="card_tit">Choo! 파닉스 게임 파닉스 게임 파닉스 게임 파닉스 게임</p>
+								</a>
+								<button type="button" class="bt txt s">선택하기</button>
+							</div>
+						</li>
+						<!--li class="nodata"><p>입력하신 키워드의 프로그램이 존재하지 않습니다.<br>다른 키워드로 검색해주세요.</p></li-->
+					</ul>
+					<div class="more mmt30"><button type="button" class="bt txt s">더보기</button></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</article>
+<!-- // 방송프로그램 찾기 팝업 :: 확인용 -->
+
+
+</body>
+</html>

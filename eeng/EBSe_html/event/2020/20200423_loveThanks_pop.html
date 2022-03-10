@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+<title>EBS English</title>
+<link rel="stylesheet" type="text/css" href="../../../css/NotoSansKR-Hestia.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/common.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/circle.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/sub.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/sub_new.css"/>
+<script src="http://renew.ebse.co.kr/js/common.js"></script>
+<script src="http://renew.ebse.co.kr/js/slick.js"></script>
+<script src="http://renew.ebse.co.kr/js/wow.js"></script>
+<script src="http://renew.ebse.co.kr/js/jquery-2.2.0.min.js"></script>
+
+</head>
+<style type="text/css">
+</style>
+<body>
+<style media="screen, print" type="text/css">
+	/* 2020-04-23 EBSe 선생님께 감사편지 쓰기 이벤트 팝업 CSS*/
+	.popup {width:940px;margin:0 auto;}
+	.popup .inner {position:relative;background-repeat:no-repeat;background-size:cover;}
+	.popup .cont01 .inner {padding-top:122.34%;background-image: url('../../../images/event/2020/0423_loveThanks/pop_cont.png');}
+
+	.popup .t_name { position: absolute; top: 27.5%; left: 17%; width: 66%; color: #9e8f5d; font-size: 32px; font-weight: 400; letter-spacing: -1.5px; text-align: center; }
+	.popup .t_name br { display:none;}
+	.popup .mytxt { position:absolute; top: 33%; left: 18%; width: 66%; height: 33%;}
+	.popup .mytxt textarea { width: 100%; height: 100%; margin-bottom: 23px; padding: 30px; overflow-y: auto; font-size: 20px; text-align: left; background: #f8f8f8;}
+	.popup .mytxt > p { display:block; margin-bottom: 15px; padding-right: 16px; text-align: right; font-size: 20px; color: #968486; letter-spacing: -0.5px; font-weight: 400;}
+	.popup .mytxt > p > span.red { color:#fd7380;}
+	.popup .mytxt > span.em { display:block; padding-right: 16px; text-align: right; font-size: 21px; color: #d2afb3; letter-spacing: -1.7px; font-weight: 400;}
+	.popup .btn_close {position:absolute; top: 81%; left: 21%; width: 28%; height: 5.6%; font-size:0;background-color:#292929;opacity:0;}
+	.popup .btn_send {position:absolute; top: 81%; left: 51%; width: 28%; height: 5.6%; font-size:0;background-color:#292929;opacity:0;}
+	.blind {visibility: hidden;overflow: hidden;position: absolute;top: 0;left: 0;width: 0;height: 0;font-size: 0;line-height: 0;}
+	/* mobile ( 980 px 이하) */
+	@media screen and (max-width:980px) {
+		.popup {width:100%;}
+		.popup .t_name { font-size:26px; }
+		.popup .mytxt {font-size:3.5vw;}
+		.popup .mytxt > p { font-size: 2.3vw; margin-bottom: 7px; }
+		.popup .mytxt > span.em  { font-size: 2.3vw; }
+	}
+	/* mobile ( 740 px 이하) */
+	@media screen and (max-width:740px) {
+		.popup .t_name { top:24.5%; font-size: 5.2vw; line-height: 6.4vw;}
+		.popup .t_name br { display:block;}
+		.popup .cont01 .inner {padding-top:192.18%;background-image: url('../../../images/event/2020/0423_loveThanks/mob_pop_cont.png');}
+		.popup .mytxt { top: 35.2%; left: 15%; height: 31%; width: 70%; font-size: 5.6vw;}
+		.popup .mytxt textarea { margin-bottom: 17px; padding: 10px; font-size: 16px;}
+		.popup .mytxt > p { margin-bottom:3%; padding-right:0; font-size: 3vw;}
+		.popup .mytxt > span.em { padding-right:0; font-size: 3.2vw;}
+		.popup .btn_close { top: 80.5%; left: 8%; width: 40.5%; height: 5.2%; }
+		.popup .btn_send { top: 80.5%; left: 51.5%; width: 40.5%; height: 5.2%; }
+	}
+	/* mobile ( 450 px 이하) */
+	@media screen and (max-width:450px) {
+		.popup .mytxt > p { margin-bottom:3px; padding-right:0; font-size: 3.4vw;}
+		.popup .mytxt > span.em { padding-right:0; font-size: 3.75vw;}
+	}
+</style>
+</head>
+<body>
+<div class="popup" >
+	<div class="cont01">
+		<div class="inner">
+			<strong class="t_name">Cameron Word 선생님! <br>고맙습니다!</strong>
+			<div class="mytxt">
+				<textarea placeholder="EBSe 선생님께 편지쓰기"></textarea>
+				<p>내가 작성한 글자 수: 총 <span class="red">100</span>자</p>
+				<span class="em">* 글자 수는 최대 500자로 제한됩니다.</span>
+			</div>
+			<button type="button" class="btn_close">이전페이지 가기</button>
+			<button type="button" class="btn_send">보내기</button>
+			<div class="blind">
+				<h2>EBSe 선생님께 편지쓰기</h2>
+				<em>내가 작성한 글자 수 :  </em>
+				<span class="em">* 글자 수는 최대 500자로 제한됩니다.</span>
+			</div>
+		</div>
+	</div>
+</div><!-- // popup end -->
+
+<!-- // 경품 응모 확인 팝업 :: 확인용 -->
+<script type="text/javascript">
+	// 개인정보수집 팝업 확인용
+	$(document).ready(function(){
+		$('.btnEntry').click(function(e){
+			e.preventDefault();
+			$('article.popup').removeClass('hide');
+			return false;
+		});
+		$('article.popup .bt.x').click(function(){
+			$('article.popup').addClass('hide');
+		});
+	});
+</script>
+<article class="popup event hide"><!-- 숨김은 hide 클래스 추가 -->
+	<div class="wrap">
+		<div class="inner">
+			<div class="box sm">
+				<div class="title">
+					<button type="button" class="bt ico x">닫기</button>
+				</div>
+				<div class="content">
+					<p class="tit" style="text-align:center;">[미니언즈 프리미엄 무선 가습기]에 응모하시겠습니까?</p>
+					<!--
+					<p class="tit" style="text-align:center;">[[던킨도너츠] 뭐 이런걸 다..]에 응모하시겠습니까?</p>
+					<p class="tit" style="text-align:center;">[[빽다방] 내가쏜다사라다빵야빵야]에 응모하시겠습니까?</p>
+					-->
+				</div>
+				<div class="btns" style="text-align:center;">
+					<a href="#" class="bt txt s bg" >예</a>
+					<a href="#" class="bt txt s bg" onclick="$('.bt.ico.x').click()">아니오</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</article>
+<!-- // 경품 응모 팝업 :: 확인용 -->
+
+
+</body>
+</html>

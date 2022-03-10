@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+<title>EBS English</title>
+<link rel="stylesheet" type="text/css" href="../../../css/NotoSansKR-Hestia.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/common.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/circle.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/sub.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/sub_new.css"/>
+<script src="http://renew.ebse.co.kr/js/jquery-2.2.0.min.js"></script>
+</head>
+<body>
+<style media="screen, print" type="text/css">
+	/* 2019-07-17 새학기 출석체크 팝업 CSS*/
+	.popup {width:940px;margin:0 auto;}
+	.popup .top, .popup .calendar, .popup .bottom {position:relative;background:no-repeat 0 0;background-size:cover;}
+	.popup .top {padding-top:53.19148936170213%;background-image: url('../../../images/event/2019/0717_summerVacation/pop_top.png');}
+	.popup .myCheck {position:absolute;left:25%;top:71.5%;font-size:2.5rem;font-weight:bold;color:#276add;}
+	.popup .myCheck:after {content:'일'; position: absolute;right: -43px;font-size:1.8rem;font-weight:400;color:#765742;}
+
+	.popup .calendar {background-image: url('../../../images/event/2019/0717_summerVacation/pop_calendar.png');}
+	.popup .calendar ul{padding: 0px 71px;overflow:hidden;}
+	.popup .calendar ul li {position:relative;float:left;width:114px;height:114px;margin-bottom:1px;}
+	.popup .calendar ul li > span {display:block;position:absolute;z-index:3;width:100%;font-size:1.5rem;color:#493222;text-align:center;line-height:114px;}
+	.popup .calendar ul li.none > span {color:#c8bfc0;}
+	.popup .calendar ul li.check > span {color:#fff;}
+	.popup .calendar ul li.check:before {content:''; display:block;position:absolute;top:50%;left:50%;z-index:2;width:50px;height:50px;
+										margin-left:-25px;margin-top:-25px;border-radius:50px;background-color:#2768de;}
+
+	.popup .bottom {padding-top:97.34042553191489%;background-image: url('../../../images/event/2019/0717_summerVacation/pop_bottom.png');} /* 수정 */
+	.popup .bottom .closeBtn {display:block;position:absolute;top:81.5%;left:29%;width:42%;height:11%;text-indent:-9999px;font-size:0;opacity:0;background:#493222;}/* 수정 */
+	.blind {visibility: hidden;overflow: hidden;position: absolute;top: 0;left: 0;width: 0;height: 0;font-size: 0;line-height: 0;}
+
+	/* mobile ( 980 px 이하) */
+	@media screen and (max-width:980px) {
+		.popup {width:100%;}
+		.popup .top {padding-top:92.1875%;background-image: url('../../../images/event/2019/0717_summerVacation/m_pop_top.png');}
+		.popup .myCheck{left: 32%;top: 76%;font-size: 6vw;}
+		.popup .myCheck:after {right: -6vw;font-size: 4.5vw;}
+
+		.popup .calendar {background-image: url('../../../images/event/2019/0717_summerVacation/m_pop_calendar.png');}
+		.popup .calendar ul{padding:0 6.7%;}
+		.popup .calendar ul li {width:14.25891181988743%;}
+		.popup .calendar ul li > span {font-size:3vw;}
+		.popup .calendar ul li.check:before {width: 64%; height: 64%; margin-left: -32%; margin-top: -32%;}
+
+		.popup .bottom {padding-top:182.65625%;background-image: url('../../../images/event/2019/0717_summerVacation/m_pop_bottom.png');} /* 수정 */
+		.popup .bottom .closeBtn {top: 86.5%; left: 19%; width: 62%; height:8.5%;} /* 수정 */
+	}
+
+	/* mobile ( 740 px 이하) */
+	@media screen and (max-width:740px) {
+		.popup .myCheck {top: 75%;}
+	}
+</style>
+<script type="text/javascript" src="http://www.ebse.co.kr/ebs/WebCommon/new2014/reN2014/js/jquery-latest.js"></script>
+ <script type="text/javascript">
+	//2019-07-17 Summer Vacation 출석체크 팝업
+ 	$(document).ready(function(){
+ 		$(window).resize(function(){
+ 			var w = $(this).width();
+ 			if (w <= 980){
+ 				var popW=$(".popup .calendar ul").width();
+ 				var popH=(popW * 79 / 563 );
+ 				var WrapH=(popW * 547 / 640 );
+ 				$('.popup .calendar ul').height(WrapH);
+ 				$('.popup .calendar ul li').height(popH);
+				$('.popup .calendar ul li > span').css('line-height', (popH + 'px'));
+ 			} else if (w > 980){
+ 				$('.popup .calendar ul').height(684);
+ 				$('.popup .calendar ul li').height(113);
+ 			}
+ 		});
+ 		$(window).trigger('resize');
+ 	});
+ </script>
+<div class="popup" >
+	<div class="cont">
+		<div class="top">
+			<div class="myCheck">5</div>
+			<div class="blind">
+				<h2>출석체크 확인하기</h2>
+				<p>2019.07.24(수) ~ 2019.08.25(일) / 총 33일</p>
+			</div>
+		</div>
+		<div class="calendar">
+			<ul>
+				<li class="none"><span>7/21</span></li>
+				<li class="none"><span>22</span></li>
+				<li class="none"><span>23</span></li>
+				<li class="day_01 check"><span>24</span></li>
+				<li class="day_02 check"><span>25</span></li>
+				<li class="day_03 check"><span>26</span></li>
+				<li class="day_04 check"><span>27</span></li>
+				<li class="day_05 check"><span>28</span></li>
+				<li class="day_06 check"><span>29</span></li>
+				<li class="day_07"><span>30</span></li>
+				<li class="day_08 check"><span>31</span></li>
+				<li class="day_09 check"><span>8/1</span></li>
+				<li class="day_10 check"><span>2</span></li>
+				<li class="day_11"><span>3</span></li>
+				<li class="day_12"><span>4</span></li>
+				<li class="day_13"><span>5</span></li>
+				<li class="day_14"><span>6</span></li>
+				<li class="day_15"><span>7</span></li>
+				<li class="day_16"><span>8</span></li>
+				<li class="day_17"><span>9</span></li>
+				<li class="day_18"><span>10</span></li>
+				<li class="day_19 check"><span>11</span></li>
+				<li class="day_20"><span>12</span></li>
+				<li class="day_21"><span>13</span></li>
+				<li class="day_22 check"><span>14</span></li>
+				<li class="day_23"><span>15</span></li>
+				<li class="day_24"><span>16</span></li>
+				<li class="day_25"><span>17</span></li>
+				<li class="day_26"><span>18</span></li>
+				<li class="day_27"><span>19</span></li>
+				<li class="day_28"><span>20</span></li>
+				<li class="day_29"><span>21</span></li>
+				<li class="day_30"><span>22</span></li>
+				<li class="day_31"><span>23</span></li>
+				<li class="day_32 check"><span>24</span></li>
+				<li class="day_33 check"><span>25</span></li>
+				<li class="none"><span>26</span></li>
+				<li class="none"><span>27</span></li>
+				<li class="none"><span>28</span></li>
+				<li class="none"><span>29</span></li>
+				<li class="none"><span>30</span></li>
+				<li class="none"><span>31</span></li>
+			</ul>
+		</div>
+		<div class="bottom">
+			<a class="closeBtn" href="#none">이전페이지 가기</a>
+			<div class="blind">
+				<h2>당첨자 선별기준 & 유의사항</h2>
+				<ul>
+					<li>온라인 강좌 > 온라인 강좌, 영어 웹툰을 많이 시청할 경우 당첨 확률 UP!</li>
+					<li>온라인 강좌 > 영자신문은 이벤트 대상에서 제외합니다.</li>
+					<li>날짜를 클릭하여 출석체크해주세요. 출석도장은 1일 1회만 가능합니다.</li>
+					<li>지난 날짜는 출석할 수 없습니다.</li>
+					<li>시청건수가 올라가는 조건은 프로그램 1회차당 1건 입니다.</li> <!-- 추가 -->
+					<li>이미 시청한 회차를 다시보기 할 경우 시청건수는 올라가지 않습니다.</li> <!-- 추가 -->
+					<li>이벤트 기간 동안 출석체크를 완료하셔야 상품 추첨 대상이 됩니다. </li>
+					<li>일일 미션 완료 후 출석체크를 진행하셔야 출석으로 인정됩니다.</li>
+					<li>일일 미션을 완료하지 않은 상태에서 출석체크는 출석으로 인정되지 않습니다. </li>
+					<li>일일 미션 완료 후 출석체크를 클릭하지 않으시면 출석으로 인정되지 않습니다.</li>
+				</ul>
+				<button>이전페이지 가기</button>
+			</div>
+		</div>
+	</div>
+</div><!-- // popup end -->
+</body>
+</html>

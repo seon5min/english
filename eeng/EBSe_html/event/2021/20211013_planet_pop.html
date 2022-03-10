@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+<title>EBS English</title>
+<link rel="stylesheet" type="text/css" href="../../../css/NotoSansKR-Hestia.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/common.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/circle.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/sub.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/sub_new.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="../../../css/wow-animate.css"/>
+<script src="../../../js/jquery-2.2.0.min.js"></script>
+<script src="../../../js/slick.js"></script>
+<script src="../../../js/wow.js"></script>
+<script src="../../../js/common_new2020.js"></script>
+</head>
+<body>
+<!-- 2021-10-13 행성을 모아라 이벤트 -->
+<style>
+	.popup {width:100%;margin:0 auto;}
+	.popup div[class^="cont"] .inner {position:relative;background-repeat:no-repeat;background-size:cover;}
+	.popup .cont01 .inner{height: 400px; background-size: auto; background-position: top center; margin-top:-0.05rem;max-width: 100%;background-image: url('../../../images/event/2021/1006_planetEvent/pop_cont_01.jpg');}
+	.popup .cont02 .inner{height: 877px; background-size: auto; background-position: top center;margin-top:-0.05rem;max-width: 100%;background-image: url('../../../images/event/2021/1006_planetEvent/pop_cont_02.jpg');}
+	.popup .cont03 .inner{height: 943px; background-size: auto; background-position: top center; margin-top:-0.05rem;max-width: 100%;background-image: url('../../../images/event/2021/1006_planetEvent/pop_cont_03.jpg');}
+	.popup .myScore {position: absolute; width: 100px; left: 50%; transform: translate(48px,2px); line-height: 1.2; top: 79%; text-align: right; font-size: 2.66rem; font-weight: bold;}
+	.popup .myScore > span {color:#ffe58e; background: transparent; background: -moz-linear-gradient(#ffe996 0%, #ffae15 100%);background: -o-linear-gradient(#ffe996 0%, #ffae15 100%); background: -webkit-gradient(linear, color-stop(0, #ffe996), color-stop(100, #ffae15)); background: -webkit-linear-gradient(#ffe996 40%,#ffb422 80%, #ffae15 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe996', endColorstr='#ffe996', GradientType=1); -webkit-background-clip: text;-webkit-text-fill-color: transparent;}
+	.popup .clearBtn {position: absolute; top: 76.8%; left: 50%; transform: translateX(-50%); width: 480px; height: 14.5%; font-size: 0; z-index: 10;}
+	.popup .closeBtn {position: absolute; top: 73%; left: 50%; transform: translateX(-50%); width: 480px; height: 14%; font-size: 0; z-index: 10;}
+	.planetCont{position: absolute;top: 26%;width:100%;}
+	.planetCont ul {display: -webkit-box; display: -ms-flexbox; display: flex;-webkit-box-lines: multiple; -ms-flex-wrap: wrap; flex-wrap: wrap;-webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; padding: 35px 40px; max-width: 600px; margin: 0 auto;}
+   	.planetCont ul li[class^="planetNum"] {position:relative;width: 20%; padding: 5% 2%;}
+	.planetCont ul li[class^="planetNum"] img {max-width:100%;}
+	.planetCont ul li[class^="planetNum"] .colorPlanet {display:none;}
+	.planetCont ul li[class^="planetNum"] .grayPlanet {display:block;}
+	.planetCont ul li[class^="planetNum"].find .grayPlanet {display:none;}
+	.planetCont ul li[class^="planetNum"].find .colorPlanet {display:block;}
+	.blind {visibility: hidden;overflow: hidden;position: absolute;top: 0;left: 0;width: 0;height: 0;font-size: 0;line-height: 0;}
+
+	/* mobile ( 740 px 이하) */
+	@media screen and (max-width:740px) {
+		.popup .cont01 .inner{height: auto;background-size: contain;padding-top:69.4666%;background-image: url('../../../images/event/2021/1006_planetEvent/m_pop_cont_01.jpg');}
+		.popup .cont02 .inner{height: auto;background-size: contain;padding-top:166.1333%;background-image: url('../../../images/event/2021/1006_planetEvent/m_pop_cont_02.jpg');}
+		.popup .cont03 .inner{height: auto;background-size: contain;padding-top:156.4%;background-image: url('../../../images/event/2021/1006_planetEvent/m_pop_cont_03.jpg');}
+		.cont02 .planetCont{top: 15.5%;}
+		.planetCont ul {padding: 10% 5%;}
+		.planetCont ul li[class^="planetNum"] {width: 25%;}
+		.planetCont ul li[class^="planetNum"] img { max-width: 100%; margin: 0 auto; }
+		.popup .myScore {top: 82%;font-size: 7vw;position: absolute;width: 20%; left: 50%;transform: translateX(34%);text-align: center;}
+		.popup .clearBtn {top: 78.9%; width: 77.5%; height: 13.5%;}
+		.popup .closeBtn {top: 75.6%; width: 77.5%; height: 13.5%;}
+	}
+	@media screen and (max-width:540px) {
+	.planetCont ul {padding: 10% 10%;}
+	}
+
+</style>
+<div class="popup">
+	<!--cont01-->
+	<div class="cont01">
+		<div class="inner">
+			<div class="myScore"><span id="totGemCnt">259</span></div>
+			<div class="blind">
+				<h2>흩어져 있는 행성을 찾아 행성표를 완성하자!!</h2>
+				<em>행성표 완성 횟수</em>
+			</div>
+		</div>
+	</div>
+	<!--//cont01-->
+	<!--cont02-->
+	<div class="cont02">
+		<div class="inner">
+			<button type="button" class="clearBtn">행성표 완성하기</button>
+			<div class="planetCont">
+				<ul>
+					<li class="planetNum01 find">
+						<img class="grayPlanet" src="../../../images/event/2021/1006_planetEvent/off_planet_01.png" alt="Neptune 미획득" />
+						<img class="colorPlanet" src="../../../images/event/2021/1006_planetEvent/planet_01.png" alt="Neptune 획득" />
+					</li>
+					<li class="planetNum02 ">
+						<img class="grayPlanet" src="../../../images/event/2021/1006_planetEvent/off_planet_02.png" alt="Uranus 미획득" />
+						<img class="colorPlanet" src="../../../images/event/2021/1006_planetEvent/planet_02.png" alt="Uranus 획득" />
+					</li>
+					<li class="planetNum03 ">
+						<img class="grayPlanet" src="../../../images/event/2021/1006_planetEvent/off_planet_03.png" alt="Saturn 미획득" />
+						<img class="colorPlanet" src="../../../images/event/2021/1006_planetEvent/planet_03.png" alt="Saturn 획득" />
+					</li>
+					<li class="planetNum04 find">
+						<img class="grayPlanet" src="../../../images/event/2021/1006_planetEvent/off_planet_04.png" alt="Jupiter 미획득" />
+						<img class="colorPlanet" src="../../../images/event/2021/1006_planetEvent/planet_04.png" alt="Jupiter 획득" />
+					</li>
+					<li class="planetNum05 find">
+						<img class="grayPlanet" src="../../../images/event/2021/1006_planetEvent/off_planet_05.png" alt="Mars 미획득" />
+						<img class="colorPlanet" src="../../../images/event/2021/1006_planetEvent/planet_05.png" alt="Mars 획득" />
+					</li>
+					<li class="planetNum06 ">
+						<img class="grayPlanet" src="../../../images/event/2021/1006_planetEvent/off_planet_06.png" alt="Earth 미획득" />
+						<img class="colorPlanet" src="../../../images/event/2021/1006_planetEvent/planet_06.png" alt="Earth 획득" />
+					</li>
+					<li class="planetNum07 find">
+						<img class="grayPlanet" src="../../../images/event/2021/1006_planetEvent/off_planet_07.png" alt="Venus 미획득" />
+						<img class="colorPlanet" src="../../../images/event/2021/1006_planetEvent/planet_07.png" alt="Venus 획득" />
+					</li>
+					<li class="planetNum08 find">
+						<img class="grayPlanet" src="../../../images/event/2021/1006_planetEvent/off_planet_08.png" alt="Mercury 미획득" />
+						<img class="colorPlanet" src="../../../images/event/2021/1006_planetEvent/planet_08.png" alt="Mercury 획득" />
+					</li>
+					<li class="planetNum09 ">
+						<img class="grayPlanet" src="../../../images/event/2021/1006_planetEvent/off_planet_09.png" alt="Sun 미획득" />
+						<img class="colorPlanet" src="../../../images/event/2021/1006_planetEvent/planet_09.png" alt="Sun 획득" />
+					</li>
+					<li class="planetNum10 find">
+						<img class="grayPlanet" src="../../../images/event/2021/1006_planetEvent/off_planet_10.png" alt="eStar 미획득" />
+						<img class="colorPlanet" src="../../../images/event/2021/1006_planetEvent/planet_10.png" alt="eStar 획득" />
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div><!--//cont02-->
+	<!--cont03-->
+	<div class="cont03">
+		<div class="inner">
+			<button type="button" class="closeBtn" onclick="javascript:history.back();">이전페이지 가기</button>
+			<div class="blind">
+				<h3>행성 수집 방법 & 유의사항</h3>
+				<ul>
+					<li>방송프로그램 &lt;다시보기&gt; 시청 시 랜덤으로 행성을 수집할 수 있습니다.</li>
+					<li>하루에 방송프로그램 1회차 당 행성 1개 획득 가능합니다.</li>
+					<li>추천 프로그램 시청시 더 높은 확률로 행성 획득이 가능합니다.</li>
+					<li>행성을 꼭 클릭하여야 행성 획득이 됩니다.(클릭하지 않은 행성은 획득되지 않음)</li>
+					<li>10종류의 행성을 다 수집하여 행성표를 완성하면 이벤트 응모가 됩니다.</li>
+					<li>행성표를 많이 수집할수록 당첨 확률 UP!!</li>
+					<li>행성표 완성 횟수가 동일할 경우 e-tizen 지수가 높으면 당첨 확률 UP!!</li>
+					<li>‘행성표 완성하기’ 버튼을 클릭하여 행성표를 완성하여야 새로운 행성표를 획득할 수 있습니다.</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</div><!--//cont03-->
+</div>
+<!-- //2021-10-13 행성을 모아라 이벤트 -->
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+<title>EBS English</title>
+<link rel="stylesheet" type="text/css" href="../../../css/NotoSansKR-Hestia.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/common.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/circle.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/sub.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/sub_new.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="../../../css/wow-animate.css"/>
+<script src="../../../js/jquery-2.2.0.min.js"></script>
+<script src="../../../js/slick.js"></script>
+<script src="../../../js/wow.js"></script>
+<script src="../../../js/common_new2020.js"></script>
+</head>
+<body>
+<!-- 2021-07-09 절대보석 찾기 이벤트 -->
+<style>
+	.popup {width:940px;margin:0 auto;}
+	.popup div[class^="cont"] .inner {position:relative;background-repeat:no-repeat;background-size:cover;}
+	.popup .cont01 .inner{padding-top:88.4042%;background-image: url('../../../images/event/2021/0715_gemEvent/pop_cont_01.jpg');}
+	.popup .cont02 .inner{padding-top:66.2765%;background-image: url('../../../images/event/2021/0715_gemEvent/pop_cont_02.jpg');}
+	.popup .cont03 .inner{padding-top:92.1276%;background-image: url('../../../images/event/2021/0715_gemEvent/pop_cont_03.jpg');}
+	.popup .cont04 .inner{padding-top:117.2340%;background-image: url('../../../images/event/2021/0715_gemEvent/pop_cont_04.jpg');}
+	.popup .myScore {position: absolute; width: 20%; left: 50%;transform: translate(-8%,-1%); line-height: 1.2;top: 84%;text-align: right; font-size: 2.8rem; font-weight: bold;}
+	.popup .myScore > span {color:#ffe58e; background: transparent; background: -moz-linear-gradient(#ffe996 0%, #ffae15 100%);background: -o-linear-gradient(#ffe996 0%, #ffae15 100%); background: -webkit-gradient(linear, color-stop(0, #ffe996), color-stop(100, #ffae15)); background: -webkit-linear-gradient(#ffe996 40%,#ffb422 80%, #ffae15 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe996', endColorstr='#ffe996', GradientType=1); -webkit-background-clip: text;-webkit-text-fill-color: transparent;}
+ 	.gemBoardCont,.gemCont {width: 100%;}
+	.gemBoardCont ul li[class^="gemBoard"] img[class^="gem_board"] {display:none;}
+	.gemBoardCont ul li[class^="gemBoard"].find img[class^="gem_board"] {display:block;}
+	.gemBoardCont ul li[class^="gemBoard"] img{width: 100%;}
+  	.gemBoardCont ul li{position: absolute;top: 0;left: 0;}
+ 	.gemBoardCont ul li.gemBoard{top:50%; left:0; right:0; bottom:0; margin: -28.7% auto 0; width: calc(100% - 43%);}
+	.gemBoardCont p {position:absolute;top:-36px; right:5px;font-size: 21px;font-weight: 300;color: #fff;letter-spacing: -1px;}
+	.popup .cont03 .clearBtn {position:absolute;top: 69.8%; left: 19.8%; width: 60.5%; height: 16.5%;font-size:0;z-index: 10;}
+	.popup .cont04 .closeBtn {position:absolute;top: 70.555%; left: 19.7%; width: 60.8%; height: 13%;font-size:0;z-index: 10;}
+	.cont03 .gemCont{position: absolute;top: 9%;width:100%;}
+	.gemCont ul {display: -webkit-box; display: -ms-flexbox; display: flex;-webkit-box-lines: multiple; -ms-flex-wrap: wrap; flex-wrap: wrap;justify-content: center;-webkit-box-pack: center; -ms-flex-pack: center;padding: 0 10%;}
+   	.gemCont ul li[class^="gemNum"] {position:relative;width: 25%; padding: 3% 2%;}
+	.gemCont ul li[class^="gemNum"] img {max-width:100%;}
+	.gemCont ul li[class^="gemNum"] .colorGem {display:none;}
+	.gemCont ul li[class^="gemNum"] .grayGem {display:block;}
+	.gemCont ul li[class^="gemNum"].find .grayGem {display:none;}
+	.gemCont ul li[class^="gemNum"].find .colorGem {display:block;}
+	.blind {visibility: hidden;overflow: hidden;position: absolute;top: 0;left: 0;width: 0;height: 0;font-size: 0;line-height: 0;}
+
+	/* mobile ( 980 px 이하) */
+	@media screen and (max-width:980px) {
+		.popup {width:100%;}
+	}
+	/* mobile ( 740 px 이하) */
+	@media screen and (max-width:740px) {
+		.popup .cont01 .inner{padding-top:107.2%;background-image: url('../../../images/event/2021/0715_gemEvent/m_pop_cont_01.jpg');}
+		.popup .cont02 .inner{padding-top:74.2666%;background-image: url('../../../images/event/2021/0715_gemEvent/m_pop_cont_02.jpg');}
+		.popup .cont03 .inner{padding-top:103.2%;background-image: url('../../../images/event/2021/0715_gemEvent/m_pop_cont_03.jpg');}
+		.popup .cont04 .inner{padding-top:152.5333%;background-image: url('../../../images/event/2021/0715_gemEvent/m_pop_cont_04.jpg');}
+		.gemBoardCont ul li.gemBoard{top:50%; left:0; right:0; bottom:0; margin: -32.9% auto 0;width: calc(100% - 35%);}
+		.popup .myScore {transform: translate(-2%,-75%);font-size:5vw;}
+		.popup .cont03 .clearBtn {top: 66.9%; left: 17.8%; width: 65.5%; height: 16.5%;}
+		.popup .cont04 .closeBtn {top: 78%; left: 17.5%; width: 65.5%; height: 10.6%;}
+	}
+
+</style>
+<div class="popup">
+	<div class="cont01">
+		<div class="inner">
+			<div class="myScore"><span id="totGemCnt">259</span></div>
+			<div class="blind">
+				<h2>우주를 탐험하며 내가 찾은 절대보석으로 EBSe 로고를 완성하라!</h2>
+				<em>보석판 완성 횟수</em>
+			</div>
+		</div>
+	</div><!--//cont01-->
+	<div class="cont02">
+		<div class="inner">
+			<div class="gemBoardCont">
+				<ul>
+					<li class="gemBoard "><img class="board_basic" src="../../../images/event/2021/0715_gemEvent/gem_board_basic.png" alt="basic"/></li>
+					<!-- 2021-07-13 보석판 이미지 순서 변경 -->
+					<li class="gemBoard find" id="piece_1"><img class="gem_board_orange" src="../../../images/event/2021/0715_gemEvent/gem_board_orange.png" alt="orange"/></li>
+					<li class="gemBoard find" id="piece_2"><img class="gem_board_yellow" src="../../../images/event/2021/0715_gemEvent/gem_board_yellow.png" alt="yellow"/></li>
+					<li class="gemBoard find" id="piece_3"><img class="gem_board_white" src="../../../images/event/2021/0715_gemEvent/gem_board_white.png" alt="white"/></li>
+					<li class="gemBoard " id="piece_4"><img class="gem_board_pink" src="../../../images/event/2021/0715_gemEvent/gem_board_pink.png" alt="pink"/></li>
+					<li class="gemBoard " id="piece_5"><img class="gem_board_sky" src="../../../images/event/2021/0715_gemEvent/gem_board_sky.png" alt="sky"/></li>
+					<li class="gemBoard " id="piece_6"><img class="gem_board_blue" src="../../../images/event/2021/0715_gemEvent/gem_board_blue.png" alt="blue"/></li>
+					<li class="gemBoard " id="piece_7"><img class="gem_board_navy" src="../../../images/event/2021/0715_gemEvent/gem_board_navy.png" alt="navy"/></li>
+					<li class="gemBoard " id="piece_8"><img class="gem_board_brown" src="../../../images/event/2021/0715_gemEvent/gem_board_brown.png" alt="brown"/></li>
+					<!-- //2021-07-13 보석판 이미지 순서 변경 -->
+				</ul>
+			</div>
+			<div class="blind">
+				<h2>이벤트 대상 신규 프로그램</h2>
+			</div>
+		</div>
+	</div><!--//cont02-->
+	<div class="cont03">
+		<div class="inner">
+			<button type="button" class="clearBtn">보석판 완성하기</button>
+			<div class="gemCont">
+				<ul>
+					<li class="gemNum01 find">
+						<img class="grayGem" src="../../../images/event/2021/0715_gemEvent/gem_orange.png" alt="오렌지색 보석 미획득" />
+						<img class="colorGem" src="../../../images/event/2021/0715_gemEvent/find_gem_orange.png" alt="오렌지색 보석 획득" />
+					</li>
+					<li class="gemNum02 find">
+						<img class="grayGem" src="../../../images/event/2021/0715_gemEvent/gem_yellow.png" alt="노란색 보석 미획득" />
+						<img class="colorGem" src="../../../images/event/2021/0715_gemEvent/find_gem_yellow.png" alt="노란색 보석 획득" />
+					</li>
+					<li class="gemNum03 ">
+						<img class="grayGem" src="../../../images/event/2021/0715_gemEvent/gem_white.png" alt="흰색 보석 미획득" />
+						<img class="colorGem" src="../../../images/event/2021/0715_gemEvent/find_gem_white.png" alt="흰색 보석 획득" />
+					</li>
+					<li class="gemNum04 find">
+						<img class="grayGem" src="../../../images/event/2021/0715_gemEvent/gem_pink.png" alt="핑크색 보석 미획득" />
+						<img class="colorGem" src="../../../images/event/2021/0715_gemEvent/find_gem_pink.png" alt="핑크색 보석 획득" />
+					</li>
+					<li class="gemNum05 ">
+						<img class="grayGem" src="../../../images/event/2021/0715_gemEvent/gem_sky.png" alt="하늘색 보석 미획득" />
+						<img class="colorGem" src="../../../images/event/2021/0715_gemEvent/find_gem_sky.png" alt="하늘색 보석 획득" />
+					</li>
+					<li class="gemNum06 find">
+						<img class="grayGem" src="../../../images/event/2021/0715_gemEvent/gem_blue.png" alt="블루색 보석 미획득" />
+						<img class="colorGem" src="../../../images/event/2021/0715_gemEvent/find_gem_blue.png" alt="블루색 보석 획득" />
+					</li>
+					<li class="gemNum07 find">
+						<img class="grayGem" src="../../../images/event/2021/0715_gemEvent/gem_navy.png" alt="남색 보석 미획득" />
+						<img class="colorGem" src="../../../images/event/2021/0715_gemEvent/find_gem_navy.png" alt="남색 보석 획득" />
+					</li>
+					<li class="gemNum08 find">
+						<img class="grayGem" src="../../../images/event/2021/0715_gemEvent/gem_brown.png" alt="갈색 보석 미획득" />
+						<img class="colorGem" src="../../../images/event/2021/0715_gemEvent/find_gem_brown.png" alt="갈색 보석 획득" />
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div><!--//cont03-->
+	<div class="cont04">
+		<div class="inner">
+			<button type="button" class="closeBtn" onclick="javascript:history.back();">이전페이지 가기</button>
+			<div class="blind">
+				<h3>보석 수집 방법 & 유의사항</h3>
+				<ul>
+					<li>방송프로그램 &lt;다시보기&gt; 시청 시 랜덤으로 보석을 수집할 수 있습니다.</li>
+					<li>하루에 방송프로그램 1회차당 보석 1종류 수집이 가능합니다.</li>
+					<li>추천 프로그램 시청시 더 높은 확룰로 보석 수집이 가능합니다.</li>
+					<li>보석을 꼭 클릭하여야 보석이 수집됩니다.(클릭하지 않은 보석은 수집되지 않음)</li>
+					<li>모든 색상의 보석을 다 수집하여 보석판을 완성하면 이벤트 응모가 완료됩니다.</li>
+					<li>보석판을 많이 완성할수록 당첨 확률 UP!!</li>
+					<li>‘보석판 완성하기’ 버튼을 클릭하여 보석판을 완성하셔야 새로운 보석판을 획득하실 수 있습니다.</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</div><!--//cont04-->
+</div>
+<!-- //2021-07-09 절대보석 찾기 이벤트 -->
+</body>
+</html>

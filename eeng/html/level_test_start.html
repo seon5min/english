@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+<title>EBS English</title>
+<link rel="stylesheet" type="text/css" href="../css/NotoSansKR-Hestia.css"/>
+<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+<link rel="stylesheet" type="text/css" href="../css/circle.css"/>
+<link rel="stylesheet" type="text/css" href="../css/sub.css"/>
+<link rel="stylesheet" type="text/css" href="../css/sub_new.css"/>
+<link rel="stylesheet" type="text/css" href="../css/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="../css/wow-animate.css"/>
+<script src="../js/jquery-2.2.0.min.js"></script>
+<script src="../js/slick.js"></script>
+<script src="../js/wow.js"></script>
+<script src="../js/common.js"></script>
+</head>
+	
+<body class="sub">
+
+<section class="level">
+	<div class="exam pt60">
+		<div class="inner">
+			<h3>청취장비를 확인하기 위해 아래 재생버튼을 눌러주세요.</h3>
+			<button type="button" class="bt ico play">듣기</button>
+			<div class="progress hide"><span class="bar"></span></div><!--hide클래스를 제거하면 디스플레이됩니다-->
+			<audio id="listen"><source src="http://m4str.ebse.co.kr/leveltest/3_st_u10b_q01.mp3" type="audio/mp3"></audio>
+			<script>
+			var audio = document.getElementById("listen");
+
+			audio.addEventListener("timeupdate",function(){
+			   value = Math.floor((100 / audio.duration) * audio.currentTime);
+			   //progress bar 
+			   console.log(value);
+			 });
+			</script>
+			<div>
+				<span class="time">제한시간<i>60분</i></span>
+				<span class="count">총<i>30</i>문항</span>
+			</div>
+			<p class="words">시작 버튼을 선택하시면 레벨테스트가 진행됩니다.</p>
+			<button type="button" class="bt txt m round bg color3 jq-pop">레벨테스트 시작</button>
+		</div>
+		<div class="note">
+			<div class="inner">
+				<h5 class="mfs30">레벨테스트 전 체크사항</h5>
+				<ul>
+					<li>총 30문항으로 구성되어 있으며 1~15번은 듣기 문항, 16~30번은 일기 문항입니다.</li>
+					<li>듣기 문항은 총 2회 청취가 가능합니다.</li>
+					<li>60분 이내에 레벨테스트를 완료할 경우 본인에게 맞는 레벨 진단과 EBSe 맞춤 콘텐츠를 추천 받을 수 있습니다.</li>
+					<li>60분이 넘어갈 경우 레벨테스트는 자동으로 종료되며, 제한시간 안에 풀지못한 문제는 오답처리 됩니다.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<article class="popup level hide">
+	<div class="wrap">
+		<div class="inner">
+			<div class="box md">
+				<div class="title">
+					<button type="button" class="bt ico x">닫기</button>
+					<h6>진행중이던 레벨테스트가 있습니다.<br>이어서 풀겠습니까?</h6>
+				</div>
+				<div class="btns">
+					<a href="level_test1.html" class="bt txt s bg color1">레벨테스트 다시하기</a>
+					<a href="level_test1.html" class="bt txt s bg color3">이어풀기</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</article>
+		
+</body>
+</html>

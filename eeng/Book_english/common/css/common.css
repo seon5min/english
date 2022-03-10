@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+* { padding: 0; margin: 0; outline: 0; border: 0; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; /*-webkit-transition: all 1s; transition: all 1s;*/ }
+:focus { outline: 0; }
+html { width: 100%; height: 100%; -webkit-text-size-adjust: none; text-size-adjust: none; }
+body { width: 100%; font-family:'Noto Sans Korean', sans-serif; font-weight:350; font-size:14px; color:#494949; line-height:1.4; }
+h1, h2, h3, h4, h5, h6 { display: block; overflow: hidden; word-break: keep-all; }
+i, em, address { font-style: normal; }
+input, select, textarea, button, label { font-family: inherit; font-size: 0.875rem; vertical-align: top; -webkit-border-radius: none; border-radius: none; outline: 0; -webkit-box-shadow: none; box-shadow: none; -webkit-appearance: none; appearance: none; border: 0; }
+textarea { resize: none; }
+label { cursor: pointer; }
+fieldset, img, iframe { border: 0; }
+img { vertical-align: top; outline: 0; }
+a { color: inherit; text-decoration: none; }
+menu, li { list-style: none; }
+button { font-family: inherit; padding: 0; margin: 0; border: 0; cursor: pointer; vertical-align: middle; background: none; }
+caption { width: 0; height: 0; font-size: 0; line-height: 0; overflow: hidden; visibility: hidden; }
+hr { display: none; }
+table { width: 100%; border-spacing: 0; border-collapse: collapse; }
+th, td { text-align: left; }
+mark { background: none; }
+audio { background: none; }
+
+::-webkit-input-placeholder { /* WebKit browsers */ font-size: 0.875rem; font-weight:300; color: #b0b0b0; text-transform: none; }
+ :-moz-placeholder { /* Mozilla Firefox 4 to 18 */ font-size: 0.875rem; font-weight:300; color: #b0b0b0; text-transform: none; opacity: 1; filter: alpha(opacity=100); }
+::-moz-placeholder { /* Mozilla Firefox 19+ */ font-size: 0.875rem; font-weight:300; color: #b0b0b0; text-transform: none; opacity: 1; filter: alpha(opacity=100); }
+ :-ms-input-placeholder { /* Internet Explorer 10+ */ font-size: 0.875rem; font-weight:300; color: #b0b0b0; text-transform: none; }
