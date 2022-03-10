@@ -1,0 +1,1185 @@
+@charset "utf-8"; /* common*/
+img { border: 0; max-width: 100%; max-height: 100%; vertical-align: middle; box-sizing: border-box; image-rendering: -moz-auto; /* Firefox */
+ image-rendering: -o-auto; /* Opera */
+ image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+ image-rendering: auto; -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */}
+.tabs p,
+.filter_description p,
+button { -ms-user-select: none; -moz-user-select: -moz-none; -khtml-user-select: none; -webkit-user-select: none; user-select: none; }
+.blind { overflow: hidden; position: absolute; clip: rect(0, 0, 0, 0); width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; }
+.detail_description .sub_con .btn-moreInfo { display: none; }
+#SelAll { display: none; visibility: hidden; }
+
+/* lnb */
+button.fl_btn { float: right; padding-right: 43px; font-size: 14px; line-height: 17px; }
+button.fl_btn .ico_view { position: relative; color: #222; font-size: 16px; font-weight: 400; line-height: 47px; letter-spacing: -0.5px; }
+button.fl_btn .ico_view::after { position: absolute; top: 0px; right: -30px; content: ""; display: block; width: 22px; height: 22px; background: url("../images/funreading/icon/today_ico.png") no-repeat 0 0; }
+
+/* ==========================================================================
+ LAYOUT
+========================================================================== */
+.pc_hide { display: none !important; }
+/* 메인 슬라이드 */
+.main_banner_wrap { position: relative; margin: 0 auto; width: 100%; max-width: 100%; overflow: hidden; box-sizing: border-box; z-index: 0; }
+.main_banner_wrap .swiper-container { width: 100%; margin: 0 auto; overflow: visible; }
+.main_banner_wrap .gallery_top .swiper-slide { width: 100%; max-width: 100%; background: url("../images/funreading/banner/banner_bg.jpg") repeat bottom
+ left; background-size: contain; }
+.main-slide-con { display: -ms-flexbox; display: flex; position: relative; top: 0; height: 460px; max-width: 1140px; margin: 0 auto; padding: 50px 0; }
+.main-slide-con::after { position: absolute; left: 47.5%; bottom: 0; width: 120%; height: 190px; background: rgba(255, 255, 255, 0.6); content: ""; display: block; z-index: 2; }
+.main-slide-con::before { position: absolute; right: 52.4%; bottom: 0; width: 60px; height: 150px; content: ""; display: block; background: url("../images/funreading/banner/thumb_box_shadow.png") no-repeat; z-index: 1; }
+.thumbs_con:before { content: ""; display: block; position: absolute; bottom: 215px; right: 0; clear: both; width: 300px; height: 190px; background: url("../images/funreading/banner/funpick_img.png") 65% top
+ no-repeat; z-index: 1; }
+.main-slide-con > .photo { max-width: 240px; position: relative; left: 0; top: 50%; transform: translateY(-50%); height: fit-content; z-index: 100; display: table; }
+.main-slide-con .photo > a { display: block; width: 100%; height: 100%; }
+.main-slide-con .photo > a > img { max-width: 100%; width: 100%; max-height: 100%; height: auto; }
+.main-slide-con .summary { flex-grow: 1; flex-basis: 0; margin-left: 38px; }
+.main-slide-con .summary_title { padding-top: 55px; }
+.main-slide-con .summary_title .series_tit { font-size: 32px; padding-top: 0; font-weight: 600; color: #222; line-height: 1.4; letter-spacing: -0.5px; margin-bottom: 5px; width: 100%; max-width: 650px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-height: 4em; }
+.main-slide-con .summary_title .series_tit a { position: relative; z-index: 1; }
+.main-slide-con .summary_title .series_tit a::after { content: ""; position: absolute; left: -0.4rem; bottom: 1px; line-height: 1.4; z-index: -1; width: 102%; height: 1px; background-color: #222; }
+.main-slide-con .summary_title .series_subtit { font-size: 23px; font-weight: 600; letter-spacing: -0.5px; color: #222; line-height: 1.4; width: 100%; max-width: 650px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.main-slide-con .summary_description { margin-top: 20px; }
+.main-slide-con .summary_description .book_tit { font-size: 22px; font-weight: 400; letter-spacing: -0.5px; color: #222; line-height: 1.4; margin-bottom: 10px; width: 100%; max-width: 650px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.main-slide-con .summary_description .level { display: block; display: -webkit-box; font-size: 14px; font-weight: 400; letter-spacing: -0.5px; margin-top: 10px; }
+.main-slide-con .summary .funread_btn { font-size: 16px; display: block; width: 120px; height: 30px; margin-top: 50px; line-height: 1.7; text-align: center; border: 1px solid #222; }
+.main-slide-con .summary .funread_btn::after { display: inline-block; width: 6px; height: 6px; content: ""; margin-top: -4px; margin-left: 5px; vertical-align: middle; border-top: 1px solid #222; border-right: 1px solid #222; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(45deg); }
+
+/* thumbs */
+.main_banner_wrap .thumbs_con { position: relative; max-width: 1140px; margin: 0 auto; font-size: 0; line-height: 0; }
+.main_banner_wrap .gallery_thumbs { position: absolute; right: 0; bottom: 10px; width: 580px; padding: 25px 0; overflow: hidden; font-size: 0; line-height: 0; }
+.main_banner_wrap .gallery_thumbs .swiper-slide > span { position: relative; height: 10rem; display: block; display: -webkit-box; cursor: pointer; font-size: 0; line-height: 0; }
+.main_banner_wrap .gallery_thumbs .swiper-slide > span > img { width: 99.999%; max-width: 80px; position: absolute; bottom: 0; right: 0; box-sizing: border-box; vertical-align: bottom; display: block; display: -webkit-box; border-radius: 5px; }
+.main_banner_wrap .gallery_thumbs .swiper-slide.swiper-slide-active img { border: 5px solid #ff9154; background-color: #ff9154; }
+.main_banner_wrap
+ .gallery_thumbs
+ .swiper-slide-thumb-active.swiper-slide-visible { -webkit-transition: all 0.35s linear; -moz-transition: all 0.35s linear; -o-transition: all 0.35s linear; transition: all 0.35s linear; -ms-transition: all 0.35s linear; -webkit-transform: translateY(-10px); -moz-transform: translateY(-10px); -ms-transform: translateY(-10px); -o-transform: translateY(-10px); transform: translateY(-10px); }
+.main_banner_wrap
+ .gallery_thumbs
+ .swiper-slide-thumb-active.swiper-slide-visible:not(.swiper-slide-duplicate):not(.swiper-slide-duplicate-prev):not(.swiper-slide-duplicate-active) { -webkit-transition: all 0.35s linear; -moz-transition: all 0.35s linear; -o-transition: all 0.35s linear; transition: all 0.35s linear; -ms-transition: all 0.35s linear; -webkit-transform: translateY(-10px); -moz-transform: translateY(-10px); -ms-transform: translateY(-10px); -o-transform: translateY(-10px); transform: translateY(-10px); }
+.thumbs_con:before { content: ""; display: block; display: -webkit-box; position: absolute; bottom: 215px; right: 0; clear: both; width: 300px; height: 190px; background: url(../images/funreading/banner/funpick_img.png) 90% top no-repeat; z-index: 1; }
+
+/* ranking, search */
+.recommend_wrap { width: 100%; height: 170px; background-color: #ff9154; z-index: 1000; }
+.recommend_wrap .top_container { display: -ms-flexbox; display: flex; flex-wrap: nowrap; padding-top: 27px; }
+.book_topten { position: relative; width: 40%; display: -ms-flexbox; display: flex; flex-wrap: nowrap; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; height: 47px; }
+.book_topten > p.topten_txt { margin-right: 15px; color: #fff; font-size: 20px; font-weight: 500; line-height: 47px; white-space: nowrap; letter-spacing: -0.5px; }
+.book_topten .m_topten_txt { display: none; }
+.book_topten .swiper-container.topten { display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column; width: 210px; height: 33px; border-radius: 100px; border: 1px solid #fff; padding: 0px 10px; box-sizing: content-box; overflow: hidden; margin: 7px 0 0 0; }
+.book_topten .topten .swiper-slide { height: 33px !important; }
+.book_topten .swiper-slide a { display: block; display: -webkit-box; max-width: 230px; flex-wrap: nowrap; padding: 5px 0; line-height: 1.4; }
+.book_topten .swiper-slide .ico_rank { display: inline-block; width: 45px; color: #ff9154; background-color: #fff; border-radius: 50px; padding: 1px 5px; line-height: 1.4; vertical-align: middle; text-align: center; font-size: 13px; font-weight: 400; letter-spacing: -0.5px; }
+.book_topten .swiper-slide .book_title { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: inline-block; line-height: 1.5; width: 125px; vertical-align: bottom; color: #fff; font-size: 0.8rem; font-weight: 300; margin-left: 5px; letter-spacing: -0.5px; }
+.book_topten .ico_arrow { position: absolute; top: 0; right: 0; width: 40px; height: 37px; text-align: center; z-index: 10; }
+.book_topten .topten.list_open .ico_arrow { pointer-events: none; }
+.book_topten .ico_arrow::before { display: inline-block; width: 7px; height: 7px; content: ""; margin-top: 10px; vertical-align: middle; border-top: 2px solid #fff; border-left: 2px solid #fff; -webkit-transform: rotate(-135deg); -moz-transform: rotate(-135deg); -ms-transform: rotate(-135deg); -o-transform: rotate(-135deg); transform: rotate(-135deg); }
+.book_topten .m_ico_arrow { display: none; }
+.book_topten .swiper-container.topten.list_open { display: block; display: -webkit-box; height: 375px; width: 230px; padding: 5px 0 0 0; transition: 0.01s; z-index: 100; background-color: #fff; border-radius: 0; -webkit-box-shadow: 7px 7px 30px rgba(0, 0, 0, 0.08); -moz-box-shadow: 7px 7px 30px rgba(0, 0, 0, 0.08); box-shadow: 7px 7px 30px rgba(0, 0, 0, 0.08); }
+.book_topten .swiper-container.topten.list_open .swiper-wrapper { overflow: hidden; height: 368px; }
+.book_topten .topten.list_open .swiper-slide-duplicate-active { display: none; }
+.book_topten .topten.list_open .ico_rank { color: #ff9154; border: 1px solid #ff9154; background-color: transparent; box-sizing: border-box; }
+.book_topten .topten.list_open .swiper-slide a { max-width: 230px; padding: 5px 10px; }
+.book_topten .topten.list_open .book_title { display: inline-block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 150px; vertical-align: middle; color: #222; font-size: 13px; margin-left: 10px; line-height: 1.5; }
+.book_topten .topten.list_open a:hover .book_title { font-weight: 600; text-decoration: underline; transition: 0.1s ease; }
+.book_topten .topten .rank_list_close { display: none; }
+.book_topten .topten.list_open .rank_list_close { position: absolute; bottom: 0; display: block; width: 100%; border-top: 1px solid #ddd; color: #999; padding: 10px 0; text-align: center; line-height: 1.2; }
+.book_search { width: 60%; /* max-width: 570px; */
+ display: -ms-flexbox; display: flex; flex-wrap: nowrap; -ms-flex-align: center; align-items: center; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
+.book_search > p { margin-right: 15px; color: #fff; font-size: 20px; font-weight: 500; line-height: 1.5; white-space: nowrap; letter-spacing: -0.5px; }
+.book_search .search_bar { position: relative; width: 378px; height: 47px; }
+.book_search .search_bar > input { display: block; z-index: 10; width: 308px; max-width: 100%; height: 22px; font-size: 18px; padding: 12.5px 42px 12.5px 23px; font-weight: 400; letter-spacing: -0.5px; color: #1e1e23; border: 0; outline: transparent; border-radius: 100px; background-color: #fff; -webkit-appearance: none; text-overflow: ellipsis; -webkit-box-sizing: content-box; box-sizing: content-box; }
+.book_search .search_bar .search_btn { position: absolute; top: 2px; right: 2px; background: url(../images/funreading/icon/book_search_icon.png) no-repeat 0
+ 50%; background-size: 30px; }
+.book_search .search_bar .search_btn > .bt.ico { margin-right: 8px; }
+
+/* ==========================================================================
+ category TAB
+ ========================================================================== */
+.tab_wrap { display: block; width: 100%; max-width: 980px; margin: -70px auto 20px; background-color: #fff; border-radius: 5px; -webkit-box-shadow: 7px 7px 40px rgba(0, 0, 0, 0.08); -moz-box-shadow: 7px 7px 40px rgba(0, 0, 0, 0.08); box-shadow: 7px 7px 40px rgba(0, 0, 0, 0.08); }
+.tab_wrap ul { display: -ms-flexbox; display: flex; padding: 30px 45px; }
+.tab_wrap ul li { -ms-flex-align: center; align-items: center; display: -ms-flexbox; display: flex; -ms-flex: 1; flex: 1; }
+.tab_wrap ul li a { width: 60px; -ms-flex-align: center; align-items: center; display: -ms-flexbox; display: flex; -ms-flex: 1; flex: 1; vertical-align: top; color: #464646; }
+.tab_wrap ul li a.all_category { background: url("../images/funreading/icon/category/all_ico.png") top center
+ no-repeat; }
+.tab_wrap ul li.on a.all_category { background: url("../images/funreading/icon/category/all_ico.png") bottom
+ center no-repeat; color: #f57d24; background-position-y: -102px; }
+.tab_wrap ul li a.series_category { background: url("../images/funreading/icon/category/series_ico.png") top
+ center no-repeat; }
+.tab_wrap ul li.on a.series_category { background: url("../images/funreading/icon/category/series_ico.png") bottom
+ center no-repeat; color: #f57d24; background-position-y: -102px; }
+.tab_wrap ul li a.novel_category { background: url("../images/funreading/icon/category/novel_ico.png") top center
+ no-repeat; }
+.tab_wrap ul li.on a.novel_category { background: url("../images/funreading/icon/category/novel_ico.png") bottom
+ center no-repeat; color: #f57d24; background-position-y: -102px; }
+.tab_wrap ul li a.nonfiction_category { background: url("../images/funreading/icon/category/nonfiction_ico.png") top
+ center no-repeat; }
+.tab_wrap ul li.on a.nonfiction_category { background: url("../images/funreading/icon/category/nonfiction_ico.png")
+ bottom center no-repeat; color: #f57d24; background-position-y: -102px; }
+.tab_wrap ul li a.phoenix_category { background: url("../images/funreading/icon/category/phoenix_ico.png") top
+ center no-repeat; }
+.tab_wrap ul li.on a.phoenix_category { background: url("../images/funreading/icon/category/phoenix_ico.png") bottom
+ center no-repeat; color: #f57d24; background-position-y: -102px; }
+.tab_wrap ul li a.cartoon_category { background: url("../images/funreading/icon/category/cartoon_ico.png") top
+ center no-repeat; }
+.tab_wrap ul li.on a.cartoon_category { background: url("../images/funreading/icon/category/cartoon_ico.png") bottom
+ center no-repeat; color: #f57d24; background-position-y: -102px; }
+.tab_wrap ul li span { position: relative; z-index: 1; margin: 44px auto 0; font-size: 18px; line-height: 1.4; text-align: center; }
+.tab_wrap ul li.on a > span::after { content: ""; position: absolute; left: 0; bottom: -5px; z-index: -1; width: 100%; height: 2px; border-radius: 1rem; background-color: #f57d24; }
+
+/* Series 시리즈 */
+.category_wrap { margin: 93px auto 0; width: 100%; max-width: 1140px; }
+.slide_seciton_05 .series_more_btn { margin: 50px auto 20px; }
+.category_wrap .title_container { display: -ms-flexbox; display: flex; flex-wrap: wrap; align-items: flex-end; margin-bottom: 40px; }
+.category_wrap .title_container .title { width: 70%; }
+.category_wrap .title_container .title p.main_tit { font-weight: 700; font-size: 30px; margin-bottom: 5px; line-height: 1.33; letter-spacing: -0.75px; color: #242424; }
+.category_wrap .title_container .title p.sub_tit { font-weight: 500; font-size: 26px; line-height: 1.33; color: #242424; letter-spacing: -1.3px; }
+.category_wrap .title_container .filter-box { width: 30% !important; }
+body.sub .filter-box .filter .order > div.on .bt { color: #ff6600; border-color: #ff6600; }
+body.sub .filter-box .filter .order > div.on:before { border: 1px solid #ff6600; border-top: 0; border-right: 0; }
+.category_wrap .slide_container .swiper-container { width: 100%; height: 340px; margin: 0 auto; }
+.category_wrap .slide_container .swiper-slide-container { text-align: center; font-size: 18px; background: #fff; height: 100%; max-width: 600px; margin: auto; display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center; }
+.category_wrap .slide_container .gallery-top-cont { height: 80%; width: 100%; }
+.category_wrap .slide_container .gallery-thumbs-cont { height: 20%; box-sizing: border-box; }
+.category_wrap .slide_container .gallery-thumbs-cont .swiper-slide { width: 125px; margin-right: 20px; height: 100%; opacity: 1; }
+.category_wrap .slide_container .gallery-thumbs-cont .swiper-slide-active { opacity: 1; }
+
+/* slider */
+.series_slide_wrap { max-width: 1140px; margin: 0 auto; overflow: hidden; position: relative; display: -webkit-flex; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.series_slide_wrap .series_info_thumbs { position: relative; max-width: 580px; overflow: hidden; padding-top: 8px; display: -webkit-flex; display: flex; margin-right: 50px; }
+.series_slide_wrap .swiper-container { max-width: 560px; height: 340px; }
+.series_slide_wrap .swiper-container .swiper-wrapper { -ms-flex-align: baseline; align-items: baseline; display: -ms-inline-flexbox; display: inline-flex; -ms-flex-wrap: nowrap; flex-wrap: nowrap; white-space: nowrap; }
+.series_slide_wrap .swiper-slide a { display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column; max-width: 125px; width: 100%; }
+.series_book_slider { width: 49%; max-width: 560px; padding-top: 8px; }
+.series_slide_wrap .thumb_book { -webkit-line-clamp: 2; height: 42px; font-weight: 400; font-size: 16px; line-height: 22px; margin: 15px 0; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; word-wrap: break-word; white-space: normal; cursor: pointer; }
+.series_slide_wrap .thumb_lv { color: #7e7e7e; font-size: 12px; background: transparent; overflow: hidden; padding: 2px; text-align: center; display: block; width: 40px; height: 20px; border: 1px solid #7e7e7e; border-radius: 20px; margin-bottom: 5px; }
+
+/* LEFT 썸네일 */
+.series_info_thumbs .book_thumbnail { position: relative; margin-right: 35px; max-width: 235px; max-height: 340px; width: 100%; height: 100%; }
+.series_info_thumbs .book_thumbnail a { max-width: 100%; max-height: 100%; display: block; display: -webkit-box; }
+.series_info_thumbs .book_thumbnail img { width: 100%; min-width: 235px; height: 100%; border-radius: 4px; }
+.series_info_thumbs .book_info { max-width: 250px; word-wrap: break-word; word-break: keep-all; }
+.series_info_thumbs .book_info h2 { display: inline; font-size: 26px; font-weight: 500; letter-spacing: -1.4px; text-align: left; line-height: 1.4; color: #222; max-height: 7.25rem; height: auto; }
+.series_info_thumbs .book_info .book_txt { font-size: 16px; font-weight: 400; line-height: 24px; letter-spacing: -0.8px; margin-top: 10px; color: #222; }
+.series_info_thumbs .book_info .book_count { font-size: 14px; font-weight: 300; letter-spacing: -0.35px; margin-top: 30px; color: #7e7e7e; line-height: 1.33; }
+.series_info_thumbs .book_info .series_btn { position: absolute; bottom: 5px; font-size: 14px; font-weight: 300; letter-spacing: -0.35px; color: #7e7e7e; line-height: 1.33; }
+.series_info_thumbs .series_btn a::after { display: inline-block; width: 6px; height: 6px; content: ""; margin-top: -3px; margin-left: 5px; vertical-align: middle; border-top: 1px solid #7e7e7e; border-right: 1px solid #7e7e7e; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(45deg); }
+.series_info_thumbs .book_thumbnail .ico.add { display: block; display: -webkit-box; position: absolute; width: 26px; height: 37px; margin-right: 8px; margin-top: -5px; top: 0; right: 0; text-indent: -9999em; background-size: contain; z-index: 1; background-position: 50%; background-repeat: no-repeat; background-image: url(../images/funreading/icon/bookshelf_ico.png); }
+.series_info_thumbs .book_thumbnail .ico.add.on { background-image: url(../images/funreading/icon/on_bookshelf_ico.png); }
+.main_banner_wrap .swiper-slide img { max-width: 240px; width: 100%; }
+.series_book_slider .swiper-slide img { max-width: 125px; width: 100%; border-radius: 5px; }
+.swiper-container .swiper-slide .books::after { content: ""; clear: both; display: block; display: -webkit-box; }
+.swiper-container .swiper-slide .book-info h3 { font-size: 15px; font-weight: 400; text-align: center; line-height: 1.33; opacity: 1; margin-top: 18px; color: #333; }
+.swiper-container .swiper-slide .book-info .desc,
+.swiper-container .swiper-slide .book-info .cont { display: none; }
+
+/* control */
+.series_book_slider .swiper-button-prev,
+.series_book_slider .swiper-button-next { display: inline-block; margin-top: 0; position: static; width: 38px; height: 38px; }
+.series_book_slider .control .swiper-button-prev.swiper-button-disabled,
+.series_book_slider .control .swiper-button-next.swiper-button-disabled { background: transparent; opacity: 1; }
+.series_book_slider .control .swiper-button-prev.swiper-button-disabled:before,
+.series_book_slider .control .swiper-button-next.swiper-button-disabled:before { opacity: 1; }
+.series_book_slider .control .swiper-button-prev:before { display: inline-block; top: 0; left: 0; width: 38px; height: 38px; background: url(https://www.ebse.co.kr/images/main/body_slide_left.png)
+ no-repeat left top; background-size: cover; content: ""; }
+.series_book_slider .control .swiper-button-prev.swiper-button-disabled:before { background: url(https://www.ebse.co.kr/images/main/body_slide_left.png)
+ no-repeat right top; background-size: cover; }
+.series_book_slider .control .swiper-button-next.swiper-button-disabled:before { background: url(https://www.ebse.co.kr/images/main/body_slide_right.png)
+ no-repeat right top; background-size: cover; }
+.series_book_slider .control .swiper-button-next:before { display: inline-block; top: 0; left: 0; width: 37px; height: 38px; background: url(https://www.ebse.co.kr/images/main/body_slide_right.png)
+ no-repeat -1px top; background-size: cover; content: ""; }
+.series_book_slider .control .progressbar { line-height: 45px; }
+.series_book_slider .control { z-index: 10; position: relative; width: 100%; height: 70px; left: auto; top: -45px; background: transparent; cursor: pointer; outline: none; font-size: 0; }
+.series_book_slider .control .count { display: none; }
+.series_book_slider .control > * { display: inline-block; vertical-align: baseline; position: relative; right: 0; }
+.series_book_slider .control .progressbar { width: calc(100% - 101px); height: 2px; background: rgba(0, 0, 0, 0.1); position: relative; margin-right: 25px; }
+.series_book_slider .control .progressbar .swiper-pagination-progressbar-fill { background: #000; }
+.series_book_slider .book-sl .swiper-slide .books img { max-width: 100%; }
+
+/* 전체보기 */
+.series_more_btn { display: flex; justify-content: center; align-items: center; margin: 50px auto 100px; cursor: pointer; background: #fff; border: 1px solid #7e7e7e; font-size: 16px; line-height: 18px; letter-spacing: -0.5px; color: #7e7e7e; text-align: center; top: 3px; right: 0; width: 140px; height: 40px; }
+.series_more_btn::after { width: 9px; height: 9px; content: ""; margin-top: -3px; margin-left: 10px; vertical-align: middle; border-top: 1px solid #7e7e7e; border-left: 1px solid #7e7e7e; -webkit-transform: rotate(-135deg); -moz-transform: rotate(-135deg); -ms-transform: rotate(-135deg); -o-transform: rotate(-135deg); transform: rotate(-135deg); }
+
+/* modal */
+.modal.modal-opened { opacity: 1; visibility: visible; transition-property: opacity, visibility; transition-duration: 400ms, 0s; }
+.modal { z-index: 1150; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; opacity: 0; visibility: hidden; transition-property: opacity, visibility; transition-duration: 400ms, 0s; overflow-y: scroll; }
+.modal_overlay { position: fixed; left: 0; top: 0; bottom: 0; right: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.45); transition: all 0.3s ease; }
+.modal_container { width: 100%; height: 100%; display: flex; -moz-justify-content: center; -ms-justify-content: center; justify-content: center; -ms-flex-pack: center; -moz-align-items: center; -ms-align-items: center; align-items: center; }
+.modal_body { position: relative; width: calc(100vw - 100px); max-width: 1140px; min-height: 188px; padding: 80px 20px 20px; background: #fff; border-radius: 6px; box-shadow: 0 5px 32px 0 rgba(15, 15, 15, 0.15); border: 1px solid #c7c7c7; }
+.modal_content { overflow-y: auto; padding-right: 4px; height: 80vh; max-height: 870px; }
+.modal_body .modal_tit { width: 90%; position: absolute; top: 16px; left: 35px; font-weight: 500; font-size: 26px; line-height: 1.23; color: #242424; letter-spacing: -1.3px; }
+.modal_container .btn-modal-close { position: absolute; top: 24px; right: 24px; width: 24px; height: 24px; background-size: 24px 20px; background-repeat: no-repeat; background-position: 100% 0%; background-image: url(../images/common/X_ico.svg); }
+.modal_content img { width: 100%; border-radius: 5px; }
+.bodyscroll { height: 100%; min-height: 100%; overflow: hidden; touch-action: none; }
+
+/* modal 컨텐츠 */
+.container_fluid { width: 100%; -ms-flex-align: baseline; align-items: baseline; display: -ms-inline-flexbox; display: inline-flex; }
+.container_fluid .fluid_thumb { width: 100%; margin: 0 0 10px 0; text-align: left; }
+.container_fluid .fluid_thumb a { display: block; display: -webkit-box; width: 100%; }
+.container_fluid .fluid_thumb li { display: inline-block; width: calc(16.8% - 0.5%); padding: 0 15px; overflow: hidden; text-align: left; -webkit-transition: all 0.3s; transition: all 0.3s; margin-bottom: 80px; }
+.container_fluid .fluid_thumb li .thumb_book { -webkit-line-clamp: 2; height: 40px; font-weight: 400; font-size: 16px; line-height: 22px; margin: 15px 0; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; word-wrap: break-word; white-space: normal; cursor: pointer; }
+.container_fluid .fluid_thumb li .thumb_lv { color: #7e7e7e; font-size: 12px; background: transparent; overflow: hidden; padding: 2px; text-align: center; display: block; width: 40px; height: 20px; border: 1px solid #7e7e7e; border-radius: 20px; margin-bottom: 5px; }
+.slide_seciton_05 { padding-bottom: 40px; }
+
+/* ==========================================================================
+ 전체도서 리스트
+========================================================================== */
+/* 단계별 tabs */
+.category_wrap .tabs { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: 52px auto 36px; }
+.category_wrap .tabs > li { -webkit-flex: 1; -ms-flex: 1; flex: 1; height: 48px; line-height: 2.5; text-align: center; color: #7e7e7e; border: 1px solid #7e7e7e; font-size: 18px; font-weight: 300; margin: 0 2px; cursor: pointer; }
+.category_wrap .tabs > li.on { color: #fff; background-color: #f57e25; border: 1px solid #f57e25; }
+.filter_wrap { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.filter_wrap .select_wrap { display: -webkit-flex; display: -ms-flexbox; display: flex; height: 37px; }
+.filter_wrap .select:first-child { display: none; }
+.filter_wrap .select label { position: relative; display: block; overflow: hidden; width: 100px; height: 37px; line-height: 1.8; text-align: center; color: #7e7e7e; font-size: 18px; font-weight: 300; border: 1px solid #7e7e7e; background-color: #fff; padding: 0px 20px 0 10px; }
+body.sub .filter_wrap .filter-box { margin: 0; width: auto; padding: 0; background: #fff; }
+body.sub .filter_wrap .filter-box .filter { margin: 0; background: #fff; }
+body.sub .content .page { padding: 20px 0 110px; }
+body.sub .content.library .page { padding-top: 100px; }
+body.sub .filter_wrap .filter-box .bt { height: 37px; line-height: 1; }
+
+/* 도서 리스트 */
+.category_wrap .book_list_wrap { -ms-flex-align: baseline; align-items: baseline; display: -ms-inline-flexbox; display: inline-flex; margin: 60px 0 0; width: 100%; }
+.category_wrap .book_list_wrap .book_list_thumb { margin: 0; margin-left: -33px; text-align: left; width: 150%; }
+.category_wrap .book_list_wrap .book_list_thumb li { display: inline-block; width: calc(16.8% - 0.4%); overflow: hidden; text-align: left; -webkit-transition: all 0.3s; transition: all 0.3s; padding: 0 0 60px 36px; }
+.category_wrap .book_list_wrap .book_list_thumb li a { position: relative; }
+.category_wrap .book_list_wrap .book_list_thumb li .new_badge { display: none; }
+.category_wrap .book_list_wrap .book_list_thumb li .new_badge.on { display: block; display: -webkit-box; position: absolute; width: 44px; height: 27px; bottom: 12px; left: -1px; text-indent: -9999em; background-size: contain; z-index: 1; background-position: 50%; background-repeat: no-repeat; background-image: url(../images/funreading/icon/book_new_ico.png); }
+.category_wrap .book_list_wrap .book_list_thumb a { display: block; display: -webkit-box; width: 100%; }
+.category_wrap .book_list_wrap .book_list_thumb a img { border-radius: 5px; }
+.category_wrap .book_list_wrap .book_list_thumb li:nth-child(6n) { padding-right: 0; }
+.category_wrap .book_list_wrap li .thumb_book { -webkit-line-clamp: 2; height: 46px; font-weight: 400; font-size: 16px; line-height: 22px; margin: 15px 0; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; word-wrap: break-word; white-space: normal; cursor: pointer; }
+.category_wrap .book_list_wrap .book_list_thumb li .thumb_lv { color: #7e7e7e; font-size: 12px; background: transparent; overflow: hidden; padding: 2px; text-align: center; display: block; width: 40px; height: 20px; border: 1px solid #7e7e7e; border-radius: 20px; margin-bottom: 5px; }
+.filter_wrap .filter_description { display: none; }
+
+/* ==========================================================================
+ 도서 상세
+ ========================================================================== */
+.detail_visual_wrap { margin: 0 auto; width: 100%; max-width: 100%; overflow: hidden; box-sizing: border-box; z-index: 0; background-color: #f5f5f5; }
+.detail_visual_wrap .inner { position: relative; display: -ms-flexbox; display: flex; height: auto; min-height: 480px; max-width: 1140px; margin: 0 auto; padding: 0 38px; }
+.detail_visual_wrap .inner .detail_thumbnail { width: 100%; max-width: 240px; height: auto; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; margin-top: 60px; }
+.detail_visual_wrap .inner .detail_thumbnail img { max-width: 100%; width: 100%; max-height: 100%; height: auto; }
+.detail_visual_wrap .inner .detail_description { padding: 60px 0; margin-left: 53px; width: 100%; }
+.detail_visual_wrap .inner .detail_btn { position: absolute; bottom: 60px; }
+.detail_description .level { display: inline-block; padding-bottom: 10px; font-weight: 400; font-size: 14px; line-height: 1.2; color: #222; letter-spacing: -0.35px; text-align: center; white-space: nowrap; }
+.detail_description .level .bar_g { margin: 0 12px; display: inline-block; width: 1px; height: 11px; background-color: #222; }
+.detail_description .tit_con .maintit { display: block; display: -webkit-box; max-width: 100%; }
+.detail_description .tit { text-decoration: none; border-bottom: 1px solid #222; padding-bottom: 1px; display: inline; font-size: 30px; line-height: 1.4; letter-spacing: -1px; font-weight: 600; color: #222; }
+.detail_description .bookmark_ico { display: inline-block; min-height: 31px; margin-top: 20px; padding-right: 25px; background-image: url(../images/funreading/icon/off_bookmark_detail.png); background-repeat: no-repeat; transform: translate(13px, -10px); background-size: 20px; text-indent: -9999em; }
+.detail_description .tit_con .maintit .bookmark_ico.on { background-image: url(../images/funreading/icon/on_bookmark_detail.png); }
+.detail_description .tit_con .subtit { display: block; display: -webkit-box; font-size: 22px; margin-top: 14px; line-height: 1.4; letter-spacing: -1px; font-weight: 500; max-width: 100%; color: #222; }
+.detail_description .sub_con { margin-top: 13px; }
+.detail_description .sub_con .txt { font-size: 18px; line-height: 1.2; letter-spacing: -0.45px; font-weight: 500; }
+.detail_description .sub_con .subtxt { font-size: 16px; line-height: 1.5; letter-spacing: -0.45px; margin-top: 10px; font-weight: 400; color: #222; white-space: normal; }
+.detail_description .learning_date { color: #7e7e7e; font-size: 14px; line-height: 1.2; letter-spacing: -0.35px; margin-top: 21px; font-weight: 400; }
+.detail_description .btn_wrap {display: -webkit-box; display: -ms-flexbox; display: flex; align-items: flex-end;}
+.detail_description .learn_btn {display: -webkit-box; display: -ms-flexbox; display: flex; margin-top: 17px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.detail_description .learning_info {display: -ms-flexbox; display: flex;-webkit-box-align: center; -ms-flex-align: center; align-items: center;color: #8790a1; font-size: 13px; line-height: 1.2;margin-left: 5px;margin-bottom: 4px;}
+.detail_description .learning_info:before {content: ""; display: inline-block; background-image: url(../images/funreading/icon/learning_info_pc.png); background-repeat: no-repeat; background-position: 50% 43%; min-width: 16px; min-height: 16px; background-size: 16px; padding: 2px; margin-right: 4px;}
+.detail_description .ebook_btn,
+.detail_description .mp3_btn,
+.detail_description .learning_btn { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-right: 8px; letter-spacing: -0.35px; font-size: 13px; width: 98px; height: 31px; text-align: center; border: 1px solid #222; }
+.detail_description .ebook_btn::before,
+.detail_description .mp3_btn::before,
+.detail_description .learning_btn::before { background-image: url(../images/funreading/icon/ico_pc_book-detail.png); background-repeat: no-repeat; background-size: 300px 56px; }
+.detail_description .ebook_btn::before { display: inline-block; width: 17px; height: 18px; background-position: -35px -20px; background-repeat: no-repeat; vertical-align: top; content: ""; display: block; }
+.detail_description .mp3_btn::before { display: inline-block; width: 18px; height: 18px; background-position: -90px -20px; background-repeat: no-repeat; vertical-align: top; content: ""; display: block; }
+.detail_description .learning_btn::before { display: inline-block; width: 18px; height: 19px; background-position: -258px -20px; background-repeat: no-repeat; vertical-align: top; content: ""; display: block; }
+.detail_visual_wrap .bt.ico.share { position: absolute; right: 20px; top: 40px; background-image: url(../images/funreading/icon/funreading_share_pc.png); border: 1px solid #222; background-size: 13px; background-color: transparent; border-radius: 40px; width: 36px; height: 35px; margin: 2px; }
+section.eggfun .bt.ico.share.ks { background-image: url(../images/funreading/icon/share_ks.png); }
+section.eggfun .bt.ico.share.fb { background-image: url(../images/funreading/icon/share_fb.png); }
+section.eggfun .bt.ico.share.bn { background-image: url(../images/funreading/icon/share_bn.png); }
+section.eggfun .bt.ico.share.tw { background-image: url(../images/funreading/icon/share_tw.png); }
+section.eggfun .bt.ico.share.nb { background-image: url(../images/funreading/icon/share_nb.png); }
+.related_wrap .title,
+.vod_wrap .title,
+.fun_review_title .review_tit { font-weight: 600; font-size: 24px; text-align: left; line-height: 1.33; color: #242424; letter-spacing: -1.3px; margin: 28px 0 35px; }
+.related_wrap > .inner,
+.vod_wrap > .inner,
+.fun_review_board > .inner { position: relative; max-width: 1140px; padding: 0 20px; }
+.related_wrap > .inner,
+.fun_review_board > .inner { padding: 40px 20px 70px 20px; }
+.related_wrap .book_list_wrap { width: 100%; -ms-flex-align: baseline; align-items: baseline; display: -ms-inline-flexbox; display: inline-flex; }
+.related_wrap .book_list_wrap .control { display: none; }
+.related_wrap .book_list_wrap .swiper-wrapper { -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; display: -ms-inline-flexbox; display: inline-flex; -ms-flex-wrap: nowrap; flex-wrap: nowrap; white-space: nowrap; }
+.related_wrap .swiper-slide { display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column; width: 125px; width: 100%; }
+.related_wrap .swiper-container { overflow: visible; }
+.related_wrap .book_list_wrap { margin-left: -26px; }
+.related_wrap .book_list_wrap .swiper-slide { width: 100%; margin: 0; text-align: left; display: inline-block; width: calc(16.6% + 0.45%); overflow: hidden; text-align: left; -webkit-transition: all 0.3s; transition: all 0.3s; padding: 0 0 0 26px; }
+.related_wrap .book_list_wrap .swiper-slide:last-child { padding-right: 0; }
+.related_wrap .book_list_wrap .swiper-slide a { position: relative; display: block; width: 100%; }
+.related_wrap .book_list_wrap .new_badge.on { display: block; position: absolute; width: 44px; height: 27px; bottom: 12px; left: -1px; text-indent: -9999em; background-size: contain; z-index: 1; background-position: 50%; background-repeat: no-repeat; background-image: url(../images/funreading/icon/book_new_ico.png); }
+.related_wrap .book_list_wrap a img { border-radius: 5px; }
+.related_wrap .book_list_wrap .thumb_book { -webkit-line-clamp: 2; height: 43px; font-weight: 400; font-size: 16px; line-height: 22px; margin: 15px 0; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; word-wrap: break-word; white-space: normal; cursor: pointer; }
+.related_wrap .book_list_wrap .thumb_lv { color: #7e7e7e; font-size: 12px; background: transparent; overflow: hidden; padding: 2px; text-align: center; display: block; width: 40px; height: 20px; border: 1px solid #7e7e7e; border-radius: 20px; margin-bottom: 5px; }
+
+/* control */
+.vod_wrap .swiper-button-prev,
+.vod_wrap .swiper-button-next { display: inline-block; margin-top: 0; position: static; width: 38px; height: 38px; }
+.vod_wrap .sl-nav .swiper-button-prev.swiper-button-disabled,
+.vod_wrap .sl-nav .swiper-button-next.swiper-button-disabled { background: transparent; opacity: 1; }
+.vod_wrap .sl-nav .swiper-button-prev.swiper-button-disabled:before,
+.vod_wrap .sl-nav .swiper-button-next.swiper-button-disabled:before { opacity: 1; }
+.vod_wrap .sl-nav .swiper-button-prev:before { display: inline-block; top: 0; left: 0; width: 38px; height: 38px; background: url(https://www.ebse.co.kr/images/main/body_slide_left.png)
+ no-repeat left top; background-size: cover; content: ""; }
+.vod_wrap .sl-nav .swiper-button-prev.swiper-button-disabled:before { background: url(https://www.ebse.co.kr/images/main/body_slide_left.png)
+ no-repeat right top; background-size: cover; }
+.vod_wrap .sl-nav .swiper-button-next.swiper-button-disabled:before { background: url(https://www.ebse.co.kr/images/main/body_slide_right.png)
+ no-repeat right top; background-size: cover; }
+.vod_wrap .sl-nav .swiper-button-next:before { display: inline-block; top: 0; left: 0; width: 37px; height: 38px; background: url(https://www.ebse.co.kr/images/main/body_slide_right.png)
+ no-repeat -1px top; background-size: cover; content: ""; }
+.vod_wrap .sl-nav { background: transparent; cursor: pointer; outline: none; position: absolute; top: 0; right: 20px; width: 76px; font-size: 0; }
+.vod_wrap .swiper-slide { float: left; overflow: visible; }
+.vod_wrap .swiper-slide a { -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; }
+.vod_wrap .swiper-slide:hover a { box-shadow: 1px 5px 12px rgba(103, 98, 98, 0.2); }
+.vod_wrap .swiper-slide:before { display: none; }
+.vod_wrap .swiper-slide img { margin-bottom: 0; border-radius: 0px; }
+.vod_wrap .swiper-slide .txt { overflow: hidden; padding: 18px 10px; background: #fff; }
+.vod_wrap .swiper-slide .tit { height: 48px; margin: 0; font-size: 19px; font-weight: 500; letter-spacing: -0.05em; line-height: 1.35; -webkit-line-clamp: 2; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; word-wrap: break-word; white-space: normal; cursor: pointer; }
+.vod_wrap .swiper-slide .cate { float: right; display: block; vertical-align: top; font-size: 14px; color: #afaaaa; }
+.vod_wrap .swiper-slide .cate i { display: inline-block; font-weight: 300; }
+.vod_wrap .swiper-slide .class { width: 100%; height: 24px; margin: 12px 0 15px 0; box-sizing: border-box; font-weight: 350; font-size: 16px; line-height: 1.5; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.vod_wrap .swiper-slide .hit { float: left; overflow: hidden; font-size: 12px; }
+.vod_wrap .swiper-slide .hit i { display: inline-block; padding-left: 20px; font-size: 16px; font-weight: 300; height: 16px; line-height: 15px; }
+.cate i + i { position: relative; padding-left: 5px; margin-left: 5px; }
+.cate i + i:before { content: ""; position: absolute; left: 0; top: 50%; margin-top: -4px; display: block; overflow: hidden; width: 1px; height: 9px; background-color: #d0d0d0; }
+.vod_wrap .swiper-slide .hit i.play { margin-right: 10px; background: url("https://www.ebse.co.kr/images/main/ico_card_01.png")
+ no-repeat left center; background-size: 15px; }
+.vod_wrap .swiper-slide .hit i.scrap { background-position: 0 0; padding-left: 24px; background: url("https://www.ebse.co.kr/images/main/ico_card_02.png")
+ no-repeat left center; background-size: 19px; }
+.vod_wrap .swiper-slide .vod_card { position: relative; padding-top: 56%; }
+.vod_wrap .swiper-slide .vod_card img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+.vod_wrap .swiper-slide .vod_card span.time { position: absolute; bottom: 0; right: 0; width: 47px; line-height: 20px; font-weight: 300; color: #fff; text-align: center; background: rgba(0, 0, 0, 0.5); }
+
+/* ==========================================================================
+ 리뷰
+========================================================================== */
+.fun_review_board { margin: 30px auto 0; }
+.fun_review_board .fun_review_title { display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding-top: 15px; border-top: 1px solid #222222; padding-bottom: 15px; border-bottom: 1px solid #222222; }
+.fun_review_board .fun_review_title .review_tit { margin: 0; }
+.fun_review_board .fun_review_title .info_score { display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.fun_review_board .fun_review_title .bg_score { display: block; width: 174px; height: 32px; background: url(../images/funreading/icon/star_pc.png) no-repeat; }
+.fun_review_board .fun_review_title .bg_score > span { display: block; width: 174px; height: 32px; background: url(../images/funreading/icon/star_pc.png) no-repeat 0 -31px; }
+.fun_review_board .fun_review_title .star_score { font-weight: 500; font-size: 14px; text-align: left; line-height: 1.33; color: #222; margin-left: 15px; }
+.fun_review_board .fun_review_title .star_score strong { font-weight: 500; }
+.cmt_write_frm fieldset legend { display: none; }
+.cmt_write_frm .score_rating { margin-top: 47px; margin-bottom: 22px; }
+.cmt_write_frm .startRadio { display: inline-block; overflow: hidden; height: 30px; }
+.cmt_write_frm .startRadio .bt.ico { position: relative; display: inline-block; width: 30px; height: 30px; text-indent: -9999px; z-index: 1; }
+.cmt_write_frm .startRadio .bt.ico.star { background-image: url(../images/funreading/icon/rating_star_off.png); background-position: 50% 50%; background-repeat: no-repeat; background-size: 30px; }
+.cmt_write_frm .startRadio .bt.ico.star.on { background-image: url(../images/funreading/icon/rating_star_on.png); background-position: 50% 50%; background-repeat: no-repeat; background-size: 30px; }
+.cmt_write_frm .bind.ment { display: -ms-flexbox; display: flex; padding: 0; }
+.cmt_write_frm .bind.ment .input.textar_pd { width: 90%; height: 80px; padding: 1% 0 1% 1.5%; line-height: 1.4; font-size: 15px; }
+textarea.textar_pd::placeholder { padding-top: 18px; font-size: 15px; }
+.cmt_write_frm .bind.ment .bt { position: absolute; width: 10%; height: 80px; right: 0; top: 0; bottom: 0; margin-top: 0; }
+.cmt_write_frm .comment_wrap { display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column; transform: translateY(-40px); }
+.cmt_write_frm .cnt_con { display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; color: #969696; margin: 10px 0; font-size: 12px; line-height: 1.5; padding-top: 11px; }
+.cmt_write_frm .info.noti { font-size: 13px; background: url(https://www.ebse.co.kr/images/info_bg.png) no-repeat 0 13px; background-size: 16px; padding-left: 22px; color: #7e7e7e; font-weight: 400; letter-spacing: -0.33px; line-height: 1.5; padding-top: 11px; }
+.bt i.guide { display: block; width: 100px; height: 25px; line-height: 2.1; text-align: center; font-size: 12px; font-weight: 400; color: #fff; background: #65758f; border-radius: 20px; }
+.table_reply_userBoard li .reply_userBoardList .info_append { display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.table_reply_userBoard li .reply_userBoardList .info_append .user_info { display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.table_reply_userBoard li .reply_userBoardList .info_append .txt_time { font-size: 14px; color: #7e7e7e; letter-spacing: -0.33px; }
+.table_reply_userBoard li .reply_userBoardList .cmt_info { display: -ms-flexbox; display: flex; }
+.table_reply_userBoard li .reply_userBoardList .cmt_info .info_score { width: 30%; max-width: 155px; padding-left: 34px; }
+.table_reply_userBoard li .reply_userBoardList .cmt_info .bg_score { display: block; width: 90px; height: 16px; background: url(../images/funreading/icon/bg_star_pc.png) no-repeat; }
+.table_reply_userBoard li .reply_userBoardList .cmt_info .bg_score span { display: block; width: 90px; height: 16px; background: url(../images/funreading/icon/bg_star_pc.png) no-repeat 0 -16px; }
+.table_reply_userBoard li .reply_userBoardList .cmt_info .desc_cmt { width: 100%; padding: 2px 0 10px 0; color: #464646; line-height: 1.5; }
+.table_reply_userBoard li .reply_userBoardList .info_append i.sns { width: 155px; height: 40px; line-height: 40px; background-size: 20px; padding-left: 34px; }
+.table_reply_userBoard li .reply_userBoardList .info_append i.sns.f { background: url(../images/sns_f.png) no-repeat left center; }
+.table_reply_userBoard li .reply_userBoardList .info_append i.sns.k { background: url(../images/sns_k.png) no-repeat left center; }
+.table_reply_userBoard li .reply_userBoardList .info_append i.sns.ebs { background: url(../images/sns_ebs.png) no-repeat left center; }
+.table_reply_userBoard li .reply_userBoardList .info_append i.sns.a { background: url(../images/sns_a.png) no-repeat left center; }
+.table_reply_userBoard li .reply_userBoardList .info_append i.sns.n { background: url(../images/sns_n.png) no-repeat left center; }
+.table_reply_userBoard li .reply_userBoardList .info_append .rublDel { display: inline-block; height: 22px; line-height: 20px; padding: 0 10px 0 10px; text-align: center; font-size: 12px; color: #fff; font-weight: 300; border: 1px solid #cbcbcb; border-radius: 50px; background: #cccccc; vertical-align: middle; }
+.table_reply_userBoard li .reply_userBoardList .info_append .rublRe { display: inline-block; height: 22px; line-height: 20px; padding: 0 10px 0 10px; text-align: center; font-size: 12px; font-weight: 300; border: 1px solid #cbcbcb; border-radius: 50px; background: #fff; vertical-align: middle; }
+.table_reply_userBoard li .reply_userBoardList .info_append .rublRe:hover { border: 1px solid #ff6600; background: #ff6600; color: #fff; }
+.table_reply_userBoard li .reply_userBoardList .info_append .rublDel:hover { border: 1px solid #9e9e9e; background: #9e9e9e; color: #fff; }
+.table_reply_userBoard li .reply_userBoardList .info_append .rublCon { display: inline-block; height: 22px; line-height: 20px; padding: 0 10px 0 10px; text-align: center; font-size: 12px; font-weight: 300; color: #f2f2f2; border-radius: 50px; border: 1px solid #9e9e9e; background: #9e9e9e; vertical-align: middle; pointer-events: none; }
+body.sub .fun_review_board .page { padding: 20px 0 20px; }
+
+/* 하단 플로팅 배너 */
+.sticky { width: 100%; height: 140px; background-color: #f5f5f5; border-top: 1px solid #222; z-index: 100; bottom: 0; left: 0; right: 0; transition: all ease-in-out 0.5s; }
+.sticky .bottom_btn_wrap { display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: 0 auto; max-width: 1140px; padding: 40px 40px; }
+.sticky .bottom_btn_wrap .subtit { font-weight: 500; font-size: 22px; text-align: left; line-height: 1.33; color: #222; letter-spacing: -0.5px; }
+.sticky .bottom_btn_wrap .subtxt { font-weight: 400; font-size: 18px; text-align: left; line-height: 1.33; color: #222; letter-spacing: -0.5px; margin-top: 10px; }
+.sticky .bottom_btn_wrap .subtxt .emph_sign { color: #f57e25; font-weight: 600; }
+.sticky .bottom_btn_wrap .btn_wrap { display: -ms-flexbox; display: flex; }
+.sticky .bottom_btn_wrap .ebook_btn,
+.sticky .bottom_btn_wrap .mp3_btn,
+.sticky .bottom_btn_wrap .bookmark_btn,
+.sticky .bottom_btn_wrap .learning_btn { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-left: 8px; letter-spacing: -0.35px; font-size: 13px; width: 98px; height: 31px; text-align: center; border: 1px solid #222; }
+.sticky .bottom_btn_wrap .ebook_btn::before,
+.sticky .bottom_btn_wrap .mp3_btn::before,
+.sticky .bottom_btn_wrap .bookmark_btn::before,
+.sticky .bottom_btn_wrap .learning_btn::before { background-image: url(../images/funreading/icon/ico_pc_book-detail.png); background-repeat: no-repeat; background-size: 300px 56px; }
+.sticky .bottom_btn_wrap .ebook_btn::before { display: inline-block; width: 17px; height: 18px; background-position: -35px -20px; background-repeat: no-repeat; vertical-align: top; content: ""; display: block; }
+.sticky .bottom_btn_wrap .mp3_btn::before { display: inline-block; width: 18px; height: 18px; background-position: -90px -20px; background-repeat: no-repeat; vertical-align: top; content: ""; display: block; }
+.sticky .bottom_btn_wrap .bookmark_btn::before { display: inline-block; width: 17px; height: 19px; background-position: -146px -20px; background-repeat: no-repeat; vertical-align: top; content: ""; display: block; }
+.sticky .bottom_btn_wrap .bookmark_btn.on::before { /* background-image: url(../images/funreading/icon/on_bookmark_img.png); */
+ display: inline-block; width: 17px; height: 20px; background-position: -201px -20px; background-repeat: no-repeat; vertical-align: top; content: ""; display: block; }
+.sticky .bottom_btn_wrap .learning_btn::before { display: inline-block; width: 18px; height: 20px; background-position: -258px -20px; background-repeat: no-repeat; vertical-align: top; content: ""; display: block; }
+/* ==========================================================================
+ 오늘의 펀리딩
+ ========================================================================== */
+.archive_wrap { margin: 84px auto 80px; width: 100%; max-width: 1140px; }
+.archive_wrap .title_container { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin: 0 22px; padding-bottom: 16px; border-bottom: 1px solid #222; }
+.archive_wrap .title_container .main_tit { font-weight: 700; font-size: 30px; line-height: 1.33; letter-spacing: -0.75px; color: #222222; }
+.archive_wrap .select_wrap { display: -webkit-flex; display: -ms-flexbox; display: flex; height: 40px; }
+.archive_wrap .select_wrap .select { margin-left: -1px; width: 95px; }
+.archive_wrap .select_wrap label { text-align: center; }
+.archive_wrap .select_wrap .bt.txt.s.bg { width: 100px; margin-left: 10px; }
+.archive_list { margin-top: 40px; }
+.archive_list li { padding: 60px 0; border-bottom: 1px solid #e5e5e5; }
+.archive_list li .archive_list_wrap { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 0 90px; }
+.archive_list .archive_thumb { position: relative; max-width: 190px; max-height: 292px; width: 100%; height: 100%; }
+.archive_list .archive_thumb a { max-width: 100%; max-height: 100%; display: block; display: -webkit-box; }
+.archive_list .archive_thumb img { border-radius: 5px; }
+.archive_list .archive_thumb .ico.add { position: absolute; top: -3px; right: 0; display: block; display: -webkit-box; width: 28px; height: 47px; margin-right: 10px; margin-top: -5px; text-indent: -9999em; background-size: contain; z-index: 1; background-position: 50%; background-repeat: no-repeat; background-image: url(../images/funreading/icon/off_bookmark_archive.png); }
+.archive_list .archive_thumb .ico.add.on { background-image: url(../images/funreading/icon/on_bookmark_archive.png); }
+.archive_list .archive_con { margin-left: 92px; width: 680px; }
+.archive_list .info_wrap { display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin-bottom: 20px; }
+.archive_list .info_wrap .tag { display: -ms-flexbox; display: flex; }
+.archive_list .info_wrap .lv,
+.archive_list .info_wrap .genre { color: #7e7e7e; font-size: 14px; letter-spacing: -0.35px; background: transparent; overflow: hidden; padding: 4px 10px; text-align: center; display: block; height: 24px; border: 1px solid #7e7e7e; border-radius: 31px; margin-right: 8px; }
+.archive_list .info_wrap .date { color: #7e7e7e; font-size: 14px; }
+.archive_list .archive_list_wrap .subject_eng { color: #222; font-size: 25px; line-height: 1.4; font-weight: 500; letter-spacing: -0.25px; text-transform: uppercase; margin-bottom: 10px; }
+.archive_list .archive_list_wrap .subject_kor { letter-spacing: -1.012px; font-size: 22px; line-height: 1.4; font-weight: 500; margin-bottom: 25px; }
+.archive_list li .archive_list_wrap .book_info { color: #7e7e7e; font-weight: 400; font-size: 14px; letter-spacing: -0.07px; line-height: 1.4; margin-bottom: 25px; }
+.archive_list li .archive_list_wrap .line { margin: 0 15px; display: inline-block; width: 1px; height: 10px; background-color: #7e7e7e; }
+.archive_list li .archive_list_wrap .book_detail { -webkit-line-clamp: 2; height: 40px; font-weight: 400; font-size: 14px; line-height: 22px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; word-wrap: break-word; white-space: normal; color: #7e7e7e; }
+.my_book_wrap { height: 400px; background-color: #f8f8f8; }
+.my_book_wrap > #funForm > .inner { max-width: 1100px; }
+.my_book_wrap h2 { font-weight: 500; font-size: 30px; letter-spacing: -0.75px; text-align: left; color: #1f3153; padding: 70px 0 20px; }
+.my_book_wrap .my_study_con { display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; width: 100%; }
+.my_study_con .goal_modal { width: 50%; margin-right: 20px; }
+.my_study_con .study_goal { display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column; }
+.my_study_con .month_setting_con,
+.my_study_con .study_activities { display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 100%; max-width: 538px; height: 86px; background-color: #fff; border-radius: 10px; }
+.my_study_con #monthlyGoalView { width: 50%; margin-right: 20px; }
+.my_study_con #monthlyGoalView > .goal_modal { margin: 0; width: 100%; }
+.my_study_con .goal_challenge { width: 100%; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; height: 176px; background-color: #fff; border-radius: 10px; }
+.goal_challenge .volume_tit { text-align: center; padding: 0 15px; margin: 0 auto; font-size: 24px; font-weight: 400; line-height: 1.3; }
+.goal_challenge .challenge_btn { width: 186px; height: 42px; background-color: #f67e27; color: #fff; margin-top: 25px; font-size: 18px; letter-spacing: -0.8px; }
+.month_setting_con .volume_tit { font-size: 24px; font-weight: 500; color: #222; line-height: 1; padding-left: 30px; letter-spacing: -0.8px; }
+.month_setting_con .volume_con { display: -ms-flexbox; display: flex; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
+.month_setting_con .volume_number { display: -ms-flexbox; display: flex; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; font-size: 20px; line-height: 1.2; }
+.month_setting_con .volume_number .num_box { width: 100%; display: inline-block; max-width: 148px; height: 36px; text-align: center; line-height: 1.1; color: #f57e25; font-size: 22px; font-weight: 500; letter-spacing: -0.8px; border: 1px solid #f57e25; border-radius: 5px; padding: 5px 10px; margin-right: 5px; }
+.month_setting_con .reset_btn,
+.month_setting_con .start_btn { margin: 0 30px; width: 75px; min-width: 75px; max-width: 100%; height: 32px; background: #8790a2; border-radius: 50px; color: #fff; line-height: 1.1; font-size: 16px; letter-spacing: -0.3px; }
+.month_setting_con .goal_modal_close { display: none; }
+.my_study_con .study_goal ul { margin: 30px 0 0; padding: 0 20px; }
+.my_study_con .study_goal ul li { display: -ms-flexbox; display: flex; color: #7e7e7e; font-size: 14px; width: 100%; max-width: 500px; font-weight: 400; margin: 0 auto; line-height: 1.2; }
+.my_study_con .study_goal ul li:before { content: ""; display: inline-block; background: url(../images/funreading/icon/check_ico.png) no-repeat 0 0; min-width: 15px; min-height: 15px; margin-right: 5px; }
+.my_study_con .study_goal ul li:nth-child(2) { margin-top: 10px; }
+.my_study_con .study_activities { background: #fff; width: 50%; height: 176px; }
+.my_study_con .activities_con { width: 100%; }
+.study_activities .activities_con > p { font-size: 24px; font-weight: 500; color: #222; line-height: 1; padding-left: 40px; letter-spacing: -0.8px; margin-bottom: 10px; }
+.my_study_con .activities_box { display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.activities_box .single_chart { width: 96px; height: 96px; margin-left: 50px; }
+.circular_chart { fill: #fff; max-width: 100px; max-height: 100px; margin: 0 auto; }
+.circular_chart .circle_bg { fill: none; stroke: #ebebeb; stroke-width: 5.8; }
+.circular_chart .circle { fill: none; stroke: #f57e25; stroke-width: 5.8; stroke-linecap: round; animation: progress 1s ease-out forwards; }
+
+@keyframes progress {
+ 0% { stroke-dasharray: 0 100; }
+ }
+
+.circular_chart .percentage { fill: #666; font-size: 0.7em; text-anchor: middle; }
+.circular_chart .percentage .per { font-size: 0.6em; }
+.activities_box .num_detail_con { width: 312px; margin-right: 40px; position: relative; }
+.num_detail_con .today_reading,
+.num_detail_con .week_reading,
+.num_detail_con .month_reading { display: -ms-flexbox; display: flex; }
+.num_detail_con .reading_tit { display: flex; align-items: center; flex-shrink: 0; margin-right: 20px; font-size: 18px; line-height: 1.2; font-weight: 400; color: #717171; margin-bottom: 8px; letter-spacing: -0.8px; }
+.num_detail_con .today_reading .info_layer.info_open,
+.study_total .total_layer.info_open { display: flex; }
+.num_detail_con .today_reading .info_txt,
+.study_total .total_txt { position: relative; padding: 0 27px; line-height: 1.25; }
+.nodata_con .selected_txt,
+.mybook_edit .selected_txt { padding: 0 16px; line-height: 1.25; text-align: left; }
+/* 완독수 안내 */
+.num_detail_con .today_reading .reading_info { display: inline-block; width: 20px; height: 20px; margin-left: 5px; background: url(../images/funreading/icon/ico_info_16.png) 100% 50% no-repeat; }
+.num_detail_con .today_reading .info_layer { position: absolute; display: none; align-items: center; box-sizing: border-box; top: -115px; left: 30%; width: 210px; height: 100px; text-align: center; word-break: keep-all; font-size: 14px; color: #8790a2; background: #fff; border: 1px solid #ebebeb; border-radius: 5px 5px 5px 0px; box-shadow: 0px 4px 20px #0000001a; }
+.num_detail_con .today_reading .info_layer:after,
+.num_detail_con .today_reading .info_layer:before { content: ""; display: block; position: absolute; left: 0; bottom: -10px; width: 0; height: 0; border-style: solid; }
+.num_detail_con .today_reading .info_layer::before { border-color: #ebebeb transparent transparent #ebebeb; border-width: 6px; bottom: -12px; left: -1px; }
+.num_detail_con .today_reading .info_layer::after { border-color: #fff transparent transparent #fff; border-width: 5px; left: -0.2px; }
+.num_detail_con .today_reading .info_close { position: absolute; top: -15px; right: 6px; width: 16px; height: 16px; background: url(../images/funreading/icon/ico_close_16.png) 0% 0% no-repeat; }
+/* 도서 총 합계 안내 */
+.study_total .total_info { display: inline-block; width: 20px; height: 20px; background: url(../images/funreading/icon/ico_info_16.png) 50% 50% no-repeat; margin-right: 5px; }
+.study_total .total_layer { position: absolute; display: none; align-items: center; box-sizing: border-box; top: 42px; right: 0; width: 210px; height: 100px; text-align: center; word-break: keep-all; font-size: 14px; color: #8790a2; background: #fff; border: 1px solid #ebebeb; border-radius: 5px; box-shadow: 0px 4px 20px #0000001a; z-index: 2; }
+.study_total .total_layer:after,
+.study_total .total_layer:before,
+.study_total .selected_txt:before { content: ""; display: block; position: absolute; left: 0; top: -10px; width: 0; height: 0; border-style: solid; }
+.study_total .total_layer::before { border-color: transparent transparent #ebebeb #ebebeb; border-width: 6px; top: -12px; left: 109.2px; }
+.study_total .total_layer::after { border-color: transparent transparent #fff #fff; border-width: 5px; left: 110px; }
+.study_total .total_close { position: absolute; top: -24px; right: 6px; width: 16px; height: 16px; background: url(../images/funreading/icon/ico_close_16.png) 0% 0% no-repeat; }
+/* 담은 도서 안내 */
+.nodata_con .selected_info,
+.mybook_edit .selected_info { display: inline-block; width: 20px; height: 20px; background: url(../images/funreading/icon/ico_info_16.png) 50% 75% no-repeat; vertical-align: top; margin-left: 2px; }
+.mybook_edit .selected_info { background-position: 50% 50%; margin-left: 5px; }
+.nodata_con .selected_layer,
+.mybook_edit .selected_layer { position: absolute; display: none; align-items: center; box-sizing: border-box; top: -23px; left: 156px; width: 300px; height: 70px; text-align: center; word-break: keep-all; font-size: 14px; color: #8790a2; background: #fff; border: 1px solid #ebebeb; border-radius: 5px; box-shadow: 0px 4px 20px #0000001a; z-index: 2; }
+.mybook_edit .selected_layer { top: -23px; left: 174px; }
+.nodata_con .selected_layer:after,
+.nodata_con .selected_layer:before,
+.mybook_edit .selected_layer:after,
+.mybook_edit .selected_layer:before { content: ""; display: block; position: absolute; left: 0; top: -10px; width: 0; height: 0; border-style: solid; }
+.nodata_con .selected_layer::before,
+.mybook_edit .selected_layer:before { border-color: transparent #ebebeb #ebebeb transparent; border-width: 6px; left: -12px; top: 23.5px; }
+.nodata_con .selected_layer::after,
+.mybook_edit .selected_layer:after { border-color: transparent #fff #fff transparent; border-width: 5px; left: -10px; top: 24px; }
+.mybook_edit .selected_layer:after { top: 25px; }
+.nodata_con .selected_close,
+.mybook_edit .selected_close { position: absolute; top: 8px; right: 6px; width: 16px; height: 16px; background: url(../images/funreading/icon/ico_close_16.png) 0% 0% no-repeat; }
+
+.num_detail_con .month_reading .reading_tit { margin-bottom: 0; }
+.dotted-line { flex-grow: 1; white-space: nowrap; position: relative; overflow: hidden; }
+.dotted-line:after { content: ""; width: 100%; height: 1px; background: url("../images/funreading/icon/dot.png") repeat-x; color: #ccc; display: inline-block; }
+.num_detail_con .reading_count { display: -ms-flexbox; display: flex; flex-basis: content; margin-left: 20px; font-size: 18px; line-height: 1.2; color: #222; letter-spacing: -0.8px; }
+.num_detail_con .reading_count.zero { color: #717171; }
+.num_detail_con .highlight { font-size: 18px; line-height: 1.2; color: #f57e25; letter-spacing: -0.8px; }
+.divider { text-align: center; width: 1px; height: 18px; -webkit-transform: rotate(20deg); transform: rotate(20deg); background: #222; margin: 2.5px 10px; }
+.num_detail_con .reading_tot { font-size: 18px; line-height: 1.2; color: #222; letter-spacing: -0.8px; }
+.study_total { display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; margin-top: 15px; position: relative; }
+.study_total .study_tit { font-size: 18px; line-height: 1.2; color: #222; letter-spacing: -0.8px; font-weight: 400; display: -ms-flexbox; display: flex; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; margin-right: 5px; }
+.study_total .study_btn { width: 75px; height: 32px; background-color: #8790a2; border-radius: 20px; color: #fff; font-size: 16px; margin-left: 10px;}
+.study_total .study_tit:before { content: ""; display: inline-block; background: url(../images/funreading/icon/tot_ico_off.png) no-repeat 0 0; min-width: 20px; min-height: 20px; margin-right: 10px; }
+.study_total .study_tit.on:before { background: url(../images/funreading/icon/tot_ico_on.png) no-repeat 0 0; }
+.study_total .highlight { font-size: 28px; line-height: 0.96; color: #f57e25; font-weight: 500; letter-spacing: -0.8px; margin-right: 5px; }
+.study_total .study_tot {padding-left: 5px; font-size: 18px; line-height: 1.2; color: #222; letter-spacing: -0.8px; font-weight: 400; display: -ms-flexbox; display: flex; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
+
+/* 나의 서재 탭 */
+.library > .book_tabs { max-width: 100%; width: 1140px; display: block; margin: 53px auto 45px; text-align: center; }
+.library > .book_tabs > li { display: inline-block; width: 24%; max-width: calc(100% / 4); height: 48px; line-height: 2.5; text-align: center; color: #fff; background-color: #8790a2; font-size: 18px; font-weight: 300; padding: 0 2px; cursor: pointer; }
+.library > .book_tabs > li.on { color: #fff; background-color: #3d4c6b; }
+.library > .tab_wrap { margin-top: 0; }
+.my_book_tab { display: none; }
+
+/* 나의 서재 - 편집 버튼 */
+.mybook_edit { display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; margin-bottom: 30px; position: relative; }
+.mybook_edit .tot_book,
+.nodata_con .tot_book { display: inline-block; font-size: 18px; font-weight: 400; letter-spacing: -0.7px; line-height: 1.2; color: #222; }
+.mybook_edit .tot_book > .highlight { color: #f57e25; }
+.library .mybook_edit .mybook_list_edit,
+.library .mybook_edit .mybook_del_edit,
+.library .selected_book_del { display: block; cursor: pointer; background: #fff; border: 1px solid #7e7e7e; font-size: 16px; font-weight: 300; letter-spacing: -0.5px; color: #7e7e7e; text-align: center; width: 176px; height: 40px; line-height: 1.4; margin-left: auto; }
+.library .mybook_edit .mybook_list_edit:before,
+.library .mybook_edit .mybook_del_edit:before,
+.library .selected_book_del:before { content: ""; display: inline-block; min-width: 17px; min-height: 20px; margin-right: 6px; vertical-align: middle; }
+.library .mybook_edit .mybook_list_edit:before { background-image: url(../images/funreading/icon/edit_list_ico.png); background-repeat: no-repeat; background-position: 0 -0.5px; }
+.library .mybook_edit .mybook_del_edit:before { background: url(../images/funreading/icon/edit_del_ico.png); background-repeat: no-repeat; }
+.library .selected_book_del:before { background: url(../images/funreading/icon/book_del_ico.png); background-repeat: no-repeat; background-position: 0 0.5px; }
+.book_info .combo label { position: relative; display: block; overflow: hidden; width: 100%; height: auto; max-height: 7rem; line-height: 1.5; text-align: left; color: #000; font-size: 14px; padding-left: 0; }
+.book_info .combo .box_lo { width: 26px; height: 20px; display: inline-block; }
+.book_info .combo label:before { background: #fff url(../images/funreading/icon/mybook_check_off.png) no-repeat
+ center 50%; background-size: 18px; }
+.book_info .combo input[type="checkbox"]:checked + label:before { background-image: url(../images/funreading/icon/mybook_check_on.png); }
+.library .my_book_wrap .inner .setting_btn { display: none; }
+
+/* 나의서재 - 전체도서 */
+.content.library .category_wrap { margin: 65px auto 30px; }
+.content.library .category_wrap .book_list_wrap { margin: 10px 0 0; }
+.content.library .book_list_wrap .combo label { height: auto; padding-left: 0px; }
+.content.library .book_list_wrap .combo label:before { top: 16px; }
+.content.library
+ .book_list_wrap
+ .combo
+ input[type="checkbox"]:checked
+ + label:before { background-image: url(../images/funreading/icon/mybook_check_on.png); background-size: 18px; }
+.content.library .book_list_wrap .combo .box_lo { width: 27px; display: inline-block; height: 17px; }
+.content.library .book_list_wrap .book_list_thumb li > .combo,
+.content.library .series_info_thumbs .book_info > .combo { display: none; }
+.nodata_con { color: #717171; margin-bottom: 150px; position: relative; }
+.nodata_con > img { width: 60px; margin: 60px auto 30px; display: block; }
+.nodata_con > h2.nodata_tit { font-size: 24px; color: #717171; font-weight: 400; }
+.nodata_con p.nodata_txt { display: flex; justify-content: center; }
+.nodata_con p.nodata_txt span { font-size: 20px; text-align: center; line-height: 1.5; }
+.nodata_con .txt_box { max-width: 500px; width: 100%; margin: 40px auto 0; }
+.nodata_con > .nodata_btn { display: block; width: 300px; height: 60px; background-color: #f67e27; color: #fff; margin: 50px auto 0; font-size: 20px; letter-spacing: -0.8px; }
+.nodata_con .tot_book { color: #717171; }
+.num_box::-webkit-input-placeholder { font-size: 22px; }
+
+/* 검색 토글 */
+/* 0212 pc 라디오 수정 */
+.book_search > .radio { background: #ea6c26; border-radius: 50px; padding: 0 4px; margin-right: 10px; color: #fff; font-weight: bold; display: flex; justify-content: space-between; align-items: center; height: 40px; width: 160px; position: relative; transition: all 0.5s ease-in-out; }
+.book_search > .radio.off .bar { left: 78px; }
+.book_search > .radio.off label[for="on"] { color: #ffbe9b; font-weight: 400; }
+.book_search > .radio.off label[for="off"] { color: #f57d24; font-weight: 500; }
+.book_search > .radio .wrap { width: 100%; display: flex; height: 40px; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; align-items: center; border-radius: 50px; overflow: hidden; position: relative; }
+.book_search > .radio .wrap > span { display: flex; }
+.book_search > .radio input { opacity: 0; pointer-events: none; }
+.book_search > .radio label { position: relative; width: 74px; text-align: center; z-index: 1; cursor: pointer; font-size: 18px; transition: all 0.5s ease-in-out; user-select: none; }
+.book_search > .radio label[for="on"] { color: #f57d24; font-weight: 500; }
+.book_search > .radio label[for="off"] { color: #ffbe9b; font-weight: 400; }
+.book_search > .radio #on { position: absolute; left: 0; top: 50%; transform: translateY(-50%); }
+.book_search > .radio #off { position: absolute; right: 0; top: 50%; transform: translateY(-50%); }
+.book_search > .radio .bar { position: absolute; left: 0; top: 50%; transform: translateY(-50%); background: #fff; height: 32px; width: 74px; border-radius: 50px; transition: all 0.5s ease-in-out; }
+.m_label_arrow,
+.radio_close { display: none; }
+/* 0212 pc 라디오 수정 */
+
+.table_reply_userBoard .funClaim li { border-bottom: 0; padding: 0; }
+.table_reply_userBoard .funClaim .note { margin-bottom: 30px; }
+
+/* Media Queries for Responsive Design.
+----------------------------------------*/
+@media screen and (max-width: 1140px){
+ .recommend_wrap .top_container { padding: 27px 20px !important; }
+ .main-slide-con { padding: 40px 0; }
+ .main-slide-con > .photo { padding-left: 40px; }
+ .main-slide-con .summary_title { padding-top: 10px; }
+ .main-slide-con .summary_title .series_tit { font-size: 22px; max-width: 360px; min-width: 70%; }
+ .main-slide-con .summary_title .series_subtit { font-size: 18px; max-width: 360px; min-width: 70%; }
+ .main-slide-con .summary_description { margin-top: 10px; }
+ .main-slide-con .summary_description .book_tit { font-size: 14px; font-weight: 400; max-width: 360px; min-width: 70%; }
+ .main-slide-con .summary_description .level { font-size: 12px; font-weight: 400; letter-spacing: -0.5px; }
+ .main-slide-con .summary .funread_btn { font-size: 12px; width: 100px; height: auto; margin-top: 35px; padding: 2px 0; }
+ .main-slide-con .summary .funread_btn::after { width: 6px; height: 6px; content: ""; margin-top: -3px; }
+
+ /* 갤러리 작은 섬네일 */
+ .main_banner_wrap .gallery_thumbs { position: absolute; right: 60px; bottom: 0; max-width: 47vw; min-width: auto; width: 47vw; padding: 12px 0; overflow: hidden; font-size: 0; line-height: 0; }
+ .main_banner_wrap .gallery_thumbs .swiper-slide > span { height: 9vw; }
+ .main_banner_wrap .gallery_thumbs .swiper-slide.swiper-slide-active img { border: 3px solid #ff9154; }
+ .main-slide-con { height: 280px; }
+ .main-slide-con > .photo > a > img { max-width: 145px; }
+ .main-slide-con > .text { left: 210px; padding-top: 0; }
+ .main-slide-con::after { position: absolute; right: -47.5%; bottom: 0; width: 100%; height: 120px; background: rgba(255, 255, 255, 0.6); content: ""; display: block; display: -webkit-box; z-index: 2; }
+ .main-slide-con::before { position: absolute; right: 52.4%; bottom: 0; width: 60px; height: 150px; content: ""; display: block; display: -webkit-box; background: url("../images/funreading/banner/thumb_box_shadow.png")
+ no-repeat; z-index: 1; }
+ .thumbs_con:before { bottom: 65px; background: url("../images/funreading/banner/funpick_img.png") 80% 10%
+ no-repeat; background-size: 10vw; }
+ .main-slide-con .summary { margin-left: 20px; }
+ .main-slide-con > .photo { max-width: 240px; }
+ .book_topten > .topten_txt { display: none; }
+ .book_topten .m_topten_txt { display: block; display: -webkit-box; margin-right: 15px; color: #fff; font-size: 20px; font-weight: 500; line-height: 47px; white-space: nowrap; letter-spacing: -0.5px; }
+ .tab_wrap { border-radius: 0; margin-right: 20px; margin-left: 20px; width: auto; }
+ .mybook_edit { margin-right: 20px; margin-left: 20px; }
+ .main_banner_wrap .gallery_thumbs { max-width: 43vw; width: 43vw; padding: 10px 0 7px; }
+ .title_container,
+ .slide_seciton_01,
+ .slide_seciton_02,
+ .slide_seciton_03,
+ .slide_seciton_04,
+ .slide_seciton_05,
+ .category_wrap .tabs,
+ .category_wrap .filter_wrap { padding: 0 20px; }
+ .category_wrap .book_list_wrap { padding: 0 20px; }
+ .category_wrap .book_list_wrap .book_list_thumb { margin-left: -20px; }
+ .category_wrap .book_list_wrap .book_list_thumb li { width: calc(16.8% - 0.5%); padding: 0 0 50px 26px; }
+ .slide_seciton_05 { padding-bottom: 20px; }
+ body.sub .content .page { padding: 20px 0 70px; }
+ .related_wrap .book_list_wrap .book_list_thumb li { width: calc(16.8% - 0.6%); padding: 0 20px 0 0; }
+ .detail_visual_wrap .inner .detail_description { position: initial; }
+ .detail_visual_wrap .inner .detail_btn { position: relative; bottom: 0; }
+ .detail_visual_wrap .bt.ico.share { right: 15px; }
+
+ /* 나의 서재 */
+ .my_book_wrap > .inner { padding: 0 20px; }
+ .my_study_con .study_activities { margin-left: 10px; }
+ .month_setting_con .volume_tit { padding-left: 15px; padding-right: 15px; font-size: 18px; }
+ .month_setting_con .reset_btn,
+ .month_setting_con .start_btn { margin: 0 15px; }
+ .month_setting_con .reset_btn { margin: 0 15px; width: 70px; }
+ .month_setting_con .volume_number .num_box { width: 100%; flex: 1; min-width: auto; max-width: none; }
+ .activities_box .single_chart { width: 86px; height: 86px; margin-left: 18px; margin-right: 18px; }
+ .month_setting_con .volume_con { flex: 1; }
+ .month_setting_con .volume_number { flex: 1; font-size: 16px; }
+ .my_study_con .study_goal ul { margin: 20px 0 0; }
+ .num_detail_con .reading_tit { font-size: 16px; margin-right: 12px; }
+ .activities_box .num_detail_con { margin-right: 18px; width: 100%; flex: 1; }
+ .num_detail_con .reading_count { margin-left: 12px; font-size: 16px; }
+ .num_detail_con .reading_tot,
+ .num_detail_con .highlight { font-size: 16px; }
+ .study_activities .activities_con > p { font-size: 20px; padding-left: 15px; margin-bottom: 20px; }
+ .divider { height: 15px; margin: 2px 7px; }
+ .study_total .study_tit,
+ .study_total .study_tot { font-size: 16px; }
+ .study_total .highlight { font-size: 24px; }
+ .library .selected_book_del { margin-right: 20px; }
+ body.sub .content.library .page { padding-top: 40px; }
+ .nodata_con { padding: 0 20px; margin-bottom: 120px; }
+ .my_book_wrap > #funForm > .inner { padding-right: 20px; padding-left: 20px; }
+ .my_study_con .goal_modal { margin-right: 10px; }
+ .num_detail_con .today_reading .info_layer { left: 1%; }
+ .num_detail_con .today_reading .info_layer::before { left: 72px; }
+ .num_detail_con .today_reading .info_layer::after { left: 73px; }
+
+ .nodata_con .selected_layer { left: calc(156px + 2%); }
+
+ .detail_description .btn_wrap {flex-wrap: wrap;}
+ .detail_description .learning_info {margin-left: 0;padding-top:11px;font-size: 12px;}
+ .detail_description .learning_info:before {min-width: 14px; min-height: 14px; background-size: 14px;background-position: 50% 50%; padding: 1px;}
+ }
+
+@media screen and (max-width: 980px){
+ .main_banner_wrap .gallery_thumbs { padding: 15px 0; }
+ .main-slide-con::after { height: 120px; }
+ .book_search > p { display: none; }
+ .book_search .search_bar { width: 307px; }
+ .book_search .search_bar > input { max-width: 237px; }
+
+ /* series */
+ .category_wrap { margin: 50px auto 50px; }
+ .category_wrap .title_container { padding: 0 20px; -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; }
+ .category_wrap .title_container .title { width: 100%; }
+ .category_wrap .title_container .title p.main_tit { font-size: 26px; }
+ .category_wrap .title_container .title p.sub_tit { font-size: 22px; }
+ .category_wrap .title_container .filter-box { width: 100% !important; padding: 0; }
+ .series_slide_wrap { -webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column; width: 100%; }
+ .series_slide_wrap .series_info_thumbs { max-width: 1140px; width: 100%; overflow: hidden; margin: 0 auto; padding: 8px 20px 0; }
+ .series_info_thumbs .book_info { max-width: 450px; }
+ .series_info_thumbs .book_info h2 { width: 450px; }
+ .series_slide_wrap .swiper-container { max-width: 100%; height: auto; }
+ .series_slide_wrap .swiper-container .swiper-wrapper { -ms-flex-align: baseline; align-items: baseline; display: -ms-inline-flexbox; display: inline-flex; -ms-flex-wrap: nowrap; flex-wrap: nowrap; white-space: nowrap; }
+ .series_slide_wrap .swiper-slide a { display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column; max-width: 100%; width: 100%; }
+ .main_banner_wrap .swiper-slide img { max-width: 125px; width: 100%; }
+ .series_book_slider .swiper-slide img { width: inherit; max-width: 100%; min-height: 80px; display: block; display: -webkit-box; max-width: -moz-max-content; }
+ .series_book_slider { width: 100%; max-width: 100%; padding: 50px 20px 0 20px; }
+ .series_book_slider .control .count { display: block; display: -webkit-box; font-size: 16px; font-weight: 400; letter-spacing: -0.5px; position: absolute; left: 0; top: 5px; color: #7e7e7e; }
+ .series_book_slider .control { top: 20px; }
+
+ /* 모달 컨텐츠 */
+ .modal_body { width: calc(100vw - 35px); padding: 20px 20px 20px; }
+ .modal_body .modal_tit { width: 90%; height: auto; min-height: 45px; max-height: 94px; position: relative; top: 0; left: 20px; font-size: 22px; line-height: 1.25; overflow: hidden; padding-bottom: 15px; word-break: break-word; }
+ .container_fluid .fluid_thumb li { width: calc(33.3% - 0.5%); padding: 0 20px; }
+ .container_fluid .fluid_thumb li { margin-bottom: 40px; }
+ .title_container,
+ .slide_seciton_01,
+ .slide_seciton_02,
+ .slide_seciton_03,
+ .slide_seciton_04,
+ .slide_seciton_05 { padding: 0; }
+ .category_wrap .book_list_wrap .book_list_thumb li { width: calc(16.8% - 0.6%); padding: 0 0 30px 16px; }
+ .detail_description .level { font-size: 13px; }
+ .detail_description .tit { font-size: 22px; line-height: 1.6; }
+ .detail_description .bookmark_ico { padding-right: 36px; min-height: 35px; background-size: 18px; transform: translate(12px, -5px); }
+ .detail_description .tit_con .subtit { font-size: 18px; margin-top: 12px; }
+ .detail_description .sub_con { margin-top: 24px; }
+ .detail_description .sub_con .txt { font-size: 14px; }
+ .detail_description .sub_con .subtxt { font-size: 13px; }
+ .detail_description .learning_date { font-size: 12px; margin-top: 20px; }
+ .detail_visual_wrap .inner .detail_description { margin-left: 40px; padding: 49px 0; }
+ .detail_visual_wrap .inner .detail_thumbnail { min-width: 200px; margin-top: 40px; }
+ .detail_visual_wrap .inner { min-height: 420px; }
+ .detail_visual_wrap .bt.ico.share { top: 25px; }
+ .category_wrap .book_list_wrap .book_list_thumb { margin-left: -12px; }
+ .sticky .bottom_btn_wrap .subtit { font-size: 18px; }
+ .sticky .bottom_btn_wrap .subtxt { font-size: 15px; margin-top: 7px; }
+ .sticky .bottom_btn_wrap .btn_wrap { width: 50%; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
+
+ /* 오늘의 펀리딩 */
+ .archive_list { margin-top: 70px; }
+ .archive_list li .archive_list_wrap { width: 100%; padding: 0 50px; }
+ .archive_list .archive_thumb { width: 30%; }
+ .archive_list .archive_con { width: 70%; margin-left: 50px; }
+ .archive_list li .archive_list_wrap .line { margin: 0 10px; }
+ .my_study_con #monthlyGoalView { margin-right: 10px; }
+ .goal_challenge .volume_tit { font-size: 20px; }
+ .book_topten,
+ .book_search { width: 50%; }
+ /* 검색 토글 */
+ /* 0212 모바일 라디오 수정 */
+ .book_search > .radio { display: none; }
+ .recommend_wrap .top_container { position: relative; }
+ .book_search > .radio.radio_open { display: block; margin-right: 0; top: 100px; height: 136px; width: 100%; border-radius: 0; position: absolute; left: 0; right: 0; padding: 0; z-index: 100; background: #fff; transition: none; align-items: flex-start; }
+ .recommend_wrap .top_container.label_triangle::after { content: ""; position: absolute; bottom: 1px; right: 30%; background-color: transparent; border-bottom: 10px solid #fff; border-left: 10px solid transparent; border-right: 10px solid transparent; z-index: 100; }
+ .book_search > .radio.off .bar { display: none; }
+ .book_search > .radio.off label[for="on"] { color: #000; }
+ .book_search > .radio.off label[for="off"] { margin: 0; color: #000; }
+ .book_search > .radio .wrap { display: flex; flex-direction: column; height: 136px; top: 0; padding-top: 10px; border-radius: 0; justify-content: flex-start; align-items: center; transition: 0.01s; z-index: 100; border-radius: 0; -webkit-box-shadow: 7px 7px 30px rgb(0 0 0 / 8%); -moz-box-shadow: 7px 7px 30px rgba(0, 0, 0, 0.08); box-shadow: 7px 7px 30px rgba(0, 0, 0, 0.08); }
+ .book_search > .radio .wrap > span { height: 40px; }
+ .book_search > .radio label { display: flex; align-items: center; font-size: 16px; width: 90vw; justify-content: center; }
+ .book_search > .radio label[for="on"] { color: #000; }
+ .book_search > .radio label[for="off"] { color: #000; }
+ .book_search > .radio .bar { display: none; }
+ .book_search label:before { display: flex; flex-shrink: 0; content: ""; background-color: #dcdcdc; width: 24px; height: 24px; border-radius: 50%; transition: 0.25s ease; position: absolute; left: 0; box-shadow: inset 0 0 0 6.6px #dcdcdc; }
+ .book_search > .radio input:checked + label:before { background-color: #fff; box-shadow: inset 0 0 0 6.6px #ff9154; }
+ .book_search .radio_close { position: absolute; bottom: 0; left: 0; display: block; width: 100%; border-top: 1px solid #ddd; color: #999; padding: 10px 0; text-align: center; line-height: 1.2; font-weight: 400; }
+ .m_label_arrow { display: block; position: absolute; top: 0; left: 0; width: 25px; height: 48px; background: transparent; text-align: center; z-index: 10; }
+ .m_label_arrow:before { content: ""; position: absolute; top: 22px; left: 9px; border-bottom: 4px solid transparent; border-top: 5px solid #ff9154; border-left: 4px solid transparent; border-right: 4px solid transparent; }
+  /* 0212 모바일 라디오 수정 */
+ .num_detail_con .today_reading .info_layer { left: 5%; }
+ .table_reply_userBoard .funClaim .list.two li { width: 100%; }
+ .recommend_wrap .top_container { position: relative; }
+ .fun_review_board .recommend_wrap .top_container.label_triangle::after { content: ""; position: absolute; bottom: 1px; right: 30%; background-color: transparent; border-bottom: 10px solid #fff; border-left: 10px solid transparent; border-right: 10px solid transparent; z-index: 100; }
+ }
+
+/* Mobile visuals
+----------------------------------*/
+@media screen and (max-width: 740px){
+ .pc_hide { display: block !important; }
+ /* top 10, search */
+ .recommend_wrap { height: 77px; }
+ .recommend_wrap .top_container { position: relative; padding: 18px 16px !important; }
+ .book_topten { width: 30%; height: 41px; -webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column; }
+ .book_search { width: 70%; }
+ .book_topten .m_topten { position: relative; width: 110px; }
+ .book_topten .m_topten_txt { height: 41px; line-height: 41px; font-size: 14px; margin-right: 0; }
+ .book_topten .m_ico_arrow { display: block; position: absolute; top: 1px; right: 3px; width: 40px; height: 40px; text-align: center; z-index: 10; }
+ .book_topten .topten.list_open .m_ico_arrow { pointer-events: none; }
+ .book_topten .swiper-container.topten { margin-top: 18px; }
+ .book_topten .swiper-container.topten.list_open { position: absolute; top: 40px; height: 408px; width: 100vw; min-width: 100vw; margin-left: -16px; border-radius: 0; padding: 2px 0 0 0; }
+ .recommend_wrap .top_container.triangle::after { content: ""; position: absolute; bottom: 1px; left: 10%; background-color: transparent; border-bottom: 10px solid #fff; border-left: 10px solid transparent; border-right: 10px solid transparent; z-index: 100; }
+ .book_topten .swiper-container.topten.list_open .m_ico_arrow { -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+ .book_topten .m_ico_arrow::before { display: inline-block; width: 7px; height: 7px; content: ""; margin-top: 13px; vertical-align: middle; border-top: 2px solid #fff; border-left: 2px solid #fff; -webkit-transform: rotate(-135deg); -moz-transform: rotate(-135deg); -ms-transform: rotate(-135deg); -o-transform: rotate(-135deg); transform: rotate(-135deg); }
+ .book_topten .topten.list_open .book_title { width: 300px; max-width: 100%; }
+ .book_topten .topten .swiper-slide { display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; height: 36px !important; }
+ .book_topten .topten.list_open .swiper-slide a { max-width: 100%; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; }
+ .book_topten .swiper-container.topten.list_open .swiper-wrapper { height: 390px; }
+ .book_search .search_bar { width: auto; height: 41px; }
+ .book_search .search_bar > input { width: 188px; height: 41px; font-size: 14px; padding: 0 45px 0 25px; }
+ .book_search .search_bar .search_btn { top: 4px; background-size: 28px; }
+ .book_search .search_bar .search_btn .bt.ico { height: 28px; margin-right: 0; }
+ .book_topten .ico_arrow { width: 28px; height: 28px; }
+ .main_banner_wrap .swiper-container { height: 423px; }
+ .main_banner_wrap .gallery_top .swiper-slide { background: url("../images/funreading/banner/m_banner_bg.jpg") repeat bottom
+ left; background-size: contain; height: initial; }
+ .main_banner_wrap .thumbs_con .gallery_thumbs,
+ .main-slide-con::before,
+ .main-slide-con::after,
+ .thumbs_con:before,
+ button.fl_btn { display: none; }
+ .main-slide-con .summary { margin-left: 0; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-bottom: 42px; }
+ .main-slide-con .summary_title { padding-top: 0; }
+ .main-slide-con .summary_description { margin-top: 14px; }
+ .main-slide-con .summary_title .series_tit { overflow: hidden; text-align: center; -webkit-line-clamp: 2; -webkit-box-orient: vertical; text-overflow: ellipsis; word-break: break-all; display: block; display: -webkit-box; font-size: 15px; line-height: 1.9; letter-spacing: -1.125px; font-weight: 600; max-width: 100%; margin: 0 auto; color: #222; white-space: normal; }
+ .main-slide-con .summary_title .series_tit a { text-decoration: none; border-bottom: 1px solid #222; padding-bottom: 1px; }
+ .main-slide-con .summary_title .series_tit a::after { display: none; }
+ .main-slide-con .summary_title .series_subtit { margin: 12px auto 0; text-align: center; -webkit-line-clamp: 2; -webkit-box-orient: vertical; text-overflow: ellipsis; word-break: break-all; font-size: 14px; letter-spacing: -0.7px; max-width: 100%; font-weight: 500; white-space: normal; }
+ .main-slide-con .summary_description .book_tit { -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-break: break-all; display: block; display: -webkit-box; font-size: 12px; line-height: 1.5; letter-spacing: -0.25px; margin: 0 auto; font-weight: 400; color: #222; white-space: normal; text-align: center; }
+ .main-slide-con .summary_description .level { display: inline-block; margin-top: 0; font-size: 12px; font-weight: 400; letter-spacing: -0.6px; }
+ .main-slide-con .summary_description .level:before { position: relative; top: 1px; display: inline-block; width: 1px; height: 10px; line-height: 10px; margin: 0 10px; background-color: #898989; content: ""; }
+ .main-slide-con .summary .funread_btn { font-size: 12px; width: 91px; height: 22.5px; letter-spacing: -0.3px; padding: 0; margin: 16px auto 0; }
+ .main-slide-con .summary .funread_btn::after { width: 5px; height: 5px; content: ""; margin-top: -3.5px; }
+ .tab_wrap { margin: 0 auto 20px; -webkit-box-shadow: 1px 12px 17px rgb(0 0 0 / 5%); -moz-box-shadow: 1px 12px 17px rgba(0, 0, 0, 0.05); box-shadow: 1px 12px 17px rgb(0 0 0 / 5%); display: flex; display: -webkit-box; display: -moz-box; display: -ms-flexbox; overflow-x: scroll; -ms-overflow-style: none; overflow-scrolling: touch; -webkit-overflow-scrolling: touch; white-space: nowrap; }
+ .tab_wrap::-webkit-scrollbar { display: none; }
+ .tab_wrap.inner { padding: 0px !important; }
+ .tab_wrap .tabs { display: -webkit-inline-box; display: -webkit-inline-flex; display: inline-flex; min-width: 100%; -webkit-box-pack: justify; -webkit-justify-content: space-between; justify-content: space-between; vertical-align: top; padding: 0 10px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+ .tab_wrap ul li { padding: 18px; width: 120px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+ .tab_wrap ul li a { background-size: 30px !important; }
+ .tab_wrap ul li.on a { background-position-y: -81px !important; }
+ .tab_wrap ul li span { margin: 32px auto 0; font-size: 14px; }
+ .main-slide-con { height: 100%; max-height: 423px; -webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column; padding: 0 20px; }
+ .main-slide-con > .photo { position: relative; min-height: 147px; max-width: 97px; margin: 22px 0 8px; top: 0; left: 50%; transform: translate(-50%, 0); padding-left: 0; display: block; }
+ .main-slide-con > .text { position: inherit; text-align: center; left: 0; width: 100%; }
+ .main-slide-con > .text > li.title { margin-bottom: 35px; }
+ .main-slide-con > .text > li.title > h4.kor_tit { max-width: 100%; position: relative; display: inline-block; height: 100%; vertical-align: top; padding-bottom: 10px; }
+ .main-slide-con > .text > li.title > h4.kor_tit a,
+ .main-slide-con > .text > li.title > h4.eng_tit a { overflow: hidden; -webkit-line-clamp: 2; -webkit-box-orient: vertical; text-overflow: ellipsis; word-break: break-all; display: block; display: -webkit-box; font-size: 30px; line-height: 42px; max-width: 90%; margin: 0 auto; font-weight: 600; letter-spacing: -0.5px; max-height: 100px; padding: 1px 0; color: #232323; white-space: normal; }
+ .main-slide-con > .text > li.title > h4.eng_tit { font-size: 28px; font-weight: 600; max-width: 100%; }
+ .main-slide-con > .text .sub_info { display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+ .main-slide-con > .text p.book_tit { font-size: 24px; line-height: 1.5; }
+ .main-slide-con > .text .bar_g { width: 1px; height: 18px; margin: 9px 15px; background-color: #868686; }
+ .main-slide-con > .text p.step { font-size: 22px; line-height: 1.6; }
+ .main-slide-con .text li.more_btn { margin-top: 32px; margin-bottom: 110px; }
+ .main-slide-con .text li.more_btn > a { display: block; display: -webkit-box; width: 182px; height: 45px; font-size: 24px; line-height: 1.7; margin: 0 auto; text-align: center; border: 1px solid #222; }
+ .main-slide-con .text li.more_btn > a::after { display: inline-block; width: 10px; height: 10px; content: ""; margin-top: -4px; margin-left: 8px; vertical-align: middle; border-top: 1px solid #222; border-right: 1px solid #222; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(45deg); }
+ .main-slide-con > .photo > a > img { max-width: 97px; position: absolute; top: 50%; transform: translateY(-50%); }
+ .main-slide-con > .text > li.title > h4:first-child { margin-top: 0; }
+
+ /* Dots */
+ .main_banner_wrap .slick-dots { width: 100%; position: absolute; bottom: 17px; list-style: none; z-index: 10; }
+ .main_banner_wrap .slick-dots span { width: 10px; height: 10px; margin: 0 5px; }
+ .main_banner_wrap .slick-dots span.swiper-pagination-bullet-active { opacity: 1; background: #222; }
+
+ /* series */
+ .category_wrap { margin: 32px auto 32px; }
+ .category_wrap .title_container { padding: 0 17px; }
+ .category_wrap .title_container .title { width: 100%; }
+ .category_wrap .title_container .title p.main_tit { font-size: 24.5px; }
+ .category_wrap .title_container .title p.sub_tit { font-size: 20px; }
+ .category_wrap .title_container .filter-box { background: #fff; }
+ .category_wrap .title_container .filter-box .filter { margin-top: 0; margin-bottom: 30px; min-height: 31px; }
+ body.sub .filter_wrap .filter-box .filter .order .bt { width: 82px; height: 31px; padding: 0 20px 0 5px; line-height: 0.8; font-size: 14px; font-weight: 300; letter-spacing: -0.025em; background: #fff; }
+ body.sub .filter_wrap .filter-box .filter .order > div:before { right: 15px; width: 6px; height: 6px; }
+ .category_wrap .title_container { margin-bottom: 30px; }
+ .series_slide_wrap { -webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column; width: 100%; }
+ .series_slide_wrap .series_info_thumbs { padding: 0 17px; }
+ .series_info_thumbs .book_thumbnail { margin-right: 17px; padding-top: 5px; max-height: 100%; }
+ .series_info_thumbs .book_thumbnail .ico.add { margin-top: 0; }
+ .series_info_thumbs .book_thumbnail img { min-width: 100%; }
+ .series_info_thumbs .book_info h2 { font-size: 19px; line-height: 1.4; margin-top: 10px; max-height: 4.8rem; height: auto; display: inline-block; width: 200px; }
+ .series_info_thumbs .book_info .book_txt { font-size: 17px; line-height: 1.4; margin-top: 10px; max-width: 200px; }
+ .series_more_btn { margin: 0 auto; font-size: 13.5px; line-height: 18px; letter-spacing: -0.325px; width: 110px; height: 30px; }
+ .series_more_btn::after { width: 6px; height: 6px; margin-top: -3px; }
+ .book_count,
+ .control .sl-nav { display: none; }
+ .series_info_thumbs .book_info .series_btn { bottom: 20px; }
+ /* series slider */
+ .series_slide_wrap .swiper-container { max-width: 100%; height: auto; overflow: visible; margin-left: 0; margin-right: 0; padding-bottom: 0; padding-top: 0; }
+ .series_slide_wrap .swiper-container .swiper-wrapper { -ms-flex-align: baseline; align-items: baseline; display: -ms-inline-flexbox; display: inline-flex; -ms-flex-wrap: nowrap; flex-wrap: nowrap; white-space: nowrap; }
+ .series_slide_wrap .swiper-slide a { display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column; max-width: 100%; width: 100%; }
+ .swiper-container .swiper-wrapper .swiper-slide img { max-width: 100%; display: block; max-width: -moz-max-content; }
+ .series_book_slider { padding: 13px 17px 40px; min-height: 100%; }
+ .series_book_slider .control { left: 0; right: 0; top: 30px; height: 30px; }
+ .series_book_slider .control .progressbar { width: calc(100% + 20px); }
+ .series_book_slider .control .count { top: -20px; font-size: 12px; }
+ .series_book_slider .swiper-slide { width: 35% !important; }
+ .series_slide_wrap .thumb_book,
+ .related_wrap .book_list_wrap .thumb_book { font-size: 14px; line-height: 1.5; margin: 10px 0; }
+ .series_slide_wrap .thumb_lv { font-size: 10px; padding: 1px; width: 34px; height: 18px; }
+ .slide_seciton_02,
+ .slide_seciton_03,
+ .slide_seciton_04,
+ .slide_seciton_05 { margin-top: 65px; }
+ .info_color { overflow: hidden; width: 100%; }
+ .detail_description .sub_con .btn-moreInfo { display: none; position: relative; white-space: nowrap; color: #222; font-size: 14px; line-height: 1.2; letter-spacing: -0.35px; margin-top: 5px; font-weight: 400; padding-left: 13px; letter-spacing: -0.35px; font-size: 13px; width: 82px; height: 31px; line-height: 28px; border: 1px solid #222; margin: 22px auto 0; }
+ .detail_description .sub_con .btn-moreInfo::before { content: ""; display: block; position: absolute; top: 50%; margin-top: -6px; right: 16px; z-index: 1; width: 7px; height: 7px; border: 1px solid #222; border-top: 0; border-right: 0; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); }
+ .slide_seciton_05 .series_more_btn { margin: 0 auto 60px; }
+
+ /* 모달 컨텐츠 */
+ .modal_body .modal_tit { width: 80%; max-height: 110px; left: 10px; line-height: 1.15; padding-bottom: 5px; margin-bottom: 10px; }
+ .modal_body .modal_content { height: auto; max-height: 70vh; }
+ .container_fluid .fluid_thumb li { width: calc(49.5% - 0.5%); padding: 0 10px; }
+ body.sub .page { padding: 30px 0 50px 0; }
+ .filter_wrap { -webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+ body.sub .filter_wrap .filter-box { margin: 24px 0 14px; width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
+ .filter_wrap .select_wrap { width: 100%; height: 32px; }
+ .filter_wrap .select:first-child { display: block; }
+ .select_wrap .select { width: 100%; }
+ .filter_wrap .filter_description { display: -webkit-flex !important; display: -ms-flexbox !important; display: flex !important; width: 100%; margin-top: 3px; }
+ .filter_wrap .filter_description > p { width: 100%; height: 32px; text-align: center; line-height: 2.5; font-size: 13px; color: #7e7e7e; background-color: #f2f2f2; font-weight: 300; cursor: default; }
+ .filter_wrap .filter_description > p:first-child { margin-right: 1.5px; }
+ .filter_wrap .filter_description > p:last-child { margin-left: 1.5px; }
+ .filter_wrap .select label { width: 100%; font-size: 13.5px; line-height: 2.2; height: 32px; padding: 0px 10px 0 10px; }
+ .filter_wrap .select:first-child { margin-right: -1px; }
+ .category_wrap .book_list_wrap { margin: 10px 0 0; }
+ .category_wrap .book_list_wrap .book_list_thumb li { width: calc(33.3333% - 0.7%); padding: 0 0 36px 11px; }
+ .category_wrap .book_list_wrap .book_list_thumb li:nth-child(3n) { padding-right: 0; }
+ .category_wrap .book_list_wrap li .thumb_book { font-size: 14px; height: 40px; line-height: 1.4; margin: 10px 0; }
+ .category_wrap .book_list_wrap .book_list_thumb { margin-left: -8px; }
+ .category_wrap .book_list_wrap .book_list_thumb li .thumb_lv { color: #7e7e7e; font-size: 10px; background: transparent; overflow: hidden; padding: 0; text-align: center; display: block; width: 30.5px; height: 15.5px; border: 1px solid #7e7e7e; border-radius: 20px; margin-bottom: 5px; }
+ .detail_description { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; }
+ section.eggfun .detail_visual_wrap .inner { -webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column; padding: 33px 16px 40px 16px; }
+ .detail_visual_wrap .inner .detail_thumbnail { margin: 0 auto; width: 10%; min-width: 142px; height: 100%; min-height: auto; }
+ .detail_description .maintit .bookmark_ico { position: absolute; top: 0; right: 16px; margin-top:0; background-image: url(../images/funreading/icon/off_m_bookmark.png); width: 20px; height: 42px; background-size: 25px; transform: translateY(0px); padding-right: 32px; }
+ .detail_description .maintit .bookmark_ico.on { background-image: url(../images/funreading/icon/on_m_bookmark.png); }
+ .detail_visual_wrap .inner .detail_description { margin: 0; padding: 33px 0 0; }
+ .detail_visual_wrap .inner .detail_btn { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 0 0 50px; border-bottom: 1px solid #222; }
+ .detail_visual_wrap .inner .detail_txt { position: inherit; padding-top: 36px; }
+ .detail_description .tit { font-size: 20px; border-bottom: none; line-height: 1.4; }
+ .detail_description .tit_con .subtit { margin-top: 20px; font-size: 16px; letter-spacing: -0.7px; }
+ .detail_description .tit_con .maintit .bookmark_ico.on { position: absolute; top: 0; right: 16px; background-image: url(../images/funreading/icon/on_m_bookmark.png); width: 20px; height: 42px; background-size: 25px; transform: translateY(0px); }
+ .detail_description .sub_con { margin-top: 26px; }
+ .detail_description .btn_wrap { margin: 0;flex-wrap: nowrap; flex-direction: column; }
+ .detail_description .learning_info {position: absolute; bottom: 0; margin-bottom: 22px;width: 100%; max-width: 100%;justify-content:center;left: 50%;transform: translateX(-50%);}
+ .detail_description .learning_info:before {background-image: url(../images/funreading/icon/learning_info_m.png); background-repeat: no-repeat; min-width: 12px; min-height: 12px; background-size: 12px;background-position-y: 1px;}
+ .detail_description .ebook_btn,
+ .detail_description .mp3_btn { margin-right: 4px; }
+ .detail_description .learning_btn { margin-right: 0; }
+ .detail_description .learning_date { margin-top: 15px; }
+ .detail_visual_wrap .level_wrap { position: relative; }
+ .detail_visual_wrap .bt.ico.share { position: absolute; right: 0; top: -14px; }
+ .related_wrap .book_list_wrap { display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column; }
+ .related_wrap .related_control,
+ .vod_wrap .vod_control { display: block; z-index: 10; position: relative; width: 100%; left: 0; right: 0; top: 30px; height: 30px; background: transparent; cursor: pointer; outline: none; font-size: 0; }
+ .related_wrap .related_control .related_count { display: none; font-weight: 400; color: #222; position: absolute; left: 0; top: -20px; font-size: 12px; }
+ .related_wrap .related_control .progressbar,
+ .vod_wrap .vod_control .progressbar { width: calc(100% + 20px); height: 2px; background: rgba(0, 0, 0, 0.1); position: relative; margin-right: 25px; }
+ .related_wrap .related_control .swiper-pagination-progressbar-fill,
+ .vod_wrap .vod_control .progressbar .swiper-pagination-progressbar-fill { background: #000; }
+ .related_wrap .swiper-container { max-width: 100%; overflow: visible; margin-left: 0; margin-right: 0; padding-bottom: 0; padding-top: 0; }
+ .related_wrap .book_list_wrap { margin-bottom: 10px; }
+ .related_wrap .book_list_wrap .swiper-slide { padding: 0; width: 42%; padding-right: 25px; }
+ .vod_wrap { margin-top: 10px; }
+ .related_wrap .title,
+ .vod_wrap .title { margin: 0 0 16px 0; font-size: 20px; font-weight: 600; }
+ section.eggfun .vod_wrap > .inner { padding: 0 20px; }
+ .vod_wrap .vod_slider .vod_cont { overflow: visible; padding: 0 0 30px; }
+ .vod_wrap .swiper-slide .vod_card_wrap { box-shadow: 1px 2px 4px rgb(0 0 0 / 3%); }
+
+ .vod_wrap .sl-nav { display: none; }
+
+ /* 한줄펀리뷰 */
+ .fun_review_board .fun_review_title { -webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column; }
+ .fun_review_board .fun_review_title .info_score { -webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column; }
+ .fun_review_board .fun_review_title { border-top: 1px solid #fff; border-bottom: 1px solid #dcdcdc; padding: 0; }
+ .fun_review_board .fun_review_title .review_tit { border-top: 1px solid #222222; border-bottom: 1px solid #222222; padding: 10px 0; font-size: 24px; }
+ .fun_review_board .fun_review_title .info_score { -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; padding: 30px 0; }
+ .fun_review_board .fun_review_title .star_score,
+ .fun_review_board .fun_review_title .star_score strong { font-weight: 700; font-size: 18px; margin: 0 0 10px 0; }
+ .cmt_write_frm .score_rating { margin-top: 18px; margin-bottom: 20px; }
+ .cmt_write_frm .cnt_con { margin: 0 0 10px 0; padding-top: 0px; font-size: 13px; transform: translateY(-3px); }
+ .cmt_write_frm .bind.ment .bt { width: 13%; height: 63px; }
+ .cmt_write_frm .bind.ment .input.textar_pd { width: 87%; height: 63px; padding: 2%; line-height: 1.4; font-size: 12px; }
+ .cmt_write_frm fieldset { height: 205px; }
+ textarea.textar_pd::placeholder { padding: 8px 0 0 5px; font-size: 12px; width: 80%; word-break: keep-all; }
+ .cmt_write_frm .comment_wrap { border-bottom: 1px solid #e8e5e2; padding-bottom: 5px; }
+ .table_reply_userBoard li .reply_userBoardList .info_append i.sns { font-size: 15px; padding-left: 21px; height: 36px; width: 80px; line-height: 35px; font-weight: 500; color: #3d3d3d; }
+ .table_reply_userBoard li .reply_userBoardList .info_append i.sns.a,
+ .table_reply_userBoard li .reply_userBoardList .info_append i.sns.f,
+ .table_reply_userBoard li .reply_userBoardList .info_append i.sns.ebs,
+ .table_reply_userBoard li .reply_userBoardList .info_append i.sns.n,
+ .table_reply_userBoard li .reply_userBoardList .info_append i.sns.k { background-size: 15px; }
+ .table_reply_userBoard li .reply_userBoardList .cmt_info { -webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column; }
+ .table_reply_userBoard li .reply_userBoardList .cmt_info .info_score { width: 100%; padding: 6px 0; }
+ .table_reply_userBoard li .reply_userBoardList .cmt_info .desc_cmt { width: 100%; padding: 10px 0 5px 0; }
+ .table_reply_userBoard { margin-bottom: 50px; }
+ body.sub .content .fun_review_board .pagination .page { padding: 0; }
+ body.sub .content .fun_review_board .page .p.next { margin-left: 10px; }
+ body.sub .content .fun_review_board .page .p.next.end { margin-left: 1px; }
+ .detail_description .ebook_btn::before { width: 12px; height: inherit; background-image: url(../images/funreading/icon/m_ebook_img.png); background-size: 10px; background-position: left; padding-right: 5px; }
+ .detail_description .mp3_btn::before { background-image: url(../images/funreading/icon/m_mp3_img.png); background-size: 13px; background-position: left; padding-right: 3px; }
+ .detail_description .learning_btn::before { background-image: url(../images/funreading/icon/m_learning_img.png); background-size: 13px; background-position: left; padding-right: 3px; }
+
+ /* 하단 플로팅 배너 */
+ .sticky { height: 150px; }
+ .sticky .bottom_btn_wrap { -webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column; padding: 24px 0; }
+ .sticky .bottom_btn_wrap .subtit { font-size: 15px; text-align: center; }
+ .sticky .bottom_btn_wrap .subtxt { font-size: 14px; margin-top: 10px; text-align: center; }
+ .sticky .bottom_btn_wrap .subtxt .emph_sign { color: #f57e25; font-weight: 600; }
+ .sticky .bottom_btn_wrap .btn_wrap { margin-top: 18px; width: 100%; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+ .sticky .bottom_btn_wrap .ebook_btn,
+ .sticky .bottom_btn_wrap .mp3_btn,
+ .sticky .bottom_btn_wrap .bookmark_btn,
+ .sticky .bottom_btn_wrap .learning_btn { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-left: 8px; letter-spacing: -0.35px; font-size: 0; text-indent: -9999px; width: 35px; height: 35px; text-align: center; border: 1px solid #222; }
+ .sticky .bottom_btn_wrap .ebook_btn { margin-left: 0; }
+ .sticky .bottom_btn_wrap .ebook_btn::before,
+ .sticky .bottom_btn_wrap .mp3_btn::before,
+ .sticky .bottom_btn_wrap .bookmark_btn::before,
+ .sticky .bottom_btn_wrap .learning_btn::before { width: 12px; height: inherit; margin: 0; background-size: 12px; background-repeat: no-repeat; background-position: 50% 50%; }
+ .sticky .bottom_btn_wrap .ebook_btn::before { background-image: url(../images/funreading/icon/m_ebook_img.png); width: 11px; background-size: 11px; }
+ .sticky .bottom_btn_wrap .mp3_btn::before { background-image: url(../images/funreading/icon/m_mp3_img.png); width: 15px; background-size: 14px; }
+ .sticky .bottom_btn_wrap .bookmark_btn::before { background-image: url(../images/funreading/icon/m_bookmark_img.png); width: 11px; background-size: 11px; }
+ .sticky .bottom_btn_wrap .bookmark_btn.on::before { background-image: url(../images/funreading/icon/m_bookmark_on.png); width: 11px; background-size: 11px; background-position: center; }
+ .sticky .bottom_btn_wrap .learning_btn::before { background-image: url(../images/funreading/icon/m_learning_img.png); width: 14px; background-size: 14px; }
+ .detail_visual_wrap .bt.ico.share { background-image: url(../images/funreading/icon/funreading_share_m.png); }
+ .related_wrap .book_list_wrap .swiper-slide:last-child { padding-right: 25px; }
+ section.eggfun .related_wrap > .inner { padding-right: 0; }
+ .info_color .info_data.hidden { overflow: hidden; font-size: 13px; margin-top: 13px; line-height: 20px; max-height: 60px; letter-spacing: -0.45px; font-weight: 400; -webkit-line-clamp: 3; -webkit-box-orient: vertical; text-overflow: ellipsis; word-break: break-all; display: -webkit-box; color: #222; white-space: normal; }
+
+ /* 오늘의 펀리딩 */
+ .archive_wrap .title_container .main_tit { display: none; }
+ .archive_wrap .title_container { border: 0; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; padding-bottom: 25px; }
+ .archive_wrap { margin: 25px 0 25px; }
+ .archive_list { margin-top: 0; }
+ .archive_list li { padding: 0; }
+ .archive_list li:nth-child(odd) { background-color: #f5f5f5; }
+ .archive_list li .archive_list_wrap { position: relative; -ms-flex-direction: column; flex-direction: column; padding: 0 17px; }
+ .archive_list .archive_thumb { max-width: 124px; width: 100%; margin: 90px 0 33px; }
+ .archive_list .archive_con { width: 100%; margin-left: 0; text-align: center; }
+ .archive_list li .archive_list_wrap .line { margin: 0 10px; }
+ .archive_list .info_wrap { position: absolute; top: 0; left: 0; right: 0; padding: 33px 17px; }
+ .archive_list .archive_list_wrap .subject_eng { font-size: 20px; margin-bottom: 19px; letter-spacing: -0.45px; }
+ .archive_list .archive_list_wrap .subject_kor { font-size: 15px; letter-spacing: -0.35px; margin-bottom: 20px; }
+ .archive_list li .archive_list_wrap .book_info { font-size: 14px; margin-bottom: 19px; letter-spacing: -0.325px; }
+ .archive_list li .archive_list_wrap .book_detail { -webkit-line-clamp: 5; max-height: 95px; height: auto; font-size: 14px; line-height: 1.4; margin-bottom: 33px; color: #222; }
+ .archive_list .archive_thumb .ico.add { top: 0; width: 21px; height: 31px; margin-right: 5px; }
+ .archive_list .info_wrap .lv,
+ .archive_list .info_wrap .genre { padding: 4px 12px; height: 24px; }
+ .archive_wrap .btn-moreInfo { display: block; position: relative; white-space: nowrap; color: #222; font-size: 14px; line-height: 1.2; letter-spacing: -0.35px; margin-top: 5px; font-weight: 400; padding-left: 13px; letter-spacing: -0.35px; font-size: 13px; width: 82px; height: 31px; line-height: 28px; border: 1px solid #222; margin: 25px auto 68px; }
+ .archive_wrap .btn-moreInfo::before { content: ""; display: block; position: absolute; top: 50%; margin-top: -6px; right: 16px; z-index: 1; width: 7px; height: 7px; border: 1px solid #222; border-top: 0; border-right: 0; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); }
+ .my_study_con #monthlyGoalView { width: 0; margin-right: 0; }
+ .my_book_wrap .my_study_con .goal_modal.goal_modal_opened { visibility: visible; transition-property: opacity, visibility; transition-duration: 400ms, 0s; overflow-y: scroll; }
+ .my_study_con .goal_modal { z-index: 1150; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; /* opacity: 0; */ visibility: hidden; transition-property: opacity, visibility; transition-duration: 400ms, 0s; opacity: 1; }
+ .my_book_wrap { position: relative; height: 326px; }
+ .my_book_wrap h2 { display: none; }
+ .my_book_wrap .my_study_con { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+ .my_book_wrap .my_study_con .goal_overlay { position: fixed; left: 0; top: 0; bottom: 0; right: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.45); transition: all 0.3s ease; }
+ .my_book_wrap .my_study_con .study_goal { width: 100%; height: 100%; display: flex; -moz-justify-content: center; -ms-justify-content: center; justify-content: center; -ms-flex-pack: center; -moz-align-items: center; -ms-align-items: center; align-items: center; padding: 0 20px; }
+ .library .my_book_wrap .inner .setting_btn { display: block; position: absolute; top: 50px; right: 20px; width: 24px; height: 24px; background: url(../images/funreading/icon/m_setting.png) no-repeat; background-size: 24px; margin: 6px 0px; }
+ .my_study_con .study_activities { width: 100%; max-width: 100%; height: 136px; margin-left: 0; }
+ .study_activities .activities_con > p { position: absolute; top: 50px; font-size: 30px; color: #1f3153; padding-left: 0; }
+ .library .my_book_wrap .inner { padding-top: 100px; }
+ .my_study_con .study_goal { -webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column; height: 218px; }
+ .my_study_con .month_setting_con { -webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; height: 120px; max-width: 100%; border-radius: 10px 10px 0 0; position: relative; }
+ .month_setting_con .volume_tit { width: 100%; padding-left: 25px; font-size: 20px; margin: 25px 0 0; }
+ .month_setting_con .goal_modal_close { display: block; position: absolute; top: 22px; right: 25px; width: 20px; height: 20px; background-size: contain; background-color: transparent; background-repeat: no-repeat; background-position: 100% 0%; background-image: url(../images/common/X_ico.svg); }
+ .month_setting_con .volume_con { width: 100%; padding: 0 25px; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+ .month_setting_con .volume_number { font-size: 16px; flex: 1; }
+ .month_setting_con .volume_number .num_box { min-width: 80px; height: 34px; font-size: 20px; }
+ .month_setting_con .reset_btn,
+ .month_setting_con .start_btn { font-size: 14px; width: 68px; height: 28px; margin: 0; margin-left: 20px; flex: 0.3; }
+ .my_study_con .study_goal ul { background-color: #f8f8f8; margin: 0; padding: 20px 25px; border-radius: 0 0 10px 10px; border-top: 1px solid #dcdcdc; width: 100%; display: flex; -webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column; -moz-justify-content: center; -ms-justify-content: center; justify-content: center; }
+ .my_study_con .study_goal ul li { font-size: 13px; }
+ .activities_box .num_detail_con { max-width: 100%; }
+ .num_detail_con .today_reading .info_close,
+ .study_total .total_close,
+ .nodata_con .selected_close,
+ .mybook_edit .selected_close { top: -10px; right: 10px; width: 12px; height: 12px; background: url(../images/funreading/icon/ico_close_24.png) 0% 0% no-repeat; background-size: 11px; }
+ .study_total .total_close { top: -18px; }
+ .nodata_con .selected_close,
+ .mybook_edit .selected_close { top: 12px; }
+ .num_detail_con .reading_tit { font-size: 14px; margin-bottom: 11px; }
+ .num_detail_con .reading_tot,
+ .num_detail_con .highlight { font-size: 14px; }
+ .num_detail_con .reading_count { font-size: 14px; }
+ .divider { height: 14px; margin: 2px 7px; }
+ .dotted-line { line-height: 0.5; }
+ .study_total { margin-top: 20px; }
+ .my_book_tab { display: block; position: relative; width: 100%; height: 42px; padding: 15px; text-align: center; background-color: #3d4c6b; }
+ .my_book_tab .tab_title { color: #fff; font-size: 16px; }
+ .my_book_tab .tab_arrow { display: inline-block; vertical-align: bottom; width: 15px; height: 12px; margin-left: 5px; background-size: contain; background: url(../images/funreading/icon/tab_arrow.png) no-repeat; background-size: 90%; -webkit-transform: rotate(180deg) translateY(4px); -moz-transform: rotate(180deg) translateY(4px); -ms-transform: rotate(180deg) translateY(4px); -o-transform: rotate(180deg) translateY(4px); transform: rotate(180deg) translateY(4px); -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; }
+ .my_book_tab.show .tab_arrow { -webkit-transform: rotate(0deg) translateY(2px); -moz-transform: rotate(0deg) translateY(2px); -ms-transform: rotate(0deg) translateY(2px); -o-transform: rotate(0deg) translateY(2px); transform: rotate(0deg) translateY(2px); -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease; }
+ .library > .book_tabs { display: none; width: 100%; max-width: 100%; margin: 0; -webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column; border-bottom: 1px solid #dcdcdc; }
+ .library > .book_tabs.tab_open { display: block; }
+ .library > .book_tabs > li { width: 100%; max-width: 100%; height: 40px; font-size: 16px; background: #fff; color: #222222; font-weight: 400; z-index: 1; }
+ .library > .book_tabs > li.on { width: 100%; background: #eceff6; color: #222222; font-weight: 500; font-size: 16px; z-index: 1; }
+ .mybook_edit { -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 15px; }
+ .library .mybook_edit .mybook_list_edit,
+ .library .mybook_edit .mybook_del_edit { width: 38px; height: 38px; font-size: 0; border: 0; border-radius: 50%; }
+ .library .mybook_edit .mybook_list_edit { background-color: #1f3153; }
+ .library .mybook_edit .mybook_del_edit { background-color: #8790a2; }
+ .library .mybook_edit .mybook_list_edit:before,
+ .library .mybook_edit .mybook_del_edit:before { min-width: 16px; background-size: contain; background-position: 50% 50%; margin: 0; }
+ .library .mybook_edit .mybook_list_edit:before { background-image: url(../images/funreading/icon/list_edit_btn.png); }
+ .library .mybook_edit .mybook_del_edit:before { background-image: url(../images/funreading/icon/del_edit_btn.png); }
+ .mybook_edit .tot_book { font-size: 13px; }
+ .book_info .combo label .box_lo + h2 { display: inline; }
+ .book_info .combo label:before { top: 3px; width: 20px; height: 20px; }
+ .library .selected_book_del { width: 164px; height: 42px; background-color: #8990a3; border: 0; color: #fff; font-size: 16px; margin: 0 auto; }
+ .library .selected_book_del:before { background: url(../images/funreading/icon/mbook_del_ico.png); background-repeat: no-repeat; background-position: 0 1px; background-size: 14px; margin-right: 5px; }
+ body.sub .content.library .page { display: block; padding-top: 50px; }
+ .content.library .book_list_wrap li .thumb_book { height: 42px; line-height: 1.6; }
+ .content.library .book_list_wrap .combo label:before { top: 12px; }
+ .mob_hide { display: none !important; }
+ .content.library .category_wrap { margin: 42px auto 25px; }
+ .nodata_con .tot_book { font-size: 13px; }
+ .nodata_con > img { margin: 40px auto 20px; }
+ .nodata_con > h2.nodata_tit { font-size: 17px; }
+ .nodata_con p.nodata_txt { display: flex; flex-direction: column; justify-content: center; }
+ .nodata_con p.nodata_txt span { font-size: 16px; line-height: 1.4; }
+ .nodata_con .txt_box { max-width: 500px; width: 100%; margin: 20px auto 0; }
+ .nodata_con > .nodata_btn { margin: 35px auto 0; width: 216px; height: 42px; font-size: 16px; }
+ .book_search > .radio.radio_open { top: 76px; }
+ .m_label_arrow { height: 41px; }
+ .m_label_arrow:before { top: 19px; }
+ .num_detail_con .today_reading .reading_info { width: 16px; height: 16px; margin-left: 5px; background: url(../images/funreading/icon/ico_mo-info_32.png) 100% 50%
+ no-repeat; background-size: 15px; }
+ .study_total .total_info { width: 16px; height: 16px; margin-left: 3px; background: url(../images/funreading/icon/ico_mo-info_32.png) 0% 50%
+ no-repeat; background-size: 15px; margin-bottom: 2px;}
+ .nodata_con .selected_info,
+ .mybook_edit .selected_info { width: 16px; height: 16px; margin-left: 6px; background: url(../images/funreading/icon/ico_mo-info_32.png) 0% 50%
+ no-repeat; transform: translateY(-0.5px); background-size: 15px; }
+ .num_detail_con .today_reading .info_layer { left: 0%; }
+ .nodata_con .selected_info { width: 16px; height: 16px; margin-left: 3px; background-image: url(../images/funreading/icon/ico_mo-info_32.png); background-repeat: no-repeat; background-size: 15px; background-position: top center; margin-left: 3px; }
+ .nodata_con .selected_layer::before,
+ .mybook_edit .selected_layer::before { border-color: transparent transparent #ebebeb #ebebeb; border-width: 6px; top: -12px; left: 89.2px; }
+ .nodata_con .selected_layer::after,
+ .mybook_edit .selected_layer::after { border-color: transparent transparent #fff #fff; border-width: 5px; top: -10px; left: 90px; }
+ .nodata_con .selected_layer { left: 20px; top: 30px; }
+ .mybook_edit .selected_layer { left: 5px; top: 40px; }
+ .study_total .study_tot { transform: translateY(-2px); }
+ }
+
+@media screen and (max-width: 600px){
+ .series_info_thumbs .book_thumbnail { min-width: 33%; max-width: 40%; }
+ .series_info_thumbs .book_info { max-width: 210px; }
+ .series_info_thumbs .book_info .book_txt { max-width: 185px; }
+ }
+
+@media screen and (max-width: 400px){
+ .book_search .search_bar > input { width: 158px; }
+ .main-slide-con .summary_description .level:before { top: 0.5px; }
+ .series_info_thumbs .book_thumbnail { min-width: 125px; }
+ .series_info_thumbs .book_info h2 { font-size: 15px; max-width: 180px; max-height: 4rem; }
+ .series_info_thumbs .book_info .book_txt { font-size: 13px; }
+ .category_wrap .title_container .title p.main_tit { font-size: 20.5px; }
+ .category_wrap .title_container .title p.sub_tit { font-size: 16px; }
+ .book_info .combo label:before { top: 5px; background-size: 18px; }
+ .book_info .combo .box_lo { width: 24px; }
+ .book_info .combo label:before { top: 3px; width: 18px; height: 18px; }
+ }
+
+@media screen and (max-width: 375px){
+ .main-slide-con .summary_description .book_tit > a { overflow: hidden; text-align: center; -webkit-line-clamp: 2; -webkit-box-orient: vertical; text-overflow: ellipsis; word-break: break-all; display: block; display: -webkit-box; max-width: 100%; }
+ }

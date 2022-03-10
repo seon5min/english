@@ -1,0 +1,433 @@
+
+.skin-ebsevod {
+    position: relative;
+    margin: 0px 0px; padding: 0px 0px;
+}
+
+.skin-ebsevod.mpv-virtual-fullscreen {
+    position: absolute;
+    border: solid 0px;
+    top: 0px; right: 0px; bottom: 0px; left: 0px;
+    margin: 0px 0px; padding: 0px 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.skin-ebsevod div {
+    margin: 0px 0px; padding: 0px 0px;
+    font: normal 12px '나눔고딕','NanumGothic',NGB,'맑은 고딕','Malgun Gothic';
+}
+
+.skin-ebsevod button {
+    margin: 0px 0px; padding: 0px 0px;
+    font: normal 12px '나눔고딕','NanumGothic',NGB,'맑은 고딕','Malgun Gothic';
+}
+
+.skin-ebsevod .mpv-hide { display: none; }
+
+.skin-ebsevod .mpv-underplayer {
+    position: absolute; width: 100%; height: 100%; background-color: #000;
+}
+
+.skin-ebsevod.mpv-virtual-fullscreen .mpv-underplayer {
+    background-color: #000;
+}
+
+.skin-ebsevod .mpv-device {
+    position: absolute;  width: 100%; height: 100%;
+}
+
+.skin-ebsevod .mpv-background {
+    display: none; position: absolute; width: 100%; height: 100%;
+}
+
+.skin-ebsevod .mpv-foreground {
+    display: none; position: absolute; width: 100%; height: 100%;
+}
+
+.skin-ebsevod .mpv-osd {
+    position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;
+}
+.skin-ebsevod .mpv-osd .mpv-osd-loading {
+    position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;
+    background:#1A1A1A center center url(../../image/draft/loading.gif) no-repeat; opacity: 0.6; filter: alpha(opacity=60);
+}
+
+.skin-ebsevod .mpv-button {
+    display: inline-block; width: 30px; height: 30px; margin: 0px 1px;
+    overflow: none; cursor: pointer; vertical-align: middle; zoom: 1;
+}
+
+.skin-ebsevod .mpv-info {
+    position: absolute; height: 20px; left: 0px; right: 0px;
+}
+
+.skin-ebsevod .mpv-bottom {
+    position: absolute;
+    display: inline-block;
+    left: 0px; right: 0px; bottom: 0px; margin: 0px 0px;
+}
+
+.skin-ebsevod .mpv-control {
+    height: 46px; 
+    background-image: url(../../image/ebsevod/cont_bg2_a60.png);
+    left: 0px; right: 0px; bottom: 0px; margin: 0px 0px;
+    display: block;
+}
+
+.skin-ebsevod .mpv-control .mpv-incontrollayout {
+    position: absolute; display: inline-block;
+}
+
+.skin-ebsevod .mpv-control .mpv-left {
+    left: 0px; margin: -7px 10px 0px 10px;
+}
+
+.skin-ebsevod .mpv-control .mpv-right {
+    right: 0px; margin: -7px 10px 0px 0px;
+}
+
+.skin-ebsevod .mpv-progress {
+    position: relative;
+    margin: -5px 0px 0px 0px;
+    width: 100%; height: 20px;
+}
+.skin-ebsevod .mpv-progress .mpv-progressbar {
+    height: 8px;
+}
+.skin-ebsevod .mpv-progress .mpv-total-progress {
+    background-color: #797979; filter: alpha(opacity=30);/*IE하위버전*/ background-color: rgba(121, 121, 121, 0.3);
+    margin: 5px 15px 0px 15px;
+}
+.skin-ebsevod .mpv-progress .mpv-buffer-progress {
+    position: relative;
+    width: 0px;
+    background-color: #9a9a9a; filter: alpha(opacity=30);/*IE하위버전*/ background-color: rgba(154,154,154, 0.3);
+}
+.skin-ebsevod .mpv-progress .mpv-current-progress {
+    margin-top: -8px;
+    position: relative; display: block;
+    width: 0px;
+    background-color: #6ea8e5; filter: alpha(opacity=40);/*IE하위버전*/ background-color: rgba(110, 168, 229, 0.4);
+}
+.skin-ebsevod .mpv-progress .mpv-progress-handler {
+    position: relative; display: inline-block;
+    background: url(../../image/ebsevod/time_handler.png) center center no-repeat;
+    width: 20px; height: 20px; 
+    top: -14px; left: 0px;
+    margin: 0px 0px 0px -10px; padding: 0px 0px;
+    cursor: pointer;
+}
+
+.skin-ebsevod .mpv-play-toggle-btn {
+    float: left;
+}
+.skin-ebsevod .mpv-play-toggle-btn.mpv-play {
+    background: url(../../image/ebsevod/pause.png);
+}
+.skin-ebsevod .mpv-play-toggle-btn.mpv-pause {
+    background: url(../../image/ebsevod/play.png);
+}
+
+.skin-ebsevod .mpv-stop-btn {
+    background: url(../../image/ebsevod/stop.png); display: none;
+}
+
+.skin-ebsevod .mpv-ns-text {
+    display: inline-block; padding-top: 0px; vertical-align: middle; zoom: 1; text-align: center;
+    font: normal 12px/1.5em '나눔고딕','NanumGothic',NGB,'맑은 고딕','Malgun Gothic';
+}
+
+.skin-ebsevod .mpv-volume-layout {
+    float: left; display: inline-block;
+}
+.skin-ebsevod .mpv-volume-layout .mpv-mute-toggle-btn {
+    display: inline-block; background: url(../../image/ebsevod/volume/volume.png) center center no-repeat;
+}
+.skin-ebsevod .mpv-volume-layout .mpv-mute-toggle-btn.mpv-muted {
+    background: url(../../image/ebsevod/volume/mute.png) center center no-repeat;
+}
+
+.skin-ebsevod .mpv-volume-layout .mpv-volume-ground {
+    display: inline-block;
+}
+.skin-ebsevod .mpv-volume-layout .mpv-volume-slider { 
+    display: inline-block;
+    width: 60px; height: 18px; margin: 0px 0px 0px -7px; padding: 0px 0px 0px 5px;
+}
+.skin-ebsevod .mpv-volume-layout .mpv-volume-background {
+    position: relative;
+    width: 55px; height: 6px; margin: 0px 0px; padding: 0px 0px; top: -2px; 
+    background: url(../../image/ebsevod/volume/volume_track_hor.png);
+}
+.skin-ebsevod .mpv-volume-layout .mpv-volume-foreground {
+    position: absolute;
+    width: 55px; height: 6px; margin: 0px 0px; padding: 0px 0px;
+    background: url(../../image/ebsevod/volume/volume_value_hor.png);
+}
+.skin-ebsevod .mpv-volume-layout .mpv-volume-handler {
+    position: absolute;
+    display: inline-block;
+    width: 12px; height: 12px; margin: -3px 0px 0px -7px; padding: 0px 0px;
+    cursor: pointer;
+    background: url(../../image/ebsevod/volume/volume_handler.png) center center no-repeat;
+}
+
+.skin-ebsevod .mpv-time-layout {
+    float: left;
+    display: inline-block;
+    margin: 3px 0px 0px 10px; padding: 0px 0px;
+}
+.skin-ebsevod .mpv-currenttime-text {
+    color: #87e4ff; padding: 0px 0px; font-family: Gulim, Tahoma;
+}
+.skin-ebsevod .mpv-currenttime-text:after {
+    content: ' |'; color: #989898;
+}
+.skin-ebsevod .mpv-duration-text {
+    display: inline-block;
+    color: #FFFFFF; padding: 0px 0px; font-family: Gulim, Tahoma;
+}
+
+.skin-ebsevod .mpv-rate-layout {
+    display: inline-block;
+}
+.skin-ebsevod .mpv-rate-up-btn {
+    background: url(../../image/ebsevod/speed_up.png); width: 20px;
+}
+.skin-ebsevod .mpv-rate-text {
+    color: #FFFFFF;
+}
+.skin-ebsevod .mpv-rate-down-btn {
+    background: url(../../image/ebsevod/speed_down.png);  width: 20px;
+}
+
+.skin-ebsevod .mpv-popup-toggle-btn {
+    float: right;
+    width: 30px; height: 30px; margin: 0px 1px;
+    margin: 0px 20px 0px 0px;
+    background: url(../../image/ebsevod/popup2.png);
+}
+.skin-ebsevod .mpv-popup-toggle-btn.mpv-active {
+}
+.skin-ebsevod .mpv-popup-toggle-btn.mpv-noactive {
+}
+.skin-ebsevod .mpv-popup-toggle-btn.mpv-initactive {
+}
+
+.skin-ebsevod .mpv-size-toggle-btn {
+    float: right;
+    width: 30px; height: 30px; margin: 0px 5px;
+    cursor: pointer;
+}
+.skin-ebsevod .mpv-size-toggle-btn.mpv-sel0 {
+    background: url(../../image/ebsevod/fulltheater.png);
+}
+.skin-ebsevod .mpv-size-toggle-btn.mpv-sel1 {
+    background: url(../../image/ebsevod/normaltheater.png);
+}
+
+.skin-ebsevod .mpv-fullscreen-toggle-btn {
+    float: right;
+    width: 30px; height: 30px; margin: 0px 1px;
+    margin: 0px 5px;
+    background: url(../../image/ebsevod/fullscreen.png);
+}
+
+
+
+/*******************************************************************
+    skin-ebsevod quality
+*******************************************************************/
+.skin-ebsevod .mpv-quality-layout {
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+.skin-ebsevod .mpv-quality-btn {
+    width: 100px; height: 25px;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 0px 0px;
+    padding: 7px 0px 0px 28px;
+    background: 6px 8px url(../../image/ebsevod/arrow_up.png) no-repeat;
+    background-position: 7px 10px;
+}
+.skin-ebsevod .mpv-quality-list {
+    position: absolute;
+    background-color: #000000;
+    opacity: 0.7;
+    border: solid 1px #fff;
+}
+
+
+
+/*******************************************************************
+    skin-ebsevod subtitle
+*******************************************************************/
+
+.skin-ebsevod .mpv-subtitle-layout {
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+.skin-ebsevod .mpv-subtitle-display {
+    text-align: center;
+}
+.skin-ebsevod .mpv-subtitle-display div {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+    transition-duration: 0.5s;
+}
+.skin-ebsevod .mpv-subtitle-display .mpv-subtitle-content {
+    display: inline-block;
+    font: bold '나눔고딕','NanumGothic','맑은 고딕','Malgun Gothic';
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px;
+    padding: 7px 13px;
+}
+.skin-ebsevod .mpv-subtitle-btn {
+    width: 50px; height: 25px;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 0px 0px;
+    padding: 7px 0px 0px 28px;
+    background: 6px 8px url(../../image/ebsevod/arrow_up.png) no-repeat;
+    background-position: 7px 10px;
+}
+.skin-ebsevod .mpv-subtitle-list {
+    position: absolute;
+    background-color: #000000;
+    opacity: 0.7;
+    border: solid 1px #fff;
+}
+
+/*******************************************************************
+    skin-ebsevod quality and subtitle 
+*******************************************************************/
+.skin-ebsevod .mpv-view-ele {
+    height: 25px;
+}
+
+.skin-ebsevod .mpv-view-ele.mpv-view-line {
+    height: 1px;
+    background-color: #fff;
+}
+
+.skin-ebsevod .mpv-view-checked {
+    width: 25px; height: 25px;
+    position: relative;
+    display: inline-block;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    color: #ffffff; text-align: center;
+}
+.skin-ebsevod .mpv-option-selected .mpv-view-checked {
+    background: url(../../image/ebsevod/option_selected.png) no-repeat;
+    background-position: 7px 7px;
+}
+.skin-ebsevod .mpv-view-text {
+    width: 120px;  height: 25px;
+    position: relative;
+    display: inline-block;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    top: -20px; left: 28px;
+}
+.skin-ebsevod .mpv-option-selected .mpv-view-text {
+    color: #87e4ff;
+}
+.skin-ebsevod .mpv-view-text:hover {
+    color: red;
+}
+.skin-ebsevod .mpv-option-selected .mpv-view-text:hover {
+    color: red;
+}
+
+
+
+/*******************************************************************
+    skin-ebsevod fullscreen
+*******************************************************************/
+
+.mpv-fullscreen-virtual-position {
+    background-color: #000000;
+}
+
+.skin-ebsevod.mpv-fullscreen-fixed {
+    position: fixed;
+}
+
+.skin-ebsevod.mpv-fullscreen .mpv-fullscreen-toggle-btn {
+    background: url(../../image/ebsevod/normalscreen.png);
+}
+.skin-ebsevod.mpv-normalscreen .mpv-fullscreen-toggle-btn {
+    background: url(../../image/ebsevod/fullscreen.png);
+}
+
+.skin-ebsevod.mpv-fullscreen .mpv-size-toggle-btn {
+    display: none;
+}
+
+.skin-ebsevod.mpv-fullscreen .mpv-popup-toggle-btn {
+    display: none;
+}
+
+.mpv-fullscreen-mob-none {
+    display: none;
+}
+
+
+/*******************************************************************
+    skin-ebsevod-openlayer
+*******************************************************************/
+
+.skin-ebsevod-openlayer {
+    position: fixed;
+    display: block;
+    bottom: 0px; right: 0px;
+    z-index: 2;
+}
+
+.skin-ebsevod-openlayer .mpv-control .mpv-right {
+    display: none;
+}
+
+.mpv-saved-blanked-openlayer {
+    display: inline-block;
+    background-color: #000000;  filter: alpha(opacity=50);/*IE하위버전*/ background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+/*******************************************************************
+    skin-ebsevod youtube
+*******************************************************************/
+
+/*
+.skin-ebsevod .mpv-device .mpv-youtube iframe {
+    border: solid 5px blue;
+}
+
+.skin-ebsevod .mpv-device .mpv-youtube.mpv-youtube-safe iframe {
+    border: solid 5px yellow;
+    pointer-events: none;
+}
+*/
+
+
+
+/*******************************************************************
+    E   N   D
+*******************************************************************/
+
+
+
+
+
+
+
+

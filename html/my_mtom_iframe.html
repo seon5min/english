@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+<title>EBS English</title>
+<link rel="stylesheet" type="text/css" href="../css/NotoSansKR-Hestia.css"/>
+<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+<link rel="stylesheet" type="text/css" href="../css/sub.css"/>
+<script src="../js/jquery-2.2.0.min.js"></script>
+</head>
+
+<body class="sub" style="min-width:320px;">
+<section class="my mtom" style="min-width:320px;">
+	<div class="filter">
+		<div class="bind find">
+			<div class="select">
+				<label>전체</label>
+				<select>
+					<option selected>전체</option>
+					<option>제목</option>
+					<option>내용</option>
+				</select>
+			</div>
+			<input type="text" class="input" placeholder="검색어를 입력해주세요">
+			<button type="button" class="bt ico find">검색</button>
+		</div>
+		<button type="button" class="bt txt s bg color1">삭제</button>
+	</div>
+	<ul class="table">
+		<li class="th">
+			<div class="row">
+				<span class="cell sm p0"><div class="combo notxt"><input type="checkbox" id="c0"><label for="c0">전체선택</label></div></span>
+				<span class="cell xs mdplay_none">번호</span>
+				<span class="cell xl">구분</span>
+				<span class="cell">제목</span>
+				<span class="cell md">작성일</span>
+				<span class="cell md">상태</span>
+			</div>
+		</li>
+		<li class="tr">
+			<a href="my_mtom_iframe_view.html" class="row mpb0">
+				<span class="cell sm myNum"><div class="combo notxt"><input type="checkbox" id="c1"><label for="c1">선택</label></div></span>
+				<span class="cell xs myNum mdplay_none">100</span>
+				<span class="cell xl myHeder"><i class="cate">방송편성 관련문의</i></span>
+				<span class="cell t_l myTit">제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목제목</span>
+				<span class="cell md myDate">2018.09.22</span>
+				<span class="cell md"><i class="tc ing">대기중</i></span>
+			</a>
+		</li>
+		<li class="tr">
+			<a href="my_mtom_iframe_view.html" class="row mpb0">
+				<span class="cell sm myNum"><div class="combo notxt"><input type="checkbox" id="c1"><label for="c1">선택</label></div></span>
+				<span class="cell xs myNum mdplay_none">100</span>
+				<span class="cell xl myHeder"><i class="cate">모바일</i></span>
+				<span class="cell t_l myTit">제목제목제목제목제목제목제목제목</span>
+				<span class="cell md myDate">2018.09.22</span>
+				<span class="cell md"><i class="tc end">답변완료</i></span>
+			</a>
+		</li>
+	</ul>
+	<div class="page">
+		<a href="" class="p prev end">처음</a>
+		<a href="" class="p prev">이전</a>
+		<a href="" class="p on">1</a>
+		<a href="" class="p">2</a>
+		<a href="" class="p">3</a>
+		<a href="" class="p">4</a>
+		<a href="" class="p">5</a>
+		<a href="" class="p next">다음</a>
+		<a href="" class="p next end">맨끝</a>
+	</div>
+</section>
+
+</body>
+</html>
+<script>
+$(document).ready(function() {
+	/* SELECT */
+    $('select').change(function() {
+        var selectText = $(this).children('option:selected').text();
+        $(this).siblings('label').text(selectText);
+    });
+});
+</script>

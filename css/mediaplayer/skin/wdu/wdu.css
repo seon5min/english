@@ -1,0 +1,381 @@
+
+.skin-wdu {
+    position: relative;
+    margin: 0px 0px; padding: 0px 0px;
+}
+
+.skin-wdu.mpv-virtual-fullscreen {
+    position: absolute;
+    border: solid 0px;
+    top: 0px; right: 0px; bottom: 0px; left: 0px;
+    margin: 0px 0px; padding: 0px 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.skin-wdu div {
+    margin: 0px 0px; padding: 0px 0px;
+    font: normal 12px '나눔고딕','NanumGothic',NGB,'맑은 고딕','Malgun Gothic';
+}
+
+.skin-wdu button {
+    margin: 0px 0px; padding: 0px 0px;
+    font: normal 12px '나눔고딕','NanumGothic',NGB,'맑은 고딕','Malgun Gothic';
+}
+
+.skin-wdu .mpv-hide { display: none; }
+
+.skin-wdu .mpv-underplayer {
+    position: absolute; width: 100%; height: 100%; background-color: #000;
+}
+
+.skin-wdu.mpv-virtual-fullscreen .mpv-underplayer {
+    background-color: #000;
+}
+
+.skin-wdu .mpv-device {
+    position: absolute;  width: 100%; height: 100%;
+}
+
+.skin-wdu .mpv-background {
+    display: none; position: absolute; width: 100%; height: 100%;
+}
+
+.skin-wdu .mpv-foreground {
+    display: none; position: absolute; width: 100%; height: 100%;
+}
+
+.skin-wdu .mpv-osd {
+    position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;
+}
+.skin-wdu .mpv-osd .mpv-osd-loading {
+    position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;
+    background:#1A1A1A center center url(/images/mediaplayer/draft/loading.gif) no-repeat; opacity: 0.6; filter: alpha(opacity=60);
+}
+
+.skin-wdu .mpv-info {
+    position: absolute; height: 20px; left: 0px; right: 0px;
+}
+
+.skin-wdu .mpv-bottom {
+    position: absolute;
+    display: inline-block;
+    left: 0px; right: 0px; bottom: 0px; margin: 0px 0px;
+}
+
+.skin-wdu .mpv-control {
+    height: 40px;
+    background: url(/images/mediaplayer/draft/cont_bg2.png);
+    left: 0px; right: 0px; bottom: 0px; margin: 0px 0px;
+    display: block;
+}
+
+.skin-wdu .mpv-control .mpv-incontrollayout {
+    position: absolute; display: inline-block;
+}
+.skin-wdu .mpv-control .mpv-left {
+    left: 0px; margin: -14px 10px 0px 10px;
+}
+.skin-wdu .mpv-control .mpv-right {
+    right: 0px; margin: -14px 10px 0px 0px;
+}
+
+.skin-wdu .mpv-button {
+    display: inline-block; width: 30px; height: 30px; margin: 0px 1px;
+    overflow: none; cursor: pointer; vertical-align: middle; zoom: 1;
+}
+
+.skin-wdu .mpv-progress {
+    position: relative;
+    margin: -2px 0px 0px 0px;
+    width: 100%; height: 20px;
+}
+.skin-wdu .mpv-progress .mpv-progressbar {
+    height: 3px;
+}
+.skin-wdu .mpv-progress .mpv-total-progress {
+    background-color: rgb(121, 121, 121);
+    margin: 5px 15px 0px 15px;
+}
+.skin-wdu .mpv-progress .mpv-buffer-progress {
+    position: relative;
+    width: 0px;
+    background-color: rgb(154,154,154);  /* background-color: rgba(154,154,154, 0.3); */
+}
+.skin-wdu .mpv-progress .mpv-current-progress {
+    margin-top: -3px;
+    position: relative; display: block;
+    width: 0px;
+    background-color: rgb(110, 168, 229); /* background-color: rgba(110, 168, 229, 0.4); */
+}
+.skin-wdu .mpv-progress .mpv-progress-handler {
+    position: relative; display: inline-block;
+    background: url(/images/mediaplayer/draft/time_handler.png) center center no-repeat;
+    width: 20px; height: 20px; 
+    top: -12px; left: 0px;
+    margin: 0px 0px 0px -10px; padding: 0px 0px;
+    cursor: pointer;
+}
+
+.skin-wdu .mpv-play-toggle-btn {
+    float: left;
+}
+.skin-wdu .mpv-play-toggle-btn.mpv-play {
+    background: url(/images/mediaplayer/draft/pause.png);
+}
+.skin-wdu .mpv-play-toggle-btn.mpv-pause {
+    background: url(/images/mediaplayer/draft/play.png);
+}
+
+.skin-wdu .mpv-stop-btn {
+    float: left; background: url(/images/mediaplayer/draft/stop.png);
+}
+
+.skin-wdu .mpv-ns-text {
+    display: inline-block; padding-top: 0px; vertical-align: middle; zoom: 1; text-align: center;
+    font: normal 12px/1.5em '나눔고딕','NanumGothic',NGB,'맑은 고딕','Malgun Gothic';
+}
+
+.skin-wdu .mpv-volume-layout {
+    float: right;
+    display: inline-block;
+}
+.skin-wdu .mpv-volume-layout .mpv-mute-toggle-btn {
+    background: url(/images/mediaplayer/draft/volume/volume.png) center center no-repeat;
+}
+.skin-wdu .mpv-volume-layout .mpv-mute-toggle-btn.mpv-muted {
+    background: url(/images/mediaplayer/draft/volume/mute.png) center center no-repeat;
+}
+
+.skin-wdu .mpv-volume-layout .mpv-volume-ground {
+    display: inline-block;
+}
+.skin-wdu .mpv-volume-layout .mpv-volume-foreground {
+    background-color: #FFFFFF; width: 5px;
+}
+/* .skin-wdu .mpv-volume-layout .mpv-volume-background { background-color: rgba(255,255,255,0.2); } */
+.skin-wdu .mpv-volume-layout.mpv-up-virtical .mpv-volume-slider {
+    position: absolute; background: url(/images/mediaplayer/draft/volume/volume_slider.png);
+    width: 32px; height: 80px; margin-top: -80px; margin-left: -37px;
+}
+.skin-wdu .mpv-volume-layout.mpv-up-virtical .mpv-volume-background {
+    position: absolute; background: url(/images/mediaplayer/draft/volume/volume_track.png);
+    height: 55px; width: 6px; top: 10px; left: 13px;
+}
+.skin-wdu .mpv-volume-layout.mpv-up-virtical .mpv-volume-foreground {
+    position: absolute; background: url(/images/mediaplayer/draft/volume/volume_value.png);
+    height: 55px; width: 6px; top: 10px; left: 0px;
+}
+.skin-wdu .mpv-volume-layout.mpv-up-virtical .mpv-volume-handler {
+    position: absolute; display: inline-block;
+    width: 16px; height: 16px;
+    margin: -5px 8px 11px -5px;
+    cursor: pointer;
+    background: url(/images/mediaplayer/draft/volume/volume_handler.png);
+}
+
+
+
+.skin-wdu .mpv-time-layout {
+    float: left;
+    display: inline-block;
+    margin: 5px 0px 0px 0px; padding: 0px 0px;
+}
+.skin-wdu .mpv-currenttime-text {
+    color: #989898; padding: 0px 0px;  font-family: Gulim, Tahoma;
+}
+.skin-wdu .mpv-currenttime-text:after {
+    content: ' |'; color: #989898;
+}
+.skin-wdu .mpv-duration-text {
+    color: #FFFFFF; padding: 0px 3px;  font-family: Gulim, Tahoma;
+}
+
+
+.skin-wdu .mpv-rate-layout {
+    float: right;
+    display: inline-block;
+}
+.skin-wdu .mpv-rate-up-btn {
+    background: url(/images/mediaplayer/draft/speed_up.png); width: 20px;
+}
+.skin-wdu .mpv-rate-text {
+    color: #FFFFFF;
+}
+.skin-wdu .mpv-rate-down-btn {
+    background: url(/images/mediaplayer/draft/speed_down.png);  width: 20px;
+}
+
+
+/*******************************************************************
+    quality
+*******************************************************************/
+
+.skin-wdu .mpv-quality-layout {
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+.skin-wdu .mpv-quality-btn {
+    width: 100px; height: 25px;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 0px 0px;
+    padding: 7px 0px 0px 28px;
+    background: 6px 8px url(/images/mediaplayer/ebsevod/arrow_up.png) no-repeat;
+    background-position: 7px 10px;
+}
+.skin-wdu .mpv-quality-list {
+    position: absolute;
+    background-color: #000000;
+    opacity: 0.7;
+    border: solid 1px #fff;
+}
+
+
+/*******************************************************************
+    subtitle
+*******************************************************************/
+
+.skin-wdu .mpv-subtitle-layout {
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+.skin-wdu .mpv-subtitle-display {
+    text-align: center;
+}
+.skin-wdu .mpv-subtitle-display div {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+    transition-duration: 0.5s;
+}
+.skin-wdu .mpv-subtitle-display .mpv-subtitle-content {
+    display: inline-block;
+    font: bold '나눔고딕','NanumGothic','맑은 고딕','Malgun Gothic';
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px;
+    padding: 7px 13px;
+}
+.skin-wdu .mpv-subtitle-btn {
+    width: 50px; height: 25px;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 0px 0px;
+    padding: 7px 0px 0px 28px;
+    background: 6px 8px url(/images/mediaplayer/ebsevod/arrow_up.png) no-repeat;
+    background-position: 7px 10px;
+}
+.skin-wdu .mpv-subtitle-list {
+    position: absolute;
+    background-color: #000000;
+    opacity: 0.7;
+    border: solid 1px #fff;
+}
+
+
+/*******************************************************************
+    quality and subtitle 
+*******************************************************************/
+
+.skin-wdu .mpv-view-ele {
+    height: 25px;
+}
+
+.skin-wdu .mpv-view-ele.mpv-view-line {
+    height: 1px;
+    background-color: #fff;
+}
+
+.skin-wdu .mpv-view-checked {
+    width: 25px; height: 25px;
+    position: relative;
+    display: inline-block;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    color: #ffffff; text-align: center;
+}
+.skin-wdu .mpv-option-selected .mpv-view-checked {
+    background: url(/images/mediaplayer/ebsevod/option_selected.png) no-repeat;
+    background-position: 7px 7px;
+}
+.skin-wdu .mpv-view-text {
+    width: 120px;  height: 25px;
+    position: relative;
+    display: inline-block;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    top: -20px; left: 28px;
+}
+.skin-wdu .mpv-option-selected .mpv-view-text {
+    color: #87e4ff;
+}
+.skin-wdu .mpv-view-text:hover {
+    color: red;
+}
+.skin-wdu .mpv-option-selected .mpv-view-text:hover {
+    color: red;
+}
+
+/*******************************************************************
+    
+*******************************************************************/
+
+.skin-wdu .mpv-size-toggle-btn {
+    float: right;
+    width: 30px; height: 30px; margin: 0px 5px;
+    cursor: pointer;
+}
+.skin-wdu .mpv-size-toggle-btn.mpv-sel0 {
+    background: url(/images/mediaplayer/ebsevod/fulltheater.png);
+}
+.skin-wdu .mpv-size-toggle-btn.mpv-sel1 {
+    background: url(/images/mediaplayer/ebsevod/normaltheater.png);
+}
+
+
+.skin-wdu .mpv-fullscreen-toggle-btn {
+    position: relative;
+    float: right;
+    display: inline-block;
+    width: 30px; height: 30px; margin: 0px 1px;
+    margin: 0px 5px;
+    background: url(/images/mediaplayer/draft/fullscreen.png);
+}
+
+
+
+/*******************************************************************
+    skin-wku fullscreen
+*******************************************************************/
+
+.mpv-fullscreen-virtual-position {
+    background-color: #000000;
+}
+
+.skin-wdu.mpv-fullscreen-fixed {
+    position: fixed;
+}
+
+.skin-wdu.mpv-fullscreen .mpv-fullscreen-toggle-btn {
+    background: url(/images/mediaplayer/draft/normalscreen.png);
+}
+.skin-wdu.mpv-normalscreen .mpv-fullscreen-toggle-btn {
+    background: url(/images/mediaplayer/draft/fullscreen.png);
+}
+
+.skin-wdu.mpv-fullscreen .mpv-size-toggle-btn {
+    display: none;
+}
+
+.skin-wdu.mpv-fullscreen .mpv-popup-toggle-btn {
+    display: none;
+}
+
+.mpv-fullscreen-mob-none {
+    display: none;
+}
+

@@ -1,0 +1,564 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+<title>EBS English</title>
+<link rel="stylesheet" type="text/css" href="../../../css/NotoSansKR-Hestia.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/common.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/circle.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/sub.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/sub_new.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="../../../css/wow-animate.css"/>
+<script src="../../../js/jquery-2.2.0.min.js"></script>
+<script src="../../../js/slick.js"></script>
+<script src="../../../js/wow.js"></script>
+<script src="../../../js/common_new2020.js"></script>
+</head>
+<body>
+<!-- 2021-06-21 프로그램 속 나라별 국기 찾기 이벤트 -->
+<script type="text/javascript">
+	$(document).ready(function() {
+		/* SLIDER */
+		$(".slide_flag").slick({
+			swipe:true,
+			touchMove : true,
+			dots: true,
+			draggable : true,
+			autoplay : true,
+			slidesToShow: 1,
+			autoplaySpeed : 3000,
+			pauseOnHover : true,
+			slidesToScroll: 1,
+			swipeToSlide: true,
+			infinite: false,
+			arrows: false
+		});
+
+	});
+</script>
+<style>
+	.popup {width:940px;margin:0 auto;}
+	.popup div[class^="cont"] .inner {position:relative;background-repeat:no-repeat;background-size:cover;}
+	.popup .cont01 .inner{padding-top:53.1914%;background-image: url('../../../images/event/2021/0616_flagEvent/pop_cont_01.jpg');}
+	.popup .cont02 .inner{padding-top:66.7021%;background-image: url('../../../images/event/2021/0616_flagEvent/pop_cont_02.jpg');}
+	.popup .cont03 .inner{padding-top:120.4255%;background-image: url('../../../images/event/2021/0616_flagEvent/pop_cont_03.jpg');}
+	.popup .cont04 .inner{padding-top:80.9574%;background-image: url('../../../images/event/2021/0616_flagEvent/pop_cont_04.jpg');}
+	.popup .myScore {position: absolute; width: 20%; left: 50%;transform: translateX(28%); line-height: 1.2;top: 75.5%;text-align: center; font-size: 2.2rem; font-weight: 500;}
+	.popup .myScore > span {color:#000;}
+ 	.flagMap {width: 100%;}
+	.flagMap ul li[class^="flag"] .colorFlagMap {display:none;}
+	.flagMap ul li[class^="flag"] .grayFlagMap {display:block;}
+	.flagMap ul li[class^="flag"].find .grayFlagMap {display:none;}
+	.flagMap ul li[class^="flag"].find .colorFlagMap {display:block;}
+	.flagMap ul li[class^="flag"] img{width: 100%;}
+  	.flagMap ul li{position: absolute;top: 0;left: 0;}
+ 	.flagMap ul li.flag01{top: 32%;left: 37%;}
+ 	.flagMap ul li.flag02{top: 47.5%; left: 15.6%; z-index: 4;}
+ 	.flagMap ul li.flag03{top: 17.4%; left: 59%;}
+ 	.flagMap ul li.flag04{top: 12%;left: 32.5%;}
+ 	.flagMap ul li.flag05{top: 40.8%; left: 27.3%; z-index: 5;}
+ 	.flagMap ul li.flag06{top: 26.2%; left: 62.7%;}
+ 	.flagMap ul li.flag07{top: 42.3%; left: 18.5%;z-index:3;}
+ 	.flagMap ul li.flag08{top: 42.5%; left: 39.8%;}
+ 	.flagMap ul li.flag09{top: 8%;left: 77.4%;}
+ 	.flagMap ul li.flag10{top: 28%;left: 25.4%;}
+ 	.flagMap ul li.flag11{top: 57%; left: 40.4%; z-index: 3;}
+ 	.flagMap ul li.flag12{top: 56.5%; left: 15.8%;}
+ 	.flagMap ul li.flag13{top: 52.5%; left: 74.5%; z-index: 3;}
+ 	.flagMap ul li.flag14{top: 63%; left: 71.3%;}
+ 	.flagMap ul li.flag15{top: 48%; left: 42.2%;}
+ 	.flagMap ul li.flag16{top: 27%; left: 7.8%;}
+ 	.flagMap ul li.flag17{top: 36.9%; left: 21.7%; z-index: 2;}
+ 	.flagMap ul li.flag18{top: 38%; left: 10.2%;}
+ 	.flagMap ul li.flag19{top: 47.6%; left: 33.2%;}
+ 	.flagMap ul li.flag20{top: 32%; left: 18.5%; z-index: 1;}
+ 	.flagMap ul li.flag21{top: 20.2%; left: 17.4%; z-index: 2;}
+ 	.flagMap ul li.flag22{top: 17.5%;left: 13.2%;}
+ 	.flagMap ul li.flag23{top: 21%;left: 34.8%;}
+ 	.flagMap ul li.flag24{top: 43.8%; left: 71.4%;}
+ 	.flagMap ul li.flag25{top: 35%; left: 64.5%;}
+	.flagMap p {position:absolute;top:-36px; right:5px;font-size: 21px;font-weight: 300;color: #fff;letter-spacing: -1px;}
+	.popup .cont04 .closeBtn {position:absolute;top: 71%; left: 24.8%; width: 50.5%; height: 18.5%;font-size:0;z-index: 10;}
+	.cont03 .flag{position: absolute;top: 11%;width:100%;}
+	.flag ul {display: -webkit-box; display: -ms-flexbox; display: flex;-webkit-box-lines: multiple; -ms-flex-wrap: wrap; flex-wrap: wrap;justify-content: center;-webkit-box-pack: center; -ms-flex-pack: center;padding: 0 10%;}
+   	.flag ul li[class^="flagNum"] {position:relative;width: 20%; padding: 2.5% 3%;}
+	.flag ul li[class^="flagNum"] img {max-width:100%;}
+	.flag ul li[class^="flagNum"] .colorFlag {display:none;}
+	.flag ul li[class^="flagNum"] .grayFlag {display:block;}
+	.flag ul li[class^="flagNum"].find .grayFlag {display:none;}
+	.flag ul li[class^="flagNum"].find .colorFlag {display:block;}
+	.flag ul li[class^="flagNum12"]{padding: 2.3% 1.5%;}
+	.flag ul li[class^="flagNum17"]{padding: 2.5% 2.5%;}
+	.flag ul li[class^="flagNum"] .subScore {position: absolute;top: 72%;font-size: 1.4rem;line-height: 1.4; left: 50%; transform: translateX(-60%);}
+	.flag .subScore span {color:#000;}
+	.flag ul li[class^="flagNum"] .subScore span {color:#adadad;}
+	.flag ul li[class^="flagNum"].find .subScore span {color:#000;}
+	.blind {visibility: hidden;overflow: hidden;position: absolute;top: 0;left: 0;width: 0;height: 0;font-size: 0;line-height: 0;}
+	/* mobile ( 980 px 이하) */
+	@media screen and (max-width:980px) {
+		.popup {width:100%;}
+	}
+	@media screen and (max-width:770px) {
+		.flagMap ul li[class^="flag"] img {transform: translate(-6px, -16px);}
+	}
+	/* mobile ( 740 px 이하) */
+	@media screen and (max-width:740px) {
+		.popup .cont01 .inner{padding-top:88%;background-image: url('../../../images/event/2021/0616_flagEvent/m_pop_cont_01.jpg');}
+		.popup .cont02 .inner{padding-top:66.6666%;background-image: url('../../../images/event/2021/0616_flagEvent/m_pop_cont_02.jpg');}
+		.popup .cont03 .inner{padding-top:176.6666%;background-image: url('../../../images/event/2021/0616_flagEvent/m_pop_cont_03.jpg');}
+		.popup .cont04 .inner{padding-top:132.6666%;background-image: url('../../../images/event/2021/0616_flagEvent/m_pop_cont_04.jpg');}
+		.flagMap ul li[class^="flag"] img {width: 62%;}
+		.popup .myScore {transform: translate(56%,7%);font-size:5vw;}
+		.popup .cont03 .closeBtn {top: 86%;left: 25.5%;width: 49%;height: 10%;}
+		.flag ul{padding: 0 5%;}
+		.flag ul li[class^="flagNum"] {position: relative;width: 30%;padding: 5% 2.5%;}
+		.flag ul li[class^="flagNum"] .subScore {top: 70.5%; font-size: 5vw; }
+		.flag .m_flag_wrap {width: 100%;}
+		.flag ul li[class^="flagNum12"] {padding: 5% 0%;}
+		.flag ul li[class^="flagNum17"] {padding: 5% 1.5%;}
+		.flag ul li[class^="flagNum25"] {transform: translateX(-100%);}
+		.popup .cont04 .closeBtn {position:absolute;top: 71.7%; left: 18.5%; width: 62.5%; height: 15.5%;font-size:0;z-index: 10;}
+
+		/* Dots */
+		.slide_flag .slick-dots{position: absolute;bottom: -18%;left:50%;transform:translateX(-50%);list-style: none;text-align: center;z-index:10;}
+		.slide_flag .slick-dots li{position:relative;display: inline-block;width:5vw;height:5vw;margin:0 3px;padding:0;cursor: pointer;}
+		.event_main_wrap ul.slick-dots li:not(.slick-active){top: 1px;}
+		.event_main_wrap ul.slick-dots li.slick-active {width:5.5vw;height:5.5vw;}
+		.slide_flag .slick-dots li button{position: absolute;left: 50%;transform: translateX(-1.75vw);width:5.5vw;height:5.5vw;font-size:0;line-height:0;display:block;padding:0;cursor: pointer;color:#fff;outline:none;background:transparent;}
+		.slide_flag .slick-dots li button:hover,.slide_flag .slick-dots li button:focus{outline:none;}
+		.slide_flag .slick-dots li button:hover:before{opacity:1;}
+		.slide_flag .slick-dots li.slick-active button:before{position: absolute;width:4vw;height:4vw;background:#022c74; box-sizing:border-box;line-height:1.5; border-radius:50%;-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+		.slide_flag .slick-dots li button:before{font-family:'slick';font-size:6px;line-height:1.5;position:absolute;top:0;left: 0;width:4vw;height:4vw;content:'';text-align:center;background-color:rgba(255,255,255,1);border-radius:50%;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing:grayscale;}
+	}
+
+	@media screen and (max-width:520px) {
+		.flagMap ul li.flag01 { top: 34%; left: 37%;}
+		.flagMap ul li.flag03{top: 18.3%; left: 56%;}
+		.flagMap ul li.flag06{top: 25.2%; left: 60.8%;}
+		.flagMap ul li.flag09{top: 13%; left: 76.4%;}
+		.flagMap ul li.flag14{top: 60.6%; left: 69.9%;}
+		.flagMap ul li.flag16{left: 8.8%;}
+		.flagMap ul li.flag22{top: 19.5%; left: 14.2%;}
+		.flagMap ul li.flag24{top:45%;left: 69.8%;}
+		.flagMap ul li.flag25{top: 36%; left: 62.8%;}
+		.flagMap ul li[class^="flag"] img {width: 46%;transform: translate(0px, -9px);}
+	}
+</style>
+<div class="popup">
+	<div class="cont01">
+		<div class="inner">
+			<div class="myScore"><span id="totFlagCnt">00</span></div>
+			<div class="blind">
+				<h2>전 세계 속 랜선으로 내가 여행한 나라는 어디일까?</h2>
+				<em>랜선으로 내가 여행한 나라 수</em>
+			</div>
+		</div>
+	</div><!--//cont01-->
+	<div class="cont02">
+		<div class="inner">
+			<div class="flagMap">
+				<ul>
+					<li class="flag01">
+						<img class="grayFlagMap" src="../../../images/event/2021/0616_flagEvent/flagMap_01.png" alt="한국" />
+						<img class="colorFlagMap" src="../../../images/event/2021/0616_flagEvent/find_flagMap_01.png" alt="한국" />
+					</li>
+					<li class="flag02 find">
+						<img class="grayFlagMap" src="../../../images/event/2021/0616_flagEvent/flagMap_02.png" alt="콩고" />
+						<img class="colorFlagMap" src="../../../images/event/2021/0616_flagEvent/find_flagMap_02.png" alt="콩고" />
+					</li>
+					<li class="flag03 find">
+						<img class="grayFlagMap" src="../../../images/event/2021/0616_flagEvent/flagMap_03.png" alt="캐나다" />
+						<img class="colorFlagMap" src="../../../images/event/2021/0616_flagEvent/find_flagMap_03.png" alt="캐나다" />
+					</li>
+					<li class="flag04">
+						<img class="grayFlagMap" src="../../../images/event/2021/0616_flagEvent/flagMap_04.png" alt="러시아" />
+						<img class="colorFlagMap" src="../../../images/event/2021/0616_flagEvent/find_flagMap_04.png" alt="러시아" />
+					</li>
+					<li class="flag05">
+						<img class="grayFlagMap" src="../../../images/event/2021/0616_flagEvent/flagMap_05.png" alt="인도" />
+						<img class="colorFlagMap" src="../../../images/event/2021/0616_flagEvent/find_flagMap_05.png" alt="인도" />
+					</li>
+					<li class="flag06">
+						<img class="grayFlagMap" src="../../../images/event/2021/0616_flagEvent/flagMap_06.png" alt="미국" />
+						<img class="colorFlagMap" src="../../../images/event/2021/0616_flagEvent/find_flagMap_06.png" alt="미국" />
+					</li>
+					<li class="flag07">
+						<img class="grayFlagMap" src="../../../images/event/2021/0616_flagEvent/flagMap_07.png" alt="에티오피아" />
+						<img class="colorFlagMap" src="../../../images/event/2021/0616_flagEvent/find_flagMap_07.png" alt="에티오피아" />
+					</li>
+					<li class="flag08">
+						<img class="grayFlagMap" src="../../../images/event/2021/0616_flagEvent/flagMap_08.png" alt="필리핀" />
+						<img class="colorFlagMap" src="../../../images/event/2021/0616_flagEvent/find_flagMap_08.png" alt="필리핀" />
+					</li>
+					<li class="flag09">
+						<img class="grayFlagMap" src="../../../images/event/2021/0616_flagEvent/flagMap_09.png" alt="그린란드" />
+						<img class="colorFlagMap" src="../../../images/event/2021/0616_flagEvent/find_flagMap_09.png" alt="그린란드" />
+					</li>
+					<li class="flag10">
+						<img class="grayFlagMap" src="../../../images/event/2021/0616_flagEvent/flagMap_10.png" alt="카자흐스탄" />
+						<img class="colorFlagMap" src="../../../images/event/2021/0616_flagEvent/find_flagMap_10.png" alt="카자흐스탄" />
+					</li>
+					<li class="flag11">
+						<img class="grayFlagMap" src="../../../images/event/2021/0616_flagEvent/flagMap_11.png" alt="호주" />
+						<img class="colorFlagMap" src="../../../images/event/2021/0616_flagEvent/find_flagMap_11.png" alt="호주" />
+					</li>
+					<li class="flag12">
+						<img class="grayFlagMap" src="../../../images/event/2021/0616_flagEvent/flagMap_12.png" alt="남아프리카공화국" />
+						<img class="colorFlagMap" src="../../../images/event/2021/0616_flagEvent/find_flagMap_12.png" alt="남아프리카공화국" />
+					</li>
+					<li class="flag13">
+						<img class="grayFlagMap" src="../../../images/event/2021/0616_flagEvent/flagMap_13.png" alt="브라질" />
+						<img class="colorFlagMap" src="../../../images/event/2021/0616_flagEvent/find_flagMap_13.png" alt="브라질" />
+					</li>
+					<li class="flag14">
+						<img class="grayFlagMap" src="../../../images/event/2021/0616_flagEvent/flagMap_14.png" alt="아르헨티나" />
+						<img class="colorFlagMap" src="../../../images/event/2021/0616_flagEvent/find_flagMap_14.png" alt="아르헨티나" />
+					</li>
+					<li class="flag15">
+						<img class="grayFlagMap" src="../../../images/event/2021/0616_flagEvent/flagMap_15.png" alt="파푸아뉴기니" />
+						<img class="colorFlagMap" src="../../../images/event/2021/0616_flagEvent/find_flagMap_15.png" alt="파푸아뉴기니" />
+					</li>
+					<li class="flag16">
+						<img class="grayFlagMap" src="../../../images/event/2021/0616_flagEvent/flagMap_16.png" alt="영국" />
+						<img class="colorFlagMap" src="../../../images/event/2021/0616_flagEvent/find_flagMap_16.png" alt="영국" />
+					</li>
+					<li class="flag17">
+						<img class="grayFlagMap" src="../../../images/event/2021/0616_flagEvent/flagMap_17.png" alt="사우디아라비아" />
+						<img class="colorFlagMap" src="../../../images/event/2021/0616_flagEvent/find_flagMap_17.png" alt="사우디아라비아" />
+					</li>
+					<li class="flag18">
+						<img class="grayFlagMap" src="../../../images/event/2021/0616_flagEvent/flagMap_18.png" alt="알제리" />
+						<img class="colorFlagMap" src="../../../images/event/2021/0616_flagEvent/find_flagMap_18.png" alt="알제리" />
+					</li>
+					<li class="flag19">
+						<img class="grayFlagMap" src="../../../images/event/2021/0616_flagEvent/flagMap_19.png" alt="인도네시아" />
+						<img class="colorFlagMap" src="../../../images/event/2021/0616_flagEvent/find_flagMap_19.png" alt="인도네시아" />
+					</li>
+					<li class="flag20">
+						<img class="grayFlagMap" src="../../../images/event/2021/0616_flagEvent/flagMap_20.png" alt="터키" />
+						<img class="colorFlagMap" src="../../../images/event/2021/0616_flagEvent/find_flagMap_20.png" alt="터키" />
+					</li>
+					<li class="flag21">
+						<img class="grayFlagMap" src="../../../images/event/2021/0616_flagEvent/flagMap_21.png" alt="핀란드" />
+						<img class="colorFlagMap" src="../../../images/event/2021/0616_flagEvent/find_flagMap_21.png" alt="핀란드" />
+					</li>
+					<li class="flag22">
+						<img class="grayFlagMap" src="../../../images/event/2021/0616_flagEvent/flagMap_22.png" alt="노르웨이" />
+						<img class="colorFlagMap" src="../../../images/event/2021/0616_flagEvent/find_flagMap_22.png" alt="노르웨이" />
+					</li>
+					<li class="flag23">
+						<img class="grayFlagMap" src="../../../images/event/2021/0616_flagEvent/flagMap_23.png" alt="중국" />
+						<img class="colorFlagMap" src="../../../images/event/2021/0616_flagEvent/find_flagMap_23.png" alt="중국" />
+					</li>
+					<li class="flag24">
+						<img class="grayFlagMap" src="../../../images/event/2021/0616_flagEvent/flagMap_24.png" alt="콜롬비아" />
+						<img class="colorFlagMap" src="../../../images/event/2021/0616_flagEvent/find_flagMap_24.png" alt="콜롬비아" />
+					</li>
+					<li class="flag25">
+						<img class="grayFlagMap" src="../../../images/event/2021/0616_flagEvent/flagMap_25.png" alt="멕시코" />
+						<img class="colorFlagMap" src="../../../images/event/2021/0616_flagEvent/find_flagMap_25.png" alt="멕시코" />
+					</li>
+				</ul>
+			</div>
+			<div class="blind">
+				<h2>이벤트 대상 신규 프로그램</h2>
+			</div>
+		</div>
+	</div><!--//cont02-->
+	<div class="cont03">
+		<div class="inner">
+			<div class="flag mob_hide">
+				<ul>
+					<li class="flagNum01 ">
+						<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_01.png" alt="한국" />
+						<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_01.png" alt="한국" />
+						<div class="subScore"><span id="flagCnt_01">00</span></div>
+					</li>
+					<li class="flagNum02 find">
+						<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_02.png" alt="콩고" />
+						<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_02.png" alt="콩고" />
+						<div class="subScore"><span id="flagCnt_01">00</span></div>
+					</li>
+					<li class="flagNum03 find">
+						<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_03.png" alt="캐나다" />
+						<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_03.png" alt="캐나다" />
+						<div class="subScore"><span id="flagCnt_01">00</span></div>
+					</li>
+					<li class="flagNum04 ">
+						<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_04.png" alt="러시아" />
+						<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_04.png" alt="러시아" />
+						<div class="subScore"><span id="flagCnt_01">00</span></div>
+					</li>
+					<li class="flagNum05 find">
+						<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_05.png" alt="인도" />
+						<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_05.png" alt="인도" />
+						<div class="subScore"><span id="flagCnt_01">00</span></div>
+					</li>
+					<li class="flagNum06 find">
+						<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_06.png" alt="미국" />
+						<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_06.png" alt="미국" />
+						<div class="subScore"><span id="flagCnt_01">00</span></div>
+					</li>
+					<li class="flagNum07 find">
+						<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_07.png" alt="에티오피아" />
+						<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_07.png" alt="에티오피아" />
+						<div class="subScore"><span id="flagCnt_01">00</span></div>
+					</li>
+					<li class="flagNum08 ">
+						<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_08.png" alt="필리핀" />
+						<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_08.png" alt="필리핀" />
+						<div class="subScore"><span id="flagCnt_01">00</span></div>
+					</li>
+					<li class="flagNum09 find">
+						<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_09.png" alt="그린란드" />
+						<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_09.png" alt="그린란드" />
+						<div class="subScore"><span id="flagCnt_01">00</span></div>
+					</li>
+					<li class="flagNum10 find">
+						<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_10.png" alt="카자흐스탄" />
+						<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_10.png" alt="카자흐스탄" />
+						<div class="subScore"><span id="flagCnt_01">00</span></div>
+					</li>
+					<li class="flagNum11 find">
+						<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_11.png" alt="호주" />
+						<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_11.png" alt="호주" />
+						<div class="subScore"><span id="flagCnt_01">00</span></div>
+					</li>
+					<li class="flagNum12 find">
+						<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_12.png" alt="남아프리카공화국" />
+						<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_12.png" alt="남아프리카공화국" />
+						<div class="subScore"><span id="flagCnt_01">00</span></div>
+					</li>
+					<li class="flagNum13 find">
+						<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_13.png" alt="브라질" />
+						<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_13.png" alt="브라질" />
+						<div class="subScore"><span id="flagCnt_01">00</span></div>
+					</li>
+					<li class="flagNum14 find">
+						<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_14.png" alt="아르헨티나" />
+						<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_14.png" alt="아르헨티나" />
+						<div class="subScore"><span id="flagCnt_01">00</span></div>
+					</li>
+					<li class="flagNum15 find">
+						<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_15.png" alt="파푸아뉴기니" />
+						<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_15.png" alt="파푸아뉴기니" />
+						<div class="subScore"><span id="flagCnt_01">00</span></div>
+					</li>
+					<li class="flagNum16">
+						<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_16.png" alt="영국" />
+						<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_16.png" alt="영국" />
+						<div class="subScore"><span id="flagCnt_01">00</span></div>
+					</li>
+					<li class="flagNum17 find">
+						<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_17.png" alt="사우디아라비아" />
+						<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_17.png" alt="사우디아라비아" />
+						<div class="subScore"><span id="flagCnt_01">00</span></div>
+					</li>
+					<li class="flagNum18 find">
+						<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_18.png" alt="알제리" />
+						<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_18.png" alt="알제리" />
+						<div class="subScore"><span id="flagCnt_01">00</span></div>
+					</li>
+					<li class="flagNum19">
+						<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_19.png" alt="인도네시아" />
+						<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_19.png" alt="인도네시아" />
+						<div class="subScore"><span id="flagCnt_01">00</span></div>
+					</li>
+					<li class="flagNum20 find">
+						<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_20.png" alt="터키" />
+						<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_20.png" alt="터키" />
+						<div class="subScore"><span id="flagCnt_01">00</span></div>
+					</li>
+					<li class="flagNum21 find">
+						<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_21.png" alt="핀란드" />
+						<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_21.png" alt="핀란드" />
+						<div class="subScore"><span id="flagCnt_01">00</span></div>
+					</li>
+					<li class="flagNum22 ">
+						<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_22.png" alt="노르웨이" />
+						<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_22.png" alt="노르웨이" />
+						<div class="subScore"><span id="flagCnt_01">00</span></div>
+					</li>
+					<li class="flagNum23 find">
+						<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_23.png" alt="중국" />
+						<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_23.png" alt="중국" />
+						<div class="subScore"><span id="flagCnt_01">00</span></div>
+					</li>
+					<li class="flagNum24 find">
+						<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_24.png" alt="콜롬비아" />
+						<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_24.png" alt="콜롬비아" />
+						<div class="subScore"><span id="flagCnt_01">00</span></div>
+					</li>
+					<li class="flagNum25 find">
+						<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_25.png" alt="멕시코" />
+						<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_25.png" alt="멕시코" />
+						<div class="subScore"><span id="flagCnt_01">00</span></div>
+					</li>
+				</ul>
+			</div>
+			<div class="flag mob_view">
+				<div class="slide_flag slider">
+					<div class="m_flag_wrap">
+						<ul>
+							<li class="flagNum01">
+								<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_01.png" alt="한국" />
+								<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_01.png" alt="한국" />
+								<div class="subScore"><span id="flagCnt_01">00</span></div>
+							</li>
+							<li class="flagNum02 find">
+								<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_02.png" alt="콩고" />
+								<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_02.png" alt="콩고" />
+								<div class="subScore"><span id="flagCnt_01">00</span></div>
+							</li>
+							<li class="flagNum03 find">
+								<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_03.png" alt="캐나다" />
+								<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_03.png" alt="캐나다" />
+								<div class="subScore"><span id="flagCnt_01">00</span></div>
+							</li>
+							<li class="flagNum04">
+								<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_04.png" alt="러시아" />
+								<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_04.png" alt="러시아" />
+								<div class="subScore"><span id="flagCnt_01">00</span></div>
+							</li>
+							<li class="flagNum05">
+								<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_05.png" alt="인도" />
+								<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_05.png" alt="인도" />
+								<div class="subScore"><span id="flagCnt_01">00</span></div>
+							</li>
+							<li class="flagNum06">
+								<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_06.png" alt="미국" />
+								<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_06.png" alt="미국" />
+								<div class="subScore"><span id="flagCnt_01">00</span></div>
+							</li>
+							<li class="flagNum07 find">
+								<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_07.png" alt="에티오피아" />
+								<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_07.png" alt="에티오피아" />
+								<div class="subScore"><span id="flagCnt_01">00</span></div>
+							</li>
+							<li class="flagNum08">
+								<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_08.png" alt="필리핀" />
+								<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_08.png" alt="필리핀" />
+								<div class="subScore"><span id="flagCnt_01">00</span></div>
+							</li>
+							<li class="flagNum09">
+								<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_09.png" alt="그린란드" />
+								<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_09.png" alt="그린란드" />
+								<div class="subScore"><span id="flagCnt_01">00</span></div>
+							</li>
+						</ul>
+					</div>
+					<div class="m_flag_wrap">
+						<ul>
+							<li class="flagNum10">
+								<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_10.png" alt="카자흐스탄" />
+								<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_10.png" alt="카자흐스탄" />
+								<div class="subScore"><span id="flagCnt_01">00</span></div>
+							</li>
+							<li class="flagNum11">
+								<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_11.png" alt="호주" />
+								<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_11.png" alt="호주" />
+								<div class="subScore"><span id="flagCnt_01">00</span></div>
+							</li>
+							<li class="flagNum12">
+								<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_12.png" alt="남아프리카공화국" />
+								<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_12.png" alt="남아프리카공화국" />
+								<div class="subScore"><span id="flagCnt_01">00</span></div>
+							</li>
+							<li class="flagNum13">
+								<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_13.png" alt="브라질" />
+								<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_13.png" alt="브라질" />
+								<div class="subScore"><span id="flagCnt_01">00</span></div>
+							</li>
+							<li class="flagNum14">
+								<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_14.png" alt="아르헨티나" />
+								<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_14.png" alt="아르헨티나" />
+								<div class="subScore"><span id="flagCnt_01">00</span></div>
+							</li>
+							<li class="flagNum15">
+								<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_15.png" alt="파푸아뉴기니" />
+								<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_15.png" alt="파푸아뉴기니" />
+								<div class="subScore"><span id="flagCnt_01">00</span></div>
+							</li>
+							<li class="flagNum16">
+								<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_16.png" alt="영국" />
+								<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_16.png" alt="영국" />
+								<div class="subScore"><span id="flagCnt_01">00</span></div>
+							</li>
+							<li class="flagNum17">
+								<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_17.png" alt="사우디아라비아" />
+								<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_17.png" alt="사우디아라비아" />
+								<div class="subScore"><span id="flagCnt_01">00</span></div>
+							</li>
+							<li class="flagNum18 find">
+								<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_18.png" alt="알제리" />
+								<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_18.png" alt="알제리" />
+								<div class="subScore"><span id="flagCnt_01">00</span></div>
+							</li>
+						</ul>
+					</div>
+					<div class="m_flag_wrap">
+						<ul>
+							<li class="flagNum19">
+								<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_19.png" alt="인도네시아" />
+								<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_19.png" alt="인도네시아" />
+								<div class="subScore"><span id="flagCnt_01">00</span></div>
+							</li>
+							<li class="flagNum20">
+								<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_20.png" alt="터키" />
+								<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_20.png" alt="터키" />
+								<div class="subScore"><span id="flagCnt_01">00</span></div>
+							</li>
+							<li class="flagNum21">
+								<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_21.png" alt="핀란드" />
+								<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_21.png" alt="핀란드" />
+								<div class="subScore"><span id="flagCnt_01">00</span></div>
+							</li>
+							<li class="flagNum22">
+								<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_22.png" alt="노르웨이" />
+								<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_22.png" alt="노르웨이" />
+								<div class="subScore"><span id="flagCnt_01">00</span></div>
+							</li>
+							<li class="flagNum23">
+								<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_23.png" alt="중국" />
+								<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_23.png" alt="중국" />
+								<div class="subScore"><span id="flagCnt_01">00</span></div>
+							</li>
+							<li class="flagNum24">
+								<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_24.png" alt="콜롬비아" />
+								<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_24.png" alt="콜롬비아" />
+								<div class="subScore"><span id="flagCnt_01">00</span></div>
+							</li>
+							<li class="flagNum25 find">
+								<img class="grayFlag" src="../../../images/event/2021/0616_flagEvent/flag_25.png" alt="멕시코" />
+								<img class="colorFlag" src="../../../images/event/2021/0616_flagEvent/find_flag_25.png" alt="멕시코" />
+								<div class="subScore"><span id="flagCnt_01">00</span></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!--//cont03-->
+	<div class="cont04">
+		<div class="inner">
+			<button type="button" class="closeBtn" onclick="javascript:history.back();">이전페이지 가기</button>
+			<div class="blind">
+				<h2>나라별 국기 획득 방법 & 유의사항</h2>
+				<ul>
+					<li>방송프로그램 다시보기 시청 시 랜덤으로 국기를 획득할 수 있습니다.</li>
+					<li>하루에 방송프로그램 1회차 당 국기 1개 획득 가능합니다.</li>
+					<li>추천 프로그램에서 높은 확률로 국기 획득이 가능합니다.</li>
+					<li>국기를 꼭 클릭하여야 국기 획득이 됩니다.(클릭하지 않은 국기는 획득되지 않음)</li>
+					<li>여러 나라 국기를 많이 획득할수록 당첨 확률 UP!!</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</div><!--//cont04-->
+</div>
+<!-- //2021-06-21 프로그램 속 나라별 국기 찾기 이벤트 -->
+</body>
+</html>

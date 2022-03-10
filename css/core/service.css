@@ -1,0 +1,1643 @@
+@charset "utf-8";
+
+/* Service_Common */
+/* Header Area */
+#Header{position:relative;background:url('https://static.ebs.co.kr/www/common/img/global/background/bg_header.gif') repeat-x;*z-index:9999;} /*평소:z-index:101, html5플레이어 전체창:z-index:1*/ /* 2017-02-01 */
+#Header .topBnr {display:block;width:100%;overflow:hidden;}  /* 2016-12-14 */
+#Header .innerBnr {width:980px;height:100%;margin:0 auto;position:relative;}  /* 2016-12-14 */
+#Header .innerBnr .bnr_close { position:absolute; top:0px; right:0;border: 0 none; color: #555; vertical-align: middle; width:19px; height:19px; margin:10px 15px; background:url("https://static.ebs.co.kr/www/common/img/category/job/btn_topbnr_close.png") no-repeat scroll 0 0 transparent; }  /* 2016-12-14 */
+#Header .innerBnr .nanumgothiccoding{position: absolute; top: 9px; left: 307px;  height: 75px; line-height: 77px;} /* 2018-04-10 추가 */
+
+#skip:after {display:block;content:'';position:absolute;z-index:101;background:url('https://static.ebs.co.kr/www/common/img/global/background/bg_header.gif') repeat-x;*zoom:1;width:100%;height:30px;} /* 2017-01-12 */
+
+#Header .container{display:inline-block;position:relative;width:980px;height:76px;margin:0 auto;padding-top:30px}
+html>/**/body #Header .container{display:block}
+#Header .container:after{content:"";display:block;clear:both;height:0;visibility:hidden}
+.area_logo{display:inline;float:left;position:relative;z-index:30;margin-left:14px;width:236px}
+.area_logo h1{padding-top:15px}
+.area_logo h1:after{content:"";display:block;clear:both;height:0;visibility:hidden}
+.area_logo h1 img{float:left;padding:6px 5px}
+.area_search{display:inline;float:left;width:440px}
+.areaserach_vet {width:470px}
+.area_search .form{padding-top:22px}
+.area_search .form .input{display:inline;float:left;position:relative;width:366px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bg_search.png') no-repeat}
+.area_search .form .input_vet {width:320px; background:url('https://static.ebs.co.kr/www/common/img/global/background/bg_search_vet.png') no-repeat}
+.area_search .form .input .wrap{width:319px; display:block;height:33px;padding:5px 0 0 4px;vertical-align:baseline}
+.area_search .form .input .wrap input.txt_type{width:309px;border:0 none;padding-top:2px;padding-left:10px;height:21px;background:none;color:#666;line-height:21px;outline:0 none}
+.area_search .form .input .wrap #nexearch_query{width:309px;border:0 none;padding-top:2px;padding-left:10px;height:21px;background:none;color:#666;line-height:21px;outline:0 none}
+.area_search .form .input_vet .wrap input.txt_type {width:267px}
+.area_search .form .input .autocomplate{position:absolute;z-index:40;left:0;top:28px;width:100%}
+.area_search .form .input .autocomplate .control{position:absolute;right:10px;top:-23px}
+.area_search .form .input .autocomplate .control button{float:left;width:21px;height:24px;background:url('https://static.ebs.co.kr/www/common/img/global/button/btn_glb_v1.png') no-repeat -7px -93px;}
+.area_search .form .input .autocomplate .control button.off{background-position:7px -93px}
+.area_search .form .input .autocomplate .print{display:none;border:1px solid #f00;border-top:0 none !important}
+.area_search .form .button{display:inline;float:left;margin-left:2px}
+.area_search .form .button button.submit{float:left;width:69px;height:38px;background-image:url('https://static.ebs.co.kr/www/common/img/global/button/btn_search_submit.png');font-size:0em;line-height:0em;text-indent:-10240px}
+.area_search .form .re_search {position:relative; top:11px; left:8px; font-size:11px}
+.area_search .form .re_search input {margin:0; vertical-align:-2px}
+
+#ark_down {top:-27px !important; left:334px !important}
+#ark_up {top:-27px !important; left:334px !important}
+
+.area_search2 {display:inline;float:left;width:455px}
+.area_search2 .form{padding-top:22px}
+.area_search2 .form .input{display:inline;float:left;position:relative;width:366px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bg_search.png') no-repeat}
+.area_search2 .form .input .wrap{display:block;height:33px;padding:5px 0 0 4px;vertical-align:baseline}
+.area_search2 .form .input .wrap input.txt_type{width:330px;border:0 none;padding-top:2px;padding-left:10px;height:21px;background:none;color:#666;line-height:21px;outline:0 none}
+.area_search2 .form .input .autocomplate{position:absolute;z-index:40;left:0;top:28px;width:100%}
+.area_search2 .form .input .autocomplate .control{position:absolute;right:10px;top:-23px}
+.area_search2 .form .input .autocomplate .control button{float:left;width:21px;height:24px;background:url('https://static.ebs.co.kr/www/common/img/global/button/btn_glb_v1.png') no-repeat -7px -93px;}
+.area_search2 .form .input .autocomplate .control button.off{background-position:7px -93px}
+.area_search2 .form .input .autocomplate .print{display:none;border:1px solid #f00;border-top:0 none !important}
+.area_search2 .form .button{display:inline;float:left;margin-left:2px}
+.area_search2 .form .button button.submit{float:left;width:69px;height:38px;background-image:url('https://static.ebs.co.kr/www/common/img/global/button/btn_search_submit.png');font-size:0em;line-height:0em;text-indent:-10240px}
+.area_search2 .form .button button.engsubmit{float:left;width:85px;height:38px;background-image:url('https://static.ebs.co.kr/www/common/img/global/button/btn_searchsubmit_eng.png');font-size:0em;line-height:0em;text-indent:-10240px}
+
+.area_global{position:absolute;z-index:999999;left:0;top:0;width:978px;height:30px;border-left:1px solid #d8d9db;border-right:1px solid #d8d9db}
+.area_global .area_util{display:inline;float:left;width:247px;padding-left:19px;}
+.area_global .areautil_vet {width:445px}
+.area_global .area_util ul{display:inline-block;height:25px;padding-top:5px;padding-right:20px; border-right:1px solid #d8d9db}
+.area_global .area_util ul *{display:inline;float:left}
+.area_global .area_util ul li{margin-left:10px;padding-left:11px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bar_gnb.gif') no-repeat left center}
+.area_global .area_util ul li:first-child, #Header .area_global .area_util ul li.first_child{margin-left:0;padding-left:0;background-image:none}
+.area_global .area_util ul li img{display:block;padding:5px 0}
+.area_global .area_gnb{float:right;margin-top:5px;padding-right:20px}
+.area_global .area_gnb *{display:inline; float:left}
+.area_global .area_gnb .user{padding:4px 0 2px; font-size:11px; color:#757575; font-weight:bold}
+.area_global .area_gnb .user strong{float:none;color:#3c73a0}
+.area_global .area_gnb select{width:125px;margin-right:10px}
+.area_global .area_gnb ul li{margin-left:10px;padding-left:11px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bar_gnb.gif') no-repeat left center;font-size:11px;}
+.area_global .area_gnb ul li:first-child, .area_global .area_gnb ul li.first_child{margin-left:0;padding-left:0;background-image:none;}
+.area_global .area_gnb ul li a, .area_global .area_gnb ul li .slash{padding:4px 0 2px;color:#333;}
+.area_global .area_gnb ul li.more{background-position:0 5px;}
+.area_global .area_gnb ul li.more2{margin:0;background:none;}
+.area_global .area_gnb ul li.more a{padding-top:5px;}
+.area_global .area_gnb ul li.form{margin:0;padding:0;background:none}
+.area_global .area_gnb ul li.form1{padding-left:10px;background:none}
+.area_global .area_gnb ul li.form2{padding-left:5px}
+.area_global .area_gnb ul li.form2 select{margin:0;}
+.area_global .area_gnb ul li .intxt_searall{border-right:0}
+
+.area_global .area_gnb ul li.more .more_box{position:absolute;top:30px;right:0;border:3px solid #4481bd;background:#fff;z-index:200}
+.area_global .area_gnb ul li.more .more_box li{height:245px;margin:0;padding:13px 0 15px 12px;border-right:1px solid #eaeaea;background:none}
+.area_global .area_gnb ul li.more .more_box li.more_category1, .area_global .area_gnb ul li.more .more_box li.more_category1 dl{width:118px}
+.area_global .area_gnb ul li.more .more_box li.more_category2, .area_global .area_gnb ul li.more .more_box li.more_category2 dl{width:98px}
+.area_global .area_gnb ul li.more .more_box li.more_category3, .area_global .area_gnb ul li.more .more_box li.more_category3 dl{width:118px}
+.area_global .area_gnb ul li.more .more_box li.more_category4, .area_global .area_gnb ul li.more .more_box li.more_category4 dl{width:118px;border-right:none}
+.area_global .area_gnb ul li.more .more_box li dt{display:block;float:none;margin-bottom:11px}
+.area_global .area_gnb ul li.more .more_box li dd{clear:both;display:block;float:none;line-height:20px;}
+.area_global .area_gnb ul li.more .more_box li dd.type2 {clear:none;float:left;width:52px;padding:0 0 0 7px;line-height:14px;background:url('https://static.ebs.co.kr/www/common/img/global/menu/bu_global_more_t2.gif') no-repeat 0 50%;}
+.area_global .area_gnb ul li.more .more_box li dd img{vertical-align:-1px;}
+.area_global .area_gnb ul li.more .more_box li dd a{height:1%;}
+.area_global .area_gnb ul li.more .more_box a, .area_global .area_gnb ul li.more .more_box strong, .area_global .area_gnb ul li.more .more_box img{float:none;padding:0;color:#666}
+.area_global .area_gnb ul li.more .more_box .btn_more_close{position:absolute;right:10px;bottom:10px;}
+
+.nav_rel{position:absolute;top:61px;right:0;width:270px;}
+.nav_rel ul{float:right;height:15px;margin:0 -6px 0 0;}
+.nav_rel ul *{display:inline;float:left}
+.nav_rel ul li{height:30px;padding-right:8px;padding-left:8px;background:url('https://static.ebs.co.kr/www/common/img/category/tv/bar_topmenu.gif') no-repeat 0 02px;position:relative;}
+.nav_rel ul li:first-child, #Header .nav_rel ul li.first_child{margin-left:0;padding-left:0;background-image:none}
+.nav_rel .sub {display:block; float:none; height:auto; background:#fff; border:1px solid #d0d0d0; position:absolute; top:23px; left:0; z-index:999}
+.nav_rel .sub * {display:block; float:none;}
+.nav_rel .sub li {height:auto; margin:0; padding:0; background:none; position:static;}
+.nav_rel .sub li a {padding:3px 7px; font-size:11px; color:#8e8e8e; text-decoration:none; white-space:nowrap;}
+.nav_rel .sub li a:hover,
+.nav_rel .sub li a:focus,
+.nav_rel .sub li a:active {color:#2a2a2a; background:#eff6fb;}
+
+/* Navigation Area */
+#Nav{position:relative;z-index:100}
+
+/* 06-04 popup */ 
+.popup_wrap{position:absolute; top:280px; left: 50%; margin-left: -300px; z-index: 500;border: 5px solid #999}
+.popup_wrap02{position:absolute; top:280px; left: 80%; z-index: 500;border: 5px solid #405e86; border-bottom: 20px solid #405e86}
+.popup_wrap02 label,.popup_wrap02 button {color:#fff;}
+
+/* 2016-08-02 gnbStyle 변경 :라인추가 */
+#Nav.navWrap{position: relative; border: 1px solid #dcdfe3;border-right: 0;border-left: 0;background:none} 
+.area_lnb{position:relative;width:980px;height:40px;min-height:40px;margin:0 auto;padding:0 9px}
+.area_lnb.ds02{background:none;height:38px;border:1px solid #dce0e3;border-top:0;border-bottom:0;}
+.area_lnb.ds02 a{font-family:'Noto Sans KR','맑은 고딕','Malgun Gothic','돋움','Dotum','AppleGothic',sans-serif}/* 2018-07-05 수정 */
+.area_lnb.ds02 ul.nav_main li {height:38px;margin:0 17px;position:relative;}/* 2016-08-05 */
+.area_lnb.ds02 ul.nav_main li .ico_n {position: absolute;top: 3px;left: -22px;}/* 2016-08-05 */
+.area_lnb.ds02 ul.nav_main li a{display:block;width:100%;height:100%;padding:0;color:#444444;font-weight:400;font-size:15px;line-height:40px} 
+.area_lnb.ds02 ul.nav_main li a:hover,
+.area_lnb.ds02 ul.nav_main li a:focus,
+.area_lnb.ds02 ul.nav_main li a:active{text-decoration:none;border-bottom: 2px solid #4f8abf;} 
+.area_lnb.ds02 ul.nav_main li.selected{background:none} 
+.area_lnb.ds02 ul.nav_main li.selected a{background:none;color:#4f8abf;font-weight:500;border-bottom: 2px solid #4f8abf;} 
+.area_lnb.ds02 .my_fav{border-color:#9aa6b4}
+.area_lnb.ds02 .my_fav span, .area_lnb.ds02 .my_fav a.toggle{background:url('https://static.ebs.co.kr/www/common/img/category/tv/bg_myfav2.gif') no-repeat right -26px} 
+.area_lnb.ds02  p.nav_btn  a{display:block; text-indent:-9px; width:95px;height:28px;color:#fff;text-align:center;line-height:28px; background:#99a6b4 url('https://static.ebs.co.kr/www/common/img/2016new/bg_myfav1.gif') no-repeat 75px 10px}
+
+.area_lnb ul.nav_main{display:inline;float:left}
+.area_lnb ul.nav_main li{float:left;margin-top:6px;}
+.area_lnb ul.nav_main li:first-child, #Nav .area_lnb ul.nav_main li.first_child{margin-left:20px}    
+.area_lnb ul.nav_main li a{float:left; height:23px;padding:5px 25px 0; color:#fff}
+
+.area_lnb p.nav_btn{display:inline;float:right;padding-top:6px;padding-right:5px}
+.area_lnb .my_fav{display:inline;position:relative;float:right;width:135x;height:26px;margin:6px 5px 0 0;border:1px solid #456398;background:#fff;} /* 2017-03-03 라인 수정 */
+.area_lnb .my_fav span, 
+.area_lnb .my_fav a.toggle {display:block;color:#555;height:19px;padding:7px 37px 0 10px;background:url('https://static.ebs.co.kr/www/common/img/category/tv/bg_myfav.gif') no-repeat right -26px;cursor:pointer; text-decoration:none;}
+.area_lnb .my_fav span.selected, 
+.area_lnb .my_fav a.selected {background-position:right 0 !important}
+.area_lnb .my_fav ul{display:none;position:absolute;top:26px;left:-1px;width:115px;padding:7px 10px;border:1px solid #456398; background:#fff; z-index:100;} /* 2017-03-03 라인 수정 */
+.area_lnb .my_fav ul li{line-height:18px;letter-spacing:-1px;}
+.area_lnb .my_fav ul li a{color:#555;}
+
+.myfav_package {border:1px solid #b74e2f !important}
+.myfav_package span, 
+.myfav_package a.toggle {background:url('https://static.ebs.co.kr/www/common/img/category/package/bg_myfav.gif') no-repeat 150px -26px !important}
+.myfav_package span.selected, 
+.myfav_package a.selected {background-position:right 0 !important}
+.myfav_package ul.b74e2f {display:none;position:absolute;top:26px;left:-1px;width:158px;padding:7px 10px;border:1px solid #b74e2f;background:#fff;}
+
+.vod_list{width:100%;border-bottom:1px solid #ccc}
+.vod_list li{position:relative;border-top:1px solid #ececec;}
+.vod_list li:first-child,.vod_list li.first_child{border-top:1px solid #ccc}
+.vod_list li a{display:block;width:205px;padding:9px 0 7px;background:url('https://static.ebs.co.kr/www/common/img/global/icon/ico_go.gif') no-repeat right 10px;}
+.vod_list li a:hover{text-decoration:none;}
+.vod_list li strong{display:block;}
+.vod_list li span{display:block;margin-top:5px;font-size:11px;}
+
+.vod_list2{width:100%;border-bottom:1px solid #ccc}
+.vod_list2 li{position:relative;border-top:1px solid #ececec;}
+.vod_list2 li:first-child,.vod_list2 li.first_child{border-top:1px solid #ccc}
+.vod_list2 li .tit{display:block;width:192px;padding:9px 0 7px;margin:0 13px 0 0;}
+.vod_list2 li .tit:hover{text-decoration:none;}
+.vod_list2 li .h { position:absolute; top:9px; right:0; }
+.vod_list2 li strong{display:block;}
+.vod_list2 li span{display:block;margin-top:5px;font-size:11px;}
+
+#Contents{position:relative;width: 980px; margin: 0 auto; z-index:3;}
+#Contents:after{content:"";display:block;clear:both}
+
+/* Lnb Area */
+#lnbArea{position: relative; float: left; width: 205px;padding-bottom:40px}
+#lnbArea .lnb_menu_box{border-bottom: 1px solid #f3f3f3;}
+#lnbArea .menu_area{padding-top: 51px; border: 1px solid #ececec; border-top: 0;}
+#lnbArea .menu_area h2{position: absolute; top: 20px; left: 19px; width: 165px; height: 30px; background: #fff;}
+#lnbArea .menu_area .lnb{margin-top: -1px;}
+#lnbArea .menu_area .lnb h4{background: url('https://static.ebs.co.kr/www/common/img/category/customer/bg_lnb-or.gif') no-repeat 19px top; }
+#lnbArea .menu_area .lnb h4 a{display: block; padding: 13px 0 10px 19px; background: url('https://static.ebs.co.kr/www/common/img/global/bul/bul_lnb-or.png') no-repeat 179px center;}
+#lnbArea .menu_area .lnb .sub_menu{padding: 10px 0; display: none;}
+#lnbArea .menu_area .lnb .sub_menu li a{display: block; padding: 5px 0 4px 19px;}
+#contentBody{float:right; width:750px; padding-bottom:40px}
+
+.txt_banner_area{padding-top: 2px;}
+.txt_banner_area li{padding-top: 3px;}
+.img_banner_area li{padding-top: 5px;}
+.img_banner_area li:first-child,.img_banner_area li.first_child{padding-top:0}
+
+/* Content Global */
+.subtit_area{width:750px;height:30px;font-size:11px;line-height:11px;letter-spacing:-1px; *zoom:1}
+.subtit_area:after{content:"";display:block;clear:both}
+.subtit_border{border-bottom: 1px solid #ececec;}
+.wide_subtit{width:980px;height:18px;margin:0 auto 20px;padding:20px 0 10px;border-bottom:2px solid #666;}
+.subtit_area h3,.subtit_area h2{float:left}
+.subtit_area h3.tit {color: #333;font: bold 22px/110% MGothic,"맑은고딕";} /* 2016-09-30 */
+.subtit_area .location{float:right;padding:3px 2px 0 0}
+.subtit_area .location a,.subtit_area .location strong{margin-left:3px;padding-left:8px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bg_location.gif') no-repeat left 2px}
+.subtit_area .location a.home{padding:0;background:none}
+.subtit_area .location a.home img{margin-bottom:3px; vertical-align:middle;}
+.subtit_area .location a{color:#666}
+.subtit_area .location strong{color:#666}
+
+/* board */
+.board_search{position:relative;width:729px;height:29px;margin-bottom:10px;padding:9px 0 0 19px;border:1px solid #ddd;background:#f7f7f7}
+.board_search input,.board_search select,.board_search button{vertical-align:middle}
+.board_search .total{margin-right:4px;color:#222;font-weight:bold}
+.board_search .total em{color:#ff644e;letter-spacing:-1px}
+.board_search label{margin-left:23px;margin-right:2px;color:#222;font-weight:bold}
+.board_search label.label_type1{margin-left:13px}
+.board_search select.sear_type{width:80px;margin-right:1px}
+.board_search select.sear_type2{width:200px}
+.board_search select.sear_type3{width:130px}
+.board_search select.sear_type4{width:150px}
+.board_search input.txt_type{height:18px;padding:0 0 0 2px;border-color:#b5b5b5;line-height:18px}
+.board_search .btn_inline{margin-left:4px}
+.board_search .go_schedule{position:absolute;top:7px;right:10px}
+.board_search .go_schedule img{vertical-align:top}
+
+.board_list thead th,.board_view dt,.view_list dt,.board_write th,.faq_head li,.file_upload strong{color:#222;font-weight:bold}
+.board_list{width:100%;border-top:2px solid #666;border-spacing:0;}
+.board_list thead th{padding:8px 0;border-bottom:1px solid #ccc;background:#f7f7f7}
+.board_list thead th span{display:block;background:url('https://static.ebs.co.kr/www/common/img/global/background/bar_board.gif') no-repeat left center}
+.board_list thead th.first_cell{background:#f7f7f7 url('https://static.ebs.co.kr/www/common/img/global/background/bg_th.gif') repeat-y left top}
+.board_list thead th.last_cell{background:#f7f7f7 url('https://static.ebs.co.kr/www/common/img/global/background/bg_th.gif') repeat-y right top}
+.board_list tbody td{padding:7px 0;border-bottom:1px solid #ededed;color:#666;text-align:center}
+.board_list tbody td.order{ font-size:0; }
+.board_list tbody .last_row td{border-bottom:1px solid #ccc}
+.board_list tbody .mustline td{border-bottom:1px solid #ddd}
+.board_list tbody .must td{background:#f7f7f7}
+.board_list a{color:#222}
+.board_list a.notify{color:#bbb}
+.board_list a:hover,.board_list a:active{color:#ff644e}	
+.board_list .reply{padding-left:12px;background:url('https://static.ebs.co.kr/www/common/img/global/icon/ico_reply.png') no-repeat 1px 0}
+.board_list .icons .ico_lock{position:absolute;top:1px;right:-31px}
+.board_list .icons .ico_new{top:2px}
+.board_list .comment_num{color:#ff644e;font-size: 11px;font-weight: normal}
+.board_list .lt{padding-left:10px}
+.board_list .lt strong{color:#3baab6}
+.board_list .lt a{display:inline-block;position:relative}
+
+#lectureList .board_list .lt a{position:static;}
+
+.board_view{border-top:2px solid #666;color:#666;border-bottom:1px solid #ccc}
+.board_view_nofoot{border-bottom:1px solid #ededed}
+.view_head{position:relative;border:1px solid #ccc;border-top:none;background:#f7f7f7}
+.view_head .view_tit{/* height:23px; */ padding:8px 0 8px 19px;border-bottom:1px solid #ccc;color:#ff644e;font-weight:bold}
+.view_head .view_tit strong{color:#3baab6}
+.view_head dl{height:31px;line-height:31px}
+.view_head dl.double{border-top:1px solid #ccc}
+.view_head dl *{float:left}
+.view_head dl dt{min-width:39px; padding-right:10px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bar_board.gif') no-repeat right center;}
+.view_head dl.ico dt.first_term{padding-left:18px}
+.view_head dl dt.first_term{padding-left:20px}
+.view_head dl dd{margin-right:28px;padding-left:10px}
+.view_head .sns{position:absolute;top:5px;right:19px;width:auto;margin:0}
+.view_head .sns li{float:left;padding-left:3px}
+.view_body{padding:10px 0 0 0; line-height:18px}
+.view_body .data_area{padding:0  20px 30px}
+.view_body .pic{margin-bottom:20px}
+.board_view .modify_info {padding:0 20px 20px;text-align:right;}
+.board_view .btn_prizewinner{padding:10px 10px 20px 20px}
+
+.rel_vod{height:32px;border-top:1px solid #ededed}
+.rel_vod h4, .rel_vod dl, .rel_vod dt, .rel_vod dd{float:left;height:32px;line-height:32px}
+.rel_vod h4{margin-right:6px;padding-left:20px;padding-right:10px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bar_board.gif') no-repeat right center;color:#222}
+.rel_vod dt{padding-right:5px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bar_colon.gif') no-repeat right center;color:#666;font-weight:bold}
+.rel_vod dd{padding:0 20px 0 6px;}
+.rel_vod dd.last_desc{padding-right:10px}
+.rel_vod .btn_viewvod{float:left;margin-top:7px}
+.rel_vod .btn_delvod{float:left;margin-top:10px}
+
+.board_write .rel_vod{margin-top:6px;border-top:1px dashed #ddd}
+.board_write .btn_searvod{margin-left:6px;}
+.board_write .btn_searvod img{vertical-align:-5px;}
+
+.view_foot{width:750px;padding:10px 0;border-top:1px solid #ededed;overflow:hidden;line-height:18px}
+.view_foot dt,.view_foot dd{float:left}
+.view_foot dt{width:54px;padding-left:24px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bg_board.png') no-repeat -100px -17px}
+.view_foot dd{padding-left:8px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bar_board.gif') no-repeat 0 3px;color:#666}
+.view_foot dd a{color:#666}
+
+.upload_file{position:relative;width:730px;/* padding-right:20px; */margin-bottom:30px;line-height: 18px;text-align:right}
+.upload_file dl:after{content:"";display:block;clear:both}
+.upload_file dt{float:right;}
+.upload_file dt a{float:left;padding-left:20px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bg_board.png') no-repeat -100px -17px;color:#969696;font-size:12px;font-weight:normal}
+.upload_file dt a span{padding-right:15px;background:url('https://static.ebs.co.kr/www/common/img/global/button/btn_file_arrow.gif') no-repeat right center}
+.upload_file a.register{display:inline-block;padding-left: 13px;background: url("https://static.ebs.co.kr/www/common/img/category/onair/icon_main_register.gif") no-repeat 0 4px;}
+.upload_file a.register_v{display:inline-block;padding-left: 13px;background: url("https://static.ebs.co.kr/www/common/img/category/onair/icon_main_register.gif") no-repeat 0 4px;}
+.upload_file a.del{margin-left:13px; padding-left:0 !important; background:none !important; color:#ff644e}
+
+.upload_file dt a.register span{margin-right:10px;padding-right:11px;background: url("https://static.ebs.co.kr/www/common/img/global/background/bar_board.gif") no-repeat right center;}
+.upload_file dt a.register_v span{margin-right:10px;padding-right:11px;background: url("https://static.ebs.co.kr/www/common/img/global/background/bar_board.gif") no-repeat right center;}
+.upload_file dt strong{color:#ff644e}
+.upload_file dd{display:none;position:absolute;top:20px;right:0;padding:11px 28px 11px 15px;border:2px solid #cfcfcf;background:#fff}
+.upload_file dd .file_close{position:absolute;top:5px;right:5px;width:9px;height:9px;padding:2px;background:url('https://static.ebs.co.kr/www/common/img/global/button/btn_file_close.png') no-repeat 2px 2px}
+
+.brd{padding-bottom:10px;border-bottom:1px solid #ededed}
+.view_answer {padding:18px 21px 16px;border-top:1px solid #ededed;background:#f7f7f7}
+.view_answer dl{width:708px;overflow:hidden}
+.view_answer dt{height:16px;margin-bottom:9px;padding-left:26px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bg_board.png') no-repeat -100px 0;color:#469bdc;font-size:12px;line-height:16px;}
+.view_answer dd{color:#222;line-height:18px}
+
+.view_answer2{padding:18px 21px 16px;border-top:1px solid #ededed;background:#f7f7f7}
+.view_answer2 dl{width:708px;overflow:hidden}
+.view_answer2 dt{height:16px;margin-bottom:9px;padding-left:26px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bg_board.png') no-repeat -100px 0;color:#469bdc;font-size:12px;line-height:16px;}
+.view_answer2 dd{color:#222;line-height:18px}
+
+.view_btn{height:29px;margin-top:10px}
+.view_btn ul{float:right}
+.view_btn ul *{float:left}
+.view_btn a{display:inline-block;margin-left:4px}
+
+.view_list{margin-top:10px;border-top:1px solid #ccc;background:#f7f7f7}
+.view_list li{height:31px;border-right:1px solid #ccc;border-left:1px solid #ccc;border-bottom:1px solid #ccc;}
+.view_list li *{float:left;height:31px;line-height:31px}
+.view_list li dt{width:50px;padding-left:20px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bar_board.gif') no-repeat right center}
+.view_list li dd{padding-left:12px}
+.view_list li dd.subject{width:576px}
+.view_list li dd.date{width:78px;color:#999}
+
+.view_list2{margin-top:35px;border-top:1px solid #ccc;background:#f7f7f7}
+.view_list2 li{height:31px;border-right:1px solid #ccc;border-left:1px solid #ccc;border-bottom:1px solid #ccc;}
+.view_list2 li *{float:left;height:31px;line-height:31px}
+.view_list2 li dt{width:50px;padding-left:20px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bar_board.gif') no-repeat right center; font-weight:bold}
+.view_list2 li dd{padding-left:12px}
+.view_list2 li dd.subject{width:576px}
+.view_list2 li dd.date{width:78px;color:#999}
+
+.comment{position:relative;width:100%;padding-top:10px;border-bottom:1px solid #ccc}
+.comment .head_content{width:100%;float:left}
+.comment .head_content .total{display:block;float:left;/*width:51px;*/padding-right:11px;padding-top:4px;color:#222;font-weight:bold;letter-spacing:-1px}
+.comment .head_content .total strong{color:#ff644e;}
+.comment .head_content ul{float:left;margin-right:19px}
+.comment .head_content ul li{float:left;padding-left:3px;}
+.comment .head_content ul li:first-child,.comment .head_content ul li.first_child{padding-left:0}
+.comment .head_content ul a{position:relative;float:left}
+.comment .head_content ul a.sns1{z-index:30}
+.comment .head_content ul a.sns2{z-index:25}
+.comment .head_content ul a.sns3{z-index:20}
+.comment .head_content ul a.sns4{z-index:15}
+.comment .head_content ul a.sns5{z-index:10}
+.comment .head_content ul a.sns6{z-index:5}
+.comment .head_content .ico_login{position:absolute;top:-6px;right:-8px;width:16px;height:16px;margin:0;padding:0;background:url('https://static.ebs.co.kr/www/common/img/global/icon/ico_login.png') no-repeat}
+.comment .head_content .user{float:left;height:22px;padding-left:18px;background:url('https://static.ebs.co.kr/www/common/img/global/icon/icon_user.png') no-repeat 0 5px;line-height:22px;}
+.comment .head_content p{float:right;height:22px;padding-left:15px;background:url('https://static.ebs.co.kr/www/common/img/global/icon/ico_talkinfo.gif') no-repeat 0 4px;color:#999;font-size:11px;line-height:22px;}
+.comment .head_content p strong{display:inline-block;width:25px;color:#999;text-align:right}	
+.comment .head_content .byte_only, .review_comment .byte_only{padding-left:0;background:none}
+.comment .talk_write{clear:both;width:100%;overflow:hidden;padding-top:10px;}
+.comment .talk_write form img{display:block;float:left;margin-right:12px;border:1px solid #dcdcdc}
+.comment .talk_write form textarea{float:left;width:592px;height:35px;margin-top:1px;padding:6px 10px;overflow:auto;border:1px solid #e5e5e5;background:#f6f6f6;color:#777777;}
+.comment .talk_write form textarea.normal{width:654px;}
+.comment .talk_write form button{display:block;float:right;width:69px;height:50px;margin-left:5px;background:url('https://static.ebs.co.kr/www/common/img/global/button/btn_sns_add.gif') no-repeat left top;}
+
+.comment .talk_list{clear:both;margin-top:12px;}
+.comment .talk_list li{position:relative;width:750px;overflow:hidden;padding:10px 0;border-bottom:1px solid #eeeeee;}
+.comment .talk_list li:first-child,.comment .talk_list li.first_child{padding-top:0;}
+.comment .talk_list li.last_item{border-bottom:none}
+.comment .talk_list .img{float:left;border:1px solid #dcdcdc}
+.comment .talk_list .talk_contents{float:left;padding-left:12px;}
+.comment .talk_list .talk_contents .text{width:630px;overflow:hidden;}
+.comment .talk_list .talk_contents .text img{float:left;}
+.comment .talk_list .talk_contents .text p{float:left;width:580px;padding-left:10px;color:#222;line-height:16px;}
+.comment .talk_list .talk_contents .info{width:619px;overflow:hidden;padding-top:10px;color:#999}
+.comment .talk_list .talk_contents .info p{float:left;padding:0 8px 0 32px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bar_board.gif') no-repeat right center;color:#b2b2b2;}
+.comment .talk_list .talk_contents .info div{float:left;padding-left:8px;}
+.comment .talk_list .talk_contents .info div span{margin-left:10px; color:#75787b;}
+.comment .talk_list .register{float:left;margin-top:20px;padding-left:13px;background:url('https://static.ebs.co.kr/www/common/img/category/onair/icon_main_register.gif') no-repeat left 1px;color:#969696;font-size:11px;}
+.comment .talk_list .register{#background-position:0 2px;}
+.comment .talk_list .del{margin-left:13px; padding-left:0 !important; background:none !important; color:#ff644e}
+
+.comment .talk_write.noThumb form textarea{float:left;width:652px;height:35px;margin-top:1px;padding:6px 10px;overflow:auto;border:1px solid #e5e5e5;background:#f6f6f6;color:#777777;}
+.view_contents .comment .talk_write.noThumb form textarea{float:left;width:648px;height:35px;margin-top:1px;padding:6px 10px;overflow:auto;border:1px solid #e5e5e5;background:#f6f6f6;color:#777777;}
+.comment .talk_list.noThumb .talk_contents {float:left;padding-left:0;}
+.comment .talk_list.noThumb .talk_contents .text {width:690px;overflow:hidden;}
+.comment .talk_list.noThumb .talk_contents .text p{float:left;width:638px;padding-left:10px;color:#222;line-height:16px;}
+
+.comment_one{position:relative;}
+
+.comment .talk_list .normal .talk_contents{padding-left:0;}
+.comment .talk_list .normal .talk_contents .text {width:676px;}
+.comment .talk_list .normal .talk_contents .text p{width:676px;padding-left:0}
+.comment .talk_list .normal .talk_contents .info p{padding:0 8px 0 0;}
+.comment .talk_list .normal .register{float:right;margin-right:15px;}
+.comment .talk_list .normal .del{padding-left:0 !important; background:none !important; color:#FF644E;}
+.write_brd{border-top:2px solid #666}
+.board_write{width:100%;color:#666}
+.board_write th,.board_write td{padding:8px 0;border:1px solid #ddd;border-top:none;text-align:left;font-size:12px}
+.board_write th{padding-left:20px;background:#f7f7f7}
+.board_write th .required {color:#F00;padding: 0 3px 0 0;}
+.board_write td{padding-left:10px;padding-right:10px}
+.board_write input,.board_write select,.board_write button{vertical-align:middle}
+.board_write textarea{border: 1px solid #cbcbcb;color: #555555;overflow:auto}
+.board_write .th_ex{font-size:11px;font-weight:normal;line-height:20px}
+.board_write .writer{font-weight:bold}
+.board_write #subject {border:1px solid #b5b5b5}
+.board_write .file_fild{float:left;width:566px;height:18px;margin-right:5px;margin-bottom:5px;border:1px solid #b5b5b5;cursor:text}
+.board_write .btn_file{float:left;}
+.board_write .txt_desc{clear:both;font-size:11px}
+.board_write .set_must{margin:0 4px 0 6px}
+.board_write .txt{margin-bottom:10px;font-size:11px;line-height:17px}
+.board_write .inp_space{margin-left:20px}
+.board_write .inp_space2 label{margin-right:5px}
+
+.privacy_desc { padding:15px 20px; line-height:1.5; color:#757575; letter-spacing:-1px; border-bottom:2px solid #878787; }
+.privacy_desc input { margin:0 !important; }
+.privacy_desc .agree { padding:0 0 0 15px; text-indent:-15px; color:#434343; }
+.privacy_desc .link { padding:5px 0 0 15px; font-weight:bold; color:#434343; }
+.privacy_desc .link a { color:#434343; }
+
+/* 프로그램 속 정보 입력 */
+
+.board_write span.txt_desc{padding:0 9px 0 5px;color:#999;}
+.board_write .thumimg{border:1px solid #b5b5b5}
+
+.board_write_pop{margin-bottom:10px;border-top:1px solid #ddd;border-left:1px solid #ddd;}
+.board_write_pop li dl{width:100%;overflow:hidden;vertical-align:top}
+.board_write_pop li dt, .board_write_pop li dd{float:left;padding-left:10px;border-right:1px solid #ddd;border-bottom:1px solid #ddd}
+.board_write_pop li dt{height:30px;background:#f7f7f7;color:#222;font-size:11px;font-weight:bold;line-height:30px}
+.board_write_pop li dd{height:25px;padding-top:5px}
+.board_write_pop .btn_calendar_img{margin-left:3px}
+.board_write_pop .btn_board_sear1{margin-left:4px}
+dt.col_w70{width:70px}
+dd.col_w242{width:242px}
+dd.col_w161{width:161px}
+dd.col_w495{width:495px}
+
+.event_list{border-top:2px solid #666;border-bottom:1px solid #ccc}
+.event_list li{position:relative;width:750px;padding:15px 0 16px;border-top:1px solid #ededed;overflow:hidden}
+.event_list li.first_item{border-top:none}
+.event_list .event_img{display:block;float:left;width:288px;height:96px;margin-right:14px;overflow:hidden}
+.event_list .event_img img{display:block;width:288px;height:96px}
+.event_list dl{position:relative;float:left;width:445px;height:96px}
+.event_list dl dt{margin-bottom:5px;padding:3px 0 8px;border-bottom:1px solid #ededed}
+.event_list dl dd.content{line-height:17px}
+.event_list dl dd.period{position:absolute; bottom:0;left:0}
+.event_list dl dd.period{color:#666;font-weight:bold}
+.event_list dl dd.period .ico_period,.event_list dl dd.period .date{float:left;height:16px;line-height:16px}
+.event_list dl dd.period .ico_period{margin-right:8px}
+.event_list dl dt strong{color:#3baab6}
+.event_list dl dt a{display: inline-block;position:relative;color:#222;font-weight:bold}
+.event_list dl dd a{color:#666}
+.event_list dl a:hover{color:#3c73a0;text-decoration:none}
+.event_list li .btn_prizewinner{position:absolute;top:49px;right:3px}
+
+.board_actions{position:relative;height:29px;margin-top:10px; text-align: center;}
+.board_actions .paging{padding-top:3px}
+.board_actions .paging a,.board_actions .paging strong{display:inline-block;height:20px;margin-right:1px;padding:0 6px 0 5px;border:1px solid #efefef;font-size:11px;line-height:20px;text-align:center;text-decoration:none; min-width: 10px;}
+.board_actions .paging a.pagetxt{width:47px;height:22px;margin-right:0;padding:0;border:none;min-width: auto;}
+.board_actions .paging a.prev{margin-left:-1px;margin-right:3px;padding:0;min-width: auto;}
+.board_actions .paging a.next{margin-left:2px;padding:0;min-width: auto;}	
+.board_actions .paging a.end{margin-left:-1px;padding:0;min-width: auto;}	
+.board_actions .paging strong{border-color:#becaca;background:#f7f7f7;color:#ff644e}
+.board_actions .paging a:hover,.board_actions .paging a:active{color:#ff644e}
+.board_actions .btn_area{position:absolute;top:0;right:0}
+.board_actions .btn_area a{display:inline-block;float:left}
+.board_actions .btn_area2{position:absolute;top:0;left:0}
+.board_actions .btn_area2 a{display:inline-block;float:left}
+.pop_actions{position:relative;margin-top:10px; text-align: center;}
+.pop_actions .paging a,.pop_actions .paging strong{display:inline-block;padding:0 3px;font-size:11px;text-decoration:none}
+.pop_actions .paging a span{display:inline-block;letter-spacing:-1px}
+.pop_actions .paging a.start span{padding-left:11px;padding-right:10px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bg_page_arrow.gif') no-repeat 0 -3px}
+.pop_actions .paging a.prev span{padding-left:11px;padding-right:10px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bg_page_arrow.gif') no-repeat 0 -43px}
+.pop_actions .paging a.next span{padding-left:10px;padding-right:11px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bg_page_arrow.gif') no-repeat 100% -63px}	
+.pop_actions .paging a.end span{padding-left:10px;padding-right:11px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bg_page_arrow.gif') no-repeat 100% -23px}	
+.pop_actions .paging a.start{margin-right:2px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bar_board.gif') no-repeat right center}
+.pop_actions .paging a.prev{margin-right:9px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bar_board.gif') no-repeat right center}
+.pop_actions .paging a.next{margin-left:9px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bar_board.gif') no-repeat left center}
+.pop_actions .paging a.end{margin-left:2px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bar_board.gif') no-repeat left center}
+.pop_actions .paging strong{color:#ff644e}
+.pop_actions .paging a:hover,.board_actions .paging a:active{color:#ff644e}
+
+.board_faq{margin-top:10px;border-top:2px solid #666;border-bottom:1px solid #ccc}
+.faq_head{height:31px;border:1px solid #ccc;border-top:none;background:#f7f7f7;line-height:31px}
+.faq_head li{float:left;background:url('https://static.ebs.co.kr/www/common/img/global/background/bar_board.gif') no-repeat left center;text-align:center}
+.faq_head li:first-child, .faq_head li.first_child{background:none}
+.board_faq .num{width:64px}
+.board_faq .category{width:155px}
+.board_faq .subject{width:519px;padding-left:10px;}
+.board_faq_list li{border-top:1px solid #ededed}
+.board_faq_list li:first-child,.board_faq_list li.first_child,.board_faq_list li li,.brdt_no{border-top:none}
+.board_faq_list li dl { overflow:hidden}
+.board_faq_list li dt.tit{ padding:7px 0 6px; line-height:18px; cursor:pointer; *zoom:1;}
+.board_faq_list li dt.tit span{display:block;float:left;color:#666;text-align:center}
+.board_faq_list li dt.tit span.subject{color:#222;text-align:left}
+.board_faq_list li dd.content{display:none;padding-bottom:12px}
+.board_faq_list li dd.content .content_data{padding:30px 20px; line-height:1.5;}
+.board_faq_list li.selected dt.tit{background:#f6fbfc}
+.board_faq_list li.selected dt.tit span.subject{color:#ff644e}
+.board_faq_list li.selected dd.content{display:block;border-top:1px solid #ddd}
+.board_faq_list li dt.tit:after { content:""; clear:both; display:block;}
+.board_faq_list .upload_file{width:auto;padding-right:0;}
+
+.faq_hot_list {*zoom:1}
+.faq_hot_list:after {content:""; display:block; clear:both}
+.faq_hot_list li {float:left; width:100%; display:block; *zoom:1}
+.faq_hot_list li:after {content:""; display:block; clear:both}
+
+.best_faq{margin-bottom:20px;border-top:2px solid #666;border-bottom:1px solid #ccc; *zoom:1}
+.best_faq:after {content:""; display:block; clear:both}
+.best_faq li{border-bottom:1px solid #ededed}
+.best_faq li.last_item,.best_faq li li{border-bottom:none}
+.best_faq li {float:left; width:100%; display:block; *zoom:1}
+.best_faq li:after {content:""; display:block; clear:both}
+.best_faq li dt{padding:6px 0;cursor:pointer}
+.best_faq li dt .num{display:inline-block;width:16px;height:15px;margin-right:10px;background: url("https://static.ebs.co.kr/www/common/img/global/button/btn_glb_v1.png") no-repeat scroll -32px 0;vertical-align:middle}
+.best_faq li dt .num1{background-position:-32px 0}
+.best_faq li.selected dt .num1{background-position:-32px -15px}
+.best_faq li dt .num2{background-position:-32px -30px}
+.best_faq li.selected dt .num2{background-position:-32px -45px}
+.best_faq li dt .num3{background-position:-32px -60px}
+.best_faq li.selected dt .num3{background-position:-32px -75px}
+.best_faq li dt .num4{background-position:-32px -90px}
+.best_faq li.selected dt .num4{background-position:-32px -105px}
+.best_faq li dt .num5{background-position:-32px -120px}
+.best_faq li.selected dt .num5{background-position:-32px -135px}
+.best_faq li dt .num6{background-position:-32px -150px}
+.best_faq li.selected dt .num6{background-position:-32px -165px}
+.best_faq li dt .num7{background-position:-32px -180px}
+.best_faq li.selected dt .num7{background-position:-32px -195px}
+.best_faq li dt .num8{background-position:-32px -210px}
+.best_faq li.selected dt .num8{background-position:-32px -225px}
+.best_faq li dt .num9{background-position:-32px -240px}
+.best_faq li.selected dt .num9{background-position:-32px -255px}
+.best_faq li dt .num10{background-position:-32px -270px}
+.best_faq li.selected dt .num10{background-position:-32px -25px}
+.best_faq li dd{display:none;padding:30px 25px}
+.best_faq li.selected{border-bottom-color:#ccc}
+.best_faq li.selected dt{border-bottom:1px solid #ddd;background:#f6fbfc;color:#ff644e}
+.best_faq li.selected dd{display:block}
+
+.board_gallery_wrap{border-top:2px solid #666;background:#f7f7f7}
+.board_gallery{padding:3px 0 5px 2px;border:1px solid #ddd;border-top:none}
+.board_gallery ul{width:728px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bg_gallery.gif') repeat;overflow:hidden}
+.board_gallery ul li{float:left;height:178px;padding:17px 0 0 17px}
+.board_gallery ul li .photo{position:relative;display:block;width:165px;height:109px;margin-bottom:10px;overflow: hidden}
+.board_gallery ul li .photo img{display:block;width:165px;height:109px;}
+.board_gallery ul li dt{margin-bottom:5px}
+.board_gallery ul li dt strong{display:inline-block;position:relative}
+.board_gallery ul li dt strong .ico_new{right: -15px}
+.board_gallery ul li dd{font-size:11px;line-height:14px}
+.board_gallery ul li dd span.subject{padding-right:5px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bar_board.gif') no-repeat right center;color:#969696}
+.board_gallery ul li dd span.content{padding-left:5px;color:#333}
+
+/* date_area */
+.date_area{position:relative;z-index:20;width:100%;padding:30px 0;text-align:center;}
+.date_area a.btn{display:inline-block;height:27px;background:url('https://static.ebs.co.kr/www/common/img/category/schedule/bg_scd.png') no-repeat;vertical-align:top;}
+.date_area a.prev{width:28px;margin-right:15px;background-position:-106px -58px;}
+.date_area a.next{width:28px;margin-left:15px;background-position:-106px -90px;}
+.date_area a.btn_calendar{width:80px;margin-left:5px;background-position:-48px 1px;}
+.date_area a.today{width:43px;margin-left:1px;background-position:-48px -59px;}
+.date_num .dnum{display:inline-block;width:18px;height:27px;background:url('https://static.ebs.co.kr/www/common/img/category/schedule/bg_scd.png') no-repeat;vertical-align:top;}
+.date_num .dname{display:inline-block;width:14px;height:27px;margin-left:11px;background:url('https://static.ebs.co.kr/www/common/img/category/schedule/bg_scd.png') no-repeat;vertical-align:top;}
+.date_num .dnum em,.date_num .dname em{position:absolute;top:0;left:0;width:1px;height:1px;visibility:hidden;overflow:hidden;font-size:0;line-height:0;}
+.date_num .dot{width:10px;background-position:2px -189px;}
+.date_num .num0{background-position:-20px 0;}
+.date_num .num1{background-position:-20px -27px;}
+.date_num .num2{background-position:-20px -54px;}
+.date_num .num3{background-position:-20px -81px;}
+.date_num .num4{background-position:-20px -108px;}
+.date_num .num5{background-position:-20px -135px;}
+.date_num .num6{background-position:-20px -162px;}
+.date_num .num7{background-position:-20px -189px;}
+.date_num .num8{background-position:-20px -216px;}
+.date_num .num9{background-position:-20px -243px;}
+.date_num .mon{background-position:0 5px;}
+.date_num .tue{background-position:0 -22px;}
+.date_num .wed{background-position:0 -49px;}
+.date_num .thu{background-position:0 -76px;}
+.date_num .fri{background-position:0 -103px;}
+.date_num .sat{background-position:0 -130px;}
+.date_num .sun{background-position:0 -157px;}
+
+.calendar{position:absolute;top:30px;left:654px;width:234px;padding:0 1px;border:2px solid #cfcfcf;background:#fff;}
+.cal_head{position:relative;width:100%;height:15px;padding:13px 0;text-align:center;}
+.cal_head .year,.cal_head .month{display:inline;position:absolute;top:11px;color:#333;font-size:20px;font-weight:bold;font-family:'Arial', 'Tahoma','Geneva','Verdana','AppleGothic',sans-serif;line-height:19px;}
+.cal_head .year{left:85px;}
+.cal_head .month{left:132px;}
+.cal_head a{display:inline-block;height:8px;padding:3px 3px 4px;background:url('https://static.ebs.co.kr/www/common/img/global/button/btn_calendar.gif') no-repeat;vertical-align:top;}
+.cal_head .prev_month{width:5px;margin-right:87px;background-position:3px 3px;}
+.cal_head .next_month{width:5px;background-position:3px -10px;}
+.cal_head .prev_year{width:10px;background-position:-7px 3px;}
+.cal_head .next_year{width:10px;background-position:-7px -10px;}
+.cal_body{width:224px;padding:0 5px 9px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bg_calendar.gif') no-repeat 0 0;}
+.datepick{border:0;margin:0 auto;}
+.datepick tr th,.datepick tr td{text-align: center;border:0;font-size:11px;}
+.datepick tr th{padding-top:7px;height:25px;color:#6d7380;vertical-align:top;}
+.datepick tr td{height:16px;}
+.datepick tr td a{display:block;width:24px;height:16px;margin:0 auto;text-decoration:none;}
+.datepick tr td a span{display:block;width:24px;height:14px;margin:0 auto;padding-top:2px;color:#333;cursor:pointer}
+.datepick tr td a.selected span,.datepick tr td a.selected:hover span{color:#fff;font-weight:bold;background:#8a91a3;}
+.datepick tr td a:hover span{background:#e8e9ed;}
+.datepick tr .sun, .datepick .cal_sun a{color:#ff644e}
+.datepick tr .sat, .datepick .cal_sat a{color:#6588d8}
+.calendar .close{position:absolute;top:13px;right:5px;display:inline-block;width:12px;height:11px;background:url('https://static.ebs.co.kr/www/common/img/global/button/btn_glb_v1.png') no-repeat 0 -58px;}
+
+.cart button{width: 72px; height: 22px; background: url('https://static.ebs.co.kr/www/common/img/global/button/btn_cart.gif') no-repeat left top;}
+.mystudy button {background: url("https://static.ebs.co.kr/www/common/img/global/button/btn_mystudy.gif") no-repeat scroll left top transparent; height: 22px; width: 82px}
+.btn_detail button{width:72px; height:22px; background: url('https://static.ebs.co.kr/www/common/img/global/button/btn_detail.gif') no-repeat left top;}
+
+.star_point{/*width: 90px;*/ overflow:hidden; clear: both; margin: 0 auto;}
+.star_point em{display: block; float: left; padding: 1px 5px 0 0; color: #222;}
+.star_point span{display: block; float: left;  width: 60px; height: 12px; overflow: hidden; background: url('https://static.ebs.co.kr/www/common/img/global/background/bg_starpoint.gif') no-repeat left top; text-align: center;}
+.star_point img{float: left;}
+
+.layer_window{display:none;position:absolute;padding:15px 5px 5px;border:1px solid #26446c;background:#405e86;}
+.layer_window h4{padding:0 0 12px 20px;color:#fff}
+.layer_window .layer_top_txt{margin-bottom:12px;color:#666;font-size:11px;line-height:18px;letter-spacing:-1px;}
+.layer_window .layer_top_txt strong{color:#222;}
+.layer_window .content{position:relative;padding:19px 20px 20px;background:#fff;}
+.layer_window .content .container{width:100%;overflow:hidden;}
+.layer_window .layer_close{position:absolute;top:18px;right:20px;width:12px;height:11px;background:url('https://static.ebs.co.kr/www/common/img/global/button/btn_glb_v1.png') no-repeat -14px -58px;}
+.layer_window .control{width:100%;padding-top:20px;text-align:center;}
+.layer_window .control button.btns{margin-left:4px}
+.layer_window .layer_close_bot{width:74px;height:29px;background:url('https://static.ebs.co.kr/www/common/img/global/button/btn_wclose.gif') no-repeat 0 0;}
+
+.detail_layer {background:#fff}
+
+.small{padding:3px;border:none;text-align:left}
+.small h4{padding-bottom:10px;border-bottom:1px solid #ededed;color:#222}
+.small .con_view{padding-top:10px;}
+.small .layer_close{right:23px;background-position: 0 -58px}
+.small .control{padding-top:5px}
+.small .control button.first{margin-left:0}
+.small .control button{margin-left:4px;vertical-align:top}
+.small .btn_confirm{width:43px;height:23px;background:url('https://static.ebs.co.kr/www/common/img/global/button/btn_smpop_confirm.png') no-repeat}
+.small .btn_reset{width:43px;height:23px;background:url('https://static.ebs.co.kr/www/common/img/global/button/btn_smpop_reset.png') no-repeat}
+
+/* popup */
+.popup{padding:14px 5px 5px;border:1px solid #26446c;background:#405e86;}
+.popup h1{padding:0 0 14px 20px;}
+.popup .layer_top_txt{margin-bottom:12px;color:#666;font-size:11px;line-height:18px;letter-spacing:-1px;}
+.popup .layer_top_txt strong{color:#222;}
+.popup .content{position:relative;padding:14px 20px 20px;background:#fff;}
+.popup .content .container{position:relative; width:100%;overflow:hidden;}
+.popup .content .container .essential {position:absolute;top:314px; left:105px;color:#999;}
+.popup .control{width:100%;padding-top:20px;text-align:center;}
+.popup .control button{margin-left:4px}
+.popup .control .first_child{margin-left:0}
+.popup .layer_close_bot{width:74px;height:29px;background:url('https://static.ebs.co.kr/www/common/img/global/button/btn_wclose.gif') no-repeat 0 0;}
+
+.opne_popup1{display:block;top:0;left:0;width:300px;z-index:100}/* 레이어팝업위치TEST */
+
+/* OPEN POPUP */
+.openpop{border:1px solid #26446c;}
+.openpop .content{padding:5px 5px 0 5px;background:#405e86;}
+.openpop .content .container{background:#fff;}
+.openpop .control{height:19px;padding:6px 5px 0 4px;background:#405e86;}
+.openpop .control label, .openpop .control input{vertical-align:middle}
+.openpop .control input{margin-right:0}
+.openpop .control label{color:#fff;font-size:11px}
+.openpop_close{position:relative;top:1px;width:10px;height:9px;background:url('https://static.ebs.co.kr/www/common/img/global/button/btn_openpop_close.png') no-repeat;}
+
+/* OPEN POPUP size */
+.openpop_nomal{;width:312px;}
+
+.comment .layer_window, .comment_one .layer_window{padding:5px}
+.comment .pop_register{top:-150px;left:0;width:640px;z-index:50}
+.comment_one .pop_register{position:fixed;top:30%;left:50%;width:640px;margin-left:-250px;z-index:50}
+*html .comment_one .pop_register{position:absolute;}
+.pop_register h4{padding:0 0 10px;color:#222}
+.pop_register .box_style1{padding:16px 20px;border:1px solid #b3bac4;background:#e0e6ee}
+.pop_register .box_style1 p{padding-left:23px;background:url('https://static.ebs.co.kr/www/common/img/global/icon/ico_warning.png') no-repeat 0 0;}
+.pop_register .box_style1 strong{color:#3c5d89}
+.pop_register .box_style1 ol{padding-top:8px;padding-left:41px;}
+.pop_register .box_style1 ol li{color:#5f7594;line-height:20px;list-style-type:decimal}
+.pop_register .poptit{width:100%;overflow:hidden}
+.pop_register .poptit *{float:left}
+.pop_register .poptit p{padding-left:7px;color:#999;font-size:11px}
+.pop_register .box_style2{padding:11px 20px;border:1px solid #d9d9d9;background:#f7f7f7}
+.pop_register .box_style2 ul{width:100%;overflow:hidden}
+.pop_register .box_style2 li{float:left;width:272px;padding:8px 0}
+.pop_register .box_style2 li input{vertical-align:middle}
+.pop_register .layer_close{background-position:0 -58px}
+.pop_register .btn_reset{margin-left:4px}
+
+/* thumbnail_size */
+.w50h37{display:block}
+.w48h48{display:inline-block;width:48px;height:48px;overflow:hidden} /* onair_talk_img2.jpg  */
+.w60h39{display:inline-block;width:60px;height:39px;overflow:hidden} /* https://static.ebs.co.kr/www/common/img/category/@/w60h39.jpg  */
+.w85h118{display:block;} /* w85h118.jpg */
+.w86h48{display:inline-block;width:86px;height:48px;overflow:hidden} /* w86h48.jpg */
+.w95h53{display:inline-block;width:95px;height:53px;overflow:hidden} /* w95h53.jpg */
+.w121h68{display:block;} /* w121h68.jpg */
+.w154h87{display:inline-block;width:154px;height:87px;overflow:hidden} /* language_img3.jpg */
+.w172h96{display:block;} /* w172h96.jpg */
+.w174h98{display:inline-block;width:174px;height:98px;overflow:hidden} /* w174h98.jpg */
+.w174h98 img {width:174px;height:98px;}
+.w174h98 a {line-height:0; border:0 !important; font-size:0}
+.w175h98{display:inline-block;width:175px;height:98px;overflow:hidden} /* w175h98.jpg 2016-05-17 */
+.w175h98 img {width:175px;height:98px;}
+.w200h135{display:block} /* w200h135.jpg */
+.w201h113{display:block} /* w200h135.jpg */
+.w270h152{display:inline-block;width:270px;height:152px;overflow:hidden} /* lang_img6.jpg */
+.w205h60{display:block;width:205px;height:60px;overflow:hidden} /* tv_ban_img1.jpg */
+.w205h116{display:inline-block;width:205px;height:116px;overflow:hidden} /* w205h116.jpg */
+.w205h165{display:inline-block;} /* w205h165.jpg */
+.w219h123{display:inline-block;width:219px;height:123px;overflow:hidden} /* w219h123.jpg */
+.w220h126{display:block} /* w86h48.jpg */
+.w240h135{display:block} /* w240h135.jpg */
+.w270h152{display:inline-block;width:270px;height:152px;overflow:hidden} /* temp_img_contop.jpg */ 
+.w100h118{display:block;width:100px;height:118px;overflow:hidden} /* job_Introduction01.jpg */ 
+.w200h236{display:block;width:200px;height:236px;overflow:hidden} /* land_img6.jpg */ 
+.w132h75{display:block;} /* job_freelecture_img1.jpg */ 
+.w133h75{display:block;width:133px;height:75px;overflow:hidden} /* w133h75.jpg */
+.w240h135{display:block;} /* w240h135.jpg */
+.w313h176{display:block;} /* w313h176.jpg */
+.w82h99{display:block;width:82px;height:99px;overflow:hidden}  /* w82h99 */
+.w69h39{display:inline-block;width:69px;height:39px;overflow:hidden} /* w69h39 */
+.w280h193{display:inline-block;width:280px;height:193px;overflow:hidden} /* w280h193 */
+.w660h125{display:inline-block;width:660px;height:125px;overflow:hidden} /* w660h125 */
+.w165h109{display:inline-block;width:165px;height:109px;overflow:hidden}
+.w140h79{display:inline-block;width:140px;height:79px;overflow:hidden}
+.w140h79 a {display:inline-block}
+.w118h67{display:block;float:left;margin-right:18px; width:118px;height:67px;overflow:hidden} /*package img*/
+.w174h122{display:inline-block;width:174px;height:122px;overflow:hidden}
+.w175h122{display:inline-block;width:174px;height:122px;overflow:hidden}
+
+/* icon_global */
+.ico_must{display:inline-block;width:30px;height:16px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bg_board.png') no-repeat -65px 0;vertical-align:middle}
+.ico_file{display:inline-block;width:13px;height:14px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bg_board.png') no-repeat -100px -40px}	
+.ico_period{display:inline-block;width:30px;height:16px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bg_board.png') no-repeat -65px -17px;vertical-align:middle}
+.ico_lock{display:inline-block;width:10px;height:12px;margin-left:10px;padding-bottom:1px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bg_board.png') no-repeat -100px -55px;vertical-align:middle}
+.status_icon{vertical-align: -1px !important;}
+.status_icon2{vertical-align: -2px !important;}
+.status_icon3{vertical-align: -2px !important;}
+.icon_excel{margin-top: -2px; vertical-align: -2px;}
+.like{padding-left:52px !important; background:url("https://static.ebs.co.kr/www/common/img/global/icon/icon_like.png") no-repeat 0 3px !important}
+
+/* btn_global */
+.btn_board_sear1{width:46px;height:20px;background:url('https://static.ebs.co.kr/www/common/img/global/button/btn_board_search.png') no-repeat}
+.btn_board_sear2{width:50px;height:21px;background:url('https://static.ebs.co.kr/www/common/img/global/button/btn_board_search.png') no-repeat 0 -21px}
+.btn_program_sear{width:69px;height:20px;background:url('https://static.ebs.co.kr/www/common/img/global/button/btn_board_search.png') no-repeat 0 -43px}
+.btn_order_num{width:81px;height:20px;background:url('https://static.ebs.co.kr/www/common/img/global/button/btn_board_search.png') no-repeat 0 -85px}
+.btn_file{width:54px;height:20px;background:url('https://static.ebs.co.kr/www/common/img/global/button/btn_board_search.png') no-repeat 0 -64px}
+.btn_regist{width:64px !important;height:29px !important;background:url('https://static.ebs.co.kr/www/common/img/global/background/bg_board.png') no-repeat 0 0}
+.btn_register{width:83px;height:29px;background:url('https://static.ebs.co.kr/www/common/img/global/button/btn_register.gif') no-repeat}
+.btn_answer{width:64px;height:29px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bg_board.png') no-repeat 0 -30px}
+.btn_modify{width:64px;height:29px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bg_board.png') no-repeat 0 -60px}
+.btn_del{width:64px;height:29px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bg_board.png') no-repeat 0 -90px}
+.btn_list{width:64px;height:29px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bg_board.png') no-repeat 0 -120px}
+.btn_confirm_big{width:64px;height:29px;background:url('https://static.ebs.co.kr/www/common/img/global/button/btn_confirm.gif') no-repeat}
+.btn_reset{width:64px;height:29px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bg_board.png') no-repeat 0 -150px}
+.btn_application{width:64px;height:29px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bg_board.png') no-repeat 0 -180px}
+.btn_calendar_img{display:inline-block;width:16px;height:16px;background:url('https://static.ebs.co.kr/www/common/img/global/button/btn_calendar_img.png') no-repeat;vertical-align:middle}
+.btn_apply{width:64px;height:29px;background:url('https://static.ebs.co.kr/www/common/img/global/button/btn_apply.gif') no-repeat}
+.btn_reset_layer{width:74px;height:29px;background:url('https://static.ebs.co.kr/www/common/img/global/button/btn_reset.gif') no-repeat}
+.btn_twfollow{width:61px;height:21px;background:url('https://static.ebs.co.kr/www/common/img/global/button/btn_tw_follow.gif') no-repeat}
+.btn_plus{position: absolute; right: 0; top: 0; display: block; width: 16px; height: 15px; background: url('https://static.ebs.co.kr/www/common/img/global/button/btn_plus.gif') no-repeat left top;}
+.btn_cart2{width: 108px; height: 31px; background: url('https://static.ebs.co.kr/www/common/img/global/button/btn_cart2.gif') no-repeat left top;}
+.btn_cart3{width: 65px; height: 18px; background: url('https://static.ebs.co.kr/www/common/img/global/button/btn_cart3.png') no-repeat left top;}
+.btn_sear{width:46px;height:20px;background:url('https://static.ebs.co.kr/www/common/img/global/button/btn_search_p.gif') no-repeat}
+.btn_sear_lang{width:78px;height:30px;background:url('https://static.ebs.co.kr/www/common/img/global/button/btn_sear_lang.gif') no-repeat}
+.btn_privacy{margin-left:10px;}
+.btn_cancel {width:64px;height:29px;background:url('https://static.ebs.co.kr/www/common/img/global/button/btn_cancel_big.gif') no-repeat}
+.btn_filesch{width:64px;height:20px;background:url('https://static.ebs.co.kr/www/common/img/global/button/btn_filesch.gif') no-repeat 0 0}
+.btn_cover{ display:inline-block; *display:inline; zoom:1; padding: 0 2px; font-size:0; }
+.btn_expose_up{width:13px; height:10px; margin-bottom:3px; background:url('https://static.ebs.co.kr/www/common/img/global/button/btn_expose_up.gif') no-repeat;}
+.btn_expose_down{width:13px; height:13px; background:url('https://static.ebs.co.kr/www/common/img/global/button/btn_expose_down.gif') no-repeat left top;}
+.btn_expose_top{width:13px; height:13px; margin-bottom:3px; background:url('https://static.ebs.co.kr/www/common/img/global/button/btn_expose_top.gif') no-repeat left top;}
+.btn_expose_bottom{width:13px; height:13px; background:url('https://static.ebs.co.kr/www/common/img/global/button/btn_expose_bottom.gif') no-repeat left bottom;}
+
+.review_comment {margin-bottom:12px}
+.review_comment p {position:relative}
+.review_comment p strong span {color:#ff644e}
+.review_comment em {padding-left:15px; position:absolute; right:0; font-weight:normal; color:#999; background:url('https://static.ebs.co.kr/www/common/img/category/land/bul_sns.gif') no-repeat left 1px}
+.review_comment em span {padding-left:5px; color:#7c85b4; font-weight:bold}
+
+.review_input {float:left; width:750px; height:49px; border:1px solid #d9d9d9; *zoom:1}
+.review_input:after {content:""; display:block; clear:both}
+.review_input .level {position:relative; float:left; width:109px; padding-top:18px; height:31px; background:#f6f6f6; border-right:1px solid #d9d9d9; text-align:center}
+.review_input .star_area {position:absolute; top:49px; left:-1px; width:109px; padding:20px 0 12px 0; border:1px solid #d9d9d9; text-align:center; background:#fff}
+.review_input .star_point {display:inline-block; width:70px !important; overflow:visible !important; margin-bottom:7px; .display:inline; *zoom:1}
+.review_input .level a {position:relative; left:5px; top:-2px}
+.review_input input {float:left; width:565px; padding:19px 0 14px 6px; border:none; color:#999}
+.review_input .input_button {float:left; width:69px; height:50px; background:url('https://static.ebs.co.kr/www/common/img/category/land/btn_add.gif') no-repeat left top}
+.review_input .input_button button {width:69px; height:50px}
+.review_style td {padding:15px 0 13px 0 !important; border-bottom:1px solid #ededed; color:#222; line-height:18px; text-align:center}
+.review_style td .star_point {float:none !important; display:inline-block; width:auto !important; .display:inline; *zoom:1}
+.review_style td .upload_file {display:inline-block; width:auto !important; margin-bottom:0}
+.review_style td.second_cell {text-align:left; padding:15px 30px 13px 8px !important}
+.review_style td.second_cell p {width:539px; word-wrap:break-word}
+.review_style td span {margin-top:11px; color:#999; display:inline-block}
+.review_style td .date {margin-left:8px; padding-left:8px; background:url('https://static.ebs.co.kr/www/common/img/category/land/bul_gray_bar.gif') no-repeat left 2px}
+
+.sub_top_box{padding:6px;border-top:1px solid #dedede;border-left:1px solid #dedede;background:#f1f1f1;}
+.sub_top_inbox{border-right:1px solid #dedede;border-bottom:1px solid #dedede;background:#fff;}
+
+.ontop{margin-top:20px;text-align:right}
+.ontop a{padding-left:13px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bg_top.png') no-repeat;font-size:11px;text-decoration:none}
+
+/* common form */
+.detail_body .w750h80{margin-bottom: 10px}
+.detail_body .top_box{border: 1px solid #cdd6e0; border-width: 1px 0 0 1px; margin-bottom:10px}
+.detail_body .top_box .line{border: 6px solid #ecf1f5}
+.detail_body .top_box .inner{border: 1px solid #cdd6e0; border-width: 0 0 1px 0}
+
+.detail_body .top_box .subject_area{position: relative; height: 23px; padding: 5px 0 0 13px; background: #ecf1f5; color: #222; font-size: 12px; font-weight: bold}
+.detail_body .top_box .subject_area span{display: block; position: absolute; right: 7px; top: 3px; font-weight: normal; line-height: 0; }
+
+.detail_body .top_box .content_area{width: 706px; padding: 15px 15px 18px 15px; border-right: 1px solid #cdd6e0; overflow: hidden}
+.detail_body .top_box .content_area .left{float: left; width: 270px; margin-right: 15px}
+.detail_body .top_box .content_area .left .select_sns{width: 100%; padding-top: 7px; overflow: hidden}
+.detail_body .top_box .content_area .left .select_sns div{float: left}
+.detail_body .top_box .content_area .left .select_sns dl{float: right; padding-top: 3px}
+.detail_body .top_box .content_area .left .select_sns dl dt, .detail_body .top_box .content_area .left .select_sns dl dd, .detail_body .top_box .content_area .left .select_sns dl ul li{float: left}
+.detail_body .top_box .content_area .left .select_sns dl dd ul{width:100%; height: 22px; padding-left: 1px;} /*2016-09-20*/
+.detail_body .top_box .content_area .left .select_sns dl dd ul li:first-child{/* margin-left: 0; */}
+.detail_body .top_box .content_area .left .select_sns dl dd ul li{margin-left: 2px}
+.detail_body .top_box .content_area .left .select_sns dl dd ul li a{display: block; width: 24px; height: 22px; background-repeat: no-repeat; background-position: center center}/*2017-08-22*/
+.detail_body .top_box .content_area .left .select_sns dl dd ul li a.twi{background-image: url('https://static.ebs.co.kr/www/common/img/category/course/icon_twi.png')} /*2016-09-20*//*2017-08-22*/
+.detail_body .top_box .content_area .left .select_sns dl dd ul li a.face{background-image: url('https://static.ebs.co.kr/www/common/img/category/course/icon_face.png')} /*2016-09-20*//*2017-08-22*/
+.detail_body .top_box .content_area .left .select_sns dl dd ul li a.sha{background-image: url('https://static.ebs.co.kr/www/common/img/category/course/icon_out_share.gif')}/*2016-09-20*/
+.detail_body .top_box .content_area .left .select_sns dl dd ul li a.blog{background-image: url('https://static.ebs.co.kr/www/common/img/category/course/icon_blog.png')}/*2017-08-22*/
+.detail_body .top_box .content_area .left .select_sns dl dd ul li a.meto{background-image: url('https://static.ebs.co.kr/www/common/img/category/course/icon_out_meto.png')}
+.detail_body .top_box .content_area .left .select_sns dl dd ul li a.yozm{background-image: url('https://static.ebs.co.kr/www/common/img/category/course/icon_out_yozm.png')}
+.detail_body .top_box .content_area .left .select_sns dl dd ul li a.story{background-image: url('https://static.ebs.co.kr/www/common/img/category/course/icon_kakaostory.png')}/*2017-08-22*/
+.detail_body .top_box .content_area .left .select_sns dl dd ul li a.band{background-image: url('https://static.ebs.co.kr/www/common/img/category/course/icon_band.png')}/*2017-08-22 추가*/
+.detail_body .top_box .content_area .left .select_sns dl dd ul li.last_item a{width: 22px}
+
+.detail_body .top_box .content_area .right{float: left; width: 420px; padding-top:2px}
+.detail_body .top_box .content_area .right .sub{margin-bottom: 9px; color: #3c73a0; font-weight: bold}
+.detail_body .top_box .content_area .right dl{width: 420px; overflow: hidden}
+.detail_body .top_box .content_area .right dl dt, .detail_body .top_box .content_area .right dl dd{float: left; padding-bottom: 5px; color:#222}
+.detail_body .top_box .content_area .right dl dt{width: 58px; padding-left: 7px;  background: url('https://static.ebs.co.kr/www/common/img/global/bul/bul_package1.gif') no-repeat 0 6px;}
+.detail_body .top_box .content_area .right dl dd{width: 340px; padding-left: 7px; background: url("https://static.ebs.co.kr/www/common/img/global/background/bar_tit.gif") no-repeat 0 1px; line-height: 17px}
+.detail_body .top_box .content_area .right .noti{height: 15px; padding-left: 91px; background: url('https://static.ebs.co.kr/www/common/img/category/course/icon_noti.png') no-repeat 71px top; margin-top: -4px; *margin-top: 0; color: #ff644e; line-height: 15px}
+
+.detail_body .book_top_box{border: 1px solid #cdd6e0; border-width: 1px 0 0 1px}
+.detail_body .book_top_box .line{border: 6px solid #ecf1f5}
+.detail_body .book_top_box .inner{border: 1px solid #cdd6e0; border-width: 0 0 1px 0}
+
+.detail_body .book_top_box .subject_area{position: relative; height: 23px; padding: 5px 0 0 13px; background: #ecf1f5; color: #222; font-size: 12px; font-weight: bold}
+.detail_body .book_top_box .subject_area span{display: block; position: absolute; right: 7px; top: 3px; float:right; font-weight: normal; line-height: 0; /*word-spacing: -3px*/}
+.detail_body .book_top_box .content_area{width: 710px; padding: 15px 15px 18px 15px; overflow: hidden}
+.detail_body .book_top_box .content_area .left{float: left; padding:0 25px 0 0; width: 270px}
+.detail_body .book_top_box .content_area .right{float: left; width: 405px}
+.detail_body .book_top_box .content_area .right dl{width: 100%; padding-top:4px; overflow: hidden}
+.detail_body .book_top_box .content_area .right dl dt, .detail_body .book_top_box .content_area .right dl dd{float: left; height: 12px; margin-bottom: 9px; color: #222; line-height: 12px}
+.detail_body .book_top_box .content_area .right dl dt{padding-right: 6px; border-right: 1px solid #cccccc; color: #222; font-weight: bold}
+.detail_body .book_top_box .content_area .right dl dd{width: 340px; *width: 350px; padding-left: 6px}
+.detail_body .book_top_box .content_area .right dl dd img{margin-top: -3px}
+.detail_body .book_top_box .content_area .right dl dd.last_desc{*width: 340px}
+
+.detail_body #caseContent{margin-top: 10px; border-top: 2px solid #486ba6}
+.detail_body .info_table{width: 100%; border-bottom: 1px solid #e2dec4}
+.detail_body .info_table td{border: 1px solid #d9d9d9; border-width: 0 0 1px 1px; text-align: center; color:#222}
+.detail_body .info_table tbody td{height: 50px; padding-top: 7px; padding-bottom: 8px}
+.detail_body .info_table td.last_cell{border-width: 0 1px 1px 1px}
+.detail_body .info_table tfoot td{border-color: #e2dec4}
+.detail_body .info_table .last_row td{border-bottom-color: #e2dec4}
+.detail_body .info_table td input[type=checkbox]{margin-left: 2px}
+.detail_body .info_table tbody td.lt ul li{padding-top: 6px}
+.detail_body .info_table tbody td.lt ul li del{color: #999}
+.detail_body .info_table tbody td.lt ul li strong{color: #ff644e; font-size: 14px}
+.detail_body .info_table tbody td.lt ul li input{vertical-align: 1px}
+.detail_body .info_table td.lt{padding-left: 11px}
+.detail_body .info_table td.lt p{padding-top: 5px}
+.detail_body .info_table td dl{padding-left: 15px; text-align: left}
+.detail_body .info_table td dl dt{float:left; color: #222; padding-right: 3px; font-size: 11px; padding-top: 4px; clear:both}
+.detail_body .info_table td dl dt:after {content:""; display:block; clear:both}
+.detail_body .info_table td dl dd{padding-top: 4px; color: #ff644e; font-size:11px}
+.detail_body .info_table td.table_price span{display: block; padding-bottom: 2px; color:#999; font-size: 11px; text-decoration: line-through}
+.detail_body .info_table td.table_price strong{color: #ff644e; font-size: 14px}
+.detail_body .info_table tbody td.counting input{width: 20px; padding-right: 10px; text-align: right}
+.detail_body .info_table tfoot td{height: 39px; padding-right: 10px; background: #fffef7; color: #222; text-align: right; font-size: 12px}
+.detail_body .info_table tfoot td strong{font-size: 14px}
+.detail_body .info_table tfoot td strong em{color: #ff644e}
+.detail_body .info_table tfoot td span{color: #666; font-size: 12px; font-weight: normal}
+.detail_body .info_table tfoot td span em{color: #222}
+.detail_body .info_table .table_price div{padding-top: 0 !important; color: #999; font-size: 11px; text-decoration: line-through;}
+.detail_body .info_table .table_price strong{color: #ff644e; font-size: 14px; margin-bottom:3px}
+.detail_body .info_table .table_price p{color: #222; font-size: 11px; line-height:10px}
+.detail_body .info_table .table_price em{font-weight: normal; font-size: 11px;}
+.detail_body .info_table .table_price *{display: block; width: 100%; padding-top: 4px;  text-align: center;}
+.detail_body .info_table .table_price .down{position:relative; top:0; vertical-align:middle; display: inline-block; width: 9px; height: 6px; background: url('https://static.ebs.co.kr/www/common/img/global/icon/icon_price_down.gif') no-repeat left top}
+
+.detail_body .buy_info{margin-left: -1px\0/IE9; padding: 16px 10px 14px; border:1px solid #d9d9d9; border-width: 0 1px 1px 1px; background: url('https://static.ebs.co.kr/www/common/img/global/icon/icon_talk.png') no-repeat 8px 15px;  overflow: hidden}
+.detail_body .buy_info dt{padding: 0 10px 0 30px; font-weight: bold; color:#222}
+.detail_body .buy_info dd{padding: 6px 6px 0 30px;}
+.detail_body .buy_info dd a{color: #222; text-decoration: underline}
+
+.detail_body .case_two .con{border: 1px solid #d9d9d9; border-width: 0 1px 1px 1px; border-top:2px solid #486BA6; padding: 21px 0 21px 0}
+.detail_body .case_two .con p.head_txt{display: block; height: 15px; padding: 2px 0 0 46px; background: url('https://static.ebs.co.kr/www/common/img/global/icon/icon_talk.png') no-repeat 20px top; color: #222}
+.detail_body .case_two .con p.head_txt span{font-weight: bold; font-size: 14px}
+.detail_body .case_two .con p.head_txt strong{color: #ff644e; font-size: 14px}
+.detail_body .case_two .con p.head_txt .ico_sns{width:18px;height:18px; margin:-4px 5px 0 0;}/* 2016-09-05 */
+.detail_body .case_two .con p.con_txt{padding: 8px 0 0 46px; color: #222}
+.detail_body .case_two .con p.con_txt span{text-decoration: underline}
+.detail_body .case_two .con ul{padding: 11px 0 0 46px}
+.detail_body .case_two .con ul li{padding: 5px 0 0 7px; background: url('https://static.ebs.co.kr/www/common/img/global/bul/bul_package1.gif') no-repeat left 10px; color: #222}
+
+.detail_body .case_btn_area{width: 100%; padding: 10px 0 20px 0; text-align: center; overflow: hidden}
+.detail_body .case_btn_area span{float: left}
+.detail_body .case_btn_area span a:first-child{margin-left: 0}
+.detail_body .case_btn_area span a{display: inline-block; margin-left: 10px; padding-right: 7px; background: url('https://static.ebs.co.kr/www/common/img/category/course/info_arrow.png') no-repeat right center; color: #222}
+.detail_body .case_btn_area div{float: right}
+.detail_body .info_txt{width: 100%; padding-bottom: 5px; overflow: hidden; text-align: right}
+.detail_body .info_txt img{float: left}
+
+.detail_tab {margin-bottom:10px}
+.detail_tab ul{width: 100%; border-bottom: 1px solid #486ba6;overflow: hidden; }
+.detail_tab li{float: left; width: 124px; height: 28px; background: #f7f7f7; border: 1px solid #dddddd; border-width: 1px 1px 0 0}
+.detail_tab li:first-child{width: 123px; border-left: 1px solid #dddddd !important}
+.detail_tab li a{width: 100%; display: block; height: 28px; line-height: 28px; color: #666; font-weight: bold; text-align: center}
+.detail_tab li a:hover{color: #666 !important; text-decoration: none}
+.detail_tab li a:focus{color: #666 !important; text-decoration: none}
+.detail_tab li.selected{position: relative; z-index: 1; margin-left: -1px; border: 1px solid #486ba6 !important; border-width: 1px 1px 0 1px !important; background: url('https://static.ebs.co.kr/www/common/img/category/course/tab_bg.gif') repeat-x left top}
+.detail_tab li.selected:first-child{margin-left: 0 !important}
+.detail_tab li.selected a{display: block; width: 100%; color: #fff}
+.detail_tab li.selected a:hover{color: #fff !important; text-decoration: none !important}
+.detail_tab li.selected a:focus{color: #fff !important; text-decoration: none !important}
+
+.detail_body  h5{margin-top:5px; padding: 20px 0 7px 25px; background: url('https://static.ebs.co.kr/www/common/img/category/course/intro_bullet.png') no-repeat 10px 20px; color: #222}
+.detail_body  h5.ex{padding: 20px 0 10px 0; background: none;  color: #222}
+.lec_explain {float:right; margin-top:5px; font-size:11px; color:#666}
+.detail_body  .txt_list{padding: 5px 0 0 0}
+.detail_body  .txt_list li:first-child{padding-top: 0}
+.detail_body  .txt_list li{padding: 6px 0 0 0; letter-spacing: -1px; color:#222}
+.detail_body #lectureIntro .txt_list {line-height:20px; padding-top:0; padding-left:25px; letter-spacing: -1px; color:#222}
+.detail_body .teacher_intro{position: relative; width: 740px; padding: 15px 0 9px 0; margin-left:10px; background: #f7f7f7; overflow: hidden}
+.detail_body .teacher_intro .pic{float: left; padding-left: 15px}
+.detail_body .teacher_intro .pic span {display:block}
+.detail_body .teacher_intro .pic a{display: block; margin-top: 5px}
+.detail_body .teacher_intro .list{float: left; width: 613px; padding-left: 15px}
+.detail_body .teacher_intro .list ul{padding-bottom: 8px}
+.detail_body .teacher_intro .list li{margin-left:3px; padding: 6px 0 0 8px; background: url('https://static.ebs.co.kr/www/common/img/global/bul/bul_package1.gif') no-repeat left 9px; color:#222}
+.detail_body .teacher_intro .list .btn {position: absolute; right: 15px; top: 14px}
+.detail_body .teacher_intro .list .btn a{display: inline-block;  margin-left: 6px; padding-right: 7px; background: url('https://static.ebs.co.kr/www/common/img/category/course/bul_teacher.gif') no-repeat right 3px; font-size: 11px; color:#7e89b8}
+.detail_body .teacher_intro .detail {float:left; margin:11px 15px 0; padding-top:15px; border-top:1px solid #e9e9e9; clear:both; width:710px; line-height:17px}
+
+.detail_body .study_review {position:relative}
+.detail_body .study_review .btn_more {position:absolute; right:0; top:17px}
+.detail_body .meet_sns{width: 100%; overflow: hidden}
+.detail_body .meet_sns p{float: left; width: 564px; padding-top: 16px; text-align: right}
+.detail_body .meet_sns ul{float: right; padding: 10px 0}
+.detail_body .meet_sns ul li{float: left;padding-left: 4px}
+
+.detail_body .gray_box{border: 1px solid #cacaca}
+.detail_body .gray_box .inner{border: 6px solid #e8e8e8; padding: 23px}
+.detail_body .gray_box .inner .lec_info{width: 100%; overflow: hidden}
+.detail_body .gray_box .lec_info span.book_bg {float:left; width:120px; height: 120px;  margin-right:5px; background: url('https://static.ebs.co.kr/www/common/img/global/background/book_bg.png') no-repeat left bottom}
+.detail_body .gray_box .lec_info div{float: left; width: 565px}
+.detail_body .gray_box .lec_info .none_thumb {float: left; width: 702px}
+.detail_body .gray_box .lec_info .none_thumb dl dd {width:262px}
+.detail_body .gray_box .lec_info .none_thumb dl dd.last_desc {width:618px}
+.detail_body .gray_box .lec_info div p{margin-top:2px; margin-bottom: 8px; padding-bottom: 9px; border-bottom: 1px solid #ededed; color: #222; font-size: 12px; font-weight: bold}
+.detail_body .gray_box .lec_info div dl dt, .detail_body .gray_box .lec_info div dl dd{float: left; margin-bottom: 7px; line-height: 12px; color: #222}
+.detail_body .gray_box .lec_info div dl dt{padding:0 9px; background: url('https://static.ebs.co.kr/www/common/img/global/bul/bul_package1.gif') no-repeat left 7px}
+.detail_body .gray_box .lec_info div dl dd{width: 220px; padding-left: 7px; padding-top:1px; background: url('https://static.ebs.co.kr/www/common/img/category/course/price_bar.gif') no-repeat left 1px}
+.detail_body .gray_box .lec_info div dl dd span {position:relative; top:-2px; line-height:17px}
+.detail_body .gray_box .lec_info div dl dd.price{width:220px !important; color: #ff644e; font-weight: bold}
+.detail_body .gray_box .lec_info div dl dd.price del{color: #999; font-weight: normal}
+.detail_body .gray_box .lec_info div dl dd.last_desc{width: 480px}
+.detail_body .gray_box .lec_info p.undercon {float:left; width:664px; padding:15px; font-size:12px; color:#222; line-height:18px; background:#f7f7f7}
+
+.detail_body .post_table .star_point{width: 60px !important; margin: 0 auto !important}
+.detail_body .post_table tbody td{padding: 3px 0}
+.detail_body .post_table tbody td.lt{padding-left: 10px}
+.detail_body .post_table tbody td.lt img{margin-right: 3px; vertical-align: -3px}
+
+.detail_body .reclec_table{border-top: 2px solid #666666; border-bottom: 1px solid #ccc; border-collapse:separate}
+.detail_body .reclec_table tbody tr:first-child td{border-top: none}
+.detail_body .reclec_table tbody td{border-top: 1px solid #ededed; padding: 15px 0}
+.detail_body .reclec_table p{padding-top: 2px; color: #222; font-size: 12px; font-weight: bold}
+.detail_body .reclec_table .lec_price{padding-bottom: 5px; font-size: 11px}
+.detail_body .reclec_table .lec_price span{color:#999; text-decoration: line-through}
+.detail_body .reclec_table .lec_price strong{display: block; padding: 3px 0; color: #ff644e; font-size: 14px}
+.detail_body .reclec_table dl{width:369px; padding-top: 8px; overflow: hidden}
+.detail_body .reclec_table dl dt, .detail_body .reclec_table dl dd{float: left; margin-bottom: 5px;  color: #222}
+.detail_body .reclec_table dl dt{margin-right: 7px; padding: 0 7px 0 7px; border-right: 1px solid #ccc;  background: url('https://static.ebs.co.kr/www/common/img/global/bul/bul_package1.gif') no-repeat left 3px; font-weight: bold; line-height: 13px}
+.detail_body .reclec_table dl dd{width: 290px}
+.detail_body .reclec_table_none dl dd{width: 437px}
+.detail_body .reclec_table_none td.first_cell {padding-left:15px}
+.detail_body .reclec_table .table_price {text-align:center}
+.detail_body .reclec_table .table_price div{padding-top: 0 !important; color: #999; font-size: 11px; text-decoration: line-through;}
+.detail_body .reclec_table .table_price strong{display:block; color: #ff644e; font-size: 14px; margin-bottom:3px}
+.detail_body .reclec_table .table_price p{color: #222; font-size: 11px; line-height:14px; font-weight:normal}
+.detail_body .reclec_table .table_price em{font-weight: normal; font-size: 11px;}
+.detail_body .reclec_table .table_price .down{position:relative; top:0; vertical-align:middle; display: inline-block; width: 9px; height: 11px; background: url('https://static.ebs.co.kr/www/common/img/global/icon/icon_price_down.gif') no-repeat left top}
+.detail_body .reclec_table .table_price .star_point{display:block; width: 60px !important; margin: 4px auto 0 !important}
+
+.detail_body .gray_box .inner .book_top_img{width: 100%; padding-bottom: 10px; overflow: hidden}
+.detail_body .gray_box .inner .book_top_img .w270h152{float: left; margin-right: 15px}
+.detail_body .gray_box .inner .book_top_img div{float: left; width: 405px}
+.detail_body .gray_box .inner .book_top_img div p{padding: 2px 0 9px 0;border-bottom: 1px solid #ededed ;color: #222; font-weight: bold}
+.detail_body .gray_box .inner .book_top_img div dl{width: 100%; padding-top: 14px; overflow: hidden}
+.detail_body .gray_box .inner .book_top_img div dl dt, .detail_body .gray_box .inner .top_img div dl dd{float: left; margin-bottom: 6px}
+.detail_body .gray_box .inner .book_top_img div dl dt{width: 41px; margin-right: 6px; border-right: 1px solid #ccc}
+.detail_body .gray_box .inner .book_top_img div dl dd{width: 357px; font-size: 11px}
+.detail_body .gray_box .inner .book_top_img div dl dd.price{color: #999}
+.detail_body .gray_box .inner .book_top_img div dl dd.price em{font-weight: normal; text-decoration: line-through}
+.detail_body .gray_box .inner .book_top_img div dl dd.price strong{color: #ff644e}
+
+.detail_body .book_info{}
+.detail_body .book_info h6:first-child{padding-top: 0}
+.detail_body .book_info h6{padding: 23px 0 7px 0; color: #222}
+.detail_body .book_info ul li{padding: 5px 0 0 9px; background: url('https://static.ebs.co.kr/www/common/img/global/bul/bul_package1.gif') no-repeat left 8px}
+
+.detail_body #lectureList{position: relative}
+.detail_body #lectureList .top_exp li{padding: 0 0 7px 7px; background: url('https://static.ebs.co.kr/www/common/img/global/bul/bul_package1.gif') no-repeat left 4px}
+.detail_body #lectureList .detail_table td{height: 50px; vertical-align: middle}
+.detail_body #lectureList .detail_table td.last_cell{line-height: 1%; font-size: 1%}
+.detail_body #lectureList .detail_table td.last_cell img{vertical-align: 3px}
+.detail_body #lectureList .detail_table td.lt {margin-right: 3px}
+.detail_body #lectureList .detail_table td.lt img{vertical-align: -3px}
+.detail_body #lectureList .detail_table td.last_cell{padding: 3px 0}
+.detail_body #lectureList .detail_table td.last_cell a:fir7st-child{margin-top: 0}
+.detail_body #lectureList .detail_table td.last_cell a{display: inline-block; margin-top:3px; margin-right:3px}
+
+.detail_body .page_icon{float: right; padding-top: 20px}
+.detail_body .page_icon:after{content:"";display:block;clear:both;height:0;visibility:hidden}
+.detail_body .page_icon li:first-child{border-left: 0}
+.detail_body .page_icon li{float: left; padding: 0 8px; border-left: 1px solid #e5e5e5}
+.detail_body .page_icon li a{height: 12px; padding-left: 14px; display: block; background-position: left center; background-repeat: no-repeat; font-size: 11px; line-height: 13px}
+.detail_body .page_icon .back{background-image: url('https://static.ebs.co.kr/www/common/img/global/icon/icon_page_back.png')}
+.detail_body .page_icon .home{background-image: url('https://static.ebs.co.kr/www/common/img/global/icon/icon_page_home.png')}
+.detail_body .page_icon .top{background-image: url('https://static.ebs.co.kr/www/common/img/global/icon/icon_page_top.png')}
+
+.detail_body #lectureList .detail_table2{width:100%; margin-bottom: 10px}
+.detail_body #lectureList .detail_table2 th, .detail_body #lectureList .detail_table2 td{padding: 7px 0 7px 15px}
+.detail_body #lectureList .detail_table2 th{background: #eef1fd; border: 1px solid #c6cbe1; color: #222; text-align: left}
+.detail_body #lectureList .detail_table2 td{border: 1px solid #d9d9d9; line-height: 17px}
+.detail_body #lectureList .detail_table2 td.lt {text-align:left !important; text-indent:10px}
+.detail_body #lectureList .detail_table2 td.ex_td1{padding-top: 2px !important; padding-bottom: 2px !important; *padding-bottom: 3px !important}
+.detail_body #lectureList .detail_table2 td.ex_td2 strong{color: #ff644e}
+.detail_body #lectureList .detail_table2 td.score span{color: #ff735f}
+.detail_body #lectureList .detail_table2 td.subject {text-indent:10px; text-align:left !important; color:#222 !important}
+.detail_body #lectureList .detail_table2 td.lt {text-align:left !important; text-indent:10px}
+
+.detail_body #lectureList .detail_table2 .total td {text-align:center !important; padding:7px 0 !important}
+
+.detail_body .lect_select { padding:7px 0 20px; *zoom:1; }
+.detail_body .lect_select:after { content:""; display:block; clear:both; }
+.detail_body .lect_select #lectureList { width:280px; float:left; }
+.detail_body .lect_select #lectureList .btn { text-align:right; }
+.detail_body .lect_select .cont_area { float:right; width:455px; }
+.detail_body .lect_select .desc_txt { margin:0 0 10px; padding:10px 10px 5px; line-height:1.5; background:#f8f8f8; border:1px solid #ededed; }
+.detail_body .lect_select .desc_txt li { padding:0 0 3px 10px; text-indent:-10px; }
+.detail_body .lect_select .desc_txt .strong { color:#ff644e; }
+.detail_body .lect_select .desc_txt .strong strong { color:#ff644e; }
+.detail_body .lect_select .cont_area .btn { text-align:right; }
+
+.detail_body #qna{}
+.detail_body .qna_top{margin-bottom: 10px; padding: 11px 0 11px 96px;border: 1px solid #f4f1e0; background: url('https://static.ebs.co.kr/www/common/img/category/course/qna_bg1.gif') no-repeat 16px 17px #fffef7}
+.detail_body .qna_top strong{display: inline-block; padding-bottom: 5px}
+.detail_body .qna_option{float: left !important; padding-left: 5px}
+
+.detail_body .list_top{margin-bottom: 10px; padding: 11px 0 11px 96px;border: 1px solid #f4f1e0; background: url('https://static.ebs.co.kr/www/common/img/category/course/list_top_bg.gif') no-repeat 19px 4px #fffef7}
+.detail_body .list_top strong{display: inline-block; padding-bottom: 5px}
+.detail_body .list_option{float: left !important; padding-left: 5px}
+
+.detail_body .progress {margin-top:5px}
+.detail_body .progress em {position:relative; top:-2px; float:left; width:57px; font-size:11px; display:block; font-weight:normal}
+.detail_body .progress strong {float:left; position:relative; top:-2px; padding-left: 10px;  font-size:11px; letter-spacing: -1px}
+.detail_body .progress strong.pt0{padding-left: 0 !important}
+.detail_body .progress .inner {width:100%; vertical-align:top; margin-top:5px; *zoom:1}
+.detail_body .progress .inner:after {content:""; display:block; clear:both}
+.detail_body .progress p {float:left; display:block; width:400px; height:10px; background:#ededed}
+.detail_body .progress .percent_terms {display:inline-block; max-width:100%; height:10px; background: url('https://static.ebs.co.kr/www/common/img/category/course/list_poll_bg1.gif') repeat-x left top} 
+.detail_body .progress .percent_my {display:inline-block; max-width:100%; height:10px; background: url('https://static.ebs.co.kr/www/common/img/category/course/list_poll_bg2.gif') repeat-x left top} 
+.detail_body .progress ul {float:left; width: 400px; margin-top:3px; padding-left:57px; overflow: hidden}
+.detail_body .progress ul li {float:left; width:185px; color: #222;  font-size:11px; font-weight: bold}
+.detail_body .progress ul li.first_child{width: 30% !important; text-align: left}
+.detail_body .progress ul li {width:40% !important; text-align: center}
+.detail_body .progress ul li.last_item{width: 30% !important; text-align: right}
+.detail_body .progress ul li:after {content:""; display:block; clear:both}
+
+.detail_body .sub_top_content {width:748px; border: 1px solid #dedede; border-width: 1px 0 0 1px}
+.detail_body .sub_top_content:after {content:""; display:block; clear:Both}
+.detail_body .sub_top_content .box {*zoom:1; float:left; position:relative; width:701px; border: 6px solid #f1f1f1; padding: 13px 18px 13px 18px !important}
+.detail_body .sub_top_content .box:after {content:""; display:block; clear:Both}
+.detail_body .sub_top_content .box p {float:left; width:133px; color:#333}
+.detail_body .sub_top_content .box .pop_money {position:absolute; top:9px; right:18px; padding-left:20px; border-left:1px solid #f1f1f3}
+.detail_body .sub_top_content .box ul {float:left; width:492px; *zoom:1}
+.detail_body .sub_top_content .box ul:after {content:""; display:block; clear:both}
+.detail_body .sub_top_content .box ul li.first_child {width:157px; height:auto !important; margin-bottom:0 !important; border-bottom:0 !important}
+.detail_body .sub_top_content .box ul li {float:left; width:140px; padding-left:10px; background: url('https://static.ebs.co.kr/www/common/img/global/bul/bul_package2.gif') no-repeat left 5px}
+.detail_body .sub_top_content .box ul li strong {display:inline-block; margin-left:9px; padding-left:10px; color:#ff644e; background: url('https://static.ebs.co.kr/www/common/img/global/bul/bul_gray_bar.gif') no-repeat left 1px}
+.detail_body .sub_top_content .box_type01 {position:relative}
+.detail_body .sub_top_content .box_type01:after {content:""; display:block; clear:Both}
+.detail_body .sub_top_content .box_type01 ul {float:none !important}
+.detail_body .sub_top_content .box_type01 li {float:none !important; width:560px !important; margin-top:5px; color:#222 !important}
+.detail_body .sub_top_content .box_type01 li.first_child {margin-top:0}
+.detail_body .sub_top_content .box_type01 li strong {color:#222 !important; background:none !important; margin:0 !important; padding:0 !important}
+.detail_body .sub_top_content .box_type01 ul li {background: url('https://static.ebs.co.kr/www/common/img/global/bul/bul_package1.gif') no-repeat left 4px}
+.detail_body .cart_step {float:left; width:750px; margin-top:20px}
+.button_buy {position:absolute; right:20px; top:15px; height:30px; padding-left:20px; border-left:1px solid #f1f1f3}
+.button_buy a {vertical-align:-19px; .vertical-align:-9px} */
+
+/* images table subject link style */
+table.img_style_table .info .sub a {color:#222 !important}
+table.img_style_table .info .sub a:hover, table.img_style_table .info .sub a:focus {color:#3C73A0 !important; text-decoration:underline !important}
+table.img_style_table .info{vertical-align: top;}
+table.img_style_table thead th {font-size:12px !important}
+
+/* layer */
+.detail_layer {position: absolute; z-index: 1; left: 50%; top: 116px; margin:10px 0 10px -150px; width:500px; background: #fff; border:1px solid #26446c}
+.detail_layer .inner {border:5px solid #405e86}
+.detail_layer .inner h3 {position:relative; padding:11px 20px 13px; background:#405e86}
+.detail_layer .inner h3 .pop_close {position:absolute; top:14px; right:14px}
+.detail_layer .inner .inner_content {padding:14px 20px 19px}
+.detail_layer .inner .inner_content p{line-height: 18px; padding-bottom: 7px}
+.detail_layer .inner .inner_content ul{padding-bottom: 6px}
+.detail_layer .inner .inner_content ul li{padding: 0 0 4px 7px; background: url('https://static.ebs.co.kr/www/common/img/global/bul/bul_package1.gif') no-repeat left 5px; line-height: 18px}
+.detail_layer .inner .inner_content ul li h6{font-weight: normal; padding-left: 21px; background: url('https://static.ebs.co.kr/www/common/img/global/icon/icon_talk.gif') no-repeat left top}
+.detail_layer .inner .inner_content ul li dl{width: 230px; padding-left: 21px;  overflow: hidden}
+.detail_layer .inner .inner_content ul li dl dt, .detail_layer .inner .inner_content ul li dl dd{float: left}
+.detail_layer .inner .inner_content table th{height: 29px; background: #eef1fd; border: 1px solid #c6cbe1; color: #222; font-size: 11px}
+.detail_layer .inner .inner_content table td{height: 29px; border: 1px solid #d9d9d9; text-align: center}
+.detail_layer .inner .inner_content table .lt {padding-left:18px}
+.detail_layer .inner .inner_content table td img{margin-top: -2px; *margin-top: 0}
+.detail_layer .inner .inner_content table td.first_cell{background: #f7f7f7; color: #222; font-weight: bold}
+.detail_layer .inner .inner_content table td.ex_td{background: none; font-weight: normal}
+
+.layer_banner{position: absolute; z-index: 1;right:-100px; top: 170px}
+.layer_banner .close{display: block; position: absolute; right: 0; top: 0}
+
+/* popup */
+.window_pop{border: 1px solid #26446c}
+.window_pop .pop_tit{position: relative; padding: 14px 0 14px 23px; background: #405e86}
+.window_pop .pop_tit a{position: absolute; right: 19px; top: 16px}
+.window_pop .pop_body{padding: 18px 20px; background: #fff}
+
+.window_pop .pop_btn_area{padding-top: 20px; text-align: center}
+
+.window_pop .pop_table th{border: 1px solid #b3bac4; background: #e0e6ee; color: #222}
+.window_pop .pop_table td{border: 1px solid #d9d9d9}
+
+.window_pop_down{width: 350px}
+.window_pop_down .pop_body strong{display: block; padding-bottom: 8px; border-bottom: 1px solid #ededed}
+.window_pop_down .pop_body ul{padding-top: 2px}
+.window_pop_down .pop_body ul li{padding: 2px 0 0 20px; margin-top: 6px; background: url('https://static.ebs.co.kr/www/common/img/global/icon/icon_pop_down.gif') no-repeat left top}
+.window_pop_down .pop_body ul li a{text-decoration: underline}
+
+.window_pop_start_info{width: 400px}
+.window_pop_start_info strong{color: #ff644e}
+.window_pop_start_info ul{padding-bottom: 3px}
+.window_pop_start_info li{padding: 0 0 6px 7px; background: url('https://static.ebs.co.kr/www/common/img/global/bul/bul_package1.gif') no-repeat left 4px; line-height: 18px}
+.window_pop_start_info .pop_table td{padding: 6px 0 6px 10px; line-height: 17px}
+
+.window_pop_media{width: 300px}
+.window_pop_media .pop_body p{padding-bottom: 7px; border-bottom: 1px solid #ededed}
+
+.window_pop_confirm{width: 650px}
+.window_pop_confirm .inner{padding: 10px 20px 30px 20px; border: 5px solid #405e86}
+.window_pop_confirm .inner h1{position:relative; padding-bottom: 10px; text-align: left}
+.window_pop_confirm .inner h2{padding-bottom: 30px; text-align: center}
+.window_pop_confirm .inner .top_info{border: 1px solid #dadada; border-right-color: #ededed; border-bottom-color: #ededed; }
+.window_pop_confirm .inner .middle_line{border: 6px solid #f1f1f3}
+.window_pop_confirm .inner .inner_line{width: 100%; padding: 10px 0; border: 1px solid #ededed; overflow: hidden}
+.window_pop_confirm .inner .inner_line dl{float: left; padding: 8px 0 0 20px}
+.window_pop_confirm .inner .inner_line dl:after{content:"";display:block;clear:both;height:0;visibility:hidden}
+.window_pop_confirm .inner .inner_line dl dt, .window_pop_confirm .inner .inner_line dl dd{float: left}
+.window_pop_confirm .inner .inner_line dl dt{padding: 0 10px 0 13px; background: url('https://static.ebs.co.kr/www/common/img/global/bul/bul_package1.gif') no-repeat left 5px; border-right: 1px solid #d9d9d9}
+.window_pop_confirm .inner .inner_line dl dd{width: 117px; padding-left: 9px; color: #222; font-weight: bold}
+.window_pop_confirm .inner .inner_line div{float: right; padding-right: 20px}
+.window_pop_confirm .inner h3{padding: 24px 0 4px 16px; background: url('https://static.ebs.co.kr/www/common/img/category/course/pop_tit_confirm_bg.gif') no-repeat left 24px}
+
+.window_pop_confirm .pop_confirm_table{width: 100%}
+.window_pop_confirm .pop_confirm_table th{height: 29px; background: #e4edf2; border: 1px solid #bcc8cf}
+.window_pop_confirm .pop_confirm_table td{height: 29px; border: 1px solid #d9d9d9; text-align: center}
+.window_pop_confirm .pop_confirm_table td.first_cell{padding-left: 20px; text-align: left; }
+.window_pop_confirm .pop_confirm_table td.last_cell{background: #f7f7f7; color: #ff644e; font-weight: bold}
+.window_pop_confirm .img_area{position: relative; padding: 30px 0 0 196px}
+.window_pop_confirm .img_area span{display: block; position: absolute; left: 196px; top: 31px; color: #222; font-size: 14px; font-weight: bold}
+
+.window_pop_memo{width: 400px}
+.window_pop_memo .pop_body{}
+.window_pop_memo .pop_body dl{width: 100%; padding-bottom: 8px; overflow: hidden}
+.window_pop_memo .pop_body dl dt, .window_pop_memo .pop_body dl dd{float: left}
+.window_pop_memo .pop_body dl dt{font-weight: bold; margin-right: 8px}
+.window_pop_memo .pop_body textarea{width: 348px; height: 190px; padding: 5px}
+
+.popup_type12 {margin:10px 0; width:420px; border:1px solid #26446c}
+.popup_type12 .inner {border:5px solid #405e86}
+.popup_type12 .inner h3 {position:relative; padding:11px 20px 13px; background:#405e86}
+.popup_type12 .inner h3 .pop_close {position:absolute; top:14px; right:14px}
+.popup_type12 .inner .inner_content {padding:20px}
+.popup_type12 .inner .inner_content p {margin-bottom:15px; letter-spacing:0px}
+.popup_type12 .inner .inner_content .btn_center {text-align:center}
+.popup_type12 .inner .inner_content .inner_con {margin:10px 0 15px 0; border-bottom:1px solid #ededed}
+.popup_type12 .inner .inner_content .inner_con .con_small2 {padding-right:4px; font-size:12px; line-height:1.6em; color:#666}
+.popup_type12 .btn_right {text-align:right; margin-top:10px; padding-bottom:20px; border-bottom:1px solid #ededed}
+
+.pay_style_table4 {margin-bottom:20px; width:370px !important}
+.pay_style_table4 .second_cell strong {font-size:12px}
+.pay_style_table4 th {padding:7px 0; border:1px solid #b3bac4; background:#e0e6ee; color:#222}
+.pay_style_table4 td {padding:7px 0; text-align:center; border:1px solid #d9d9d9}
+.pay_style_table4 td.first_cell {background:#f7f7f7}
+.pay_style_table4 td.left {padding-left:10px; text-align:left; color:#666}
+.pay_style_table4 td strong.color_org {font-size:12px; color:#ff644e}
+
+.popup_type12 .inner .inner_content h4 {padding-left:16px; background: url("https://static.ebs.co.kr/www/common/img/category/mypage/money_bullet.gif") 0 1px no-repeat}
+.popup_type12 .inner .inner_content .innercon_pos {margin:14px 0 16px 16px}
+.popup_type12 .inner .inner_content .innercon_pos strong.color_org {font-size:13px; color:#ff644e; letter-spacing:-1px}
+
+.inner_content .strong11 {font-size:12px !important; word-spacing:-3px; line-height:1.4}
+.inner_content .pop_border {display:block; padding-bottom:10px; margin-bottom:10px; border-bottom:1px solid #ededed}
+.inner_content .stopinfo_notice li {margin-top:5px; background:url(https://static.ebs.co.kr/www/common/img/global/bul/bul_package1.gif) 0 5px no-repeat; padding-left:7px; letter-spacing:-1px; line-height:1.4}
+
+.pop_regi{z-index: 100; width: 588px; padding: 18px 20px 20px 20px; border: 5px solid #405e86; background: #fff}
+.pop_regi h1{position: relative; padding: 7px 0 8px 0; color: #222}
+.pop_regi h1 a{display: block; position: absolute; right: 0; top: 0}
+.pop_regi .caution{padding: 17px 20px 12px 20px; border: 1px solid #b3bac4; background: #e0e6ee}
+.pop_regi .caution strong{display: block; padding: 2px 0 5px 22px; background: url('https://static.ebs.co.kr/www/common/img/global/icon/icon_caution.png') no-repeat left top; color: #3c5d89; font-weight: bold; }
+.pop_regi .caution ol li{padding-left: 22px; color: #5f7594; line-height: 18px}
+.pop_regi .reason{padding-top: 18px}
+.pop_regi .reason p{padding-bottom: 8px; color: #999999; font-size: 11px}
+.pop_regi .reason ul{width: 100%; padding-top: 14px; border: 1px solid #d9d9d9; background: #f7f7f7; overflow: hidden}
+.pop_regi .reason ul li{float: left; width: 234px; padding: 0 0 14px 20px}
+.pop_regi .reason ul li input{vertical-align: -1px; *vertical-align: 0}
+.pop_regi .btn_area{padding-top: 20px; text-align: center}
+
+.popup_coupon_selcet{width:640px;color:#666}
+.popup_coupon_selcet .select{background:#f7f7f7;}
+.popup_coupon_selcet .select input{margin-right:0}
+.popup_coupon_selcet strong{color:#666}
+.popup_coupon_selcet .layer_top_txt, .popup_coupon_info .layer_top_txt{margin-bottom:6px;font-size:12px;}
+
+.popup_coupon_info{width:650px;}
+.popup_coupon_info .faq_search_area{margin-top:0}
+.popup_coupon_info .sub_top_inbox{width:554px;padding:15px 15px 11px;overflow:hidden}
+.popup_coupon_info .sub_top_inbox .fr{width:400px}
+.popup_coupon_info .sub_top_inbox li{padding-left:7px;background:url("https://static.ebs.co.kr/www/common/img/category/main/bul_square_global.gif") no-repeat 0 8px;color:#222;line-height:22px}
+.popup_coupon_info .sub_top_inbox li strong.sale, .popup_coupon_info .layer_top_txt .num{color:#ff644e;}
+.popup_coupon_info .sub_top_inbox p{padding:6px 0 0 7px;border-top:1px solid #f1f1f1;color:#666;line-height:18px}
+.popup_coupon_info .board_search{width:578px;padding-left:18px}
+.popup_coupon_info .board_search label{margin-left:0;margin-right:9px}
+.popup_coupon_info .board_search .btn_inline{margin-left:2px}
+.popup_coupon_info .data_tabel thead th{border:1px solid #bcc8cf !important;background:#e4edf2;}
+.popup_coupon_info .data_tabel td{border:1px solid #ddd !important;}
+.popup_coupon_info .data_tabel .lt span{display:block;line-height:20px}
+.popup_coupon_info .star_point{width:60px}
+
+/* etc */
+.file_field_text{clear: both}
+.file_field_text li{padding-left: 7px; background: url('https://static.ebs.co.kr/www/common/img/global/bul/bul_package1.gif') no-repeat left 5px; font-size: 11px; line-height: 18px}
+
+.qna_write_td select{margin-right: 6px}
+.qna_write_td label{margin-right: 6px}
+
+.multi_file_upload{width: 100%; overflow: hidden}
+.multi_file_upload .gray_scroll{float: left; width: 568px; height: 68px; border: 1px solid #b5b5b5;overflow-x:hidden; overflow-y:auto;
+.position:relative; .z-index:10;
+#width:535px !important; *width:533px; width:533px \9;
+background:#fff
+}
+.multi_file_upload ul li a{padding-left: 5px; display: block;height: 17px; line-height: 17px}
+.multi_file_upload ul li a:hover, .multi_file_upload ul li.selected {background: #e8e8e8}
+.multi_file_btn{float: right}
+.multi_file_btn a{display: block; margin-bottom: 3px}
+
+.reply_count{font-weight: bold; color: #ff644e}
+
+#postscript .star_point{width: 60px !important; margin: 0 auto !important}
+
+.start_check ul{width: 100%;}
+.start_check ul:after{content:""; display:block; clear:both}
+.start_check ul li{width: 99px; float: left;}
+.start_check ul li .input_radio{display: block; float: left}
+.start_check ul li .star_point{clear: none; float: left !important}
+
+.yellow_box {width:719px !important; text-align:left !important; background:#fffef7; padding:14px 14px 11px 14px; border:1px solid #f4f1e0 !important; color:#222 !important}
+.info_txt{padding-left:25px; background:url('https://static.ebs.co.kr/www/common/img/category/mypage/icon_talk.png') no-repeat; line-height:20px;}
+
+.dark_color {color:#222 !important}
+
+.view_btn:after {content:""; display:block; clear:both}
+.view_loc {float:right; margin:10px 0}
+.view_loc ul {height:12px}
+.view_loc li {float:left; margin-left:10px; padding-left:8px; background: url("https://static.ebs.co.kr/www/common/img/global/background/bar_gnb.gif") no-repeat scroll left; letter-spacing:-1px}
+.view_loc img {padding-right:4px}
+.view_loc li:first-child {background:none}
+
+#lectureList .button_area{width: 100%; padding-bottom: 7px; overflow: hidden}
+#lectureList .button_area span {display: block; float: left; text-align:left}
+#lectureList .button_area div {float: right}
+
+.btn_print {position:absolute; right:0; display:inline}
+.site_detail {padding-top:0 !important}
+.site_detail dt {background:url("https://static.ebs.co.kr/www/common/img/global/bul/bul_package1.gif") no-repeat scroll left 5px !important}
+.site_detail dd {width:400px !important; font-weight:normal !important}
+
+.sign_center {margin-top:25px; text-align:center}
+.sign_center p {margin-bottom:23px; font-size:14px; color:#222; font-weight:bold}
+
+.cal_layer_list {z-index:100; background:#fff; position:absolute; padding:16px 20px; border:2px solid #cfcfcf}
+.cal_layer_list strong {display:block; border-bottom:1px solid #e6e6e6; padding-bottom:7px; margin-bottom:13px}
+.cal_layer_list ul {margin-top:6px}
+.cal_layer_list li {margin-bottom:3px}
+.cal_type_s .cal_body {position:relative}
+
+/* error */
+#error_area{width:980px;margin:0 auto;padding-top:98px;}
+.error_header{position:relative;width:980px;height:45px;border-bottom:2px solid #374c65;}
+.error_header h1{padding-left:1px;}
+.error_header .category{position:absolute;top:18px;right:-6px;}
+.error_header .category li{display:inline;float:left;height:30px;padding:0 6px;background:url('https://static.ebs.co.kr/www/common/img/global/bul/bul_gray_bar.gif') no-repeat 0 0;position:relative;}
+.error_header .category li.first{background:none;}
+.error_header .category .sub {display:block; float:none; height:auto; background:#fff; border:1px solid #d0d0d0; position:absolute; top:18px; left:0;}
+.error_header .category .sub * {display:block; float:none;}
+.error_header .category .sub li {height:auto; margin:0; padding:0; background:none; position:static;}
+.error_header .category .sub li a {padding:3px 7px; font-size:11px; color:#8e8e8e; text-decoration:none; white-space:nowrap;}
+.error_header .category .sub li a:hover,
+.error_header .category .sub li a:focus,
+.error_header .category .sub li a:active {color:#2a2a2a; background:#eff6fb;}
+.error_content{padding:107px 0 91px 490px;background:url('https://static.ebs.co.kr/www/common/img/global/background/bg_error.jpg') no-repeat 66px 69px;}
+.error_desc{padding-left:30px;border-left:1px solid #ededed}
+.error_desc p{margin-bottom:9px;line-height:17px;}
+.error_desc p.blue { font-size: 27px; color: #3c73a0; margin-bottom: 15px;line-height: 27px;}
+.error_desc dt{margin-bottom:7px; color:#222;font-weight:bold;}
+.error_desc dd{padding-left:6px; background:url('https://static.ebs.co.kr/www/common/img/global/bul/bul_package1.gif') no-repeat 0 7px;line-height:19px;}
+.error_desc .btn{width:100%; margin-top:16px; overflow:hidden}
+.error_desc .btn li{float:left;margin-right:3px;}
+
+table td .star_point {width:91px; display:inline-block; float:left}
+table td.center .star_point, table td.third_cell .star_point{width:60px; float:none !important;}
+
+.MultiFile-remove {display:inline !important}
+.btnFileDel {display:inline !important}
+
+.cf_comment {margin-top:10px; color:#222; font-size:11px}
+
+@media screen and (-webkit-min-device-pixel-ratio:0){.durian {font-family:'AppleGothic',sans-serif !important}}
+
+/* nolist */
+.result_null {text-align:center !important; padding:22px 0 !important}
+.result_null strong {color:#222; font-size:12px; font-weight:normal; padding:4px 0 3px 27px !important; background-size:21px 19px !important; background:url(https://static.ebs.co.kr/www/common/img/global/bul/bg_none_icon.gif) no-repeat left top}
+
+.contents_no{display:inline-block;padding:4px 0 3px 27px; background:url('https://static.ebs.co.kr/www/common/img/global/bul/bg_none_icon.gif') no-repeat 0 1px}
+
+.MultiFile-applied {
+.position:relative; .left:-2px; .z-index:9; 
+.width:90px !important; *width:90px !important; width:90px \9 !important; 
+.background:#000; *background:#000; background:#000 \9; 
+.border:1px solid #ccc; *border:1px solid #ccc; border:1px solid #ccc \9; 
+.font-size:12px; .font-size:12px; font-size:12px \9; 
+.padding-top:18px !important; *padding-top:18px !important; padding-top:18px \9 !important;  
+.display:block; *display:block; display:block \9
+}
+
+.find_con {margin-bottom:15px !important; padding:16px; background:#e0e6ee; border:1px solid #b3bac4}
+.find_con span {display:block; margin-top:8px; font-size:12px; color:#666; letter-spacing:-1px}
+.find_con strong {font-size:12px !important; color:#666}
+.find_con .text_input {padding:0 0 0 2px !important; height:18px !important}
+
+.sub_top_inner {padding:10px; color:#222; line-height:18px}
+.sub_top_inner li {color:#666}
+.sub_top_inner li input.cbr_type {position:relative !important; top:3px !important}
+
+/* popup_teacher_info */
+.popup_teacherinfo {width:742px}
+.popup_teacherinfo .intro_area {width:691px; overflow:hidden; margin-bottom:0;}
+.popup_teacherinfo .box_type01 li {float:none !important;} /*  width:691px !important */
+.popup_teacherinfo .box_type01 li:hover strong {color:#222 !important}
+.popup_teacherinfo .box_type01 li .land_spotlight {display:block}
+.popup_teacherinfo .box_type01 li .land_spotlight .thumb_cover {width:688px !important}
+.popup_teacherinfo .box_type01 li.first_child {height:194px; margin-bottom:15px; border-bottom:1px solid #eee}
+.popup_teacherinfo .box_type01 li.first_child .name {display:block; margin-top:9px; font-family:MGothic,"맑은고딕","돋움",dotum; font-size:14px; color:#222; letter-spacing:0}
+.popup_teacherinfo .box_type01 li.first_child .name span {padding-left:4px; font-size:12px; color:#666}
+.popup_teacherinfo .box_type01 li.first_child .sns {position:relative; float:left; width:688px; margin-top:10px; *zoom:1; text-align:right}
+.popup_teacherinfo .box_type01 li.first_child .sns strong {padding-right:8px}
+.popup_teacherinfo .box_type01 li.first_child .sns .study_btn {position:absolute; left:0; top:0}
+.popup_teacherinfo .box_type01 li.first_child .sns:after {content:""; display:block; clear:both}
+.popup_teacherinfo .intro_list {/*  *zoom:1 */ width:691px; margin-bottom:18px;}
+.popup_teacherinfo .intro_list:after {content:""; display:block; clear:both}
+.popup_teacherinfo .intro_list strong {display:block; margin-bottom:8px}
+.popup_teacherinfo .intro_list ul {margin-left:2px}
+.popup_teacherinfo .intro_list li {height:auto !important; margin-bottom:0 !important; padding-left:9px; font-size:12px; color:#666; line-height:22px; background: url('https://static.ebs.co.kr/www/common/img/global/bul/bul_package1.gif') no-repeat left 9px; border:none !important}
+
+.use_info li .check_ps {position:relative !important; top:2px !important}
+
+.tv_top_content{border: 1px solid #dedede; border-width: 1px 0 0 1px; margin-top:10px}
+.tv_top_content .box{border: 6px solid #f1f1f1; padding: 20px;}
+.tv_top_content .box h5{padding: 20px 0 10px 0;}
+.tv_top_content .box h5:first-child{padding-top: 0;}
+.tv_top_content .box ul{width: 100%; overflow: hidden;}
+.tv_top_content .box ul:first-child{padding-bottom: 20px;}
+.tv_top_content .box ul li{width: 327px; overflow: hidden;}
+.tv_top_content .box ul li:first-child{margin-right: 27px;}
+.tv_top_content .box ul li, #contentBody .tv_top_content .box ul li .img, #contentBody .tv_top_content .box ul li div{float: left;}
+.tv_top_content .box ul li .img{margin-right: 15px;}
+.tv_top_content .box ul li div{width: 158px;}
+.tv_top_content .box ul li div strong{display: block; padding: 1px 0 5px 0; color: #222; line-height: 18px; letter-spacing: -1px;}
+.tv_top_content .box ul li div a {color:#222}
+.tv_top_content .box ul li div a:hover, .tv_top_content .box ul li div a:active {color:#3C73A0}
+.tv_top_content .box ul li div strong img{vertical-align: -3px;}
+.tv_top_content .box ul li div p{padding: 4px 0 5px 0 ;color: #999; letter-spacing: -1px; }
+.tv_top_content .box ul li div .price{padding:0 !important; letter-spacing:0 !important; color: #ff644e !important; font-weight: bold; font-size: 14px;}
+.tv_top_content .box ul li div .price strong{display:inline !important; letter-spacing:0 !important;color: #999; font-weight: normal; font-size: 11px; text-decoration: line-through;}
+.tv_top_content .box ul li div .per{padding:0 !important; letter-spacing:0 !important; font-size: 11px;}
+.tv_top_content .box ul li div .per span{display: inline-block; width: 9px; height: 11px; background: url('https://static.ebs.co.kr/www/common/img/global/icon/icon_price_down.gif') no-repeat left top; vertical-align: -2px;}
+.tv_top_content .box ul li div .title{display: block; padding: 1px 0 5px 0; color: #222; line-height: 18px; letter-spacing: -1px;}
+.tv_top_content .box ul li div .con{padding: 4px 0 5px 0 ;color: #999; letter-spacing: -1px; }
+.tv_top_content .box ul li div .define{width: 100%; overflow: hidden;}
+.tv_top_content .box ul li div .define dt, #contentBodytv_top_content .define dd{float: left;}
+.tv_top_content .box ul li div .define dt{margin-right:5px; .margin-right:0px; height: 12px; padding-right: 6px; border-right: 1px solid #ccc; font-weight: bold}
+.tv_top_content .box ul li div .define dd{height: 12px; padding-left: 6px}
+.tv_top_content .box ul li div .pt2 {padding-bottom:2px !important}
+
+#cal_layer a {cursor:pointer !important}
+
+/* popup_png - 원형레이어 팝업 */
+.pop_png{position:absolute; top:0; right:0;}
+.pop_png.land{top:247px;width:304px;height:289px;}
+.pop_png.land .btn_popclose{position:absolute;top:30px;left:222px}
+.pop_png.evt_on{width:110px;height:110px; top:170px; right:-80px;z-index:1;}
+.pop_png.evt_on .btn_popclose{position:absolute;top:9px;left:78px}
+
+/* 패키지 상세 */
+#contentBody .pack_view_top_content{border: 1px solid #dedede; border-width: 1px 0 0 1px;}
+#contentBody .pack_view_top_content .box{border: 6px solid #f1f1f1; padding: 20px;}
+#contentBody .pack_view_top_content .top{width:697px}
+#contentBody .pack_view_top_content .top:after{content:"";display:block;clear:both;height:0;visibility:hidden}
+#contentBody .pack_view_top_content .w270h152{float: left;}
+#contentBody .pack_view_top_content .txt_con{width: 405px; float: right;}
+#contentBody .pack_view_top_content .txt_con .sub{padding-top: 1px; color: #222; font-weight: bold; font-size: 12px; line-height: 20px;}
+#contentBody .pack_view_top_content .txt_con .info{margin-top: 5px; padding-top: 3px; border-top: 1px solid #ccc;}
+#contentBody .pack_view_top_content .txt_con .detail_info{width: 100%; overflow: hidden;}
+#contentBody .pack_view_top_content .txt_con .detail_info .left dd{text-decoration: line-through;}
+#contentBody .pack_view_top_content .txt_con .detail_info dt, #contentBody .pack_view_top_content .txt_con .detail_info dd, #contentBody .pack_view_top_content .txt_con .detail_info .left, #contentBody .pack_view_top_content .txt_con .detail_info .right{float: left;}
+#contentBody .pack_view_top_content .txt_con .detail_info .left:after, #contentBody .pack_view_top_content .txt_con .detail_info .right:after,#contentBody .pack_view_top_content .txt_con .detail_info dl:after{content:"";display:block;clear:both;height:0;visibility:hidden}
+#contentBody .pack_view_top_content .txt_con .detail_info .left{margin-right: 30px;}
+#contentBody .pack_view_top_content .txt_con .detail_info dd strong{color: #ff644e; font-weight: bold;}
+#contentBody .pack_view_top_content .txt_con .detail_info dt{height: 12px; margin: 7px 6px 0 0; padding-right: 7px; border-right: 1px solid #ccc; font-weight: bold; line-height: 14px;}
+#contentBody .pack_view_top_content .txt_con .detail_info dd{margin-top: 7px; font-size: 12px;}
+#contentBody .pack_view_top_content .txt_con .sale_per{width: 100%; overflow: hidden;}
+#contentBody .pack_view_top_content .txt_con .sale_per dt, #contentBody .pack_view_top_content .txt_con .sale_per dd{float: left;}
+#contentBody .pack_view_top_content .txt_con .sale_per dt{height: 12px; margin: 7px 6px 0 0; padding-right: 7px; border-right: 1px solid #ccc; color: #222; font-weight: bold; line-height: 12px;}
+#contentBody .pack_view_top_content .txt_con .sale_per dd{margin-top: 7px;}
+#contentBody .pack_view_top_content .txt_con .sale_per dd strong{color: #ff644e;}
+#contentBody .pack_view_top_content .txt_con .sale_per dd span.down{display: inline-block; width: 9px; height: 11px; background: url('https://static.ebs.co.kr/www/common/img/global/icon/icon_price_down.gif') no-repeat left top; vertical-align: -2px;}
+
+#contentBody .pack_view_top_content .txt_con .period{width: 100%; overflow: hidden;}
+#contentBody .pack_view_top_content .txt_con .period dt, #contentBody .pack_view_top_content .txt_con .period dd{float: left; font-size: 12px;}
+#contentBody .pack_view_top_content .txt_con .period dt{height: 12px; margin: 7px 6px 0 0; padding-right: 7px; border-right: 1px solid #ccc; color: #222; font-weight: bold; line-height: 12px;}
+#contentBody .pack_view_top_content .txt_con .period dd{margin-top: 7px;}
+#contentBody .pack_view_top_content .txt_con .explain{padding-top: 12px;}
+#contentBody .pack_view_top_content .txt_con .explain li{padding-left: 7px; background: url('https://static.ebs.co.kr/www/common/img/global/bul/bul_package1.gif') no-repeat left 4px;font-size: 11px;}
+#contentBody .pack_view_top_content .txt{padding-top: 17px; line-height: 16px;}
+#contentBody .pack_view_top_content .refund_txt{padding-top: 12px; font-size: 11px; line-height: 12px;}
+#contentBody .pack_view_top_content .refund_txt span{color: #ff644e;}
+#contentBody .pack_view_top_content .refund_txt a{display: inline-block; padding-right: 13px; background: url('https://static.ebs.co.kr/www/common/img/category/package/bg_ebs1.gif') no-repeat right center; font-weight: bold; text-decoration: underline;}
+#contentBody .pack_view_top_content p.txt{}
+
+.pack_cart_btn{padding: 10px 0 20px 0;text-align: center;}
+
+table.img_style_table.package{width: 100%; border-top: 2px solid #666; border-bottom: 1px solid #ccc;}
+table.img_style_table.package td{border-bottom: 1px solid #ededed; padding: 15px 0;}
+
+table.img_style_table.package thead th{padding:8px 0;border-bottom:1px solid #ccc;background:#f7f7f7; color: #222; font-size: 12px;}
+table.img_style_table.package thead th span{display:block;background:url('https://static.ebs.co.kr/www/common/img/global/background/bar_board.gif') no-repeat left center}
+table.img_style_table.package thead th.first_cell{background:#f7f7f7 url('https://static.ebs.co.kr/www/common/img/global/background/bg_th.gif') repeat-y left top}
+table.img_style_table.package thead th.last_cell{background:#f7f7f7 url('https://static.ebs.co.kr/www/common/img/global/background/bg_th.gif') repeat-y right top}
+
+table.img_style_table.package .sub_info{padding-left: 40px; text-align: left;}
+table.img_style_table.package .thumbnail{vertical-align: top;}
+table.img_style_table.package .info{vertical-align: top;}
+table.img_style_table.package .info .sub{padding-top: 1px; color: #222; font-size: 12px; font-weight: bold; text-align: left;}
+table.img_style_table.package .info .sub a {color:#222}
+table.img_style_table.package .info .sub a:hover, table.img_style_table.package .info .sub a:focus {color:#3C73A0 !important; text-decoration:underline !important}
+table.img_style_table.package .info .con{width: 100%;  padding-top: 7px; color: #666; line-height: 17px;}
+table.img_style_table.package .info .movie_info{width: 100%; overflow: hidden;}
+table.img_style_table.package .info .movie_info .left{float: left; margin-right: 30px;}
+table.img_style_table.package .info .movie_info .right{float: left;}
+table.img_style_table.package .info .movie_info dl{clear: both;}
+table.img_style_table.package .info .movie_info dl:after{content:"";display:block;clear:both;height:0;visibility:hidden}
+table.img_style_table.package .info .movie_info dl dt, table.img_style_table.package .info .movie_info dl dd {float: left; height: 12px; color: #222; margin-top: 8px; font-size: 12px;}
+table.img_style_table.package .info .movie_info dl dt{padding: 0 6px 0 0; border-right: 1px solid #ccc; font-weight: bold;}
+table.img_style_table.package .info .movie_info dl dd{padding-left: 6px;}
+table.img_style_table.package .price div{padding-top: 0 !important; color: #999; font-size: 11px; text-decoration: line-through;}
+table.img_style_table.package .price strong{color: #ff644e; font-size: 14px; margin-bottom:3px}
+table.img_style_table.package .price p{color: #222; font-size: 11px; line-height:10px}
+table.img_style_table.package .price em{font-weight: normal; font-size: 11px;}
+table.img_style_table.package .price *{display: block; width: 100%; padding-top: 4px;  text-align: center;}
+table.img_style_table.package .price .down{position:relative; top:0; .top:1px; vertical-align:middle; display: inline-block; width: 9px; height: 9px; background: url('https://static.ebs.co.kr/www/common/img/global/icon/icon_price_down.gif') no-repeat left top}
+table.img_style_table.package .btn{text-align: right;}
+table.img_style_table.package .btn a:first-child, table .btn span:first-child{margin-top: 0;}
+table.img_style_table.package .btn *{margin-top: 5px;}
+
+table.img_style_table.package .my_product p{color: #222;}
+table.img_style_table.package .my_product p strong{font-size: 12px;}
+table.img_style_table.package .my_product p span{color: #ff644e; font-weight: bold;}
+table.img_style_table.package .my_product li{width: 100%; padding-top: 9px; overflow: hidden;}
+table.img_style_table.package .my_product li span{display: block; float: left; padding-top: 2px;}
+table.img_style_table.package .my_product li div{float: left; color: #222;}
+
+/* 비로그인 게시판(비밀번호 수정 및 삭제) */
+.pw_con{width:472px;margin:0 auto;margin-top:70px;padding:35px 22px;background:#f7f7f7; text-align:center;}
+.pw_con dt{font-size:116%;font-weight:bold}
+.pw_con dd{line-height:19px;}
+.pw_area{margin-top:23px;padding-top:24px;border-top:1px solid #ddd;}
+.pw_area label{font-weight:bold}
+.pw_con button, .pw_con input, .pw_con label{vertical-align:middle;}
+.pw_con .btn_confirm button{width:64px;height:24px;background:url('https://static.ebs.co.kr/www/common/img/global/button/btn_confirm.png') no-repeat 0 0}
+.pw_con .btn_reset{margin-left:-2px}
+.pw_con .btn_reset button{width:64px;height:24px;background:url('https://static.ebs.co.kr/www/common/img/global/button/btn_reset.png') no-repeat 0 0}
+
+/* 2016-08-02 */
+.view_head dl dd.txt_cut{width:640px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;word-wrap:normal;}
+
+/* 2016-09-06 */
+.board_list.event tr td.on01 {color:#FF6E54;font-weight:bold;} /* 2016-10-06 */
+.board_list.event tr td.on02 {font-weight:bold;color:#778FA7;} /* 2016-10-06 */
+.board_list.event tbody td.on03 {color:#A2AFBF;} /* 2016-10-06 */
+.board_list.event .bold {font-weight:bold;width:45px;}
+.board_list.event a span:hover, .board_list.event a span:active, .board_list.event a span:focus, .board_list.event a span:visited {color:#ff644e;}
+.board_list.event .term {color:#666;} /* 2016-10-12 */
+.board_list.event p a{white-space:nowrap;text-overflow:ellipsis;overflow:hidden;word-wrap:normal;width:430px;}
+.board_list.event p {line-height:21px;padding-bottom:4px;}
+.comment.event {padding-top:20px!important;}
+.btn_event {width:177px;height:28px;background:url('https://static.ebs.co.kr/www/common/img/category/durian/subtit_event_check4.gif') no-repeat; margin-right:10px;}/* 2017-01-16 */
+.btn_event_notice {width:92px;height:39px;background:url('https://static.ebs.co.kr/www/common/img/category/durian/subtit_event_check3.gif') no-repeat; display: block;margin-left: 10px;}/* 2017-01-16 */
+.comment.event .head_content .total strong {color:#000;}
+.comment.event p.action {position:relative;top:10px;}
+.comment.event .head_content .user {padding-left:25px;}
+.comment.event .head_content .total {margin-right:10px;}
+.comment.event span.user_name {color:#000;font-weight:bold;position:relative;top:3px;left:-10px;}
+.board_list.event .ico_new2 {display: inline-block;width: 12px;height: 11px; margin: 4px 0 0 3px; font-size: 0em; line-height: 0em; text-indent: -10240px;    background: url('https://static.ebs.co.kr/www/common/img/global/icon/ico_new.gif') no-repeat left top; vertical-align: top;} /* 개발 vertical-align: text-top; */
+.board_list.event a {#000;}
+
+/* 2016-10-25 */
+.view_body .submit_info {background:#f7f7f7;border:1px solid #ccc;margin-bottom:40px;}
+.view_body .submit_info span {display:block;border-bottom:1px solid #ccc; padding: 20px 5px;text-align: center;}
+.view_body .submit_info p {display:inline-block;border-right:1px solid #ccc; padding: 17px 25px;height:145px;}
+.view_body .submit_info p + p {display:inline-block;border-right:none;vertical-align: top;width:480px;height:145px;}
+.view_body .submit_info p + p span {display:inline-block;border-bottom:none;text-align:left;padding:0;padding-bottom:15px;}
+
+/* 2017-03-13 카카오톡 상담관련 추가 */
+.newCons{margin-top:27px;font-family:'Noto Sans KR','맑은 고딕'}
+.newCons h3{margin-bottom:10px;font-size:17px;font-weight:500;font-family:'Noto Sans KR','맑은 고딕';color:#000}
+.newCons .conBox{overflow:hidden;padding:13px;border:1px solid #dddddd;background:#f7f7f7;border-top-color:#41a0ab;} 
+.newCons .conBox span{font-size:14px;color:#666}
+.newCons .conBox .link_kakao{float:right;color:#51b2bd;font-size:14px;}
+.newCons.notice strong{color:#666;font-size:14px}
+
+/* 2018-04-26 방송홈 폐쇄 안내 페이지 수정 */
+#error_area01 {width: 980px; margin: 0 auto; padding-top: 98px; padding-bottom:50px;}
+.closing_wrap {background:#f4f5f7; text-align:center; position:relative; padding:260px 0 65px;}
+.closing_wrap .bgimg {background:url(https://static.ebs.co.kr/www/common/img/closeimg001.gif) no-repeat top center; position:absolute; left:50%; top:30px; margin-left:-135px; width:270px; height:219px;}
+.closing_wrap h2 {font-size:30px; line-height:43px; color:#243968}
+.closing_wrap h2 span{color:#f59235}
+.closing_wrap .distext01 {font-size: 14px;color:#444446;/* padding-bottom:30px; */padding-top: 5px;}
+.closing_wrap .distext01 a{font-weight:bold; border-bottom:1px solid #444446;color: #000;}
+.closing_wrap .distext01 a:hover{text-decoration:none;}
+.closing_wrap .distext02 {font-size:13px;color: #797979;line-height:20px;padding-top: 30px;/* font-weight: 300; */}
+.closing_wrap .distext02 b {color: #424242;}
+.footer {padding-top: 10px; border-top: 0px;}
+.footer .area_notice {display:none}
+@media all and  (max-width: 980px) {
+	#wrap {min-width:auto;}
+	#Document {min-width:auto; padding:0 20px; width:auto;}
+	#error_area01 {width: 100%; padding-top:30px}
+	.error_header {width: 100%;}
+	.closing_wrap {padding:260px 15px 65px;}
+
+}
+@media all and  (max-width: 500px) {
+	#Document {padding:0 10px;}
+	.closing_wrap {padding: 180px 10px 40px;}
+	.closing_wrap .bgimg {background-size: 80%; top:0;}
+	.closing_wrap h2 {font-size:22px;}
+}
+
+
+#login_area {
+      width: 950px;
+    margin: 0 auto 45px auto;
+    background: #FFF;
+    border: 1px solid #e5e5e5;
+    border-top: 3px solid #f57e25;
+    position: relative;
+    z-index: 1;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;}
+
+
+@media all and  (max-width: 980px) {
+#login_area {
+    width: 100%;
+    margin: 0 auto 45px auto;
+    background: #FFF;
+    border: 1px solid #e5e5e5;
+    border-top: 3px solid #f57e25;
+    position: relative;
+    z-index: 1;
+}
+
+	.error_content {
+      padding: 107px 0 91px 490px;
+    background: url(/images/cores/bg_error.jpg) no-repeat 66px 69px;
+}
+
+.error_desc p {
+    margin-bottom: 9px;
+    line-height: 17px;
+}
+
+.mob_lg h2 {
+    position: absolute;
+    top: 19px;
+    left: 50%;
+    font-size: 24px;
+    line-height: 29px;
+    color: #062f6d;
+    width: 126px;
+    margin-left: 51px;
+}
+
+
+}
+
+@media all and  (max-width: 950px) {
+#login_area {
+    width: 100%;
+    margin: 0 auto 45px auto;
+    background: #FFF;
+    border: 0px;
+    border-top: 3px solid #f57e25;
+    position: relative;
+    z-index: 1;
+}
+
+	.error_content {
+    padding: 9% 0 91px 12%;
+    background-image: none;
+	background-color: #FFF;
+}
+
+.error_desc p {
+    margin-bottom: 9px;
+    line-height: 17px;
+}
+.error_desc {
+    padding-left: 30px;
+    border-left: none;
+}
+
+
+}

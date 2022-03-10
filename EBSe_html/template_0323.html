@@ -1,0 +1,451 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+<meta property="og:url" content="https://www.ebse.co.kr" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="EBS English" />
+<meta property="og:description" content="EBSe 교과서 영어" />
+<meta property="og:image" content="images/_common/h1.png" />
+<title>EBSe 교과서 영어</title>
+<link rel="shortcut icon" type="image/x-icon" href="https://www.ebse.co.kr/images/favicon_ebs.png" />
+<link rel="shortcut icon" type="image/icon" href="/images/favicon_ebs.png" />
+<link rel="stylesheet" type="text/css" href="https://www.ebse.co.kr/engBook/common/css/style.css"/>
+<script type="text/javascript" src="https://www.ebse.co.kr/engBook/common/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="https://www.ebse.co.kr/engBook/common/js/common.js"></script>
+<link rel="stylesheet" type="text/css" href="https://www.ebse.co.kr/engBook/common/css/slick/slick.css?v=0.3">
+<link rel="stylesheet" type="text/css" href="https://www.ebse.co.kr/engBook/common/css/slick/slick-theme.css?v=0.3">
+<script type="text/javascript" src="https://www.ebse.co.kr/engBook/common/js/slick.js?v=0.3" charset="utf-8"></script>
+<script language="JavaScript" src="/global/xtractor/pageDummy?V_ID=A2003231748192879&LOGIN_ID=stark11&PAGE=%2Fapps%2Ffun%2FstudyWindow.do"></script>
+<script type="text/javascript">
+var device="pc";
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+	var device="pc";
+	if(device =="pc"){
+		$("#player_outer").css('width','100%');
+		$("#player_outer").css('height','230px');
+	}else{
+		$("#player_outer").css('height','230px');
+	}
+ 	var ipCheckYn = "Y";
+	// 해외 IP 여부 체크
+	if (ipCheckYn == "N") {
+		alert("펀리딩은 해외지역에서 서비스가 불가능 합니다. 이용자 여러분은 양해 부탁드립니다.");
+		window.close();
+	}
+});
+
+function loginFirst(){
+	alert("먼저 로그인 하세요.");
+	$("#toLoginForm input[name='requesturl']").val(window.location.href);
+	$("#toLoginForm").submit();
+}
+</script>
+<script type="text/javascript">
+var COURSE_ID=null;
+var STEP_ID=null;
+var LECT_ID=null;
+var CLIP_ID=null;
+
+var CURRNT_PLAY_TIME=0;
+
+function playtime(t){
+	console.debug(">>>>> currentTime : "+t);
+	CURRNT_PLAY_TIME=t;
+}
+
+
+function setProgress(p_course_id,p_step_id,p_lect_id,p_clip_id){
+
+	stoptProgress();
+
+	COURSE_ID=p_course_id;
+	STEP_ID=p_step_id;
+	LECT_ID=p_lect_id;
+	CLIP_ID=p_clip_id;
+
+	var param="course_id="+COURSE_ID+"&step_id="+STEP_ID+"&lect_id="+LECT_ID+"&clip_id="+CLIP_ID+"&stdy_time=60&location="+parseInt(CURRNT_PLAY_TIME)+"&enrol_sno=1";
+	console.debug(">>>> setProgress param : "+param);
+
+	startProgress();
+
+}
+
+
+function updateProgress(){
+
+	var param="course_id="+COURSE_ID+"&step_id="+STEP_ID+"&lect_id="+LECT_ID+"&clip_id="+CLIP_ID+"&stdy_time=60&location="+parseInt(CURRNT_PLAY_TIME)+"&enrol_sno=1";
+	console.debug(">>>> updateProgress param : "+param);
+	$.post("/apps/study/updateProgress.do",param,function(res){
+		setTimeout(function(){
+			updateProgress();
+		},60000);
+	});
+
+}
+
+function startProgress(){
+
+	var param="course_id="+COURSE_ID+"&step_id="+STEP_ID+"&lect_id="+LECT_ID+"&clip_id="+CLIP_ID+"&stdy_time=0&location="+parseInt(CURRNT_PLAY_TIME)+"&enrol_sno=1";
+	console.debug(">>>> startProgress param : "+param);
+	$.post("/apps/study/updateProgress.do",param,function(res){
+		setTimeout(function(){
+			updateProgress();
+		},60000);
+	});
+
+}
+
+function stoptProgress(){
+
+	if(COURSE_ID!=null && STEP_ID!=null && LECT_ID!=null && CLIP_ID!=null){
+		var param="course_id="+COURSE_ID+"&step_id="+STEP_ID+"&lect_id="+LECT_ID+"&clip_id="+CLIP_ID+"&stdy_time=0&enrol_sno=1";
+		console.debug(">>>> startProgress param : "+param);
+
+	}
+
+}
+</script>
+<script type="text/javascript">
+
+var allClip=[168401,168402,168403,168404,168405,168406,168407,168408,168409,168410,168411,168412,168413,168414,168415,168416,168417,168418,168419,168420,168421,168422,168423,168424,168425,168426,168427,168428,168429,168430,168431,168432,168433,168434,168435,168436,168437,168438,168439,168440,168441,168442,168443,168444,168445,168446,168447,168448,168449,168450,168451,168452,168453,168454,168455,168456,168457,168458,168459,168460,168461,168462,168463,168464,168465,168466,168467,168468,168469,168470,168471,168472,168473,168474,168475,168476,168477,168478,168479,168480,168481,168482,168483,168484,168485,168486,168487,168488,168489,168490,168491,168492,168493,168494,168495,168496,168497,168498,168499,168500,168681,168682,168683,168684,168685,168686,168687,168688,168689,168690,168691,168692,168693,168694,168695,168696,168697,168698,168699,168700,168701,168702,168703,168704,168705,168706,168707,168708,168709,168710,168711,168712,168713,168714,168715,168716,168717,168718,168719,168720,168721,168722,168723,168724,168725,168726,168727,168728,168729,168730,168731,168732,168733,168734,168735,168736,168737,168738,168739,168740,168741,168742,168743,168744,168745,168746,168747,168748,168749,168750,168751,168752,168753,168754,168755,168756,168757,168758,168759,168760,168761,168762,168763,168764,168765,168766,168767,168768,168769,168770,168771,168772,168773,168774,168775,168776,168777,168778,168779,168780,168781,168782,168783,168784,168785,168786,168787,168788,168789,168790,168791,168792,168793,168794,168795,168796,168797,168798,168799,168800,168801,168802,168803,168804,168805,168806,168807,168808,168809,168810,168811,168812,168813,168814,168815,168816,168817,168818,168819,168820,168821,168822,49585,49586,49587,49588,49589,49590,49591,49592,49593,49594,49595,49596,49597,49598,49599,49600,49601,49602,49603,49604,49605,49606,49607,49608,49609,49610,49611,49612,49613,49614,49615,49616,49617,49618,49619,49620,49621,49622,49623,49624,49625,49626,49627,49628,49629,49630,49631,49632,49633,49634,49635,49636,49637,49638,49639,49640,49642,49644,49646,49647,49648,49649,49650,49651,49652,49654,49655,49656,49659,49662,49665,49668,49669,49670,49671,49672,49673,49674,49675,49676,49677,49678,49679,49680,49681,49684,49687,49690,49693,49696,49700,49703,49706,49709,49710,49713,49714,49717,49720,49723,49726,49729,49730,49731,49732,49733,49734,49735,49736,49739,49740,49741,49742,49743,49744,49747,49750,49751,49752,49753,49754,49755,49756,49757,49758,49759,49760,49761,49762,49765,49768,49769,49770,49771,49774,49775,49776,49779,49780,49783,49784,49785,49786,49787,49788,49789,49790,49791,49792,49793,49794,49797,49800,49801,49802,49803,49804,49805,49806,49807,49808,49809,49810,49813,49814,49815,49818,49819,49820,49821,49822,49823,49824,49825,49828,49831,49834,49835,49836,49837,49838,49841,49844,49845,49846,49847,49848,49849,49850,49851,49853,49854,49855,49856,49857,49858,49859,49860,49861,49862,49863,0];
+
+var nextClipId="";
+var nextIdx="";
+
+var contentsUrl=null;
+
+function rtrv(c_id){
+	$.ajax({
+		cache : false,
+		url : "/apps/eclip/clipRtrv.do",
+		data : {clip_id:c_id},
+		dataType : 'json',
+		success : function(result) {
+//			$("#rtrv_"+c_id).html(result.rtrv.RTRV_NOT);
+		}
+	});
+}
+
+function showStudyVideo(url){
+	if(isPlayerReady){
+		var mpe=document.getElementById('mediaplayer');
+		var player=mpe.zonemediaplayer;
+		player.source(url);
+	//	backgroundImage: '/common/js/mediaplayer/image/ebsevod/onair_null.jpg'
+		player.module('radio').showBackground('/common/js/mediaplayer/image/ebsevod/onair_null.jpg');
+		player.module('layout').showUserControl();
+			player.play();
+
+
+	}else{
+		setTimeout(function(){showStudyVideo(url)},500);
+	}
+}
+
+function nextplay(){
+	var nextClip=null;
+	for(i=0;i<allClip.length;i++){
+		if(CLIP_ID==allClip[i]){
+			nextClip=allClip[i+1];
+			break;
+		}
+	}
+
+//	if(nextClip!=null && nextClip!=0) opener.openStudyWindow('ECLIPFUN000001',nextClip);
+
+}
+
+function waitForPlayer(loc){
+	if(isPlayerReady){
+		var mpe=document.getElementById('mediaplayer');
+		var player=mpe.zonemediaplayer;
+		player.seekTo(loc);
+	}else{
+		setTimeout(function(){waitForPlayer(loc)},500);
+	}
+}
+
+
+function showContent(url,rn,clip_nm,p_course_id,p_step_id,p_lect_id,p_clip_id,p_week){
+
+	$.post("/apps/hitlog/lectHitLog.do","course_id=ECLIPFUN000001&step_id="+p_step_id+"&lect_id="+p_lect_id,function(res){
+		console.debug(res);
+	});
+
+	$.post("/apps/hitlog/clipHitLog.do","course_id=ECLIPFUN000001&step_id="+p_step_id+"&lect_id="+p_lect_id+"&clip_id="+p_clip_id,function(res){
+		console.debug(res);
+	});
+
+//	rtrv(p_clip_id);
+
+	COURSE_ID=p_course_id;
+	STEP_ID=p_step_id;
+	LECT_ID=p_lect_id;
+	CLIP_ID=p_clip_id;
+	startProgress();
+
+	contentsUrl=url;
+	var week = p_week;
+	$("#clipInfo").html("<i>"+week+" 주차</i> "+clip_nm);
+	if(url.indexOf(".mp4")!=-1){
+		$("#flashContentsContainer").hide();
+		$("#htmlContentsContainer").hide();
+		$("#player_outer").show();
+		showStudyVideo(url);
+	}else if(url.indexOf(".mp3")!=-1) {
+		$("#flashContentsContainer").hide();
+		$("#htmlContentsContainer").hide();
+		$("#player_outer").show();
+		showStudyVideo(url);
+
+	    onShowControl();
+		}else if(url.indexOf(".html")!=-1 || url.indexOf(".htm")!=-1){
+		$("#flashContentsContainer").hide();
+		$("#htmlContentsContainer").show();
+		$("#htmlContentsPlayer").attr("src","https://www.ebse.co.kr"+url);
+		$("#player_outer").hide();
+
+		//window.resizeTo(1335,890);
+	}else if(url.indexOf(".swf")){
+		$("#flashContentsContainer").show();
+		$("#flashContentsPlayer1").attr("data","https://www.ebse.co.kr"+url);
+		$("#flashContentsPlayerParam1").attr("value","https://www.ebse.co.kr"+url);
+		$("#flashContentsPlayer2").attr("data","https://www.ebse.co.kr"+url);
+		$("#flashContentsPlayerParam2").attr("value","https://www.ebse.co.kr"+url);
+
+		$("#htmlContentsContainer").hide();
+		$("#player_outer").hide();
+	}
+}
+/*
+function resizeIframe(iframe) {
+    iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
+  }
+*/
+$(document).ready(function(){
+	showContent('https://m4strssl.ebse.co.kr/frd/2019/mp3/frd_05-142.mp3','1','HUGO: PERSONALITY','ECLIPFUN000001','ECSTEPFUN000002','ECSTEPFUN000002002','168822','1','1');
+
+//	$.post("/apps/fun/directClipList.do","course_id=ECLIPFUN000001&clip_id=168822&order=1",function(res){
+//			$("#clipList").html(res);
+	//	});
+});
+
+</script>
+</head>
+<body style="height:100%;">
+
+<div class="template">
+	<div class="inner" style="padding:0;">
+		<div class="movie">
+			<div class="media">
+				<div class="video_player" style="position:relative !important;">
+
+					<!-- <script id="imgtech_mpv_ebseclip_js" type="text/javascript" charset="utf-8" src="/common/js/mediaplayer/skin/ebs/ebseclip/ebseclip.js?updateid=D10283"></script> -->
+					<script type="text/javascript" charset="utf-8" src="https://www.ebse.co.kr/common/js/mediaplayer/js/mediaplayer.min.js?v=0.1"></script>
+					<script type="text/javascript" charset="utf-8" src="https://www.ebse.co.kr/common/js/mediaplayer/skin/ebs/ebseclip/ebseclip.js?v=0.1"></script>
+					<link rel="stylesheet" href="https://www.ebse.co.kr/common/js/mediaplayer/skin/ebs/ebseclip/ebseclip.css?v=0.1">
+					<script type="text/javascript">
+					$(document).ready(function(){
+
+					});
+					</script>
+					<form name="listInitYnForm" id="listInitYnForm" method="post">
+						<input type="hidden" name="initYn" id="initYn" value="Y">
+					</form>
+					<div id="player_outer">
+						<div id="mediaplayer">
+
+							<!-- 2020-03-30 EBSe 슬기로운 집콕영어 이벤트 -->
+							<script>
+								$(function(){
+									$('.piece').click(function(){
+										$('.piece').addClass('hide');
+									});
+								});
+							</script>
+							<style type="text/css">
+								.piece {position:absolute;z-index:10;width:140px;height:140px;}
+								.piece.hide {display:none;}
+								.piece .pieceWrap {position:absolute;bottom:0px;left:0px;}
+								.piece .pieceWrap > img {position:relative;width:90%;}
+								.piece.position01 {top:37px;left:40px;}
+								.piece.position02 {top:13px;left:197px;}
+								.piece.position03 {top:31px;right:200px;}
+								.piece.position04 {top:18px;right:89px;}
+								.piece .btn_close {position:absolute;top:0;right:0;z-index:20;width:25px;height:25px;cursor:pointer;}
+
+								/* mobile ( 980 px 이하) */
+								@media screen and (max-width:980px) {
+									.piece {width:160px;height:170px}
+									.piece .pieceWrap  {width:140px;height:140px;}
+									.piece.position01 {top:16px;left:10%;}
+									.piece.position02 {top:0px;left:30%;}
+									.piece.position03 {top:27px;right:27%;}
+									.piece.position04 {top:16px;right:10%;}
+									.piece .btn_close {width:30px;height:30px;}
+								}
+							</style>
+							<div class="piece position01" onclick="alert('축하합니다. 스탬프를 1개 획득하셨습니다.');"> <!-- 클래스명 position01 ~ position04 위치 변경 -->
+								<img class="btn_close" src="../images/event/2020/0330_zipCock/btn_close.png" alt="닫기" /> <a href="#none" class="pieceWrap"> <img src="../images/event/2020/0330_zipCock/find_logo.png" alt="쥐 케릭터 획득" /> </a>
+							</div>
+							<!-- // 2020-03-30 EBSe 슬기로운 집콕영어 이벤트 -->
+
+						</div>
+					</div>
+					<script>
+
+var isPlayerReady=false;
+
+(function(){
+	var mpe = document.getElementById('mediaplayer');
+	window.createMediaPlayer('#mediaplayer',
+			null,
+			null,
+
+	        function(e){
+	            switch(e.type){
+	            case this.EVENT.STATE_CHANGE:
+	            	if(typeof nextplay!="undefined"){
+	                	if(e.data==6){
+	                		nextplay();
+	                	}
+	            	}
+	                break;
+
+	            case this.EVENT.WATCH_TIME_CHANGE:
+
+	                if(typeof playtime!="undefined"){
+	                	playtime(e.data.currentTime);
+	                }
+	                break;
+
+	            case this.EVENT.CURRENT_TIME_CHANGE:
+	                break;
+
+
+	            case this.EVENT.ON_AFTER_DEVICE_PLAY:
+	                break;
+
+	            case this.EVENT.ON_READY:
+	                isPlayerReady=true;
+	                break;
+	            }
+
+
+	});
+
+	 window.onShowControl = function(){
+
+			console.debug('onShowControl');
+	       // var p = document.querySelector('#mediaplayer').zonemediaplayer;
+	    //    p.module('layout').showUserControl();
+	    };
+
+
+    window.userKey = function(){
+        var p = mpe.zonemediaplayer;
+            v = window.___userKey ? true : false,
+            e = document.getElementById('userkey');
+        p.userKey(v);
+        if(v){
+            e.style.border = 'solid 1px blue';
+        }else{
+            e.style.border = 'solid 1px red';
+        }
+        window.___userKey = !v;
+    };
+})();
+</script>
+					<script type="text/javascript">
+
+function setMovieUrl(url,seekTo){
+	if(url.indexOf('.htm')!=-1 || url.indexOf('.html')!=-1){
+		window.open("https://www.ebse.co.kr"+url,"","studyWindow","width=1024,height=768,resizable=yes");
+	}else{
+		if(!isPlayerReady){
+			setTimeout(function(){
+				setMovieUrl(url,seekTo);
+			},500);
+		}else{
+			var mpe=document.getElementById('mediaplayer');
+			var player=mpe.zonemediaplayer;
+			player.source(url);
+			if(seekTo!=null) {
+				setTimeout(function(){
+					player.seekTo(seekTo);
+				},1000);
+			}
+		}
+	}
+}
+
+
+
+function resizePlayer(){
+	var pH=$("#player_outer").parent().height();
+	var pW=$("#player_outer").parent().width();
+
+//	console.debug("pW : "+pW);
+//	console.debug("pH : "+pH);
+
+	var newHeight=parseInt(pW*9/16)+10;
+
+	maxHeight=$(window).height()-80;
+
+	if(newHeight>maxHeight) newHeight=maxHeight;
+
+	$("#player_outer").width(pW);
+	$("#player_outer").height(newHeight);
+
+}
+
+$(function(){
+
+	onShowControl();
+	$(window).resize(function(){
+		//resizePlayer();
+	});
+
+	$('#openClose').click(function(){
+		setTimeout(function(){
+			//resizePlayer();
+		},500);
+	});
+
+
+
+});
+</script>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- WISELOG ONLINE TRACKING SCRIPT CODE START -->
+<!-- DO NOT MODIFY THIS SCRIPT CODE. -->
+<!-- COPYRIGHT (C) 1999-2013 NETHRU INC. ALL RIGHTS RESERVED. -->
+<script type="text/javascript">
+(function() {
+var nl = document.createElement('script'); nl.type = 'text/javascript';
+nl.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'www.ebse.co.kr/js/wlo.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(nl, s);
+var done = false;
+nl.onload = nl.onreadystatechange = function() {
+if ( !done && (!this.readyState || this.readyState === "loaded" || this.readyState === "complete") ) {
+done = true;
+_n_sid = "www.ebse.co.kr"; // 임의값을 입력하여도 무방하지만, 로그 구분을 위해서 일반적으로  분석대상 사이트 도메인명을 입력합니다.
+// _n_sid 값 별로 로그파일이 별도로 생성이 됩니다.
+_n_uid_cookie = "UID"; // 사이트 내에서 사용하시는 회원식별용 쿠키명을 입력하시면 됩니다.
+n_logging();
+nl.onload = nl.onreadystatechange = null;
+}}})();
+</script>
+<!-- WISELOG ONLINE TRACKING SCRIPT CODE END -->
+</body>
+</html>
