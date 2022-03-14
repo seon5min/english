@@ -1081,7 +1081,7 @@
 <!-- 팝업 시작 -->
 <style type="text/css">
 	/*팝업 공통 */
-	body.main .pop_container_M {position: fixed; right: 10px; bottom: 10px; z-index: 1000000;}
+	body.main .pop_container_M {position: fixed; right: 10px; bottom: 10px; z-index: 1000;} /* 2022-03-14 z-index 수정 */
 
 	body.main article.popup_M .wrap { padding-top: 10px; padding-left: 10px; }
 	body.main .popup_M.main_noti { z-index: 1000000;  margin: 0; }
@@ -1111,7 +1111,7 @@
 
 	/* 2021-04-30 모바일 공통 수정 */
 	@media all and (max-width: 980px) {
-		body.main .pop_container_M {position: absolute; top: 55px; width: auto; height: auto; bottom: auto; left: 0; right: 0; z-index: 1000000;}
+		body.main .pop_container_M {position: absolute; top: 55px; width: auto; height: auto; bottom: auto; left: 0; right: 0; z-index: 1000;} /* 2022-03-14 mob z-index 수정 */
 		body.main .pop_main_h, body.main .pop_main_v {-ms-flex-align: center; align-items: center; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; flex-direction: column; white-space: nowrap; align-content:center; justify-content: flex-end;} /* 2021-06-30 수정 */
 		body.main article.popup_M .wrap { padding-right: 10px; }
 	}
