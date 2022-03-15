@@ -980,7 +980,6 @@ nav.nav .utilMenu .m.on,
 nav.nav .utilMenu .m:hover { font-weight: 500; }
 nav.nav .utilMenu .m.on:after,
 nav.nav .utilMenu .m:hover:after { content: ""; position: absolute; bottom: 0; left: 0; width: 100%; height: 2px; background: #f67f25; }
-
 nav.nav .topMenu .m { font-weight: 300; color: #9998a9; }
 nav.nav .topMenu .m + .m { margin-left: 17px; }
 nav.nav .topMenu .m.on,
@@ -1036,7 +1035,7 @@ nav.gnbWrap .gnb .right-btnArea .fullMenu { float: right; display: block; margin
 nav.gnbWrap .gnb.allMenu .right-btnArea .fullMenu { background: url("../images/common/ico_h_menu_X.png") no-repeat right center; }
 nav.gnbWrap .gnb .right-btnArea .searchIcon { display: none; position: relative; float: left; text-align: center; width: 40px; height: 50px; background: url("../images/common/seach_ico.svg") no-repeat center center; background-size: auto 30px; text-indent: -9999px; }
 
-nav.gnbWrap .gnb.allMenu ul.menu li .smenu { height: 225px; padding-top: 66px; }
+nav.gnbWrap .gnb.allMenu ul.menu li .smenu { height: 245px; padding-top: 66px; } /* 2022-03-15 전체 메뉴 수정 */
 nav.gnbWrap .gnb.allMenu ul.menu:before { height: 621px !important; box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.1); }
 nav.gnbWrap .gnb.allMenu ul.menu li .smenu { -webkit-transition: none; transition: none; }
 nav.gnbWrap .gnb.allMenu .all_Menu { display: block !important; padding-top: 185px; }
