@@ -5,121 +5,206 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
 <title>EBS English</title>
-<link rel="stylesheet" type="text/css" href="../css/NotoSansKR-Hestia.css"/>
-<link rel="stylesheet" type="text/css" href="../css/common.css"/>
-<link rel="stylesheet" type="text/css" href="../css/circle.css"/>
-<link rel="stylesheet" type="text/css" href="../css/sub.css"/>
 <link rel="stylesheet" type="text/css" href="../css/sub_new.css"/>
+<link rel="stylesheet" type="text/css" href="../css/sub_new2020.css"/>
+<link rel="stylesheet" type="text/css" href="../css/NotoSansKR-Hestia.css"/>
+<link rel="stylesheet" type="text/css" href="../css/common_new2020.css"/>
+<link rel="stylesheet" type="text/css" href="../css/circle.css"/>
+<link rel="stylesheet" type="text/css" href="../css/main_new2020.css"/>
 <link rel="stylesheet" type="text/css" href="../css/slick/slick.css">
 <link rel="stylesheet" type="text/css" href="../css/wow-animate.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
 <script src="../js/jquery-2.2.0.min.js"></script>
 <script src="../js/slick.js"></script>
-<script src="../js/wow.js"></script>
-<script src="../js/common.js"></script>
+<script src="../js/common_new2020.js"></script>
 </head>
 	
 <body class="sub">
 <!--헤더-->
 <header>
 	<nav class="nav m_hide">
-		<div class="inner">
-			<span class="f_l">
-				<a href="introduce_main.html" class="m">EBSe소개</a>
-				<a href="etc_egg.html" class="m">에그붐</a>
-				<a href="etc_fun.html" class="m">펀리딩</a>
-				<a href="etc_cook.html" class="m">쿠킹클래스</a>
-				<a href="support.html" class="m">교사지원센터</a>
-			</span>
-			<span class="f_r">
-				<a href="my.html" class="m">마이페이지</a>
-				<a href="user_login.html" class="m">로그인</a>
-				<!--a href="" class="m">회원가입</a-->
-				<a href="etc_onair.html" class="m">ON-AIR</a>
-				<a href="etc_channel.html" class="m">편성표</a>
-				<a href="cs.html" class="m">고객센터</a>
-				<a href="event.html" class="m">이벤트</a>
-			</span>
+		<div class="inner clearfix">
+			<div class="f_l">
+				<span class="utilMenu" >
+					<a href="/apps/introduce/introduce_egg.do" class="m hide">에그붐</a> <!-- 2022-02-22 에그붐 히든처리 -->
+					<a href="/apps/cmmnty/list.do?bbsType=notice" class="m ">공지사항</a>
+					<a href="/apps/afterschool/after.do" class="m ">방과후영어</a>
+					<a href="#" onclick="openElem()" class="m ">필수영단어</a>
+					<a href="https://teacher.ebse.co.kr" target="_blank" class="m ">교사지원센터</a>
+				</span>
+			</div>
+			<div class="f_r">
+				<span class="topMenu">
+					<!-- <a href="my.html" class="m">마이페이지</a> -->
+					<a href="/apps/login/loginForm.do" class="m">로그인</a>
+								<a href="#this" onclick="localLoginChck('join');" class="m">회원가입</a>
+						<a href="/apps/onair/main.do" class="m onair">온에어</a>
+					<a href="/apps/schedule/main.do" class="m">편성표</a>
+					<a href="/apps/cs/csFAQ.do" class="m">고객센터</a>
+					<a href="/apps/event/listEvent.do" class="m">이벤트</a>
+				</span>
+			</div>
 		</div>
 	</nav>
-	<div class="inner">
-		<h1><a href="index.html">EBS English</a></h1>
-		<button type="button" class="bt ico menu jq-sitemap">전체메뉴</button>
-		<span class="bind find on">
-			<input type="text" class="input" placeholder="검색어를 입력해주세요.">
-			<a href="search.html" class="bt ico find">검색</a>
-		</span>
-	</div>
-	<nav class="gnb">
-		<div class="inner">
-			<ul class="menu">
-				<li>
-					<a href="level.html" class="mm">레벨테스트</a>
-					<div class="smenu">
-						<a href="level.html" class="sm">레벨테스트</a>
-						<a href="level_result_enter.html" class="sm">레벨테스트 결과</a>
-					</div>
-				</li>
-				<li>
-					<a href="program.html" class="mm">방송프로그램</a>
-					<div class="smenu">
-						<a href="program.html" class="sm">방송프로그램</a>
-					</div>
-				</li>
-				<li>
-					<a href="eclip.html" class="mm">e클립</a>
-					<div class="smenu">
-						<a href="eclip.html" class="sm">e클립</a>
-					</div>
-				</li>
-				<li>
-					<a href="online.html" class="mm">온라인강좌</a>
-					<div class="smenu">
-						<a href="online.html" class="sm">온라인강좌</a>
-						<a href="online_word.html" class="sm" target="_blank">필수 영단어</a>
-						<a href="online_365.html" class="sm" target="_blank">365 영단어</a>
-						<a href="online_webtoon.html" class="sm">영어웹툰</a>
-						<a href="online_paper.html" class="sm">영자신문</a>
-					</div>
-				</li>
-				<li>
-					<a href="comunity_notice.html" class="mm">커뮤니티</a>
-					<div class="smenu">
-						<a href="comunity_notice.html" class="sm">공지사항</a>
-						<a href="comunity_talk.html" class="sm">e-야기</a>
-						<a href="comunity_etizen.html" class="sm">e-tizen 소개</a>
-						<a href="comunity_schedule.html" class="sm">학습자료실</a>
-					</div>
-				</li>
-				<li>
-					<a href="after.html" class="mm">방과후영어</a>
-					<div class="smenu">
-						<a href="after.html" class="sm">방과후영어 소개</a>
-						<a href="after_list.html" class="sm">학습하기</a>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</nav>
+	<nav class="gnbWrap">
+	    <div class="gnb">
+            <div class="inner">
+				<h1 class="scroll_view m_hide"><a href="/apps/main/main.do">EBS English</a></h1>
+				<div class="gnb_top">
+					<h1 class="scroll_hidden"><a href="/apps/main/main.do">EBS English</a></h1>
+					<button type="button" class="ico mob_menu jq-sitemap m_view">전체메뉴</button>
+					<span class="bind find on">
+					<form id="searchForm" name="search" class="searchForm" method="get"  action="/apps/search/search.do" accept-charset="utf-8">
+						<!-- <input type="hidden" name="startCount"/>
+						<input type="hidden" name="sort"/>
+						<input type="hidden" name="collection"/>
+						<input type="hidden" id="range" 	name="range"		/>
+						<input type="hidden" id="startDate" name="startDate"	/>
+						<input type="hidden" id="endDate" 	name="endDate"		/>
+						<input type="hidden" name="searchField"					/>
+						<input type="hidden" name="reQuery"						 />
+						<input type="hidden" name="realQuery"					 /> -->
+						<input type="hidden" name="query" id="queryDe2"			 />
+						<input type="text" class="input m_hide" name="query2" id="queryDe" value="" onkeypress="if(event.keyCode==13){doSearch();}" onfocus="this.value='';"/>
+					 </form>
+						<a href="javascript:doSearch();" class="bt ico find">검색</a>
+						<div class="key m_hide">
+							</div>
+					</span>
+				</div>
+                 <ul class="menu">
+                    <li class="w14">
+                        <a href="/apps/lvltest/intro.do" class="mm">레벨테스트</a>
+                        <div class="smenu">
+                            <a href="/apps/lvltest/result.do" class="sm w111">레벨테스트 결과</a>
+                        </div>
+                    </li>
+                    <li class="w16">
+                        <a href="/apps/broadcast/main.do" class="mm">방송프로그램</a>
+						<div class="smenu">
+                            <a href="/apps/onair/main.do" class="sm w42">온에어</a>
+                            <a href="/apps/schedule/main.do" class="sm w42">편성표</a>
+                        </div>
+                    </li>
+					<li class="w12">
+						<a href="https://pengtalk-student.ebse.co.kr/" class="mm">AI 펭톡</a>
+						<div class="smenu">
+                            <a href="https://pengtalk-student.ebse.co.kr/content" class="sm w59">학습단원</a>
+                        </div>
+					</li>
+					<li class="w14">
+                        <a href="/apps/engBook/engBookIntro.do?use=Y" class="mm">교과서영어</a>
+                        <div class="smenu">
+                            <a href="#" onclick="openBokClass('cls')" class="sm w59">학습하기</a>
+                            <a href="#" onclick="openBokClass('myCls')" class="sm w59">나의교실</a>
+                        </div>
+                    </li>
+                    <li class="w11">
+						<a href="/apps/funReading/funMain.do" class="mm">펀리딩</a>
+                    </li>
+                    <li class="w15">
+                        <a href="/apps/eclip/main.do" class="mm">자기주도학습</a>
+                        <div class="smenu">
+							<a href="/apps/eclip/main.do" class="sm w42">e클립</a>
+							<a href="/apps/online/main.do" class="sm w89">온라인콘텐츠</a>
+							<a href="/apps/afterschool/after.do" class="sm w74">방과후영어</a>
+                            <a href="#" onclick="openElem()" class="sm w74">필수영단어</a>
+                            <a href="#" onclick="openNeat()" class="sm w74">365영단어</a>
+                            <a href="/apps/cmmnty/list.do?bbsType=estory" class="sm w42">e-야기</a>
+                        </div>
+                    </li>
+                </ul>
+				<ul class="menu all_Menu">
+                    <li class="w14">
+                        <a href="/apps/cmmnty/list.do?bbsType=notice" class="mm">What's EBSe?</a>
+                        <div class="smenu">
+                            <a href="/apps/cmmnty/list.do?bbsType=notice" class="sm w59">공지사항</a>
+                            <a href="/apps/introduce/introduce_book.do" class="sm w74">EBSe 교재</a>
+							<a href="/apps/introduce/introduce_member.do" class="sm w89">EBSe 출연자</a>
+							<a href="/apps/introduce/introduce_main.do" class="sm w74">EBSe 소개</a>
+							<a href="/apps/introduce/information_list.do?bbsType=event" class="sm w74">설명회/행사</a>
+                        </div>
+                    </li>
+                    <li class="all_w15">
+                        <a href="/apps/mypage/myMain.do" class="mm">마이페이지</a>
+                        <div class="smenu">
+                            <a href="/apps/mypage/myUseList.do" class="sm w98">최근이용콘텐츠</a>
+							<a href="/apps/mypage/myStudyList.do" class="sm w74">나의학습방</a>
+							<a href="/apps/mypage/myPstList.do" class="sm w89">나의활동내역</a>
+							<a href="/apps/mypage/myMatchView.do" class="sm w89">매칭학습관리</a>
+							<a href="/apps/funReading/myLibrary.do" class="sm w59">나의 서재</a> <!-- 2022-03-15 전체 메뉴 - 나의 서재 추가 -->
+							<a href="/apps/mypage/myEtizenInfoView.do" class="sm w111">나의 e-tizen 내역</a> <!-- 2022-03-15 전체 메뉴 - 띄어쓰기 추가 -->
+							<a href="/apps/mypage/loginCheckForm.do" class="sm w59">정보관리</a>
+                        </div>
+                    </li>
+					<li class="all_w14">
+                        <a href="/apps/cs/csFAQ.do" class="mm">고객센터</a>
+                        <div class="smenu">
+                            <a href="/apps/cs/csFAQ.do" class="sm w92">자주 찾는 질문</a>
+                            <a href="/apps/cs/csGuide.do" class="sm w111">사이트 이용안내</a>
+                            <a href="/apps/cs/csMtoM.do"  class="sm w48">1:1문의</a>
+                            <a href="/apps/cs/csRemote.do" class="sm w111">원격지원 서비스</a>
+                            <a href="/apps/cs/csDownload.do" class="sm w120">학습지원 프로그램</a>
+                        </div>
+                    </li>
+					<li class="all_w10">
+                        <a href="/apps/event/listEvent.do" class="mm">이벤트</a>
+                        <div class="smenu">
+                            <a href="/apps/event/listEventPrze.do" class="sm w74">당첨자확인</a>
+                        </div>
+                    </li>
+                    <li class="all_w13">
+                        <a href="https://teacher.ebse.co.kr/apps/tchsupt/main.do" class="mm">교사지원센터</a>
+                        <div class="smenu">
+                            <a href="https://teacher.ebse.co.kr/apps/tchsupt/cert.do" class="sm w92">교사회원 인증</a>
+							<a href="https://teacher.ebse.co.kr/apps/tchsupt/grpent.do" class="sm w89">단체가입신청</a>
+							<!-- <a href="https://teacher.ebse.co.kr/apps/tchsupt/rpsv.do" class="sm w89">대표교사 신청</a> -->
+							<a href="https://teacher.ebse.co.kr/apps/tchsupt/prmtn.do" class="sm w92">EBSe활용교사</a>
+							<a href="https://teacher.ebse.co.kr/apps/tchsupt/vod/data.do" class="sm w59">VOD 자료</a>
+							<a href="https://teacher.ebse.co.kr/apps/tchsupt/learning/data.do" class="sm w59">학습 자료</a>
+                        </div>
+                    </li>
+                    <li class="all_w15">
+                        <a href="/apps/studyRoom/alphabet.do" class="mm">학습자료실</a>
+                        <div class="smenu">
+                            <a href="/apps/studyRoom/alphabet.do" class="sm w111">알파벳 단어연습</a>
+                            <a href="/apps/cmmnty/cmmnty_basics.do" class="sm w120">다시시작 기초영어</a>
+							<a href="/apps/studyRoom/homeSchList.do" class="sm w59">홈스쿨링</a>
+							<a href="/apps/studyRoom/myChild.do" class="sm w120">우리아이 영어고민</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-btnArea m_hide">
+                <a href="/apps/search/search.do" class="searchIcon">검색버튼</a>
+				<a href="#none;" class="fullMenu">전체보기</a>
+            </div>
+        </div>
+    </nav>
 </header>
 <!--//헤더-->
 
 <section class="my etizen" id="spaceTop">
 	<div class="path">
 		<div class="inner">
-			<a href="index.html" class="home"><i>HOME</i></a>
-			<nav class="lnb">
+			<a href="/apps/main/main.do" class="home"></a>
+			<a href="#none;" class="go_back mob_view" onclick="history.go(-1);">뒤로가기</a>
+			<nav class="lnb here mtb_hide">
 				<h2>마이페이지</h2>
-				<button type="button" class="bt ico drop">메뉴열고닫기</button>
-				<ul>
-					<li><a href="my_use.html" class="mm">최근 이용 콘텐츠</a></li>
-					<li><a href="my_study.html" class="mm">나의 학습방</a></li>
-					<li><a href="my_write.html" class="mm">나의 활동 내역</a></li>
-					<li><a href="my_match.html" class="mm">매칭 학습 관리</a></li>
-					<li><a href="my_etizen.html" class="mm">나의 e-tizen 내역</a></li>
-					<li><a href="my_data.html" class="mm">정보 관리</a></li>
-				</ul>
 			</nav>
-			<p class="here"><i>나의 e-tizen 내역</i></p>
+			<nav class="lnb">
+				<h2>나의 e-tizen 내역</h2> <!-- 2022-03-15 2depth - 띄어쓰기1 -->
+				<button type="button" class="bt ico drop">메뉴열고닫기</button>				
+				<ul>
+					<li><a href="/apps/mypage/myUseList.do" class="mm">최근이용콘텐츠</a></li>
+					<li><a href="/apps/mypage/myStudyList.do" class="mm">나의 학습방</a></li>
+					<li><a href="/apps/mypage/myPstList.do" class="mm">나의 활동 내역</a></li>
+					<li><a href="/apps/mypage/myMatchView.do" class="mm">매칭 학습 관리</a></li>
+					<li><a href="/apps/funReading/myLibrary.do" class="mm">나의 서재</a></li> <!-- 2022-03-15 2depth - 나의 서재 추가 -->
+					<li class="on"><a href="/apps/mypage/myEtizenInfoView.do" class="mm">나의 e-tizen 내역</a></li> <!-- 2022-03-15 2depth - 띄어쓰기2 -->
+					<li><a href="/apps/mypage/loginCheckForm.do" class="mm">정보 관리</a></li>
+				</ul>
+			</nav>	
 		</div>
 	</div>
 	<div class="gray">
