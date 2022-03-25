@@ -582,7 +582,7 @@ h1 { display: inline-block; overflow: hidden; }
 .class_question_write .table.edit .pop_noti .pop_noti_in { position: relative; overflow: hidden; border: 2px solid #2c7eba; background: #fff; width: 100%; }
 .class_question_write .table.edit .pop_noti .tit { display: block; overflow: hidden; height: auto; padding: 10px 35px 8px 10px; background: #2c7eba; color: #fff; font-size: 14px; font-weight: 500; line-height: 40px; white-space: nowrap; letter-spacing: -1px; line-height: 18px; white-space: normal;}
 .class_question_write .table.edit .pop_noti .pop_cont { width: 100%; padding: 10px; }
-.class_question_write .table.edit .pop_cont .list_dot li { padding-left: 10px; margin-bottom: 10px; background: url(https://home.ebse.co.kr/common/images/rwdskin/popup/bul_rec_blue.gif) no-repeat left 5px;color: #707070; line-height: 1.3; text-align: left;}
+.class_question_write .table.edit .pop_cont .list_dot li { padding-left: 10px; margin-bottom: 10px; background: url(https://home.ebse.co.kr/common/images/rwdskin/popup/bul_rec_blue.gif) no-repeat left 8px;color: #707070; line-height: 1.3; text-align: left;}
 .class_question_write .table.edit .pop_noti .pop_btn { overflow: hidden; padding: 0 10px 10px; text-align: right; }
 .class_question_write .table.edit .pop_noti .pop_btn .btn_close img { margin: 0; margin-left: auto; text-align: right; }
 .class_question_write .table.edit .pop_noti .pop_close {position: absolute;right: 2px; top: 2px;}
@@ -1693,7 +1693,7 @@ footer .call .inner .sns_app .app_icon img {border-radius: 15px; width: 55px; he
 	.container { padding-top: 106px;}
 
 	/* 텍스트에디터 모바일 높이 조절 */
-	.table.view.edit li.con textarea {height: 380px;}
+	.table.view.edit li.con textarea {height: 370px;}
 
 	/* NAV */
 	nav.nav .nav_l .m:first-child { padding-left: 20px !important; }
