@@ -244,10 +244,6 @@
                 <div class="inner">
                     <div id="h_header" class="secTit_program spot_info">
                         <div>
-                            <!-- 10-21 .appBtn 추가 시작 : tv app 추가 사항-->
-                            <a href="javascript:tvAppBackBtn();" class="appBtn ico-back"></a>
-                            <a href="#none" class="appBtn ico-onair"></a>
-                            <!-- //10-21 .appBtn 추가 끝 : tv app 추가 사항 -->
                             <a href="javascript:void(0)" class="btn_totalmenu mot-block">
                                 <strong class="ico_com ta-menu"><span class="screen_out">메뉴보기</span></strong>
                             </a>
@@ -262,75 +258,7 @@
                                                 class="btn_myprogram">담기</span></a>
                                         <a href="#none" class="sns_pop" data-type="1"><span
                                                 class="btn_sns_pop">공유하기</span></a>
-                                        <script type="text/javascript">
-                                            $(document).ready(function () {
-                                                $.ajax({
-                                                    url: '/' + hmpId + '/ajax/favoriteUseYn.json?timeStamp=' + (new Date()).getTime(),
-                                                    async: false,
-                                                    data: { 'hmpId': hmpId },
-                                                    beforeSend: function (xhr) {
-                                                        xhr.setRequestHeader('Content-Type', 'application/json');
-                                                    }
-                                                })
-                                                    .done(function (data) {
-                                                        var result = data.result;
-                                                        if (result == "Y") {
-                                                            $(".btn_myprogram").addClass("on");
-                                                            $(".btn_myprogram").html('담김');
-                                                        }
-                                                    });
 
-                                                // tvApp 추가사항 : onair일때 onair버튼 노출....;
-                                                /* $.ajax({
-                                                    url: '/' + hmpId + '/function/getOnairPrograms.json',
-                                                    async: false,
-                                                    data: { 'hmpId': hmpId },
-                                                    beforeSend: function(xhr) {
-                                                        xhr.setRequestHeader('Content-Type', 'application/json');
-                                                    }
-                                                })
-                                                .done(function(data) {
-                                                    var channel = data.channel;
-                                                    var onairCnt = data.onair;
-                                                    var tvAppYn = "";
-                                                    if (onairCnt > 0 && tvAppYn == "Y") {
-                                                        $(".ico-onair").addClass("on").attr("href","https://www.ebse.co.kr/tvapp/tvapponair?link=onair&selectChannel="+channel);
-                                                    }
-                                                }); */
-
-                                            });
-
-                                            // tv 앱 뒤로가기 버튼 액션
-                                            function tvAppBackBtn() {
-                                                var currentOS;
-                                                var mobile = (/iphone|ipad|ipod|android/i.test(navigator.userAgent.toLowerCase()));
-
-                                                if (mobile) {
-                                                    // 유저에이전트를 불러와서 OS를 구분합니다.
-                                                    var userAgent = navigator.userAgent.toLowerCase();
-                                                    if (userAgent.search("android") > -1)
-                                                        currentOS = "android";
-                                                    else if ((userAgent.search("iphone") > -1) || (userAgent.search("ipod") > -1)
-                                                        || (userAgent.search("ipad") > -1))
-                                                        currentOS = "ios";
-                                                    else
-                                                        currentOS = "else";
-                                                } else {
-                                                    // 모바일이 아닐 때
-                                                    currentOS = "nomobile";
-                                                }
-
-                                                if (currentOS == "android") {
-                                                    window.ebsTVApp.back();
-                                                }
-                                                else if (currentOS == "ios") {
-                                                    window.location = "ebsTVApp:back";
-                                                }
-                                                else {
-                                                    window.history.back();
-                                                }
-                                            }
-                                        </script>
                                     </p>
                                     <p class="pc_program_time pct-block">
                                         <span style="display: block; margin: 0px;"></span>
