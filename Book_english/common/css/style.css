@@ -575,6 +575,18 @@ h1 { display: inline-block; overflow: hidden; }
 .table.view.question li.tit p{padding-left:50px;background:url('../../images/sub/ico_question.png') no-repeat 8px center;}
 .table.view.answer li.tit p{padding-left:50px;background:url('../../images/sub/ico_answer.png') no-repeat 12px center;}
 
+
+/* 텍스트에디터 레이어 팝업 */
+.class_question_write .table.edit .con {position: relative; }
+.class_question_write .table.edit .pop_noti {position: absolute; z-index: 10; top: 30px; left: 0; width: 95%; padding: 0 5%; }
+.class_question_write .table.edit .pop_noti .pop_noti_in { position: relative; overflow: hidden; border: 2px solid #2c7eba; background: #fff; width: 100%; }
+.class_question_write .table.edit .pop_noti .tit { display: block; overflow: hidden; height: auto; padding: 10px 35px 8px 10px; background: #2c7eba; color: #fff; font-size: 14px; font-weight: 500; line-height: 40px; white-space: nowrap; letter-spacing: -1px; line-height: 18px; white-space: normal;}
+.class_question_write .table.edit .pop_noti .pop_cont { width: 100%; padding: 10px; }
+.class_question_write .table.edit .pop_cont .list_dot li { padding-left: 10px; margin-bottom: 10px; background: url(https://home.ebse.co.kr/common/images/rwdskin/popup/bul_rec_blue.gif) no-repeat left 5px;color: #707070; line-height: 1.3; text-align: left;}
+.class_question_write .table.edit .pop_noti .pop_btn { overflow: hidden; padding: 0 10px 10px; text-align: right; }
+.class_question_write .table.edit .pop_noti .pop_btn .btn_close img { margin: 0; margin-left: auto; text-align: right; }
+.class_question_write .table.edit .pop_noti .pop_close {position: absolute;right: 2px; top: 2px;}
+
 /******************** CLASSES ********************/
 
 /* �� - ī�װ�� */
