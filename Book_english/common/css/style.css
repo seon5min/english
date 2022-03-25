@@ -1692,6 +1692,9 @@ footer .call .inner .sns_app .app_icon img {border-radius: 15px; width: 55px; he
 
 	.container { padding-top: 106px;}
 
+	/* 텍스트에디터 모바일 높이 조절 */
+	.table.view.edit li.con textarea {height: 380px;}
+
 	/* NAV */
 	nav.nav .nav_l .m:first-child { padding-left: 20px !important; }
 	nav.gnbWrap .gnb {border-bottom: 1px solid #dcdcdc;}
