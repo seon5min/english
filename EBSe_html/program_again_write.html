@@ -283,70 +283,12 @@
                                                 <a href="#none" class="btn_share i-mtMenu sns_pop" data-type="1">
                                                     <span class="screen_out">공유하기</span>
                                                 </a>
-                                                <a href="#none"
-                                                    onclick="BHP.UI.Top.addMyProgram('5elementary', '', 'stark11');return false;"
-                                                    class="btn_myprogram">담기</a>
+                                                <a href="#none" class="btn_myprogram">담기</a>
                                                 <button type="button" class="menu_close i-mtMenu"><span>주요 서비스 메뉴
                                                         닫기</span></button>
                                             </div>
-                                            <div class="schbox">
-                                                <form role="search" id="mobSrc" method="get"
-                                                    action="https://www.ebse.co.kr/apps/search/search.do"
-                                                    class="MultiFile-intercepted">
-                                                    <label for="ebssearch" class="hidden">Search the EBS</label>
-                                                    <input id="ebssearch" class="form-control" type="text" name="query"
-                                                        placeholder="">
-                                                    <input type="hidden" id="topquery" name="topquery">
-                                                    <a href="#none" onclick="mobSearchAction();"
-                                                        class="btn_search i-mtMenu"><span
-                                                            class="screen_out">검색버튼</span></a>
-                                                </form>
-                                                <script>
-                                                    function mobSearchAction() {
-                                                        $("#topquery").val(encodeURIComponent($("#ebssearch").val()));
-                                                        $("#mobSrc").submit();
-                                                    }
-                                                </script>
-                                            </div>
-                                        </div>
-                                        <!-- 10-24 모바일용 공유 추가  시작-->
-                                        <div class="wrap_share">
-                                            <ul class="lst_share" style="">
-                                                <li><a href="#none"
-                                                        onclick="shareTwitter('https://home.ebse.co.kr/5elementary/main', 'EBSe  교과서 영어 초등 5학년');return false;"><img
-                                                            src="/common/images/rwdskin/pc/ico-share01.gif" alt=""></a>
-                                                </li>
-                                                <li><a href="#none"
-                                                        onclick="shareFacebook('https://home.ebse.co.kr/5elementary/main', 'EBSe  교과서 영어 초등 5학년', null, null);return false;"><img
-                                                            src="/common/images/rwdskin/pc/ico-share04.gif" alt=""></a>
-                                                </li>
-                                                <li><a href="#none"
-                                                        onclick="shareBand('EBSe  교과서 영어 초등 5학년https://home.ebse.co.kr/5elementary/main','https://home.ebse.co.kr/5elementary/main');return false;"><img
-                                                            src="/common/images/rwdskin/pc/ico-share03.gif" alt=""></a>
-                                                </li>
-                                                <li><a href="#none"
-                                                        onclick="shareKakaostory('https://home.ebse.co.kr/5elementary/main');return false;"><img
-                                                            src="/common/images/rwdskin/pc/ico-share02.gif" alt=""></a>
-                                                </li>
-                                            </ul>
                                         </div>
 
-                                        <script type="text/javascript">
-                                            $(document).ready(function () {
-                                                /* 													 $(".m_member .btn_share").on("click",function(){
-                                                                                                    $(".gnb .wrap_share").toggleClass("on");
-                                                                                                    }); */
-
-                                                var hmpIdStr = "5elementary";
-                                                $(".lst_gnb li a").each(function () {
-                                                    if ($(this).attr("href").indexOf("/poll/") > -1 || ($(this).attr("href").indexOf("/link") > -1 && hmpIdStr == "pororo") || $(this).attr("href").indexOf("/cast") > -1) {
-                                                        $(this).closest("li").addClass("pc-block");
-                                                    }
-                                                });
-
-                                            });	
-                                        </script>
-                                        <!-- //10-24 모바일용 공유 추가  끝-->
                                         <ul class="main lst_gnb">
                                             <li class="lnb_1"><a href="http://home.ebse.co.kr/5elementary/welcome">프로그램
                                                     소개</a></li>
@@ -506,14 +448,7 @@
                                             <p class="location pct-block"><span>HOME</span> &gt; <span>시청자게시판</span></p>
 
                                         </div>
-                                        <form class="write_frm MultiFile-intercepted" name="vform" id="vform"
-                                            method="POST" enctype="multipart/form-data">
-                                            <input type="hidden" id="bbsId" name="bbsId" value="84000917">
-                                            <input type="hidden" id="pstTitleHtml" name="pstTitleHtml">
-                                            <input type="hidden" id="boardType" name="boardType" value="2">
-                                            <input type="hidden" id="prsnlInfoStreYn" name="prsnlInfoStreYn" value="">
-                                            <input type="hidden" id="pstRmnCertYn" name="pstRmnCertYn" value="">
-                                            <input type="hidden" name="iframeOn" value="false">
+                                        <form>
                                             <fieldset>
                                                 <table class="frm_table" summary="게시물 등록 양식 테이블입니다.">
                                                     <colgroup>
@@ -637,8 +572,7 @@
                                                                         cols="70"
                                                                         style="width: 100%; min-width: 100%; height: 350px; display: none;">								</textarea><iframe
                                                                         frameborder="0" scrolling="no"
-                                                                        style="width: 100%; height: 399px;"
-                                                                        src="/common/editor/SmartEditor2Skin.html"></iframe>
+                                                                        style="width: 100%; height: 399px;"></iframe>
 
                                                                 </div>
                                                             </td>
