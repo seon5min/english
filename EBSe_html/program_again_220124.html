@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="ko">
+
 <head>
     <!--[if IE 7]><html class="no-js ie7"><![endif]-->
     <!--[if IE 8]><html class="no-js ie8"><![endif]-->
@@ -41,6 +42,7 @@
     <script type="text/javascript" src="http://www.ebse.co.kr/js/bhp/bhp.ui.js"></script>
     <script type="text/javascript" src="http://www.ebse.co.kr/js/sp/sp.common.js"></script>
 </head>
+
 <body>
 
     <!-- 10-17 비쥬얼 bg관련 시작 -->
@@ -254,15 +256,44 @@
 
                     <!-- 2022-02-03 플로팅배너 추가 -->
                     <style>
-                        .floating_wrap {display:block;position:absolute;right:2rem;top:0;z-index:9;}
-                        .floating_close {position:absolute;right:5.2rem;top:1.4rem;z-index:1;width:40px;height:40px;text-indent:-9999px;background: transparent;}
-						.day_close {background: url(../images/event/2022/0128_beginnerEngEvent/day_close.png) no-repeat; position: absolute; right: 0; bottom: 0; z-index: 1; width: 136px; height: 28px; text-indent: -9999px;}
+                        .floating_wrap {
+                            display: block;
+                            position: absolute;
+                            right: 2rem;
+                            top: 0;
+                            z-index: 9;
+                        }
+
+                        .floating_close {
+                            position: absolute;
+                            right: 5.2rem;
+                            top: 1.4rem;
+                            z-index: 1;
+                            width: 40px;
+                            height: 40px;
+                            text-indent: -9999px;
+                            background: transparent;
+                        }
+
+                        .day_close {
+                            background: url(../images/event/2022/0128_beginnerEngEvent/day_close.png) no-repeat;
+                            position: absolute;
+                            right: 0;
+                            bottom: 0;
+                            z-index: 1;
+                            width: 136px;
+                            height: 28px;
+                            text-indent: -9999px;
+                        }
                     </style>
                     <div class="floating_wrap">
-                        <a href="http://www.naver.com" title="깜짝 이벤트 자세히 보기"><img src="../images/event/2022/0128_beginnerEngEvent/floating_img.png" alt="깜짝 이벤트 자세히 보기" /></a>
-                        <button type="button" class="floating_close" onclick="jQuery('.floating_wrap').hide();">닫기</button>
-						<button type="button" class="day_close" onclick="layerPop1DayClose('');">하루동안 열지않기</button>
-					</div>
+                        <a href="http://www.naver.com" title="깜짝 이벤트 자세히 보기"><img
+                                src="../images/event/2022/0128_beginnerEngEvent/floating_img.png"
+                                alt="깜짝 이벤트 자세히 보기" /></a>
+                        <button type="button" class="floating_close"
+                            onclick="jQuery('.floating_wrap').hide();">닫기</button>
+                        <button type="button" class="day_close" onclick="layerPop1DayClose('');">하루동안 열지않기</button>
+                    </div>
                     <!-- //2022-02-03 플로팅배너 추가 -->
 
 
@@ -3623,226 +3654,7 @@
                                     </div>
                                 </div>
 
-                                <!-- 11-28 결제 모달 시작 -->
-                                <div class="layer_dim_wrap">
-                                    <div class="layer_dim_inner">
-                                        <!-- 2016-11-16 -->
-                                        <span class="modal_tit" style="display: block">
-                                            <h1>구매하기</h1>
-                                            <a href="#none" class="btn_modalClose"></a>
-                                        </span>
-                                        <div class="mobFrame">
-                                            <!--<iframe src="http://m.ebs.co.kr/mypage/pay/brdcProdPop?prodId=567&prodDetlClsCd=-&modalPopupYn=Y&siteDsCd=MB&returnUrl=#none" frameborder="0" width="100%" height="101%" marginwidth="0" marginheight="0" scrolling="auto"></iframe>-->
-                                            <iframe id="modal_frame" src="" frameborder="0" height="101%"
-                                                marginwidth="0" marginheight="0" scrolling="auto"></iframe>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 11-28 결제 모달 끝 -->
 
-                                <form name="logfrm" id="logfrm">
-                                    <input type="hidden" name="userId" id="logUserId">
-                                    <input type="hidden" name="courseId" id="logCourseId" value="10200513">
-                                    <input type="hidden" name="stepId" id="logStepId" value="20001027">
-                                    <input type="hidden" name="lectId" id="logLectId" value="">
-                                    <input type="hidden" name="prodId" id="logprodId">
-                                    <input type="hidden" name="enrolSno" value="">
-                                    <input type="hidden" name="vod" id="logVod" value="">
-                                    <input type="hidden" name="logTypeCd" id="logTypeCd">
-                                    <input type="hidden" name="orderType" id="orderType">
-                                    <input type="hidden" name="ecdFileClsCd" id="ecdFileClsCd">
-                                    <!-- 인코딩 파일 유형코드 -->
-                                    <input type="hidden" name="positionInfo" id="positionInfo">
-                                    <!-- 시작/종료 컬럼 -->
-                                    <input type="hidden" name="lstContTime" id="lstContTime">
-                                    <!-- 최종 지속시간 -->
-                                    <input type="hidden" name="lstStdyLcn" id="lstStdyLcn">
-                                    <!-- 최종 학습위치 -->
-                                    <input type="hidden" name="enrolSteCd" id="enrolSteCd" value="">
-                                    <!-- 수강_상태_코드 -->
-                                    <input type="hidden" name="vodChrgClsCd" id="" value="">
-                                    <input type="hidden" name="prodChrgClsCdAe" id="" value="">
-                                </form>
-                                <article class="popup movie">
-                                    <div class="wrap">
-                                        <div class="inner">
-                                            <div class="box lg">
-                                                <div class="title">
-                                                    <button type="button" class="bt ico x"
-                                                        id="btn_popup_close">닫기</button>
-                                                    <h6>동영상 문제해결</h6>
-                                                </div>
-                                                <div class="content">
-                                                    <p class="tit">HTML5 플레이어에서 지원되지 않는 다시보기</p>
-                                                    <p class="con">HTML5 플레이어에서 지원되지 않는 다시보기 콘텐츠(일부) 및&nbsp;다시보기/듣기
-                                                        배속, 반복재생 서비스는 플레이어 하단&nbsp;[새창보기] 를 이용하여 주시기 바랍니다.</p>
-                                                    <p class="tit">새창보기는 현재 익스플로러에서만 지원됩니다.</p>
-                                                    <p class="con">새창보기는 현재 익스플로러에서만 지원됩니다. 곧 모든 브라우저에서 [새창보기] 기능이
-                                                        지원되도록 개선 예정입니다.</p>
-                                                    <p class="btm"> <b>1588-1580</b>사이트 이용안내와 자주 찾는 질문 동영상 FAQ를 확인해
-                                                        주십시오.
-                                                        이용상의 문의사항은
-                                                        고객센터로 문의해 주시기 바랍니다. </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <div class="sns_wrap movieshare" style="display: none;">
-                                    <div class="layer_wrap">
-                                        <div class="layer_header">
-                                            <h1>공유</h1>
-                                            <a href="javascript:sharePopupClose();"
-                                                class="btn_close_v2"><span>close</span></a>
-                                        </div>
-                                        <div class="layer_content">
-                                            <ul>
-                                                <li><a href="#none" onclick="javascript:popUpKakaoStory()"
-                                                        class="spt_kakaostory"><span>카카오스토리</span></a></li>
-                                                <li><a href="#none" onclick="javascript:popUpFacebook()"
-                                                        class="spt_facebook"><span>페이스북</span></a></li>
-                                                <li><a href="#none" onclick="javascript:popUpBand()"
-                                                        class="spt_band"><span>밴드</span></a></li>
-                                                <li><a href="#none" onclick="javascript:popUpBlog()"
-                                                        class="spt_blog"><span>블로그</span></a></li>
-                                                <li><a href="#none" onclick="javascript:popUpTwitter()"
-                                                        class="spt_tiwtter"><span>트위터</span></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="layer_btn"> <a href="#none"><span>닫기</span></a> </div>
-                                    </div>
-                                    <div class="sns_dim">sns_dim</div>
-                                </div>
-                                <div class="sns_wrap qna" style="display: none;">
-                                    <div class="layer_wrap">
-                                        <div class="layer_header">
-                                            <h1>공유</h1>
-                                            <a href="javascript:sharePopupClose();"
-                                                class="btn_close_v2"><span>close</span></a>
-                                        </div>
-                                        <div class="layer_content">
-                                            <ul>
-                                                <li><a href="#none" onclick="javascript:popUpKakaoStoryQna()"
-                                                        class="spt_kakaostory"><span>카카오스토리</span></a></li>
-                                                <li><a href="#none" onclick="javascript:popUpFacebookQna()"
-                                                        class="spt_facebook"><span>페이스북</span></a></li>
-                                                <li><a href="#none" onclick="javascript:popUpBandQna()"
-                                                        class="spt_band"><span>밴드</span></a></li>
-                                                <li><a href="#none" onclick="javascript:popUpBlogQna()"
-                                                        class="spt_blog"><span>블로그</span></a></li>
-                                                <li><a href="#none" onclick="javascript:popUpTwitterQna()"
-                                                        class="spt_tiwtter"><span>트위터</span></a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="layer_btn"> <a href="#none"><span>닫기</span></a> </div>
-                                    </div>
-                                    <div class="sns_dim">sns_dim</div>
-                                </div>
-                                <div id="layer_popup_container">
-                                    <div class="layerwin popup_accuse" tabindex="-1"
-                                        style="left: 50%; margin-left: -314px; top: 282px; display: none;">
-                                        <div class="content">
-                                            <h1>게시글 신고</h1>
-                                            <a href="#none" onclick="fn_close(); return false;"
-                                                class="btn_pop_close2">닫기</a>
-                                            <div class="info">
-                                                <h2>신고 전에 잠깐!</h2>
-                                                <ul>
-                                                    <li>1. 불건전한 게시물에 대해서만 신고해 주세요.</li>
-                                                    <li>2. 신고가 5회 이상 누적되는 경우, 해당 게시글은 블라인드 처리되어 조회되지 않습니다.</li>
-                                                    <li>3. 허위 신고자는 불량회원으로 등록되어 일정기간 게시물 및 댓글작성이 안 됩니다.</li>
-                                                </ul>
-                                            </div>
-                                            <!-- YOK(1), INFO(2), HONOR(3), WALL(4), SEXUAL(5), LOTTO(6), AD(7), CONNECT(8); -->
-                                            <form action="" method="post" class="frm_accuse" name="reportFrm"
-                                                id="reportFrm">
-                                                <input type="hidden" name="pid" value="10004773756">
-                                                <input type="hidden" name="saveType" value="POST">
-                                                <h2> 신고 사유를 선택해 주세요. <span>(여러 사유에 해당되는 경우에는 대표적인 경우 하나를 선택해
-                                                        주세요.)</span> </h2>
-                                                <ul class="opt">
-                                                    <li>
-                                                        <input type="radio" name="pstNotfClsCd" id="opt_reason_1"
-                                                            value="1">
-                                                        <label for="opt_reason_1">타인에 대한 욕설 또는
-                                                            비방</label>
-                                                    </li>
-                                                    <li>
-                                                        <input type="radio" name="pstNotfClsCd" id="opt_reason_2"
-                                                            value="2">
-                                                        <label for="opt_reason_2">불법 정보 유출</label>
-                                                    </li>
-                                                    <li>
-                                                        <input type="radio" name="pstNotfClsCd" id="opt_reason_3"
-                                                            value="3">
-                                                        <label for="opt_reason_3">인신공격 및 명예 훼손 </label>
-                                                    </li>
-                                                    <li>
-                                                        <input type="radio" name="pstNotfClsCd" id="opt_reason_4"
-                                                            value="4">
-                                                        <label for="opt_reason_4">같은 내용의 반복(도배)</label>
-                                                    </li>
-                                                    <li>
-                                                        <input type="radio" name="pstNotfClsCd" id="opt_reason_5"
-                                                            value="5">
-                                                        <label for="opt_reason_5">음란성 내용 및 음란물
-                                                            링크</label>
-                                                    </li>
-                                                    <li>
-                                                        <input type="radio" name="pstNotfClsCd" id="opt_reason_6"
-                                                            value="6">
-                                                        <label for="opt_reason_6">폭력 또는 사행심 조장</label>
-                                                    </li>
-                                                    <li>
-                                                        <input type="radio" name="pstNotfClsCd" id="opt_reason_7"
-                                                            value="7">
-                                                        <label for="opt_reason_7">상업적 광고,
-                                                            사이트/홈피 홍보</label>
-                                                    </li>
-                                                    <li>
-                                                        <input type="radio" name="pstNotfClsCd" id="opt_reason_8"
-                                                            value="8">
-                                                        <label for="opt_reason_8">게시판 성격에 맞지 않는
-                                                            내용</label>
-                                                    </li>
-                                                </ul>
-                                                <p class="btn">
-                                                    <input type="image" src="/common/img/popup/btn_accuse.gif"
-                                                        alt="신고하기">
-                                                    <a href="#none" onclick="fn_close(); return false;"><img
-                                                            src="/common/img/popup/btn_cancel.gif" alt="취소"></a>
-                                                </p>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                                <article class="popup download">
-                                    <div class="wrap">
-                                        <div class="inner">
-                                            <div class="box lg">
-                                                <div class="title">
-                                                    <button type="button" class="bt ico x"
-                                                        id="btn_popup_down_close">닫기</button>
-                                                    <h6>매일 10분 영어 - 세리나의 누구나 톡톡</h6>
-                                                    <!-- <a href="javascript:;" class="bt txt s bd"  style="float:left;" onclick="downloadProgram()"><i class="down">프로그램 설치</i></a> -->
-                                                    <a href="javascript:;" class="bt txt s bd"
-                                                        onclick="downloadMultiFile('','')"><i class="down">다운로드</i></a>
-                                                </div>
-                                                <div class="content">
-                                                    <ul class="table" id="fileList">
-                                                        <li class="th">
-                                                            <div class="row"> <span class="cell">프로그램</span> <span
-                                                                    class="cell md" id="divVodChkHeader">MP3</span>
-                                                                <span class="cell md" id="divMpChkHeader">VOD</span>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
                             </div>
                             <!-- //  페이지 내용 영역  끝 -->
                         </div>
@@ -3947,4 +3759,5 @@
     </div>
     <div id="applinkDiv" style="display:none;"> </div>
 </body>
+
 </html>
