@@ -688,6 +688,9 @@ h1 { display: inline-block; overflow: hidden; }
 .info.byte { font-size: 0.7rem; }
 .info.byte i { font-weight: 700; }
 .info.noti { text-align:left; font-size: 0.8rem; line-height:1.4; margin-bottom:20px; background: url('../../images/common/info_bg.png') no-repeat 0 12px; background-size: 18px; padding:12px 0 0 23px; }
+.guide_wrap {display: -webkit-box; display: -ms-flexbox; display: flex;margin-top: 3px;}
+.guide_wrap .info_guide {margin-top:6px;flex: 1;}
+.info.noti.p_noti { background-position: 0 0;; height: auto; line-height: 1.5; margin: 3px 0;padding: 0px 0 0 23px; }
 .info.many { height: auto; line-height: 140%; }
 .info mark { color: #20628e; }
 .info strong { color: #4b4b4b; font-weight: 500; }
@@ -1676,6 +1679,9 @@ footer .call .inner .sns_app .app_icon img {border-radius: 15px; width: 55px; he
 }
 
 @media all and (max-width: 768px) {
+.guide_wrap {-webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column;}
+.guide_wrap .info_guide {padding-top: 0;line-height: 1.5; flex: 1 1 auto;}
+.guide_wrap button {align-self: flex-end; margin-left: auto;}
     /* COMMON */
     .main-mt{margin-top:190px !important;}
     .sub-mt{margin-top:220px !important;}

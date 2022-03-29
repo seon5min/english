@@ -174,6 +174,9 @@ h6 { display: block; color: #404b5e; font-size: 25px; font-weight: 400; line-hei
 .info.byte { font-size: 11px; }
 .info.byte i { font-weight: 700; }
 .info.noti { font-size: 12px; background: url(../images/info_bg.png) no-repeat 0 12px; background-size: 18px; padding-left: 20px; }
+.guide_wrap {display: -webkit-box; display: -ms-flexbox; display: flex;margin-top: 3px;}
+.guide_wrap .info_guide {margin-top:6px; flex: 1;}
+.info.noti.p_noti { background-position: 0 0;; height: auto; line-height: 1.5; margin: 3px 0; }
 .info.many { height: auto; line-height: 140%; }
 .info mark { color: #20628e; }
 .info strong { color: #4b4b4b; font-weight: 500; }
@@ -1548,7 +1551,12 @@ article.popup.funApp .bt.bg:hover { background-color: #2f405f; }
 @media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) { footer .call .inner .sns_app { display: none; }
  }
 
-@media all and (max-width: 740px) { nav.lnb h2 { width: auto; font-size: 18px; text-align: center; }
+@media all and (max-width: 740px) {
+.guide_wrap {-webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column;}
+.guide_wrap .info.noti.p_noti {padding-top: 0;line-height: 1.5;}
+.guide_wrap button {align-self: flex-end; margin-left: auto;}
+
+ nav.lnb h2 { width: auto; font-size: 18px; text-align: center; }
  h3 { font-size: 30px; }
  h4 { font-size: 30px; }
  h5 { font-size: 20px; }
