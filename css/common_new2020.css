@@ -3,7 +3,7 @@
 * { padding: 0; margin: 0; outline: 0; border: 0; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; /*-webkit-transition: all 1s; transition: all 1s; */}
 :focus { outline: 0; }
 html { width: 100%; height: 100%; -webkit-text-size-adjust: none; text-size-adjust: none; }
-body { width: 100%; font: 400 14px/100% "Noto Sans Korean", sans-serif; }
+body { width: 100%; height: 100%; font: 400 14px/100% "Noto Sans Korean", sans-serif; }
 h1,
 h2,
 h3,
@@ -48,6 +48,17 @@ audio { background: none; }
 /************************************************************ COMMON ************************************************************/
 .wrap { display: block; width: 100%; height: 100%; }
 .inner { display: block; width: 100%; max-width: 980px; margin: 0 auto; }
+
+/* 앱 로딩 페이지 */
+.app_loading {margin: 0; height: 100%; overflow: hidden;}
+.app_loading .app_login_cont {position: relative; display: flex; flex-direction: column; -webkit-box-align: center; align-items: center; width: 100%;}
+.app_loading .app_login_cont h1 a {margin: 25px 0; display: inline-block; width: 240px; height: 50px; vertical-align: middle; background: url(../images/h1.svg) no-repeat center center; background-size: cover;}
+.app_loading .app_login_cont .path {position: relative;width: 100%; height: 50px; background-color: #2f405f;}
+.app_loading .app_login_cont .path a.btn_back {overflow: hidden; position: absolute; top: 0; left: 0; z-index: 100; width: 50px; height: 50px; background: url(../images/ico_back.png) no-repeat 50% 50%; background-size: 10px 18px; text-indent: -9999px;}
+.app_loading .app_login_cont .path h2 {display: block; overflow: hidden; height: 50px; line-height: 48px; text-align: center; color: #fff; font-size: 24px; letter-spacing: 0;}
+.app_loading .loading_cont {position: relative; top: 40%; transform: translateY(-88px);  display: flex; flex-direction: column; -webkit-box-align: center; align-items: center; width: 100%;height: 100%;}
+.app_loading .loading_cont > img {max-width: 44px;}
+.app_loading .loading_cont > p {padding-top:30px;font-size: 16px; letter-spacing: -0.8px; color: #000;}
 
 /* IMPORTANT */
 .hide { display: none !important; }
@@ -128,6 +139,8 @@ audio { background: none; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
 
+
+
 /******************** TITLE ********************/
 /* SITE TITLE */
 h1 { display: inline-block; overflow: hidden; }
@@ -174,9 +187,6 @@ h6 { display: block; color: #404b5e; font-size: 25px; font-weight: 400; line-hei
 .info.byte { font-size: 11px; }
 .info.byte i { font-weight: 700; }
 .info.noti { font-size: 12px; background: url(../images/info_bg.png) no-repeat 0 12px; background-size: 18px; padding-left: 20px; }
-.guide_wrap {display: -webkit-box; display: -ms-flexbox; display: flex;margin-top: 3px;}
-.guide_wrap .info_guide {margin-top:6px; flex: 1;}
-.info.noti.p_noti { background-position: 0 0;; height: auto; line-height: 1.5; margin: 3px 0; }
 .info.many { height: auto; line-height: 140%; }
 .info mark { color: #20628e; }
 .info strong { color: #4b4b4b; font-weight: 500; }
@@ -793,18 +803,6 @@ section.search .table .card.lie.fun {display: -ms-flexbox; display:flex;min-heig
 .table.faq li.on { border-color: #000; }
 .table.faq li.on:before { top: 22px; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); }
 .table.faq li.on + li.on { border: 0; }
-
-/* 텍스트에디터 레이어 팝업 */
-#viewList .table.edit .con,.comunity.talk .table.edit .con{position: relative; }
-#viewList .table.edit .pop_noti,.comunity.talk .table.edit .pop_noti {position: absolute; z-index: 10; top: 30px; left: 0; width: 95%; padding: 0 5%; }
-.comunity.talk .table.edit .pop_noti {padding: 20px 5%;}
-#viewList .table.edit .pop_noti .pop_noti_in,.comunity.talk .table.edit .pop_noti .pop_noti_in { position: relative; overflow: hidden; border: 2px solid #2c7eba; background: #fff; width: 100%; }
-#viewList .table.edit .pop_noti .tit,.comunity.talk .table.edit .pop_noti .tit { display: block; overflow: hidden; height: auto; padding: 10px 35px 8px 10px; background: #2c7eba; color: #fff; font-size: 14px; font-weight: 500; line-height: 40px; white-space: nowrap; letter-spacing: -1px; line-height: 18px; white-space: normal;}
-#viewList .table.edit .pop_noti .pop_cont,.comunity.talk .table.edit .pop_noti .pop_cont { width: 100%; padding: 10px; }
-#viewList .table.edit .pop_cont .list_dot li,.comunity.talk .table.edit .pop_cont .list_dot li { padding-left: 10px; margin-bottom: 10px; background: url(https://home.ebse.co.kr/common/images/rwdskin/popup/bul_rec_blue.gif) no-repeat left 8px;color: #707070; line-height: 1.3; text-align: left;}
-#viewList .table.edit .pop_noti .pop_btn,.comunity.talk .table.edit .pop_noti .pop_btn { overflow: hidden; padding: 0 10px 10px; text-align: right; }
-#viewList .table.edit .pop_noti .pop_btn .btn_close img,.comunity.talk .table.edit .pop_noti .pop_btn .btn_close img { margin: 0; margin-left: auto; text-align: right; }
-#viewList .table.edit .pop_noti .pop_close,.comunity.talk .table.edit .pop_noti .pop_close {position: absolute;right: 2px; top: 2px;}
 
 /******************** AREA ********************/
 .layer { position: relative; }
@@ -1536,11 +1534,6 @@ article.popup.funApp .bt.bg:hover { background-color: #2f405f; }
  footer .call .inner .footer_app .app_icon img { border-radius: 10px; max-width: 60px; width: 15vw; max-height: 60px; height: 15vw; object-fit: cover; }
  footer .call .inner .sns_app { display: none; } /* 2021-04-22 IOS 모바일 유튜브 비활성화 */
  footer .call .inner .sns_app .app_icon img { border-radius: 10px; max-width: 60px; width: 15vw; max-height: 60px; height: 15vw; object-fit: cover; }
-
-/* 텍스트에디터 모바일 높이 조절 */
-.table.view.edit li.con textarea {height: 370px;}
-
-
  }
 
 /* 2021-04-22 Ipad 유튜브 비활성화 */
@@ -1551,12 +1544,7 @@ article.popup.funApp .bt.bg:hover { background-color: #2f405f; }
 @media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) { footer .call .inner .sns_app { display: none; }
  }
 
-@media all and (max-width: 740px) {
-.guide_wrap {-webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column;}
-.guide_wrap .info.noti.p_noti {padding-top: 0;line-height: 1.5;}
-.guide_wrap button {align-self: flex-end; margin-left: auto;}
-
- nav.lnb h2 { width: auto; font-size: 18px; text-align: center; }
+@media all and (max-width: 740px) { nav.lnb h2 { width: auto; font-size: 18px; text-align: center; }
  h3 { font-size: 30px; }
  h4 { font-size: 30px; }
  h5 { font-size: 20px; }
