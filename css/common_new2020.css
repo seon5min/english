@@ -1626,6 +1626,7 @@ article.popup.funApp .bt.bg:hover { background-color: #2f405f; }
  .list li .card { min-height: 230px; }
  .list li .card.lie { min-height: 100%; }
  .list li .card .txt { padding: 10px 0 18px; }
+ .list li .card .bt.txt.s { padding: 0; } /* 2022-03-22 방과후영어 > 버튼 수정 */
  .list li .card .cate { display: block; width: 100%; margin-bottom: 8px; text-align: left; }
  .list li .card .tit { margin-bottom: 6px; }
 
