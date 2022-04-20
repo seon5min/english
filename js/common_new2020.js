@@ -1221,6 +1221,19 @@ $(document).ready(function() {
 	$('.btn_funMob').click(function(){
 		$('.popup.funApp').removeClass('hide');
 	});
+
+	/* 비회원 콘텐츠 이용 팝업 */
+	$('.nonlogin_btn').click(function(){
+		$('body').removeClass('bodyscroll');
+		$('.popup.nonmember').addClass('hide');
+	});
+    if ($('article.popup').hasClass('nonmember')) {
+      $('body').addClass('bodyscroll');
+      $('article.popup.nonmember .bt.x').on('click', function() {
+        $('body').removeClass('bodyscroll');
+	  });
+    }
+
 	/* LAYER */
 	$('.jq-layer').click(function(){
 		$(this).siblings('.pop').slideToggle();
