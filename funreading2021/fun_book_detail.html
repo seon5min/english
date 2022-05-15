@@ -255,6 +255,29 @@
 					</div>
 				</div>
 			</div>
+			<!-- 비회원 콘텐츠 이용안내 팝업 -->
+			<article class="popup nonmember">
+				<div class="wrap">
+					<div class="inner">
+						<div class="box lg">
+							<div class="title">
+								<button type="button" class="bt ico x">닫기</button>
+								<h6>비회원 콘텐츠 이용안내</h6>
+							</div>
+							<div class="content">
+								<img src="../images/nonmember_img.png" alt="비회원 콘텐츠 이용안내">
+								<div class="tit"><span>EBS English</span> 강의를 <br> 로그인 없이 확인하실 경우 <br> 학습이력이 남지 않습니다.</div>
+								<p class="con">학습관리 및 Q&amp;A 또는 학습후기를 원하실 경우 <br> 로그인 후 강의 확인 부탁 드립니다.</p>
+							</div>
+							<div class="nonmember_btn">
+								<a href="/apps/login/loginForm.do" class="login_btn">로그인 강의확인</a>
+								<a href="#none" class="nonlogin_btn">비로그인 강의확인</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+			<!-- //비회원 콘텐츠 이용안내 팝업 -->
 			<article class="popup share hide">
 				<div class="wrap">
 					<div class="inner">
@@ -526,11 +549,16 @@
 											<button type="button" class="bt txt s bg color3">등록</button>
 										</div>
 										<div class="txt_info_wrap">
-											<p class="info noti f_l">비방, 욕설, 도배글 등의 게시글은 삭제되며, 운영자 판단에 따라 30일간 댓글 등록이
-												제한됩니다.
-											</p>
-											<button type="button" class="bt txt s f_r jq-pop"><i class="guide">게시판
-													이용수칙</i></button>
+											<!-- 2022-03-25 댓글 안내 문구 추가 -->
+											<div class="guide_wrap">
+												<div class="info_guide">
+													<p class="info noti f_l p_noti">비방, 욕설, 중복글 등 타인에게 불쾌감을 주는 게시글, 상업광고 등 콘텐츠 성격과 맞지 않는 글은 삭제됩니다.</p>
+													<p class="info noti f_l p_noti">게시판에 개인정보(휴대폰 번호, 메일 등)를 입력하시면 외부 노출의 위험이 있으므로 작성하지 말아 주세요.</p>
+													<p class="info noti f_l p_noti">개인정보 작성 시 안내 없이 삭제 또는 수정될 수 있습니다.</p>
+												</div>
+												<button type="button" class="bt txt s f_r jq-pop"><i class="guide">게시판 이용수칙</i></button>
+											</div>
+											<!-- //2022-03-25 댓글 안내 문구 추가 -->
 										</div>
 									</div>
 								</fieldset>

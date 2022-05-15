@@ -361,7 +361,7 @@ section.eggfun .bt.ico.share.nb { background-image: url(../images/funreading/ico
 .fun_review_board .fun_review_title .star_score { font-weight: 500; font-size: 14px; text-align: left; line-height: 1.33; color: #222; margin-left: 15px; }
 .fun_review_board .fun_review_title .star_score strong { font-weight: 500; }
 .cmt_write_frm fieldset legend { display: none; }
-.cmt_write_frm .score_rating { margin-top: 47px; margin-bottom: 22px; }
+.cmt_write_frm .score_rating { margin-top: 47px; }
 .cmt_write_frm .startRadio { display: inline-block; overflow: hidden; height: 30px; }
 .cmt_write_frm .startRadio .bt.ico { position: relative; display: inline-block; width: 30px; height: 30px; text-indent: -9999px; z-index: 1; }
 .cmt_write_frm .startRadio .bt.ico.star { background-image: url(../images/funreading/icon/rating_star_off.png); background-position: 50% 50%; background-repeat: no-repeat; background-size: 30px; }
@@ -370,9 +370,9 @@ section.eggfun .bt.ico.share.nb { background-image: url(../images/funreading/ico
 .cmt_write_frm .bind.ment .input.textar_pd { width: 90%; height: 80px; padding: 1% 0 1% 1.5%; line-height: 1.4; font-size: 15px; }
 textarea.textar_pd::placeholder { padding-top: 18px; font-size: 15px; }
 .cmt_write_frm .bind.ment .bt { position: absolute; width: 10%; height: 80px; right: 0; top: 0; bottom: 0; margin-top: 0; }
-.cmt_write_frm .comment_wrap { display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column; transform: translateY(-40px); }
-.cmt_write_frm .cnt_con { display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; color: #969696; margin: 10px 0; font-size: 12px; line-height: 1.5; padding-top: 11px; }
-.cmt_write_frm .info.noti { font-size: 13px; background: url(https://www.ebse.co.kr/images/info_bg.png) no-repeat 0 13px; background-size: 16px; padding-left: 22px; color: #7e7e7e; font-weight: 400; letter-spacing: -0.33px; line-height: 1.5; padding-top: 11px; }
+.cmt_write_frm .comment_wrap { display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column;margin-bottom: 40px;}
+.cmt_write_frm .cnt_con { display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; color: #969696; margin-bottom: 10px; font-size: 12px; line-height: 1.5;}
+.cmt_write_frm .info.noti { width:100%;font-size: 13px; background: url(https://www.ebse.co.kr/images/info_bg.png) no-repeat 0 1.5px; background-size: 16px; padding-left: 22px; color: #7e7e7e; font-weight: 400; letter-spacing: -0.33px; line-height: 1.5;}
 .bt i.guide { display: block; width: 100px; height: 25px; line-height: 2.1; text-align: center; font-size: 12px; font-weight: 400; color: #fff; background: #65758f; border-radius: 20px; }
 .table_reply_userBoard li .reply_userBoardList .info_append { display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 .table_reply_userBoard li .reply_userBoardList .info_append .user_info { display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
@@ -997,13 +997,14 @@ body.sub .fun_review_board .page { padding: 20px 0 20px; }
  .fun_review_board .fun_review_title .info_score { -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; padding: 30px 0; }
  .fun_review_board .fun_review_title .star_score,
  .fun_review_board .fun_review_title .star_score strong { font-weight: 700; font-size: 18px; margin: 0 0 10px 0; }
- .cmt_write_frm .score_rating { margin-top: 18px; margin-bottom: 20px; }
+ .cmt_write_frm .score_rating { margin-top: 18px;transform: translateY(20px);}
  .cmt_write_frm .cnt_con { margin: 0 0 10px 0; padding-top: 0px; font-size: 13px; transform: translateY(-3px); }
  .cmt_write_frm .bind.ment .bt { width: 13%; height: 63px; }
  .cmt_write_frm .bind.ment .input.textar_pd { width: 87%; height: 63px; padding: 2%; line-height: 1.4; font-size: 12px; }
- .cmt_write_frm fieldset { height: 205px; }
+ .cmt_write_frm fieldset { }
+ .cmt_write_frm .guide_wrap .info_guide {flex: 1 1 auto;}
  textarea.textar_pd::placeholder { padding: 8px 0 0 5px; font-size: 12px; width: 80%; word-break: keep-all; }
- .cmt_write_frm .comment_wrap { border-bottom: 1px solid #e8e5e2; padding-bottom: 5px; }
+ .cmt_write_frm .comment_wrap { border-bottom: 1px solid #e8e5e2; padding-bottom: 5px; margin-bottom: 0;}
  .table_reply_userBoard li .reply_userBoardList .info_append i.sns { font-size: 15px; padding-left: 21px; height: 36px; width: 80px; line-height: 35px; font-weight: 500; color: #3d3d3d; }
  .table_reply_userBoard li .reply_userBoardList .info_append i.sns.a,
  .table_reply_userBoard li .reply_userBoardList .info_append i.sns.f,
