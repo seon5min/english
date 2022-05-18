@@ -21,16 +21,96 @@
 </head>
 
 <body class="sub">
+	<header>
+		<nav class="nav m_hide">
+			<div class="inner">
+				<span class="f_l">
+					<a href="head_egg.html" class="m">에그붐</a>
+					<a href="../head_fun.html" class="m">펀리딩</a>
+					<a href="../head_cook.html" class="m">쿠킹클래스</a>
+					<a href="../head_teacher.html" class="m">교사지원센터</a>
+				</span>
+				<span class="f_r">
+					<a href="../head_login.html" class="m">로그인</a>
+					<a href="../head_join.html" class="m">회원가입</a>
+					<a href="../head_onair.html" class="m">ON-AIR</a>
+					<a href="../head_channel.html" class="m">편성표</a>
+					<a href="../head_cs.html" class="m">고객센터</a>
+					<a href="../head_event.html" class="m">이벤트</a>
+				</span>
+			</div>
+		</nav>
+		<div class="inner">
+			<h1><a href="index.html">EBS English</a></h1>
+			<button type="button" class="bt ico menu jq-sitemap">전체메뉴</button>
+			<span class="bind find">
+				<input type="text" class="input" placeholder="검색어를 입력해주세요.">
+				<a href="search.html" class="bt ico find">검색</a>
+			</span>
+		</div>
+		<nav class="gnb">
+			<div class="inner">
+				<ul class="menu">
+					<li>
+						<a href="level.html" class="mm">레벨테스트</a>
+						<div class="smenu">
+							<a href="level.html" class="sm">레벨테스트</a>
+						</div>
+					</li>
+					<li>
+						<a href="program.html" class="mm">방송프로그램</a>
+						<div class="smenu">
+							<a href="program.html" class="sm">방송프로그램</a>
+						</div>
+					</li>
+					<li>
+						<a href="eclip.html" class="mm">e클립</a>
+						<div class="smenu">
+							<a href="eclip.html" class="sm">e클립</a>
+						</div>
+					</li>
+					<li class="m_hide">
+						<a href="online.html" class="mm">온라인강좌</a>
+						<div class="smenu">
+							<a href="online.html" class="sm">온라인강좌</a>
+							<a href="online_word.html" class="sm">필수 영단어</a>
+							<a href="online_365.html" class="sm">365 영단어</a>
+							<a href="online_webtoon.html" class="sm">영어웹툰</a>
+							<a href="online_paper.html" class="sm">영자신문</a>
+						</div>
+					</li>
+					<li>
+						<a href="comunity_notice.html" class="mm">커뮤니티</a>
+						<div class="smenu">
+							<a href="comunity_notice.html" class="sm">공지사항</a>
+							<a href="comunity_talk.html" class="sm">e-야기</a>
+							<a href="comunity_etizen.html" class="sm">e-tizen 소개</a>
+							<a href="comunity_schedule.html" class="sm">학습자료실</a>
+						</div>
+					</li>
+					<li>
+						<a href="after.html" class="mm">방과후영어</a>
+						<div class="smenu">
+							<a href="after.html" class="sm">방과후영어 소개</a>
+							<a href="after_before.html" class="sm">사전평가</a>
+							<a href="after_list.html" class="sm">학습하기</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
 	<section class="event">
 		<div class="path">
 			<div class="inner">
-				<a href="" class="home"><i>HOME</i></a>
+				<a href="index.html" class="home"><i>HOME</i></a>
 				<nav class="lnb">
 					<h2>이벤트</h2>
 					<button type="button" class="bt ico drop">메뉴열고닫기</button>
 					<ul>
-						<li><a href="" class="mm">이벤트</a></li>
-						<li><a href="" class="mm">당첨자 발표</a></li>
+						<li><a href="/apps/event/listEvent.do" class="mm">이벤트</a></li>
+						<li><a href="/apps/event/listEventPrze.do" class="mm">당첨자 발표</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -52,7 +132,6 @@
 				<li class="con">
 					<!-- 2022-05-16 APP 리뷰 작성 이벤트 -->
 					<script type="text/javascript">
-
 						$(document).ready(function () {
 							$("section.event .inner").eq(1).attr("style", "max-width:100%");
 							$("section.event > .inner > h3").attr("style", "width:100%; max-width:980px; margin:0 auto;");
@@ -182,8 +261,7 @@
 							min-width: 375px;
 							max-width: 375px;
 							text-indent: -9999px;
-							opacity: 0.5;
-							background: #579a35;
+							opacity: 0;
 							font-size: 0;
 							z-index: 10;
 						}
@@ -200,8 +278,7 @@
 							max-width: 375px;
 							min-width: 375px;
 							text-indent: -9999px;
-							opacity: 0.5;
-							background: #579a35;
+							opacity: 0;
 							font-size: 0;
 							z-index: 10;
 						}
@@ -235,8 +312,7 @@
 							max-width: 130px;
 							min-width: 130px;
 							text-indent: -9999px;
-							opacity: 0.5;
-							background: #579a35;
+							opacity: 0;
 							font-size: 0;
 							z-index: 10;
 						}
@@ -455,8 +531,7 @@
 								height: 35%;
 								text-indent: -9999px;
 								font-size: 0;
-								background-color: #ddd;
-								opacity: .5;
+								opacity: 0;
 								z-index: 10;
 							}
 
@@ -468,8 +543,7 @@
 								height: 35%;
 								text-indent: -9999px;
 								font-size: 0;
-								opacity: .5;
-								background-color: #ff0000;
+								opacity: 0;
 								z-index: 10;
 							}
 						}
@@ -723,7 +797,7 @@
 			});
 
 			// 등록 이미지 삭제 ( input file reset )
-			function resetInputFile($input, $preview, $delete, $filename, $imgbox) {
+			function resetInputFile($input, $preview, $delete, $filename) {
 				var agent = navigator.userAgent.toLowerCase();
 				if ((navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1)) {
 					// ie 일때
@@ -747,13 +821,22 @@
 				var $preview = $('#preview');
 				var $delete = $('.btn-delete');
 				var $filename = $('.upload_name');
-				resetInputFile($input, $preview, $delete, $filename, $imgbox);
+				var $imgbox = $('.imgbox');
+				resetInputFile($input, $preview, $delete, $filename);
 			});
 
 
 		});
 	</script>
 	<style>
+		article.popup.upload .event_terms_info {
+			padding-bottom: 60px;
+		}
+
+		article.popup.upload .event_terms_info .content {
+			padding: 0 0 25px 0;
+		}
+
 		.popup.upload .event_input_terms .title_data {
 			padding: 30px 0 10px 0;
 			margin: 0 auto;
@@ -850,7 +933,6 @@
 			flex-direction: column;
 		}
 
-
 		.filebox .previewbox {
 			position: relative;
 			width: 100%;
@@ -866,7 +948,6 @@
 			border: 1.9px dashed #c4c4c4;
 			border-radius: 25px;
 			background-color: #fff;
-
 		}
 
 		.filebox .previewbox .preview {
@@ -932,10 +1013,9 @@
 				max-width: 200px;
 				text-align: center;
 			}
-
 		}
 	</style>
-	<article class="popup upload share bg_dim event hide" id="popShare2">
+	<article class="popup upload share bg_dim event hide" id="popShare3">
 		<div class="wrap">
 			<div class="inner">
 				<div class="box lg2 event_terms_info">
@@ -987,9 +1067,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="event_des_btm">
 
-					</div>
 					<div class="wrap_btn_end">
 						<button type="button" onclick="layerPopClose('02');" class="btn_def btn_close">취소</button>
 						<button type="button" onclick="doRegist();" class="btn_def">등록</button>
