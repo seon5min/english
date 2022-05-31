@@ -482,7 +482,5 @@ $(function () {
     $('.nodata_con .selected_info,.mybook_edit .selected_info').on('click', function () {$('.selected_layer').css('display','flex');});
     $('.nodata_con .selected_close,.mybook_edit .selected_close').on('click', function () {$('.selected_layer').css('display','none');});
 
-
-
   });
 
