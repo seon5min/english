@@ -208,6 +208,7 @@ body.sub .filter-box .filter .order > div.on:before { border: 1px solid #ff6600;
 .modal_body .modal_tit { width: 90%; position: absolute; top: 16px; left: 35px; font-weight: 500; font-size: 26px; line-height: 1.23; color: #242424; letter-spacing: -1.3px; }
 .modal_container .btn-modal-close { position: absolute; top: 24px; right: 24px; width: 24px; height: 24px; background-size: 24px 20px; background-repeat: no-repeat; background-position: 100% 0%; background-image: url(../images/common/X_ico.svg); }
 .modal_content img { width: 100%; border-radius: 5px; }
+.bodyscroll { height: 100%; min-height: 100%; overflow: hidden; touch-action: none; }
 
 /* modal 컨텐츠 */
 .container_fluid { width: 100%; -ms-flex-align: baseline; align-items: baseline; display: -ms-inline-flexbox; display: inline-flex; }
@@ -257,6 +258,7 @@ body.sub .filter_wrap .filter-box .bt { height: 37px; line-height: 1; }
 .detail_visual_wrap .inner .detail_thumbnail { width: 100%; max-width: 240px; height: auto; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; margin-top: 60px; }
 .detail_visual_wrap .inner .detail_thumbnail img { max-width: 100%; width: 100%; max-height: 100%; height: auto; }
 .detail_visual_wrap .inner .detail_description { padding: 60px 0; margin-left: 53px; width: 100%; }
+/* .detail_visual_wrap .inner .detail_btn { position: absolute; bottom: 60px; } */
 .detail_description .level { display: inline-block; padding-bottom: 10px; font-weight: 400; font-size: 14px; line-height: 1.2; color: #222; letter-spacing: -0.35px; text-align: center; white-space: nowrap; }
 .detail_description .level .bar_g { margin: 0 12px; display: inline-block; width: 1px; height: 11px; background-color: #222; }
 .detail_description .tit_con .maintit { display: block; display: -webkit-box; max-width: 100%; }
@@ -293,7 +295,7 @@ section.eggfun .bt.ico.share.nb { background-image: url(../images/funreading/ico
 .related_wrap > .inner,
 .vod_wrap > .inner,
 .fun_review_board > .inner { position: relative; max-width: 1140px; padding: 0 20px; }
-.related_wrap > .inner,2022-05-31
+.related_wrap > .inner,
 .fun_review_board > .inner { padding: 40px 20px 70px 20px; }
 .related_wrap .book_list_wrap { width: 100%; -ms-flex-align: baseline; align-items: baseline; display: -ms-inline-flexbox; display: inline-flex; }
 .related_wrap .book_list_wrap .control { display: none; }
@@ -1029,12 +1031,7 @@ body.sub .fun_review_board .page { padding: 20px 0 20px; }
  .sticky .bottom_btn_wrap .btn_wrap { margin-top: 15px; width: 100%; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
  .sticky .bottom_btn_wrap .btn_wrap span {font-size: 0; display: none;}
  .sticky .bottom_btn_wrap .ebook_btn, .sticky .bottom_btn_wrap .mp3_btn, .sticky .bottom_btn_wrap .bookmark_btn, .sticky .bottom_btn_wrap .learning_btn {margin-left: 10px;}
- .sticky .bottom_btn_wrap .ebook_btn::before, .sticky .bottom_btn_wrap .mp3_btn::before, .sticky .bottom_btn_wrap .bookmark_btn::before, .sticky .bottom_btn_wrap .learning_btn::before {background-size: 44px;margin-bottom:0;}
- .sticky .bottom_btn_wrap .ebook_btn::before {background-image: url(../images/funreading/icon/ico_m_ebook_b.png);}
- .sticky .bottom_btn_wrap .mp3_btn::before { background-image: url(../images/funreading/icon/ico_m_mp3_b.png); }
- .sticky .bottom_btn_wrap .learning_btn::before { background-image: url(../images/funreading/icon/ico_m_learning_b.png); }
- .sticky .bottom_btn_wrap .bookmark_btn::before {background-image: url(../images/funreading/icon/ico_m_bookmark_b.png);}
- .sticky .bottom_btn_wrap .bookmark_btn.on::before {background-image: url(../images/funreading/icon/ico_on_bookmark_b.png);}
+ .sticky .bottom_btn_wrap .ebook_btn::before, .sticky .bottom_btn_wrap .mp3_btn::before, .sticky .bottom_btn_wrap .bookmark_btn::before, .sticky .bottom_btn_wrap .learning_btn::before {margin-bottom:0;}
  .detail_visual_wrap .bt.ico.share { background-image: url(../images/funreading/icon/funreading_share_m.png); }
  .related_wrap .book_list_wrap .swiper-slide:last-child { padding-right: 25px; }
  section.eggfun .related_wrap > .inner { padding-right: 0; }
