@@ -256,7 +256,7 @@ body.sub .filter_wrap .filter-box .bt { height: 37px; line-height: 1; }
 .detail_visual_wrap .inner { position: relative; display: -ms-flexbox; display: flex; height: auto; min-height: 480px; max-width: 1140px; margin: 0 auto; padding: 0 38px; }
 .detail_visual_wrap .inner .detail_thumbnail { width: 100%; max-width: 240px; height: auto; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; margin-top: 60px; }
 .detail_visual_wrap .inner .detail_thumbnail img { max-width: 100%; width: 100%; max-height: 100%; height: auto; }
-.detail_visual_wrap .inner .detail_description { padding: 60px 0; margin-left: 53px; width: 100%; }
+.detail_visual_wrap .inner .detail_description { padding: 60px 0; margin-left: 53px; width: 100%; display: flex; -webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify;  justify-content: space-between;}
 .detail_description .level { display: inline-block; padding-bottom: 10px; font-weight: 400; font-size: 14px; line-height: 1.2; color: #222; letter-spacing: -0.35px; text-align: center; white-space: nowrap; }
 .detail_description .level .bar_g { margin: 0 12px; display: inline-block; width: 1px; height: 11px; background-color: #222; }
 .detail_description .tit_con .maintit { display: block; display: -webkit-box; max-width: 100%; }
@@ -293,7 +293,7 @@ section.eggfun .bt.ico.share.nb { background-image: url(../images/funreading/ico
 .related_wrap > .inner,
 .vod_wrap > .inner,
 .fun_review_board > .inner { position: relative; max-width: 1140px; padding: 0 20px; }
-.related_wrap > .inner,2022-05-31
+.related_wrap > .inner,
 .fun_review_board > .inner { padding: 40px 20px 70px 20px; }
 .related_wrap .book_list_wrap { width: 100%; -ms-flex-align: baseline; align-items: baseline; display: -ms-inline-flexbox; display: inline-flex; }
 .related_wrap .book_list_wrap .control { display: none; }
@@ -951,7 +951,7 @@ body.sub .fun_review_board .page { padding: 20px 0 20px; }
  .detail_visual_wrap .inner .detail_thumbnail { margin: 0 auto; width: 10%; min-width: 142px; height: 100%; min-height: auto; }
  .detail_description .maintit .bookmark_ico { position: absolute; top: 0; right: 16px; margin-top:0; background-image: url(../images/funreading/icon/off_m_bookmark.png); width: 20px; height: 42px; background-size: 25px; transform: translateY(0px); padding-right: 32px; }
  .detail_description .maintit .bookmark_ico.on { background-image: url(../images/funreading/icon/on_m_bookmark.png); }
- .detail_visual_wrap .inner .detail_description { margin: 0; padding: 33px 0 0; }
+ .detail_visual_wrap .inner .detail_description { margin: 0; padding: 33px 0 0; -webkit-flex-direction: column-reverse; flex-direction: column-reverse;}
  .detail_visual_wrap .inner .detail_btn { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 0 0 50px; border-bottom: 1px solid #222; }
  .detail_visual_wrap .inner .detail_txt { position: inherit; padding-top: 36px; }
  .detail_description .tit { font-size: 20px; border-bottom: none; line-height: 1.4; }
@@ -964,7 +964,7 @@ body.sub .fun_review_board .page { padding: 20px 0 20px; }
  .detail_description .ebook_btn,
  .detail_description .mp3_btn {margin-right: 40px; height: 80px;}
  .detail_description .learn_btn {margin-top:0;}
- .detail_description .learning_btn {margin-right: 0; height: 80px;}
+ .detail_description .learn_btn a:last-child {margin-right: 0; height: 80px;}
  .detail_description .learning_date { margin-top: 15px; }
  .detail_visual_wrap .level_wrap { position: relative; }
  .detail_visual_wrap .bt.ico.share { position: absolute; right: 0; top: -14px; }
