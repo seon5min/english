@@ -210,94 +210,180 @@
 						<li><a href="my_data.html" class="mm">정보 관리</a></li>
 					</ul>
 				</nav>
+				<!-- 2022-07-25 나의 정보 관리 버튼 추가-->
+				<button type="button" class="myinfo_btn">
+					<span class="ico_myinfo">나의 정보 관리</span>
+				</button>
+			</div>
+		</div>
+
+		<div class="gray_box">
+			<div class="box_con status_con">
+				<div class="box_tit">
+					<div>
+						<h2>나의 학습 현황</h2>
+						<button type="button" class="status_info"><span class="blind">나의 학습 현황 안내</span></button>
+						<div class="status_layer">
+							<p class="status_txt">“나의 학습 현황”은 하루 학습량에 따른 학습 상태를 응원 문구로 제공합니다.
+								<span>* 당일 중복된 콘텐츠 학습 건은 하루 학습량에 포함되지 않습니다.</span>
+							</p>
+							<button class="status_close"><span class="blind">닫기</span></button></p>
+						</div>
+					</div>
+					<div class="contents">
+						<div class="learning_stage">
+							<!-- <img src="../images/common/learning stage_01.png" alt="fighting">
+							<img src="../images/common/learning stage_02.png" alt="cheer up">
+							<img src="../images/common/learning stage_03.png" alt="great job">
+							<img src="../images/common/learning stage_04.png" alt="amazing"> -->
+							<img src="../images/common/learning stage_05.png" alt="the best">
+						</div>
+						<div class="learning_wrap">
+							<p class="learning_tot">오늘 학습현황 : 총 <span>0</span>권</p>
+							<div class="learning_phrase bubble_100">조금만 더 힘내요!</div>
+							<!-- bubble_0, bubble_25, bubble_50, bubble_75, bubble_100 -->
+							<div class="progress step_100">
+								<!-- step_0, step_25, step_50, step_75, step_100 -->
+								<div class="progress_inner">
+									<span class="learning_icon running"></span>
+									<div class="learning_gauge">
+										<div class="gauge_inner stretch"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="box_con friend_nodata friend_status_con">
+				<div class="box_tit">
+					<div>
+						<h2>같은 레벨 친구들 학습 현황</h2>
+						<button type="button" class="status_info"><span class="blind">같은 레벨 친구들 학습 현황 안내</span></button>
+						<div class="friend_layer">
+							<p class="friend_txt">“같은 레벨 친구들 학습현황”은 EBSe 레벨 테스트 결과 에 따라 나와 같은 레벨 이용자들의 전일 평균 학습 현황을
+								제공합니다.</p>
+							<button class="friend_close"><span class="blind">닫기</span></button></p>
+						</div>
+						<a href="" class="more_wrap"><span class="plus">레벨 테스트</span></a>
+					</div>
+					<div class="contents">
+						<img src="../images/common/nodata_01.png" alt="레벨 테스트 결과 없습니다.">
+						<p class="nodata_tit">레벨 테스트 결과 없습니다.</p>
+						<p class="nodata_txt">레벨테스트 결과에 따라 같은 레벨에 친구들의 학습현황을 확인 할 수 있습니다.</p>
+						<button class="nodata_btn">레벨 테스트 시작하기</button>
+					</div>
+				</div>
+			</div>
+			<div class="box_con reading_activities_con">
+				<div class="box_tit">
+					<div>
+						<h2>나의 독서 활동</h2>
+						<a href="" class="more_wrap"><span class="plus">자세히</span></a>
+					</div>
+					<div class="contents">
+						<div class="single_chart">
+							<svg viewBox="0 0 38 38" class="circular_chart">
+								<path class="circle_bg" d="M19 3.0845
+									a 15.9155 15.9155 0 0 1 0 31.831
+									a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+								<path class="circle" stroke-dasharray="0, 100" d="M19 3.0845
+									a 15.9155 15.9155 0 0 1 0 31.831
+									a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+								<!-- stroke-dasharray="30, 100" n/100 -->
+								<text x="19.5" y="22" class="percentage">
+									0<tspan class="per">%</tspan>
+								</text>
+							</svg>
+						</div>
+						<div class="num_detail_con">
+							<div class="today_reading">
+								<div class="info_layer">
+									<span class="info_txt">같은 도서는 24시간 내에 재완독하여도 완독수에 카운트 되지 않습니다.<button
+											class="info_close"><span class="blind">닫기</span></button></span>
+								</div>
+								<p class="reading_tit">오늘 완독수<button type="button" class="reading_info"><span
+											class="blind">오늘 완독수 안내</span></button></p>
+								<span class="dotted-line"></span>
+								<p class="reading_count zero">없음</p>
+							</div>
+							<div class="week_reading">
+								<p class="reading_tit">주간 평균 완독수</p><span class="dotted-line"></span>
+								<p class="reading_count zero">없음</p>
+							</div>
+							<div class="month_reading">
+								<p class="reading_tit">월간 완독 목표</p>
+								<span class="dotted-line"></span>
+								<div class="reading_count zero">없음</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script>
+				$('.box_con.status_con .status_info').on('click', function () { $('.box_con.status_con .status_layer').css('display', 'flex'); });
+				$('.box_con.status_con .status_close').on('click', function () { $('.box_con.status_con .status_layer').css('display', 'none'); });
+
+				$('.box_con.reading_activities_con .reading_info').on('click', function () { $('.box_con.reading_activities_con .info_layer').css('display', 'flex'); });
+				$('.box_con.reading_activities_con .info_close').on('click', function () { $('.box_con.reading_activities_con .info_layer').css('display', 'none'); });
+
+				$('.box_con.friend_status_con .status_info').on('click', function () { $('.box_con.friend_status_con .friend_layer').css('display', 'flex'); });
+				$('.box_con.friend_status_con .info_close').on('click', function () { $('.box_con.friend_status_con .friend_layer').css('display', 'none'); });	
+			</script>
+			<div class="box_con etizen_con">
+				<div class="box_tit">
+					<div>
+						<h2>나의 e-tizen 지수</h2>
+						<a href="" class="more_wrap"><span class="plus">자세히</span></a>
+					</div>
+					<div class="contents">
+						<div class="ico_etizen lv1"></div>
+						<div class="etizen_wrap">
+							<p class="etizen_tit">Neptune</p>
+							<p class="etizen_tot">e-tizen : <span>0</span>점</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="box_con used_nodata content_used_con">
+				<div class="box_tit">
+					<div>
+						<h2>최근 이용 콘텐츠 현황</h2>
+						<a href="" class="more_wrap"><span class="plus">자세히</span></a>
+					</div>
+					<div class="contents">
+						<img src="../images/common/nodata_02.png" alt="최근 이용한 콘텐츠가 없습니다.">
+						<p class="used_tit">최근 이용한 콘텐츠가 없습니다.</p>
+					</div>
+				</div>
+			</div>
+			<div class="box_con study_nodata study_room_con">
+				<div class="box_tit">
+					<div>
+						<h2>나의 학습방 현황</h2>
+						<a href="" class="more_wrap"><span class="plus">자세히</span></a>
+					</div>
+					<div class="contents">
+						<img src="../images/common/nodata_03.png" alt="수강중인 프로그램 및 강좌가 없습니다.">
+						<p class="study_tit">수강중인 프로그램 및 강좌가 없습니다.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="txtbook_eng">
+			<div class="txtbook_tit">
+				<h2>교과서 영어</h2>
+				<a href="" class="more_wrap"><span class="plus">나의 교실</span></a>
+			</div>
+			<div class="guest_wrap">
+				<strong>등록된 교실이 없습니다.</strong>
+				<p>우리 학교, 우리 반을 찾아보세요.</p>
 			</div>
 		</div>
 
 		<div class="inner">
-			<span class="half">
-				<h4 class="f_l">최근이용 콘텐츠</h4>
-				<a href="/apps/mypage/myUseList.do" class="bt txt s f_r"><i class="plus">더보기</i></a>
-				<ul class="table">
-					<li class="th">
-						<div class="row">
-							<span class="cell xxl">구분</span>
-							<span class="cell">학습이용내역</span>
-						</div>
-					</li>
-					<li class="tr">
-						<a href="https://home.ebse.co.kr/5elementary" class="row">
-							<span class="cell xxl"><i class="cate">방송프로그램</i></span>
-							<span class="cell t_l">EBSe 교과서 영어 초등 5학년 </span>
-						</a>
-					</li>
-					<li class="tr">
-						<a href="https://home.ebse.co.kr/voca801/main" class="row">
-							<span class="cell xxl"><i class="cate">방송프로그램</i></span>
-							<span class="cell t_l">EBSe 초등 영단어 801</span>
-						</a>
-					</li>
-					<li class="tr">
-						<a href="http://home.ebse.co.kr/beginnerenglish" class="row">
-							<span class="cell xxl"><i class="cate">방송프로그램</i></span>
-							<span class="cell t_l">왕초보 영어</span>
-						</a>
-					</li>
-					<li class="tr">
-						<a href="/apps/afterschool/view.do?course_id=ECLIP000002422" class="row">
-							<span class="cell xxl"><i class="cate">방과후영어</i></span>
-							<span class="cell t_l">방과후 영어 - 방학 2017 Lv.3</span>
-						</a>
-					</li>
-					<li class="tr">
-						<a href="https://home.ebse.co.kr/funreadingstart" class="row">
-							<span class="cell xxl"><i class="cate">방송프로그램</i></span>
-							<span class="cell t_l">Fun Reading Starts Here! _펀리딩</span>
-						</a>
-					</li>
-				</ul>
-			</span>
-			<span class="half">
-				<h4 class="f_l">나의 학습방</h4>
-				<a href="/apps/mypage/myStudyList.do" class="bt txt s f_r"><i class="plus">더보기</i></a>
-				<ul class="table">
-					<li class="th">
-						<div class="row">
-							<span class="cell xxl">구분</span>
-							<span class="cell">학습이용내역</span>
-						</div>
-					</li>
-					<li class="tr">
-						<a href="https://home.ebse.co.kr/whoami" class="row">
-							<span class="cell xxl"><i class="cate">방송프로그램</i></span>
-							<span class="cell t_l">Who Am I ?</span>
-						</a>
-					</li>
-					<li class="tr">
-						<a href="/apps/afterschool/view.do?course_id=ECLIP000002422" class="row">
-							<span class="cell xxl"><i class="cate">방과후영어</i></span>
-							<span class="cell t_l">방과후 영어 - 방학 2017 Lv.3</span>
-						</a>
-					</li>
-					<li class="tr">
-						<a href="http://home.ebse.co.kr/aschool_ele1" class="row">
-							<span class="cell xxl"><i class="cate">방송프로그램</i></span>
-							<span class="cell t_l">방과후 영어</span>
-						</a>
-					</li>
-					<li class="tr">
-						<a href="http://home.ebse.co.kr/10mins_serina" class="row">
-							<span class="cell xxl"><i class="cate">방송프로그램</i></span>
-							<span class="cell t_l">매일 10분 영어 - 세리나의 누구나 톡톡 </span>
-						</a>
-					</li>
-					<li class="tr">
-						<a href="http://home.ebse.co.kr/theneweng1" class="row">
-							<span class="cell xxl"><i class="cate">방송프로그램</i></span>
-							<span class="cell t_l">더뉴 중학영어 1학년</span>
-						</a>
-					</li>
-				</ul>
-			</span>
 			<div class="title">
 				<h4 class="f_l">나의 활동내역</h4>
 				<a href="/apps/mypage/myPstList.do" class="bt txt s f_r"><i class="plus">더보기</i></a>
