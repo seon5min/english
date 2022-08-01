@@ -1147,6 +1147,37 @@ section.my .gray_box .box_con.friend_status_con .friend_layer:before { content: 
 section.my .gray_box .box_con.friend_status_con .friend_layer:before { border-color: transparent transparent #ebebeb transparent; border-width: 6px 6px 8px 6px; top: -14px; left: 269px; }
 section.my .gray_box .box_con.friend_status_con .friend_layer:after { border-color: transparent transparent #fff transparent; border-width: 5px 5px 7px 5px; top: -12px; left: 270px; }
 section.my .gray_box .box_con.friend_status_con .friend_layer .friend_close { position: absolute; top: 13px; right: 10px; width: 16px; height: 16px; background: url(../images/funreading/icon/ico_close_16.png) 0% 0% no-repeat; }
+section.my .gray_box .box_con.friend_status_con .contents {display: -webkit-box; display: -ms-flexbox; display: flex; text-align: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center;}
+section.my .myClasses {position:relative;margin: 20px 0 0;}
+section.my .c-SlideWrap {width: 100%;margin:0 auto;}
+section.my .classSlide .slick-slide {height: auto;}
+section.my .classSlide .slideWrap {position:relative;}
+section.my .imgWrap {margin-right: 20px; width: 100%; max-width: 180px; min-width: 180px;-webkit-transition: all 0.3s;transition: all 0.3s;}
+section.my .imgWrap img {width: 100%; max-width: 180px;}
+section.my .myflex_wrap {display: flex; width: 100%;}
+section.my .txtWrap {display: block;width: 100%;}
+section.my .txtWrap .classname_tit {border-bottom: 1px solid #8d8e8d; border-top: 1px solid #e6e7e7; background-color: #FAFAFA;padding-left: 15px;}
+section.my .className {display: table;height:62px;overflow:hidden;color:#0178BB;font-size:1.2rem;}
+section.my .className.mySchool {padding: 0 0 0 42px;background: url('https://www.ebse.co.kr/engBook/images/sub/ico_school.png') no-repeat left center;background-size:30px;}
+section.my .className span {display:table-cell; font-size: 1.5rem; vertical-align:middle;font-weight:500;-webkit-transition: all 0.3s;transition: all 0.3s;line-height: 1.2;}
+section.my .className img {margin-right:10px;}
+section.my .myflex_wrap .myclass_info > ul {display: flex; margin: 20px 0;}
+section.my .myflex_wrap .myclass_info > ul > li {display: flex;align-items: center;margin-right: 40px;}
+section.my .myflex_wrap .myclass_info > ul > li >span {font-size: 16px;font-weight: 400; color: #49596D; display: inline-block; margin-right: 5px;}
+
+section.my .myflex_wrap .myclass_info .classbook_con {display: flex;}
+section.my .myflex_wrap .myclass_info .classbook_tit {width: 100px; height: 28px; margin-right: 10px; display: flex; justify-content: center; align-items: center; min-width: 100px; color: #495A6E;border: 1px solid #495A6E; border-radius: 100px;}
+section.my .myflex_wrap .myclass_info .classbook_info em {display: flex; flex-direction: column;line-height: 1.25;margin-top: 5px;color: #000000; font-size: 16px;font-weight: 500;letter-spacing: -0.4px;}
+section.my .myflex_wrap .myclass_info .classbook_info .subtitle {margin-top: 20px; line-height: 1.25;}
+section.my .myflex_wrap .myclass_info > ul > li > .con_info {display: flex; align-items: center; justify-content: center; margin-right: 10px; border-radius: 30px;background-color: #495A6E;width:100px;height:28px;color:#fff;}
+section.my .slick-dots {display:none !important;}
+section.my .myflex_wrap .myclass_info > ul > li > .con_info:last-child {width:100px;}
+section.my button.arrow-slide {position:absolute;top:50%;width:40px;height:40px;text-indent:-9999px;background-size: 40px;margin-top:-20px;}
+section.my button.arrow-slide.prev {background: url('https://www.ebse.co.kr/engBook/images/sub/btn_back_arrow.png') no-repeat center 50%;left:1;}
+section.my button.arrow-slide.next {background: url('https://www.ebse.co.kr/engBook/images/sub/btn_next_arrow.png') no-repeat center 50%;right:1;}
+
+
+
 
 section.my .gray_box .box_con.reading_activities_con .contents {display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center;}
 section.my .gray_box .box_con.reading_activities_con .single_chart {width: 140px; height: 140px; margin-left: 40px;}
@@ -1206,6 +1237,10 @@ section.my .txtbook_eng h2 {color: #222; font-size: 30px; line-height: 1.5; lett
 section.my .txtbook_eng .guest_wrap {display: flex; justify-content: center; flex-direction: column; align-items: flex-start; color: #fff; padding-left: 30%; text-align: left; width: 100%; max-width: 980px; height: 134px; line-height: 1.3; background: #49596d url(../images/main/bg_guest.png); background-repeat: no-repeat; background-size: 272px; background-position: -16px -10px;}
 section.my .txtbook_eng .guest_wrap strong {margin-bottom: 15px; font-size: 1.6rem; width: 100%;}
 section.my .txtbook_eng .guest_wrap p {font-size: 1rem;}
+
+section.my .my_activity_wrap {display: block; width: 100%; max-width: 980px; margin: 10px auto 0;} 
+section.my .matching_learning_wrap {display: block; width: 100%; max-width: 980px; margin: 10px auto 60px;} 
+
 
 
 /******************** 기타 ********************/
@@ -1331,6 +1366,15 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 @media all and (max-width: 980px) {
 	section.guide .navi a {margin-right:12px;}
 	section.guide .navi a + a:before {content: "";left:-7px;}
+	section.my .txtbook_eng,section.my .my_activity_wrap,section.my .matching_learning_wrap{padding: 0 10px;}
+	section.my .gray_box .box_con.status_con .contents .learning_stage {padding-right: 20px;}	
+	section.my .gray_box .box_con.status_con .contents .progress {max-width: 160px;}
+	section.my .gray_box .box_tit h2 {font-size: 25px;}
+	section.my .gray_box .box_tit button.status_info {margin-left: 5px;}
+	section.my .myflex_wrap .myclass_info > ul > li {margin-right: 10px;}
+	section.my .myflex_wrap .myclass_info > ul > li > .con_info {width: 100px; max-width: 100px; min-width: 80px;}
+	section.my .myflex_wrap .myclass_info > ul > li >span {max-width: 50px;}
+	section.my .imgWrap {padding: 1px;}
 }
 
 @media screen and (max-width:740px) {
@@ -1354,6 +1398,13 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 	section.guide .guideCont .stepCont li {line-height: 20px;margin-bottom:10px;}
 
 	section.my button.myinfo_btn {display: none; opacity: 0;}
+
+	section.my .gray_box .box_con {width:100%;}
+	section.my .myflex_wrap {flex-direction: column; align-items: center;}
+	section.my .imgWrap {margin-left:0;margin-bottom: 5%;}
+	section.my .myflex_wrap .myclass_info > ul {flex-direction: column; }
+	section.my .myflex_wrap .myclass_info > ul > li {padding-bottom: 5px;}
+
 }
 
 @media all and (max-width: 980px) {

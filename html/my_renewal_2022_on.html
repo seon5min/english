@@ -20,8 +20,7 @@
 	<script src="../js/jquery-2.2.0.min.js"></script>
 	<script src="../js/slick.js"></script>
 	<script src="../js/common_new2020.js"></script>
-	<script src="../js/chartjs-plugin-labels.js"></script>
-	<script src="../js/ui_chart.js"></script>
+	<script src="../js/chart.min.js"></script>
 </head>
 
 <body class="sub">
@@ -242,9 +241,9 @@
 						</div>
 						<div class="learning_wrap">
 							<p class="learning_tot">오늘 학습현황 : 총 <span>0</span>권</p>
-							<div class="learning_phrase bubble_75">조금만 더 힘내요!</div>
+							<div class="learning_phrase bubble_100">조금만 더 힘내요!</div>
 							<!-- bubble_0, bubble_25, bubble_50, bubble_75, bubble_100 -->
-							<div class="progress step_75">
+							<div class="progress step_100">
 								<!-- step_0, step_25, step_50, step_75, step_100 -->
 								<div class="progress_inner">
 									<span class="learning_icon running"></span>
@@ -258,7 +257,7 @@
 				</div>
 			</div>
 
-			<div class="box_con friend_nodata friend_status_con">
+			<div class="box_con friend_status_con">
 				<div class="box_tit">
 					<div>
 						<h2>같은 레벨 친구들 학습 현황</h2>
@@ -271,13 +270,54 @@
 						<a href="" class="more_wrap"><span class="plus">레벨 테스트</span></a>
 					</div>
 					<div class="contents">
-						<img src="../images/common/nodata_01.png" alt="레벨 테스트 결과 없습니다.">
-						<p class="nodata_tit">레벨 테스트 결과 없습니다.</p>
-						<p class="nodata_txt">레벨테스트 결과에 따라 같은 레벨에 친구들의 학습현황을 확인 할 수 있습니다.</p>
-						<button class="nodata_btn">레벨 테스트 시작하기</button>
+						<canvas id="myChart"></canvas>
 					</div>
 				</div>
 			</div>
+			<script>
+				// Any of the following formats may be used
+				var ctx = document.getElementById('myChart');
+				var ctx = document.getElementById('myChart').getContext('2d');
+				var ctx = $('#myChart');
+				var ctx = 'myChart';
+				var ctx = document.getElementById('myChart');
+				var myChart = new Chart(ctx, {
+					type: 'bar',
+					data: {
+						labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+						datasets: [{
+							label: '# of Votes',
+							data: [12, 19, 3, 5, 2, 3],
+							backgroundColor: [
+								'rgba(255, 99, 132, 0.2)',
+								'rgba(54, 162, 235, 0.2)',
+								'rgba(255, 206, 86, 0.2)',
+								'rgba(75, 192, 192, 0.2)',
+								'rgba(153, 102, 255, 0.2)',
+								'rgba(255, 159, 64, 0.2)'
+							],
+							borderColor: [
+								'rgba(255, 99, 132, 1)',
+								'rgba(54, 162, 235, 1)',
+								'rgba(255, 206, 86, 1)',
+								'rgba(75, 192, 192, 1)',
+								'rgba(153, 102, 255, 1)',
+								'rgba(255, 159, 64, 1)'
+							],
+							borderWidth: 1
+						}]
+					},
+					options: {
+						scales: {
+							yAxes: [{
+								ticks: {
+									beginAtZero: true
+								}
+							}]
+						}
+					}
+				});
+			</script>
 			<div class="box_con reading_activities_con">
 				<div class="box_tit">
 					<div>
@@ -331,7 +371,7 @@
 				$('.box_con.reading_activities_con .info_close').on('click', function () { $('.box_con.reading_activities_con .info_layer').css('display', 'none'); });
 
 				$('.box_con.friend_status_con .status_info').on('click', function () { $('.box_con.friend_status_con .friend_layer').css('display', 'flex'); });
-				$('.box_con.friend_status_con .friend_close').on('click', function () { $('.box_con.friend_status_con .friend_layer').css('display', 'none'); });	
+				$('.box_con.friend_status_con .friend_close').on('click', function () { $('.box_con.friend_status_con .friend_layer').css('display', 'none'); });
 			</script>
 			<div class="box_con etizen_con">
 				<div class="box_tit">
@@ -379,12 +419,165 @@
 				<h2>교과서 영어</h2>
 				<a href="" class="more_wrap"><span class="plus">나의 교실</span></a>
 			</div>
-			<div class="guest_wrap">
-				<strong>등록된 교실이 없습니다.</strong>
-				<p>우리 학교, 우리 반을 찾아보세요.</p>
+			<div class="student_con">
+				<!-- .class_Slide -->
+				<div class="myClasses">
+					<div class="c-SlideWrap">
+						<div class="classSlide">
+							<div class="slideWrap">
+								<div class="myflex_wrap">
+									<div class="imgWrap"><img
+											src="https://static.ebs.co.kr/images/public/textbook/2019/02/21/16/10015728/20894176-3e36-470a-989b-8ecac961b32c.png"
+											alt="" /></div>
+									<div class="txtWrap">
+										<div class="classname_tit">
+											<p class="className mySchool"><span>강남 초등학교 3학년 1반</span></p>
+											<!-- 우리 반 교과서 일 경우 mySchool 클래스 추가 -->
+										</div>
+										<div class="myclass_info">
+											<ul>
+												<li>
+													<div class="con_info">선생님</div><span>운영자</span>
+												</li>
+												<li>
+													<div class="con_info">학생수</div><span>1명</span>
+												</li>
+												<li>
+													<div class="con_info">질문있어요!</div><span>0개</span>
+												</li>
+											</ul>
+											<div class="classbook_con">
+												<span class="classbook_tit">교과서 정보</span>
+												<div class="classbook_info">
+													<em>ELEMENTARY SCHOOL ENGLISH 3</em>
+													<em>(주)대교/이재근</em>
+													<p class="subtitle">영어를 배우면 마법 같은 일이 일어나요. 영화 속 영어 대사가 들리기 시작하고 영어
+														노래를 조금씩 흥얼거릴 수 있으며 다른 나라 사람들과 이야기하며 친구가 되고 더 넓은 세상에서 여러분의 꿈을 펼칠
+														수 있게
+														된답니다.
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slideWrap">
+								<div class="myflex_wrap">
+									<div class="imgWrap"><img
+											src="https://static.ebs.co.kr/images/public/textbook/2019/02/21/16/10015728/20894176-3e36-470a-989b-8ecac961b32c.png"
+											alt="" /></div>
+									<div class="txtWrap">
+										<div class="classname_tit">
+											<p class="className mySchool"><span>강남 초등학교 3학년 1반</span></p>
+											<!-- 우리 반 교과서 일 경우 mySchool 클래스 추가 -->
+										</div>
+										<div class="myclass_info">
+											<ul>
+												<li>
+													<div class="con_info">선생님</div><span>운영자</span>
+												</li>
+												<li>
+													<div class="con_info">학생수</div><span>1명</span>
+												</li>
+												<li>
+													<div class="con_info">질문있어요!</div><span>0개</span>
+												</li>
+											</ul>
+											<div class="classbook_con">
+												<span class="classbook_tit">교과서 정보</span>
+												<div class="classbook_info">
+													<em>ELEMENTARY SCHOOL ENGLISH 3</em>
+													<em>(주)대교/이재근</em>
+													<p class="subtitle">영어를 배우면 마법 같은 일이 일어나요. 영화 속 영어 대사가 들리기 시작하고 영어
+														노래를 조금씩 흥얼거릴 수 있으며 다른 나라 사람들과 이야기하며 친구가 되고 더 넓은 세상에서 여러분의 꿈을 펼칠
+														수 있게
+														된답니다.
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slideWrap">
+								<div class="myflex_wrap">
+									<div class="imgWrap"><img
+											src="https://static.ebs.co.kr/images/public/textbook/2019/02/21/16/10015728/20894176-3e36-470a-989b-8ecac961b32c.png"
+											alt="" /></div>
+									<div class="txtWrap">
+										<div class="classname_tit">
+											<p class="className mySchool"><span>강남 초등학교 3학년 1반</span></p>
+											<!-- 우리 반 교과서 일 경우 mySchool 클래스 추가 -->
+										</div>
+										<div class="myclass_info">
+											<ul>
+												<li>
+													<div class="con_info">선생님</div><span>운영자</span>
+												</li>
+												<li>
+													<div class="con_info">학생수</div><span>1명</span>
+												</li>
+												<li>
+													<div class="con_info">질문있어요!</div><span>0개</span>
+												</li>
+											</ul>
+											<div class="classbook_con">
+												<span class="classbook_tit">교과서 정보</span>
+												<div class="classbook_info">
+													<em>ELEMENTARY SCHOOL ENGLISH 3</em>
+													<em>(주)대교/이재근</em>
+													<p class="subtitle">영어를 배우면 마법 같은 일이 일어나요. 영화 속 영어 대사가 들리기 시작하고 영어
+														노래를 조금씩 흥얼거릴 수 있으며 다른 나라 사람들과 이야기하며 친구가 되고 더 넓은 세상에서 여러분의 꿈을 펼칠
+														수 있게
+														된답니다.
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button type="button" class="prev arrow-slide">이전</button>
+					<button type="button" class="next arrow-slide">다음</button>
+				</div>
+				<!-- /.class_Slide -->
 			</div>
 		</div>
+		<script>
+			/* CLASSES - SLIDER */
+			$("section.my .classSlide")
+				.on('init reInit beforeChange', function (event, slick, currentSlide, nextSlide) {
+					if (nextSlide > 9 && nextSlide < slick.slideCount) {
+						$('.slick-dots li').eq(9).addClass("none-active");
+						//$('section.my .c-SlideWrap').css('width','86%')
 
+					} else {
+						$('.slick-dots li').eq(9).removeClass("none-active");
+
+					}
+					for (i = 10; i < slick.slideCount; i++) {
+						$('.slick-dots li').eq(i).addClass("off")
+					}
+				})
+				.slick({
+					touchMove: true,
+					dots: true,
+					infinite: true,
+					slidesToShow: 1,	//1개씩 보여줌
+					slidesToScroll: 1,	//1개씩 이동
+					prevArrow: $(".arrow-slide.prev"),	//이전 버튼
+					nextArrow: $(".arrow-slide.next"),	//다음 버튼
+
+				});
+			if ($("section.my .myClasses .arrow-slide").hasClass('slick-hidden')) {
+				$('section.my .c-SlideWrap').css('width', '100%')
+			} else {
+				$('section.my .c-SlideWrap').css('width', '86%')
+			}
+		</script>
 		<div class="my_activity_wrap">
 			<div class="title">
 				<h4 class="f_l">나의 활동내역</h4>
