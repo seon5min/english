@@ -21,6 +21,7 @@
 	<script src="../js/slick.js"></script>
 	<script src="../js/common_new2020.js"></script>
 	<script src="../js/chart.min.js"></script>
+	<script src="../js/ui_chart.js"></script>
 </head>
 
 <body class="sub">
@@ -218,7 +219,9 @@
 			</div>
 		</div>
 
+		<!-- 6개 박스 -->
 		<div class="gray_box">
+			<!-- 나의 학습 현황 -->
 			<div class="box_con status_con">
 				<div class="box_tit">
 					<div>
@@ -256,12 +259,16 @@
 					</div>
 				</div>
 			</div>
-
+			<!-- //나의 학습 현황 -->
+			<!-- 같은 레벨 친구들 학습 현황 -->
 			<div class="box_con friend_status_con">
 				<div class="box_tit">
 					<div>
-						<h2>같은 레벨 친구들 학습 현황</h2>
-						<button type="button" class="status_info"><span class="blind">같은 레벨 친구들 학습 현황 안내</span></button>
+						<span class="status_con">
+							<h2>같은 레벨 친구들 학습 현황</h2>
+							<button type="button" class="status_info"><span class="blind">같은 레벨 친구들 학습 현황
+									안내</span></button>
+						</span>
 						<div class="friend_layer">
 							<p class="friend_txt">“같은 레벨 친구들 학습현황”은 EBSe 레벨 테스트 결과 에 따라 나와 같은 레벨 이용자들의 전일 평균 학습 현황을
 								제공합니다.</p>
@@ -270,54 +277,18 @@
 						<a href="" class="more_wrap"><span class="plus">레벨 테스트</span></a>
 					</div>
 					<div class="contents">
-						<canvas id="myChart"></canvas>
+						<canvas id="myChart" style="width:100%; height:250px; "></canvas>
 					</div>
 				</div>
 			</div>
 			<script>
-				// Any of the following formats may be used
-				var ctx = document.getElementById('myChart');
 				var ctx = document.getElementById('myChart').getContext('2d');
-				var ctx = $('#myChart');
-				var ctx = 'myChart';
-				var ctx = document.getElementById('myChart');
-				var myChart = new Chart(ctx, {
-					type: 'bar',
-					data: {
-						labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-						datasets: [{
-							label: '# of Votes',
-							data: [12, 19, 3, 5, 2, 3],
-							backgroundColor: [
-								'rgba(255, 99, 132, 0.2)',
-								'rgba(54, 162, 235, 0.2)',
-								'rgba(255, 206, 86, 0.2)',
-								'rgba(75, 192, 192, 0.2)',
-								'rgba(153, 102, 255, 0.2)',
-								'rgba(255, 159, 64, 0.2)'
-							],
-							borderColor: [
-								'rgba(255, 99, 132, 1)',
-								'rgba(54, 162, 235, 1)',
-								'rgba(255, 206, 86, 1)',
-								'rgba(75, 192, 192, 1)',
-								'rgba(153, 102, 255, 1)',
-								'rgba(255, 159, 64, 1)'
-							],
-							borderWidth: 1
-						}]
-					},
-					options: {
-						scales: {
-							yAxes: [{
-								ticks: {
-									beginAtZero: true
-								}
-							}]
-						}
-					}
-				});
+				var chartData = [8, 109, 13, 45];
+				var chartLabel = ['방송 프로그램', '교과서 영어', '펀리딩', '자기주도 학습'];
+				var myChart = new Chart(ctx, chartDataStatus(chartLabel, chartData));
 			</script>
+			<!-- //같은 레벨 친구들 학습 현황 -->
+			<!-- 나의 독서 활동 -->
 			<div class="box_con reading_activities_con">
 				<div class="box_tit">
 					<div>
@@ -363,16 +334,8 @@
 					</div>
 				</div>
 			</div>
-			<script>
-				$('.box_con.status_con .status_info').on('click', function () { $('.box_con.status_con .status_layer').css('display', 'flex'); });
-				$('.box_con.status_con .status_close').on('click', function () { $('.box_con.status_con .status_layer').css('display', 'none'); });
-
-				$('.box_con.reading_activities_con .reading_info').on('click', function () { $('.box_con.reading_activities_con .info_layer').css('display', 'flex'); });
-				$('.box_con.reading_activities_con .info_close').on('click', function () { $('.box_con.reading_activities_con .info_layer').css('display', 'none'); });
-
-				$('.box_con.friend_status_con .status_info').on('click', function () { $('.box_con.friend_status_con .friend_layer').css('display', 'flex'); });
-				$('.box_con.friend_status_con .friend_close').on('click', function () { $('.box_con.friend_status_con .friend_layer').css('display', 'none'); });
-			</script>
+			<!-- //나의 독서 활동 -->
+			<!-- 나의 e-tizen 지수 -->
 			<div class="box_con etizen_con">
 				<div class="box_tit">
 					<div>
@@ -388,6 +351,7 @@
 					</div>
 				</div>
 			</div>
+			<!-- //나의 e-tizen 지수 -->
 			<div class="box_con used_nodata content_used_con">
 				<div class="box_tit">
 					<div>
@@ -400,6 +364,7 @@
 					</div>
 				</div>
 			</div>
+			<!-- 최근 이용 콘텐츠 현황 -->
 			<div class="box_con study_nodata study_room_con">
 				<div class="box_tit">
 					<div>
@@ -412,8 +377,11 @@
 					</div>
 				</div>
 			</div>
+			<!-- //최근 이용 콘텐츠 현황 -->
 		</div>
+		<!-- //6개 박스 -->
 
+		<!-- 교과서 영어 -->
 		<div class="txtbook_eng">
 			<div class="txtbook_tit">
 				<h2>교과서 영어</h2>
@@ -548,36 +516,140 @@
 		</div>
 		<script>
 			/* CLASSES - SLIDER */
-			$("section.my .classSlide")
-				.on('init reInit beforeChange', function (event, slick, currentSlide, nextSlide) {
-					if (nextSlide > 9 && nextSlide < slick.slideCount) {
-						$('.slick-dots li').eq(9).addClass("none-active");
-						//$('section.my .c-SlideWrap').css('width','86%')
+			$("section.my .classSlide").on('init reInit beforeChange', function (event, slick, currentSlide, nextSlide) {
+				if (nextSlide > 9 && nextSlide < slick.slideCount) {
+					$('.slick-dots li').eq(9).addClass("none-active");
+				} else {
+					$('.slick-dots li').eq(9).removeClass("none-active");
+				}
+				for (i = 10; i < slick.slideCount; i++) {
+					$('.slick-dots li').eq(i).addClass("off")
+				}
+			}).slick({
+				touchMove: true,
+				dots: true,
+				infinite: true,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				prevArrow: $(".arrow-slide.prev"),
+				nextArrow: $(".arrow-slide.next"),
 
-					} else {
-						$('.slick-dots li').eq(9).removeClass("none-active");
-
-					}
-					for (i = 10; i < slick.slideCount; i++) {
-						$('.slick-dots li').eq(i).addClass("off")
-					}
-				})
-				.slick({
-					touchMove: true,
-					dots: true,
-					infinite: true,
-					slidesToShow: 1,	//1개씩 보여줌
-					slidesToScroll: 1,	//1개씩 이동
-					prevArrow: $(".arrow-slide.prev"),	//이전 버튼
-					nextArrow: $(".arrow-slide.next"),	//다음 버튼
-
-				});
+			});
 			if ($("section.my .myClasses .arrow-slide").hasClass('slick-hidden')) {
 				$('section.my .c-SlideWrap').css('width', '100%')
 			} else {
 				$('section.my .c-SlideWrap').css('width', '86%')
 			}
 		</script>
+		<!-- //교과서 영어 -->
+
+		<!-- 교과서 영어 - 교사 -->
+		<div class="txtbook_eng">
+			<div class="txtbook_tit">
+				<h2>교과서 영어</h2>
+				<a href="" class="more_wrap"><span class="plus">나의 교실</span></a>
+			</div>
+
+			<div class="t-myClass">
+				<div class="t-myClassWrap">
+					<section class="t-Slide">
+						<div class="card t-total">
+							<h6>전체 교실 현황</h6>
+							<ul class="t-info">
+								<li class="t-class"><span class="con_info">총 교실 수</span>2개</li>
+								<li class="t-member"><span class="con_info">총 학생 수</span>50명</li>
+								<li class="t-question"><span class="con_info">질문 있어요!</span>50개</li>
+							</ul>
+							<div class="c-list">
+								<ul>
+									<li>강남 초등학교 3학년 꽃님반</li>
+									<li>화곡 초등학교 3학년 1반</li>
+									<li>강북 초등학교 3학년 꽃님반</li>
+								</ul>
+							</div>
+						</div>
+						<div class="card t-detail">
+							<h6>3학년 꽃님반</h6>
+							<p>강남 초등학교</p>
+							<p>서울/강남</p>
+							<ul class="t-info">
+								<li class="t-member"><span class="con_info">학생 수</span>40명</li>
+								<li class="t-question"><span class="con_info">질문 있어요!</span>20개</li>
+								<li class="t-class"><span class="con_info">교실 수</span>20개</li>
+							</ul>
+							<div class="t-publish">
+								<em>교과서 정보</em>
+								<p>ELEMENTARY SCHOOL ENGLISH 3</p>
+								<p>(주)천재교육/함순애</p>
+							</div>
+						</div>
+						<div class="card t-detail">
+							<h6>3학년 1반</h6>
+							<p>강남 초등학교</p>
+							<p>서울/강남</p>
+							<ul class="t-info">
+								<li class="t-member"><span class="con_info">학생 수</span>40명</li>
+								<li class="t-question"><span class="con_info">질문 있어요!</span>20개</li>
+								<li class="t-class"><span class="con_info">교실 수</span>20개</li>
+							</ul>
+							<div class="t-publish">
+								<em>교과서 정보</em>
+								<p>ELEMENTARY SCHOOL ENGLISH 3</p>
+								<p>(주)천재교육/함순애</p>
+							</div>
+						</div>
+						<div class="card t-detail">
+							<h6>전체 교실 현황</h6>
+							<p>강남 초등학교</p>
+							<p>서울/강남</p>
+							<ul class="t-info">
+								<li class="t-member"><span class="con_info">학생 수</span>40명</li>
+								<li class="t-question"><span class="con_info">질문 있어요!</span>20개</li>
+								<li class="t-class"><span class="con_info">교실 수</span>20개</li>
+							</ul>
+							<div class="t-publish">
+								<em>교과서 정보</em>
+								<p>ELEMENTARY SCHOOL ENGLISH 3</p>
+								<p>(주)천재교육/함순애</p>
+							</div>
+						</div>
+						<div class="card t-detail">
+							<h6>전체 교실 현황</h6>
+							<p>강남 초등학교</p>
+							<p>서울/강남</p>
+							<ul class="t-info">
+								<li class="t-member"><span class="con_info">학생 수</span>40명</li>
+								<li class="t-question"><span class="con_info">질문 있어요!</span>20개</li>
+								<li class="t-class"><span class="con_info">교실 수</span>20개</li>
+							</ul>
+							<div class="t-publish">
+								<em>교과서 정보</em>
+								<p>ELEMENTARY SCHOOL ENGLISH 3</p>
+								<p>(주)천재교육/함순애</p>
+							</div>
+						</div>
+					</section>
+					<button type="button" class="arrow-slide prev">이전</button>
+					<button type="button" class="arrow-slide next">다음</button>
+				</div>
+			</div>
+
+
+
+		</div>
+		<script>
+			var sl = $('.t-Slide').slick(settings);
+
+			$(window).on('resize', function () {
+				if ($(window).width() > 980 && !sl.hasClass('slick-initialized')) {
+					$('.t-Slide').slick(settings);
+				}
+			});
+
+		</script>
+		<!-- //교과서 영어 -->
+
+		<!-- 나의 활동내역 -->
 		<div class="my_activity_wrap">
 			<div class="title">
 				<h4 class="f_l">나의 활동내역</h4>
@@ -753,6 +825,8 @@
 				</span>
 			</div>
 		</div>
+		<!-- //나의 활동내역 -->
+		<!-- 매칭 학습 현황 -->
 		<div class="matching_learning_wrap">
 			<div class="title">
 				<h4 class="f_l">매칭 학습 현황</h4>
@@ -775,6 +849,7 @@
 				</div>
 			</div>
 		</div>
+		<!-- //매칭 학습 현황 -->
 	</section>
 
 	<!--푸터-->

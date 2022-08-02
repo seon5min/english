@@ -1027,7 +1027,8 @@ section.my .gray_box {display: flex; flex-wrap: wrap; width: 100%; margin: 60px 
 section.my .gray_box .box_con {width: 50%;align-items: center;}
 section.my .gray_box .box_tit {display: flex;justify-content: space-between;flex-direction: column; padding: 0 10px;}
 section.my .gray_box .box_tit > div {display: flex;align-items: center;}
-section.my .gray_box .box_tit h2 {color: #222;font-size: 30px;line-height: 1.5;letter-spacing: -1.5px;text-align: left;}
+section.my .gray_box .box_tit > div > .status_box {display: flex;align-items: center;}
+section.my .gray_box .box_tit h2 {display: inline;color: #222;font-size: 30px;line-height: 1.5;letter-spacing: -1.5px;text-align: left;}
 section.my .gray_box .box_tit button.status_info {display: inline-block; width: 24px; height: 24px; margin-left: 9px; background: url(../images/common/ico_info_24.png) 50% 50% no-repeat; }
 section.my .gray_box .box_tit .plus { position: relative; color: #2d2a2a; }
 section.my .gray_box .box_tit .plus:before, section.my .gray_box .box_tit .plus:after { content: ""; position: absolute; top: 50%; left: -10px; transform: translate(-50%, -50%); background-color: #000; }
@@ -1148,6 +1149,7 @@ section.my .gray_box .box_con.friend_status_con .friend_layer:before { border-co
 section.my .gray_box .box_con.friend_status_con .friend_layer:after { border-color: transparent transparent #fff transparent; border-width: 5px 5px 7px 5px; top: -12px; left: 270px; }
 section.my .gray_box .box_con.friend_status_con .friend_layer .friend_close { position: absolute; top: 13px; right: 10px; width: 16px; height: 16px; background: url(../images/funreading/icon/ico_close_16.png) 0% 0% no-repeat; }
 section.my .gray_box .box_con.friend_status_con .contents {display: -webkit-box; display: -ms-flexbox; display: flex; text-align: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center;}
+section.my .gray_box .box_tit > div > .status_con {display: flex; align-items: center;}
 section.my .myClasses {position:relative;margin: 20px 0 0;}
 section.my .c-SlideWrap {width: 100%;margin:0 auto;}
 section.my .classSlide .slick-slide {height: auto;}
@@ -1241,7 +1243,32 @@ section.my .txtbook_eng .guest_wrap p {font-size: 1rem;}
 section.my .my_activity_wrap {display: block; width: 100%; max-width: 980px; margin: 10px auto 0;} 
 section.my .matching_learning_wrap {display: block; width: 100%; max-width: 980px; margin: 10px auto 60px;} 
 
-
+section.my .t-myClass {position: relative;}
+section.my .t-myClass h6 {display:block;margin-bottom:15px;text-align:center;font-size:1.6rem;color:#000;text-overflow: ellipsis;white-space: nowrap;overflow: hidden; text-decoration: none;} /* 2021-05-03 반명 말줄임표 */
+section.my .t-myClass .slick-slide {margin:0 10px;}
+section.my .t-myClass .t-myClassWrap {width:90%;margin:0 auto;}
+section.my .t-myClass .t-Slide .slideWrap {position:relative;}
+section.my .t-myClass .t-Slide div.card {padding: 30px 20px;height:475px;-webkit-transition: all 0.3s;transition: all 0.3s;} /* 2021-05-03 반명 말줄임표 */
+section.my .t-myClass .t-info li + li {margin-top:8px;}
+section.my .t-myClass .t-total { background-color: #49596d;}
+section.my .t-myClass .t-total h6 {margin-bottom:36px;color:#fff;-webkit-transition: all 0.3s;transition: all 0.3s;}
+section.my .t-myClass .t-total .t-info li {display:block;color:#fff;}
+section.my .t-myClass .t-total .t-info li.t-class span.con_info{background: #3387f2;border-color:#3387f2;}
+section.my .t-myClass .t-total .t-info li.t-member span.con_info{background: #2cc6a4;border-color:#2cc6a4;}
+section.my .t-myClass .t-total .t-info li.t-question span.con_info{background: #678ec7;border-color:#678ec7;}
+section.my .t-myClass .t-total .c-list {margin-top:30px;padding-top:20px;border-top:1px solid #808b99;}
+section.my .t-myClass .t-total .c-list li {display:block;margin-top:2px;font-weight:300;color:#fff;} 
+section.my .t-myClass .t-detail {background-color: #f3f3f3;}
+section.my .t-myClass .t-detail > p {text-align:center;}
+section.my .t-myClass .t-detail .t-info {margin-top:25px;}
+section.my .t-myClass .t-detail .t-info li span.con_info {border-color:#49596d;}
+section.my .t-myClass .t-detail .t-publish{margin:20px 0 30px;}
+section.my .t-myClass .t-detail .t-publish em{color:#146cd9; font-weight: 500;}
+section.my .t-myClass .t-detail .t-publish p{color:#49596d; letter-spacing: -0.5px;}
+section.my .t-myClass .t-detail .t-button {overflow:hidden;}
+section.my .t-myClass .t-detail .t-button a {float:left;width:49%;}
+section.my .t-myClass .t-detail .t-button a:first-child {width:100%;margin-bottom:5px;}
+section.my .t-myClass .t-detail .t-button a:last-child {float:right;}
 
 /******************** 기타 ********************/
 /* 온에어 & 편성표 */
@@ -1359,6 +1386,8 @@ section.guide .guideCont .stepCont li span {color:#ff6600;}
 section.guide .guideCont .stepCont .mgB30 {margin-bottom:30px;}
 section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 
+
+
 @media screen and (max-width:1140px) {
 	section.my button.myinfo_btn {float: right;padding-right: 39px;}
 }
@@ -1369,7 +1398,12 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 	section.my .txtbook_eng,section.my .my_activity_wrap,section.my .matching_learning_wrap{padding: 0 10px;}
 	section.my .gray_box .box_con.status_con .contents .learning_stage {padding-right: 20px;}	
 	section.my .gray_box .box_con.status_con .contents .progress {max-width: 160px;}
+	section.my .gray_box .box_tit > div {height: 85px;}
+	section.my .gray_box .box_tit .contents {margin: 0 0 50px 0;}
 	section.my .gray_box .box_tit h2 {font-size: 25px;}
+	section.my .gray_box .box_con.friend_status_con .box_tit > div > .status_con {display: inline; width:auto;}
+	section.my .gray_box .box_con.friend_status_con button.status_info {transform: translateY(-5px);}
+
 	section.my .gray_box .box_tit button.status_info {margin-left: 5px;}
 	section.my .myflex_wrap .myclass_info > ul > li {margin-right: 10px;}
 	section.my .myflex_wrap .myclass_info > ul > li > .con_info {width: 100px; max-width: 100px; min-width: 80px;}
@@ -1404,6 +1438,9 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 	section.my .imgWrap {margin-left:0;margin-bottom: 5%;}
 	section.my .myflex_wrap .myclass_info > ul {flex-direction: column; }
 	section.my .myflex_wrap .myclass_info > ul > li {padding-bottom: 5px;}
+	section.my button.arrow-slide {position:relative;top:30px;margin-bottom:10px;width:31px;height:31px;background-size: 31px;}
+	section.my button.arrow-slide.prev {background: url('https://www.ebse.co.kr/engBook/images/sub/btn_back_arrow.png'); background-size: 31px; left: 0;}
+	section.my button.arrow-slide.next {background: url('https://www.ebse.co.kr/engBook/images/sub/btn_next_arrow.png'); background-size: 31px; left: calc(100% - 63px);}
 
 }
 
@@ -1703,6 +1740,25 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 }
 
 @media all and (max-width: 740px) {
+
+	section.my .t-use .table li.tr .row .cell#t-button {position:static;}
+	section.my .t-myClass .arrow-slide {display:none;}
+	section.my .t-myClass h6 {margin-bottom: 3px;font-size:20px;}
+	section.my .t-myClass .t-myClassWrap {width:100%;}
+	section.my .t-myClass .t-info {overflow:hidden;}
+	section.my .t-myClass .t-info li{float:left;width:50%;}
+	section.my .t-myClass .t-info li + li {margin-top: 0px;}
+	section.my .t-myClass .t-info li:nth-child(n+3) {margin-top:7px;} /* 0730 추가 */
+	section.my .t-myClass .t-Slide div.card {height:auto;padding:15px;}
+	section.my .t-myClass .t-Slide div.card.t-total {height:auto;}
+	section.my .t-myClass .t-Slide div.card + div.card {margin-top:20px;}
+	section.my .t-myClass .t-total h6 {margin-bottom: 17px;}
+	section.my .t-myClass .t-total .c-list { margin-top: 17px;padding-top: 12px;}
+	section.my .t-myClass .t-total .c-list li {margin-top:0;}
+	section.my .t-myClass .t-total .t-info li:nth-child(n+3) {margin-top:7px;}
+	section.my .t-myClass .t-detail ul {margin-top: 16px;}
+	section.my .t-myClass .t-detail .t-publish {margin:11px 0px;}
+
 	body.sub { min-width: 360px; }
 	body.sub nav.gnbWrap .gnb {border-bottom: 1px solid #dcdcdc;}
 	body.sub header.fix nav.gnbWrap .gnb ul.menu { display:none; }
