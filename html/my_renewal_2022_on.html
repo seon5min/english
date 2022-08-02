@@ -319,22 +319,41 @@
 								<p class="reading_tit">오늘 완독수<button type="button" class="reading_info"><span
 											class="blind">오늘 완독수 안내</span></button></p>
 								<span class="dotted-line"></span>
-								<p class="reading_count zero">없음</p>
+								<p class="reading_count highlight"><span>3562</span>권</p>
 							</div>
 							<div class="week_reading">
-								<p class="reading_tit">주간 평균 완독수</p><span class="dotted-line"></span>
-								<p class="reading_count zero">없음</p>
+								<p class="reading_tit">주간 평균 완독수</p>
+								<span class="dotted-line"></span>
+								<p class="reading_count"><span>1114</span>권</p>
 							</div>
 							<div class="month_reading">
 								<p class="reading_tit">월간 완독 목표</p>
 								<span class="dotted-line"></span>
-								<div class="reading_count zero">없음</div>
+								<div class="reading_count">
+									<p class="highlight"><span>830</span>권</p>
+									<div class="mon_divider">
+										<span class="divider"></span>
+										<p class="reading_tot">
+											<span>780</span>권
+										</p>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<!-- //나의 독서 활동 -->
+			<script>
+				$('.box_con.status_con .status_info').on('click', function () { $('.box_con.status_con .status_layer').css('display', 'flex'); });
+				$('.box_con.status_con .status_close').on('click', function () { $('.box_con.status_con .status_layer').css('display', 'none'); });
+
+				$('.box_con.reading_activities_con .reading_info').on('click', function () { $('.box_con.reading_activities_con .info_layer').css('display', 'flex'); });
+				$('.box_con.reading_activities_con .info_close').on('click', function () { $('.box_con.reading_activities_con .info_layer').css('display', 'none'); });
+
+				$('.box_con.friend_status_con .status_info').on('click', function () { $('.box_con.friend_status_con .friend_layer').css('display', 'flex'); });
+				$('.box_con.friend_status_con .friend_close').on('click', function () { $('.box_con.friend_status_con .friend_layer').css('display', 'none'); });
+			</script>
 			<!-- 나의 e-tizen 지수 -->
 			<div class="box_con etizen_con">
 				<div class="box_tit">
@@ -359,8 +378,7 @@
 						<a href="" class="more_wrap"><span class="plus">자세히</span></a>
 					</div>
 					<div class="contents">
-						<img src="../images/common/nodata_02.png" alt="최근 이용한 콘텐츠가 없습니다.">
-						<p class="used_tit">최근 이용한 콘텐츠가 없습니다.</p>
+
 					</div>
 				</div>
 			</div>
@@ -372,8 +390,7 @@
 						<a href="" class="more_wrap"><span class="plus">자세히</span></a>
 					</div>
 					<div class="contents">
-						<img src="../images/common/nodata_03.png" alt="수강중인 프로그램 및 강좌가 없습니다.">
-						<p class="study_tit">수강중인 프로그램 및 강좌가 없습니다.</p>
+
 					</div>
 				</div>
 			</div>
@@ -388,7 +405,93 @@
 				<a href="" class="more_wrap"><span class="plus">나의 교실</span></a>
 			</div>
 			<div class="student_con">
-				<!-- .class_Slide -->
+				<!-- 교과서 영어 - 교사 -->
+				<div class="t-myClass">
+					<div class="t-myClassWrap">
+						<section class="t-Slide">
+							<div class="card t-total">
+								<h6>전체 교실 현황</h6>
+								<ul class="t-info">
+									<li class="t-class"><span class="con_info">총 교실 수</span>2개</li>
+									<li class="t-member"><span class="con_info">총 학생 수</span>50명</li>
+									<li class="t-question"><span class="con_info">질문 있어요!</span>50개</li>
+								</ul>
+								<div class="c-list">
+									<ul>
+										<li>강남 초등학교 3학년 꽃님반</li>
+										<li>화곡 초등학교 3학년 1반</li>
+										<li>강북 초등학교 3학년 꽃님반</li>
+									</ul>
+								</div>
+							</div>
+							<div class="card t-detail">
+								<h6>3학년 꽃님반</h6>
+								<p>강남 초등학교</p>
+								<p>서울/강남</p>
+								<ul class="t-info">
+									<li class="t-member"><span class="con_info">학생 수</span>40명</li>
+									<li class="t-question"><span class="con_info">질문 있어요!</span>20개</li>
+									<li class="t-class"><span class="con_info">교실 수</span>20개</li>
+								</ul>
+								<div class="t-publish">
+									<em>교과서 정보</em>
+									<p>ELEMENTARY SCHOOL ENGLISH 3</p>
+									<p>(주)천재교육/함순애</p>
+								</div>
+							</div>
+							<div class="card t-detail">
+								<h6>3학년 1반</h6>
+								<p>강남 초등학교</p>
+								<p>서울/강남</p>
+								<ul class="t-info">
+									<li class="t-member"><span class="con_info">학생 수</span>40명</li>
+									<li class="t-question"><span class="con_info">질문 있어요!</span>20개</li>
+									<li class="t-class"><span class="con_info">교실 수</span>20개</li>
+								</ul>
+								<div class="t-publish">
+									<em>교과서 정보</em>
+									<p>ELEMENTARY SCHOOL ENGLISH 3</p>
+									<p>(주)천재교육/함순애</p>
+								</div>
+							</div>
+							<div class="card t-detail">
+								<h6>전체 교실 현황</h6>
+								<p>강남 초등학교</p>
+								<p>서울/강남</p>
+								<ul class="t-info">
+									<li class="t-member"><span class="con_info">학생 수</span>40명</li>
+									<li class="t-question"><span class="con_info">질문 있어요!</span>20개</li>
+									<li class="t-class"><span class="con_info">교실 수</span>20개</li>
+								</ul>
+								<div class="t-publish">
+									<em>교과서 정보</em>
+									<p>ELEMENTARY SCHOOL ENGLISH 3</p>
+									<p>(주)천재교육/함순애</p>
+								</div>
+							</div>
+							<div class="card t-detail">
+								<h6>전체 교실 현황</h6>
+								<p>강남 초등학교</p>
+								<p>서울/강남</p>
+								<ul class="t-info">
+									<li class="t-member"><span class="con_info">학생 수</span>40명</li>
+									<li class="t-question"><span class="con_info">질문 있어요!</span>20개</li>
+									<li class="t-class"><span class="con_info">교실 수</span>20개</li>
+								</ul>
+								<div class="t-publish">
+									<em>교과서 정보</em>
+									<p>ELEMENTARY SCHOOL ENGLISH 3</p>
+									<p>(주)천재교육/함순애</p>
+								</div>
+							</div>
+						</section>
+						<button type="button" class="arrow-slide prev">이전</button>
+						<button type="button" class="arrow-slide next">다음</button>
+					</div>
+				</div>
+				<!-- //교과서 영어 - 교사 -->
+
+				<!-- 교과서 영어 - 학생 -->
 				<div class="myClasses">
 					<div class="c-SlideWrap">
 						<div class="classSlide">
@@ -400,7 +503,6 @@
 									<div class="txtWrap">
 										<div class="classname_tit">
 											<p class="className mySchool"><span>강남 초등학교 3학년 1반</span></p>
-											<!-- 우리 반 교과서 일 경우 mySchool 클래스 추가 -->
 										</div>
 										<div class="myclass_info">
 											<ul>
@@ -511,9 +613,12 @@
 					<button type="button" class="prev arrow-slide">이전</button>
 					<button type="button" class="next arrow-slide">다음</button>
 				</div>
-				<!-- /.class_Slide -->
+				<!-- //교과서 영어 - 학생 -->
 			</div>
 		</div>
+		<!-- //교과서 영어 -->
+
+
 		<script>
 			/* CLASSES - SLIDER */
 			$("section.my .classSlide").on('init reInit beforeChange', function (event, slick, currentSlide, nextSlide) {
@@ -536,110 +641,34 @@
 
 			});
 			if ($("section.my .myClasses .arrow-slide").hasClass('slick-hidden')) {
-				$('section.my .c-SlideWrap').css('width', '100%')
+				$('section.my .c-SlideWrap').css('width', '100%');
 			} else {
-				$('section.my .c-SlideWrap').css('width', '86%')
+				$('section.my .c-SlideWrap').css('width', '86%');
 			}
-		</script>
-		<!-- //교과서 영어 -->
-
-		<!-- 교과서 영어 - 교사 -->
-		<div class="txtbook_eng">
-			<div class="txtbook_tit">
-				<h2>교과서 영어</h2>
-				<a href="" class="more_wrap"><span class="plus">나의 교실</span></a>
-			</div>
-
-			<div class="t-myClass">
-				<div class="t-myClassWrap">
-					<section class="t-Slide">
-						<div class="card t-total">
-							<h6>전체 교실 현황</h6>
-							<ul class="t-info">
-								<li class="t-class"><span class="con_info">총 교실 수</span>2개</li>
-								<li class="t-member"><span class="con_info">총 학생 수</span>50명</li>
-								<li class="t-question"><span class="con_info">질문 있어요!</span>50개</li>
-							</ul>
-							<div class="c-list">
-								<ul>
-									<li>강남 초등학교 3학년 꽃님반</li>
-									<li>화곡 초등학교 3학년 1반</li>
-									<li>강북 초등학교 3학년 꽃님반</li>
-								</ul>
-							</div>
-						</div>
-						<div class="card t-detail">
-							<h6>3학년 꽃님반</h6>
-							<p>강남 초등학교</p>
-							<p>서울/강남</p>
-							<ul class="t-info">
-								<li class="t-member"><span class="con_info">학생 수</span>40명</li>
-								<li class="t-question"><span class="con_info">질문 있어요!</span>20개</li>
-								<li class="t-class"><span class="con_info">교실 수</span>20개</li>
-							</ul>
-							<div class="t-publish">
-								<em>교과서 정보</em>
-								<p>ELEMENTARY SCHOOL ENGLISH 3</p>
-								<p>(주)천재교육/함순애</p>
-							</div>
-						</div>
-						<div class="card t-detail">
-							<h6>3학년 1반</h6>
-							<p>강남 초등학교</p>
-							<p>서울/강남</p>
-							<ul class="t-info">
-								<li class="t-member"><span class="con_info">학생 수</span>40명</li>
-								<li class="t-question"><span class="con_info">질문 있어요!</span>20개</li>
-								<li class="t-class"><span class="con_info">교실 수</span>20개</li>
-							</ul>
-							<div class="t-publish">
-								<em>교과서 정보</em>
-								<p>ELEMENTARY SCHOOL ENGLISH 3</p>
-								<p>(주)천재교육/함순애</p>
-							</div>
-						</div>
-						<div class="card t-detail">
-							<h6>전체 교실 현황</h6>
-							<p>강남 초등학교</p>
-							<p>서울/강남</p>
-							<ul class="t-info">
-								<li class="t-member"><span class="con_info">학생 수</span>40명</li>
-								<li class="t-question"><span class="con_info">질문 있어요!</span>20개</li>
-								<li class="t-class"><span class="con_info">교실 수</span>20개</li>
-							</ul>
-							<div class="t-publish">
-								<em>교과서 정보</em>
-								<p>ELEMENTARY SCHOOL ENGLISH 3</p>
-								<p>(주)천재교육/함순애</p>
-							</div>
-						</div>
-						<div class="card t-detail">
-							<h6>전체 교실 현황</h6>
-							<p>강남 초등학교</p>
-							<p>서울/강남</p>
-							<ul class="t-info">
-								<li class="t-member"><span class="con_info">학생 수</span>40명</li>
-								<li class="t-question"><span class="con_info">질문 있어요!</span>20개</li>
-								<li class="t-class"><span class="con_info">교실 수</span>20개</li>
-							</ul>
-							<div class="t-publish">
-								<em>교과서 정보</em>
-								<p>ELEMENTARY SCHOOL ENGLISH 3</p>
-								<p>(주)천재교육/함순애</p>
-							</div>
-						</div>
-					</section>
-					<button type="button" class="arrow-slide prev">이전</button>
-					<button type="button" class="arrow-slide next">다음</button>
-				</div>
-			</div>
-
-
-
-		</div>
-		<script>
+			/* MYSCHOOL - SLIDER */
+			const settings = {
+				touchMove: true,
+				dots: false,
+				infinite: true,
+				slidesToShow: 3,	//3개씩 보여줌
+				slidesToScroll: 1,	//1개씩 이동
+				prevArrow: $(".arrow-slide.prev"),	//이전 버튼
+				nextArrow: $(".arrow-slide.next"),		//다음 버튼
+				responsive: [
+					{
+						breakpoint: 980,
+						settings: {
+							slidesToShow: 3,
+							slidesToScroll: 1
+						}
+					},
+					{
+						breakpoint: 769,
+						settings: "unslick"
+					}
+				]
+			};
 			var sl = $('.t-Slide').slick(settings);
-
 			$(window).on('resize', function () {
 				if ($(window).width() > 980 && !sl.hasClass('slick-initialized')) {
 					$('.t-Slide').slick(settings);
@@ -983,7 +1012,7 @@
 			<button type="button" class="bt ico top" style="display: block;">맨위</button>
 		</div>
 	</footer>
-	<!--//푸터-->
+	<!— //푸터—>
 </body>
 
 </html>

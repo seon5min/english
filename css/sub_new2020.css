@@ -1025,7 +1025,7 @@ section.my button.myinfo_btn .ico_myinfo::after {position: absolute; top: -6px; 
 
 section.my .gray_box {display: flex; flex-wrap: wrap; width: 100%; margin: 60px auto 0; max-width: 1000px;}
 section.my .gray_box .box_con {width: 50%;align-items: center;}
-section.my .gray_box .box_tit {display: flex;justify-content: space-between;flex-direction: column; padding: 0 10px;}
+section.my .gray_box .box_tit {display: flex;justify-content: space-between;flex-direction: column; padding: 0 20px;}
 section.my .gray_box .box_tit > div {display: flex;align-items: center;}
 section.my .gray_box .box_tit > div > .status_box {display: flex;align-items: center;}
 section.my .gray_box .box_tit h2 {display: inline;color: #222;font-size: 30px;line-height: 1.5;letter-spacing: -1.5px;text-align: left;}
@@ -1140,8 +1140,8 @@ section.my .gray_box .box_con.status_con .status_close { position: absolute; top
 section.my .gray_box .box_con.friend_nodata .nodata_tit {color: #222222;font-size: 20px; line-height: 1.25; letter-spacing: -.5px; padding:10px 87px 0; font-weight: 500;}
 section.my .gray_box .box_con.friend_nodata .nodata_txt {color: #222222;font-size: 16px; line-height: 1.35; letter-spacing: -.5px; text-align: center; padding:10px 87px; font-weight: 400;}
 section.my .gray_box .box_con.friend_nodata .nodata_btn {display:flex; align-items: center; justify-content: center; background-color: #3D4C6B; width:100%; max-width: 292px; height: 48px; color: #fff;font-size: 20px; line-height: 1; letter-spacing: -.5px; text-align: center; padding:8px 47px; font-weight: 400;}
-section.my .gray_box .box_con.used_nodata .used_tit {color: #222222;font-size: 20px; line-height: 1.25; letter-spacing: -.5px; padding:16px 53px 0; font-weight: 500;}
-section.my .gray_box .box_con.study_nodata .study_tit {color: #222222;font-size: 20px; line-height: 1.25; letter-spacing: -.5px; padding:16px 53px 0; font-weight: 500;}
+section.my .gray_box .box_con.used_nodata .used_tit {text-align: center;color: #222222;font-size: 20px; line-height: 1.25; letter-spacing: -.5px; padding:16px 53px 0; font-weight: 500;}
+section.my .gray_box .box_con.study_nodata .study_tit {text-align: center;color: #222222;font-size: 20px; line-height: 1.25; letter-spacing: -.5px; padding:16px 53px 0; font-weight: 500;}
 section.my .gray_box .box_con.friend_status_con .friend_layer { position: absolute; display: none; align-items: center; box-sizing: border-box; top: 48px; left: 13%; width:100%; max-width: 414px; height: 162px; padding: 30px 40px; text-align: center; word-break: keep-all; font-size: 14px; line-height: 1.25; color: #8790a2; background: #fff; border: 1px solid #ebebeb; border-radius: 5px 5px 5px 0px; box-shadow: 0px 4px 20px #0000001a; }
 section.my .gray_box .box_con.friend_status_con .friend_layer:after,
 section.my .gray_box .box_con.friend_status_con .friend_layer:before { content: ""; display: block; position: absolute; left: 0; top: -11px; width: 0; height: 0; border-style: solid; }
@@ -1178,9 +1178,6 @@ section.my button.arrow-slide {position:absolute;top:50%;width:40px;height:40px;
 section.my button.arrow-slide.prev {background: url('https://www.ebse.co.kr/engBook/images/sub/btn_back_arrow.png') no-repeat center 50%;left:1;}
 section.my button.arrow-slide.next {background: url('https://www.ebse.co.kr/engBook/images/sub/btn_next_arrow.png') no-repeat center 50%;right:1;}
 
-
-
-
 section.my .gray_box .box_con.reading_activities_con .contents {display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center;}
 section.my .gray_box .box_con.reading_activities_con .single_chart {width: 140px; height: 140px; margin-left: 40px;}
 section.my .gray_box .box_con.reading_activities_con .circular_chart { fill: #fff; max-width: 140px; max-height: 140px; margin: 0 auto; }
@@ -1192,7 +1189,9 @@ section.my .gray_box .box_con.reading_activities_con .num_detail_con {width: 100
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading,
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .week_reading,
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .month_reading { display: -ms-flexbox; display: flex; align-items: center; margin-bottom: 25px; }
-section.my .gray_box .box_con.reading_activities_con .num_detail_con .month_reading {margin-bottom: 0;}
+section.my .gray_box .box_con.reading_activities_con .num_detail_con .month_reading {margin-bottom: 0; }
+section.my .gray_box .box_con.reading_activities_con .num_detail_con .month_reading .reading_count  .mon_divider {display: flex;}
+section.my .gray_box .box_con.reading_activities_con .num_detail_con .month_reading .reading_count {flex-direction: column;align-items: flex-end;}
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_tit { display: flex; align-items: center; flex-shrink: 0; margin-right: 12px; font-size: 18px; line-height: 1.2; font-weight: 400; color: #222; letter-spacing: -0.8px; }
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .info_layer { position: absolute; display: none; align-items: center; box-sizing: border-box; top: -160px; left: 16%; width:100%; max-width: 208px; height: 148px; text-align: center; word-break: keep-all; font-size: 14px; color: #8790a2; background: #fff; border: 1px solid #ebebeb; border-radius: 5px 5px 5px 0px; box-shadow: 0px 4px 20px #0000001a; }
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .info_layer:after,
@@ -1244,27 +1243,30 @@ section.my .my_activity_wrap {display: block; width: 100%; max-width: 980px; mar
 section.my .matching_learning_wrap {display: block; width: 100%; max-width: 980px; margin: 10px auto 60px;} 
 
 section.my .t-myClass {position: relative;}
-section.my .t-myClass h6 {display:block;margin-bottom:15px;text-align:center;font-size:1.6rem;color:#000;text-overflow: ellipsis;white-space: nowrap;overflow: hidden; text-decoration: none;} /* 2021-05-03 반명 말줄임표 */
-section.my .t-myClass .slick-slide {margin:0 10px;}
-section.my .t-myClass .t-myClassWrap {width:90%;margin:0 auto;}
+section.my .t-myClass h6 {display: block; margin-bottom: 15px; text-align: center; font-size: 1.6rem; color: #000; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; font-weight: bold; text-decoration: none; letter-spacing: -.45px; } /* 2021-05-03 반명 말줄임표 */
+section.my .t-myClass .slick-slide {margin:0 10px;height: auto;}
+section.my .t-myClass .t-myClassWrap {width: 90%; margin: 0 auto; }
+section.my section.t-Slide {padding-top:0;overflow: hidden; width: 100%; max-width: 980px;    min-width: auto;}
 section.my .t-myClass .t-Slide .slideWrap {position:relative;}
-section.my .t-myClass .t-Slide div.card {padding: 30px 20px;height:475px;-webkit-transition: all 0.3s;transition: all 0.3s;} /* 2021-05-03 반명 말줄임표 */
+section.my .t-myClass .t-Slide div.card {position: inherit;padding: 30px 20px;height:475px;-webkit-transition: all 0.3s;transition: all 0.3s;} /* 2021-05-03 반명 말줄임표 */
+section.my .t-myClass .card:before {display: none;}
 section.my .t-myClass .t-info li + li {margin-top:8px;}
 section.my .t-myClass .t-total { background-color: #49596d;}
 section.my .t-myClass .t-total h6 {margin-bottom:36px;color:#fff;-webkit-transition: all 0.3s;transition: all 0.3s;}
 section.my .t-myClass .t-total .t-info li {display:block;color:#fff;}
-section.my .t-myClass .t-total .t-info li.t-class span.con_info{background: #3387f2;border-color:#3387f2;}
-section.my .t-myClass .t-total .t-info li.t-member span.con_info{background: #2cc6a4;border-color:#2cc6a4;}
-section.my .t-myClass .t-total .t-info li.t-question span.con_info{background: #678ec7;border-color:#678ec7;}
+section.my .t-myClass span.con_info{display: inline-block; margin-right: 10px; width: 100px; height: 28px; font-size: 0.875rem; font-weight: 400; line-height: 26px; text-align: center; background: transparent; border: 1px solid #fff; border-radius: 30px;}
+section.my .t-myClass .t-total .t-info li.t-class span.con_info{ font-weight: 400; line-height: 26px; text-align: center; background: transparent; border: 1px solid #fff; border-radius: 30px;background: #3387f2;border-color:#3387f2;}
+section.my .t-myClass .t-total .t-info li.t-member span.con_info{font-weight: 400; line-height: 26px; text-align: center; background: transparent; border: 1px solid #fff; border-radius: 30px;background: #2cc6a4;border-color:#2cc6a4;}
+section.my .t-myClass .t-total .t-info li.t-question span.con_info{font-weight: 400; line-height: 26px; text-align: center; background: transparent; border: 1px solid #fff; border-radius: 30px;background: #678ec7;border-color:#678ec7;}
 section.my .t-myClass .t-total .c-list {margin-top:30px;padding-top:20px;border-top:1px solid #808b99;}
-section.my .t-myClass .t-total .c-list li {display:block;margin-top:2px;font-weight:300;color:#fff;} 
+section.my .t-myClass .t-total .c-list li {display:block;margin-top:2px;font-weight:300;color:#fff;line-height: 1.25;} 
 section.my .t-myClass .t-detail {background-color: #f3f3f3;}
-section.my .t-myClass .t-detail > p {text-align:center;}
+section.my .t-myClass .t-detail > p {text-align: center; line-height: 1.5; letter-spacing: -.4px;}
 section.my .t-myClass .t-detail .t-info {margin-top:25px;}
 section.my .t-myClass .t-detail .t-info li span.con_info {border-color:#49596d;}
-section.my .t-myClass .t-detail .t-publish{margin:20px 0 30px;}
-section.my .t-myClass .t-detail .t-publish em{color:#146cd9; font-weight: 500;}
-section.my .t-myClass .t-detail .t-publish p{color:#49596d; letter-spacing: -0.5px;}
+section.my .t-myClass .t-detail .t-publish{line-height: 1.5;margin:20px 0 30px;}
+section.my .t-myClass .t-detail .t-publish em{line-height: 1.5;color:#146cd9; font-weight: 500;}
+section.my .t-myClass .t-detail .t-publish p{line-height: 1.35;color:#49596d; letter-spacing: -0.5px;}
 section.my .t-myClass .t-detail .t-button {overflow:hidden;}
 section.my .t-myClass .t-detail .t-button a {float:left;width:49%;}
 section.my .t-myClass .t-detail .t-button a:first-child {width:100%;margin-bottom:5px;}
@@ -1395,13 +1397,13 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 @media all and (max-width: 980px) {
 	section.guide .navi a {margin-right:12px;}
 	section.guide .navi a + a:before {content: "";left:-7px;}
-	section.my .txtbook_eng,section.my .my_activity_wrap,section.my .matching_learning_wrap{padding: 0 10px;}
+	section.my .txtbook_eng,section.my .my_activity_wrap,section.my .matching_learning_wrap{padding: 0 20px;}
 	section.my .gray_box .box_con.status_con .contents .learning_stage {padding-right: 20px;}	
 	section.my .gray_box .box_con.status_con .contents .progress {max-width: 160px;}
 	section.my .gray_box .box_tit > div {height: 85px;}
 	section.my .gray_box .box_tit .contents {margin: 0 0 50px 0;}
-	section.my .gray_box .box_tit h2 {font-size: 25px;}
-	section.my .gray_box .box_con.friend_status_con .box_tit > div > .status_con {display: inline; width:auto;}
+	section.my .gray_box .box_tit h2 {font-size: 25px;line-height: 1.35;}
+	section.my .gray_box .box_con.friend_status_con .box_tit > div > .status_con {display: inline; width:20vh;}
 	section.my .gray_box .box_con.friend_status_con button.status_info {transform: translateY(-5px);}
 
 	section.my .gray_box .box_tit button.status_info {margin-left: 5px;}
@@ -1409,6 +1411,21 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 	section.my .myflex_wrap .myclass_info > ul > li > .con_info {width: 100px; max-width: 100px; min-width: 80px;}
 	section.my .myflex_wrap .myclass_info > ul > li >span {max-width: 50px;}
 	section.my .imgWrap {padding: 1px;}
+
+	section.my .gray_box .box_con.reading_activities_con .num_detail_con {margin-right: 15px;}
+	section.my .gray_box .box_con.reading_activities_con .single_chart {margin-right: 3%;width: 140px; height: 140px; margin-left: 10px; min-width: 120px;display: flex; justify-content: center; align-items: center; }
+	section.my .gray_box .box_con.reading_activities_con .contents {justify-content: center;}
+	section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_tit,section.my .gray_box .box_con.reading_activities_con .num_detail_con .highlight {font-size: 16px;}
+	section.my .gray_box .box_con.friend_status_con .friend_layer {top:87px;left: 2%;max-width: 320px;}
+	section.my .gray_box .box_con.friend_status_con .friend_layer:before {left: 116px;}
+	section.my .gray_box .box_con.friend_status_con .friend_layer:after {left: 117px;}
+	section.my .gray_box .box_con.status_con .status_layer {top: 67px; left: 10%;max-width: 320px;}
+	section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .info_layer {left: auto;right:1%;}
+	section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .info_layer:before {left: 84px;}
+	section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .info_layer:after {left: 83px;}
+	section.my .gray_box .box_con.status_con .contents .learning_stage > img {width: 90%;}
+	section.my .gray_box .box_con.friend_nodata .nodata_txt {padding: 10px 27px;}
+	section.my .gray_box .box_con.friend_nodata .nodata_tit {padding: 10px 17px 0;}
 }
 
 @media screen and (max-width:740px) {
@@ -1441,7 +1458,25 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 	section.my button.arrow-slide {position:relative;top:30px;margin-bottom:10px;width:31px;height:31px;background-size: 31px;}
 	section.my button.arrow-slide.prev {background: url('https://www.ebse.co.kr/engBook/images/sub/btn_back_arrow.png'); background-size: 31px; left: 0;}
 	section.my button.arrow-slide.next {background: url('https://www.ebse.co.kr/engBook/images/sub/btn_next_arrow.png'); background-size: 31px; left: calc(100% - 63px);}
+	section.my .gray_box .box_con.study_nodata .study_tit,section.my .gray_box .box_con.used_nodata .used_tit {font-size: 18px;padding: 16px 10px 0;}
 
+	section.my .gray_box .box_con.status_con .contents .learning_tot{font-size: 16px;}
+	section.my .gray_box .box_con.status_con .contents .learning_phrase {font-size: 16px;height: auto;}
+	section.my .gray_box .box_con.status_con .contents .progress .learning_gauge {left: 0;}
+	section.my .gray_box .box_tit .contents {height: 220px;}
+	section.my .gray_box .box_con.friend_nodata .nodata_tit {font-size: 18px; padding: 10px 10px 0;}
+	section.my .gray_box .box_con.friend_nodata .nodata_txt {font-size: 14px;padding: 10px 40px;}
+	section.my .gray_box .box_con.friend_nodata .nodata_btn {padding: 8px 20px;font-size: 16px; height:38px; max-width: 200px;}
+	section.my .gray_box .box_con.friend_nodata .contents img {max-width: 50px; height: 50px;}
+	section.my .gray_box .box_con.status_con .contents .learning_stage { padding-right: 3vw;}
+
+	section.my .gray_box .box_con.friend_nodata .contents > img, section.my .gray_box .box_con.used_nodata .contents > img, section.my .gray_box .box_con.study_nodata .contents > img { max-width: 58px;}
+	section.my .txtbook_eng .guest_wrap {height: 298px; padding: 0; background-position: 50% 15%; align-items: center; justify-content: flex-end; text-align: center; padding-bottom: 30px; background-size: 240px;}
+	section.my .gray_box .box_con.reading_activities_con .num_detail_con {margin-right: 5vw; max-width: 300px; margin-left: 2vw; }
+	section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_count,section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_tot {font-size: 16px;}
+	section.my .gray_box .box_con.reading_activities_con .divider {height: 14px;margin: 2.5px 8px;}
+	section.my .gray_box .box_con.etizen_con .etizen_wrap .etizen_tit {font-size: 20px;}
+	section.my .gray_box .box_con.etizen_con .etizen_wrap .etizen_tot {font-size: 16px;margin-top: 32px;}
 }
 
 @media all and (max-width: 980px) {
