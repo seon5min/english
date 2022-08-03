@@ -14,7 +14,7 @@ function chartDataStatus(chartLabel, chartData) {
 				'#F57E25',
 				'#A363F8'
 			],
-			borderRadius: 8,
+			borderRadius: 8
 		}]
 	};
 
@@ -30,16 +30,16 @@ function chartDataStatus(chartLabel, chartData) {
 			tooltip: {
 				displayColors: true,
 				titleFont: {
-					size: 14,
+					size: 12,
 					weight: 'lighter',
-					lineHeight : 1
+					lineHeight: 1
 				  },
 				  bodyFont: {
-					size: 14,
+					size: 12,
 					weight: 'bold',
 					lineHeight : '14px'
 				  },
-				borderColor: '#DEDEDE',
+				 borderColor: '#DEDEDE',
 				 backgroundColor:'#fff',
 				 borderWidth: 1,
 				 titleColor:'#000',
@@ -49,9 +49,9 @@ function chartDataStatus(chartLabel, chartData) {
 				 bodyAlign: 'center',
 				 usePointStyle: true, 
 				 yAlign: "bottom",	
-				 padding: 15,	
+				 padding: 10,	
 				 callbacks: {
-					labelTextColor: function(context){
+					labelTextColor: function(){
 						return myChart.data.datasets.backgroundColor;
 					}
 				 },							 					 
@@ -61,27 +61,34 @@ function chartDataStatus(chartLabel, chartData) {
 				display: true,
 				text: '초급 Lv 03 일별 평균 학습현황',
 				font: {
-					size: 14,
+					size: 12,
 					family: "'Noto Sans KR','맑은 고딕','Malgun Gothic','Roboto'",
 					weight: '400',
 					color: '#717171'
-
 				},
-
 				align: 'end'
 			}
 		},
 		layout: {
 			padding: {
-				left: 0,
-				right: 10,
-				top: 5,
-				bottom: 0
+				left: 10,
+				right: 20,
+				top: 10,
+				bottom: 10
 			}
 		},
 		scales: {
 			x: {
-
+				ticks: {
+					font: {
+						size: 10,
+						family: "'Noto Sans KR','맑은 고딕','Malgun Gothic','Roboto'"
+					},
+					autoSkip: false,
+					maxRotation: 0,
+					minRotation: 0
+				
+				},
 
 			},
 			y: {
@@ -93,28 +100,38 @@ function chartDataStatus(chartLabel, chartData) {
 					beginAtZero: true,
 					color: "#717171",
 					font: {
-						size: 12,
+						size: 10,
 						family: "'Noto Sans KR','맑은 고딕','Malgun Gothic','Roboto'"
 					},
 					padding: 5,
-
-
 				},
 				grid: {
 					color: "#e1e1e1",
 					display: true,
-					// drawBorder: false,
-					// drawTicks: false,
-					// zeroLineColor: "transparent",
-
+					drawBorder: false,
+					drawTicks: false,
+					zeroLineColor: "transparent",
 				},
 			},
 		},
 	}
+	const chartAreaPlugin = {
+		id: 'chartAreaPlugin',
+		beforeDraw(chart, args, options) {
+			const {ctx, chartArea: {top, bottom, left, right, width, height} } = chart;
+			ctx.save();
+			ctx.fillStyle = '#fff';
+			ctx.fillRect(left, top, width, height);
+
+		}
+	}
+
 	var chartSet = {
 		type: 'bar',
 		data: chartDataset,
 		options: chartOption,
+		plugins: [chartAreaPlugin]
 	}
 	return chartSet;
+
 }

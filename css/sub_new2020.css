@@ -1399,7 +1399,6 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 	section.guide .navi a {margin-right:12px;}
 	section.guide .navi a + a:before {content: "";left:-7px;}
 	section.my .txtbook_eng,section.my .my_activity_wrap,section.my .matching_learning_wrap{padding: 0 20px;}
-	section.my .gray_box .box_con.status_con .contents .learning_stage {padding-right: 20px;}	
 	section.my .gray_box .box_con.status_con .contents .progress {max-width: 160px;}
 	section.my .gray_box .box_tit > div {height: 85px;}
 	section.my .gray_box .box_tit .contents {margin: 0 0 50px 0;}
@@ -1424,7 +1423,10 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 	section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .info_layer {left: auto;right:1%;}
 	section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .info_layer:before {left: 84px;}
 	section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .info_layer:after {left: 83px;}
-	section.my .gray_box .box_con.status_con .contents .learning_stage > img {width: 90%;}
+	section.my .gray_box .box_con.status_con .contents .learning_stage{padding-right: 3%; transform: translateX(-20px);}
+	section.my .gray_box .box_con.status_con .contents .learning_phrase {font-size: 16px; height: auto;}
+	section.my .gray_box .box_con.status_con .contents .learning_stage > img {width: 100%; max-width: 104px;}
+	section.my .gray_box .box_con.status_con .contents .learning_tot {font-size: 18px;}
 	section.my .gray_box .box_con.friend_nodata .nodata_txt {padding: 10px 27px;}
 	section.my .gray_box .box_con.friend_nodata .nodata_tit {padding: 10px 17px 0;}
 }
