@@ -26,7 +26,6 @@ function chartDataStatus(chartLabel, chartData) {
 		},
 		maintainAspectRatio: false,
 		plugins: {
-			// tooltip
 			tooltip: {
 				displayColors: true,
 				titleFont: {
@@ -140,5 +139,82 @@ function chartDataStatus(chartLabel, chartData) {
 		plugins: [chartAreaPlugin]
 	}
 	return chartSet;
-
 }
+
+function chartDataStatus2(chartLabel2, chartData2) {
+	var chartDataset2 = null;
+	var chartOption2 = null;
+	chartDataset2 = {
+		labels: chartLabel2,
+		datasets: [{
+			type: 'pie',
+			data: chartData2,
+			backgroundColor: [
+				'#F57E25',
+				'#F3D144',
+			],
+			borderWidth: 0
+		}]
+	};
+
+	chartOption2 = {
+		legend: {
+			display: false
+		  },
+		  cutoutPercentage: 0.1,
+		  animation: {
+			animateScale: true
+		},
+		responsive: true,
+		maintainAspectRatio: false,
+		plugins: {
+			tooltip: {
+				displayColors: true,
+				titleFont: {
+					size: 12,
+					weight: 'lighter',
+					lineHeight: 1
+				  },
+				  bodyFont: {
+					size: 12,
+					weight: 'bold',
+					lineHeight : '14px'
+				  },
+				 borderColor: '#DEDEDE',
+				 backgroundColor:'#fff',
+				 borderWidth: 1,
+				 titleColor:'#000',
+				 titleAlign:'center',
+				 boxWidth:0,
+				 boxHeight:0,
+				 bodyAlign: 'center',
+				 usePointStyle: true, 
+				 yAlign: "bottom",	
+				 padding: 10,	
+				 callbacks: {
+					labelTextColor: function(){
+						return myChart.data.datasets.backgroundColor;
+					}
+				 },							 					 
+			},
+			title: {
+				display: false
+			}
+		},
+		layout: {
+			padding: {
+				left: 15,
+				right: 20,
+				top: 10,
+				bottom: 10
+			}
+		},
+	};
+	var chartSet2 = {
+		type: 'pie',
+		data: chartDataset2,
+		options: chartOption2
+	}
+	return chartSet2;
+};
+

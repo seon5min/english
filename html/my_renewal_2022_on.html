@@ -284,7 +284,6 @@
 				var chartData = [8, 79, 13, 145];
 				var chartLabel = ['방송 프로그램', '교과서 영어', '펀리딩', '자기주도 학습'];
 				var myChart = new Chart(ctx, chartDataStatus(chartLabel, chartData));
-				console.log(myChart.chartArea);
 			</script>
 			<!-- //같은 레벨 친구들 학습 현황 -->
 			<!-- 나의 독서 활동 -->
@@ -370,6 +369,7 @@
 				</div>
 			</div>
 			<!-- //나의 e-tizen 지수 -->
+			<!-- 최근 이용 콘텐츠 현황 -->
 			<div class="box_con used_nodata content_used_con">
 				<div class="box_tit">
 					<div>
@@ -377,11 +377,18 @@
 						<a href="" class="more_wrap"><span class="plus">자세히</span></a>
 					</div>
 					<div class="contents">
-
+						<canvas id="myChart2"></canvas>
 					</div>
 				</div>
 			</div>
-			<!-- 최근 이용 콘텐츠 현황 -->
+			<script>
+				var ctx2 = document.getElementById('myChart2').getContext('2d');
+				var chartData2 = [80, 20];
+				var chartLabel2 = ['최근 이용한 프로그램', '최근 이용한 강좌'];
+				var myChart2 = new Chart(ctx2, chartDataStatus2(chartLabel2, chartData2));				
+			</script>
+			<!-- //최근 이용 콘텐츠 현황 -->
+			<!-- 나의 학습방 현황 -->
 			<div class="box_con study_nodata study_room_con">
 				<div class="box_tit">
 					<div>
@@ -393,7 +400,7 @@
 					</div>
 				</div>
 			</div>
-			<!-- //최근 이용 콘텐츠 현황 -->
+			<!-- //나의 학습방 현황 -->
 		</div>
 		<!-- //6개 박스 -->
 
