@@ -1248,9 +1248,9 @@ section.my .t-myClass {position: relative;}
 section.my .t-myClass h6 {display: block; margin-bottom: 15px; text-align: center; font-size: 1.6rem; color: #000; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; font-weight: bold; text-decoration: none; letter-spacing: -.45px; } /* 2021-05-03 반명 말줄임표 */
 section.my .t-myClass .slick-slide {margin:0 10px;height: auto;}
 section.my .t-myClass .t-myClassWrap {width: 90%; margin: 0 auto; }
-section.my section.t-Slide {padding-top:0;overflow: hidden; width: 100%; max-width: 980px;    min-width: auto;}
+section.my section.t-Slide {padding-top:0;overflow: hidden; width: 100%; max-width: 980px; min-width: auto;}
 section.my .t-myClass .t-Slide .slideWrap {position:relative;}
-section.my .t-myClass .t-Slide div.card {position: inherit;padding: 30px 20px;height:475px;-webkit-transition: all 0.3s;transition: all 0.3s;} /* 2021-05-03 반명 말줄임표 */
+section.my .t-myClass .t-Slide div.card {position: inherit;padding: 30px 20px;height:370px;-webkit-transition: all 0.3s;transition: all 0.3s;} /* 2021-05-03 반명 말줄임표 */
 section.my .t-myClass .card:before {display: none;}
 section.my .t-myClass .t-info li + li {margin-top:8px;}
 section.my .t-myClass .t-total { background-color: #49596d;}

@@ -52,7 +52,7 @@ function chartDataStatus(chartLabel, chartData) {
 				 callbacks: {
 					labelTextColor: function(){
 						return myChart.data.datasets.backgroundColor;
-					}
+					},
 				 },							 					 
 			},
 			legend: false,
@@ -159,10 +159,11 @@ function chartDataStatus2(chartLabel2, chartData2) {
 
 	chartOption2 = {
 		legend: {
-			display: false
+			display: false,
+			
 		  },
-		  cutoutPercentage: 0.1,
-		  animation: {
+		cutoutPercentage: 0.1,
+		animation: {
 			animateScale: true
 		},
 		responsive: true,
@@ -183,7 +184,7 @@ function chartDataStatus2(chartLabel2, chartData2) {
 				 borderColor: '#DEDEDE',
 				 backgroundColor:'#fff',
 				 borderWidth: 1,
-				 titleColor:'#000',
+				//  titleColor:'#000',
 				 titleAlign:'center',
 				 boxWidth:0,
 				 boxHeight:0,
@@ -194,9 +195,14 @@ function chartDataStatus2(chartLabel2, chartData2) {
 				 callbacks: {
 					labelTextColor: function(){
 						return myChart.data.datasets.backgroundColor;
-					}
+					},
+
 				 },							 					 
 			},
+			legend: {
+				onClick: null,
+				align: 'right' 
+			},  
 			title: {
 				display: false
 			}
@@ -209,6 +215,7 @@ function chartDataStatus2(chartLabel2, chartData2) {
 				bottom: 10
 			}
 		},
+
 	};
 	var chartSet2 = {
 		type: 'pie',
