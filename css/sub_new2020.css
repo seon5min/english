@@ -1185,12 +1185,12 @@ section.my .gray_box .box_con.reading_activities_con .circular_chart .circle_bg 
 section.my .gray_box .box_con.reading_activities_con .circular_chart .circle { fill: none; stroke: #f57e25; stroke-width: 5; stroke-linecap: round; animation: progress 1s ease-out forwards; }
 section.my .gray_box .box_con.reading_activities_con .circular_chart .percentage { fill: #666; font-size: 0.5em; text-anchor: middle;font-weight: 500;}
 section.my .gray_box .box_con.reading_activities_con .circular_chart .percentage .per { font-size: 0.4em; }
-section.my .gray_box .box_con.reading_activities_con .num_detail_con {width: 100%; max-width: 206px; margin-right: 40px; position: relative;}
+section.my .gray_box .box_con.reading_activities_con .num_detail_con {width: 100%; max-width: 206px; margin-right: 40px; position: relative;transform: translateY(8px);}
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading,
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .week_reading,
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .month_reading { display: -ms-flexbox; display: flex; align-items: center; margin-bottom: 25px; }
-section.my .gray_box .box_con.reading_activities_con .num_detail_con .month_reading {margin-bottom: 0; }
-section.my .gray_box .box_con.reading_activities_con .num_detail_con .month_reading .reading_count  .mon_divider {display: flex;}
+section.my .gray_box .box_con.reading_activities_con .num_detail_con .month_reading {margin-bottom: 0; align-items: flex-start; }
+section.my .gray_box .box_con.reading_activities_con .num_detail_con .month_reading .reading_count .mon_divider {display: flex;}
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .month_reading .reading_count {flex-direction: column;align-items: flex-end;}
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_tit { display: flex; align-items: center; flex-shrink: 0; margin-right: 12px; font-size: 18px; line-height: 1.2; font-weight: 400; color: #222; letter-spacing: -0.8px; }
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .info_layer { position: absolute; display: none; align-items: center; box-sizing: border-box; top: -160px; left: 16%; width:100%; max-width: 208px; height: 148px; text-align: center; word-break: keep-all; font-size: 14px; color: #8790a2; background: #fff; border: 1px solid #ebebeb; border-radius: 5px 5px 5px 0px; box-shadow: 0px 4px 20px #0000001a; }
@@ -1205,6 +1205,8 @@ section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_read
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .num_detail_con .reading_tit { display: flex; align-items: center; flex-shrink: 0; margin-right: 20px; font-size: 14px; line-height: 1.2; font-weight: 400; color: #717171; margin-bottom: 8px; letter-spacing: -0.8px; }
 section.my .gray_box .box_con.reading_activities_con .dotted-line { flex-grow: 1; white-space: nowrap; position: relative; overflow: hidden; }
 section.my .gray_box .box_con.reading_activities_con .dotted-line:after { content: ""; width: 100%; height: 1px; background: url("../images/funreading/icon/dot.png") repeat-x; color: #ccc; display: inline-block; }
+section.my .gray_box .box_con.reading_activities_con .month_reading .dotted-line {transform: translateY(9px);}
+
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_count { display: -ms-flexbox; display: flex; flex-basis: content; margin-left: 12px; font-size: 18px; line-height: 1.2; color: #222; letter-spacing: -0.8px; }
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_count.zero { color: #717171; }
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .highlight { font-size: 18px; line-height: 1.2; color: #f57e25; letter-spacing: -0.8px; }
@@ -1412,7 +1414,7 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 	section.my .myflex_wrap .myclass_info > ul > li >span {max-width: 50px;}
 	section.my .imgWrap {padding: 1px;}
 
-	section.my .gray_box .box_con.reading_activities_con .num_detail_con {margin-right: 15px;}
+	section.my .gray_box .box_con.reading_activities_con .num_detail_con {margin-right: 20px;}
 	section.my .gray_box .box_con.reading_activities_con .single_chart {margin-right: 3%;width: 140px; height: 140px; margin-left: 10px; min-width: 120px;display: flex; justify-content: center; align-items: center; }
 	section.my .gray_box .box_con.reading_activities_con .contents {justify-content: center;}
 	section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_tit,section.my .gray_box .box_con.reading_activities_con .num_detail_con .highlight {font-size: 16px;}
@@ -1429,6 +1431,10 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 	section.my .gray_box .box_con.status_con .contents .learning_tot {font-size: 18px;}
 	section.my .gray_box .box_con.friend_nodata .nodata_txt {padding: 10px 27px;}
 	section.my .gray_box .box_con.friend_nodata .nodata_tit {padding: 10px 17px 0;}
+
+	section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_count {font-size: 16px;}
+	section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_tot {font-size: 16px;}
+	section.my .gray_box .box_con.reading_activities_con .divider {height: 14px; margin: 2.5px 6px;}
 }
 
 @media screen and (max-width:740px) {

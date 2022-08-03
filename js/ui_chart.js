@@ -71,7 +71,7 @@ function chartDataStatus(chartLabel, chartData) {
 		},
 		layout: {
 			padding: {
-				left: 10,
+				left: 5,
 				right: 20,
 				top: 10,
 				bottom: 10
@@ -81,18 +81,24 @@ function chartDataStatus(chartLabel, chartData) {
 			x: {
 				ticks: {
 					font: {
-						size: 10,
+						size: 11,
 						family: "'Noto Sans KR','맑은 고딕','Malgun Gothic','Roboto'"
 					},
 					autoSkip: false,
 					maxRotation: 0,
-					minRotation: 0
+					minRotation: 0,
+					padding:10,
 				
 				},
-
+				grid: {
+					color: "#e1e1e1",
+					display: true,
+					drawBorder: false,
+					drawTicks: false,
+					zeroLineColor: "transparent",
+				}
 			},
 			y: {
-				// y축 옵션
 				suggestedMin: 0,
 				suggestedMax: 1,
 				ticks: {
@@ -111,6 +117,7 @@ function chartDataStatus(chartLabel, chartData) {
 					drawBorder: false,
 					drawTicks: false,
 					zeroLineColor: "transparent",
+			
 				},
 			},
 		},
