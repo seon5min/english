@@ -24,6 +24,7 @@ function chartDataStatus(chartLabel, chartData) {
 		legend: {
 			display: false
 		},
+		maintainAspectRatio: false,
 		plugins: {
 			// tooltip
 			tooltip: {
@@ -72,8 +73,8 @@ function chartDataStatus(chartLabel, chartData) {
 		},
 		layout: {
 			padding: {
-				left: 10,
-				right: 20,
+				left: 0,
+				right: 10,
 				top: 5,
 				bottom: 0
 			}

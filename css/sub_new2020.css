@@ -1212,7 +1212,7 @@ section.my .gray_box .box_con.reading_activities_con .divider { text-align: cent
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_tot { font-size: 18px; line-height: 1.2; color: #222; letter-spacing: -0.8px; }
 
 section.my .gray_box .box_con.etizen_con .contents {justify-content: flex-start;}
-section.my .gray_box .box_con.etizen_con .ico_etizen { position: relative; display: block; overflow: hidden; padding: 17%; margin-left: 40px; margin-right: 38px;}
+section.my .gray_box .box_con.etizen_con .ico_etizen { position: relative; display: block; overflow: hidden; padding: 17%; margin-left: 40px; margin-right: 38px;max-width: 146px; max-height: 146px;}
 section.my .gray_box .box_con.etizen_con .ico_etizen:before { content: ""; position: absolute;position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: block; width:100%; height:100%; max-width: 146px; max-height: 146px; border-radius: 50%; background-color: #555; }
 section.my .gray_box .box_con.etizen_con .ico_etizen.lv1:before { background: #1787d1 url("../images/etizen_icn_1.png") no-repeat center 50%; background-size: 80%; }
 section.my .gray_box .box_con.etizen_con .ico_etizen.lv2:before { background: #14a5d2 url("../images/etizen_icn_2.png") no-repeat center 50%; background-size: 80%; }
@@ -1395,7 +1395,7 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 }
 
 @media all and (max-width: 980px) {
-	/* #myChart {width: 380px !important; height: 210px !important;} */
+	 /* #myChart { height: 220px !important;}  */
 	section.guide .navi a {margin-right:12px;}
 	section.guide .navi a + a:before {content: "";left:-7px;}
 	section.my .txtbook_eng,section.my .my_activity_wrap,section.my .matching_learning_wrap{padding: 0 20px;}
@@ -1404,7 +1404,7 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 	section.my .gray_box .box_tit > div {height: 85px;}
 	section.my .gray_box .box_tit .contents {margin: 0 0 50px 0;}
 	section.my .gray_box .box_tit h2 {font-size: 25px;line-height: 1.35;}
-	section.my .gray_box .box_con.friend_status_con .box_tit > div > .status_con {display: inline; width:20vh;}
+	section.my .gray_box .box_con.friend_status_con .box_tit > div > .status_con {display: inline; width: 22vh; max-width: 200px;}
 	section.my .gray_box .box_con.friend_status_con button.status_info {transform: translateY(-5px);}
 
 	section.my .gray_box .box_tit button.status_info {margin-left: 5px;}
