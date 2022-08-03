@@ -20,7 +20,7 @@ function chartDataStatus(chartLabel, chartData) {
 
 	// Options
 	chartOption = {
-		responsive: false,
+		responsive: true,
 		legend: {
 			display: false
 		},
@@ -74,7 +74,7 @@ function chartDataStatus(chartLabel, chartData) {
 			padding: {
 				left: 10,
 				right: 20,
-				top: 0,
+				top: 5,
 				bottom: 0
 			}
 		},
