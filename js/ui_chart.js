@@ -1,4 +1,4 @@
-/* 차트 */
+/* 같은 레벨 친구들 학습 현황 */
 function chartDataStatus(chartLabel, chartData) {
 	var chartDataset = null;
 	var chartOption = null;
@@ -141,87 +141,85 @@ function chartDataStatus(chartLabel, chartData) {
 	return chartSet;
 }
 
-function chartDataStatus2(chartLabel2, chartData2) {
-	var chartDataset2 = null;
-	var chartOption2 = null;
-	chartDataset2 = {
-		labels: chartLabel2,
-		datasets: [{
-			type: 'pie',
-			data: chartData2,
-			backgroundColor: [
-				'#F57E25',
-				'#F3D144',
-			],
-			borderWidth: 0
-		}]
-	};
+/* 최근 이용 콘텐츠 현황 */
+// function pieChartDraw(chartLabel, chartData) {
+// 	var chartDataset = null;
+// 	var chartOption = null;
+// 	chartDataset = {
+// 		labels: [chartLabel[0], chartLabel[1]],
+// 		datasets: [{
+// 			label: '동그라미',
+// 			data: [chartData[0] + chartData[1], chartData[2] + chartData[3]],
+// 			backgroundColor: ['#F57E25', '#F3D144']
+// 		}]
 
-	chartOption2 = {
-		legend: {
-			display: false,
-			
-		  },
-		cutoutPercentage: 0.1,
-		animation: {
-			animateScale: true
-		},
-		responsive: true,
-		maintainAspectRatio: false,
-		plugins: {
-			tooltip: {
-				displayColors: true,
-				titleFont: {
-					size: 12,
-					weight: 'lighter',
-					lineHeight: 1
-				  },
-				  bodyFont: {
-					size: 12,
-					weight: 'bold',
-					lineHeight : '14px'
-				  },
-				 borderColor: '#DEDEDE',
-				 backgroundColor:'#fff',
-				 borderWidth: 1,
-				//  titleColor:'#000',
-				 titleAlign:'center',
-				 boxWidth:0,
-				 boxHeight:0,
-				 bodyAlign: 'center',
-				 usePointStyle: true, 
-				 yAlign: "bottom",	
-				 padding: 10,	
-				 callbacks: {
-					labelTextColor: function(){
-						return myChart.data.datasets.backgroundColor;
-					},
+// 	};
 
-				 },							 					 
-			},
-			legend: {
-				onClick: null,
-				align: 'right' 
-			},  
-			title: {
-				display: false
-			}
-		},
-		layout: {
-			padding: {
-				left: 15,
-				right: 20,
-				top: 10,
-				bottom: 10
-			}
-		},
+// 	// Options
+// 	chartOption = {
+// 		responsive: false,
+// 		tooltips: {
+// 			callbacks: {
+// 				title: function (tooltipItem, data) {
+// 					return data['labels'][tooltipItem[0]['index']];
+// 				},
+// 				label: function (tooltipItem, data) {
+// 					var labels_tit = data['labels'][tooltipItem['index']];
+// 					if (labels_tit === '최근 이용한 프로그램') {
+// 						return '첫번째 영상 ' + chartData[0];
+// 					} else {
+// 						return '첫번째 영상 ' + chartData[2];
+// 					}
+// 					//return '첫번째 영상 ' + data['datasets'][0]['data'][tooltipItem['index']] + '%';
+// 				},
+// 				afterLabel: function (tooltipItem, data) {
+// 					var dataset = data['datasets'][0]['data'][tooltipItem['index']];
+// 					var labels_tit = data['labels'][tooltipItem['index']];
+// 					if (labels_tit === '최근 이용한 강좌') {
+// 						return '두번째 영상 ' + chartData[1];
+// 					} else {
+// 						return '두번째 영상 ' + chartData[3];
+// 					}
+// 					//var percent = Math.round((dataset['data'][tooltipItem['index']] / dataset["_meta"][0]['total']) * 100)
+// 					//return '두번째 영상 ' + dataset + '%';
+// 				}
+// 			},
+// 			backgroundColor: '#FFF',
+// 			titleFontSize: 16,
+// 			titleFontColor: '#0066ff',
+// 			bodyFontColor: '#000',
+// 			bodyFontSize: 14,
+// 			displayColors: false
+// 		},
+// 		legend: {
+// 			display: false
+// 		},
+// 		legendCallback: customLegend
+// 	}
 
-	};
-	var chartSet2 = {
-		type: 'pie',
-		data: chartDataset2,
-		options: chartOption2
-	}
-	return chartSet2;
-};
+
+// 	let customLegend = function (chart) {
+// 		let ul = document.createElement('ul');
+// 		let color = chart.data.datasets[0].backgroundColor;
+// 		var dataset = chart.data['datasets'][0]['data'];
+// 		// chart.data.labels.forEach(function (label, index) {
+// 		//     ul.innerHTML += `<li data-index="${index}"><span style="background-color: ${color[index]}"></span>${label}</li>`;
+// 		// });
+	
+// 		ul.innerHTML += "<li data-target='최근 이용한 프로그램'><span style='background-color: #F57E25';></span>최근 이용한 프로그램" + dataset[0] + "</ul>";
+// 		ul.innerHTML += "<li data-target='최근 이용한 강좌'><span style='background-color: #F3D144;></span>최근 이용한 강좌" + dataset[1] + "</ul>";
+	
+// 		console.log(dataset);
+// 		return ul.outerHTML;
+// 	};
+	
+// 	var chartSet = {
+// 		type: 'pie',
+// 		data: chartData,
+// 		options: chartOption,
+// 	}
+// 	return chartSet;
+// }
+
+
 

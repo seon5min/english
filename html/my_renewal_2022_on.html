@@ -20,6 +20,7 @@
 	<script src="../js/common_new2020.js"></script>
 	<script src="../js/chart.min.js"></script>
 	<script src="../js/ui_chart.js"></script>
+	<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js'></script> -->
 </head>
 
 <body class="sub">
@@ -376,17 +377,129 @@
 						<h2>최근 이용 콘텐츠 현황</h2>
 						<a href="" class="more_wrap"><span class="plus">자세히</span></a>
 					</div>
+					<!-- <div class="contents">
+						<div class="pie_wrap">
+							<canvas id="myChart2"></canvas>
+						</div>
+					</div> -->
 					<div class="contents">
-						<canvas id="myChart2"></canvas>
+						<div class="chart-div">
+							<canvas id="pieChartCanvas" width="300px" height="300px"></canvas>
+							<div id='legend-div' class="legend-div"></div>
+						</div>
+
+						<!-- <div class="pie_con">
+							<div class="pie_wrap">
+								<canvas id="myChart2"></canvas>
+							</div>
+							<ul>
+								<li>최근 이용한 프로그램<span>48</span></li>
+								<li>최근 이용한 강좌<span>12</span></li>
+							</ul>
+						</div> -->
 					</div>
 				</div>
 			</div>
 			<script>
-				var ctx2 = document.getElementById('myChart2').getContext('2d');
-				var pieChartData = [80, 20];
-				var pieChartLabel = ['최근 이용한 프로그램', '최근 이용한 강좌'];
-				var myPieChart = new Chart(ctx2, chartDataStatus2(pieChartLabel, pieChartData));				
+				var ctx2 = document.getElementById('pieChartCanvas').getContext('2d');
+				var chartData = [10, 20, 30, 40];
+				var chartLabel = ['최근 이용한 프로그램', '최근 이용한 강좌'];
+				var myPieChart = new Chart(ctx2, pieChartCanvas(chartLabel, chartData));
+
+				/* 같은 레벨 친구들 학습 현황 */
+				function pieChartCanvas(chartLabel, chartData) {
+					var chartDataset = null;
+					var chartOption = null;
+					chartDataset = {
+						labels: chartLabel,
+						datasets: [{
+							type: 'pie',
+							data: chartData,
+							backgroundColor: [
+								'#583BF8',
+								'#F3D144'
+							]
+						}]
+					};
+
+					// Options
+					chartOption = {
+						responsive: false,
+						legend: {
+							display: false
+						},
+						// legendCallback: customLegend,
+						// maintainAspectRatio: false,
+						plugins: {
+							tooltip: {
+								displayColors: true,
+								titleFont: {
+									size: 12,
+									weight: 'lighter',
+									lineHeight: 1
+								},
+								bodyFont: {
+									size: 12,
+									weight: 'bold',
+									lineHeight: '14px'
+								},
+								borderColor: '#DEDEDE',
+								backgroundColor: '#fff',
+								borderWidth: 1,
+								titleColor: '#000',
+								titleAlign: 'center',
+								boxWidth: 0,
+								boxHeight: 0,
+								bodyAlign: 'center',
+								usePointStyle: true,
+								yAlign: "bottom",
+								padding: 10,
+								callbacks: {
+									title: function (tooltipItem, data) {
+										return data['label'][tooltipItem[0]['index']];
+									},
+									label: function (tooltipItem, data) {
+										var labels_tit = data['label'][tooltipItem['index']];
+										if (labels_tit === '최근 이용한 프로그램') {
+											return '첫번째 영상 ' + chartData[0] + '%';
+										} else {
+											return '첫번째 영상 ' + chartData[2] + '%';
+										}
+										//return '첫번째 영상 ' + data['datasets'][0]['data'][tooltipItem['index']] + '%';
+									},
+									afterLabel: function (tooltipItem, data) {
+										var dataset = data['dataset'][0]['data'][tooltipItem['index']];
+										var labels_tit = data['label'][tooltipItem['index']];
+										if (labels_tit === '개발 성공') {
+											return '두번째 영상 ' + chartData[1] + '%';
+										} else {
+											return '두번째 영상 ' + chartData[3] + '%';
+										}
+										//var percent = Math.round((dataset['data'][tooltipItem['index']] / dataset["_meta"][0]['total']) * 100)
+										//return '두번째 영상 ' + dataset + '%';
+									}
+								},
+							},
+						},
+
+					}
+
+					var chartSet = {
+						type: 'pie',
+						data: chartDataset,
+						options: chartOption,
+					}
+					return chartSet;
+				}
+
+
 			</script>
+
+
+			<!-- <script type="text/javascript" src="https://www.ebsi.co.kr/ebs/public_hsp/js/jquery-3.5.1.min.js"></script> -->
+			<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js'></script> -->
+
+			<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"> -->
 			<!-- //최근 이용 콘텐츠 현황 -->
 			<!-- 나의 학습방 현황 -->
 			<div class="box_con study_nodata study_room_con">
