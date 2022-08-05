@@ -145,5 +145,222 @@ function chartDataStatus(chartLabel, chartData) {
 	return chartSet;
 }
 
+/* 최근 이용 콘텐츠 현황 */
+function pieStatus(chartLabel, chartData) {
+	var data = {
+		labels: [
+			chartlabels[0],
+			chartlabels[1]
+		],
+		datasets: [{
+			label: '최근 이용 콘텐츠 현황',
+			data: [chartData[0] + chartData[1], chartData[2] + chartData[3]],
+			backgroundColor: [
+				"#F57E25",
+				"#F3D144"
+			],
+			hoverBackgroundColor: [
+				"#F57E25",
+				"#F3D144"
+			],
+			borderWidth: 0
+		}]
+	};
+	var ctx = $("#myChart2");
+	var myChart2 = new Chart(ctx, {
+		type: 'pie',
+		data: data,
+		options: {
+			plugins: {
+				tooltip: {
+					displayColors: true,
+					titleFont: {
+						size: 14,
+						family: "'Noto Sans KR','맑은 고딕','Malgun Gothic','Roboto'",
+						weight: 'bold',
+
+						lineHeight: 1.2
+					},
+					bodyFont: {
+						size: 14,
+						family: "'Noto Sans KR','맑은 고딕','Malgun Gothic','Roboto'",
+						weight: 'normal',
+						lineHeight: 1.2
+					},
+					borderColor: '#DEDEDE',
+					backgroundColor: '#fff',
+					borderWidth: 1,
+					titleAlign: 'center',
+					boxWidth: 0,
+					boxHeight: 0,
+					bodyAlign: 'left',
+					usePointStyle: true,
+					yAlign: "bottom",
+					padding: 12,
+					callbacks: {
+						title: function (context) {
+							let title = context[0].label;
+							return title;
+						},
+						beforeBody: function (context) {
+							var labels_tit = context[0].label;
+							if (labels_tit === '최근 이용한 프로그램') {
+								return '방송프로그램 ' + ': ' + chartData[0];
+
+							} else {
+								return '방송프로그램 ' + ': ' + chartData[2];
+							}
+						},
+						afterBody: function (context) {
+							var labels_tit = context[0].label;
+							if (labels_tit === '최근 이용한 프로그램') {
+								return 'e클립           ' + ': ' + chartData[1];
+
+							} else {
+								return 'e클립           ' + ': ' + chartData[3];
+							}
+						},
+						label: function (context) {
+						}
+					},
+					titleColor: function (tooltipiem) {
+						let pie_color = tooltipiem.tooltip.labelColors[0].backgroundColor;
+						return pie_color;
+					},
+					bodyAlign: function (context) {
+						return 'left'
+					},
+					bodyColor: function (context) {
+						return '#717171';
+					},
+				},
+				responsive: true,
+				maintainAspectRatio: false,
+				legend: {
+					display: false
+				}
+			},
+			layout: {
+				padding: {
+					left: 0,
+					right: 0,
+					top: 40,
+					bottom: 0
+				}
+			},
+		}
+	});
+	$("#legend-div .s1").text(chartData[0] + chartData[1]);
+	$("#legend-div .s2").text(chartData[2] + chartData[3]);
+}
+
+/* 나의 학습방 현황 */
+function pieStatus2(chartLabel, chartData) {
+	var data = {
+		labels: [
+			chartlabels[0],
+			chartlabels[1]
+		],
+		datasets: [{
+			label: '나의 학습방 현황',
+			data: [chartData[0] + chartData[1], chartData[2] + chartData[3]],
+			backgroundColor: [
+				"#583BF8",
+				"#A363F8"
+			],
+			hoverBackgroundColor: [
+				"#583BF8",
+				"#A363F8"
+			],
+			borderWidth: 0
+		}]
+	};
+	var ctx = $("#myChart3");
+	var myChart3 = new Chart(ctx, {
+		type: 'pie',
+		data: data,
+		options: {
+			plugins: {
+				tooltip: {
+					displayColors: true,
+					titleFont: {
+						size: 14,
+						family: "'Noto Sans KR','맑은 고딕','Malgun Gothic','Roboto'",
+						weight: 'bold',
+
+						lineHeight: 1.2
+					},
+					bodyFont: {
+						size: 14,
+						family: "'Noto Sans KR','맑은 고딕','Malgun Gothic','Roboto'",
+						weight: 'normal',
+						lineHeight: 1.2
+					},
+					borderColor: '#DEDEDE',
+					backgroundColor: '#fff',
+					borderWidth: 1,
+					titleAlign: 'center',
+					boxWidth: 0,
+					boxHeight: 0,
+					bodyAlign: 'left',
+					usePointStyle: true,
+					yAlign: "bottom",
+					padding: 12,
+					callbacks: {
+						title: function (context) {
+							let title = context[0].label;
+							return title;
+						},
+						beforeBody: function (context) {
+							var labels_tit = context[0].label;
+							if (labels_tit === '수강중인 강좌') {
+								return '방송프로그램 ' + ': ' + chartData[0];
+
+							} else {
+								return '방송프로그램 ' + ': ' + chartData[2];
+							}
+						},
+						afterBody: function (context) {
+							var labels_tit = context[0].label;
+							if (labels_tit === '수강중인 강좌') {
+								return 'e클립           ' + ': ' + chartData[1];
+
+							} else {
+								return 'e클립           ' + ': ' + chartData[3];
+							}
+						},
+						label: function (context) {
+						}
+					},
+					titleColor: function (tooltipiem) {
+						let pie_color = tooltipiem.tooltip.labelColors[0].backgroundColor;
+						return pie_color;
+					},
+					bodyAlign: function (context) {
+						return 'left'
+					},
+					bodyColor: function (context) {
+						return '#717171';
+					},
+				},
+				responsive: true,
+				maintainAspectRatio: false,
+				legend: {
+					display: false
+				}
+			},
+			layout: {
+				padding: {
+					left: 0,
+					right: 0,
+					top: 40,
+					bottom: 0
+				}
+			},
+		}
+	});
+	$("#legend-div .s1").text(chartData[0] + chartData[1]);
+	$("#legend-div .s2").text(chartData[2] + chartData[3]);
+}
 
 
