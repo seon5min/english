@@ -1274,10 +1274,10 @@ section.my .t-myClass .t-detail .t-button a {float:left;width:49%;}
 section.my .t-myClass .t-detail .t-button a:first-child {width:100%;margin-bottom:5px;}
 section.my .t-myClass .t-detail .t-button a:last-child {float:right;}
 
-section.my .content_used_con .contents .pie_con {display: flex; justify-content: center; align-items: center; }
-section.my .content_used_con .contents .pie_wrap {width:200px; height:200px; max-width: 100%;max-height: 100%;transform: translate(-20px,-20px);}
+section.my .content_used_con .contents .pie_con {display: -ms-flexbox; display: flex; justify-content: center; align-items: center; }
+section.my .content_used_con .contents .pie_wrap {width:190px; height:190px; max-width: 100%;max-height: 100%;transform: translate(-20px,-20px);}
 section.my .content_used_con .contents ul {font-size: 18px; font-weight: 400;padding-left: 0px; transform:translateX(-10px);}
-section.my .content_used_con .contents ul li{position: relative; display: flex; flex-direction: column; padding-left: 20px; color: #222222; letter-spacing: -0.45px; margin-top: -1px; line-height: 1.4;}
+section.my .content_used_con .contents ul li{position: relative; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; padding-left: 20px; color: #222222; letter-spacing: -0.45px; margin-top: -1px; line-height: 1.4;}
 section.my .content_used_con .contents ul li:first-child {margin-bottom: 18px;}
 section.my .content_used_con .contents ul li:first-child span {width: 68px; height: 28px; background: #FFE7D9; display: flex; justify-content: center; border-radius: 100px; align-items: center; color: #FF9154; font-size: 18px; font-weight: 500; margin-top: 7px;}
 section.my .content_used_con .contents ul li:last-child span {width: 68px; height: 28px; background: #F8F1D5; display: flex; justify-content: center; border-radius: 100px; align-items: center; color: #D5B11B; font-size: 18px; font-weight: 500; margin-top: 7px;}
@@ -1285,7 +1285,7 @@ section.my .content_used_con .contents ul li:first-child::before {content: ''; p
 section.my .content_used_con .contents ul li:last-child::before {content: ''; position: absolute; top: 7.5px; left: 0; width: 12px;height: 12px;border-radius: 100px;background-color: #F3D144;} 
 
 section.my .study_room_con .contents .pie_con {display: flex; justify-content: center; align-items: center; }
-section.my .study_room_con .contents .pie_wrap {width:200px; height:200px; max-width: 100%;max-height: 100%;transform: translate(-20px,-20px);}
+section.my .study_room_con .contents .pie_wrap {width:190px; height:190px; max-width: 100%;max-height: 100%;transform: translate(-20px,-20px);}
 section.my .study_room_con .contents ul {font-size: 18px; font-weight: 400;padding-left: 0px; transform:translateX(-10px);}
 section.my .study_room_con .contents ul li{position: relative; display: flex; flex-direction: column; padding-left: 20px; color: #222222; letter-spacing: -0.45px; margin-top: -1px; line-height: 1.4;}
 section.my .study_room_con .contents ul li:first-child {margin-bottom: 18px;}

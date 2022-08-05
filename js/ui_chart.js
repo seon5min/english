@@ -250,8 +250,8 @@ function pieStatus(chartLabel, chartData) {
 			},
 		}
 	});
-	$("#legend-div .s1").text(chartData[0] + chartData[1]);
-	$("#legend-div .s2").text(chartData[2] + chartData[3]);
+	$(".content_used_con #legend-div .s1").text(chartData[0] + chartData[1]);
+	$(".content_used_con #legend-div .s2").text(chartData[2] + chartData[3]);
 }
 
 /* 나의 학습방 현황 */
@@ -359,8 +359,8 @@ function pieStatus2(chartLabel, chartData) {
 			},
 		}
 	});
-	$("#legend-div .s1").text(chartData[0] + chartData[1]);
-	$("#legend-div .s2").text(chartData[2] + chartData[3]);
+	$(".study_room_con #legend-div .s1").text(chartData[0] + chartData[1]);
+	$(".study_room_con #legend-div .s2").text(chartData[2] + chartData[3]);
 }
 
 
