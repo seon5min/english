@@ -1274,36 +1274,17 @@ section.my .t-myClass .t-detail .t-button a {float:left;width:49%;}
 section.my .t-myClass .t-detail .t-button a:first-child {width:100%;margin-bottom:5px;}
 section.my .t-myClass .t-detail .t-button a:last-child {float:right;}
 
-/* section.my .content_used_con .contents .pie_con {display: flex; justify-content: center; align-items: center; }
-section.my .content_used_con .contents .pie_wrap {width:160px;height: 160px;}
-section.my .content_used_con .contents ul {font-size: 18px; font-weight: 400;margin-left: 20px;}
+section.my .content_used_con .contents .pie_con {display: flex; justify-content: center; align-items: center; }
+section.my .content_used_con .contents .pie_wrap {width:200px;height: 200px;}
+section.my .content_used_con .contents ul {font-size: 18px; font-weight: 400;}
 section.my .content_used_con .contents ul li{position: relative; display: flex; flex-direction: column; padding-left: 20px; color: #222222; letter-spacing: -0.45px; margin-top: -1px; line-height: 1.4;}
 section.my .content_used_con .contents ul li:first-child {margin-bottom: 18px;}
-section.my .content_used_con .contents ul li:first-child span {width: 68px; height: 28px; background: #FFE7D9; display: flex; justify-content: center; border-radius: 100px; align-items: center; color: #FF9154; font-size: 18px; font-weight: 500; margin-top: 8px;}
-section.my .content_used_con .contents ul li:last-child span {width: 68px; height: 28px; background: #F8F1D5; display: flex; justify-content: center; border-radius: 100px; align-items: center; color: #D5B11B; font-size: 18px; font-weight: 500; margin-top: 8px;}
+section.my .content_used_con .contents ul li:first-child span {width: 68px; height: 28px; background: #FFE7D9; display: flex; justify-content: center; border-radius: 100px; align-items: center; color: #FF9154; font-size: 18px; font-weight: 500; margin-top: 7px;}
+section.my .content_used_con .contents ul li:last-child span {width: 68px; height: 28px; background: #F8F1D5; display: flex; justify-content: center; border-radius: 100px; align-items: center; color: #D5B11B; font-size: 18px; font-weight: 500; margin-top: 7px;}
 section.my .content_used_con .contents ul li:first-child::before {content: ''; position: absolute; top: 7.5px; left: 0; width: 12px;height: 12px;border-radius: 100px;background-color: #F57E25;}
-section.my .content_used_con .contents ul li:last-child::before {content: ''; position: absolute; top: 7.5px; left: 0; width: 12px;height: 12px;border-radius: 100px;background-color: #F3D144;} */
+section.my .content_used_con .contents ul li:last-child::before {content: ''; position: absolute; top: 7.5px; left: 0; width: 12px;height: 12px;border-radius: 100px;background-color: #F3D144;} 
 
-.legend-div {
-	position: absolute;
-	top: 62px;
-	left: 320px;
-}
 
-.legend-div ul li {
-	margin: 10px 0;
-	color: #666;
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-}
-
-.legend-div ul li span {
-	display: inline-block;
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	margin-right: 5px;
-	vertical-align: middle;
-}
 /******************** 기타 ********************/
 /* 온에어 & 편성표 */
 section.tv > .inner { padding: 60px 0; }

@@ -377,122 +377,127 @@
 						<h2>최근 이용 콘텐츠 현황</h2>
 						<a href="" class="more_wrap"><span class="plus">자세히</span></a>
 					</div>
-					<!-- <div class="contents">
-						<div class="pie_wrap">
-							<canvas id="myChart2"></canvas>
-						</div>
-					</div> -->
 					<div class="contents">
-						<div class="chart-div">
-							<canvas id="pieChartCanvas" width="300px" height="300px"></canvas>
-							<div id='legend-div' class="legend-div"></div>
-						</div>
-
-						<!-- <div class="pie_con">
+						<div class="pie_con">
 							<div class="pie_wrap">
 								<canvas id="myChart2"></canvas>
 							</div>
-							<ul>
-								<li>최근 이용한 프로그램<span>48</span></li>
-								<li>최근 이용한 강좌<span>12</span></li>
-							</ul>
-						</div> -->
+							<div id='legend-div' class="legend-div">
+								<ul>
+									<li>최근 이용한 프로그램<span class="s1">48</span></li>
+									<li>최근 이용한 강좌<span class="s2">12</span></li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 			<script>
-				var ctx2 = document.getElementById('pieChartCanvas').getContext('2d');
-				var chartData = [10, 20, 30, 40];
-				var chartLabel = ['최근 이용한 프로그램', '최근 이용한 강좌'];
-				var myPieChart = new Chart(ctx2, pieChartCanvas(chartLabel, chartData));
-
-				/* 같은 레벨 친구들 학습 현황 */
-				function pieChartCanvas(chartLabel, chartData) {
-					var chartDataset = null;
-					var chartOption = null;
-					chartDataset = {
-						labels: chartLabel,
-						datasets: [{
-							type: 'pie',
-							data: chartData,
-							backgroundColor: [
-								'#583BF8',
-								'#F3D144'
-							]
-						}]
-					};
-
-					// Options
-					chartOption = {
-						responsive: false,
-						legend: {
-							display: false
-						},
-						// legendCallback: customLegend,
-						// maintainAspectRatio: false,
+				var chartlabels = ['최근 이용한 프로그램', '최근 이용한 강좌'];
+				var chartData = [20, 28, 5, 7];
+				var data = {
+					labels: [
+						chartlabels[0],
+						chartlabels[1]
+					],
+					datasets: [{
+						label: '최근 이용 콘텐츠 현황',
+						data: [chartData[0] + chartData[1], chartData[2] + chartData[3]],
+						backgroundColor: [
+							"#F57E25",
+							"#F3D144"
+						],
+						hoverBackgroundColor: [
+							"#F57E25",
+							"#F3D144"
+						],
+						borderWidth: 0
+					}]
+				};
+				var ctx = $("#myChart2");
+				var myChart2 = new Chart(ctx, {
+					type: 'pie',
+					data: data,
+					options: {
 						plugins: {
 							tooltip: {
 								displayColors: true,
 								titleFont: {
-									size: 12,
-									weight: 'lighter',
-									lineHeight: 1
+									size: 14,
+									weight: 'bold',
+									lineHeight: 1.2
 								},
 								bodyFont: {
 									size: 12,
-									weight: 'bold',
-									lineHeight: '14px'
+									weight: 'normal',
+									lineHeight: 1.2
 								},
 								borderColor: '#DEDEDE',
 								backgroundColor: '#fff',
 								borderWidth: 1,
-								titleColor: '#000',
 								titleAlign: 'center',
 								boxWidth: 0,
 								boxHeight: 0,
-								bodyAlign: 'center',
+								bodyAlign: 'left',
 								usePointStyle: true,
 								yAlign: "bottom",
-								padding: 10,
+								padding: 12,
 								callbacks: {
-									title: function (tooltipItem, data) {
-										return data['label'][tooltipItem[0]['index']];
+									title: function (context) {
+										let title = context[0].label;
+										return title;
 									},
-									label: function (tooltipItem, data) {
-										var labels_tit = data['label'][tooltipItem['index']];
+									beforeBody: function (context) {
+										var labels_tit = context[0].label;
 										if (labels_tit === '최근 이용한 프로그램') {
-											return '첫번째 영상 ' + chartData[0] + '%';
+											return '방송프로그램' + ': ' + chartData[0];
+
 										} else {
-											return '첫번째 영상 ' + chartData[2] + '%';
+											return '방송프로그램' + ': ' + chartData[2];
 										}
-										//return '첫번째 영상 ' + data['datasets'][0]['data'][tooltipItem['index']] + '%';
 									},
-									afterLabel: function (tooltipItem, data) {
-										var dataset = data['dataset'][0]['data'][tooltipItem['index']];
-										var labels_tit = data['label'][tooltipItem['index']];
-										if (labels_tit === '개발 성공') {
-											return '두번째 영상 ' + chartData[1] + '%';
+									afterBody: function (context) {
+										var labels_tit = context[0].label;
+										if (labels_tit === '최근 이용한 프로그램') {
+											return 'e클립' + ': ' + chartData[1];
+
 										} else {
-											return '두번째 영상 ' + chartData[3] + '%';
+											return 'e클립' + ': ' + chartData[3];
 										}
-										//var percent = Math.round((dataset['data'][tooltipItem['index']] / dataset["_meta"][0]['total']) * 100)
-										//return '두번째 영상 ' + dataset + '%';
+									},
+									label: function (context) {
 									}
 								},
+								titleColor: function (tooltipiem) {
+									let pie_color = tooltipiem.tooltip.labelColors[0].backgroundColor;
+									return pie_color;
+								},
+								bodyAlign: function (context) {
+									return 'left'
+								},
+								bodyColor: function (context) {
+									return '#717171';
+								},
 							},
+							responsive: true,
+							maintainAspectRatio: false,
+							legend: {
+								display: false
+							}
 						},
-
+						layout: {
+							padding: {
+								left: 25,
+								right: 25,
+								top: 35,
+								bottom: 35
+							}
+						},
 					}
+				});
 
-					var chartSet = {
-						type: 'pie',
-						data: chartDataset,
-						options: chartOption,
-					}
-					return chartSet;
-				}
-
-
+				$("#legend-div .s1").text(chartData[0] + chartData[1]);
+				$("#legend-div .s2").text(chartData[2] + chartData[3]);
 			</script>
 
 

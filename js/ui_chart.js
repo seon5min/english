@@ -30,13 +30,13 @@ function chartDataStatus(chartLabel, chartData) {
 				displayColors: true,
 				titleFont: {
 					size: 12,
-					weight: 'lighter',
+					weight: 'bold',
 					lineHeight: 1
 				  },
 				  bodyFont: {
 					size: 12,
 					weight: 'bold',
-					lineHeight : '14px'
+					lineHeight : 1
 				  },
 				 borderColor: '#DEDEDE',
 				 backgroundColor:'#fff',
@@ -48,12 +48,16 @@ function chartDataStatus(chartLabel, chartData) {
 				 bodyAlign: 'center',
 				 usePointStyle: true, 
 				 yAlign: "bottom",	
-				 padding: 10,	
+				 padding: 12,	
 				 callbacks: {
 					labelTextColor: function(){
 						return myChart.data.datasets.backgroundColor;
 					},
-				 },							 					 
+				 },
+				 titleColor: function (tooltipitem) {
+					let bar_color = tooltipitem.tooltip.labelColors[0].backgroundColor;
+					return bar_color;
+				},							 					 
 			},
 			legend: false,
 			title: {
@@ -140,86 +144,6 @@ function chartDataStatus(chartLabel, chartData) {
 	}
 	return chartSet;
 }
-
-/* 최근 이용 콘텐츠 현황 */
-// function pieChartDraw(chartLabel, chartData) {
-// 	var chartDataset = null;
-// 	var chartOption = null;
-// 	chartDataset = {
-// 		labels: [chartLabel[0], chartLabel[1]],
-// 		datasets: [{
-// 			label: '동그라미',
-// 			data: [chartData[0] + chartData[1], chartData[2] + chartData[3]],
-// 			backgroundColor: ['#F57E25', '#F3D144']
-// 		}]
-
-// 	};
-
-// 	// Options
-// 	chartOption = {
-// 		responsive: false,
-// 		tooltips: {
-// 			callbacks: {
-// 				title: function (tooltipItem, data) {
-// 					return data['labels'][tooltipItem[0]['index']];
-// 				},
-// 				label: function (tooltipItem, data) {
-// 					var labels_tit = data['labels'][tooltipItem['index']];
-// 					if (labels_tit === '최근 이용한 프로그램') {
-// 						return '첫번째 영상 ' + chartData[0];
-// 					} else {
-// 						return '첫번째 영상 ' + chartData[2];
-// 					}
-// 					//return '첫번째 영상 ' + data['datasets'][0]['data'][tooltipItem['index']] + '%';
-// 				},
-// 				afterLabel: function (tooltipItem, data) {
-// 					var dataset = data['datasets'][0]['data'][tooltipItem['index']];
-// 					var labels_tit = data['labels'][tooltipItem['index']];
-// 					if (labels_tit === '최근 이용한 강좌') {
-// 						return '두번째 영상 ' + chartData[1];
-// 					} else {
-// 						return '두번째 영상 ' + chartData[3];
-// 					}
-// 					//var percent = Math.round((dataset['data'][tooltipItem['index']] / dataset["_meta"][0]['total']) * 100)
-// 					//return '두번째 영상 ' + dataset + '%';
-// 				}
-// 			},
-// 			backgroundColor: '#FFF',
-// 			titleFontSize: 16,
-// 			titleFontColor: '#0066ff',
-// 			bodyFontColor: '#000',
-// 			bodyFontSize: 14,
-// 			displayColors: false
-// 		},
-// 		legend: {
-// 			display: false
-// 		},
-// 		legendCallback: customLegend
-// 	}
-
-
-// 	let customLegend = function (chart) {
-// 		let ul = document.createElement('ul');
-// 		let color = chart.data.datasets[0].backgroundColor;
-// 		var dataset = chart.data['datasets'][0]['data'];
-// 		// chart.data.labels.forEach(function (label, index) {
-// 		//     ul.innerHTML += `<li data-index="${index}"><span style="background-color: ${color[index]}"></span>${label}</li>`;
-// 		// });
-	
-// 		ul.innerHTML += "<li data-target='최근 이용한 프로그램'><span style='background-color: #F57E25';></span>최근 이용한 프로그램" + dataset[0] + "</ul>";
-// 		ul.innerHTML += "<li data-target='최근 이용한 강좌'><span style='background-color: #F3D144;></span>최근 이용한 강좌" + dataset[1] + "</ul>";
-	
-// 		console.log(dataset);
-// 		return ul.outerHTML;
-// 	};
-	
-// 	var chartSet = {
-// 		type: 'pie',
-// 		data: chartData,
-// 		options: chartOption,
-// 	}
-// 	return chartSet;
-// }
 
 
 
