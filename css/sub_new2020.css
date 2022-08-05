@@ -1275,8 +1275,8 @@ section.my .t-myClass .t-detail .t-button a:first-child {width:100%;margin-botto
 section.my .t-myClass .t-detail .t-button a:last-child {float:right;}
 
 section.my .content_used_con .contents .pie_con {display: flex; justify-content: center; align-items: center; }
-section.my .content_used_con .contents .pie_wrap {width:200px;height: 200px;}
-section.my .content_used_con .contents ul {font-size: 18px; font-weight: 400;}
+section.my .content_used_con .contents .pie_wrap {width:200px; height:200px; max-width: 100%;max-height: 100%;transform: translateY(-20px);}
+section.my .content_used_con .contents ul {font-size: 18px; font-weight: 400;padding-left: 10px; }
 section.my .content_used_con .contents ul li{position: relative; display: flex; flex-direction: column; padding-left: 20px; color: #222222; letter-spacing: -0.45px; margin-top: -1px; line-height: 1.4;}
 section.my .content_used_con .contents ul li:first-child {margin-bottom: 18px;}
 section.my .content_used_con .contents ul li:first-child span {width: 68px; height: 28px; background: #FFE7D9; display: flex; justify-content: center; border-radius: 100px; align-items: center; color: #FF9154; font-size: 18px; font-weight: 500; margin-top: 7px;}
@@ -1446,6 +1446,9 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 	section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_count {font-size: 16px;}
 	section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_tot {font-size: 16px;}
 	section.my .gray_box .box_con.reading_activities_con .divider {height: 14px; margin: 2.5px 6px;}
+	section.my .content_used_con .contents ul {font-size: 16px;padding-left: 5px;}
+	section.my .content_used_con .contents .pie_wrap {width: 160px;height: 160px;}
+	section.my .content_used_con .contents ul li:first-child span,section.my .content_used_con .contents ul li:last-child span {font-size: 16px;height: 24px;}
 }
 
 @media screen and (max-width:740px) {
@@ -1505,6 +1508,9 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 	section.my .gray_box .box_con.status_con .contents .learning_stage > img {max-width: 140px;}
 	section.my .gray_box .box_tit > div:first-child {height: auto;margin-bottom: 10px;}
 	section.my .gray_box .friend_status_con .box_tit > div:first-child .more_wrap {transform: translateY(22px);}
+
+	section.my .content_used_con .contents .pie_wrap {width: 170px;height: 170px;}
+	section.my .content_used_con .contents ul {font-size: 16px;padding-left: 0;}
 }
 
 @media all and (max-width: 980px) {
