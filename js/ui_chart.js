@@ -32,32 +32,32 @@ function chartDataStatus(chartLabel, chartData) {
 					size: 12,
 					weight: 'bold',
 					lineHeight: 1
-				  },
-				  bodyFont: {
+				},
+				bodyFont: {
 					size: 12,
 					weight: 'bold',
-					lineHeight : 1
-				  },
-				 borderColor: '#DEDEDE',
-				 backgroundColor:'#fff',
-				 borderWidth: 1,
-				 titleColor:'#000',
-				 titleAlign:'center',
-				 boxWidth:0,
-				 boxHeight:0,
-				 bodyAlign: 'center',
-				 usePointStyle: true, 
-				 yAlign: "bottom",	
-				 padding: 12,	
-				 callbacks: {
-					labelTextColor: function(){
+					lineHeight: 1
+				},
+				borderColor: '#DEDEDE',
+				backgroundColor: '#fff',
+				borderWidth: 1,
+				titleColor: '#000',
+				titleAlign: 'center',
+				boxWidth: 0,
+				boxHeight: 0,
+				bodyAlign: 'center',
+				usePointStyle: true,
+				yAlign: "bottom",
+				padding: 12,
+				callbacks: {
+					labelTextColor: function () {
 						return myChart.data.datasets.backgroundColor;
 					},
-				 },
-				 titleColor: function (tooltipitem) {
+				},
+				titleColor: function (tooltipitem) {
 					let bar_color = tooltipitem.tooltip.labelColors[0].backgroundColor;
 					return bar_color;
-				},							 					 
+				},
 			},
 			legend: false,
 			title: {
@@ -90,8 +90,8 @@ function chartDataStatus(chartLabel, chartData) {
 					autoSkip: false,
 					maxRotation: 0,
 					minRotation: 0,
-					padding:10,
-				
+					padding: 10,
+
 				},
 				grid: {
 					color: "#e1e1e1",
@@ -120,7 +120,7 @@ function chartDataStatus(chartLabel, chartData) {
 					drawBorder: false,
 					drawTicks: false,
 					zeroLineColor: "transparent",
-			
+
 				},
 			},
 		},
@@ -128,7 +128,17 @@ function chartDataStatus(chartLabel, chartData) {
 	const chartAreaPlugin = {
 		id: 'chartAreaPlugin',
 		beforeDraw(chart, args, options) {
-			const {ctx, chartArea: {top, bottom, left, right, width, height} } = chart;
+			const {
+				ctx,
+				chartArea: {
+					top,
+					bottom,
+					left,
+					right,
+					width,
+					height
+				}
+			} = chart;
 			ctx.save();
 			ctx.fillStyle = '#fff';
 			ctx.fillRect(left, top, width, height);
@@ -146,7 +156,7 @@ function chartDataStatus(chartLabel, chartData) {
 }
 
 /* 최근 이용 콘텐츠 현황 */
-function pieStatus(chartLabel, chartData) {
+function pieStatus(chartlabels, chartData) {
 	var data = {
 		labels: [
 			chartlabels[0],
@@ -167,7 +177,7 @@ function pieStatus(chartLabel, chartData) {
 		}]
 	};
 	var ctx = $("#myChart2");
-	var myChart2 = new Chart(ctx, {
+	var myChart = new Chart(ctx, {
 		type: 'pie',
 		data: data,
 		options: {
@@ -220,8 +230,7 @@ function pieStatus(chartLabel, chartData) {
 								return 'e클립           ' + ': ' + chartData[3];
 							}
 						},
-						label: function (context) {
-						}
+						label: function (context) {}
 					},
 					titleColor: function (tooltipiem) {
 						let pie_color = tooltipiem.tooltip.labelColors[0].backgroundColor;
@@ -244,7 +253,7 @@ function pieStatus(chartLabel, chartData) {
 				padding: {
 					left: 0,
 					right: 0,
-					top: 40,
+					top: 50,
 					bottom: 0
 				}
 			},
@@ -329,8 +338,7 @@ function pieStatus2(chartLabel, chartData) {
 								return 'e클립           ' + ': ' + chartData[3];
 							}
 						},
-						label: function (context) {
-						}
+						label: function (context) {}
 					},
 					titleColor: function (tooltipiem) {
 						let pie_color = tooltipiem.tooltip.labelColors[0].backgroundColor;
@@ -353,7 +361,7 @@ function pieStatus2(chartLabel, chartData) {
 				padding: {
 					left: 0,
 					right: 0,
-					top: 40,
+					top: 50,
 					bottom: 0
 				}
 			},
@@ -362,5 +370,3 @@ function pieStatus2(chartLabel, chartData) {
 	$(".study_room_con #legend-div .s1").text(chartData[0] + chartData[1]);
 	$(".study_room_con #legend-div .s2").text(chartData[2] + chartData[3]);
 }
-
-
