@@ -254,7 +254,7 @@ function pieStatus(chartlabels, chartData) {
 					left: 0,
 					right: 0,
 					top: 50,
-					bottom: 0
+					bottom: 2
 				}
 			},
 		}
@@ -362,7 +362,7 @@ function pieStatus2(chartLabel, chartData) {
 					left: 0,
 					right: 0,
 					top: 50,
-					bottom: 0
+					bottom: 2
 				}
 			},
 		}
