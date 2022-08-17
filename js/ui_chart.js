@@ -65,7 +65,7 @@ function chartDataStatus(chartLabel1, chartData1) {
 				text: '초급 Lv 03 일별 평균 학습현황',
 				font: {
 					size: 12,
-					family: "'Noto Sans KR','맑은 고딕','Malgun Gothic','Roboto'",
+					//family: "'Noto Sans KR','맑은 고딕','Malgun Gothic','Roboto'",
 					weight: '400',
 					color: '#717171'
 				},
