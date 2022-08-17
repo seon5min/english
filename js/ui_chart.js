@@ -164,7 +164,7 @@ function pieStatus(chartlabels, chartData) {
 		],
 		datasets: [{
 			label: '최근 이용 콘텐츠 현황',
-			data: [chartData2[0] + chartData2[1], chartData2[2] + chartData2[3]],
+			data: [chartData[0] + chartData[1], chartData[2] + chartData[3]],
 			backgroundColor: [
 				"#F57E25",
 				"#F3D144"
@@ -176,8 +176,8 @@ function pieStatus(chartlabels, chartData) {
 			borderWidth: 0
 		}]
 	};
-	var ctx = $("#myChart2");
-	new Chart(ctx, {
+	var ctx2 = $("#myChart2");
+	new Chart(ctx2, {
 		type: 'pie',
 		data: data,
 		options: {
@@ -214,19 +214,19 @@ function pieStatus(chartlabels, chartData) {
 						beforeBody: function (context) {
 							var labels_tit = context[0].label;
 							if (labels_tit === '최근 이용한 프로그램') {
-								return '방송프로그램 ' + ': ' + chartData2[0];
+								return '방송프로그램 ' + ': ' + chartData[0];
 
 							} else {
-								return '방송프로그램 ' + ': ' + chartData2[2];
+								return '방송프로그램 ' + ': ' + chartData[2];
 							}
 						},
 						afterBody: function (context) {
 							var labels_tit = context[0].label;
 							if (labels_tit === '최근 이용한 프로그램') {
-								return 'e클립           ' + ': ' + chartData2[1];
+								return 'e클립           ' + ': ' + chartData[1];
 
 							} else {
-								return 'e클립           ' + ': ' + chartData2[3];
+								return 'e클립           ' + ': ' + chartData[3];
 							}
 						},
 						label: function (context) {}
@@ -283,8 +283,8 @@ function pieStatus2(chartlabels, chartData) {
 			borderWidth: 0
 		}]
 	};
-	var ctx = $("#myChart3");
-	new Chart(ctx, {
+	var ctx3 = $("#myChart3");
+	new Chart(ctx3, {
 		type: 'pie',
 		data: data,
 		options: {
