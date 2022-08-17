@@ -1181,7 +1181,7 @@ section.my button.arrow-slide {position:absolute;top:50%;width:40px;height:40px;
 section.my button.arrow-slide.prev {background: url('https://www.ebse.co.kr/engBook/images/sub/btn_back_arrow.png') no-repeat center 50%;left:1;}
 section.my button.arrow-slide.next {background: url('https://www.ebse.co.kr/engBook/images/sub/btn_next_arrow.png') no-repeat center 50%;right:1;}
 
-section.my .gray_box .box_con.reading_activities_con .contents {display: -webkit-box; display: -ms-flexbox;display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center;}
+/* section.my .gray_box .box_con.reading_activities_con .contents {display: -webkit-box; display: -ms-flexbox;display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center;} */
 section.my .gray_box .box_con.reading_activities_con .single_chart {width: 146px; height: 146px; margin-left: 40px;}
 section.my .gray_box .box_con.reading_activities_con .circular_chart { fill: #fff; max-width: 146px; max-height: 146px; margin: 0 auto; }
 section.my .gray_box .box_con.reading_activities_con .circular_chart .circle_bg { fill: none; stroke: #ebebeb; stroke-width: 5; }
