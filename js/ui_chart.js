@@ -1,13 +1,13 @@
 /* 같은 레벨 친구들 학습 현황 */
-function chartDataStatus(chartLabel, chartData) {
+function chartDataStatus(chartLabel1, chartData1) {
 	var chartDataset = null;
 	var chartOption = null;
 	chartDataset = {
-		labels: chartLabel,
+		labels: chartLabel1,
 		datasets: [{
 			type: 'bar',
 			barThickness: 40,
-			data: chartData,
+			data: chartData1,
 			backgroundColor: [
 				'#583BF8',
 				'#F3D144',
@@ -32,32 +32,32 @@ function chartDataStatus(chartLabel, chartData) {
 					size: 12,
 					weight: 'bold',
 					lineHeight: 1
-				  },
-				  bodyFont: {
+				},
+				bodyFont: {
 					size: 12,
 					weight: 'bold',
-					lineHeight : 1
-				  },
-				 borderColor: '#DEDEDE',
-				 backgroundColor:'#fff',
-				 borderWidth: 1,
-				 titleColor:'#000',
-				 titleAlign:'center',
-				 boxWidth:0,
-				 boxHeight:0,
-				 bodyAlign: 'center',
-				 usePointStyle: true, 
-				 yAlign: "bottom",	
-				 padding: 12,	
-				 callbacks: {
-					labelTextColor: function(){
+					lineHeight: 1
+				},
+				borderColor: '#DEDEDE',
+				backgroundColor: '#fff',
+				borderWidth: 1,
+				titleColor: '#000',
+				titleAlign: 'center',
+				boxWidth: 0,
+				boxHeight: 0,
+				bodyAlign: 'center',
+				usePointStyle: true,
+				yAlign: "bottom",
+				padding: 12,
+				callbacks: {
+					labelTextColor: function () {
 						return myChart.data.datasets.backgroundColor;
 					},
-				 },
-				 titleColor: function (tooltipitem) {
+				},
+				titleColor: function (tooltipitem) {
 					let bar_color = tooltipitem.tooltip.labelColors[0].backgroundColor;
 					return bar_color;
-				},							 					 
+				},
 			},
 			legend: false,
 			title: {
@@ -85,13 +85,13 @@ function chartDataStatus(chartLabel, chartData) {
 				ticks: {
 					font: {
 						size: 11,
-						family: "'Noto Sans KR','맑은 고딕','Malgun Gothic','Roboto'"
+						//family: "'Noto Sans KR','맑은 고딕','Malgun Gothic','Roboto'"
 					},
 					autoSkip: false,
 					maxRotation: 0,
 					minRotation: 0,
-					padding:10,
-				
+					padding: 10,
+
 				},
 				grid: {
 					color: "#e1e1e1",
@@ -110,7 +110,7 @@ function chartDataStatus(chartLabel, chartData) {
 					color: "#717171",
 					font: {
 						size: 10,
-						family: "'Noto Sans KR','맑은 고딕','Malgun Gothic','Roboto'"
+						//family: "'Noto Sans KR','맑은 고딕','Malgun Gothic','Roboto'"
 					},
 					padding: 5,
 				},
@@ -120,7 +120,7 @@ function chartDataStatus(chartLabel, chartData) {
 					drawBorder: false,
 					drawTicks: false,
 					zeroLineColor: "transparent",
-			
+
 				},
 			},
 		},
@@ -128,7 +128,17 @@ function chartDataStatus(chartLabel, chartData) {
 	const chartAreaPlugin = {
 		id: 'chartAreaPlugin',
 		beforeDraw(chart, args, options) {
-			const {ctx, chartArea: {top, bottom, left, right, width, height} } = chart;
+			const {
+				ctx,
+				chartArea: {
+					top,
+					bottom,
+					left,
+					right,
+					width,
+					height
+				}
+			} = chart;
 			ctx.save();
 			ctx.fillStyle = '#fff';
 			ctx.fillRect(left, top, width, height);
@@ -220,8 +230,7 @@ function pieStatus(chartlabels, chartData) {
 								return 'e클립           ' + ': ' + chartData[3];
 							}
 						},
-						label: function (context) {
-						}
+						label: function (context) {}
 					},
 					titleColor: function (tooltipiem) {
 						let pie_color = tooltipiem.tooltip.labelColors[0].backgroundColor;
@@ -245,7 +254,7 @@ function pieStatus(chartlabels, chartData) {
 					left: 0,
 					right: 0,
 					top: 50,
-					bottom: 0
+					bottom: 2
 				}
 			},
 		}
@@ -329,8 +338,7 @@ function pieStatus2(chartLabel, chartData) {
 								return 'e클립           ' + ': ' + chartData[3];
 							}
 						},
-						label: function (context) {
-						}
+						label: function (context) {}
 					},
 					titleColor: function (tooltipiem) {
 						let pie_color = tooltipiem.tooltip.labelColors[0].backgroundColor;
@@ -354,7 +362,7 @@ function pieStatus2(chartLabel, chartData) {
 					left: 0,
 					right: 0,
 					top: 50,
-					bottom: 0
+					bottom: 2
 				}
 			},
 		}
