@@ -156,15 +156,15 @@ function chartDataStatus(chartLabel1, chartData1) {
 }
 
 /* 최근 이용 콘텐츠 현황 */
-function pieStatus(chartlabels, chartData) {
+function pieStatus(chartlabels2, chartData2) {
 	var data = {
 		labels: [
-			chartlabels[0],
-			chartlabels[1]
+			chartlabels2[0],
+			chartlabels2[1]
 		],
 		datasets: [{
 			label: '최근 이용 콘텐츠 현황',
-			data: [chartData[0] + chartData[1], chartData[2] + chartData[3]],
+			data: [chartData2[0] + chartData2[1], chartData2[2] + chartData2[3]],
 			backgroundColor: [
 				"#F57E25",
 				"#F3D144"
@@ -177,7 +177,7 @@ function pieStatus(chartlabels, chartData) {
 		}]
 	};
 	var ctx = $("#myChart2");
-	var myChart = new Chart(ctx, {
+	var myChart2 = new Chart(ctx, {
 		type: 'pie',
 		data: data,
 		options: {
@@ -186,14 +186,14 @@ function pieStatus(chartlabels, chartData) {
 					displayColors: true,
 					titleFont: {
 						size: 14,
-						family: "'Noto Sans KR','맑은 고딕','Malgun Gothic','Roboto'",
+						//family: "'Noto Sans KR','맑은 고딕','Malgun Gothic','Roboto'",
 						weight: 'bold',
 
 						lineHeight: 1.2
 					},
 					bodyFont: {
 						size: 14,
-						family: "'Noto Sans KR','맑은 고딕','Malgun Gothic','Roboto'",
+						//family: "'Noto Sans KR','맑은 고딕','Malgun Gothic','Roboto'",
 						weight: 'normal',
 						lineHeight: 1.2
 					},
@@ -215,19 +215,19 @@ function pieStatus(chartlabels, chartData) {
 						beforeBody: function (context) {
 							var labels_tit = context[0].label;
 							if (labels_tit === '최근 이용한 프로그램') {
-								return '방송프로그램 ' + ': ' + chartData[0];
+								return '방송프로그램 ' + ': ' + chartData2[0];
 
 							} else {
-								return '방송프로그램 ' + ': ' + chartData[2];
+								return '방송프로그램 ' + ': ' + chartData2[2];
 							}
 						},
 						afterBody: function (context) {
 							var labels_tit = context[0].label;
 							if (labels_tit === '최근 이용한 프로그램') {
-								return 'e클립           ' + ': ' + chartData[1];
+								return 'e클립           ' + ': ' + chartData2[1];
 
 							} else {
-								return 'e클립           ' + ': ' + chartData[3];
+								return 'e클립           ' + ': ' + chartData2[3];
 							}
 						},
 						label: function (context) {}
@@ -259,20 +259,20 @@ function pieStatus(chartlabels, chartData) {
 			},
 		}
 	});
-	$(".content_used_con #legend-div .s1").text(chartData[0] + chartData[1]);
-	$(".content_used_con #legend-div .s2").text(chartData[2] + chartData[3]);
+	$(".content_used_con #legend-div .s1").text(chartData2[0] + chartData2[1]);
+	$(".content_used_con #legend-div .s2").text(chartData2[2] + chartData2[3]);
 }
 
 /* 나의 학습방 현황 */
-function pieStatus2(chartLabel, chartData) {
+function pieStatus2(chartlabels3, chartData3) {
 	var data = {
 		labels: [
-			chartlabels[0],
-			chartlabels[1]
+			chartlabels3[0],
+			chartlabels3[1]
 		],
 		datasets: [{
 			label: '나의 학습방 현황',
-			data: [chartData[0] + chartData[1], chartData[2] + chartData[3]],
+			data: [chartData3[0] + chartData3[1], chartData3[2] + chartData3[3]],
 			backgroundColor: [
 				"#583BF8",
 				"#A363F8"
@@ -294,14 +294,13 @@ function pieStatus2(chartLabel, chartData) {
 					displayColors: true,
 					titleFont: {
 						size: 14,
-						family: "'Noto Sans KR','맑은 고딕','Malgun Gothic','Roboto'",
+						//family: "'Noto Sans KR','맑은 고딕','Malgun Gothic','Roboto'",
 						weight: 'bold',
-
 						lineHeight: 1.2
 					},
 					bodyFont: {
 						size: 14,
-						family: "'Noto Sans KR','맑은 고딕','Malgun Gothic','Roboto'",
+						//family: "'Noto Sans KR','맑은 고딕','Malgun Gothic','Roboto'",
 						weight: 'normal',
 						lineHeight: 1.2
 					},
@@ -367,6 +366,6 @@ function pieStatus2(chartLabel, chartData) {
 			},
 		}
 	});
-	$(".study_room_con #legend-div .s1").text(chartData[0] + chartData[1]);
-	$(".study_room_con #legend-div .s2").text(chartData[2] + chartData[3]);
+	$(".study_room_con #legend-div .s1").text(chartData3[0] + chartData3[1]);
+	$(".study_room_con #legend-div .s2").text(chartData3[2] + chartData3[3]);
 }
