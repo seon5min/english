@@ -156,11 +156,11 @@ function chartDataStatus(chartLabel1, chartData1) {
 }
 
 /* 최근 이용 콘텐츠 현황 */
-function pieStatus(chartlabels2, chartData2) {
+function pieStatus(chartlabels, chartData) {
 	var data = {
 		labels: [
-			chartlabels2[0],
-			chartlabels2[1]
+			chartlabels[0],
+			chartlabels[1]
 		],
 		datasets: [{
 			label: '최근 이용 콘텐츠 현황',
@@ -177,7 +177,7 @@ function pieStatus(chartlabels2, chartData2) {
 		}]
 	};
 	var ctx = $("#myChart2");
-	var myChart2 = new Chart(ctx, {
+	new Chart(ctx, {
 		type: 'pie',
 		data: data,
 		options: {
@@ -188,7 +188,6 @@ function pieStatus(chartlabels2, chartData2) {
 						size: 14,
 						//family: "'Noto Sans KR','맑은 고딕','Malgun Gothic','Roboto'",
 						weight: 'bold',
-
 						lineHeight: 1.2
 					},
 					bodyFont: {
@@ -259,20 +258,20 @@ function pieStatus(chartlabels2, chartData2) {
 			},
 		}
 	});
-	$(".content_used_con #legend-div .s1").text(chartData2[0] + chartData2[1]);
-	$(".content_used_con #legend-div .s2").text(chartData2[2] + chartData2[3]);
+	$(".content_used_con #legend-div .s1").text(chartData[0] + chartData[1]);
+	$(".content_used_con #legend-div .s2").text(chartData[2] + chartData[3]);
 }
 
 /* 나의 학습방 현황 */
-function pieStatus2(chartlabels3, chartData3) {
+function pieStatus2(chartlabels, chartData) {
 	var data = {
 		labels: [
-			chartlabels3[0],
-			chartlabels3[1]
+			chartlabels[0],
+			chartlabels[1]
 		],
 		datasets: [{
 			label: '나의 학습방 현황',
-			data: [chartData3[0] + chartData3[1], chartData3[2] + chartData3[3]],
+			data: [chartData[0] + chartData[1], chartData[2] + chartData[3]],
 			backgroundColor: [
 				"#583BF8",
 				"#A363F8"
@@ -285,7 +284,7 @@ function pieStatus2(chartlabels3, chartData3) {
 		}]
 	};
 	var ctx = $("#myChart3");
-	var myChart3 = new Chart(ctx, {
+	new Chart(ctx, {
 		type: 'pie',
 		data: data,
 		options: {
@@ -366,6 +365,6 @@ function pieStatus2(chartlabels3, chartData3) {
 			},
 		}
 	});
-	$(".study_room_con #legend-div .s1").text(chartData3[0] + chartData3[1]);
-	$(".study_room_con #legend-div .s2").text(chartData3[2] + chartData3[3]);
+	$(".study_room_con #legend-div .s1").text(chartData[0] + chartData[1]);
+	$(".study_room_con #legend-div .s2").text(chartData[2] + chartData[3]);
 }
