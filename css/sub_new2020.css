@@ -1037,7 +1037,7 @@ section.my .gray_box .box_tit .plus:after {height: 1px; width: 10px; }
 section.my .gray_box .box_tit .more_wrap {margin-left:auto;}
 section.my .gray_box .box_tit .contents {width: 100%; height: 260px; margin:20px 0 90px 0; background: #F8F8F8;-webkit-box-pack: center; -ms-flex-pack: center;justify-content: center;}
 section.my .gray_box .box_con.used_nodata .contents, section.my .gray_box .box_con.study_nodata .contents {-webkit-box-align: start; -ms-flex-align: start;align-items: flex-start; padding-left: 35px;-webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; padding-top: 30px; }
-section.my .gray_box .box_con.friend_nodata .contents,section.my .gray_box .box_con.used_nodata .contents,section.my .gray_box .box_con.study_nodata .contents {-webkit-box-orient: vertical; -ms-flex-direction: column;flex-direction: column;}
+section.my .gray_box .box_con.friend_nodata .contents,section.my .gray_box .box_con.used_nodata .contents,section.my .gray_box .box_con.study_nodata .contents {justify-content: center; align-items: center; margin: 0; padding: 0;-webkit-box-orient: vertical; -ms-flex-direction: column;flex-direction: column;}
 section.my .gray_box .box_con.used_nodata .legend-div,section.my .gray_box .box_con.study_nodata .legend-div {margin-top: 10px;}
 section.my .gray_box .box_con.status_con .contents .learning_stage {padding-right: 18px;transform: translateX(-16px);}
 section.my .gray_box .box_con.status_con .contents .learning_stage img {width: 140px;height: 140px;}
@@ -1182,13 +1182,13 @@ section.my button.arrow-slide.prev {background: url('https://www.ebse.co.kr/engB
 section.my button.arrow-slide.next {background: url('https://www.ebse.co.kr/engBook/images/sub/btn_next_arrow.png') no-repeat center 50%;right:1;}
 
 /* section.my .gray_box .box_con.reading_activities_con .contents {display: -webkit-box; display: -ms-flexbox;display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center;} */
-section.my .gray_box .box_con.reading_activities_con .single_chart {width: 146px; height: 146px;}
+section.my .gray_box .box_con.reading_activities_con .single_chart {width: 146px; height: 146px;transform: translateX(-6px); margin-right: 20px;}
 section.my .gray_box .box_con.reading_activities_con .circular_chart { fill: #fff; max-width: 146px; max-height: 146px; margin: 0 auto; }
 section.my .gray_box .box_con.reading_activities_con .circular_chart .circle_bg { fill: none; stroke: #ebebeb; stroke-width: 5; }
 section.my .gray_box .box_con.reading_activities_con .circular_chart .circle { fill: none; stroke: #f57e25; stroke-width: 5; stroke-linecap: round; animation: progress 1s ease-out forwards; }
 section.my .gray_box .box_con.reading_activities_con .circular_chart .percentage { fill: #666; font-size: 0.5em; text-anchor: middle;font-weight: 500;}
 section.my .gray_box .box_con.reading_activities_con .circular_chart .percentage .per { font-size: 0.4em; }
-section.my .gray_box .box_con.reading_activities_con .num_detail_con {width: 100%; max-width: 206px; margin-left: 31px;position: relative;transform: translateY(8px);}
+section.my .gray_box .box_con.reading_activities_con .num_detail_con {width: 100%; max-width: 206px; position: relative;transform: translateY(8px);}
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading,
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .week_reading,
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .month_reading {display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center;align-items: center; margin-bottom: 25px; }
@@ -1217,7 +1217,7 @@ section.my .gray_box .box_con.reading_activities_con .divider { text-align: cent
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_tot { font-size: 18px; line-height: 1.2; color: #222; letter-spacing: -0.8px; }
 
 section.my .gray_box .box_con.etizen_con .contents {-webkit-box-pack: start; -ms-flex-pack: start;justify-content: flex-start;}
-section.my .gray_box .box_con.etizen_con .ico_etizen { position: relative; display: block; overflow: hidden; margin-left: 32px; padding: 17%; margin-right: 25px;width: 146px; height: 146px;max-width: 100%; max-height: 100%;}
+section.my .gray_box .box_con.etizen_con .ico_etizen { position: relative; display: block; overflow: hidden; margin-left: 32px; padding: 17%; margin-right: 30px;width: 146px; height: 146px;max-width: 100%; max-height: 100%;}
 section.my .gray_box .box_con.etizen_con .ico_etizen:before { content: ""; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: block; width: 140px; height: 140px;max-width: 100%; max-height: 100%; border-radius: 50%; background-color: #555; }
 section.my .gray_box .box_con.etizen_con .ico_etizen.lv1:before { background: #1787d1 url("../images/etizen_icn_1.png") no-repeat center 50%; background-size: 80%; }
 section.my .gray_box .box_con.etizen_con .ico_etizen.lv2:before { background: #14a5d2 url("../images/etizen_icn_2.png") no-repeat center 50%; background-size: 80%; }
@@ -1278,8 +1278,8 @@ section.my .t-myClass .t-detail .t-button a:first-child {width:100%;margin-botto
 section.my .t-myClass .t-detail .t-button a:last-child {float:right;}
 
 section.my .content_used_con .contents .pie_con {display: -webkit-box; display: -ms-flexbox;display: flex; -webkit-box-pack: center; -ms-flex-pack: center;justify-content: center; -webkit-box-align: center; -ms-flex-align: center;align-items: center; }
-section.my .content_used_con .contents .pie_wrap {width:190px; height:190px; max-width: 100%;max-height: 100%;transform: translate(-20px,-20px);}
-section.my .content_used_con .contents ul {font-size: 18px; font-weight: 400;padding-left: 0px; transform:translateX(-10px);}
+section.my .content_used_con .contents .pie_wrap {width:190px; height:190px; max-width: 100%;max-height: 100%;transform: translate(-35px,-20px);}
+section.my .content_used_con .contents ul {font-size: 18px; font-weight: 400;padding-left: 0px; transform:translateX(-26px);}
 section.my .content_used_con .contents ul li{position: relative; display: -ms-flexbox;display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; padding-left: 20px; color: #222222; letter-spacing: -0.45px; margin-top: -1px; line-height: 1.4;}
 section.my .content_used_con .contents ul li:first-child {margin-bottom: 18px;}
 section.my .content_used_con .contents ul li:first-child span {width: 68px; height: 28px; background: #FFE7D9; display: -webkit-box; display: -ms-flexbox;display: flex; -webkit-box-pack: center; -ms-flex-pack: center;justify-content: center; border-radius: 100px; -webkit-box-align: center; -ms-flex-align: center;align-items: center; color: #FF9154; font-size: 18px; font-weight: 500; margin-top: 7px;}
@@ -1288,8 +1288,8 @@ section.my .content_used_con .contents ul li:first-child::before {content: ''; p
 section.my .content_used_con .contents ul li:last-child::before {content: ''; position: absolute; top: 7.5px; left: 0; width: 12px;height: 12px;border-radius: 100px;background-color: #F3D144;} 
 
 section.my .study_room_con .contents .pie_con {display: -webkit-box; display: -ms-flexbox;display: flex; justify-content: center; align-items: center; }
-section.my .study_room_con .contents .pie_wrap {width:190px; height:190px; max-width: 100%;max-height: 100%;transform: translate(-20px,-20px);}
-section.my .study_room_con .contents ul {font-size: 18px; font-weight: 400;padding-left: 0px; transform:translateX(-10px);}
+section.my .study_room_con .contents .pie_wrap {width:190px; height:190px; max-width: 100%;max-height: 100%;transform: translate(-35px,-20px);}
+section.my .study_room_con .contents ul {font-size: 18px; font-weight: 400;padding-left: 0px; transform:translateX(-26px);}
 section.my .study_room_con .contents ul li{position: relative;display: -webkit-box; display: -ms-flexbox; display: flex;-webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column; padding-left: 20px; color: #222222; letter-spacing: -0.45px; margin-top: -1px; line-height: 1.4;}
 section.my .study_room_con .contents ul li:first-child {margin-bottom: 18px;}
 section.my .study_room_con .contents ul li:first-child span {width: 68px; height: 28px; background: #DFE7FF; display: -webkit-box; display: -ms-flexbox;display: flex; -webkit-box-pack: center; -ms-flex-pack: center;justify-content: center; border-radius: 100px; -webkit-box-align: center; -ms-flex-align: center;align-items: center; color: #583BF8; font-size: 18px; font-weight: 500; margin-top: 7px;}
@@ -1462,16 +1462,16 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 	section.my .gray_box .box_con.status_con .contents .learning_tot {font-size: 18px; min-width: 195px;}
 	section.my .gray_box .box_con.friend_nodata .nodata_txt {padding: 10px 27px;}
 	section.my .gray_box .box_con.friend_nodata .nodata_tit {padding: 10px 17px 0;}
-	section.my .gray_box .box_con.used_nodata .contents, section.my .gray_box .box_con.study_nodata .contents {-webkit-box-align: start; -ms-flex-align: start;align-items: flex-start; padding-left: 25px;-webkit-box-pack: start; -ms-flex-pack: start;justify-content: flex-start; padding-top: 45px; }
+	/* section.my .gray_box .box_con.used_nodata .contents, section.my .gray_box .box_con.study_nodata .contents {-webkit-box-align: start; -ms-flex-align: start;align-items: flex-start; padding-left: 25px;-webkit-box-pack: start; -ms-flex-pack: start;justify-content: flex-start; padding-top: 45px; } */
 	section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_count {font-size: 16px;}
 	section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_tot {font-size: 16px;}
 	section.my .gray_box .box_con.reading_activities_con .divider {height: 14px; margin: 2.5px 6px;}
 	section.my .content_used_con .contents ul {font-size: 16px;}
-	section.my .content_used_con .contents .pie_wrap {width: 160px;height: 160px;transform: translate(-15px,-20px);}
+	section.my .content_used_con .contents .pie_wrap {width: 160px;height: 160px;}
 	section.my .content_used_con .contents ul li:first-child span,section.my .content_used_con .contents ul li:last-child span {font-size: 16px;height: 24px;}
 	
 	section.my .study_room_con .contents ul {font-size: 16px;}
-	section.my .study_room_con .contents .pie_wrap {width: 160px;height: 160px;transform: translate(-15px,-20px);}
+	section.my .study_room_con .contents .pie_wrap {width: 160px;height: 160px;}
 	section.my .study_room_con .contents ul li:first-child span,section.my .content_used_con .contents ul li:last-child span {font-size: 16px;height: 24px;}
 }
 
@@ -1538,17 +1538,17 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 	section.my .gray_box .box_tit > div:first-child {height: auto;margin-bottom: 10px;}
 	section.my .gray_box .friend_status_con .box_tit > div:first-child .more_wrap {transform: translateY(22px);}
 
-	section.my .content_used_con .contents .pie_wrap {width: 170px;height: 170px;transform: translate(-10px,-20px);}
-	section.my .content_used_con .contents ul {font-size: 16px;padding-left: 0;}
+	section.my .content_used_con .contents .pie_wrap {width: 170px;height: 170px;transform: translate(0,-20px);}
+	section.my .content_used_con .contents ul {font-size: 16px;padding-left: 0;transform: translateX(0);}
 
-	section.my .study_room_con .contents .pie_wrap {width: 170px;height: 170px;transform: translate(-10px,-20px);}
-	section.my .study_room_con .contents ul {font-size: 16px;padding-left: 0;}
+	section.my .study_room_con .contents .pie_wrap {width: 170px;height: 170px;transform: translate(0,-20px);}
+	section.my .study_room_con .contents ul {font-size: 16px;padding-left: 0;transform: translateX(0);}
 	section.my .gray_box .box_con.etizen_con .contents {-webkit-box-pack: center; -ms-flex-pack: center;justify-content: center;}
 	section.my .gray_box .box_con.etizen_con .ico_etizen {margin-left: 0; margin-right: 0; width: 120px; height: 120px; padding: 5%; transform: translateX(-53%);}
 	section.my .content_used_con .contents .pie_con {transform: translateX(-20px);}
 	section.my .study_room_con .contents .pie_con {transform: translateX(-28px);}
 	section.my .gray_box .box_con.etizen_con .etizen_wrap {transform: translateX(-25px);}
-	section.my .gray_box .box_con.used_nodata .contents, section.my .gray_box .box_con.study_nodata .contents {-webkit-box-align: center; -ms-flex-align: center;align-items: center; padding-top: 15px; }
+	/* section.my .gray_box .box_con.used_nodata .contents, section.my .gray_box .box_con.study_nodata .contents {-webkit-box-align: center; -ms-flex-align: center;align-items: center; padding-top: 15px; } */
 	section.my .gray_box .box_con.etizen_con .ico_etizen:before {width: 119px; height: 119px; max-width: 100%; max-height: 100%;}
 	section.my .gray_box .box_con.used_nodata .legend-div, section.my .gray_box .box_con.study_nodata .legend-div {margin-top: 30px; padding-left: 15px;-webkit-box-align: center; -ms-flex-align: center;align-items: center;}
 	section.my .gray_box .box_con.status_con .contents .progress {max-width: 160px;}
@@ -2489,7 +2489,7 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 @media all and (max-width: 440px) {
 	section.my .etizen .btns .bt {font-size: 13px;padding: 0 10px 0 10px;letter-spacing: -1px;}
 	section.my .gray_box .box_con.status_con .contents .learning_stage > img {max-width: 110px;max-height: 110px;}
-	section.my .gray_box .box_con.used_nodata .contents, section.my .gray_box .box_con.study_nodata .contents {padding-left: 10px;}
+	/* section.my .gray_box .box_con.used_nodata .contents, section.my .gray_box .box_con.study_nodata .contents {padding-left: 10px;} */
 	section.my .gray_box .box_con.used_nodata .legend-div, section.my .gray_box .box_con.study_nodata .legend-div {padding-left: 0;}
 	section.my .gray_box .box_con.status_con .contents .learning_stage {transform: translateX(0px);}
 }
