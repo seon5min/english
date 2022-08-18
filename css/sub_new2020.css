@@ -1180,8 +1180,6 @@ section.my .myflex_wrap .myclass_info > ul > li > .con_info:last-child {width:10
 section.my button.arrow-slide {position:absolute;top:50%;width:40px;height:40px;text-indent:-9999px;background-size: 40px;margin-top:-20px;}
 section.my button.arrow-slide.prev {background: url('https://www.ebse.co.kr/engBook/images/sub/btn_back_arrow.png') no-repeat center 50%;left:1px;}
 section.my button.arrow-slide.next {background: url('https://www.ebse.co.kr/engBook/images/sub/btn_next_arrow.png') no-repeat center 50%;right:1px;}
-
-/* section.my .gray_box .box_con.reading_activities_con .contents {display: -webkit-box; display: -ms-flexbox;display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center;} */
 section.my .gray_box .box_con.reading_activities_con .single_chart {width: 146px; height: 146px;transform: translateX(-6px); margin-right: 20px;}
 section.my .gray_box .box_con.reading_activities_con .circular_chart { fill: #fff; max-width: 146px; max-height: 146px; margin: 0 auto; }
 section.my .gray_box .box_con.reading_activities_con .circular_chart .circle_bg { fill: none; stroke: #ebebeb; stroke-width: 5; }
@@ -1203,14 +1201,12 @@ section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_read
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .info_layer:before { border-color: #fff transparent transparent transparent; border-width: 6px 6px 8px 6px; bottom: -12px; left: 57px; }
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .info_layer:after { border-color: #fff transparent transparent transparent; border-width: 5px 5px 7px 5px; bottom: -12px; left: 58px; }
 
-section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .info_close { position: absolute; top: 12px; right: 8px; width: 16px; height: 16px; background: url(../images/funreading/icon/ico_close_16.png) 0% 0% no-repeat; }
+section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .info_close { position: absolute; top: -30px; right: 8px; width: 16px; height: 16px; background: url(../images/funreading/icon/ico_close_16.png) 0% 0% no-repeat; }
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .reading_info { display: -webkit-box; display: -ms-flexbox;display: inline-block; width: 18px; height: 18px; margin-left: 5px; background: url(../images/funreading/icon/ico_info_16.png) 100% 50% no-repeat; }
-section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .info_txt {color: #8790A1; padding: 0 10%; line-height: 1.25;} 
+section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .info_txt {    position: relative;color: #8790A1; padding: 0 10%; line-height: 1.25;} 
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .num_detail_con .reading_tit { display: -webkit-box; display: -ms-flexbox;display: flex; -webkit-box-align: center; -ms-flex-align: center;align-items: center; flex-shrink: 0; margin-right: 20px; font-size: 14px; line-height: 1.2; font-weight: 400; color: #717171; margin-bottom: 8px; letter-spacing: -0.8px; }
 section.my .gray_box .box_con.reading_activities_con .dotted-line {display: flex; align-items: center;flex-grow: 1; white-space: nowrap; position: relative; overflow: hidden; }
 section.my .gray_box .box_con.reading_activities_con .dotted-line:after { content: ""; width: 100%; height: 1px; background: url("../images/funreading/icon/dot.png") repeat-x; color: #ccc; display: inline-block; }
-/* section.my .gray_box .box_con.reading_activities_con .month_reading .dotted-line {transform: translateY(9px);} */
-/* section.my .gray_box .box_con.reading_activities_con .dotted-line {} */
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_count {display: -webkit-box; display: -ms-flexbox;display: flex; flex-basis: content; margin-left: 12px; font-size: 18px; line-height: 1.2; color: #222; letter-spacing: -0.8px; }
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_count.zero { color: #717171; }
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .month_reading .reading_count.zero {margin-left: 12px;}
@@ -1424,11 +1420,9 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 }
 
 @media all and (max-width: 980px) {
-	 /* #myChart { height: 220px !important;}  */
 	section.guide .navi a {margin-right:12px;}
 	section.guide .navi a + a:before {content: "";left:-7px;}
 	section.my .txtbook_eng,section.my .my_activity_wrap,section.my .matching_learning_wrap{padding: 0 20px;}
-	/* section.my .gray_box .box_con.status_con .contents .progress {max-width: 160px;} */
 	section.my .gray_box .box_tit > div:first-child {height: 85px;}
 	section.my .gray_box .box_tit .contents {margin: 0 0 50px 0;}
 	section.my .gray_box .box_tit h2 {font-size: 25px;line-height: 1.35;}
@@ -1441,9 +1435,8 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 	section.my .myflex_wrap .myclass_info > ul > li >span {max-width: 50px;}
 	section.my .imgWrap {padding: 1px;}
 
-	section.my .gray_box .box_con.reading_activities_con .num_detail_con {margin-left: 0px;margin-right: 13px;}
+	/* section.my .gray_box .box_con.reading_activities_con .num_detail_con {margin-left: 0px;margin-right: 13px;} */
 	section.my .gray_box .box_con.reading_activities_con .single_chart {width: 140px; height: 140px; min-width: 140px; min-height: 140px;margin-right:12px;margin-left:0px; transform:translateY(10px);}
-	/* section.my .gray_box .box_con.reading_activities_con .contents {-webkit-box-pack: center; -ms-flex-pack: center;justify-content: center;} */
 	section.my .gray_box .box_con.status_con .contents .learning_stage {transform: translateX(-20px);}
 	section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_tit,section.my .gray_box .box_con.reading_activities_con .num_detail_con .highlight {font-size: 16px;}
 	section.my .gray_box .box_con.friend_status_con .friend_layer {top:87px;left: 2%;max-width: 320px;}
@@ -1453,24 +1446,20 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 	section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .info_layer {left: auto;right:1%;}
 	section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .info_layer:before {left: 84px;}
 	section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .info_layer:after {left: 83px;}
-	/* section.my .gray_box .box_con.status_con .contents .learning_stage{padding-right: 1%;} */
-	/* section.my .gray_box .box_con.status_con .contents .learning_wrap {padding-left: 5px;} */
 	section.my .gray_box .box_con.status_con .contents .learning_phrase {font-size: 16px; height: auto;}
 	section.my .gray_box .box_con.status_con .contents .progress.step_100 .learning_icon {background-position: bottom; background-size: 90%;}
 	section.my .gray_box .box_con.status_con .contents .learning_stage > img {width: 112px; height: 112px; max-width: 112px; max-height: 112px;}
 	section.my .gray_box .box_con.reading_activities_con .circular_chart {max-width: 120px; max-height: 120px;}
 	section.my .gray_box .box_con.etizen_con .ico_etizen:before {width: 112px; height: 112px;}
-	/* section.my .gray_box .box_con.used_nodata .legend-div, section.my .gray_box .box_con.study_nodata .legend-div {margin-top: 30px;} */
 	section.my .gray_box .box_con.etizen_con .ico_etizen {margin-left: 20px;margin-right: 22px;}
 	section.my .gray_box .box_con.status_con .contents .learning_tot {font-size: 18px; min-width: 195px;}
 	section.my .gray_box .box_con.friend_nodata .nodata_txt {padding: 10px 27px;}
 	section.my .gray_box .box_con.friend_nodata .nodata_tit {padding: 10px 17px 0;}
-	/* section.my .gray_box .box_con.used_nodata .contents, section.my .gray_box .box_con.study_nodata .contents {-webkit-box-align: start; -ms-flex-align: start;align-items: flex-start; padding-left: 25px;-webkit-box-pack: start; -ms-flex-pack: start;justify-content: flex-start; padding-top: 45px; } */
 	section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_count {font-size: 16px;}
 	section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_tot {font-size: 16px;}
 	section.my .gray_box .box_con.reading_activities_con .divider {height: 14px; margin: 2.5px 6px;}
 	section.my .content_used_con .contents ul {font-size: 16px;transform: translateX(-25px);}
-	section.my .content_used_con .contents .pie_wrap {width: 160px;height: 160px;transform: translate(-50px,-25px);}
+	section.my .content_used_con .contents .pie_wrap {width: 160px;height: 160px;transform: translate(-42px,-25px);}
 	section.my .content_used_con .contents ul li:first-child span,section.my .content_used_con .contents ul li:last-child span {font-size: 16px;height: 24px;}
 	
 	section.my .study_room_con .contents ul {font-size: 16px; transform: translateX(-25px);}
@@ -1480,9 +1469,9 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 
 @media all and (max-width: 840px) {
 	section.my .gray_box .box_con.reading_activities_con .single_chart {margin-left: 17px;margin-right: 0px;}
-	section.my .gray_box .box_con.reading_activities_con .num_detail_con {margin-right: 25px;}
-	section.my .content_used_con .contents .pie_wrap {transform: translate(-20px,-30px);z-index: 5;}
-	section.my .study_room_con .contents .pie_wrap {transform: translate(-15px,-30px);z-index: 5;}
+	section.my .gray_box .box_con.reading_activities_con .num_detail_con {margin-right: 20px;}
+	section.my .content_used_con .contents .pie_wrap {transform: translate(-20px,-25px);z-index: 5;}
+	section.my .study_room_con .contents .pie_wrap {transform: translate(-15px,-25px);z-index: 5;}
 	section.my .content_used_con .contents ul {transform: translateX(-20px);}
 	section.my .study_room_con .contents ul {transform: translateX(-20px);}
 
@@ -1556,14 +1545,14 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 	section.my .content_used_con .contents .pie_con {transform: translateX(-20px);}
 	section.my .study_room_con .contents .pie_con {transform: translateX(-28px);}
 	section.my .gray_box .box_con.etizen_con .etizen_wrap {transform: translateX(-25px);}
-	/* section.my .gray_box .box_con.used_nodata .contents, section.my .gray_box .box_con.study_nodata .contents {-webkit-box-align: center; -ms-flex-align: center;align-items: center; padding-top: 15px; } */
 	section.my .gray_box .box_con.etizen_con .ico_etizen:before {width: 120px; height: 120px; max-width: 115px; max-height: 115px;}
 	section.my .gray_box .box_con.used_nodata .legend-div, section.my .gray_box .box_con.study_nodata .legend-div {margin-top: 15px; padding-left: 15px;-webkit-box-align: center; -ms-flex-align: center;align-items: center;}
 	section.my .gray_box .box_con.status_con .contents .progress {max-width: 160px;}
 	section.my .gray_box .box_con.status_con .contents .learning_phrase {max-width: 152px;}
 	section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .reading_info {width: 16px; height: 16px; margin-left: 5px; background: url(../images/funreading/icon/ico_mo-info_32.png) 100% 50% no-repeat; background-size: 15px;}
-
-	/* section.my .gray_box .box_con.reading_activities_con .single_chart {margin-left: 0;} */
+	section.my .gray_box .box_con.status_con .status_layer {top: 54px; left: 16%;}
+	section.my .gray_box .box_con.friend_status_con .friend_layer {top: 96px; left: 6%;}
+	section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .info_layer {right: 8%;}
 }
 
 @media all and (max-width: 980px) {
@@ -2498,7 +2487,6 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 @media all and (max-width: 440px) {
 	section.my .etizen .btns .bt {font-size: 13px;padding: 0 10px 0 10px;letter-spacing: -1px;}
 	section.my .gray_box .box_con.status_con .contents .learning_stage > img {max-width: 104px; max-height: 104px;}
-	/* section.my .gray_box .box_con.used_nodata .contents, section.my .gray_box .box_con.study_nodata .contents {padding-left: 10px;} */
 	section.my .gray_box .box_con.used_nodata .legend-div, section.my .gray_box .box_con.study_nodata .legend-div {padding-left: 0;}
 	section.my .gray_box .box_con.status_con .contents .learning_stage {transform: translateX(0px);}
 	section.my .gray_box .box_con.reading_activities_con .single_chart {margin-right: 0px; width: 120px; height: 120px; min-width: 120px; min-height: 120px; transform: translate(-7px,0px);}

@@ -1,13 +1,13 @@
 /* 같은 레벨 친구들 학습 현황 */
-function chartDataStatus(chartLabel1, chartData1) {
+function chartDataStatus(chartLabel, chartData) {
 	var chartDataset = null;
 	var chartOption = null;
 	chartDataset = {
-		labels: chartLabel1,
+		labels: chartLabel,
 		datasets: [{
 			type: 'bar',
 			barThickness: 40,
-			data: chartData1,
+			data: chartData,
 			backgroundColor: [
 				'#583BF8',
 				'#F3D144',
@@ -156,7 +156,7 @@ function chartDataStatus(chartLabel1, chartData1) {
 }
 
 /* 최근 이용 콘텐츠 현황 */
-function pieStatus(chartlabels, chartData) {
+function pieStatus(chartlabel, chartData) {
 	var data = {
 		labels: [
 			chartlabels[0],
@@ -176,8 +176,8 @@ function pieStatus(chartlabels, chartData) {
 			borderWidth: 0
 		}]
 	};
-	var ctx2 = $("#myChart2");
-	var myChart2 = new Chart(ctx2, {
+	var ctx = $("#myChart2");
+	var myChart2 = new Chart(ctx, {
 		type: 'pie',
 		data: data,
 		options: {
@@ -263,7 +263,7 @@ function pieStatus(chartlabels, chartData) {
 }
 
 /* 나의 학습방 현황 */
-function pieStatus2(chartlabels, chartData) {
+function pieStatus2(chartlabel, chartData) {
 	var data = {
 		labels: [
 			chartlabels[0],
@@ -283,8 +283,8 @@ function pieStatus2(chartlabels, chartData) {
 			borderWidth: 0
 		}]
 	};
-	var ctx3 = $("#myChart3");
-	var myChart3 = new Chart(ctx3, {
+	var ctx = $("#myChart3");
+	var myChart3 = new Chart(ctx, {
 		type: 'pie',
 		data: data,
 		options: {
@@ -368,50 +368,3 @@ function pieStatus2(chartlabels, chartData) {
 	$(".study_room_con #legend-div .s1").text(chartData[0] + chartData[1]);
 	$(".study_room_con #legend-div .s2").text(chartData[2] + chartData[3]);
 }
-
-
-
-
-// $( document ).ready(function() {
-// 	var pageload;
-// 	var containerWidth = window.innerWidth;
-	
-// 	$('.tab_sub').hide();
-	
-// 	if(containerWidth <= 760) {
-// 		var $tab_main = $('.recomCon .tab_main');
-// 		if ($tab_main.length > 0) {
-// 			if (recomId.indexOf('EGRD') > -1) {
-// 				$tab_main.find('li').eq(0).addClass('on');
-// 				$('.tab_sub0').show();
-// 			} else {
-// 				$tab_main.find('li').eq(1).addClass('on');
-// 				$('.tab_sub1').show();
-// 			}
-// 			$('.tab_sub').find('li').filter('[grdCd='+recomId.substr(1)+']').addClass('on');
-// 		}
-	
-// 		week_swiper_mo.update();
-// 		newest_swiper.params.slidesPerView = 1.3;
-	
-// 	} else {
-// 		if (containerWidth <= 995 && containerWidth > 760) {
-// 			newest_swiper.params.slidesPerView = 3;
-// 			week_swiper_pc.params.slidesPerView = 3;
-// 		}
-// 		if (containerWidth <= 1280 && containerWidth > 995) {
-// 			newest_swiper.params.slidesPerView = 4;
-// 			week_swiper_pc.params.slidesPerView = 4;
-// 		}
-// 		if (containerWidth > 1280) {
-// 			newest_swiper.params.slidesPerView = 5;
-// 			week_swiper_pc.params.slidesPerView = 5;
-// 		}
-// 		$('ul.tab_sub').hide();
-// 		week_swiper_pc.update();
-// 		newest_swiper.update();
-// 	}
-// 	clearTimeout(pageload);
-// 	pageload = setTimeout(posPage,500);
-// 	ThumbMov();
-// });
