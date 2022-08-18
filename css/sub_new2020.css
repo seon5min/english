@@ -1542,7 +1542,7 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 	section.my .gray_box .box_tit > div:first-child {height: auto;margin-bottom: 10px;}
 	section.my .gray_box .friend_status_con .box_tit > div:first-child .more_wrap {transform: translateY(22px);}
 
-	section.my .content_used_con .contents .pie_wrap {width: 170px;height: 170px;transform: translate(0,-25px);}
+	section.my .content_used_con .contents .pie_wrap {width: 160px;height: 160px;transform: translate(0,-25px);}
 	section.my .content_used_con .contents ul {font-size: 16px;padding-left: 0;transform: translateX(0);}
 
 	section.my .study_room_con .contents .pie_wrap {width: 170px;height: 170px;transform: translate(0,-25px);}
@@ -1553,7 +1553,7 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 	section.my .study_room_con .contents .pie_con {transform: translateX(-28px);}
 	section.my .gray_box .box_con.etizen_con .etizen_wrap {transform: translateX(-25px);}
 	/* section.my .gray_box .box_con.used_nodata .contents, section.my .gray_box .box_con.study_nodata .contents {-webkit-box-align: center; -ms-flex-align: center;align-items: center; padding-top: 15px; } */
-	section.my .gray_box .box_con.etizen_con .ico_etizen:before {width: 119px; height: 119px; max-width: 100%; max-height: 100%;}
+	section.my .gray_box .box_con.etizen_con .ico_etizen:before {width: 120px; height: 120px; max-width: 120px; max-height: 120px;}
 	section.my .gray_box .box_con.used_nodata .legend-div, section.my .gray_box .box_con.study_nodata .legend-div {margin-top: 15px; padding-left: 15px;-webkit-box-align: center; -ms-flex-align: center;align-items: center;}
 	section.my .gray_box .box_con.status_con .contents .progress {max-width: 160px;}
 	section.my .gray_box .box_con.status_con .contents .learning_phrase {max-width: 152px;}
@@ -2499,6 +2499,8 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 	section.my .gray_box .box_con.reading_activities_con .single_chart {margin-right: 0px;}
 	section.my .gray_box .box_con.reading_activities_con .num_detail_con {margin-right: 0px;}
 	section.my .gray_box .box_con.etizen_con .ico_etizen {transform: translateX(-38%);}
+	section.my .content_used_con .contents .pie_wrap,section.my .study_room_con .contents .pie_wrap {width: 160px; height: 160px; transform: translate(5px,-25px);}
+	section.my .gray_box .box_con.etizen_con .ico_etizen {transform: translateX(-40px); width: 120px; height: 120px;}
 }
 
 @media all and (max-width: 360px) {
