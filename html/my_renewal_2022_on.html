@@ -282,9 +282,14 @@
 			</div>
 			<script>
 				var ctx = document.getElementById('myChart').getContext('2d');
-				var chartData1 = [8, 79, 13, 145];
-				var chartLabel1 = ['방송 프로그램', '교과서 영어', '펀리딩', '자기주도 학습'];
-				var myChart = new Chart(ctx, chartDataStatus(chartLabel1, chartData1));
+				var chartData = [0, 5, 0, 0];
+				var chartLabel = ['방송 프로그램', '교과서 영어', '펀리딩', '자기주도 학습'];
+				let myLevelStr = '고급' + " Lv" + '06' + ' 일별 평균 학습현황';
+				const myChart = new Chart(ctx, chartDataStatus(chartLabel, chartData, myLevelStr));
+				// var ctx = document.getElementById('myChart').getContext('2d');
+				// var chartData1 = [8, 79, 13, 145];
+				// var chartLabel1 = ['방송 프로그램', '교과서 영어', '펀리딩', '자기주도 학습'];
+				// var myChart = new Chart(ctx, chartDataStatus(chartLabel1, chartData1));
 			</script>
 			<!-- //같은 레벨 친구들 학습 현황 -->
 			<!-- 나의 독서 활동 -->
@@ -393,10 +398,16 @@
 				</div>
 			</div>
 			<script>
-				var ctx2 = document.getElementById('myChart2').getContext('2d');
-				var chartData = [20, 28, 5, 7];
+
+				var ctx = document.getElementById('myChart2').getContext('2d');
+				var chartData = [10, 14, 0, 1];
 				var chartlabels = ['최근 이용한 프로그램', '최근 이용한 강좌'];
-				var myChart2 = new Chart(ctx2, pieStatus(chartlabels, chartData));
+				var myChart2 = new Chart(ctx, pieStatus(chartLabel, chartData));
+
+				// var ctx2 = document.getElementById('myChart2').getContext('2d');
+				// var chartData = [20, 28, 5, 7];
+				// var chartlabels = ['최근 이용한 프로그램', '최근 이용한 강좌'];
+				// var myChart2 = new Chart(ctx2, pieStatus(chartlabels, chartData));
 			</script>
 			<!-- //최근 이용 콘텐츠 현황 -->
 			<!-- 나의 학습방 현황 -->
@@ -423,10 +434,15 @@
 			</div>
 			<script>
 
-				var ctx3 = document.getElementById('myChart3').getContext('2d');
-				var chartData = [02, 04, 06, 06];
+				var ctx = document.getElementById('myChart3').getContext('2d');
+				var chartData = [51, 32, 141, 29];
 				var chartlabels = ['수강중인 강좌', '내가 담은 프로그램'];
-				var myChart3 = new Chart(ctx3, pieStatus2(chartlabels, chartData));
+				var myChart3 = new Chart(ctx, pieStatus2(chartLabel, chartData));
+
+				// var ctx3 = document.getElementById('myChart3').getContext('2d');
+				// var chartData = [02, 04, 06, 06];
+				// var chartlabels = ['수강중인 강좌', '내가 담은 프로그램'];
+				// var myChart3 = new Chart(ctx3, pieStatus2(chartlabels, chartData));
 			</script>
 			<!-- //나의 학습방 현황 -->
 		</div>
