@@ -1178,8 +1178,8 @@ section.my .myflex_wrap .myclass_info > ul > li > .con_info {display: -webkit-bo
 section.my .slick-dots {display:none !important;}
 section.my .myflex_wrap .myclass_info > ul > li > .con_info:last-child {width:100px;}
 section.my button.arrow-slide {position:absolute;top:50%;width:40px;height:40px;text-indent:-9999px;background-size: 40px;margin-top:-20px;}
-section.my button.arrow-slide.prev {background: url('https://www.ebse.co.kr/engBook/images/sub/btn_back_arrow.png') no-repeat center 50%;left:1;}
-section.my button.arrow-slide.next {background: url('https://www.ebse.co.kr/engBook/images/sub/btn_next_arrow.png') no-repeat center 50%;right:1;}
+section.my button.arrow-slide.prev {background: url('https://www.ebse.co.kr/engBook/images/sub/btn_back_arrow.png') no-repeat center 50%;left:1px;}
+section.my button.arrow-slide.next {background: url('https://www.ebse.co.kr/engBook/images/sub/btn_next_arrow.png') no-repeat center 50%;right:1px;}
 
 /* section.my .gray_box .box_con.reading_activities_con .contents {display: -webkit-box; display: -ms-flexbox;display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center;} */
 section.my .gray_box .box_con.reading_activities_con .single_chart {width: 146px; height: 146px;transform: translateX(-6px); margin-right: 20px;}
@@ -1420,6 +1420,7 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 
 @media screen and (max-width:1140px) {
 	section.my button.myinfo_btn {float: right;padding-right: 39px;}
+	section.my .txtbook_eng {padding: 0 10px;}
 }
 
 @media all and (max-width: 980px) {
@@ -1543,17 +1544,17 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 	section.my .gray_box .friend_status_con .box_tit > div:first-child .more_wrap {transform: translateY(22px);}
 
 	section.my .content_used_con .contents .pie_wrap {width: 160px;height: 160px;transform: translate(0,-25px);}
-	section.my .content_used_con .contents ul {font-size: 16px;padding-left: 0;transform: translateX(0);}
+	section.my .content_used_con .contents ul {font-size: 16px;padding-left: 0;transform: translateX(5px)}
 
 	section.my .study_room_con .contents .pie_wrap {width: 170px;height: 170px;transform: translate(0,-25px);}
-	section.my .study_room_con .contents ul {font-size: 16px;padding-left: 0;transform: translateX(0);}
+	section.my .study_room_con .contents ul {font-size: 16px;padding-left: 0;transform: translateX(5px)}
 	section.my .gray_box .box_con.etizen_con .contents {-webkit-box-pack: center; -ms-flex-pack: center;justify-content: center;}
 	section.my .gray_box .box_con.etizen_con .ico_etizen {margin-left: 0; margin-right: 0; width: 120px; height: 120px; padding: 5%; transform: translateX(-53%);}
 	section.my .content_used_con .contents .pie_con {transform: translateX(-20px);}
 	section.my .study_room_con .contents .pie_con {transform: translateX(-28px);}
-	section.my .gray_box .box_con.etizen_con .etizen_wrap {transform: translateX(-25px);}
+	section.my .gray_box .box_con.etizen_con .etizen_wrap {transform: translateX(-20px);}
 	/* section.my .gray_box .box_con.used_nodata .contents, section.my .gray_box .box_con.study_nodata .contents {-webkit-box-align: center; -ms-flex-align: center;align-items: center; padding-top: 15px; } */
-	section.my .gray_box .box_con.etizen_con .ico_etizen:before {width: 120px; height: 120px; max-width: 120px; max-height: 120px;}
+	section.my .gray_box .box_con.etizen_con .ico_etizen:before {width: 120px; height: 120px; max-width: 119px; max-height: 119px;}
 	section.my .gray_box .box_con.used_nodata .legend-div, section.my .gray_box .box_con.study_nodata .legend-div {margin-top: 15px; padding-left: 15px;-webkit-box-align: center; -ms-flex-align: center;align-items: center;}
 	section.my .gray_box .box_con.status_con .contents .progress {max-width: 160px;}
 	section.my .gray_box .box_con.status_con .contents .learning_phrase {max-width: 152px;}
