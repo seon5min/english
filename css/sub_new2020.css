@@ -1191,11 +1191,12 @@ section.my .gray_box .box_con.reading_activities_con .circular_chart .percentage
 section.my .gray_box .box_con.reading_activities_con .num_detail_con {width: 100%; max-width: 206px; position: relative;}
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading,
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .week_reading,
-section.my .gray_box .box_con.reading_activities_con .num_detail_con .month_reading {display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center;align-items: center; margin-bottom: 25px; }
-section.my .gray_box .box_con.reading_activities_con .num_detail_con .month_reading {margin-bottom: 0;-webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
+section.my .gray_box .box_con.reading_activities_con .num_detail_con .month_reading {display: -webkit-box; display: -ms-flexbox; display: flex; margin-bottom: 25px; }
+section.my .gray_box .box_con.reading_activities_con .num_detail_con .month_reading .dotted-line {transform: translateY(10px);}
+section.my .gray_box .box_con.reading_activities_con .num_detail_con .month_reading {margin-bottom: 0px;-webkit-box-align: start; -ms-flex-align: start; align-items: flex-start;}
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .month_reading .reading_count .mon_divider {display: -webkit-box; display: -ms-flexbox;display: flex;}
-section.my .gray_box .box_con.reading_activities_con .num_detail_con .month_reading .reading_count {-webkit-box-orient: vertical; -ms-flex-direction: column;flex-direction: column;-webkit-box-align: end; -ms-flex-align: end;align-items: flex-end;margin-left: -5px;}
-section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_tit { display: -webkit-box; display: -ms-flexbox;display: flex;-webkit-box-align: center; -ms-flex-align: center; align-items: center; flex-shrink: 0; margin-right: 12px; font-size: 18px; line-height: 1.2; font-weight: 400; color: #222; letter-spacing: -0.8px; }
+section.my .gray_box .box_con.reading_activities_con .num_detail_con .month_reading .reading_count {-webkit-box-orient: vertical; -ms-flex-direction: column;flex-direction: column;-webkit-box-align: end; -ms-flex-align: end;align-items: flex-end;}
+section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_tit { display: -webkit-box; display: -ms-flexbox;display: flex;-webkit-box-align: center; -ms-flex-align: center; align-items: center; flex-shrink: 0; margin-right: 12px; font-size: 18px; line-height: 1.2; font-weight: 400; color: #222; letter-spacing: -0.8px; margin-bottom: 0;}
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .info_layer { position: absolute; display: none; -webkit-box-align: center; -ms-flex-align: center;align-items: center; box-sizing: border-box; top: -160px; left: 16%; width:100%; max-width: 208px; height: 148px; text-align: center; word-break: keep-all; font-size: 14px; color: #8790a2; background: #fff; border: 1px solid #ebebeb; border-radius: 5px 5px 5px 0px; box-shadow: 0px 4px 20px #0000001a; }
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .info_layer:after,
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .info_layer:before { content: ""; display: block; position: absolute; left: 0; bottom: -12px; width: 0; height: 0; border-style: solid; }
@@ -1206,12 +1207,13 @@ section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_read
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .reading_info { display: -webkit-box; display: -ms-flexbox;display: inline-block; width: 18px; height: 18px; margin-left: 5px; background: url(../images/funreading/icon/ico_info_16.png) 100% 50% no-repeat; }
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .info_txt {color: #8790A1; padding: 0 10%; line-height: 1.25;} 
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .num_detail_con .reading_tit { display: -webkit-box; display: -ms-flexbox;display: flex; -webkit-box-align: center; -ms-flex-align: center;align-items: center; flex-shrink: 0; margin-right: 20px; font-size: 14px; line-height: 1.2; font-weight: 400; color: #717171; margin-bottom: 8px; letter-spacing: -0.8px; }
-section.my .gray_box .box_con.reading_activities_con .dotted-line { flex-grow: 1; white-space: nowrap; position: relative; overflow: hidden; }
+section.my .gray_box .box_con.reading_activities_con .dotted-line {display: flex; align-items: center;flex-grow: 1; white-space: nowrap; position: relative; overflow: hidden; }
 section.my .gray_box .box_con.reading_activities_con .dotted-line:after { content: ""; width: 100%; height: 1px; background: url("../images/funreading/icon/dot.png") repeat-x; color: #ccc; display: inline-block; }
-section.my .gray_box .box_con.reading_activities_con .month_reading .dotted-line {transform: translateY(9px);}
-
+/* section.my .gray_box .box_con.reading_activities_con .month_reading .dotted-line {transform: translateY(9px);} */
+/* section.my .gray_box .box_con.reading_activities_con .dotted-line {} */
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_count {display: -webkit-box; display: -ms-flexbox;display: flex; flex-basis: content; margin-left: 12px; font-size: 18px; line-height: 1.2; color: #222; letter-spacing: -0.8px; }
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_count.zero { color: #717171; }
+section.my .gray_box .box_con.reading_activities_con .num_detail_con .month_reading .reading_count.zero {margin-left: 12px;}
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .highlight { font-size: 18px; line-height: 1.2; color: #f57e25; letter-spacing: -0.8px; }
 section.my .gray_box .box_con.reading_activities_con .divider { text-align: center; width: 1px; height: 18px; -webkit-transform: rotate(20deg); transform: rotate(20deg); background: #222; margin: 2.5px 10px; }
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_tot { font-size: 18px; line-height: 1.2; color: #222; letter-spacing: -0.8px; }
