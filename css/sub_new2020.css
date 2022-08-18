@@ -1278,7 +1278,7 @@ section.my .t-myClass .t-detail .t-button a:first-child {width:100%;margin-botto
 section.my .t-myClass .t-detail .t-button a:last-child {float:right;}
 
 section.my .content_used_con .contents .pie_con {display: -webkit-box; display: -ms-flexbox;display: flex; -webkit-box-pack: center; -ms-flex-pack: center;justify-content: center; -webkit-box-align: center; -ms-flex-align: center;align-items: center; }
-section.my .content_used_con .contents .pie_wrap {width:190px; height:190px; max-width: 100%;max-height: 100%;transform: translate(-35px,-20px);}
+section.my .content_used_con .contents .pie_wrap {width:190px; height:190px; max-width: 100%;max-height: 100%;transform: translate(-35px,-25px);}
 section.my .content_used_con .contents ul {font-size: 18px; font-weight: 400;padding-left: 0px; transform:translateX(-26px);}
 section.my .content_used_con .contents ul li{position: relative; display: -ms-flexbox;display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; padding-left: 20px; color: #222222; letter-spacing: -0.45px; margin-top: -1px; line-height: 1.4;}
 section.my .content_used_con .contents ul li:first-child {margin-bottom: 18px;}
@@ -1288,7 +1288,7 @@ section.my .content_used_con .contents ul li:first-child::before {content: ''; p
 section.my .content_used_con .contents ul li:last-child::before {content: ''; position: absolute; top: 7.5px; left: 0; width: 12px;height: 12px;border-radius: 100px;background-color: #F3D144;} 
 
 section.my .study_room_con .contents .pie_con {display: -webkit-box; display: -ms-flexbox;display: flex; justify-content: center; align-items: center; }
-section.my .study_room_con .contents .pie_wrap {width:190px; height:190px; max-width: 100%;max-height: 100%;transform: translate(-42px,-20px);}
+section.my .study_room_con .contents .pie_wrap {width:190px; height:190px; max-width: 100%;max-height: 100%;transform: translate(-42px,-25px);}
 section.my .study_room_con .contents ul {font-size: 18px; font-weight: 400;padding-left: 0px; transform:translateX(-26px);}
 section.my .study_room_con .contents ul li{position: relative;display: -webkit-box; display: -ms-flexbox; display: flex;-webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column; padding-left: 20px; color: #222222; letter-spacing: -0.45px; margin-top: -1px; line-height: 1.4;}
 section.my .study_room_con .contents ul li:first-child {margin-bottom: 18px;}
@@ -1457,7 +1457,7 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 	section.my .gray_box .box_con.status_con .contents .learning_stage > img {width: 115px; height: 115px; max-width: 115px; max-height: 115px;}
 	section.my .gray_box .box_con.reading_activities_con .circular_chart {max-width: 120px; max-height: 120px;}
 	section.my .gray_box .box_con.etizen_con .ico_etizen:before {width: 115px; height: 115px;}
-	section.my .gray_box .box_con.used_nodata .legend-div, section.my .gray_box .box_con.study_nodata .legend-div {margin-top: 30px;}
+	/* section.my .gray_box .box_con.used_nodata .legend-div, section.my .gray_box .box_con.study_nodata .legend-div {margin-top: 30px;} */
 	section.my .gray_box .box_con.etizen_con .ico_etizen {margin-left: 20px;margin-right: 12px;}
 	section.my .gray_box .box_con.status_con .contents .learning_tot {font-size: 18px; min-width: 195px;}
 	section.my .gray_box .box_con.friend_nodata .nodata_txt {padding: 10px 27px;}
@@ -1540,10 +1540,10 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 	section.my .gray_box .box_tit > div:first-child {height: auto;margin-bottom: 10px;}
 	section.my .gray_box .friend_status_con .box_tit > div:first-child .more_wrap {transform: translateY(22px);}
 
-	section.my .content_used_con .contents .pie_wrap {width: 170px;height: 170px;transform: translate(0,-20px);}
+	section.my .content_used_con .contents .pie_wrap {width: 170px;height: 170px;transform: translate(0,-25px);}
 	section.my .content_used_con .contents ul {font-size: 16px;padding-left: 0;transform: translateX(0);}
 
-	section.my .study_room_con .contents .pie_wrap {width: 170px;height: 170px;transform: translate(0,-20px);}
+	section.my .study_room_con .contents .pie_wrap {width: 170px;height: 170px;transform: translate(0,-25px);}
 	section.my .study_room_con .contents ul {font-size: 16px;padding-left: 0;transform: translateX(0);}
 	section.my .gray_box .box_con.etizen_con .contents {-webkit-box-pack: center; -ms-flex-pack: center;justify-content: center;}
 	section.my .gray_box .box_con.etizen_con .ico_etizen {margin-left: 0; margin-right: 0; width: 120px; height: 120px; padding: 5%; transform: translateX(-53%);}
@@ -1552,7 +1552,7 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 	section.my .gray_box .box_con.etizen_con .etizen_wrap {transform: translateX(-25px);}
 	/* section.my .gray_box .box_con.used_nodata .contents, section.my .gray_box .box_con.study_nodata .contents {-webkit-box-align: center; -ms-flex-align: center;align-items: center; padding-top: 15px; } */
 	section.my .gray_box .box_con.etizen_con .ico_etizen:before {width: 119px; height: 119px; max-width: 100%; max-height: 100%;}
-	section.my .gray_box .box_con.used_nodata .legend-div, section.my .gray_box .box_con.study_nodata .legend-div {margin-top: 30px; padding-left: 15px;-webkit-box-align: center; -ms-flex-align: center;align-items: center;}
+	section.my .gray_box .box_con.used_nodata .legend-div, section.my .gray_box .box_con.study_nodata .legend-div {margin-top: 15px; padding-left: 15px;-webkit-box-align: center; -ms-flex-align: center;align-items: center;}
 	section.my .gray_box .box_con.status_con .contents .progress {max-width: 160px;}
 	section.my .gray_box .box_con.status_con .contents .learning_phrase {max-width: 152px;}
 
