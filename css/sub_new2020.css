@@ -1550,7 +1550,7 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 	section.my .gray_box .box_con.status_con .contents .progress {max-width: 160px;}
 	section.my .gray_box .box_con.status_con .contents .learning_phrase {max-width: 152px;}
 	section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .reading_info {width: 16px; height: 16px; margin-left: 5px; background: url(../images/funreading/icon/ico_mo-info_32.png) 100% 50% no-repeat; background-size: 15px;}
-	section.my .gray_box .box_con.status_con .status_layer {top: 54px; left: 16%;}
+	section.my .gray_box .box_con.status_con .status_layer {top: 54px; left: 12%;}
 	section.my .gray_box .box_con.friend_status_con .friend_layer {top: 96px; left: 6%;}
 	section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .info_layer {right: 8%;}
 }

@@ -1,5 +1,5 @@
 /* 같은 레벨 친구들 학습 현황 */
-function chartDataStatus(chartLabel, chartData) {
+function chartDataStatus(chartLabel, chartData, myLevelStr) {
 	var chartDataset = null;
 	var chartOption = null;
 	chartDataset = {
@@ -62,10 +62,10 @@ function chartDataStatus(chartLabel, chartData) {
 			legend: false,
 			title: {
 				display: true,
-				text: '초급 Lv 03 일별 평균 학습현황',
+				text: myLevelStr,
 				font: {
 					size: 12,
-					//family: "'Noto Sans KR','맑은 고딕','Malgun Gothic','Roboto'",
+					//family: "'Noto Sans KR','맑은 고딕','Malgun Gothic','Roboto'", 
 					weight: '400',
 					color: '#717171'
 				},
@@ -217,16 +217,15 @@ function pieStatus(chartlabel, chartData) {
 								return '방송프로그램 ' + ': ' + chartData[0];
 
 							} else {
-								return '방송프로그램 ' + ': ' + chartData[2];
+								return '온라인콘텐츠 ' + ': ' + chartData[2];
 							}
 						},
 						afterBody: function (context) {
 							var labels_tit = context[0].label;
 							if (labels_tit === '최근 이용한 프로그램') {
-								return 'e클립           ' + ': ' + chartData[1];
-
+								return 'e클립             ' + ': ' + chartData[1];
 							} else {
-								return 'e클립           ' + ': ' + chartData[3];
+								return '방과후영어     ' + ': ' + chartData[3];
 							}
 						},
 						label: function (context) {}
@@ -321,7 +320,7 @@ function pieStatus2(chartlabel, chartData) {
 						beforeBody: function (context) {
 							var labels_tit = context[0].label;
 							if (labels_tit === '수강중인 강좌') {
-								return '방송프로그램 ' + ': ' + chartData[0];
+								return '온라인콘텐츠 ' + ': ' + chartData[0];
 
 							} else {
 								return '방송프로그램 ' + ': ' + chartData[2];
@@ -330,10 +329,10 @@ function pieStatus2(chartlabel, chartData) {
 						afterBody: function (context) {
 							var labels_tit = context[0].label;
 							if (labels_tit === '수강중인 강좌') {
-								return 'e클립           ' + ': ' + chartData[1];
+								return '방과후영어     ' + ': ' + chartData[1];
 
 							} else {
-								return 'e클립           ' + ': ' + chartData[3];
+								return 'e클립             ' + ': ' + chartData[3];
 							}
 						},
 						label: function (context) {}
