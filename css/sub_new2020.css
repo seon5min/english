@@ -1131,7 +1131,7 @@ section.my .gray_box .box_con.status_con .contents .progress .running{
 	}
 }
 section.my .gray_box .box_con {position: relative;}
-section.my .gray_box .box_con.status_con .status_layer {position: absolute; top: 48px; left: 13%;display: none; -webkit-box-align: center; -ms-flex-align: center; align-items: center; box-sizing: border-box; width:100%; max-width: 385px; height: 150px; text-align: center; word-break: keep-all; font-size: 14px; color: #8790a2; background: #fff; border: 1px solid #ebebeb; border-radius: 5px; box-shadow: 0px 4px 20px #0000001a; z-index: 2; }
+section.my .gray_box .box_con.status_con .status_layer {position: absolute; top: 48px; left: 14.5%;display: none; -webkit-box-align: center; -ms-flex-align: center; align-items: center; box-sizing: border-box; width:100%; max-width: 385px; height: 150px; text-align: center; word-break: keep-all; font-size: 14px; color: #8790a2; background: #fff; border: 1px solid #ebebeb; border-radius: 5px; box-shadow: 0px 4px 20px #0000001a; z-index: 2; }
 section.my .gray_box .box_con.status_con .status_layer .status_txt {padding: 30px 40px; color:#8790A1;font-size: 14px; line-height: 1.25; text-align: left;}
 section.my .gray_box .box_con.status_con .status_layer .status_txt > span {display: block;padding-top: 20px;}
 section.my .gray_box .box_con.status_con .status_layer:after,
@@ -1145,7 +1145,7 @@ section.my .gray_box .box_con.friend_nodata .nodata_txt {color: #222222;font-siz
 section.my .gray_box .box_con.friend_nodata .nodata_btn {display: -webkit-box; display: -ms-flexbox;display:flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center;justify-content: center; background-color: #3D4C6B; width:100%; max-width: 292px; height: 48px; color: #fff;font-size: 20px; line-height: 1; letter-spacing: -.5px; text-align: center; padding:8px 47px; font-weight: 400;}
 section.my .gray_box .box_con.used_nodata .used_tit {text-align: center;color: #222222;font-size: 20px; line-height: 1.25; letter-spacing: -.5px; padding:16px 53px 0; font-weight: 500;}
 section.my .gray_box .box_con.study_nodata .study_tit {text-align: center;color: #222222;font-size: 20px; line-height: 1.25; letter-spacing: -.5px; padding:16px 53px 0; font-weight: 500;}
-section.my .gray_box .box_con.friend_status_con .friend_layer { position: absolute; display: none; -webkit-box-align: center; -ms-flex-align: center;align-items: center; box-sizing: border-box; top: 48px; left: 13%; width:100%; max-width: 414px; height: 162px; padding: 30px 40px; text-align: center; word-break: keep-all; font-size: 14px; line-height: 1.25; color: #8790a2; background: #fff; border: 1px solid #ebebeb; border-radius: 5px 5px 5px 0px; box-shadow: 0px 4px 20px #0000001a; }
+section.my .gray_box .box_con.friend_status_con .friend_layer { position: absolute; display: none; -webkit-box-align: center; -ms-flex-align: center;align-items: center; box-sizing: border-box; top: 48px; left: 14.5%; width:100%; max-width: 414px; height: 162px; padding: 30px 40px; text-align: center; word-break: keep-all; font-size: 14px; line-height: 1.25; color: #8790a2; background: #fff; border: 1px solid #ebebeb; border-radius: 5px 5px 5px 0px; box-shadow: 0px 4px 20px #0000001a; }
 section.my .gray_box .box_con.friend_status_con .friend_layer:after,
 section.my .gray_box .box_con.friend_status_con .friend_layer:before { content: ""; display: block; position: absolute; left: 0; top: -11px; width: 0; height: 0; border-style: solid; }
 section.my .gray_box .box_con.friend_status_con .friend_layer:before { border-color: transparent transparent #ebebeb transparent; border-width: 6px 6px 8px 6px; top: -14px; left: 269px; }
@@ -1465,6 +1465,7 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 	section.my .study_room_con .contents ul {font-size: 16px; transform: translateX(-25px);}
 	section.my .study_room_con .contents .pie_wrap {width: 160px;height: 160px;transform: translate(-43px,-25px);}
 	section.my .study_room_con .contents ul li:first-child span,section.my .content_used_con .contents ul li:last-child span {font-size: 16px;height: 24px;}
+	section.my .study_room_con .contents ul li:last-child span {font-size: 16px; height: 24px;}
 }
 
 @media all and (max-width: 840px) {
