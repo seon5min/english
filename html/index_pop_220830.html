@@ -1081,7 +1081,7 @@
 <!-- 팝업 시작 -->
 <style type="text/css">
 	/*팝업 공통 */
-	body.main .pop_container_M {position: fixed; right: 10px; bottom: 10px; z-index: 1000;} /* 2022-08-24 수정 */
+	body.main .pop_container_M {position: fixed; right: 10px; bottom: 10px; z-index: 1000;}
 	body.main .pop_main_v {position: fixed; right: 10px; bottom: 10px; animation: fadeIn 3s ease;}
 	@keyframes fadeIn {
 		0% {transform:translateY(400px);}
@@ -1091,7 +1091,7 @@
 	body.main .popup_M.main_noti { z-index: 1000000;  margin: 0; }
 	body.main .popup_M.main_noti.hide {display:block !important;}
 	body.main .popup_M.main_noti.hidden {display:none !important;}
-	body.main .popup_M.main_noti .box.lg { max-width: 300px; height:auto; padding:0; box-sizing: content-box !important; -ms-flex-align: flex-end; align-items: flex-end; display: -ms-flexbox; display: flex; flex-direction: column; white-space: nowrap; justify-content: flex-end; border-top: 1px solid #282b3e; border-left: 1px solid #282b3e; border-right: 1px solid #282b3e; padding: 5px 5px 0; background: #282b3e; } /* 2022-08-24 수정 */
+	body.main .popup_M.main_noti .box.lg { max-width: 300px; height:auto; padding:0; box-sizing: content-box !important; -ms-flex-align: flex-end; align-items: flex-end; display: -ms-flexbox; display: flex; flex-direction: column; white-space: nowrap; justify-content: flex-end; border-top: 1px solid #282b3e; border-left: 1px solid #282b3e; border-right: 1px solid #282b3e; padding: 5px 5px 0; background: #282b3e; }
 	body.main .popup_M.main_noti .box.lg button[type="button"]:before { background-color:#fff; }
 	body.main .popup_M.main_noti .box.lg button[type="button"]:after { background-color:#fff; }
 	body.main .popup_M.main_noti .box.lg > img{ width:100%; vertical-align: bottom;}
@@ -1106,15 +1106,14 @@
 	body.main .popup_M.main_noti .bt.ico { z-index: 20; width:40px; height:40px; right: 0; bottom: 0px; cursor:pointer; }
 	body.main .popup_M.main_noti .bt.ico.x:before,
 	body.main .popup_M.main_noti .bt.ico.x:after { top: 50%; z-index:10; width: 2px; height: 24px;  margin-top: -12px; background:#fff; border-radius:24px; }
-	body.main .popup_M.main_noti a.img_wrap {position: relative; opacity: 1; text-indent: initial;} /* 2021-10-27 수정 */
-
+	body.main .popup_M.main_noti a.img_wrap {position: relative; opacity: 1; text-indent: initial;}
 	body.main .pop_main_h{-ms-flex-align: flex-end;align-items: flex-end;display: -ms-flexbox;display: flex;-ms-flex-wrap: wrap; flex-wrap: wrap; flex-direction: column-reverse; align-content: flex-end; white-space: nowrap; justify-content: flex-end;}
-
   	body.main .pop_main_v{-ms-flex-align: flex-end;align-items: flex-end;display: -ms-flexbox; display: flex;-ms-flex-wrap: nowrap; flex-wrap: nowrap;flex-direction: row; align-content: flex-end; white-space: nowrap; justify-content: flex-end; } /* 2021-06-30 수정 */
 
+	/* 2022-08-30 수정 */
 	body.main .pop_floating article.popup_M .wrap {padding:0;position: relative;}
 	body.main .pop_floating .popup_M.main_noti a {display: initial; position: relative; opacity: 1;}
-	body.main .pop_floating {position: fixed;left: 10px; bottom: 50%; z-index: 1000;}
+	body.main .pop_floating {position: fixed;left: 10px; bottom: 50%; z-index: 900;}
 	body.main .pop_floating .popup_M.main_noti .bt.ico {position: absolute; top: -10px; right: -5px;}
 	body.main .pop_floating .popup_M.main_noti .bt.ico.x:before, body.main .popup_M.main_noti .bt.ico.x:after {background: #444;}
 	body.main .pop_floating .popup_M.main_noti .combo label {color: #444 !important; font-weight: 400 !important;}
@@ -1122,56 +1121,54 @@
 	body.main .pop_floating .popup_M.main_noti .noti_check.combo {width: 180px; position: absolute; left: 5px; bottom: -36px;}
 	body.main .pop_floating .popup_M.main_noti .noti_check.combo .bt.ico.n {width: 15px; height: 10px; top: 15px; right: 25px; background: url(../images/main/floating_close.png) no-repeat center center; background-size: contain;}
 
-
-	/* 2022-08-24 수정 */
 	@media all and (max-width: 740px) {
 		body.main .popup_M.main_noti .box.lg {max-width: 250px;}
 		body.main .pop_floating {left: auto;right: 10px;}
 	}
-
 </style>
-
+<!-- 2022-08-19 지금 만나러 갑니다 이벤트 팝업 -->
 <div class="pop_container_M">
 	<div class="pop_main_v">
-	<!-- 2022-08-19 지금 만나러 갑니다 이벤트 팝업 -->
-	<article class="popup_M main_noti" id="pop_8026">
-		<span class="wrap">
-			<span class="box lg">
-				<div class="linkWrap">
-				<style type="text/css">
-						body.main .popup_M.main_noti a {display:block;display:-ms-flexbox;position:absolute;opacity:0;text-indent:-9999px;font-size:0;}
-						body.main .popup_M.main_noti a.btn_link_01 {width: 59%; height: 13.6%; top: 82.3%; left: 50%; transform: translateX(-50%);}
-					</style>
-					<img src="../images/main/main_pop_noti_20220824_2.jpg" alt="지금 만나러 갑니다 이벤트 팝업" style=" width: 100%;"> <!-- 2022-08-24 이미지 변경 -->
-					<a class="btn_link_01" href="https://www.ebse.co.kr/apps/event/eventView.do?event_id=112&article_id=10047000" target="_blank">공지사항 바로가기</a>
-				</div>
-				<div class="buttonWrap">
-					<span class="noti_check combo">
-						<input type="checkbox" id="m_noti" name="m_noti" onclick="layerPop3DayClose('8026');">
-						<label for="m_noti">3일 동안 열지 않음</label>
-					</span>
-					<button type="button" class="bt ico x">닫기</button>
-
-				</div>
-			</span>
-		</span>
-	</article>
-	<!-- //2022-08-19 지금 만나러 갑니다 이벤트 팝업 -->
-	</div>
-</div>
-	<div class="pop_floating">
-		<article class="popup_M main_noti" id="pop_8027">
+		<article class="popup_M main_noti" id="pop_8026">
 			<span class="wrap">
-				<a href="https://pengtalk-student.ebse.co.kr/events/ranking4" target="_blank"><img src="../images/main/main_pop_noti_20220830.png" alt="펭톡 바로가기"></a>
-				<span class="noti_check combo">
-					<input type="checkbox" id="m_noti" name="m_noti" onclick="layerPop3DayClose('8027');">
-					<label for="m_noti">3일 동안 열지 않음</label>
-					<button type="button" class="bt ico n">닫기</button>
+				<span class="box lg">
+					<div class="linkWrap">
+					<style type="text/css">
+							body.main .popup_M.main_noti a {display:block;display:-ms-flexbox;position:absolute;opacity:0;text-indent:-9999px;font-size:0;}
+							body.main .popup_M.main_noti a.btn_link_01 {width: 59%; height: 13.6%; top: 82.3%; left: 50%; transform: translateX(-50%);}
+						</style>
+						<img src="../images/main/main_pop_noti_20220824_2.jpg" alt="지금 만나러 갑니다 이벤트 팝업" style=" width: 100%;">
+						<a class="btn_link_01" href="https://www.ebse.co.kr/apps/event/eventView.do?event_id=112&article_id=10047000" target="_blank">공지사항 바로가기</a>
+					</div>
+					<div class="buttonWrap">
+						<span class="noti_check combo">
+							<input type="checkbox" id="m_noti" name="m_noti" onclick="layerPop3DayClose('8026');">
+							<label for="m_noti">3일 동안 열지 않음</label>
+						</span>
+						<button type="button" class="bt ico x">닫기</button>
+					</div>
 				</span>
-				<button type="button" class="bt ico x">닫기</button>
 			</span>
 		</article>
 	</div>
+</div>
+<!-- //2022-08-19 지금 만나러 갑니다 이벤트 팝업 -->
+
+<!-- 2022-08-30 AI펭톡 추석특집 출석체크 챌린지 팝업 -->
+<div class="pop_floating">
+	<article class="popup_M main_noti" id="pop_8027">
+		<span class="wrap">
+			<a href="https://pengtalk-student.ebse.co.kr/events/ranking4" target="_blank"><img src="../images/main/main_pop_noti_20220830.png" alt="AI펭톡 추석특집 출석체크 챌린지"></a>
+			<span class="noti_check combo">
+				<input type="checkbox" id="m_noti" name="m_noti" onclick="layerPop3DayClose('8027');">
+				<label for="m_noti">3일 동안 열지 않음</label>
+				<button type="button" class="bt ico n">닫기</button>
+			</span>
+			<button type="button" class="bt ico x">닫기</button>
+		</span>
+	</article>
+</div>
+<!-- //2022-08-30 AI펭톡 추석특집 출석체크 챌린지 팝업 -->
 
 <script type="text/javascript">
 	$('.popup_M.main_noti .ico.bt').click(function(){
