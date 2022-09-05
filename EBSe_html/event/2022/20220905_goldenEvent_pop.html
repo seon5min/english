@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+<title>EBS English</title>
+<link rel="stylesheet" type="text/css" href="../../../css/NotoSansKR-Hestia.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/common.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/circle.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/sub.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/sub_new.css"/>
+<link rel="stylesheet" type="text/css" href="../../../css/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="../../../css/wow-animate.css"/>
+<script src="../../../js/jquery-2.2.0.min.js"></script>
+<script src="../../../js/slick.js"></script>
+<script src="../../../js/wow.js"></script>
+<script src="../../../js/common_new2020.js"></script>
+</head>
+<body>
+<!-- 2022-09-05 금쪽같은 이벤트 상세 -->
+<style>
+    .popup {width:100%;margin:0 auto;}
+    .popup div[class^="cont"] {position: relative;background-repeat:no-repeat;background-size:cover;}
+    .popup div[class^="cont"] .inner {margin: 0 auto; max-width: 100%; overflow: hidden; position: absolute; top: 0; left: 50%; transform: translateX(-50%);}
+    .popup .cont01 .inner {padding-top:21.875%;}
+    .popup .cont02 .inner {padding-top:32.0833%;}
+    .popup .cont03 .inner {padding-top:34.5833%;}
+    .popup .cont01 {padding-top:21.875%;background-image: url('../../../images/event/2022/0905_goldenEvent/board_bg_01.jpg');}
+    .popup .cont02 {padding-top:32.0833%;background-image: url('../../../images/event/2022/0905_goldenEvent/board_bg_02.jpg');}
+    .popup .cont03 {padding-top:34.5833%;background-image: url('../../../images/event/2022/0905_goldenEvent/board_bg_03.jpg');}
+    .popup .myScore,.popup .watchScore {position: absolute;top: 69%;left: 50%;transform: translateX(-50%);margin-left: 5vw;display: block;width: 5%;max-width: 6.5vw;min-width: 2.5vw;height: 10%;text-align: right;}
+    .popup .myScore {top: 81.17%;}
+    .popup .watchScore {top: 87.78%;}
+    .popup .myScore > span {position: absolute; width: 100%; top: 0; left: 0; line-height: 1.2; text-align: right; font-size: 1.3vw; font-weight: 600; color: #ff1c00;}
+    .popup .watchScore > span {position: absolute;width: 100%;top: 0;left: 0;line-height: 1.2;text-align: right; font-size: 1.3vw;font-weight: 600;letter-spacing: -.25px; color: #fe5f01;}
+    .popup .clearBtn {display: block; position: absolute; top: 67%; left: 50%; transform: translateX(-50%); width: 19%; height: 18%; text-indent: -9999px; opacity: 0; background: #ff0000; font-size: 0;}
+    .popup .closeBtn {display: block; position: absolute; bottom: 12%; left: 50%; transform: translateX(-50%); width: 19%; height: 18%; text-indent: -9999px; opacity: 0; background: #ff0000; font-size: 0;}
+    .popup .checkCont{position: absolute;top: 13%;width:100%;}
+    .blind {visibility: hidden;overflow: hidden;position: absolute;top: 0;left: 0;width: 0;height: 0;font-size: 0;line-height: 0;}
+
+    /* mobile ( 740 px 이하) */
+    @media screen and (max-width:740px) {
+        .popup .cont01 {padding-top:69.3333%;background-image: url('../../../images/event/2022/0905_goldenEvent/m_board_bg_01.jpg');}
+        .popup .cont02 {padding-top:97.3333%;background-image: url('../../../images/event/2022/0905_goldenEvent/m_board_bg_02.jpg');}
+        .popup .cont03 {padding-top:153.3333%;background-image: url('../../../images/event/2022/0905_goldenEvent/m_board_bg_03.jpg');}
+        .popup .cont01 .inner {padding-top:69.3333%;}
+        .popup .cont02 .inner {padding-top:97.3333%;}
+        .popup .cont03 .inner {padding-top:153.3333%;}
+        .popup .myScore {margin-left: 17vw; max-width: 17vw; min-width: 13vw; height: 6%; top: 79.2%;}
+        .popup .watchScore {margin-left: 22vw;max-width: 17vw;min-width: 13vw;height: 6%;top: 82.3%;}
+        .popup .myScore > span,.popup .watchScore > span {font-size: 4vw;}
+        .popup .clearBtn {width: 76%; top: 60%; height: 23%;}
+        .popup .closeBtn {width: 76%; height: 15%; bottom: 9%;}
+    }
+</style>
+<div class="popup">
+	<!--cont01-->
+	<div class="cont01">
+		<div class="inner">
+			<div class="myScore"><span id="totCheckCnt">31</span></div>
+			<div class="blind">
+				<h2>내가 모은 글자조각으로 글자판을 완성하라!!</h2>
+				<button>내가 완성한 글자판</button>
+			</div>
+		</div>
+	</div>
+	<!--//cont01-->
+	<!--cont02-->
+	<div class="cont02">
+		<div class="inner">
+			<button type="button" class="clearBtn">글자판 완성하기</button>
+		</div>
+	</div>
+	<!--//cont02-->
+	<!--cont03-->
+	<div class="cont03">
+		<div class="inner">
+			<button type="button" class="closeBtn" onclick="javascript:history.back();">이전페이지 가기</button>
+			<div class="blind">
+				<h3>글자조각 모으는 방법 & 유의사항</h3>
+				<ul>
+					<li>∙ 방송프로그램 다시보기 시청 시 랜덤으로 글자조각을 모을 수 있습니다.</li>
+					<li>∙ 1일 방송프로그램 1회차당 글자조각 1종류만 수집이 가능합니다.</li>
+					<li>∙ 글자조각을 클릭해야 글자판에 수집됩니다.(클릭하지 않은 글자조각은 수집되지 않음)</li>
+					<li>∙ 5개 글자조각을 다 모아 글자판을 완성해야 이벤트 응모가 완료됩니다.</li>
+					<li>∙ 글자판을 많이 완성할수록 당첨 확률 UP!!</li>
+					<li>∙ 글자판 완성하기 버튼을 클릭하여 글자판을 완성해야 새로운 글자판을 획득하실 수 있습니다.</li>
+					<li>∙ 글자판 완성하기 버튼 클릭 후, 내가 모은 글자조각은 리셋됩니다.</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</div>
+	<!--//cont03-->
+</div>
+<!-- //2022-09-05 금쪽같은 이벤트 상세 -->
+</body>
+</html>
