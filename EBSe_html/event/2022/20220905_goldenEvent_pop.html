@@ -30,12 +30,22 @@
     .popup .cont02 {padding-top:32.0833%;background-image: url('../../../images/event/2022/0905_goldenEvent/board_bg_02.jpg');}
     .popup .cont03 {padding-top:34.5833%;background-image: url('../../../images/event/2022/0905_goldenEvent/board_bg_03.jpg');}
     .popup .myScore,.popup .watchScore {position: absolute;top: 69%;left: 50%;transform: translateX(-50%);margin-left: 5vw;display: block;width: 5%;max-width: 6.5vw;min-width: 2.5vw;height: 10%;text-align: right;}
-    .popup .myScore {top: 81.17%;}
+    .popup .myScore {top: 80.5%;}
     .popup .watchScore {top: 87.78%;}
-    .popup .myScore > span {position: absolute; width: 100%; top: 0; left: 0; line-height: 1.2; text-align: right; font-size: 1.3vw; font-weight: 600; color: #ff1c00;}
+    .popup .myScore > span {position: absolute; width: 100%; top: 0; left: 0; line-height: 1.2; text-align: right; font-size: 1.5vw; font-weight: 600; color: #ff1c00;}
     .popup .watchScore > span {position: absolute;width: 100%;top: 0;left: 0;line-height: 1.2;text-align: right; font-size: 1.3vw;font-weight: 600;letter-spacing: -.25px; color: #fe5f01;}
-    .popup .clearBtn {display: block; position: absolute; top: 67%; left: 50%; transform: translateX(-50%); width: 19%; height: 18%; text-indent: -9999px; opacity: 0; background: #ff0000; font-size: 0;}
+    .popup .clearBtn {display: block; position: absolute; top: 67%; left: 50%; transform: translateX(-50%); width: 19%; height: 18%; text-indent: -9999px; opacity: 0; background: #ff0000; font-size: 0; z-index:100;}
     .popup .closeBtn {display: block; position: absolute; bottom: 12%; left: 50%; transform: translateX(-50%); width: 19%; height: 18%; text-indent: -9999px; opacity: 0; background: #ff0000; font-size: 0;}
+
+	/* POPUP 글자판 완성 */
+	.cont02 ul {position: relative; width: 100%;}
+	.cont02 ul li.letterPiece {position: absolute; top: 50%; left: 0; right: 0; bottom: 0; margin: -32% auto 0; width: calc(100%);}
+	.cont02 ul li.letterPiece img {width: 100%;}
+	.cont02 ul li .letter_piece_on {display:none;}
+	.cont02 ul li .letter_piece_off {display:block;}
+	.cont02 ul li.find .letter_piece_off {display:none;}
+	.cont02 ul li.find .letter_piece_on {display:block;}
+
     .popup .checkCont{position: absolute;top: 13%;width:100%;}
     .blind {visibility: hidden;overflow: hidden;position: absolute;top: 0;left: 0;width: 0;height: 0;font-size: 0;line-height: 0;}
 
@@ -47,11 +57,15 @@
         .popup .cont01 .inner {padding-top:69.3333%;}
         .popup .cont02 .inner {padding-top:97.3333%;}
         .popup .cont03 .inner {padding-top:153.3333%;}
-        .popup .myScore {margin-left: 17vw; max-width: 17vw; min-width: 13vw; height: 6%; top: 79.2%;}
+        .popup .myScore {margin-left: 16.5vw; max-width: 17vw; min-width: 13vw; height: 6%; top: 78.5%;}
         .popup .watchScore {margin-left: 22vw;max-width: 17vw;min-width: 13vw;height: 6%;top: 82.3%;}
-        .popup .myScore > span,.popup .watchScore > span {font-size: 4vw;}
+        .popup .myScore > span,.popup .watchScore > span {font-size: 5vw;}
         .popup .clearBtn {width: 76%; top: 60%; height: 23%;}
         .popup .closeBtn {width: 76%; height: 15%; bottom: 9%;}
+
+		/* POPUP 글자판 완성 */
+		.cont02 ul li.letterPiece {position: absolute; top: 50%; left: 0; right: 0; bottom: 0; margin: -97% auto 0; width: calc(100%);}
+		.cont02 ul li.letterPiece img {width: 100%; max-width: 100%; min-width: auto; object-fit: cover; height: 84%;}
     }
 </style>
 <div class="popup">
@@ -70,6 +84,28 @@
 	<div class="cont02">
 		<div class="inner">
 			<button type="button" class="clearBtn">글자판 완성하기</button>
+			<ul>
+				<li class="letterPiece ">
+					<img class="letter_piece_off" src="../../../images/event/2022/0905_goldenEvent/one_off.png" alt="금">
+					<img class="letter_piece_on" src="../../../images/event/2022/0905_goldenEvent/one_on.png" alt="금">
+				</li>
+				<li class="letterPiece find">
+					<img class="letter_piece_off" src="../../../images/event/2022/0905_goldenEvent/two_off.png" alt="쪽">
+					<img class="letter_piece_on" src="../../../images/event/2022/0905_goldenEvent/two_on.png" alt="쪽">
+				</li>
+				<li class="letterPiece find">
+					<img class="letter_piece_off" src="../../../images/event/2022/0905_goldenEvent/three_off.png" alt="같">
+					<img class="letter_piece_on" src="../../../images/event/2022/0905_goldenEvent/three_on.png" alt="같">
+				</li>
+				<li class="letterPiece find">
+					<img class="letter_piece_off" src="../../../images/event/2022/0905_goldenEvent/four_off.png" alt="은">
+					<img class="letter_piece_on" src="../../../images/event/2022/0905_goldenEvent/four_on.png" alt="은">
+				</li>
+				<li class="letterPiece ">
+					<img class="letter_piece_off" src="../../../images/event/2022/0905_goldenEvent/five_off.png" alt="EBSe">
+					<img class="letter_piece_on" src="../../../images/event/2022/0905_goldenEvent/five_on.png" alt="EBSe">
+				</li>
+			</ul>
 		</div>
 	</div>
 	<!--//cont02-->
