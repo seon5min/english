@@ -12,10 +12,12 @@
 	<link rel="stylesheet" type="text/css" href="../css/circle.css" />
 	<link rel="stylesheet" type="text/css" href="../css/main_new2020.css" />
 	<link rel="stylesheet" type="text/css" href="../css/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="../css/swiper/swiper.css">
 	<link rel="stylesheet" type="text/css" href="../css/wow-animate.css" />
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
 	<script src="../js/jquery-2.2.0.min.js"></script>
 	<script src="../js/slick.js"></script>
+	<script src="../js/swiper/swiper.js"></script>
 	<script src="../js/common_new2020.js"></script>
 </head>
 
@@ -1383,12 +1385,12 @@
 		}
 
 		body.main .pop_floating.floating_bottom {
-			bottom: 340px
+			bottom: 345px
 		}
 
 		body.main .pop_floating .popup_M.main_noti .bt.ico {
 			position: absolute;
-			top: -10px;
+			top: -15px;
 			right: -5px;
 		}
 
@@ -1413,7 +1415,7 @@
 			width: 180px;
 			position: absolute;
 			left: 5px;
-			bottom: -36px;
+			bottom: -40px;
 		}
 
 		body.main .pop_floating .popup_M.main_noti .noti_check.combo .bt.ico.n {
@@ -1425,54 +1427,410 @@
 			background-size: contain;
 		}
 
+		.mo_ver {
+			display: none;
+		}
+
+		.pc_ver {
+			display: block;
+		}
+
 		@media all and (max-width: 740px) {
-			body.main .popup_M.main_noti .box.lg {
-				/* max-width: 250px; */
+			.pc_ver {
+				display: none;
+			}
+
+			.mo_ver {
+				display: block;
+			}
+
+			.container {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				display: flex;
+				align-items: center;
+			}
+
+			.swiperC {
+				position: relative;
+				width: 200px;
+				overflow: hidden;
+			}
+
+			.swiperF {
+				position: relative;
+				width: 180px;
+				overflow: hidden;
+			}
+
+			.swiper-slide {
+				position: relative;
+				transition: all .3s ease-in-out;
+				overflow: hidden;
+			}
+
+			.swiper-pagination-fraction {
+				bottom: 9px;
+			}
+
+			.swiperF .swiper-pagination-fraction {
+				bottom: 12px;
+			}
+
+			.swiperF .wrap-autoplay-control {
+				bottom: 9px;
+			}
+
+			.swiperF .button_more {
+				bottom: 11px;
+				transform: translateX(23px);
+			}
+
+			.wrap-autoplay-control {
+				position: absolute;
+				z-index: 10;
+				bottom: 6px;
+				left: 50%;
+				transform: translateX(-42px);
+			}
+
+			.wrap-autoplay-control button {
+				display: block;
+				width: 20px;
+				height: 20px;
+				border: 0;
+				background: transparent;
+				cursor: pointer;
+			}
+
+			.wrap-autoplay-control button:before {
+				display: block;
+				content: '';
+				position: absolute;
+			}
+
+			.wrap-autoplay-control button[aria-pressed="false"]:before {
+				top: 4px;
+				left: 4px;
+				width: 12px;
+				height: 12px;
+				border-left: 4px solid #231f20;
+				border-right: 4px solid #231f20;
+				box-sizing: border-box;
+			}
+
+			.wrap-autoplay-control button[aria-pressed="true"]:before {
+				top: 4px;
+				left: 5px;
+				border-top: 6px solid transparent;
+				border-left: 11px solid #231f20;
+				border-bottom: 6px solid transparent;
+			}
+
+			.button_more {
+				position: absolute;
+				display: block;
+				bottom: 8px;
+				left: 50%;
+				transform: translateX(26px);
+				width: 15px;
+				height: 15px;
+				background-color: #231f20;
+				border-radius: 50%;
+				cursor: pointer;
+				z-index: 10;
+			}
+
+			.button_more:before {
+				content: '';
+				position: absolute;
+				top: 7px;
+				left: 4px;
+				width: 8px;
+				height: 1px;
+				color: white;
+				background-color: currentColor;
+				-webkit-transform-origin: 0% 0%;
+				transform-origin: 0% 0%;
+			}
+
+			.button_more:after {
+				content: '';
+				position: absolute;
+				top: 3px;
+				left: 7px;
+				width: 1px;
+				height: 8px;
+				color: white;
+				background-color: currentColor;
+				-webkit-transform-origin: 0% 0%;
+				transform-origin: 0% 0%;
 			}
 
 			body.main .pop_floating {
-				left: auto;
 				right: 10px;
+				top: 50%;
+				transform: translateY(-230px);
 			}
 
-			body.main .pop_floating.floating_top {}
+			.swiperC_modal {
+				z-index: 1150;
+				position: fixed;
+				bottom: 10px;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 98%;
+				max-width: 448px;
+				height: auto;
+				opacity: 0;
+				visibility: hidden;
+				transition-property: opacity, visibility;
+				transition-duration: 400ms, 0s;
+				overflow-y: scroll;
+			}
 
-			body.main .pop_floating.floating_bottom {}
+			.swiperF_modal {
+				z-index: 1150;
+				position: fixed;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -250px);
+				width: 98%;
+				max-width: 448px;
+				height: auto;
+				opacity: 0;
+				visibility: hidden;
+				transition-property: opacity, visibility;
+				transition-duration: 400ms, 0s;
+				overflow-y: scroll;
+			}
+
+			.swiperC_modal img,
+			.swiperF_modal img {
+				width: 100%;
+			}
+
+			.swiperC_modal.modal-open,
+			.swiperF_modal.modal-open {
+				opacity: 1;
+				visibility: visible;
+				transition-property: opacity, visibility;
+				transition-duration: 400ms, 0s;
+			}
+
+			.swiperC_modal.modal-open .modal_close,
+			.swiperF_modal.modal-open .modal_close {
+				position: absolute;
+				top: 15px;
+				right: 15px;
+				width: 24px;
+				height: 24px;
+				background-size: 24px 20px;
+				background-repeat: no-repeat;
+				background-position: 100% 0%;
+				background-image: url(../images/common/X_ico.svg);
+			}
+
 
 		}
 	</style>
-	<!-- 2022-08-19 지금 만나러 갑니다 이벤트 팝업 -->
-	<div class="pop_container_M">
-		<div class="pop_main_v">
+	<div class="pc_ver">
+		<!-- 2022-08-19 지금 만나러 갑니다 이벤트 팝업 -->
+		<div class="pop_container_M">
+			<div class="pop_main_v">
+				<article class="popup_M main_noti" id="pop_8026">
+					<span class="wrap">
+						<span class="box lg">
+							<div class="linkWrap">
+								<style type="text/css">
+									body.main .popup_M.main_noti a {
+										display: block;
+										display: -ms-flexbox;
+										position: absolute;
+										opacity: 0;
+										text-indent: -9999px;
+										font-size: 0;
+									}
+
+									body.main .popup_M.main_noti a.btn_link_01 {
+										width: 65%;
+										height: 18%;
+										top: 68%;
+										left: 49%;
+										transform: translateX(-50%);
+										opacity: 0;
+										background: #ff0000;
+									}
+								</style>
+								<img src="../images/main/main_pop_noti_left.jpg" alt="지금 만나러 갑니다 이벤트 팝업"
+									style=" width: 100%;">
+								<a class="btn_link_01"
+									href="https://www.ebse.co.kr/apps/event/eventView.do?event_id=112&article_id=10047000"
+									target="_blank">공지사항 바로가기</a>
+							</div>
+							<div class="buttonWrap">
+								<span class="noti_check combo">
+									<input type="checkbox" id="m_noti" name="m_noti"
+										onclick="layerPop3DayClose('8026');">
+									<label for="m_noti">3일 동안 열지 않음</label>
+								</span>
+								<button type="button" class="bt ico x">닫기</button>
+							</div>
+						</span>
+					</span>
+				</article>
+				<article class="popup_M main_noti" id="pop_8027">
+					<span class="wrap">
+						<span class="box lg">
+							<div class="linkWrap">
+								<style type="text/css">
+									body.main .popup_M.main_noti a {
+										display: block;
+										display: -ms-flexbox;
+										position: absolute;
+										opacity: 0;
+										text-indent: -9999px;
+										font-size: 0;
+									}
+
+									body.main .popup_M.main_noti a.btn_link_01 {
+										width: 65%;
+										height: 18%;
+										top: 68%;
+										left: 49%;
+										transform: translateX(-50%);
+										opacity: 0;
+										background: #ff0000;
+									}
+								</style>
+								<img src="../images/main/main_pop_noti_end.jpg" alt="지금 만나러 갑니다 이벤트 팝업"
+									style=" width: 100%;">
+								<a class="btn_link_01"
+									href="https://www.ebse.co.kr/apps/event/eventView.do?event_id=112&article_id=10047000"
+									target="_blank">공지사항 바로가기</a>
+							</div>
+							<div class="buttonWrap">
+								<span class="noti_check combo">
+									<input type="checkbox" id="m_noti" name="m_noti"
+										onclick="layerPop3DayClose('8027');">
+									<label for="m_noti">3일 동안 열지 않음</label>
+								</span>
+								<button type="button" class="bt ico x">닫기</button>
+							</div>
+						</span>
+					</span>
+				</article>
+			</div>
+		</div>
+		<!-- //2022-08-19 지금 만나러 갑니다 이벤트 팝업 -->
+
+		<!-- 2022-09-06 AI펭톡 활용신청 -->
+		<div class="pop_floating floating_top">
+			<article class="popup_M main_noti" id="pop_8028">
+				<span class="wrap">
+					<a href=" https://www.ebse.co.kr/apps/event/eventView.do?event_id=76&article_id=0000000090963"
+						target="_blank"><img src="../images/main/main_pop_floating_top.png" alt="AI펭톡 활용신청"></a>
+					<span class="noti_check combo">
+						<input type="checkbox" id="m_noti" name="m_noti" onclick="layerPop3DayClose('8028');">
+						<label for="m_noti">3일 동안 열지 않음</label>
+						<button type="button" class="bt ico n">닫기</button>
+					</span>
+					<button type="button" class="bt ico x">닫기</button>
+				</span>
+			</article>
+		</div>
+		<!-- //2022-08-30 AI펭톡 활용신청 -->
+
+		<!-- 2022-08-30 AI펭톡 추석특집 출석체크 챌린지 팝업 -->
+		<div class="pop_floating floating_bottom">
+			<article class="popup_M main_noti" id="pop_8029">
+				<span class="wrap">
+					<a href="https://pengtalk-student.ebse.co.kr/events/ranking4" target="_blank"><img
+							src="../images/main/main_pop_floating_bottom.png" alt="AI펭톡 추석특집 출석체크 챌린지"></a>
+					<span class="noti_check combo">
+						<input type="checkbox" id="m_noti" name="m_noti" onclick="layerPop3DayClose('8029');">
+						<label for="m_noti">3일 동안 열지 않음</label>
+						<button type="button" class="bt ico n">닫기</button>
+					</span>
+					<button type="button" class="bt ico x">닫기</button>
+				</span>
+			</article>
+		</div>
+		<!-- //2022-08-30 AI펭톡 추석특집 출석체크 챌린지 팝업 -->
+	</div>
+
+	<div class="mo_ver">
+		<div class="pop_container_M">
 			<article class="popup_M main_noti" id="pop_8026">
 				<span class="wrap">
 					<span class="box lg">
-						<div class="linkWrap">
-							<style type="text/css">
-								body.main .popup_M.main_noti a {
-									display: block;
-									display: -ms-flexbox;
-									position: absolute;
-									opacity: 0;
-									text-indent: -9999px;
-									font-size: 0;
-								}
+						<div class="swiperC">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="linkWrap">
+										<style type="text/css">
+											body.main .popup_M.main_noti a {
+												display: block;
+												display: -ms-flexbox;
+												position: absolute;
+												opacity: 0;
+												text-indent: -9999px;
+												font-size: 0;
+											}
 
-								body.main .popup_M.main_noti a.btn_link_01 {
-									width: 82%;
-									height: 19.6%;
-									top: 76.3%;
-									left: 49%;
-									transform: translateX(-50%);
-									opacity: .5;
-									background: #ff0000;
-								}
-							</style>
-							<img src="../images/main/main_pop_noti_20220906.jpg" alt="지금 만나러 갑니다 이벤트 팝업"
-								style=" width: 100%;">
-							<a class="btn_link_01"
-								href="https://www.ebse.co.kr/apps/event/eventView.do?event_id=112&article_id=10047000"
-								target="_blank">공지사항 바로가기</a>
+											body.main .popup_M.main_noti a.btn_link_01 {
+												width: 65%;
+												height: 18%;
+												top: 68%;
+												left: 49%;
+												transform: translateX(-50%);
+												opacity: 0;
+												background: #ff0000;
+											}
+										</style>
+										<img src="../images/main/main_pop_noti_left.jpg" alt="금쪽같은 이벤트 팝업"
+											style=" width: 100%;">
+										<a class="btn_link_01"
+											href="https://www.ebse.co.kr/apps/event/eventView.do?event_id=114&article_id=10050000"
+											target="_blank">공지사항 바로가기</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="linkWrap">
+										<style type="text/css">
+											body.main .popup_M.main_noti a {
+												display: block;
+												display: -ms-flexbox;
+												position: absolute;
+												opacity: 0;
+												text-indent: -9999px;
+												font-size: 0;
+											}
+
+											body.main .popup_M.main_noti a.btn_link_02 {
+												width: 65%;
+												height: 18%;
+												top: 68%;
+												left: 49%;
+												transform: translateX(-50%);
+												opacity: 0;
+												background: #ff0000;
+											}
+										</style>
+										<img src="../images/main/main_pop_noti_end.jpg" alt="지금 만나러 갑니다 이벤트 팝업"
+											style=" width: 100%;">
+										<a class="btn_link_01"
+											href="https://www.ebse.co.kr/apps/event/eventView.do?event_id=112&article_id=10047000"
+											target="_blank">공지사항 바로가기</a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+							<div class="wrap-autoplay-control">
+								<button aria-pressed="false" aria-label="자동 재생 일시정지"></button>
+							</div>
+							<button class="swiperC_btn button_more"></button>
 						</div>
 						<div class="buttonWrap">
 							<span class="noti_check combo">
@@ -1485,51 +1843,226 @@
 				</span>
 			</article>
 		</div>
-	</div>
-	<!-- //2022-08-19 지금 만나러 갑니다 이벤트 팝업 -->
 
-	<!-- 2022-09-06 AI펭톡 활용신청 -->
-	<div class="pop_floating floating_top">
-		<article class="popup_M main_noti" id="pop_8027">
-			<span class="wrap">
-				<a href=" https://www.ebse.co.kr/apps/event/eventView.do?event_id=76&article_id=0000000090963"
-					target="_blank"><img src="../images/main/main_pop_noti_20220906_2.png" alt="AI펭톡 활용신청"></a>
-				<span class="noti_check combo">
-					<input type="checkbox" id="m_noti" name="m_noti" onclick="layerPop3DayClose('8027');">
-					<label for="m_noti">3일 동안 열지 않음</label>
-					<button type="button" class="bt ico n">닫기</button>
+		<div class="pop_floating">
+			<article class="popup_M main_noti" id="pop_8028">
+				<span class="wrap">
+					<div class="swiperF">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="https://www.ebse.co.kr/apps/event/eventView.do?event_id=76&amp;article_id=0000000090963"
+									target="_blank"><img src="../images/main/main_pop_floating_top.png"
+										alt="AI펭톡 활용신청"></a>
+							</div>
+							<div class="swiper-slide">
+								<a href="https://pengtalk-student.ebse.co.kr/events/ranking4" target="_blank"><img
+										src="../images/main/main_pop_floating_bottom.png" alt="AI펭톡 출석체크 챌린지"></a>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+						<div class="wrap-autoplay-control">
+							<button aria-pressed="false" aria-label="자동 재생 일시정지"></button>
+						</div>
+						<button class="swiperF_btn button_more"></button>
+					</div>
+
+					<span class="noti_check combo">
+						<input type="checkbox" id="m_noti" name="m_noti" onclick="layerPop3DayClose('8028');">
+						<label for="m_noti">3일 동안 열지 않음</label>
+						<button type="button" class="bt ico n">닫기</button>
+					</span>
+					<button type="button" class="bt ico x">닫기</button>
 				</span>
-				<button type="button" class="bt ico x">닫기</button>
-			</span>
-		</article>
+			</article>
+		</div>
+		<div class="swiperC_modal">
+			<style type="text/css">
+				body.main .swiperC_popup a {
+					display: block;
+					display: -ms-flexbox;
+					position: absolute;
+					opacity: 0;
+					text-indent: -9999px;
+					font-size: 0;
+				}
+
+				body.main .swiperC_popup a.swiperC_top {
+					width: 40%;
+					height: 20%;
+					top: 76%;
+					left: 79%;
+					transform: translateX(-50%);
+					opacity: 0.5;
+					background: #ff0000;
+				}
+
+				body.main .swiperC_popup a.swiperC_bottom {
+					width: 40%;
+					height: 20%;
+					top: 27%;
+					left: 79%;
+					transform: translateX(-50%);
+					opacity: 0.5;
+					background: #ff0000;
+				}
+			</style>
+			<div class="swiperC_popup">
+				<img src="../images/main/swiperC_popup.png" alt="하단 슬라이드">
+				<a href="https://www.ebse.co.kr/apps/event/eventView.do?event_id=112&article_id=10047000"
+					class="swiperC_bottom" target="_blank"></a>
+				<a href="https://www.ebse.co.kr/apps/event/eventView.do?event_id=114&article_id=10050000"
+					class="swiperC_top" target="_blank"></a>
+				<button class="modal_close"><span class="hide">닫기</span></button>
+			</div>
+		</div>
+		<div class="swiperF_modal">
+			<style type="text/css">
+				body.main .swiperF_popup a {
+					display: block;
+					display: -ms-flexbox;
+					position: absolute;
+					opacity: 0;
+					text-indent: -9999px;
+					font-size: 0;
+				}
+
+				body.main .swiperF_popup a.swiperF_first {
+					width: 40%;
+					height: 20%;
+					top: 27%;
+					left: 79%;
+					transform: translateX(-50%);
+					opacity: 0.5;
+					background: #ff0000;
+				}
+
+				body.main .swiperF_popup a.swiperC_second {
+
+					width: 40%;
+					height: 20%;
+					top: 76%;
+					left: 79%;
+					transform: translateX(-50%);
+					opacity: 0.5;
+					background: #ff0000;
+				}
+			</style>
+			<div class="swiperF_popup">
+				<img src="../images/main/swiperF_popup.png" alt="플로팅 팝업">
+				<a href="https://www.ebse.co.kr/apps/event/eventView.do?event_id=76&article_id=0000000090963"
+					class="swiperF_first" target="_blank"></a>
+				<a href="https://pengtalk-student.ebse.co.kr/events/ranking4" class="swiperC_second"
+					target="_blank"></a>
+				<button class="modal_close"><span class="hide">닫기</span></button>
+			</div>
+		</div>
 	</div>
-	<!-- //2022-08-30 AI펭톡 활용신청 -->
-
-	<!-- 2022-08-30 AI펭톡 추석특집 출석체크 챌린지 팝업 -->
-	<div class="pop_floating floating_bottom">
-		<article class="popup_M main_noti" id="pop_8028">
-			<span class="wrap">
-				<a href="https://pengtalk-student.ebse.co.kr/events/ranking4" target="_blank"><img
-						src="../images/main/main_pop_noti_20220906_1.png" alt="AI펭톡 추석특집 출석체크 챌린지"></a>
-				<span class="noti_check combo">
-					<input type="checkbox" id="m_noti" name="m_noti" onclick="layerPop3DayClose('8028');">
-					<label for="m_noti">3일 동안 열지 않음</label>
-					<button type="button" class="bt ico n">닫기</button>
-				</span>
-				<button type="button" class="bt ico x">닫기</button>
-			</span>
-		</article>
-	</div>
-	<!-- //2022-08-30 AI펭톡 추석특집 출석체크 챌린지 팝업 -->
-
-
 
 	<script type="text/javascript">
+		var ww = $(window).width();
+		var mySwiper = undefined;
+		var floatingSwiper = undefined;
+
+		function initSwiper() {
+			if (ww < 740 && mySwiper == undefined && floatingSwiper == undefined) {
+				mySwiper = new Swiper(".swiperC", {
+					loop: true,
+					slidesPerView: 1,
+					autoplay: {
+						delay: 3000,
+						disableOnInteraction: true
+					},
+					pagination: {
+						el: ".swiperC .swiper-pagination",
+						type: "fraction",
+					},
+					on: {
+						init: function () {
+							thisSlide1 = this;
+							autoPlayBtn1 = document.querySelector('.swiperC .wrap-autoplay-control > button');
+							autoPlayBtn1.addEventListener('click', (e) => {
+								autoPlayState1 = autoPlayBtn1.getAttribute('aria-pressed');
+								if (autoPlayState1 === 'false') {
+									autoPlayBtn1.setAttribute('aria-pressed', 'true');
+									thisSlide1.autoplay.stop();
+								} else if (autoPlayState1 === 'true') {
+									autoPlayBtn1.setAttribute('aria-pressed', 'false');
+									thisSlide1.autoplay.start();
+								};
+							});
+						},
+					},
+				});
+				floatingSwiper = new Swiper(".swiperF", {
+					loop: true,
+					slidesPerView: 1,
+					autoplay: {
+						delay: 3000,
+						disableOnInteraction: true
+					},
+					pagination: {
+						el: ".swiperF .swiper-pagination",
+						type: "fraction",
+					},
+					on: {
+						init: function () {
+							thisSlide2 = this;
+							autoPlayBtn2 = document.querySelector('.swiperF .wrap-autoplay-control > button');
+							autoPlayBtn2.addEventListener('click', (e) => {
+								autoPlayState2 = autoPlayBtn2.getAttribute('aria-pressed');
+								if (autoPlayState2 === 'false') {
+									autoPlayBtn2.setAttribute('aria-pressed', 'true');
+									thisSlide2.autoplay.stop();
+								} else if (autoPlayState2 === 'true') {
+									autoPlayBtn2.setAttribute('aria-pressed', 'false');
+									thisSlide2.autoplay.start();
+								};
+							});
+						},
+					},
+				});
+			} else if (ww >= 740 && mySwiper != undefined && floatingSwiper != undefined) {
+				mySwiper.destroy();
+				floatingSwiper.destroy();
+				mySwiper = undefined;
+				floatingSwiper = undefined;
+			}
+		}
+		initSwiper();
+
+		$(window).on('resize', function () {
+			ww = $(window).width();
+			initSwiper();
+		});
+
+		// $('.button_more').click(function () {
+		// 	console.log('a');
+		// 	$('.more_container').addClass('modal-open');
+		// });
+
+		$('.swiperF_btn').on('click', function (e) {
+			e.preventDefault();
+			$('.swiperF_modal').addClass('modal-open');
+		});
+
+		$('.swiperC_btn').on('click', function (e) {
+			e.preventDefault();
+			$('.swiperC_modal').addClass('modal-open');
+		});
+
+		$('.swiperC_modal .modal_close').click(function () {
+			$('.swiperC_modal').removeClass('modal-open');
+		});
+
+		$('.swiperF_modal .modal_close').click(function () {
+			$('.swiperF_modal').removeClass('modal-open');
+		});
+
 		$('.popup_M.main_noti .ico.bt').click(function () {
 			$(this).parents('.popup_M.main_noti').addClass('hidden');
 		});
 	</script>
-	<!-- //팝업 끝 -->
+	<!— //팝업 끝 —>
 </body>
 
 </html>
