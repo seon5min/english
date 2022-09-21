@@ -1370,19 +1370,17 @@
 			opacity: 1;
 		}
 
-		body.main .pop_floating {
+		body.main .floating_wrap {
+			display: flex;
+			flex-direction: column;
 			position: fixed;
-			right: 26px;
-			bottom: 50%;
+			right: 10px;
+			bottom: 42%;
 			z-index: 900;
 		}
 
-		body.main .pop_floating.floating_top {
-			bottom: 580px
-		}
-
-		body.main .pop_floating.floating_bottom {
-			bottom: 345px
+		body.main .floating_wrap .pop_floating.floating_bottom {
+			padding-top: 60px;
 		}
 
 		body.main .pop_floating .popup_M.main_noti .bt.ico {
@@ -1441,58 +1439,50 @@
 				display: block;
 			}
 
-			body.main .container {
-				position: relative;
-				width: 100%;
-				height: 100%;
-				display: flex;
-				align-items: center;
-			}
-
-			body.main .swiperC {
+			body.main .mo_ver .swiperC {
 				position: relative;
 				width: 200px;
 				overflow: hidden;
 			}
 
-			body.main .swiperF {
+			body.main .mo_ver .swiperF {
 				position: relative;
 				width: 180px;
 				overflow: hidden;
 			}
 
-			body.main .swiper-slide {
+			body.main .mo_ver .swiper-slide {
 				position: relative;
 				transition: all .3s ease-in-out;
 				overflow: hidden;
 			}
 
-			body.main .swiper-pagination-fraction {
+			body.main .mo_ver .swiper-pagination-fraction {
 				bottom: 9px;
 			}
 
-			body.main .swiperF .swiper-pagination-fraction {
+			body.main .mo_ver .swiperF .swiper-pagination-fraction {
 				bottom: 12px;
 			}
 
-			body.main .swiperF .wrap-autoplay-control {
+			body.main .mo_ver .swiperF .wrap-autoplay-control {
 				bottom: 9px;
 			}
 
-			body.main .swiperF .button_more {
+			body.main .mo_ver .swiperF .button_more {
 				bottom: 11px;
 				transform: translateX(23px);
 			}
 
-			body.main .wrap-autoplay-control {
+			body.main .mo_ver .wrap-autoplay-control {
 				position: absolute;
 				z-index: 10;
-				bottom: 6px;
+				bottom: 6.5px;
 				left: 50%;
 				transform: translateX(-42px);
 			}
 
-			body.main .wrap-autoplay-control button {
+			body.main .mo_ver .wrap-autoplay-control button {
 				display: block;
 				width: 20px;
 				height: 20px;
@@ -1501,13 +1491,13 @@
 				cursor: pointer;
 			}
 
-			body.main .wrap-autoplay-control button:before {
+			body.main .mo_ver .wrap-autoplay-control button:before {
 				display: block;
 				content: '';
 				position: absolute;
 			}
 
-			body.main .wrap-autoplay-control button[aria-pressed="false"]:before {
+			body.main .mo_ver .wrap-autoplay-control button[aria-pressed="false"]:before {
 				top: 4px;
 				left: 4px;
 				width: 12px;
@@ -1517,7 +1507,7 @@
 				box-sizing: border-box;
 			}
 
-			body.main .wrap-autoplay-control button[aria-pressed="true"]:before {
+			body.main .mo_ver .wrap-autoplay-control button[aria-pressed="true"]:before {
 				top: 4px;
 				left: 5px;
 				border-top: 6px solid transparent;
@@ -1525,10 +1515,10 @@
 				border-bottom: 6px solid transparent;
 			}
 
-			body.main .button_more {
+			body.main .mo_ver .button_more {
 				position: absolute;
 				display: block;
-				bottom: 8px;
+				bottom: 7.5px;
 				left: 50%;
 				transform: translateX(26px);
 				width: 15px;
@@ -1539,7 +1529,7 @@
 				z-index: 10;
 			}
 
-			body.main .button_more:before {
+			body.main .mo_ver .button_more:before {
 				content: '';
 				position: absolute;
 				top: 7px;
@@ -1552,7 +1542,7 @@
 				transform-origin: 0% 0%;
 			}
 
-			body.main .button_more:after {
+			body.main .mo_ver .button_more:after {
 				content: '';
 				position: absolute;
 				top: 3.5px;
@@ -1565,13 +1555,13 @@
 				transform-origin: 0% 0%;
 			}
 
-			body.main .pop_floating {
+			body.main .mo_ver .pop_floating {
 				right: 10px;
 				top: 50%;
 				transform: translateY(-230px);
 			}
 
-			body.main .swiperC_modal {
+			body.main .mo_ver .swiperC_modal {
 				z-index: 1150;
 				position: fixed;
 				bottom: 10px;
@@ -1587,7 +1577,7 @@
 				overflow-y: scroll;
 			}
 
-			body.main .swiperF_modal {
+			body.main .mo_ver .swiperF_modal {
 				z-index: 1150;
 				position: fixed;
 				top: 50%;
@@ -1603,21 +1593,21 @@
 				overflow-y: scroll;
 			}
 
-			body.main .swiperC_modal img,
-			body.main .swiperF_modal img {
+			body.main .mo_ver .swiperC_modal img,
+			body.main .mo_ver .swiperF_modal img {
 				width: 100%;
 			}
 
-			body.main .swiperC_modal.modal-open,
-			body.main .swiperF_modal.modal-open {
+			body.main .mo_ver .swiperC_modal.modal-open,
+			body.main .mo_ver .swiperF_modal.modal-open {
 				opacity: 1;
 				visibility: visible;
 				transition-property: opacity, visibility;
 				transition-duration: 400ms, 0s;
 			}
 
-			body.main .swiperC_modal.modal-open .modal_close,
-			body.main .swiperF_modal.modal-open .modal_close {
+			body.main .mo_ver .swiperC_modal.modal-open .modal_close,
+			body.main .mo_ver .swiperF_modal.modal-open .modal_close {
 				position: absolute;
 				top: 15px;
 				right: 15px;
@@ -1631,10 +1621,11 @@
 
 		}
 	</style>
+
 	<div class="pc_ver">
-		<!-- 2022-08-19 지금 만나러 갑니다 이벤트 팝업 -->
 		<div class="pop_container_M">
 			<div class="pop_main_v">
+				<!-- 2022-08-19 pc 금쪽같은 이벤트 팝업 -->
 				<article class="popup_M main_noti" id="pop_8026">
 					<span class="wrap">
 						<span class="box lg">
@@ -1676,6 +1667,9 @@
 						</span>
 					</span>
 				</article>
+				<!-- //2022-08-19 pc 금쪽같은 이벤트 팝업 -->
+
+				<!-- 2022-08-19 pc 지금 만나러 갑니다 팝업 -->
 				<article class="popup_M main_noti" id="pop_8027">
 					<span class="wrap">
 						<span class="box lg">
@@ -1717,48 +1711,51 @@
 						</span>
 					</span>
 				</article>
+				<!-- //2022-08-19 pc 지금 만나러 갑니다 팝업 -->
 			</div>
 		</div>
-		<!-- //2022-08-19 지금 만나러 갑니다 이벤트 팝업 -->
 
-		<!-- 2022-09-06 AI펭톡 활용신청 -->
-		<div class="pop_floating floating_top">
-			<article class="popup_M main_noti" id="pop_8028">
-				<span class="wrap">
-					<a href=" https://www.ebse.co.kr/apps/event/eventView.do?event_id=76&article_id=0000000090963"
-						target="_blank"><img src="../images/main/main_pop_floating_top.png" alt="AI펭톡 활용신청"></a>
-					<span class="noti_check combo">
-						<input type="checkbox" id="m_noti" name="m_noti" onclick="layerPop3DayClose('8028');">
-						<label for="m_noti">3일 동안 열지 않음</label>
-						<button type="button" class="bt ico n">닫기</button>
+		<div class="floating_wrap">
+			<!-- 2022-09-06 AI펭톡 활용신청 -->
+			<div class="pop_floating floating_top">
+				<article class="popup_M main_noti" id="pop_8028">
+					<span class="wrap">
+						<a href=" https://www.ebse.co.kr/apps/event/eventView.do?event_id=76&article_id=0000000090963"
+							target="_blank"><img src="../images/main/main_pop_floating_top.png" alt="AI펭톡 활용신청"></a>
+						<span class="noti_check combo">
+							<input type="checkbox" id="m_noti" name="m_noti" onclick="layerPop3DayClose('8028');">
+							<label for="m_noti">3일 동안 열지 않음</label>
+							<button type="button" class="bt ico n">닫기</button>
+						</span>
+						<button type="button" class="bt ico x">닫기</button>
 					</span>
-					<button type="button" class="bt ico x">닫기</button>
-				</span>
-			</article>
-		</div>
-		<!-- //2022-08-30 AI펭톡 활용신청 -->
+				</article>
+			</div>
+			<!-- //2022-08-30 AI펭톡 활용신청 -->
 
-		<!-- 2022-08-30 AI펭톡 추석특집 출석체크 챌린지 팝업 -->
-		<div class="pop_floating floating_bottom">
-			<article class="popup_M main_noti" id="pop_8029">
-				<span class="wrap">
-					<a href="https://pengtalk-student.ebse.co.kr/events/ranking4" target="_blank"><img
-							src="../images/main/main_pop_floating_bottom.png" alt="AI펭톡 추석특집 출석체크 챌린지"></a>
-					<span class="noti_check combo">
-						<input type="checkbox" id="m_noti" name="m_noti" onclick="layerPop3DayClose('8029');">
-						<label for="m_noti">3일 동안 열지 않음</label>
-						<button type="button" class="bt ico n">닫기</button>
+			<!-- 2022-08-30 AI펭톡 추석특집 출석체크 챌린지 팝업 -->
+			<div class="pop_floating floating_bottom">
+				<article class="popup_M main_noti" id="pop_8029">
+					<span class="wrap">
+						<a href="https://pengtalk-student.ebse.co.kr/events/ranking4" target="_blank"><img
+								src="../images/main/main_pop_floating_bottom.png" alt="AI펭톡 추석특집 출석체크 챌린지"></a>
+						<span class="noti_check combo">
+							<input type="checkbox" id="m_noti" name="m_noti" onclick="layerPop3DayClose('8029');">
+							<label for="m_noti">3일 동안 열지 않음</label>
+							<button type="button" class="bt ico n">닫기</button>
+						</span>
+						<button type="button" class="bt ico x">닫기</button>
 					</span>
-					<button type="button" class="bt ico x">닫기</button>
-				</span>
-			</article>
+				</article>
+			</div>
+			<!-- //2022-08-30 AI펭톡 추석특집 출석체크 챌린지 팝업 -->
 		</div>
-		<!-- //2022-08-30 AI펭톡 추석특집 출석체크 챌린지 팝업 -->
 	</div>
 
 	<div class="mo_ver">
+		<!-- 2022-09-21 M 하단 슬라이드 -->
 		<div class="pop_container_M">
-			<article class="popup_M main_noti" id="pop_8026">
+			<article class="popup_M main_noti" id="pop_8030">
 				<span class="wrap">
 					<span class="box lg">
 						<div class="swiperC">
@@ -1830,7 +1827,7 @@
 						</div>
 						<div class="buttonWrap">
 							<span class="noti_check combo">
-								<input type="checkbox" id="m_noti" name="m_noti" onclick="layerPop3DayClose('8026');">
+								<input type="checkbox" id="m_noti" name="m_noti" onclick="layerPop3DayClose('8030');">
 								<label for="m_noti">3일 동안 열지 않음</label>
 							</span>
 							<button type="button" class="bt ico x">닫기</button>
@@ -1839,10 +1836,11 @@
 				</span>
 			</article>
 		</div>
+		<!-- //2022-09-21 M 하단 슬라이드 -->
 
-
+		<!-- 2022-09-21 M 플로팅 -->
 		<div class="pop_floating">
-			<article class="popup_M main_noti" id="pop_8028">
+			<article class="popup_M main_noti" id="pop_8031">
 				<span class="wrap">
 					<div class="swiperF">
 						<div class="swiper-wrapper">
@@ -1864,7 +1862,7 @@
 					</div>
 
 					<span class="noti_check combo">
-						<input type="checkbox" id="m_noti" name="m_noti" onclick="layerPop3DayClose('8028');">
+						<input type="checkbox" id="m_noti" name="m_noti" onclick="layerPop3DayClose('8031');">
 						<label for="m_noti">3일 동안 열지 않음</label>
 						<button type="button" class="bt ico n">닫기</button>
 					</span>
@@ -1872,6 +1870,9 @@
 				</span>
 			</article>
 		</div>
+		<!-- //2022-09-21 M 플로팅 -->
+
+		<!-- 2022-09-21 M 모달 팝업 -->
 		<div class="swiperC_modal">
 			<style type="text/css">
 				body.main .swiperC_popup a {
@@ -1952,6 +1953,8 @@
 				<button class="modal_close"><span class="hide">닫기</span></button>
 			</div>
 		</div>
+		<!-- //2022-09-21 M 모달 팝업 -->
+
 	</div>
 
 	<script type="text/javascript">
@@ -2053,7 +2056,7 @@
 			$(this).parents('.popup_M.main_noti').addClass('hidden');
 		});
 	</script>
-	<!— //팝업 끝 —>
+	<!-- //팝업 끝 -->
 </body>
 
 </html>
