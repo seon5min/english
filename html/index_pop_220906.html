@@ -1477,16 +1477,11 @@
 			}
 
 			body.main .mo_ver .swiperF .swiper-pagination-fraction {
-				bottom: 12px;
+				bottom: 14px;
 			}
 
 			body.main .mo_ver .swiperF .wrap-autoplay-control {
-				bottom: 9px;
-			}
-
-			body.main .mo_ver .swiperF .button_more {
 				bottom: 11px;
-				transform: translateX(23px);
 			}
 
 			body.main .mo_ver .wrap-autoplay-control {
@@ -1537,17 +1532,42 @@
 				z-index: 900;
 			}
 
+			/* plus btn */
+			body.main .pop_floating .popup_M.main_noti a.swiperF_btn,
+			body.main .pop_container_M .popup_M.main_noti a.swiperC_btn {
+				display: block;
+				position: absolute;
+				width: 30px;
+				height: 30px;
+				cursor: pointer;
+				bottom: 2px;
+				right: 0;
+				left: 50%;
+				opacity: 1;
+				transform: translateX(15px);
+				z-index: 10;
+			}
+
+			body.main .pop_container_M .popup_M.main_noti a.swiperC_btn {
+				bottom: 1px;
+				transform: translateX(17px);
+			}
+
+			body.main .pop_floating .popup_M.main_noti a.swiperF_btn {
+				bottom: 6px;
+				transform: translateX(17px);
+			}
+
 			body.main .mo_ver .button_more {
 				position: absolute;
 				display: block;
-				bottom: 7.5px;
 				left: 50%;
-				transform: translateX(26px);
+				top: 50%;
+				transform: translate(-50%, -50%);
 				width: 15px;
 				height: 15px;
 				background-color: #231f20;
 				border-radius: 50%;
-				cursor: pointer;
 				z-index: 10;
 			}
 
@@ -1576,6 +1596,11 @@
 				-webkit-transform-origin: 0% 0%;
 				transform-origin: 0% 0%;
 			}
+
+			/* body.main .mo_ver .swiperF .button_more {
+				bottom: 11px;
+				transform: translateX(23px);
+			} */
 
 			body.main .mo_ver .pop_floating {
 				right: 10px;
@@ -1626,6 +1651,9 @@
 				visibility: visible;
 				transition-property: opacity, visibility;
 				transition-duration: 400ms, 0s;
+				overflow-y: auto;
+				height: auto;
+				max-height: 290px;
 			}
 
 			body.main .mo_ver .swiperC_modal.modal-open .modal_close,
@@ -1647,6 +1675,49 @@
 	<div class="pc_ver">
 		<div class="pop_container_M">
 			<div class="pop_main_v">
+				<!-- 2022-08-21 PM 팝업 -->
+				<article class="popup_M main_noti" id="pop_8026">
+					<span class="wrap">
+						<span class="box lg">
+							<div class="linkWrap">
+								<style type="text/css">
+									body.main .popup_M.main_noti a {
+										display: block;
+										display: -ms-flexbox;
+										position: absolute;
+										opacity: 0;
+										text-indent: -9999px;
+										font-size: 0;
+									}
+
+									body.main .popup_M.main_noti a.btn_link_01 {
+										width: 65%;
+										height: 18%;
+										top: 68%;
+										left: 49%;
+										transform: translateX(-50%);
+										opacity: 0;
+										background: #ff0000;
+									}
+								</style>
+								<img src="../images/main/main_pop_noti_pm.jpg" alt="PM 팝업" style=" width: 100%;">
+								<a class="btn_link_01"
+									href="https://www.ebse.co.kr/apps/cmmnty/view.do?pstId=30000006351&bbsType=notice"
+									target="_blank">공지사항 바로가기</a>
+							</div>
+							<div class="buttonWrap">
+								<span class="noti_check combo">
+									<input type="checkbox" id="m_noti" name="m_noti"
+										onclick="layerPop3DayClose('8026');">
+									<label for="m_noti">3일 동안 열지 않음</label>
+								</span>
+								<button type="button" class="bt ico x">닫기</button>
+							</div>
+						</span>
+					</span>
+				</article>
+				<!-- //2022-08-21 PM 팝업 -->
+
 				<!-- 2022-08-19 pc 금쪽같은 이벤트 팝업 -->
 				<article class="popup_M main_noti" id="pop_8026">
 					<span class="wrap">
@@ -1804,6 +1875,35 @@
 												background: #ff0000;
 											}
 										</style>
+										<img src="../images/main/main_pop_noti_pm.jpg" alt="PM 팝업"
+											style=" width: 100%;">
+										<a class="btn_link_01"
+											href="https://www.ebse.co.kr/apps/cmmnty/view.do?pstId=30000006351&bbsType=notice"
+											target="_blank">공지사항 바로가기</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="linkWrap">
+										<style type="text/css">
+											body.main .popup_M.main_noti a {
+												display: block;
+												display: -ms-flexbox;
+												position: absolute;
+												opacity: 0;
+												text-indent: -9999px;
+												font-size: 0;
+											}
+
+											body.main .popup_M.main_noti a.btn_link_01 {
+												width: 65%;
+												height: 18%;
+												top: 68%;
+												left: 49%;
+												transform: translateX(-50%);
+												opacity: 0;
+												background: #ff0000;
+											}
+										</style>
 										<img src="../images/main/main_pop_noti_left.jpg" alt="금쪽같은 이벤트 팝업"
 											style=" width: 100%;">
 										<a class="btn_link_01"
@@ -1845,7 +1945,7 @@
 							<div class="wrap-autoplay-control">
 								<button aria-pressed="false" aria-label="자동 재생 일시정지"></button>
 							</div>
-							<button class="swiperC_btn button_more"></button>
+							<a href="#" role="button" class="swiperC_btn"><span class="button_more">더보기</span></a>
 						</div>
 						<div class="buttonWrap">
 							<span class="noti_check combo">
@@ -1880,7 +1980,7 @@
 						<div class="wrap-autoplay-control">
 							<button aria-pressed="false" aria-label="자동 재생 일시정지"></button>
 						</div>
-						<button class="swiperF_btn button_more"></button>
+						<a href="#" role="button" class="swiperF_btn"><span class="button_more">더보기</span></a>
 					</div>
 
 					<span class="noti_check combo">
@@ -1897,6 +1997,13 @@
 		<!-- 2022-09-21 M 모달 팝업 -->
 		<div class="swiperC_modal">
 			<style type="text/css">
+				/* body.main .swiperC_popup {
+					height: auto;
+					max-height: 220px;
+					overflow-y: auto;
+
+				} */
+
 				body.main .swiperC_popup a {
 					display: block;
 					display: -ms-flexbox;
@@ -1925,9 +2032,21 @@
 					opacity: 0;
 					background: #ff0000;
 				}
+
+				body.main .swiperC_popup a.swiperC_pm {
+					width: 40%;
+					height: 15%;
+					top: 12%;
+					left: 79%;
+					transform: translateX(-50%);
+					opacity: 0;
+					background: #ff0000;
+				}
 			</style>
 			<div class="swiperC_popup">
 				<img src="../images/main/swiperC_popup.png" alt="하단 슬라이드">
+				<a href="https://www.ebse.co.kr/apps/cmmnty/view.do?pstId=30000006351&bbsType=notice" class="swiperC_pm"
+					target="_blank"></a>
 				<a href="https://www.ebse.co.kr/apps/event/eventView.do?event_id=112&article_id=10047000"
 					class="swiperC_bottom" target="_blank"></a>
 				<a href="https://www.ebse.co.kr/apps/event/eventView.do?event_id=114&article_id=10050000"
