@@ -1177,19 +1177,15 @@
 	<div class="sitemap_dim"></div>
 
 	<!-- 팝업 시작 -->
-	<style type="text/css">
-		/*팝업 공통 */
-		body.main .pop_container_M {
-			position: fixed;
-			right: 10px;
-			bottom: 10px;
-			z-index: 1000;
-		}
-
+	<style>
 		body.main .pop_main_v {
 			position: fixed;
 			right: 10px;
 			bottom: 10px;
+			animation: fadeIn 3s ease;
+		}
+
+		body.main .mo_ver .pop_container_M {
 			animation: fadeIn 3s ease;
 		}
 
@@ -1203,131 +1199,68 @@
 			}
 		}
 
-		body.main article.popup_M .wrap {
-			padding-top: 10px;
-			padding-left: 10px;
-		}
-
-		body.main .popup_M.main_noti {
-			z-index: 1000000;
-			margin: 0;
-		}
-
-		body.main .popup_M.main_noti.hide {
-			display: block !important;
-		}
-
-		body.main .popup_M.main_noti.hidden {
-			display: none !important;
-		}
-
-		body.main .popup_M.main_noti .box.lg {
-			max-width: 300px;
-			height: auto;
-			padding: 0;
-			box-sizing: content-box !important;
-			-ms-flex-align: flex-end;
-			align-items: flex-end;
-			display: -ms-flexbox;
-			display: flex;
-			flex-direction: column;
-			white-space: nowrap;
-			justify-content: flex-end;
-			border-top: 1px solid #282b3e;
-			border-left: 1px solid #282b3e;
-			border-right: 1px solid #282b3e;
-			padding: 5px 5px 0;
-			background: #282b3e;
-		}
-
-		body.main .popup_M.main_noti .box.lg button[type="button"]:before {
-			background-color: #fff;
-		}
-
-		body.main .popup_M.main_noti .box.lg button[type="button"]:after {
-			background-color: #fff;
-		}
-
-		body.main .popup_M.main_noti .box.lg>img {
+		/* 2022-09-22 PC 링크 */
+		body.main .pc_ver .popup_M.main_noti a.btn_link_0 {
 			width: 100%;
-			vertical-align: bottom;
-		}
-
-		body.main .popup_M.main_noti .box.lg .noti_check {
-			-ms-flex-align: center;
-			align-items: center;
-			display: -ms-flexbox;
-			display: flex;
-			white-space: nowrap;
-			justify-content: space-between;
-			padding: 0 10px;
-			align-content: center;
-		}
-
-		body.main .popup_M.main_noti .box.lg>.combo input[type="checkbox"] {
-			position: absolute;
+			height: 100%;
 			top: 0;
 			left: 0;
 			right: 0;
 			bottom: 0;
-			display: block;
+		}
+
+		body.main .pc_ver .popup_M.main_noti a.btn_link_01 {
+			width: 65%;
+			height: 18%;
+			top: 68%;
+			left: 49%;
+			transform: translateX(-50%);
+			opacity: 0;
+			background: #ff0000;
+		}
+
+		body.main .pc_ver .popup_M.main_noti a.btn_link_02 {
+			width: 65%;
+			height: 18%;
+			top: 68%;
+			left: 49%;
+			transform: translateX(-50%);
+			opacity: 0;
+			background: #ff0000;
+		}
+
+		/* 2022-09-22 MO 링크 */
+		body.main .mo_ver .popup_M.main_noti a.btn_link_0 {
 			width: 100%;
 			height: 100%;
-			opacity: 0;
-			z-index: 1;
-			cursor: pointer;
-		}
-
-		body.main .popup_M.main_noti .box.lg .combo input:checked+label {
-			font-weight: normal;
-		}
-
-		body.main .popup_M.main_noti .linkWrap {
-			position: relative;
-		}
-
-		body.main .popup_M.main_noti .buttonWrap {
-			background: #282b3e;
-			box-sizing: border-box;
-			width: 100%;
-			-ms-flex-align: flex-end;
-			align-items: flex-end;
-			display: -ms-flexbox;
-			display: flex;
-			white-space: nowrap;
-			justify-content: space-between;
-		}
-
-		body.main .popup_M.main_noti .combo label {
-			color: #fff !important;
-			font-weight: 300 !important;
-		}
-
-		body.main .popup_M.main_noti .combo label:before {
-			top: 10px !important;
-		}
-
-		body.main .popup_M.main_noti .bt.ico {
-			z-index: 20;
-			width: 40px;
-			height: 40px;
+			top: 0;
+			left: 0;
 			right: 0;
-			bottom: 0px;
-			cursor: pointer;
+			bottom: 0;
 		}
 
-		body.main .popup_M.main_noti .bt.ico.x:before,
-		body.main .popup_M.main_noti .bt.ico.x:after {
-			top: 50%;
-			z-index: 10;
-			width: 2px;
-			height: 24px;
-			margin-top: -12px;
-			background: #fff;
-			border-radius: 24px;
+		body.main .mo_ver .popup_M.main_noti a.btn_link_01 {
+			width: 65%;
+			height: 18%;
+			top: 68%;
+			left: 49%;
+			transform: translateX(-50%);
+			opacity: 0;
+			background: #ff0000;
 		}
 
-		body.main .popup_M.main_noti a {
+		body.main .mo_ver .popup_M.main_noti a.btn_link_02 {
+			width: 65%;
+			height: 18%;
+			top: 68%;
+			left: 49%;
+			transform: translateX(-50%);
+			opacity: 0;
+			background: #ff0000;
+		}
+
+		/* 2022-09-22 하단 슬라이드 팝업 */
+		body.main .mo_ver .swiperC_popup a {
 			display: block;
 			display: -ms-flexbox;
 			position: absolute;
@@ -1336,343 +1269,64 @@
 			font-size: 0;
 		}
 
-		body.main .popup_M.main_noti a.img_wrap {
-			position: relative;
-			opacity: 1;
-			text-indent: initial;
+		body.main .mo_ver .swiperC_popup a.swiperC_top {
+			width: 40%;
+			height: 18%;
+			bottom: 0%;
+			left: 79%;
+			transform: translate(-50%, 17vh);
+			opacity: 0.5;
+			background: #ff0000;
 		}
 
-		body.main .pop_main_h {
-			-ms-flex-align: flex-end;
-			align-items: flex-end;
-			display: -ms-flexbox;
-			display: flex;
-			-ms-flex-wrap: wrap;
-			flex-wrap: wrap;
-			flex-direction: column-reverse;
-			align-content: flex-end;
-			white-space: nowrap;
-			justify-content: flex-end;
+		body.main .mo_ver .swiperC_popup a.swiperC_bottom {
+			width: 40%;
+			height: 18%;
+			top: 50%;
+			left: 79%;
+			transform: translate(-50%, 10vh);
+			opacity: 0;
+			background: #ff0000;
 		}
 
-		body.main .pop_main_v {
-			-ms-flex-align: flex-end;
-			align-items: flex-end;
-			display: -ms-flexbox;
-			display: flex;
-			-ms-flex-wrap: nowrap;
-			flex-wrap: nowrap;
-			flex-direction: row;
-			align-content: flex-end;
-			white-space: nowrap;
-			justify-content: flex-end;
+		body.main .mo_ver .swiperC_popup a.swiperC_pm {
+			width: 40%;
+			height: 15%;
+			top: 7%;
+			left: 79%;
+			transform: translateX(-50%);
+			opacity: 0;
+			background: #ff0000;
 		}
 
-		body.main .pop_floating article.popup_M .wrap {
-			padding: 0;
-			position: relative;
-		}
-
-		body.main .pop_floating .popup_M.main_noti a {
-			display: initial;
-			position: relative;
-			opacity: 1;
-		}
-
-		body.main .floating_wrap {
-			display: -ms-flexbox;
-			display: flex;
-			flex-direction: column;
-			position: fixed;
-			right: 10px;
-			bottom: 345px;
-			z-index: 900;
-		}
-
-		body.main .floating_wrap .pop_floating.floating_bottom {
-			padding-top: 52px;
-		}
-
-		body.main .pop_floating .popup_M.main_noti .bt.ico {
-			position: absolute;
-			top: -15px;
-			right: -5px;
-		}
-
-		body.main .pop_floating .popup_M.main_noti .bt.ico.x:before,
-		body.main .popup_M.main_noti .bt.ico.x:after {
-			background: #444;
-		}
-
-		body.main .pop_floating .popup_M.main_noti .combo label {
-			color: #444 !important;
-			font-weight: 400 !important;
-		}
-
-		body.main .pop_floating .popup_M.main_noti .combo label:before {
-			width: 15px;
-			height: 15px;
-			top: 12px !important;
-			left: 7px;
-		}
-
-		body.main .pop_floating .popup_M.main_noti .noti_check.combo {
-			width: 180px;
-			position: absolute;
-			left: 5px;
-			bottom: -40px;
-		}
-
-		body.main .pop_floating .popup_M.main_noti .noti_check.combo .bt.ico.n {
-			width: 15px;
-			height: 10px;
-			top: 15px;
-			right: 25px;
-			background: url(../images/main/floating_close.png) no-repeat center center;
-			background-size: contain;
-		}
-
-		body.main .mo_ver {
-			display: none;
-		}
-
-		body.main .pc_ver {
+		/* 2022-09-22 플로팅 팝업 */
+		body.main .mo_ver .swiperF_popup a {
 			display: block;
+			display: -ms-flexbox;
+			position: absolute;
+			opacity: 0;
+			text-indent: -9999px;
+			font-size: 0;
 		}
 
-		@media all and (max-width: 740px) {
-			body.main .pc_ver {
-				display: none;
-			}
+		body.main .mo_ver .swiperF_popup a.swiperF_first {
+			width: 40%;
+			height: 20%;
+			top: 27%;
+			left: 79%;
+			transform: translateX(-50%);
+			opacity: 0;
+			background: #ff0000;
+		}
 
-			body.main .mo_ver {
-				display: block;
-			}
-
-			body.main .mo_ver .swiperC {
-				position: relative;
-				width: 200px;
-				overflow: hidden;
-			}
-
-			body.main .mo_ver .swiperF {
-				position: relative;
-				width: 180px;
-				overflow: hidden;
-			}
-
-			body.main .mo_ver .pop_container_M {
-				animation: fadeIn 3s ease;
-			}
-
-			@keyframes fadeIn {
-				0% {
-					transform: translateY(400px);
-				}
-
-				100% {
-					transform: translateY(0px);
-				}
-			}
-
-			body.main .mo_ver .swiper-slide {
-				position: relative;
-				transition: all .3s ease-in-out;
-				overflow: hidden;
-			}
-
-			body.main .mo_ver .swiper-pagination-fraction {
-				bottom: 9px;
-			}
-
-			body.main .mo_ver .swiperF .swiper-pagination-fraction {
-				bottom: 14px;
-			}
-
-			body.main .mo_ver .swiperF .wrap-autoplay-control {
-				bottom: 11px;
-			}
-
-			body.main .mo_ver .wrap-autoplay-control {
-				position: absolute;
-				z-index: 10;
-				bottom: 6.5px;
-				left: 50%;
-				transform: translateX(-42px);
-			}
-
-			body.main .mo_ver .wrap-autoplay-control button {
-				display: block;
-				width: 20px;
-				height: 20px;
-				border: 0;
-				background: transparent;
-				cursor: pointer;
-			}
-
-			body.main .mo_ver .wrap-autoplay-control button:before {
-				display: block;
-				content: '';
-				position: absolute;
-			}
-
-			body.main .mo_ver .wrap-autoplay-control button[aria-pressed="false"]:before {
-				top: 4px;
-				left: 4px;
-				width: 12px;
-				height: 12px;
-				border-left: 4px solid #231f20;
-				border-right: 4px solid #231f20;
-				box-sizing: border-box;
-			}
-
-			body.main .mo_ver .wrap-autoplay-control button[aria-pressed="true"]:before {
-				top: 4px;
-				left: 5px;
-				border-top: 6px solid transparent;
-				border-left: 11px solid #231f20;
-				border-bottom: 6px solid transparent;
-			}
-
-			body.main .mo_ver .pop_floating {
-				position: fixed;
-				right: 26px;
-				bottom: 50%;
-				z-index: 900;
-			}
-
-			/* plus btn */
-			body.main .pop_floating .popup_M.main_noti a.swiperF_btn,
-			body.main .pop_container_M .popup_M.main_noti a.swiperC_btn {
-				display: block;
-				position: absolute;
-				width: 30px;
-				height: 30px;
-				cursor: pointer;
-				bottom: 2px;
-				right: 0;
-				left: 50%;
-				opacity: 1;
-				transform: translateX(15px);
-				z-index: 10;
-			}
-
-			body.main .pop_container_M .popup_M.main_noti a.swiperC_btn {
-				bottom: 1px;
-				transform: translateX(17px);
-			}
-
-			body.main .pop_floating .popup_M.main_noti a.swiperF_btn {
-				bottom: 6px;
-				transform: translateX(17px);
-			}
-
-			body.main .mo_ver .button_more {
-				position: absolute;
-				display: block;
-				left: 50%;
-				top: 50%;
-				transform: translate(-50%, -50%);
-				width: 15px;
-				height: 15px;
-				background-color: #231f20;
-				border-radius: 50%;
-				z-index: 10;
-			}
-
-			body.main .mo_ver .button_more:before {
-				content: '';
-				position: absolute;
-				top: 7px;
-				left: 3.5px;
-				width: 8px;
-				height: 1px;
-				color: white;
-				background-color: currentColor;
-				-webkit-transform-origin: 0% 0%;
-				transform-origin: 0% 0%;
-			}
-
-			body.main .mo_ver .button_more:after {
-				content: '';
-				position: absolute;
-				top: 3.5px;
-				left: 7px;
-				width: 1px;
-				height: 8px;
-				color: white;
-				background-color: currentColor;
-				-webkit-transform-origin: 0% 0%;
-				transform-origin: 0% 0%;
-			}
-
-			body.main .mo_ver .pop_floating {
-				right: 10px;
-				top: 50%;
-				transform: translateY(-230px);
-			}
-
-			body.main .mo_ver .swiperC_modal {
-				z-index: 1150;
-				position: fixed;
-				bottom: 10px;
-				left: 50%;
-				transform: translateX(-50%);
-				width: 98%;
-				max-width: 448px;
-				height: auto;
-				opacity: 0;
-				visibility: hidden;
-				transition-property: opacity, visibility;
-				transition-duration: 400ms, 0s;
-				overflow-y: scroll;
-			}
-
-			body.main .mo_ver .swiperF_modal {
-				z-index: 1150;
-				position: fixed;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -250px);
-				width: 98%;
-				max-width: 448px;
-				height: auto;
-				opacity: 0;
-				visibility: hidden;
-				transition-property: opacity, visibility;
-				transition-duration: 400ms, 0s;
-				overflow-y: scroll;
-			}
-
-			body.main .mo_ver .swiperC_modal img,
-			body.main .mo_ver .swiperF_modal img {
-				width: 100%;
-			}
-
-			body.main .mo_ver .swiperC_modal.modal-open,
-			body.main .mo_ver .swiperF_modal.modal-open {
-				opacity: 1;
-				visibility: visible;
-				transition-property: opacity, visibility;
-				transition-duration: 400ms, 0s;
-				overflow-y: auto;
-				height: auto;
-				max-height: 68vw;
-			}
-
-			body.main .mo_ver .swiperC_modal.modal-open .modal_close,
-			body.main .mo_ver .swiperF_modal.modal-open .modal_close {
-				position: absolute;
-				top: 15px;
-				right: 15px;
-				width: 24px;
-				height: 24px;
-				background-size: 24px 20px;
-				background-repeat: no-repeat;
-				background-position: 100% 0%;
-				background-image: url(../images/common/X_ico.svg);
-			}
-
+		body.main .mo_ver .swiperF_popup a.swiperC_second {
+			width: 40%;
+			height: 20%;
+			top: 76%;
+			left: 79%;
+			transform: translateX(-50%);
+			opacity: 0;
+			background: #ff0000;
 		}
 	</style>
 
@@ -1684,16 +1338,6 @@
 					<span class="wrap">
 						<span class="box lg">
 							<div class="linkWrap">
-								<style type="text/css">
-									body.main .popup_M.main_noti a.btn_link_0 {
-										width: 100%;
-										height: 100%;
-										top: 0;
-										left: 0;
-										right: 0;
-										bottom: 0;
-									}
-								</style>
 								<img src="../images/main/main_pop_noti_pm.jpg" alt="PM 팝업" style=" width: 100%;">
 								<a class="btn_link_0"
 									href="https://www.ebse.co.kr/apps/cmmnty/view.do?pstId=30000006351&bbsType=notice"
@@ -1717,17 +1361,6 @@
 					<span class="wrap">
 						<span class="box lg">
 							<div class="linkWrap">
-								<style type="text/css">
-									body.main .popup_M.main_noti a.btn_link_01 {
-										width: 65%;
-										height: 18%;
-										top: 68%;
-										left: 49%;
-										transform: translateX(-50%);
-										opacity: 0;
-										background: #ff0000;
-									}
-								</style>
 								<img src="../images/main/main_pop_noti_left.jpg" alt="지금 만나러 갑니다 이벤트 팝업"
 									style=" width: 100%;">
 								<a class="btn_link_01"
@@ -1752,20 +1385,9 @@
 					<span class="wrap">
 						<span class="box lg">
 							<div class="linkWrap">
-								<style type="text/css">
-									body.main .popup_M.main_noti a.btn_link_01 {
-										width: 65%;
-										height: 18%;
-										top: 68%;
-										left: 49%;
-										transform: translateX(-50%);
-										opacity: 0;
-										background: #ff0000;
-									}
-								</style>
 								<img src="../images/main/main_pop_noti_end.jpg" alt="지금 만나러 갑니다 이벤트 팝업"
 									style=" width: 100%;">
-								<a class="btn_link_01"
+								<a class="btn_link_02"
 									href="https://www.ebse.co.kr/apps/event/eventView.do?event_id=112&article_id=10047000"
 									target="_blank">공지사항 바로가기</a>
 							</div>
@@ -1831,16 +1453,6 @@
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
 									<div class="linkWrap">
-										<style type="text/css">
-											body.main .popup_M.main_noti a.btn_link_0 {
-												width: 100%;
-												height: 100%;
-												top: 0;
-												left: 0;
-												right: 0;
-												bottom: 0;
-											}
-										</style>
 										<img src="../images/main/main_pop_noti_pm.jpg" alt="PM 팝업"
 											style=" width: 100%;">
 										<a class="btn_link_0"
@@ -1850,17 +1462,6 @@
 								</div>
 								<div class="swiper-slide">
 									<div class="linkWrap">
-										<style type="text/css">
-											body.main .popup_M.main_noti a.btn_link_01 {
-												width: 65%;
-												height: 18%;
-												top: 68%;
-												left: 49%;
-												transform: translateX(-50%);
-												opacity: 0;
-												background: #ff0000;
-											}
-										</style>
 										<img src="../images/main/main_pop_noti_left.jpg" alt="금쪽같은 이벤트 팝업"
 											style=" width: 100%;">
 										<a class="btn_link_01"
@@ -1870,20 +1471,9 @@
 								</div>
 								<div class="swiper-slide">
 									<div class="linkWrap">
-										<style type="text/css">
-											body.main .popup_M.main_noti a.btn_link_02 {
-												width: 65%;
-												height: 18%;
-												top: 68%;
-												left: 49%;
-												transform: translateX(-50%);
-												opacity: 0;
-												background: #ff0000;
-											}
-										</style>
 										<img src="../images/main/main_pop_noti_end.jpg" alt="지금 만나러 갑니다 이벤트 팝업"
 											style=" width: 100%;">
-										<a class="btn_link_01"
+										<a class="btn_link_02"
 											href="https://www.ebse.co.kr/apps/event/eventView.do?event_id=112&article_id=10047000"
 											target="_blank">공지사항 바로가기</a>
 									</div>
@@ -1944,46 +1534,6 @@
 
 		<!-- 2022-09-21 M 모달 팝업 -->
 		<div class="swiperC_modal">
-			<style type="text/css">
-				body.main .swiperC_popup a {
-					display: block;
-					display: -ms-flexbox;
-					position: absolute;
-					opacity: 0;
-					text-indent: -9999px;
-					font-size: 0;
-				}
-
-				body.main .swiperC_popup a.swiperC_top {
-					width: 40%;
-					height: 18%;
-					top: 80%;
-					left: 79%;
-					transform: translateX(-50%);
-					opacity: 0;
-					background: #ff0000;
-				}
-
-				body.main .swiperC_popup a.swiperC_bottom {
-					width: 40%;
-					height: 18%;
-					top: 47%;
-					left: 79%;
-					transform: translateX(-50%);
-					opacity: 0;
-					background: #ff0000;
-				}
-
-				body.main .swiperC_popup a.swiperC_pm {
-					width: 40%;
-					height: 15%;
-					top: 7%;
-					left: 79%;
-					transform: translateX(-50%);
-					opacity: 0;
-					background: #ff0000;
-				}
-			</style>
 			<div class="swiperC_popup">
 				<img src="../images/main/swiperC_popup.png" alt="하단 슬라이드">
 				<a href="https://www.ebse.co.kr/apps/cmmnty/view.do?pstId=30000006351&bbsType=notice" class="swiperC_pm"
@@ -1996,36 +1546,6 @@
 			</div>
 		</div>
 		<div class="swiperF_modal">
-			<style type="text/css">
-				body.main .swiperF_popup a {
-					display: block;
-					display: -ms-flexbox;
-					position: absolute;
-					opacity: 0;
-					text-indent: -9999px;
-					font-size: 0;
-				}
-
-				body.main .swiperF_popup a.swiperF_first {
-					width: 40%;
-					height: 20%;
-					top: 27%;
-					left: 79%;
-					transform: translateX(-50%);
-					opacity: 0;
-					background: #ff0000;
-				}
-
-				body.main .swiperF_popup a.swiperC_second {
-					width: 40%;
-					height: 20%;
-					top: 76%;
-					left: 79%;
-					transform: translateX(-50%);
-					opacity: 0;
-					background: #ff0000;
-				}
-			</style>
 			<div class="swiperF_popup">
 				<img src="../images/main/swiperF_popup.png" alt="플로팅 팝업">
 				<a href="https://www.ebse.co.kr/apps/event/eventView.do?event_id=76&article_id=0000000090963"

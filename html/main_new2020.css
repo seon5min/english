@@ -333,6 +333,8 @@ body.main section .mainEvent .notiZone .notiList dt span { display:inline-block;
 
 /*팝업 공통 */
 body.main .pop_container_M { position: fixed; right: 10px; bottom: 10px; z-index: 1000; }
+body.main .pop_main_v { position: fixed; right: 10px; bottom: 10px; animation: fadeIn 3s ease; }
+@keyframes fadeIn { 0% { transform: translateY(400px); } 100% { transform: translateY(0px); } }
 body.main article.popup_M .wrap { padding-top: 10px; padding-left: 10px; }
 body.main .popup_M.main_noti { z-index: 1000000; margin: 0; }
 body.main .popup_M.main_noti.hide { display: block !important; }
@@ -582,6 +584,8 @@ body.main .pc_ver { display: block; }
 	body.main .mo_ver { display: block; }
 	body.main .mo_ver .swiperC { position: relative; width: 200px; overflow: hidden; }
 	body.main .mo_ver .swiperF { position: relative; width: 180px; overflow: hidden; }
+	body.main .mo_ver .pop_container_M { animation: fadeIn 3s ease; }
+	@keyframes fadeIn { 0% { transform: translateY(400px); } 100% { transform: translateY(0px); } }
 	body.main .mo_ver .swiper-slide { position: relative; transition: all .3s ease-in-out; overflow: hidden; }
 	body.main .mo_ver .swiper-pagination-fraction { bottom: 9px; }
 	body.main .mo_ver .swiperF .swiper-pagination-fraction { bottom: 14px; }
@@ -604,7 +608,7 @@ body.main .pc_ver { display: block; }
 	body.main .mo_ver .swiperC_modal { z-index: 1150; position: fixed; bottom: 10px; left: 50%; transform: translateX(-50%); width: 98%; max-width: 448px; height: auto; opacity: 0; visibility: hidden; transition-property: opacity, visibility; transition-duration: 400ms, 0s; overflow-y: scroll; }
 	body.main .mo_ver .swiperF_modal { z-index: 1150; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -250px); width: 98%; max-width: 448px; height: auto; opacity: 0; visibility: hidden; transition-property: opacity, visibility; transition-duration: 400ms, 0s; overflow-y: scroll; }
 	body.main .mo_ver .swiperC_modal img, body.main .mo_ver .swiperF_modal img { width: 100%; }
-	body.main .mo_ver .swiperC_modal.modal-open, body.main .mo_ver .swiperF_modal.modal-open { opacity: 1; visibility: visible; transition-property: opacity, visibility; transition-duration: 400ms, 0s; overflow-y: auto;max-height: calc(100vw - 18%); height: 310px;}
+	body.main .mo_ver .swiperC_modal.modal-open, body.main .mo_ver .swiperF_modal.modal-open { opacity: 1; visibility: visible; transition-property: opacity, visibility; transition-duration: 400ms, 0s; overflow-y: auto; height: auto; max-height: 67.5vw; }
 	body.main .mo_ver .swiperC_modal.modal-open .modal_close, body.main .mo_ver .swiperF_modal.modal-open .modal_close { position: absolute; top: 15px; right: 15px; width: 24px; height: 24px; background-size: 24px 20px; background-repeat: no-repeat; background-position: 100% 0%; background-image: url(../images/common/X_ico.svg); }
 }
 
