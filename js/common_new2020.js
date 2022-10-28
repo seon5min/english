@@ -1106,6 +1106,41 @@ $(document).ready(function() {
 			$(this).next('.sm').slideDown();
 		}
 	});
+
+	/* 비회원 콘텐츠 이용안내 팝업 */
+	var acodian = {
+	  click: function(target) {
+		var _self = this,
+		  $target = $(target);
+		const outbox = document.querySelector(".engout");
+		const accordion = document.querySelector(".accordion");
+
+		$target.on('click', function() {
+		  var $this = $(this);
+		  if ($this.next('.panel').css('display') == 'none') {
+			$('.panel').slideUp();
+			_self.onremove($target);
+
+			$this.addClass('on');
+			$this.next().slideDown(200);
+
+			outbox.classList.add('active');
+			accordion.style.borderRadius = '10px 10px 0 0';
+		  } else {
+			$('.panel').slideUp(0);
+			_self.onremove($target);
+			outbox.classList.remove('active');
+			accordion.style.borderRadius = '10px';
+		  }
+		});
+	  },
+	  onremove: function($target) {
+		$target.removeClass('on');
+	  }
+
+	};
+	acodian.click('.accordion');
+
 	/* FIX 20200804 수정 */
 	$(function(){
         $(window).scroll(function () {
@@ -1152,7 +1187,7 @@ $(document).ready(function() {
 
 	/* SITEMAP */
 	$('.jq-sitemap').click(function(){
-		$('body').css({"overflow": "hidden"}).css({"position":"fixed"});
+		//$('body').css({"overflow": "hidden"}).css({"position":"fixed"});
 		$('.sitemap').animate({'left':'0'}, 200 );
 		$(".sitemap_dim").fadeIn(100);
 	});
@@ -1162,9 +1197,9 @@ $(document).ready(function() {
 		$(this).fadeOut(200);
 	});
 	/* POPUP */
-	$('.jq-pop').click(function(){
-		$('body').css({"overflow-y": "scroll"}).css({"position":"fixed"});
-	});
+	//$('.jq-pop').click(function(){
+	//	$('body').css({"overflow-y": "scroll"}).css({"position":"fixed"});
+	//});
 	$('.popup .bt.x').click(function(){
 		$('body').css({"overflow": ""}).css({"position":""});
 		$('.popup').addClass('hide');

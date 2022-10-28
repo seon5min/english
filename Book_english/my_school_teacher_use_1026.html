@@ -1,0 +1,657 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1" />
+<meta property="og:url" content="https://www.ebse.co.kr" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="EBS English" />
+<meta property="og:description" content="EBSe 초등3년 영어 교과서" />
+<meta property="og:image" content="images/_common/h1.png" />
+<title>EBSe 교과서 영어</title>
+<link rel="shortcut icon" type="image/x-icon" href="images/common/favicon_ebs.png" />
+<link rel="shortcut icon" type="image/icon" href="images/common/favicon_ebs.png" />
+<link rel="stylesheet" type="text/css" href="common/css/style.css" />
+<link rel="stylesheet" type="text/css" href="common/css/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="common/css/slick/slick-theme.css">
+<script type="text/javascript" src="common/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="common/js/common.js"></script>
+<script type="text/javascript" src="common/js/slick.js" charset="utf-8"></script>
+</head>
+
+<body>
+
+<!-- .header -->
+<header>
+<nav class="nav m_hide">
+		<div class="inner clearfix">
+			<div class="f_l">
+				<span class="utilMenu" >
+					<a href="/apps/introduce/introduce_egg.do" class="m hide">에그붐</a> <!-- 2022-02-22 에그붐 히든처리 -->
+					<a href="/apps/cmmnty/list.do?bbsType=notice" class="m ">공지사항</a>
+					<a href="/apps/afterschool/after.do" class="m ">방과후영어</a>
+					<a href="#" onclick="openElem()" class="m ">필수영단어</a>
+					<a href="https://teacher.ebse.co.kr" target="_blank" class="m ">교사지원센터</a>
+				</span>
+			</div>
+			<div class="f_r">
+				<span class="topMenu">
+					<!-- <a href="my.html" class="m">마이페이지</a> -->
+					<a href="/apps/login/loginForm.do" class="m">로그인</a>
+								<a href="#this" onclick="localLoginChck('join');" class="m">회원가입</a>
+						<a href="/apps/onair/main.do" class="m onair">온에어</a>
+					<a href="/apps/schedule/main.do" class="m">편성표</a>
+					<a href="/apps/cs/csFAQ.do" class="m">고객센터</a>
+					<a href="/apps/event/listEvent.do" class="m">이벤트</a>
+				</span>
+			</div>
+		</div>
+	</nav>
+	<nav class="gnbWrap">
+	    <div class="gnb">
+            <div class="inner">
+				<h1 class="scroll_view m_hide"><a href="/apps/main/main.do">EBS English</a></h1>
+				<div class="gnb_top">
+					<h1 class="scroll_hidden"><a href="/apps/main/main.do">EBS English</a></h1>
+					<button type="button" class="ico mob_menu jq-sitemap m_view">전체메뉴</button>
+					<span class="bind find on">
+					<form id="searchForm" name="search" class="searchForm" method="get"  action="/apps/search/search.do" accept-charset="utf-8">
+						<!-- <input type="hidden" name="startCount"/>
+						<input type="hidden" name="sort"/>
+						<input type="hidden" name="collection"/>
+						<input type="hidden" id="range" 	name="range"		/>
+						<input type="hidden" id="startDate" name="startDate"	/>
+						<input type="hidden" id="endDate" 	name="endDate"		/>
+						<input type="hidden" name="searchField"					/>
+						<input type="hidden" name="reQuery"						 />
+						<input type="hidden" name="realQuery"					 /> -->
+						<input type="hidden" name="query" id="queryDe2"			 />
+						<input type="text" class="input m_hide" name="query2" id="queryDe" value="" onkeypress="if(event.keyCode==13){doSearch();}" onfocus="this.value='';"/>
+					 </form>
+						<a href="javascript:doSearch();" class="bt ico find">검색</a>
+						<div class="key m_hide">
+							</div>
+					</span>
+				</div>
+                 <ul class="menu">
+                    <li class="w14">
+                        <a href="/apps/lvltest/intro.do" class="mm">레벨테스트</a>
+                        <div class="smenu">
+                            <a href="/apps/lvltest/result.do" class="sm w111">레벨테스트 결과</a>
+                        </div>
+                    </li>
+                    <li class="w16">
+                        <a href="/apps/broadcast/main.do" class="mm">방송프로그램</a>
+						<div class="smenu">
+                            <a href="/apps/onair/main.do" class="sm w42">온에어</a>
+                            <a href="/apps/schedule/main.do" class="sm w42">편성표</a>
+                        </div>
+                    </li>
+					<li class="w12">
+						<a href="https://pengtalk-student.ebse.co.kr/" class="mm">AI 펭톡</a>
+						<div class="smenu">
+                            <a href="https://pengtalk-student.ebse.co.kr/content" class="sm w59">학습단원</a>
+                        </div>
+					</li>
+					<li class="w14">
+                        <a href="/apps/engBook/engBookIntro.do?use=Y" class="mm">교과서영어</a>
+                        <div class="smenu">
+                            <a href="#" onclick="openBokClass('cls')" class="sm w59">학습하기</a>
+                            <a href="#" onclick="openBokClass('myCls')" class="sm w59">나의교실</a>
+                        </div>
+                    </li>
+                    <li class="w11">
+						<a href="/apps/funReading/funMain.do" class="mm">펀리딩</a>
+                    </li>
+                    <li class="w15">
+                        <a href="/apps/eclip/main.do" class="mm">자기주도학습</a>
+                        <div class="smenu">
+							<a href="/apps/eclip/main.do" class="sm w42">e클립</a>
+							<a href="/apps/online/main.do" class="sm w89">온라인콘텐츠</a>
+							<a href="/apps/afterschool/after.do" class="sm w74">방과후영어</a>
+                            <a href="#" onclick="openElem()" class="sm w74">필수영단어</a>
+                            <a href="#" onclick="openNeat()" class="sm w74">365영단어</a>
+                            <a href="/apps/cmmnty/list.do?bbsType=estory" class="sm w42">e-야기</a>
+                        </div>
+                    </li>
+                </ul>
+				<ul class="menu all_Menu">
+                    <li class="w14">
+                        <a href="/apps/cmmnty/list.do?bbsType=notice" class="mm">What's EBSe?</a>
+                        <div class="smenu">
+                            <a href="/apps/cmmnty/list.do?bbsType=notice" class="sm w59">공지사항</a>
+                            <a href="/apps/introduce/introduce_book.do" class="sm w74">EBSe 교재</a>
+							<a href="/apps/introduce/introduce_member.do" class="sm w89">EBSe 출연자</a>
+							<a href="/apps/introduce/introduce_main.do" class="sm w74">EBSe 소개</a>
+							<a href="/apps/introduce/information_list.do?bbsType=event" class="sm w74">설명회/행사</a>
+                        </div>
+                    </li>
+                    <li class="all_w15">
+                        <a href="/apps/mypage/myMain.do" class="mm">마이페이지</a>
+                        <div class="smenu">
+                            <a href="/apps/mypage/myUseList.do" class="sm w98">최근이용콘텐츠</a>
+							<a href="/apps/mypage/myStudyList.do" class="sm w74">나의학습방</a>
+							<a href="/apps/mypage/myPstList.do" class="sm w89">나의활동내역</a>
+							<a href="/apps/mypage/myMatchView.do" class="sm w89">매칭학습관리</a>
+							<a href="/apps/funReading/myLibrary.do" class="sm w59">나의 서재</a> <!-- 2022-03-15 전체 메뉴 - 나의 서재 추가 -->
+							<a href="/apps/mypage/myEtizenInfoView.do" class="sm w111">나의 e-tizen 내역</a> <!-- 2022-03-15 전체 메뉴 - 띄어쓰기 추가 -->
+							<a href="/apps/mypage/loginCheckForm.do" class="sm w59">정보관리</a>
+                        </div>
+                    </li>
+					<li class="all_w14">
+                        <a href="/apps/cs/csFAQ.do" class="mm">고객센터</a>
+                        <div class="smenu">
+                            <a href="/apps/cs/csFAQ.do" class="sm w92">자주 찾는 질문</a>
+                            <a href="/apps/cs/csGuide.do" class="sm w111">사이트 이용안내</a>
+                            <a href="/apps/cs/csMtoM.do"  class="sm w48">1:1문의</a>
+                            <a href="/apps/cs/csRemote.do" class="sm w111">원격지원 서비스</a>
+                            <a href="/apps/cs/csDownload.do" class="sm w120">학습지원 프로그램</a>
+                        </div>
+                    </li>
+					<li class="all_w10">
+                        <a href="/apps/event/listEvent.do" class="mm">이벤트</a>
+                        <div class="smenu">
+                            <a href="/apps/event/listEventPrze.do" class="sm w74">당첨자확인</a>
+                        </div>
+                    </li>
+                    <li class="all_w13">
+                        <a href="https://teacher.ebse.co.kr/apps/tchsupt/main.do" class="mm">교사지원센터</a>
+                        <div class="smenu">
+                            <a href="https://teacher.ebse.co.kr/apps/tchsupt/cert.do" class="sm w92">교사회원 인증</a>
+							<a href="https://teacher.ebse.co.kr/apps/tchsupt/grpent.do" class="sm w89">단체가입신청</a>
+							<!-- <a href="https://teacher.ebse.co.kr/apps/tchsupt/rpsv.do" class="sm w89">대표교사 신청</a> -->
+							<a href="https://teacher.ebse.co.kr/apps/tchsupt/prmtn.do" class="sm w92">EBSe활용교사</a>
+							<a href="https://teacher.ebse.co.kr/apps/tchsupt/vod/data.do" class="sm w59">VOD 자료</a>
+							<a href="https://teacher.ebse.co.kr/apps/tchsupt/learning/data.do" class="sm w59">학습 자료</a>
+                        </div>
+                    </li>
+                    <li class="all_w15">
+                        <a href="/apps/studyRoom/alphabet.do" class="mm">학습자료실</a>
+                        <div class="smenu">
+                            <a href="/apps/studyRoom/alphabet.do" class="sm w111">알파벳 단어연습</a>
+                            <a href="/apps/cmmnty/cmmnty_basics.do" class="sm w120">다시시작 기초영어</a>
+							<a href="/apps/studyRoom/homeSchList.do" class="sm w59">홈스쿨링</a>
+							<a href="/apps/studyRoom/myChild.do" class="sm w120">우리아이 영어고민</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-btnArea m_hide">
+                <a href="/apps/search/search.do" class="searchIcon">검색버튼</a>
+				<a href="#none;" class="fullMenu">전체보기</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- //.header -->
+
+<!-- .container -->
+<style type="text/css">
+
+</style>
+<div class="container mySchool" id="spaceTop">
+	<div class="inner t-use">
+		<!-- .class-info -->
+		<div class="class-info">
+			<a href="#none;" onclick="history.go(-1);">
+				<h4>나의 교실 / 교실 상세현황 보기</h4>
+			</a>
+		</div>
+		<!-- //.class-info -->
+
+		<!-- .class_tap -->
+        <ul class="class_tap">
+            <li><a href="my_school_teacher_use.html" class="on">교실 사용현황</a></li>
+						<li><a href="my_school_teacher_report.html">학습 이용현황</a></li>
+            <li><a href="my_school_teacher_question.html">교실 활동현황</a></li>
+        </ul>
+		<!-- //.class_tap -->
+		<h5 class="subTit"><span>00학교 00학년 00반</span> 교실 사용현황</h5>
+		<div class="filter">
+				<div class="search-box">
+						<div class="bind find">
+								<div class="select bind">
+										<label>전체</label>
+										<select>
+												<option selected="">전체</option>
+												<option>제목</option>
+												<option>내용</option>
+										</select>
+								</div>
+								<input type="text" class="input" placeholder="검색어를 입력해주세요">
+								<button type="button" class="bt ico">검색</button>
+						</div>
+				</div>
+			<div class="resultWrap m_hide">
+				<!-- 2022-10-27 버튼 추가 -->
+				<a href="javascript:;" class="bt bt_join agree txt">가입</a>
+				<a href="javascript:;" class="bt bt_quit cancel txt">탈퇴</a>
+				<a href="javascript:;" class="bt bt_exit exit txt">퇴실</a>
+			</div>
+		</div>
+		<!-- .table -->
+		<ul class="table bTop">
+			<li class="th m_hide">
+				<div class="row">
+					<span class="cell xs m_hide"><div class="combo notxt"><input type="checkbox" id="c0"><label for="c0">전체선택</label></div></span>
+					<span class="cell xs">번호</span>
+					<span class="cell">이름</span>
+					<span class="cell md">작성일</span>
+					<span class="cell md">상태</span>
+					<!-- 2022-10-27 행 추가 -->
+					<span class="cell md">승인</span>
+					<span class="cell md">퇴실</span>
+				</div>
+			</li>
+			<li class="tr">
+				<div class="row">
+					<span class="cell xs m_hide" id="q-check"><span class="combo notxt"><input type="checkbox" id="c1" name="check"><label for="check">선택</label></span></span>
+					<span class="cell xs" id="t-Num">10</span>
+					<span class="cell" id="t-Name">홍길동</span>
+					<span class="cell md myInfo"><i class="m_view768">신청일</i> 2019.02.01</span>
+					<!-- 2022-10-27 버튼 수정 -->
+					<span class="cell md m_hide" id="t-button">가입요청</span>
+					<span class="cell md" id="t-button">
+						<a href="javascript:;" class="bt txt bt_join agree">가입</a>
+						<span class="m_view">가입요청</span>
+					</span>
+					<span class="cell md m_hide" id="t-button"></span>
+					<!-- //2022-10-27 버튼 수정 -->
+				</div>
+			</li>
+			<li class="tr">
+				<div class="row">
+					<span class="cell xs m_hide" id="q-check"><span class="combo notxt"><input type="checkbox" id="c2" name="check"><label for="check">선택</label></span></span>
+					<span class="cell xs" id="t-Num">9</span>
+					<span class="cell" id="t-Name">홍길동</span>
+					<span class="cell md myInfo"><i class="m_view768">신청일</i> 2019.02.01</span>
+					<!-- 2022-10-27 버튼 수정 -->
+					<span class="cell md m_hide" id="t-button">가입완료</span>
+					<span class="cell md" id="t-button">
+						<span class="m_view">가입완료</span>
+					</span>
+					<span class="cell md m_hide" id="t-button"><a href="javascript:;" class="bt txt bt_exit exit">퇴실</a></span>
+					<!-- //2022-10-27 버튼 수정 -->
+				</div>
+			</li>
+			<li class="tr">
+				<div class="row">
+					<span class="cell xs m_hide" id="q-check"><span class="combo notxt"><input type="checkbox" id="c3" name="check"><label for="check">선택</label></span></span>
+					<span class="cell xs" id="t-Num">8</span>
+					<span class="cell" id="t-Name">홍길동</span>
+					<span class="cell md myInfo"><i class="m_view768">신청일</i> 2019.02.01</span>
+					<!-- 2022-10-27 버튼 수정 -->
+					<span class="cell md m_hide" id="t-button">탈퇴요청</span>
+					<span class="cell md" id="t-button">
+						<a href="javascript:;" class="bt txt bt_quit cancel">탈퇴</a>
+						<span class="m_view">탈퇴요청</span>
+					</span>
+					<span class="cell md m_hide" id="t-button"></span>
+					<!-- //2022-10-27 버튼 수정 -->
+				</div>
+			</li>
+			<li class="tr">
+				<div class="row">
+					<span class="cell xs m_hide" id="q-check"><span class="combo notxt"><input type="checkbox" id="c4" name="check"><label for="check">선택</label></span></span>
+					<span class="cell xs" id="t-Num">7</span>
+					<span class="cell" id="t-Name">홍길동</span>
+					<span class="cell md myInfo"><i class="m_view768">신청일</i> 2019.02.01</span>
+					<!-- 2022-10-27 버튼 수정 -->
+					<span class="cell md m_hide" id="t-button">탈퇴완료</span>
+					<span class="cell md" id="t-button">
+						<span class="m_view">탈퇴완료</span>
+					</span>
+					<span class="cell md m_hide" id="t-button"></span>
+					<!-- //2022-10-27 버튼 수정 -->
+				</div>
+			</li>
+			<li class="tr">
+				<div class="row">
+					<span class="cell xs m_hide" id="q-check"><span class="combo notxt"><input type="checkbox" id="c5" name="check"><label for="check">선택</label></span></span>
+					<span class="cell xs" id="t-Num">6</span>
+					<span class="cell" id="t-Name">홍길동</span>
+					<span class="cell md myInfo"><i class="m_view768">신청일</i> 2019.02.01</span>
+					<!-- 2022-10-27 버튼 수정 -->
+					<span class="cell md m_hide" id="t-button">탈퇴거절</span>
+					<span class="cell md" id="t-button">
+						<span class="m_view">탈퇴거절</span>
+					</span>
+					<span class="cell md m_hide" id="t-button"><a href="javascript:;" class="bt txt bt_exit exit">퇴실</a></span>
+					<!-- //2022-10-27 버튼 수정 -->
+				</div>
+			</li>
+			<li class="tr">
+				<div class="row">
+					<span class="cell xs m_hide" id="q-check"><span class="combo notxt"><input type="checkbox" id="c6" name="check"><label for="check">선택</label></span></span>
+					<span class="cell xs" id="t-Num">5</span>
+					<span class="cell" id="t-Name">홍길동</span>
+					<span class="cell md myInfo" ><i class="m_view768">신청일</i> 2019.02.01</span>
+					<!-- 2022-10-27 버튼 수정 -->
+					<span class="cell md m_hide" id="t-button">가입요청</span>
+					<span class="cell md" id="t-button">
+						<a href="javascript:;" class="bt txt bt_join agree">가입</a>
+						<span class="m_view">가입요청</span>
+					</span>
+					<span class="cell md m_hide" id="t-button"></span>
+					<!-- //2022-10-27 버튼 수정 -->
+				</div>
+			</li>
+			<li class="tr">
+				<div class="row">
+					<span class="cell xs m_hide" id="q-check"><span class="combo notxt"><input type="checkbox" id="c7" name="check"><label for="check">선택</label></span></span>
+					<span class="cell xs" id="t-Num">4</span>
+					<span class="cell" id="t-Name">홍길동</span>
+					<span class="cell md myInfo"><i class="m_view768">신청일</i> 2019.02.01</span>
+					<!-- 2022-10-27 버튼 수정 -->
+					<span class="cell md m_hide" id="t-button">가입완료</span>
+					<span class="cell md" id="t-button">
+						<span class="m_view">가입완료</span>
+					</span>
+					<span class="cell md m_hide" id="t-button"><a href="javascript:;" class="bt txt bt_exit exit">퇴실</a></span>
+					<!-- //2022-10-27 버튼 수정 -->
+				</div>
+			</li>
+			<li class="tr">
+				<div class="row">
+					<span class="cell xs m_hide" id="q-check"><span class="combo notxt"><input type="checkbox" id="c8" name="check"><label for="check">선택</label></span></span>
+					<span class="cell xs" id="t-Num">3</span>
+					<span class="cell" id="t-Name">홍길동</span>
+					<span class="cell md myInfo"><i class="m_view768">신청일</i> 2019.02.01</span>
+					<!-- 2022-10-27 버튼 수정 -->
+					<span class="cell md m_hide" id="t-button">탈퇴요청</span>
+					<span class="cell md" id="t-button">
+						<a href="javascript:;" class="bt txt bt_quit cancel">탈퇴</a>
+						<span class="m_view">탈퇴요청</span>
+					</span>
+					<span class="cell md m_hide" id="t-button"></span>
+					<!-- //2022-10-27 버튼 수정 -->
+				</div>
+			</li>
+			<li class="tr">
+				<div class="row">
+					<span class="cell xs m_hide" id="q-check"><span class="combo notxt"><input type="checkbox" id="c9" name="check"><label for="check">선택</label></span></span>
+					<span class="cell xs" id="t-Num">2</span>
+					<span class="cell" id="t-Name">홍길동</span>
+					<span class="cell md myInfo"><i class="m_view768">신청일</i> 2019.02.01</span>
+					<!-- 2022-10-27 버튼 수정 -->
+					<span class="cell md m_hide" id="t-button">탈퇴완료</span>
+					<span class="cell md" id="t-button">
+						<span class="m_view">탈퇴완료</span>
+					</span>
+					<span class="cell md m_hide" id="t-button"></span>
+					<!-- //2022-10-27 버튼 수정 -->
+				</div>
+			</li>
+			<li class="tr">
+				<div class="row">
+					<span class="cell xs m_hide" id="q-check"><span class="combo notxt"><input type="checkbox" id="c10" name="check"><label for="check">선택</label></span></span>
+					<span class="cell xs" id="t-Num">1</span>
+					<span class="cell" id="t-Name">홍길동</span>
+					<span class="cell md myInfo"><i class="m_view768">신청일</i> 2019.02.01</span>
+					<!-- 2022-10-27 버튼 수정 -->
+					<span class="cell md m_hide" id="t-button">탈퇴거절</span>
+					<span class="cell md" id="t-button">
+						<span class="m_view">탈퇴거절</span>
+					</span>
+					<span class="cell md m_hide" id="t-button"><a href="javascript:;" class="bt txt bt_exit exit">퇴실</a></span>
+					<!-- //2022-10-27 버튼 수정 -->
+				</div>
+			</li>
+		</ul>
+		<!-- //.table -->
+
+		<!-- .page -->
+		<div class="page">
+			<a href="" class="p prev end">처음</a>
+			<a href="" class="p prev">이전</a>
+			<a href="" class="p on">1</a>
+			<a href="" class="p">2</a>
+			<a href="" class="p">3</a>
+			<a href="" class="p">4</a>
+			<a href="" class="p">5</a>
+			<a href="" class="p next">다음</a>
+			<a href="" class="p next end">맨끝</a>
+		</div>
+		<!-- /.page -->
+	</div>
+</div>
+<!-- //.container -->
+
+<!-- .sitemap -->
+<div class="popup sitemap hide">
+	<div class="inner">
+		<button type="button" class="bt ico x">닫기</button>
+		<a href="my.html" class="bt txt m bg">마이페이지</a>
+        <a href="#none;" class="bt txt m bg">로그아웃</a>
+		<!--a href="user_login.html" class="bt txt m bg">로그인</a-->
+		<!--<a href="" class="bt txt m bg">회원가입</a>-->
+		<ul>
+			<li>
+				<p class="mm"><a href="http://www.ebse.co.kr">EBSe</a></p>
+			</li>
+			<li>
+				<p class="mm"><a href="http://teacher.ebse.co.kr/apps/tchsupt/main.do">교사지원센터</a></p>
+			</li>
+			<li>
+				<p class="mm"><a href="http://www.ebse.co.kr/apps/introduce/introduce_egg.do">에그붐</a></p>
+			</li>
+			<li>
+				<p class="mm"><a href="http://www.ebse.co.kr/apps/introduce/introduce_fun.do">펀리딩</a></p>
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- //.sitemap -->
+<!-- 가입요청 -->
+<article class="popup approve agree hide">
+	<div class="wrap">
+		<div class="inner">
+			<div class="box md">
+				<div class="title">
+					<button type="button" class="bt ico x">닫기</button>
+					<h6>교실 가입 요청을 수락하시겠습니까?</h6>
+				</div>
+				<div class="content">
+					<div class="note radio">
+						<ul>
+							<li><div class="combo radio"><input type="radio" id="agree" name="result"><label for="agree">요청 수락</label></div></li>
+							<li><div class="combo radio"><input type="radio" id="reject" name="result"><label for="reject">요청 거절</label></div></li>
+						</ul>
+					</div>
+					<div class="note gray">
+						<ul>
+							<li><input type="text" class="input" placeholder="요청 거절 시 거절 사유를 작성하셔야 합니다.(10글자 이내)"></li>
+						</ul>
+					</div>
+				</div>
+				<div class="btns">
+					<a href="#" class="bt txt s bg">확인</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</article>
+<!-- //가입요청 -->
+<!-- 탈퇴요청 -->
+<article class="popup approve cancel hide">
+	<div class="wrap">
+		<div class="inner">
+			<div class="box md">
+				<div class="title">
+					<button type="button" class="bt ico x">닫기</button>
+					<h6>교실 탈퇴 요청을 수락하시겠습니까?</h6>
+				</div>
+				<div class="content">
+					<div class="note radio">
+						<ul>
+							<li><div class="combo radio"><input type="radio" id="agree" name="cancel"><label for="agree">요청 수락</label></div></li>
+							<li><div class="combo radio"><input type="radio" id="reject" name="cancel"><label for="reject">요청 거절</label></div></li>
+						</ul>
+					</div>
+					<div class="note gray">
+						<ul>
+							<li><input type="text" class="input" placeholder="요청 거절 시 거절 사유를 작성하셔야 합니다.(10글자 이내)"></li>
+						</ul>
+					</div>
+				</div>
+				<div class="btns">
+					<a href="#" class="bt txt s bg">확인</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</article>
+<!-- //탈퇴요청 -->
+<!-- 퇴실조치 -->
+<article class="popup approve exit hide">
+	<div class="wrap">
+		<div class="inner">
+			<div class="box md">
+				<div class="title">
+					<button type="button" class="bt ico x">닫기</button>
+					<h6>퇴실 조치 하시겠습니까?</h6>
+				</div>
+				<div class="content">
+					<p>퇴실사유를 아래에 작성해주세요.</p>
+					<div class="note gray">
+						<ul>
+							<li><input type="text" class="input"></li>
+						</ul>
+					</div>
+				</div>
+				<div class="btns">
+					<a href="#" class="bt txt s bg">확인</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</article>
+<!-- //퇴실요청 -->
+<!-- .footer -->
+<footer>
+	<!-- 2021-04-06 메인푸터 수정 -->
+	<div class="call">
+		<div class="inner">
+			<div class="customer_wrap">
+				<div class="customer_info">
+					<div class="cs_wrap">
+						<h2 class="tit">고객센터</h2>
+						<p class="tel">1588-1580</p>
+						<div class="link">
+							<a href="/apps/cs/csMtoM.do">1:1문의</a>
+							<a href="/apps/cs/csRemote.do">원격지원</a>
+						</div>
+					</div>
+					<div class="info_txt">
+						<p>월~금 8:00~18:00</p>
+						<p>토요일 9:00~18:00</p>
+						<p>점심시간 12~13시 / 일요일 휴무</p>
+						<p><a href="mailto:helpdesk@ebs.co.kr">helpdesk@ebs.co.kr</a></p>
+					</div>
+				</div>
+				<div class="customer_info">
+					<div class="pengtalk_wrap">
+						<h2 class="tit">AI펭톡 고객센터</h2>
+						<p class="tel">1800-2319</p>
+						<div class="link">
+							<a href="https://pengha.oc.toast.com/penghi/hc/ticket/">1:1문의</a>
+							<a href="https://pengha.oc.toast.com/penghi/hc/article/">자주묻는질문</a>
+						</div>
+					</div>
+					<div class="info_txt">
+						<p>월~금 10:00~19:00</p>
+						<p>토요일,일요일,공휴일 휴무</p>
+					</div>
+				</div>
+			</div>
+			<div class="app_wrap">
+				<div class="footer_app">
+					<h2 class="tit">EBSe APP</h2>
+					<ul class="app_icon">
+						<li><a href="https://play.google.com/store/apps/details?id=kr.co.ebse.player" title="ebse"><img src="../images/common/app_ebse.png" alt="ebse"></a></li>
+						<li class="hide"><a href="https://play.google.com/store/apps/details?id=kr.co.ebse.player" title="에그붐"><img src="../images/common/app_egg.png" alt="에그붐"></a></li>
+						<!-- 2022-02-22 에그붐 히든처리 -->
+						<li class="hide"><a href="https://play.google.com/store/apps/details?id=kr.co.ebse.player" title="펀리딩"><img src="../images/common/app_fun.png" alt="펀리딩"></a></li> <!-- 2021-04-19 펀리딩 히든처리 -->
+						<li><a href="https://play.google.com/store/apps/details?id=com.ebsenglish.talk" title="AI"><img src="../images/common/app_pengtalk.png" alt="AI펭톡"></a></li>
+					</ul>
+				</div>
+				<div class="sns_app">
+					<h2 class="tit">YouTube</h2>
+					<ul class="app_icon">
+						<li><a href="https://www.youtube.com/user/EBSLanguage" title="유튜브" target="_blank"><img src="../images/common/icon_youtube.png" alt="유투브"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //2021-04-06 메인푸터 수정 -->
+	<div class="footer-nav">
+		<div class="inner">
+            <ul class="fn-ul">
+                <li class="m_hide"><a href="http://www.ebse.co.kr/apps/introduce/introduce_main.do">EBS소개</a></li>
+                <li class="m_hide"><a href="https://home.ebs.co.kr/copyright/main">저작권 침해 제보</a></li>
+				<li><a href="https://sso.ebs.co.kr/policy/privacy?fsdc=" class="point">개인정보처리방침</a></li>
+				<li><a href="https://sso.ebs.co.kr/policy/termsInfo?fsdc=">이용약관</a></li>
+                <li class="m_hide"><a href="http://about.ebs.co.kr/kor/business/advertisement">광고문의</a></li>
+                <li class="m_hide"><a href="http://about.ebs.co.kr/kor/business/sponsorship">협찬문의</a></li>
+                <li class="m_hide"><a href="http://www.ebse.co.kr/apps/cs/contentsMap.do">콘텐츠맵</a></li>
+				<li class="m_view"><a href="#">모바일웹</a></li>
+            </ul>
+
+			<div class="select m_hide">
+				<label>영어교육유관기관</label>
+				<select name="organizations" id="organizations" onchange="window.open(this.value);">
+					<option value="http://kice.re.kr/index.do">한국교육과정평가원</option>
+					<option value="http://www.niied.go.kr/main/main.do">국립국제교육원</option>
+					<option value="http://www.neti.go.kr/">중앙교육연수원</option>
+					<option value="http://www.sen.go.kr/">서울특별시교육청</option>
+					<option value="http://www.pen.go.kr/">부산광역시교육청</option>
+					<option value="http://www.dge.go.kr/">대구광역시교육청</option>
+					<option value="http://www.ice.go.kr/">인천광역시교육청</option>
+					<option value="http://www.gen.go.kr/">광주광역시교육청</option>
+					<option value="http://www.dje.go.kr/">대전광역시교육청</option>
+					<option value="http://www.use.go.kr/">울산광역시교육청</option>
+					<option value="http://www.sje.go.kr/">세종특별자치시교육청</option>
+					<option value="http://goe.go.kr/">경기도교육청</option>
+					<option value="http://www.gwe.go.kr/">강원도교육청</option>
+					<option value="http://www.cbe.go.kr/">충청북도교육청</option>
+					<option value="http://www.cne.go.kr/">충청남도교육청</option>
+					<option value="http://www.jbe.go.kr/main/">전라북도교육청</option>
+					<option value="http://www.jne.go.kr/">전라남도교육청</option>
+					<option value="http://www.gbe.kr/">경상북도교육청</option>
+					<option value="http://www.gne.go.kr/">경상남도교육청</option>
+					<option value="http://www.jje.go.kr/">제주특별시자치도교육청</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<div class="site m_hide">
+		<div class="inner">
+			<a href="https://www.ebs.co.kr/" target="_blank"><img src="../images/bi_01.png" alt="EBS"></a>
+			<a href="https://primary.ebs.co.kr/" target="_blank"><img src="../images/bi_02.png" alt="EBS 초등"></a>
+			<a href="https://mid.ebs.co.kr/" target="_blank"><img src="../images/bi_03.png" alt="EBS 중학"></a>
+			<a href="http://www.ebsi.co.kr/" target="_blank"><img src="../images/bi_04.png" alt="EBSi"></a>
+			<a href="https://www.ebsmath.co.kr" target="_blank"><img src="../images/bi_05.png" alt="EBSmath"></a>
+			<a href="https://www.ebslang.co.kr" target="_blank"><img src="../images/bi_06.png" alt="EBSlang"></a>
+			<a href="https://www.ebssw.kr/" target="_blank"><img src="../images/bi_08.png" alt="EBS 이솦"></a>
+		</div>
+	</div>
+		<div class="corp">
+	<div class="inner">
+            <div class="mark">[인증범위] 교육 포털 웹서비스<br>[유효기간] 2020.04.29~2023.04.28</div>
+            <p class="footer-logo"><img src="/images/h1.svg" alt=""></p>
+            <p class="footer-copy">
+                <span>10393 경기도 고양시 일산동구 한류월드로 281 한국교육방송공사</span>
+                <span>사업자등록번호 : 229-82-01343 (한국교육방송공사사장 김명중)</span>
+                <span class="m_hide">시청자불만전담 : hotline@ebs.co.kr  I  부가통신사업신고 : 10077  I  통신판매업신고 : 고양일산동-1415호</span>
+                <span class="copy">Copyright ⓒ EBS All Rights Reserved </span>
+            </p>
+		</div>
+		<button type="button" class="bt ico top" style="display: block;">맨위</button>
+	</div>
+</footer>
+<!-- //.footer -->
+
+</body>
+</html>

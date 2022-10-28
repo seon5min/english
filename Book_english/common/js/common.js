@@ -65,6 +65,10 @@ $(document).ready(function() {
 	$('.bt.agree').click(function(){
 		$('.popup.agree').removeClass('hide');
 	});
+	/* 2022-10-27 퇴실조치 추가 */
+	$('.bt.exit').click(function(){
+		$('.popup.exit').removeClass('hide');
+	});
 	$('.bt.q-delete').click(function(){
 		$('.popup.q-delete').removeClass('hide');
 	});
