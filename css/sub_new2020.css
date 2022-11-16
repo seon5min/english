@@ -1839,7 +1839,7 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
     section.tv > .gray { padding: 50px 20px 20px 20px; }
     section.tv .movie { float: none; width: 100%; }
     section.tv .movie_wrap {height: auto}
-    section.tv > .inner { padding: 30px 20px; }
+    section.tv > .inner { padding: 50px 20px 30px; }
     section.tv .side { float: none; overflow-y: hidden; width: 100%; height: auto !important; }
     section.tv .side .table .row .cell em { width: 90%; font-size: 12px; line-height: 100%; white-space: normal; text-overflow: inherit; }
     section.tv .noservice { height: 225px; padding-top: 70px; }
