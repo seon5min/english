@@ -156,8 +156,8 @@ body.sub .visual .slick-dots li.slick-active button {width: 19px; height: 19px;	
 body.sub .visual .slick-dots li.slick-active button:before { width: 15px; height: 15px;	background-color: transparent; border:1px solid #fff; }
 body.sub .visual .slick-dots li button:before
 { font-family: 'slick'; font-size: 6px; line-height: 20px; position: absolute;
-	top: 0; left: 0; width: 12px; height: 12px;	content: ''; text-align: center; background-color: #7e7e7e;
-	border-radius:12px;	-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+    top: 0; left: 0; width: 12px; height: 12px;	content: ''; text-align: center; background-color: #7e7e7e;
+    border-radius:12px;	-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
 }
 body.sub .visual .slick-slide { padding: 12px 20px; }
 
@@ -185,7 +185,7 @@ body.sub .filter-box .filter .order .bt { width:106px; padding: 0 30px 0 15px; f
 body.sub .filter-box .filter .order > div {position: relative; float:left; }
 body.sub .filter-box .filter .order > div:first-child { margin-right: -1px;}
 body.sub .filter-box .filter .order > div:before {content:''; position: absolute;top: 50%; margin-top:-6px;right: 16px; z-index:1; width:8px; height:8px; border:1px solid #898989;
-border-top: 0; border-right: 0;-webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg);-o-transform: rotate(-45deg); transform: rotate(-45deg);}
+    border-top: 0; border-right: 0;-webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg);-o-transform: rotate(-45deg); transform: rotate(-45deg);}
 body.sub .filter-box .filter .order > div.on { z-index:1;}
 body.sub .filter-box .filter .order > div.on:before {margin-top:-1px; -webkit-transform: rotate(-225deg); -moz-transform: rotate(-225deg);-o-transform: rotate(-225deg); transform: rotate(-225deg);}
 
@@ -253,12 +253,12 @@ section.level .exam .time { display: inline-block; height: 40px; line-height: 40
 section.level .exam .time i { font-weight: 700; padding: 0 5px; }
 section.level .exam .time.on i { color: #ff3d00; -webkit-animation: timer 1.2s infinite ease-in-out; animation: timer 1.2s infinite ease-in-out; }
 @-webkit-keyframes timer {
-	0% { color: #ff3d00; }
-	50% { color: #494949; }
+    0% { color: #ff3d00; }
+    50% { color: #494949; }
 }
 @keyframes timer {
-	0% { color: #ff3d00; }
-	50% { color: #494949; }
+    0% { color: #ff3d00; }
+    50% { color: #494949; }
 }
 section.level .exam .count { display: inline-block; height: 40px; line-height: 40px; color: #5a5a5a; font-size: 20px; }
 section.level .exam .count i { font-weight: 700; padding: 0 5px; }
@@ -364,6 +364,51 @@ section.level.report .title h3 { float: left; }
 section.level.report .title .words { float: left; color: #1f3153; font-size: 30px; line-height: 120%; padding: 0; }
 section.level.report .title .words i:first-child { color: #1f3153; font-size: 25px; line-height: 100%; font-weight: 400; }
 section.level.report .title .words mark { display: block; color: #0671f3; }
+
+/* 2022 Level Test */
+section.level .gray_bg { background-color: #F8F8F8; padding:60px 0;}
+section.level .gray_bg > .inner {display: -webkit-box; display: -ms-flexbox; display: flex}
+section.level .gray_bg > .inner .lv_info_wrap {width: 100%; max-width: 350px;margin-right: 48px;}
+section.level .gray_bg > .inner .lv_progress {background: url(../images/level_test/lv_m_progress.png) no-repeat; background-size: contain; display: block; width: 360px; max-width: 100%; height: 156px;}
+section.level .gray_bg p {line-height: 1.4;letter-spacing: -0.035rem;color: #222222; word-break: keep-all;}
+section.level .gray_bg p.lv_tit {font-size: 30px;font-weight: 500;color: #1F3153; position: relative;}
+section.level .gray_bg p.main_txt {font-size: 28px; font-weight: 500;margin-top:40px;}
+section.level .gray_bg p.main_inline_txt {font-size: 28px; font-weight: 500;}
+section.level .gray_bg p.sub_txt {font-size: 18px; margin-top:14px;}
+section.level .gray_bg p.sub_inline_txt{font-size: 18px;}
+section.level .gray_bg p > .main_color { color:#F57E25}
+section.level .gray_bg .sub_con {margin-top:53px;}
+section.level .gray_bg .sub_con .sub_tit{font-size: 22px;font-weight: 500;}
+section.level .gray_bg .sub_con .sub_tit img {margin-bottom: 25px;}
+section.level .gray_bg .sub_con .progress_step {display: -webkit-box; display: -ms-flexbox; display:flex;margin-top: 19px;}
+section.level .gray_bg .sub_con .progress_step > span {width: 18px;min-width: 18px; height: 18px; background-color: #F57E25; color: #fff; font-weight: 500; margin-right: 8px; border-radius: 100px; text-align: center; display: inline-block; font-size: 12px; vertical-align: bottom; letter-spacing: normal; line-height: normal;}
+
+section.level .gray_bg > .inner .self_assessment_wrap {width: 100%; max-width: 582px;background-color:#fff; padding: 30px 46px; }
+section.level .gray_bg > .inner .self_assessment_wrap .self_tit {color: #1F3153; font-size: 22px;font-weight: 500;margin-bottom: 6px;}
+section.level .gray_bg > .inner .self_assessment_wrap .self_txt, section.level .gray_bg > .inner .self_assessment_wrap .self_inline_txt {font-size: 16px;}
+section.level .gray_bg > .inner .self_assessment_wrap .self_option {display: -webkit-box; display: -ms-flexbox; display: flex;margin: 10px 0;font-size: 16px;}
+section.level .gray_bg > .inner .self_assessment_wrap .self_option_img {background: url(../images/level_test/self_option.png) 50% 50% no-repeat;background-size: 60px 24px; content: "";display: inline-block;min-width: 60px;height: 24px;width: 60px;vertical-align: top; margin: -1px 6px 0 0;}
+section.level .gray_bg > .inner .self_assessment_wrap .self_item {}
+section.level .gray_bg > .inner .self_assessment_wrap .self_item ul {border-top: 1px solid #e4e8eb;}
+section.level .gray_bg > .inner .self_assessment_wrap .self_item ul li {display: -webkit-box; display: -ms-flexbox; display: flex;-webkit-box-align: center; -ms-flex-align: center;align-items: center;-webkit-box-pack: justify; -ms-flex-pack: justify;justify-content: space-between; margin: 0 8px; padding: 10px 0 10px; border-bottom: 1px solid #e4e8eb;}
+section.level .gray_bg > .inner .self_assessment_wrap .self_item ul li.on {border-bottom: 1px solid #222;}
+section.level .gray_bg > .inner .self_assessment_wrap .self_item ul li p {color: #7E7E7E;}
+section.level .gray_bg > .inner .self_assessment_wrap .self_item ul li p.active {color: #222;}
+section.level .gray_bg > .inner .self_assessment_wrap .complete_btn {width: 200px; height: 50px; background-color: #F57E25; margin-top: 16px; color: #fff; border-radius: 100px; font-weight: 400; font-size: 16px; display: block; margin-left: auto; margin-right: auto;}
+section.level .gray_bg > .inner .self_assessment_wrap .self_item ul li .item_check {margin-left: 50px;}
+section.level .gray_bg > .inner .self_assessment_wrap .item_check input[type="radio"] { display:none; }
+section.level .gray_bg > .inner .self_assessment_wrap .item_check label{ width:100%; height:20px; }
+section.level .gray_bg > .inner .self_assessment_wrap .item_check input[type="radio"] + label .ck_img { padding:0 0 0 20px; height:20px; background:url("../images/level_test/ico_check_off.png") no-repeat; cursor:pointer; }
+section.level .gray_bg > .inner .self_assessment_wrap .item_check input[type="radio"]:checked + label .ck_img { background:url("../images/level_test/ico_check_on.png") no-repeat; }
+section.level .white_bg > .inner .contents_wrap {display: table; margin: 50px auto 60px; position: relative; table-layout: fixed; width: 100%; max-width: 980px;}
+section.level .white_bg > .inner .contents_wrap .contents_map,
+section.level .white_bg > .inner .contents_wrap .lvtest_result {display: table-cell; position: relative; vertical-align: top; width: 50%; }
+section.level .white_bg > .inner .contents_wrap .contents_map .map_con {position: relative;background-color: #F8F8F8; min-height: 170px; padding: 30px 40px 20px; margin-right: 20px;}
+section.level .white_bg > .inner .contents_wrap .lvtest_result .lvtest_con {position: relative;background-color: #F8F8F8; min-height: 170px; padding: 30px 40px 20px; margin-left: 20px;}
+section.level .white_bg > .inner .contents_wrap .contents_map .map_con .map_txt,section.level .white_bg > .inner .contents_wrap .lvtest_result .lvtest_con .lvtest_txt {font-size: 18px; line-height: 1.4; letter-spacing: -0.9px; color: #30415F;}
+section.level .white_bg > .inner .contents_wrap .contents_map .map_con .map_box,section.level .white_bg > .inner .contents_wrap .lvtest_con .lvtest_box {display: -webkit-box; display: -ms-flexbox; display: flex;-webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between;-webkit-box-align: center; -ms-flex-align: center;align-items: center;}
+section.level .white_bg > .inner .contents_wrap button {position: relative;background: #30415F; width: 100%; max-width: 390px; height: 50px; color: #fff; text-align: left; padding: 15px 40px; line-height: 1; margin-top: 15px;}
+section.level .white_bg > .inner .contents_wrap button:after {content: ""; background: url(../images/bt_back_w.png) no-repeat; background-size: 25px; padding-right: 40px; position: absolute; margin-top: 2px; right: 0; width: 25px; height: 8px;}
 
 /* funList */
 section.level.report .goList {position:relative;padding-right:15px;display:block;float:right;font-size:0.875rem;font-weight: 400;color:#000;letter-spacing: 0px;}
@@ -1069,66 +1114,66 @@ section.my .gray_box .box_con.status_con .contents .progress.step_50 .learning_i
 section.my .gray_box .box_con.status_con .contents .progress.step_75 .learning_icon {left:calc(75% - 16px); background: url(../images/common/ico_runner_04.png) no-repeat;}
 section.my .gray_box .box_con.status_con .contents .progress.step_100 .learning_icon {left:calc(100% - 16px); background: url(../images/common/ico_runner_05.png) no-repeat;}
 section.my .gray_box .box_con.status_con .contents .progress .stretch{
-	animation-name: stretchRight2;
-	-webkit-animation-name: stretchRight2;	
+    animation-name: stretchRight2;
+    -webkit-animation-name: stretchRight2;
 
-	animation-duration: 1.5s;	
-	-webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
 
-	animation-timing-function: ease-out;	
-	-webkit-animation-timing-function: ease-out;	
+    animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
 
-	transform-origin: 0% 0%;
-	-ms-transform-origin: 0% 0%;
-	-webkit-transform-origin: 0% 0%; 		
+    transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    -webkit-transform-origin: 0% 0%;
 }
 @keyframes stretchRight2 {
-	0% {
-		transform: scaleX(0);
-	}
-	100% {
-		transform: scaleX(1);
-	}						
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
 }
 @-webkit-keyframes stretchRight2 {
-	0% {
-		-webkit-transform: scaleX(0);
-	}
-	100% {
-		-webkit-transform: scaleX(1);
-	}	
+    0% {
+        -webkit-transform: scaleX(0);
+    }
+    100% {
+        -webkit-transform: scaleX(1);
+    }
 }
 section.my .gray_box .box_con.status_con .contents .progress .running{
-	animation-name: slideRight_100;
-	-webkit-animation-name: slideRight_100;	
+    animation-name: slideRight_100;
+    -webkit-animation-name: slideRight_100;
 
-	animation-duration: 1.5s;
-	-webkit-animation-duration:1.5s;
-	
-	animation-timing-function: ease-out;	
-	-webkit-animation-timing-function: ease-out;
-	
-	transform-origin: 50% 100%;
-	-ms-transform-origin: 50% 100%;
-	-webkit-transform-origin: 50% 100%; 
+    animation-duration: 1.5s;
+    -webkit-animation-duration:1.5s;
+
+    animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
+
+    transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -webkit-transform-origin: 50% 100%;
 }
 
 @keyframes slideRight_100 {
-	0% {
-		left: -10px; 
-	}
-	100% {
-	 	transform: scaleY(1);
-	}
+    0% {
+        left: -10px;
+    }
+    100% {
+        transform: scaleY(1);
+    }
 }
 
 @-webkit-keyframes slideRight_100 {
-	0% {
-		left:-10px;
-	}
-	100% {
- 		transform: scaleY(1);
-	}
+    0% {
+        left:-10px;
+    }
+    100% {
+        transform: scaleY(1);
+    }
 }
 section.my .gray_box .box_con {position: relative;}
 section.my .gray_box .box_con.status_con .status_layer {position: absolute; top: 48px; left: 14.5%;display: none; -webkit-box-align: center; -ms-flex-align: center; align-items: center; box-sizing: border-box; width:100%; max-width: 385px; height: 150px; text-align: center; word-break: keep-all; font-size: 14px; color: #8790a2; background: #fff; border: 1px solid #ebebeb; border-radius: 5px; box-shadow: 0px 4px 20px #0000001a; z-index: 2; }
@@ -1203,7 +1248,7 @@ section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_read
 
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .info_close { position: absolute; top: -30px; right: 8px; width: 16px; height: 16px; background: url(../images/funreading/icon/ico_close_16.png) 0% 0% no-repeat; }
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .reading_info { display: -webkit-box; display: -ms-flexbox;display: inline-block; width: 18px; height: 18px; margin-left: 5px; background: url(../images/funreading/icon/ico_info_16.png) 100% 50% no-repeat; }
-section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .info_txt {    position: relative;color: #8790A1; padding: 0 10%; line-height: 1.25;} 
+section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .info_txt {    position: relative;color: #8790A1; padding: 0 10%; line-height: 1.25;}
 section.my .gray_box .box_con.reading_activities_con .num_detail_con .num_detail_con .reading_tit { display: -webkit-box; display: -ms-flexbox;display: flex; -webkit-box-align: center; -ms-flex-align: center;align-items: center; flex-shrink: 0; margin-right: 20px; font-size: 14px; line-height: 1.2; font-weight: 400; color: #717171; margin-bottom: 8px; letter-spacing: -0.8px; }
 section.my .gray_box .box_con.reading_activities_con .dotted-line {display: flex; align-items: center;flex-grow: 1; white-space: nowrap; position: relative; overflow: hidden; }
 section.my .gray_box .box_con.reading_activities_con .dotted-line:after { content: ""; width: 100%; height: 1px; background: url("../images/funreading/icon/dot.png") repeat-x; color: #ccc; display: inline-block; }
@@ -1231,19 +1276,19 @@ section.my .gray_box .box_con.etizen_con .etizen_wrap .etizen_tit {font-size: 24
 section.my .gray_box .box_con.etizen_con .etizen_wrap .etizen_tot {font-size: 18px; font-weight: 400; line-height: 1.25; letter-spacing: -.6px; margin-top:34px; color: #222;}
 section.my .gray_box .box_con.etizen_con .etizen_wrap .etizen_tot > span {color:#0178BB; }
 
-section.my .txtbook_eng {max-width: 980px; margin: 0 auto; width: 100%;} 
-section.my .txtbook_eng .txtbook_tit {display: -webkit-box; display: -ms-flexbox;display: flex;-webkit-box-align: center; -ms-flex-align: center; align-items: center;-webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between;margin-bottom: 20px;} 
+section.my .txtbook_eng {max-width: 980px; margin: 0 auto; width: 100%;}
+section.my .txtbook_eng .txtbook_tit {display: -webkit-box; display: -ms-flexbox;display: flex;-webkit-box-align: center; -ms-flex-align: center; align-items: center;-webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between;margin-bottom: 20px;}
 section.my .txtbook_eng .txtbook_tit .plus { position: relative; color: #2d2a2a; }
 section.my .txtbook_eng .txtbook_tit .plus:before, section.my .txtbook_eng .txtbook_tit .plus:after { content: ""; position: absolute; top: 50%; left: -10px; transform: translate(-50%, -50%); background-color: #000; }
 section.my .txtbook_eng .txtbook_tit .plus:before {height: 10px; width: 1px; }
 section.my .txtbook_eng .txtbook_tit .plus:after {height: 1px; width: 10px; }
-section.my .txtbook_eng h2 {color: #222; font-size: 30px; line-height: 1.5; letter-spacing: -1.5px; text-align: left;} 
+section.my .txtbook_eng h2 {color: #222; font-size: 30px; line-height: 1.5; letter-spacing: -1.5px; text-align: left;}
 section.my .txtbook_eng .guest_wrap {display: -webkit-box; display: -ms-flexbox;display: flex; -webkit-box-pack: center; -ms-flex-pack: center;justify-content: center;-webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column;-webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; color: #fff; padding-left: 30%; text-align: left; width: 100%; max-width: 980px; height: 134px; line-height: 1.3; background: #49596d url(../images/main/bg_guest.png); background-repeat: no-repeat; background-size: 272px; background-position: -16px -10px;}
 section.my .txtbook_eng .guest_wrap strong {margin-bottom: 15px; font-size: 1.6rem; width: 100%;}
 section.my .txtbook_eng .guest_wrap p {font-size: 1rem;}
 
-section.my .my_activity_wrap {display: block; width: 100%; max-width: 980px; margin: 10px auto 0;} 
-section.my .matching_learning_wrap {display: block; width: 100%; max-width: 980px; margin: 10px auto 60px;} 
+section.my .my_activity_wrap {display: block; width: 100%; max-width: 980px; margin: 10px auto 0;}
+section.my .matching_learning_wrap {display: block; width: 100%; max-width: 980px; margin: 10px auto 60px;}
 
 section.my .t-myClass {position: relative;}
 section.my .t-myClass h6 {display: block; margin-bottom: 15px; text-align: center; font-size: 1.6rem; color: #000; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; font-weight: bold; text-decoration: none; letter-spacing: -.45px; } /* 2021-05-03 반명 말줄임표 */
@@ -1262,7 +1307,7 @@ section.my .t-myClass .t-total .t-info li.t-class span.con_info{ font-weight: 40
 section.my .t-myClass .t-total .t-info li.t-member span.con_info{font-weight: 400; line-height: 26px; text-align: center; background: transparent; border: 1px solid #fff; border-radius: 30px;background: #2cc6a4;border-color:#2cc6a4;}
 section.my .t-myClass .t-total .t-info li.t-question span.con_info{font-weight: 400; line-height: 26px; text-align: center; background: transparent; border: 1px solid #fff; border-radius: 30px;background: #678ec7;border-color:#678ec7;}
 section.my .t-myClass .t-total .c-list {margin-top:30px;padding-top:20px;border-top:1px solid #808b99;}
-section.my .t-myClass .t-total .c-list li {display:block;margin-top:2px;font-weight:300;color:#fff;line-height: 1.25;} 
+section.my .t-myClass .t-total .c-list li {display:block;margin-top:2px;font-weight:300;color:#fff;line-height: 1.25;}
 section.my .t-myClass .t-detail {background-color: #f3f3f3;}
 section.my .t-myClass .t-detail > p {text-align: center; line-height: 1.5; letter-spacing: -.4px;}
 section.my .t-myClass .t-detail .t-info {margin-top:25px;}
@@ -1283,18 +1328,17 @@ section.my .content_used_con .contents ul li:first-child {margin-bottom: 18px;}
 section.my .content_used_con .contents ul li:first-child span {width: 68px; height: 28px; background: #FFE7D9; display: -webkit-box; display: -ms-flexbox;display: flex; -webkit-box-pack: center; -ms-flex-pack: center;justify-content: center; border-radius: 100px; -webkit-box-align: center; -ms-flex-align: center;align-items: center; color: #FF9154; font-size: 18px; font-weight: 500; margin-top: 7px;}
 section.my .content_used_con .contents ul li:last-child span {width: 68px; height: 28px; background: #F8F1D5; display: -webkit-box; display: -ms-flexbox;display: flex; -webkit-box-pack: center; -ms-flex-pack: center;justify-content: center; border-radius: 100px;-webkit-box-align: center; -ms-flex-align: center; align-items: center; color: #D5B11B; font-size: 18px; font-weight: 500; margin-top: 7px;}
 section.my .content_used_con .contents ul li:first-child::before {content: ''; position: absolute; top: 7.5px; left: 0; width: 12px;height: 12px;border-radius: 100px;background-color: #F57E25;}
-section.my .content_used_con .contents ul li:last-child::before {content: ''; position: absolute; top: 7.5px; left: 0; width: 12px;height: 12px;border-radius: 100px;background-color: #F3D144;} 
+section.my .content_used_con .contents ul li:last-child::before {content: ''; position: absolute; top: 7.5px; left: 0; width: 12px;height: 12px;border-radius: 100px;background-color: #F3D144;}
 
 section.my .study_room_con .contents .pie_con {display: -webkit-box; display: -ms-flexbox;display: flex; justify-content: center; align-items: center; }
 section.my .study_room_con .contents .pie_wrap {width:190px; height:190px; max-width: 100%;max-height: 100%;transform: translate(-45px,-25px);}
 section.my .study_room_con .contents ul {font-size: 18px; font-weight: 400;padding-left: 0px; transform:translateX(-26px);}
 section.my .study_room_con .contents ul li{position: relative;display: -webkit-box; display: -ms-flexbox; display: flex;-webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column; padding-left: 20px; color: #222222; letter-spacing: -0.45px; margin-top: -1px; line-height: 1.4;}
 section.my .study_room_con .contents ul li:first-child {margin-bottom: 18px;}
-section.my .study_room_con .contents ul li:first-child span {width: 68px; height: 28px; background: #DFE7FF; display: -webkit-box; display: -ms-flexbox;display: flex; -webkit-box-pack: center; -ms-flex-pack: center;justify-content: center; border-radius: 100px; -webkit-box-align: center; -ms-flex-align: center;align-items: center; color: #583BF8; font-size: 18px; font-weight: 500; margin-top: 7px;}
-section.my .study_room_con .contents ul li:last-child span {width: 68px; height: 28px; background: #EDE5F8; display: -webkit-box; display: -ms-flexbox;display: flex; -webkit-box-pack: center; -ms-flex-pack: center;justify-content: center; border-radius: 100px; -webkit-box-align: center; -ms-flex-align: center;align-items: center; color: #A363F8; font-size: 18px; font-weight: 500; margin-top: 7px;}
-section.my .study_room_con .contents ul li:first-child::before {content: ''; position: absolute; top: 7.5px; left: 0; width: 12px;height: 12px;border-radius: 100px;background-color: #583BF8;}
-section.my .study_room_con .contents ul li:last-child::before {content: ''; position: absolute; top: 7.5px; left: 0; width: 12px;height: 12px;border-radius: 100px;background-color: #A363F8;} 
-
+section.my .study_room_con .contents ul li:last-child span {width: 68px; height: 28px; background: #DFE7FF; display: -webkit-box; display: -ms-flexbox;display: flex; -webkit-box-pack: center; -ms-flex-pack: center;justify-content: center; border-radius: 100px; -webkit-box-align: center; -ms-flex-align: center;align-items: center; color: #583BF8; font-size: 18px; font-weight: 500; margin-top: 7px;}
+section.my .study_room_con .contents ul li:first-child span {width: 68px; height: 28px; background: #EDE5F8; display: -webkit-box; display: -ms-flexbox;display: flex; -webkit-box-pack: center; -ms-flex-pack: center;justify-content: center; border-radius: 100px; -webkit-box-align: center; -ms-flex-align: center;align-items: center; color: #A363F8; font-size: 18px; font-weight: 500; margin-top: 7px;}
+section.my .study_room_con .contents ul li:first-child::before {content: ''; position: absolute; top: 7.5px; left: 0; width: 12px;height: 12px;border-radius: 100px;background-color: #A363F8;}
+section.my .study_room_con .contents ul li:last-child::before {content: ''; position: absolute; top: 7.5px; left: 0; width: 12px;height: 12px;border-radius: 100px;background-color: #583BF8;}
 
 /******************** 기타 ********************/
 /* 온에어 & 편성표 */
@@ -1415,1016 +1459,1051 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
 
 
 @media screen and (max-width:1140px) {
-	section.my button.myinfo_btn {float: right;padding-right: 39px;}
-	section.my .txtbook_eng {padding: 0 10px;}
+    section.my button.myinfo_btn {float: right;padding-right: 39px;}
+    section.my .txtbook_eng {padding: 0 10px;}
 }
 
 @media all and (max-width: 980px) {
-	section.guide .navi a {margin-right:12px;}
-	section.guide .navi a + a:before {content: "";left:-7px;}
-	section.my .txtbook_eng,section.my .my_activity_wrap,section.my .matching_learning_wrap{padding: 0 20px;}
-	section.my .gray_box .box_tit > div:first-child {height: 85px;}
-	section.my .gray_box .box_tit .contents {margin: 0 0 50px 0;}
-	section.my .gray_box .box_tit h2 {font-size: 25px;line-height: 1.35;}
-	section.my .gray_box .box_con.friend_status_con .box_tit > div > .status_con {display: inline; width: 22vh; max-width: 200px;min-width: 200px;}
-	section.my .gray_box .box_con.friend_status_con button.status_info {transform: translateY(-5px);}
+    section.guide .navi a {margin-right:12px;}
+    section.guide .navi a + a:before {content: "";left:-7px;}
+    section.my .txtbook_eng,section.my .my_activity_wrap,section.my .matching_learning_wrap{padding: 0 20px;}
+    section.my .gray_box .box_tit > div:first-child {height: 85px;}
+    section.my .gray_box .box_tit .contents {margin: 0 0 50px 0;}
+    section.my .gray_box .box_tit h2 {font-size: 25px;line-height: 1.35;}
+    section.my .gray_box .box_con.friend_status_con .box_tit > div > .status_con {display: inline; width: 22vh; max-width: 200px;min-width: 200px;}
+    section.my .gray_box .box_con.friend_status_con button.status_info {transform: translateY(-5px);}
 
-	section.my .gray_box .box_tit button.status_info {margin-left: 5px;}
-	section.my .myflex_wrap .myclass_info > ul > li {margin-right: 10px;}
-	section.my .myflex_wrap .myclass_info > ul > li > .con_info {width: 100px; max-width: 100px; min-width: 80px;}
-	section.my .myflex_wrap .myclass_info > ul > li >span {max-width: 50px;}
-	section.my .imgWrap {padding: 1px;}
+    section.my .gray_box .box_tit button.status_info {margin-left: 5px;}
+    section.my .myflex_wrap .myclass_info > ul > li {margin-right: 10px;}
+    section.my .myflex_wrap .myclass_info > ul > li > .con_info {width: 100px; max-width: 100px; min-width: 80px;}
+    section.my .myflex_wrap .myclass_info > ul > li >span {max-width: 50px;}
+    section.my .imgWrap {padding: 1px;}
 
-	/* section.my .gray_box .box_con.reading_activities_con .num_detail_con {margin-left: 0px;margin-right: 13px;} */
-	section.my .gray_box .box_con.reading_activities_con .single_chart {width: 140px; height: 140px; min-width: 140px; min-height: 140px;margin-right:12px;margin-left:0px; transform:translateY(10px);}
-	section.my .gray_box .box_con.status_con .contents .learning_stage {transform: translateX(-20px);}
-	section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_tit,section.my .gray_box .box_con.reading_activities_con .num_detail_con .highlight {font-size: 16px;}
-	section.my .gray_box .box_con.friend_status_con .friend_layer {top:87px;left: 2%;max-width: 320px;}
-	section.my .gray_box .box_con.friend_status_con .friend_layer:before {left: 116px;}
-	section.my .gray_box .box_con.friend_status_con .friend_layer:after {left: 117px;}
-	section.my .gray_box .box_con.status_con .status_layer {top: 67px; left: 10%;max-width: 320px;}
-	section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .info_layer {left: auto;right:1%;}
-	section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .info_layer:before {left: 84px;}
-	section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .info_layer:after {left: 83px;}
-	section.my .gray_box .box_con.status_con .contents .learning_phrase {font-size: 16px; height: auto;}
-	section.my .gray_box .box_con.status_con .contents .progress.step_100 .learning_icon {background-position: bottom; background-size: 90%;}
-	section.my .gray_box .box_con.status_con .contents .learning_stage > img {width: 112px; height: 112px; max-width: 112px; max-height: 112px;}
-	section.my .gray_box .box_con.reading_activities_con .circular_chart {max-width: 120px; max-height: 120px;}
-	section.my .gray_box .box_con.etizen_con .ico_etizen:before {width: 112px; height: 112px;}
-	section.my .gray_box .box_con.etizen_con .ico_etizen {margin-left: 20px;margin-right: 22px;}
-	section.my .gray_box .box_con.status_con .contents .learning_tot {font-size: 18px; min-width: 195px;}
-	section.my .gray_box .box_con.friend_nodata .nodata_txt {padding: 10px 27px;}
-	section.my .gray_box .box_con.friend_nodata .nodata_tit {padding: 10px 17px 0;}
-	section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_count {font-size: 16px;}
-	section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_tot {font-size: 16px;}
-	section.my .gray_box .box_con.reading_activities_con .divider {height: 14px; margin: 2.5px 6px;}
-	section.my .content_used_con .contents ul {font-size: 16px;transform: translateX(-25px);}
-	section.my .content_used_con .contents .pie_wrap {width: 160px;height: 160px;transform: translate(-42px,-25px);}
-	section.my .content_used_con .contents ul li:first-child span,section.my .content_used_con .contents ul li:last-child span {font-size: 16px;height: 24px;}
-	
-	section.my .study_room_con .contents ul {font-size: 16px; transform: translateX(-25px);}
-	section.my .study_room_con .contents .pie_wrap {width: 160px;height: 160px;transform: translate(-43px,-25px);}
-	section.my .study_room_con .contents ul li:first-child span,section.my .content_used_con .contents ul li:last-child span {font-size: 16px;height: 24px;}
-	section.my .study_room_con .contents ul li:last-child span {font-size: 16px; height: 24px;}
+    /* section.my .gray_box .box_con.reading_activities_con .num_detail_con {margin-left: 0px;margin-right: 13px;} */
+    section.my .gray_box .box_con.reading_activities_con .single_chart {width: 140px; height: 140px; min-width: 140px; min-height: 140px;margin-right:12px;margin-left:0px; transform:translateY(10px);}
+    section.my .gray_box .box_con.status_con .contents .learning_stage {transform: translateX(-20px);}
+    section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_tit,section.my .gray_box .box_con.reading_activities_con .num_detail_con .highlight {font-size: 16px;}
+    section.my .gray_box .box_con.friend_status_con .friend_layer {top:87px;left: 2%;max-width: 320px;}
+    section.my .gray_box .box_con.friend_status_con .friend_layer:before {left: 116px;}
+    section.my .gray_box .box_con.friend_status_con .friend_layer:after {left: 117px;}
+    section.my .gray_box .box_con.status_con .status_layer {top: 67px; left: 10%;max-width: 320px;}
+    section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .info_layer {left: auto;right:1%;}
+    section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .info_layer:before {left: 84px;}
+    section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .info_layer:after {left: 83px;}
+    section.my .gray_box .box_con.status_con .contents .learning_phrase {font-size: 16px; height: auto;}
+    section.my .gray_box .box_con.status_con .contents .progress.step_100 .learning_icon {background-position: bottom; background-size: 90%;}
+    section.my .gray_box .box_con.status_con .contents .learning_stage > img {width: 112px; height: 112px; max-width: 112px; max-height: 112px;}
+    section.my .gray_box .box_con.reading_activities_con .circular_chart {max-width: 120px; max-height: 120px;}
+    section.my .gray_box .box_con.etizen_con .ico_etizen:before {width: 112px; height: 112px;}
+    section.my .gray_box .box_con.etizen_con .ico_etizen {margin-left: 20px;margin-right: 22px;}
+    section.my .gray_box .box_con.status_con .contents .learning_tot {font-size: 18px; min-width: 195px;}
+    section.my .gray_box .box_con.friend_nodata .nodata_txt {padding: 10px 27px;}
+    section.my .gray_box .box_con.friend_nodata .nodata_tit {padding: 10px 17px 0;}
+    section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_count {font-size: 16px;}
+    section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_tot {font-size: 16px;}
+    section.my .gray_box .box_con.reading_activities_con .divider {height: 14px; margin: 2.5px 6px;}
+    section.my .content_used_con .contents ul {font-size: 16px;transform: translateX(-25px);}
+    section.my .content_used_con .contents .pie_wrap {width: 160px;height: 160px;transform: translate(-42px,-25px);}
+    section.my .content_used_con .contents ul li:first-child span,section.my .content_used_con .contents ul li:last-child span {font-size: 16px;height: 24px;}
+
+    section.my .study_room_con .contents ul {font-size: 16px; transform: translateX(-25px);}
+    section.my .study_room_con .contents .pie_wrap {width: 160px;height: 160px;transform: translate(-43px,-25px);}
+    section.my .study_room_con .contents ul li:first-child span,section.my .content_used_con .contents ul li:last-child span {font-size: 16px;height: 24px;}
+    section.my .study_room_con .contents ul li:last-child span {font-size: 16px; height: 24px;}
 }
 
 @media all and (max-width: 840px) {
-	section.my .gray_box .box_con.reading_activities_con .single_chart {margin-left: 17px;margin-right: 0px;}
-	section.my .gray_box .box_con.reading_activities_con .num_detail_con {margin-right: 20px;}
-	section.my .content_used_con .contents .pie_wrap {transform: translate(-20px,-25px);z-index: 5;}
-	section.my .study_room_con .contents .pie_wrap {transform: translate(-15px,-25px);z-index: 5;}
-	section.my .content_used_con .contents ul {transform: translateX(-20px);}
-	section.my .study_room_con .contents ul {transform: translateX(-20px);}
+    section.my .gray_box .box_con.reading_activities_con .single_chart {margin-left: 17px;margin-right: 0px;}
+    section.my .gray_box .box_con.reading_activities_con .num_detail_con {margin-right: 20px;}
+    section.my .content_used_con .contents .pie_wrap {transform: translate(-20px,-25px);z-index: 5;}
+    section.my .study_room_con .contents .pie_wrap {transform: translate(-15px,-25px);z-index: 5;}
+    section.my .content_used_con .contents ul {transform: translateX(-20px);}
+    section.my .study_room_con .contents ul {transform: translateX(-20px);}
 
 }
 
 @media screen and (max-width:740px) {
-	body.sub { min-width: 320px; }
-	section.guide .tap {display:block;background:none;overflow:hidden;}
-	section.guide .tap li {flex:none;float:left;width:49.3%;margin-top:0.7%;border:none;background:#878fa2;}
-	section.guide .tap li:nth-child(-n+2) {margin-top:0;}
-	section.guide .tap li:nth-child(2n+1) {margin-right:0.7%;}
-	section.guide .bind.find .select {width:100%;margin-top:15px;}
-	section.guide .guideCont {margin-bottom:0;}
-	section.guide .guideCont h3 {font-size:20px;}
-	section.guide .guideCont .title br {display:none;}
-	section.guide .guideCont .title h3, section.guide .guideCont .title p {text-align:left;}
-	section.guide .guideCont .title h3 {margin-bottom:10px;}
-	section.guide .guideCont .stepCont {padding-top:39px;}
-	section.guide .guideCont .stepCont > span {margin-bottom:10px;}
-	section.guide .guideCont .stepCont h5 {padding-bottom:9px;font-size:18px;}
-	section.guide .guideCont .stepCont .subCont img {width:100%;}
-	section.guide .guideCont .stepCont .subCont {margin-bottom: 39px;}
-	section.guide .guideCont .stepCont ul {margin-bottom:19px;}
-	section.guide .guideCont .stepCont li {line-height: 20px;margin-bottom:10px;}
+    body.sub { min-width: 320px; }
+    section.guide .tap {display:block;background:none;overflow:hidden;}
+    section.guide .tap li {flex:none;float:left;width:49.3%;margin-top:0.7%;border:none;background:#878fa2;}
+    section.guide .tap li:nth-child(-n+2) {margin-top:0;}
+    section.guide .tap li:nth-child(2n+1) {margin-right:0.7%;}
+    section.guide .bind.find .select {width:100%;margin-top:15px;}
+    section.guide .guideCont {margin-bottom:0;}
+    section.guide .guideCont h3 {font-size:20px;}
+    section.guide .guideCont .title br {display:none;}
+    section.guide .guideCont .title h3, section.guide .guideCont .title p {text-align:left;}
+    section.guide .guideCont .title h3 {margin-bottom:10px;}
+    section.guide .guideCont .stepCont {padding-top:39px;}
+    section.guide .guideCont .stepCont > span {margin-bottom:10px;}
+    section.guide .guideCont .stepCont h5 {padding-bottom:9px;font-size:18px;}
+    section.guide .guideCont .stepCont .subCont img {width:100%;}
+    section.guide .guideCont .stepCont .subCont {margin-bottom: 39px;}
+    section.guide .guideCont .stepCont ul {margin-bottom:19px;}
+    section.guide .guideCont .stepCont li {line-height: 20px;margin-bottom:10px;}
 
-	section.my button.myinfo_btn {display: none; opacity: 0;}
-	section.my .gray_box .box_tit h2 {font-size: 30px;}
-	section.my .gray_box .box_con.friend_status_con .box_tit > div > .status_con {width: 30vh; max-width: 220px;}
-	section.my .gray_box .box_con.friend_status_con button.status_info {transform: translateY(-7px);}
-	section.my .gray_box .box_con {width:100%;}
-	section.my .myflex_wrap {-webkit-box-orient: vertical; -ms-flex-direction: column;flex-direction: column; -webkit-box-align: center; -ms-flex-align: center;align-items: center;}
-	section.my .imgWrap {margin-left:0;margin-bottom: 5%;}
-	section.my .myflex_wrap .myclass_info > ul {-webkit-box-orient: vertical; -ms-flex-direction: column;flex-direction: column; }
-	section.my .myflex_wrap .myclass_info > ul > li {padding-bottom: 5px;}
-	section.my button.arrow-slide {position:relative;top:30px;margin-bottom:10px;width:31px;height:31px;background-size: 31px;}
-	section.my button.arrow-slide.prev {background: url('https://www.ebse.co.kr/engBook/images/sub/btn_back_arrow.png'); background-size: 31px; left: 0;}
-	section.my button.arrow-slide.next {background: url('https://www.ebse.co.kr/engBook/images/sub/btn_next_arrow.png'); background-size: 31px; left: calc(100% - 63px);}
-	section.my .gray_box .box_con.study_nodata .study_tit,section.my .gray_box .box_con.used_nodata .used_tit {font-size: 18px;padding: 16px 10px 0;}
+    section.my button.myinfo_btn {display: none; opacity: 0;}
+    section.my .gray_box .box_tit h2 {font-size: 30px;}
+    section.my .gray_box .box_con.friend_status_con .box_tit > div > .status_con {width: 30vh; max-width: 220px;}
+    section.my .gray_box .box_con.friend_status_con button.status_info {transform: translateY(-7px);}
+    section.my .gray_box .box_con {width:100%;}
+    section.my .myflex_wrap {-webkit-box-orient: vertical; -ms-flex-direction: column;flex-direction: column; -webkit-box-align: center; -ms-flex-align: center;align-items: center;}
+    section.my .imgWrap {margin-left:0;margin-bottom: 5%;}
+    section.my .myflex_wrap .myclass_info > ul {-webkit-box-orient: vertical; -ms-flex-direction: column;flex-direction: column; }
+    section.my .myflex_wrap .myclass_info > ul > li {padding-bottom: 5px;}
+    section.my button.arrow-slide {position:relative;top:30px;margin-bottom:10px;width:31px;height:31px;background-size: 31px;}
+    section.my button.arrow-slide.prev {background: url('https://www.ebse.co.kr/engBook/images/sub/btn_back_arrow.png'); background-size: 31px; left: 0;}
+    section.my button.arrow-slide.next {background: url('https://www.ebse.co.kr/engBook/images/sub/btn_next_arrow.png'); background-size: 31px; left: calc(100% - 63px);}
+    section.my .gray_box .box_con.study_nodata .study_tit,section.my .gray_box .box_con.used_nodata .used_tit {font-size: 18px;padding: 16px 10px 0;}
 
-	section.my .gray_box .box_con.status_con .contents .learning_tot{font-size: 16px;min-width: 160px;}
-	section.my .gray_box .box_con.status_con .contents .progress .learning_gauge {left: 0;}
-	section.my .gray_box .box_tit .contents {height: 220px;}
-	section.my .gray_box .box_con.friend_nodata .nodata_tit {font-size: 18px; padding: 10px 10px 0;}
-	section.my .gray_box .box_con.friend_nodata .nodata_txt {font-size: 14px;padding: 10px 40px;}
-	section.my .gray_box .box_con.friend_nodata .nodata_btn {padding: 8px 20px;font-size: 16px; height:38px; max-width: 200px;}
-	section.my .gray_box .box_con.friend_nodata .contents img {max-width: 50px; height: 50px;}
-	section.my .gray_box .box_con.status_con .contents .learning_stage { padding-right: 22px;transform: translateX(-15px);}
-	section.my .gray_box .box_con.status_con .contents .learning_wrap {padding-left: 0;}
-	section.my .gray_box .box_con.friend_nodata .contents > img, section.my .gray_box .box_con.used_nodata .contents > img, section.my .gray_box .box_con.study_nodata .contents > img { max-width: 58px;}
-	section.my .txtbook_eng .guest_wrap {height: 298px; padding: 0; background-position: 50% 15%; -webkit-box-align: center; -ms-flex-align: center;align-items: center; -webkit-box-pack: end; -ms-flex-pack: end;justify-content: flex-end; text-align: center; padding-bottom: 30px; background-size: 240px;}
-	section.my .gray_box .box_con.reading_activities_con .num_detail_con {margin-right: 20px; max-width: 156px;}
-	section.my .gray_box .box_con.reading_activities_con .single_chart {margin-left: 0;margin-right: 15px;}
-	section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_count {font-size: 14px;margin-left: 8px;}
-	section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_tot {font-size: 14px;margin-left: 2px;}
-	section.my .gray_box .box_con.reading_activities_con .divider {height: 12px; margin: 2.5px 5px;}
-	section.my .gray_box .box_con.etizen_con .etizen_wrap .etizen_tit {font-size: 20px;}
-	section.my .gray_box .box_con.etizen_con .etizen_wrap .etizen_tot {font-size: 16px;margin-top: 32px;}
-	section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_tit, section.my .gray_box .box_con.reading_activities_con .num_detail_con .highlight {font-size: 14px;}
-	section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_tit {margin-right: 8px;}
-	section.my .gray_box .box_con.status_con .contents .learning_stage > img {max-width: 140px;}
-	section.my .gray_box .box_tit > div:first-child {height: auto;margin-bottom: 20px;}
-	section.my .gray_box .friend_status_con .box_tit > div:first-child .more_wrap {transform: translateY(22px);}
+    section.my .gray_box .box_con.status_con .contents .learning_tot{font-size: 16px;min-width: 160px;}
+    section.my .gray_box .box_con.status_con .contents .progress .learning_gauge {left: 0;}
+    section.my .gray_box .box_tit .contents {height: 220px;}
+    section.my .gray_box .box_con.friend_nodata .nodata_tit {font-size: 18px; padding: 10px 10px 0;}
+    section.my .gray_box .box_con.friend_nodata .nodata_txt {font-size: 14px;padding: 10px 40px;}
+    section.my .gray_box .box_con.friend_nodata .nodata_btn {padding: 8px 20px;font-size: 16px; height:38px; max-width: 200px;}
+    section.my .gray_box .box_con.friend_nodata .contents img {max-width: 50px; height: 50px;}
+    section.my .gray_box .box_con.status_con .contents .learning_stage { padding-right: 22px;transform: translateX(-15px);}
+    section.my .gray_box .box_con.status_con .contents .learning_wrap {padding-left: 0;}
+    section.my .gray_box .box_con.friend_nodata .contents > img, section.my .gray_box .box_con.used_nodata .contents > img, section.my .gray_box .box_con.study_nodata .contents > img { max-width: 58px;}
+    section.my .txtbook_eng .guest_wrap {height: 298px; padding: 0; background-position: 50% 15%; -webkit-box-align: center; -ms-flex-align: center;align-items: center; -webkit-box-pack: end; -ms-flex-pack: end;justify-content: flex-end; text-align: center; padding-bottom: 30px; background-size: 240px;}
+    section.my .gray_box .box_con.reading_activities_con .num_detail_con {margin-right: 20px; max-width: 156px;}
+    section.my .gray_box .box_con.reading_activities_con .single_chart {margin-left: 0;margin-right: 15px;}
+    section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_count {font-size: 14px;margin-left: 8px;}
+    section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_tot {font-size: 14px;margin-left: 2px;}
+    section.my .gray_box .box_con.reading_activities_con .divider {height: 12px; margin: 2.5px 5px;}
+    section.my .gray_box .box_con.etizen_con .etizen_wrap .etizen_tit {font-size: 20px;}
+    section.my .gray_box .box_con.etizen_con .etizen_wrap .etizen_tot {font-size: 16px;margin-top: 32px;}
+    section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_tit, section.my .gray_box .box_con.reading_activities_con .num_detail_con .highlight {font-size: 14px;}
+    section.my .gray_box .box_con.reading_activities_con .num_detail_con .reading_tit {margin-right: 8px;}
+    section.my .gray_box .box_con.status_con .contents .learning_stage > img {max-width: 140px;}
+    section.my .gray_box .box_tit > div:first-child {height: auto;margin-bottom: 20px;}
+    section.my .gray_box .friend_status_con .box_tit > div:first-child .more_wrap {transform: translateY(22px);}
 
-	section.my .content_used_con .contents .pie_wrap {width: 165px;height: 165px;transform: translate(0,-25px);}
-	section.my .content_used_con .contents ul {font-size: 16px;padding-left: 0;transform: translateX(5px)}
+    section.my .content_used_con .contents .pie_wrap {width: 165px;height: 165px;transform: translate(0,-25px);}
+    section.my .content_used_con .contents ul {font-size: 16px;padding-left: 0;transform: translateX(5px)}
 
-	section.my .study_room_con .contents .pie_wrap {width: 165px;height: 165px;transform: translate(0,-25px);}
-	section.my .study_room_con .contents ul {font-size: 16px;padding-left: 0;transform: translateX(5px)}
-	section.my .gray_box .box_con.etizen_con .contents {-webkit-box-pack: center; -ms-flex-pack: center;justify-content: center;}
-	section.my .gray_box .box_con.etizen_con .ico_etizen {margin-left: 0; margin-right: 0; width: 120px; height: 120px; padding: 5%; transform: translateX(-55%);}
-	section.my .content_used_con .contents .pie_con {transform: translateX(-20px);}
-	section.my .study_room_con .contents .pie_con {transform: translateX(-28px);}
-	section.my .gray_box .box_con.etizen_con .etizen_wrap {transform: translateX(-25px);}
-	section.my .gray_box .box_con.etizen_con .ico_etizen:before {width: 120px; height: 120px; max-width: 115px; max-height: 115px;}
-	section.my .gray_box .box_con.used_nodata .legend-div, section.my .gray_box .box_con.study_nodata .legend-div {margin-top: 15px; padding-left: 15px;-webkit-box-align: center; -ms-flex-align: center;align-items: center;}
-	section.my .gray_box .box_con.status_con .contents .progress {max-width: 160px;}
-	section.my .gray_box .box_con.status_con .contents .learning_phrase {max-width: 152px;}
-	section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .reading_info {width: 16px; height: 16px; margin-left: 5px; background: url(../images/funreading/icon/ico_mo-info_32.png) 100% 50% no-repeat; background-size: 15px;}
-	section.my .gray_box .box_con.status_con .status_layer {top: 54px; left: 12%;}
-	section.my .gray_box .box_con.friend_status_con .friend_layer {top: 96px; left: 6%;}
-	section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .info_layer {right: 8%;}
+    section.my .study_room_con .contents .pie_wrap {width: 165px;height: 165px;transform: translate(0,-25px);}
+    section.my .study_room_con .contents ul {font-size: 16px;padding-left: 0;transform: translateX(5px)}
+    section.my .gray_box .box_con.etizen_con .contents {-webkit-box-pack: center; -ms-flex-pack: center;justify-content: center;}
+    section.my .gray_box .box_con.etizen_con .ico_etizen {margin-left: 0; margin-right: 0; width: 120px; height: 120px; padding: 5%; transform: translateX(-43%);}
+    section.my .content_used_con .contents .pie_con {transform: translateX(-20px);}
+    section.my .study_room_con .contents .pie_con {transform: translateX(-28px);}
+    section.my .gray_box .box_con.etizen_con .etizen_wrap {transform: translateX(-12px);}
+    section.my .gray_box .box_con.etizen_con .ico_etizen:before {width: 120px; height: 120px; max-width: 115px; max-height: 115px;}
+    section.my .gray_box .box_con.used_nodata .legend-div, section.my .gray_box .box_con.study_nodata .legend-div {margin-top: 15px; padding-left: 15px;-webkit-box-align: center; -ms-flex-align: center;align-items: center;}
+    section.my .gray_box .box_con.status_con .contents .progress {max-width: 160px;}
+    section.my .gray_box .box_con.status_con .contents .learning_phrase {max-width: 152px;}
+    section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .reading_info {width: 16px; height: 16px; margin-left: 5px; background: url(../images/funreading/icon/ico_mo-info_32.png) 100% 50% no-repeat; background-size: 15px;}
+    section.my .gray_box .box_con.status_con .status_layer {top: 54px; left: 12%;}
+    section.my .gray_box .box_con.friend_status_con .friend_layer {top: 96px; left: 6%;}
+    section.my .gray_box .box_con.reading_activities_con .num_detail_con .today_reading .info_layer {right: 8%;}
 }
 
 @media all and (max-width: 980px) {
-	/* 공통추가 */
-	.ptb_hide{display: none !important;}
-	.mtb_hide{display: block !important;}
-	.movie .pic { margin-bottom: 0; }
+    /* 공통추가 */
+    .ptb_hide{display: none !important;}
+    .mtb_hide{display: block !important;}
+    .movie .pic { margin-bottom: 0; }
 
-	/* 학습창 팝업 */
-	.template .inner { width: 100%; padding-right: 0; }
-	.template .movie .media { height: auto; padding-top: 0; }
+    /* 학습창 팝업 */
+    .template .inner { width: 100%; padding-right: 0; }
+    .template .movie .media { height: auto; padding-top: 0; }
 
-	.template .side { position: static; display: block; float: none; width: 100%; }
-	.template .side .wrap > .bt.ico { display: none; }
-	.template .side .wrap .bnr { position: static; }
-	.template .side .tapview { height: auto; }
-	.template .side .tapview .tapc { overflow-y: hidden; height: auto; }
-	.template .side .table.view.edit li.con { overflow: hidden; height: 300px; }
-	.template .side .table.view.edit li.con textarea { height: 100%; }
+    .template .side { position: static; display: block; float: none; width: 100%; }
+    .template .side .wrap > .bt.ico { display: none; }
+    .template .side .wrap .bnr { position: static; }
+    .template .side .tapview { height: auto; }
+    .template .side .tapview .tapc { overflow-y: hidden; height: auto; }
+    .template .side .table.view.edit li.con { overflow: hidden; height: 300px; }
+    .template .side .table.view.edit li.con textarea { height: 100%; }
 
-	/* 레벨테스트 */
-	/* section.level { height:100%; } */
-	section.level > .inner { padding: 50px 20px; }
-	section.level .gray .inner { padding: 0 5%; }
-	section.level .box { padding: 30px; }
-	section.level .exam .title .inner .count { left: 20px; }
-	section.level .exam .title .inner .bt { right: 20px; }
-	section.level .exam .inner { padding: 0; }
-	section.level .exam .inner h3 { padding: 0 20px; }
-	section.level .exam .inner .bt.ico.play { width: 60%; }
-	section.level .exam > .text .inner { padding: 0 20px; }
-	section.level .exam .question { padding-right: 20px; }
-	section.level .exam .answer { padding-left: 20px; padding-right: 20px; }
-	section.level .exam .answer.ab:before { left: 0; padding-left: 100px; }
-	section.level .select { margin-bottom: 20px; }
-	section.level .result .box h4 { text-align: center; }
-	section.level .result .box h5 { text-align: center; }
-	section.level .result .box:first-child h5 { text-align: left; margin-top: 30px; }
-	section.level .result .box:first-child .graph { width: 100%; }
-	section.level .result .box:first-child .text { width: 100%; }
-	section.level .result .box .graph { display: block; float: none; width: 100%; text-align: center; }
-	section.level .result .box .text { display: block; float: none; width: 100%; }
+    /* 2022 레벨테스트 */
+    /* section.level { height:100%; } */
+    section.level > .inner { padding: 50px 20px; }
+    section.level .gray .inner { padding: 0 5%; }
+    section.level .box { padding: 30px; }
+    section.level .exam .title .inner .count { left: 20px; }
+    section.level .exam .title .inner .bt { right: 20px; }
+    section.level .exam .inner { padding: 0; }
+    section.level .exam .inner h3 { padding: 0 20px; }
+    section.level .exam .inner .bt.ico.play { width: 60%; }
+    section.level .exam > .text .inner { padding: 0 20px; }
+    section.level .exam .question { padding-right: 20px; }
+    section.level .exam .answer { padding-left: 20px; padding-right: 20px; }
+    section.level .exam .answer.ab:before { left: 0; padding-left: 100px; }
+    section.level .select { margin-bottom: 20px; }
+    section.level .result .box h4 { text-align: center; }
+    section.level .result .box h5 { text-align: center; }
+    section.level .result .box:first-child h5 { text-align: left; margin-top: 30px; }
+    section.level .result .box:first-child .graph { width: 100%; }
+    section.level .result .box:first-child .text { width: 100%; }
+    section.level .result .box .graph { display: block; float: none; width: 100%; text-align: center; }
+    section.level .result .box .text { display: block; float: none; width: 100%; }
 
-	section.level.report .title h3 { float: none; margin-bottom: 40px; }
-	section.level.report .title .words { float: none; }
-	section.level.report .title .words i:first-child { display: block; font-size: 20px; padding-bottom: 5px; }
-	section.level.report .title .words mark { display: inline; }
+    section.level.report .title h3 { float: none; margin-bottom: 40px; }
+    section.level.report .title .words { float: none; }
+    section.level.report .title .words i:first-child { display: block; font-size: 20px; padding-bottom: 5px; }
+    section.level.report .title .words mark { display: inline; }
 
-	section.level .note .inner { padding: 0 20px; }
+    section.level .note .inner { padding: 0 20px; }
+    section.level .gray_bg > .inner{ padding: 0 20px; }
+    section.level .white_bg > .inner .contents_wrap .contents_map .map_con {padding: 30px 35px 20px;margin-right: 10px;}
+    section.level .white_bg > .inner .contents_wrap .lvtest_result .lvtest_con {padding: 30px 35px 20px;margin-left: 10px;}
+    section.level .white_bg > .inner .contents_wrap {padding: 0 20px;}
+    section.level .white_bg > .inner .contents_wrap .contents_map .map_con .map_txt, section.level .white_bg > .inner .contents_wrap .lvtest_result .lvtest_con .lvtest_txt {font-size: 16px}
+    section.level .gray_bg > .inner .self_assessment_wrap .self_txt,section.level .gray_bg > .inner .self_assessment_wrap .self_inline_txt {display: inline}
+    section.level .gray_bg .sub_con .progress_wrap .progress_step p {line-height: 1.2;}
+    section.level .gray_bg > .inner .lv_info_wrap {margin-right: 30px;}
+    section.level .gray_bg > .inner .self_assessment_wrap {padding: 30px 26px;}
 
-	/* SUB 공통 */
-	body.sub section { padding-top: 105px;}
-	body.sub .filter-box { padding:35px 20px 0;}
-	body.sub .visual .inner div.search-top {padding-top:30px;}
-	body.sub .visual .inner span.sub_txt { top:0; left:0; right:0; text-align:center; line-height: 20px; border-bottom:none; }
+    /* SUB 공통 */
+    body.sub section { padding-top: 105px;}
+    body.sub .filter-box { padding:35px 20px 0;}
+    body.sub .visual .inner div.search-top {padding-top:30px;}
+    body.sub .visual .inner span.sub_txt { top:0; left:0; right:0; text-align:center; line-height: 20px; border-bottom:none; }
 
-	/* 방송프로그램 */
-	section.program > .inner { padding: 50px 20px; }
+    /* 방송프로그램 */
+    section.program > .inner { padding: 50px 20px; }
 
-	/* e클립 */
-	section.eclip > .inner { padding: 50px 20px; }
-	section.eclip.view > .inner { padding: 50px 20px; }
-	section.eclip.view .data { display: block; float: none; width: 100%; }
-	section.eclip.view .side { display: block; float: none; width: 100%; margin-top: 20px; }
-	section.eclip.view .side .tapview .tapc { overflow-y: hidden; height: auto; }
-	section.eclip.view .reply { display: block; float: none; width: 100%; }
+    /* e클립 */
+    section.eclip > .inner { padding: 50px 20px; }
+    section.eclip.view > .inner { padding: 50px 20px; }
+    section.eclip.view .data { display: block; float: none; width: 100%; }
+    section.eclip.view .side { display: block; float: none; width: 100%; margin-top: 20px; }
+    section.eclip.view .side .tapview .tapc { overflow-y: hidden; height: auto; }
+    section.eclip.view .reply { display: block; float: none; width: 100%; }
 
-	section.eclip.view .movie { position:relative;display: block; float: none; width: 100%; }
-	section.eclip.view .movie .em_h3 { min-height:50px; }
+    section.eclip.view .movie { position:relative;display: block; float: none; width: 100%; }
+    section.eclip.view .movie .em_h3 { min-height:50px; }
 
-	section.eclip.view .side .table.mini .row .cell:nth-child(1) { float: left; padding-right: 10px; padding-bottom: 10px; }
-	section.eclip.view .side .table.mini .row .cell:nth-child(2) { display: block; }
-	section.eclip.view .side .table.mini .row .cell:nth-child(3) { clear: both; }
-	section.eclip.view .side .table.mini .row .cell:nth-child(4) { }
+    section.eclip.view .side .table.mini .row .cell:nth-child(1) { float: left; padding-right: 10px; padding-bottom: 10px; }
+    section.eclip.view .side .table.mini .row .cell:nth-child(2) { display: block; }
+    section.eclip.view .side .table.mini .row .cell:nth-child(3) { clear: both; }
+    section.eclip.view .side .table.mini .row .cell:nth-child(4) { }
 
-	section.eclip.view .side .recom { padding: 20px 40px; }
-	section.eclip.view .side .recom .list.one { overflow-x: auto; /* height: 315px; */ font-size: 0; white-space: nowrap; -ms-overflow-style: none; }
-	section.eclip.view .side .recom .list.one::-webkit-scrollbar { width: 0; display: none !important; }
-	section.eclip.view .side .recom .list.one li { display: inline-block; width: 200px; margin: 0; /*margin-left: 10px;*/ }
-	section.eclip.view .side .recom .list.one li:nth-child(4n-2) { margin: 0; margin-left: 10px; }
-	section.eclip.view .side .recom .list.one li:nth-child(4n-1) { margin: 0; margin-left: 10px; }
-	section.eclip.view .side .recom .card .bg .tit { white-space: normal; }
+    section.eclip.view .side .recom { padding: 20px 40px; }
+    section.eclip.view .side .recom .list.one { overflow-x: auto; /* height: 315px; */ font-size: 0; white-space: nowrap; -ms-overflow-style: none; }
+    section.eclip.view .side .recom .list.one::-webkit-scrollbar { width: 0; display: none !important; }
+    section.eclip.view .side .recom .list.one li { display: inline-block; width: 200px; margin: 0; /*margin-left: 10px;*/ }
+    section.eclip.view .side .recom .list.one li:nth-child(4n-2) { margin: 0; margin-left: 10px; }
+    section.eclip.view .side .recom .list.one li:nth-child(4n-1) { margin: 0; margin-left: 10px; }
+    section.eclip.view .side .recom .card .bg .tit { white-space: normal; }
 
-	section.eclip.view .side .recom .bt.prev { position: absolute; top: 50%; margin-top: 0%; left: 0; z-index: 1; }
-	section.eclip.view .side .recom .bt.next { position: absolute; top: 50%; margin-top: 0%; right: 0; z-index: 1; }
+    section.eclip.view .side .recom .bt.prev { position: absolute; top: 50%; margin-top: 0%; left: 0; z-index: 1; }
+    section.eclip.view .side .recom .bt.next { position: absolute; top: 50%; margin-top: 0%; right: 0; z-index: 1; }
 
-	/* 온라인강좌 */
-	section.online .gray { padding: 50px 20px 30px 20px; }
-	section.online .gray > .inner { padding-bottom: 50px; }
-	section.online .gray > .inner > .bt { left: 0; width: 100%; }
+    /* 온라인강좌 */
+    section.online .gray { padding: 50px 20px 30px 20px; }
+    section.online .gray > .inner { padding-bottom: 50px; }
+    section.online .gray > .inner > .bt { left: 0; width: 100%; }
 
-	section.online .visual .slider-inner { padding: 25px 104px; }
-	section.online .visual .slider-inner > .bt.next { right: 40px; }
-	section.online .visual .slider-inner > ul{display: none;}
+    section.online .visual .slider-inner { padding: 25px 104px; }
+    section.online .visual .slider-inner > .bt.next { right: 40px; }
+    section.online .visual .slider-inner > ul{display: none;}
 
-	section.online .movie { width: 100%; float: none; padding-right: 0; }
-	section.online .movie .media { margin-bottom: 0; }
+    section.online .movie { width: 100%; float: none; padding-right: 0; }
+    section.online .movie .media { margin-bottom: 0; }
 
-	section.online .side { display: block; overflow: hidden; }
-	section.online > .inner { padding: 50px 20px; }
-	section.online .card.lie img { margin-right: 10px; }
+    section.online .side { display: block; overflow: hidden; }
+    section.online > .inner { padding: 50px 20px; }
+    section.online .card.lie img { margin-right: 10px; }
 
-	section.online .side .info_record { padding: 0 0 20px 0; }
+    section.online .side .info_record { padding: 0 0 20px 0; }
 
-	section.online .table.bic li.th { display: none; }
-	section.online .table.bic { padding: 0; border: 0; }
-	section.online .table.bic .row { position: relative; display: block; }
-	section.online .table.bic .row .cell { display: block; height: auto; padding: 10px 0; text-align: left; }
-	section.online .table.bic .row .cell.xl { width: auto; }
-	section.online .table.bic .row .cell.lg { width: auto; }
-	section.online .table.bic .row .cell.md { width: auto; }
-	section.online .table.bic .row .cell.sm { width: auto; }
-	section.online .table.bic .row .cell.sm2 { width: auto; }
-	section.online .table.bic .row .cell.xs { width: auto; }
-	section.online .table.bic .cell{display: block;}
+    section.online .table.bic li.th { display: none; }
+    section.online .table.bic { padding: 0; border: 0; }
+    section.online .table.bic .row { position: relative; display: block; }
+    section.online .table.bic .row .cell { display: block; height: auto; padding: 10px 0; text-align: left; }
+    section.online .table.bic .row .cell.xl { width: auto; }
+    section.online .table.bic .row .cell.lg { width: auto; }
+    section.online .table.bic .row .cell.md { width: auto; }
+    section.online .table.bic .row .cell.sm { width: auto; }
+    section.online .table.bic .row .cell.sm2 { width: auto; }
+    section.online .table.bic .row .cell.xs { width: auto; }
+    section.online .table.bic .cell{display: block;}
 
-	section.online.webtoon .table { border-top: 2px solid #273758; }
-	section.online.webtoon .table li.th { display: none; }
-	section.online.webtoon .table .row { position: relative; display: block; text-align: right; padding: 10px 0; }
-	section.online.webtoon .table .row .cell { display: inline-block; height: auto; text-align: left; }
-	section.online.webtoon .table .row .cell.xxl { width: auto; }
-	section.online.webtoon .table .row .cell.xl { width: auto; }
-	section.online.webtoon .table .row .cell.lg { width: auto; }
-	section.online.webtoon .table .row .cell.md { width: auto; }
-	section.online.webtoon .table .row .cell.sm { width: auto; }
-	section.online.webtoon .table .row .cell.xs { width: auto; }
-	section.online.webtoon .table .row .cell:nth-child(1) { display: inline-block; float: left; padding-right: 20px; }
+    section.online.webtoon .table { border-top: 2px solid #273758; }
+    section.online.webtoon .table li.th { display: none; }
+    section.online.webtoon .table .row { position: relative; display: block; text-align: right; padding: 10px 0; }
+    section.online.webtoon .table .row .cell { display: inline-block; height: auto; text-align: left; }
+    section.online.webtoon .table .row .cell.xxl { width: auto; }
+    section.online.webtoon .table .row .cell.xl { width: auto; }
+    section.online.webtoon .table .row .cell.lg { width: auto; }
+    section.online.webtoon .table .row .cell.md { width: auto; }
+    section.online.webtoon .table .row .cell.sm { width: auto; }
+    section.online.webtoon .table .row .cell.xs { width: auto; }
+    section.online.webtoon .table .row .cell:nth-child(1) { display: inline-block; float: left; padding-right: 20px; }
 
-	section.online.webtoon .table .row .cell:nth-child(2) { display: block; padding-bottom: 5px; }
+    section.online.webtoon .table .row .cell:nth-child(2) { display: block; padding-bottom: 5px; }
 
-	section.online.paper .table { border-top: 2px solid #273758; }
-	section.online.paper .table li.th { display: none; }
-	section.online.paper .table .row { position: relative; display: block; text-align: right; padding: 0; padding-right: 0; }
+    section.online.paper .table { border-top: 2px solid #273758; }
+    section.online.paper .table li.th { display: none; }
+    section.online.paper .table .row { position: relative; display: block; text-align: right; padding: 0; padding-right: 0; }
 
-	/* 커뮤니티 */
-	section.comunity > .inner { padding: 50px 20px; }
-	section.comunity .gray .inner { padding: 0 20px; }
-	section.comunity .inner h3 { margin-bottom: 10px; }
+    /* 커뮤니티 */
+    section.comunity > .inner { padding: 50px 20px; }
+    section.comunity .gray .inner { padding: 0 20px; }
+    section.comunity .inner h3 { margin-bottom: 10px; }
 
-	section.comunity.schedule .inner.bg,
-	section.comunity.alphabet .inner.bg,
-	section.comunity.basics .gray .inner.bg,
-	section.comunity.homeschool .inner.bg,
-	section.comunity.mychild .inner.bg { background: none; }
+    section.comunity.schedule .inner.bg,
+    section.comunity.alphabet .inner.bg,
+    section.comunity.basics .gray .inner.bg,
+    section.comunity.homeschool .inner.bg,
+    section.comunity.mychild .inner.bg { background: none; }
 
-	/* 방과후 영어 */
-	section.after .gray .inner { padding: 0 20px; }
-	section.after > .inner h3 { padding: 0 20px; margin-bottom:20px; }
-	section.after .filter { padding: 0 20px; }
-	section.after .tap { padding: 0 20px; }
-	section.after .card.lie img { margin-right: 10px; }
+    /* 방과후 영어 */
+    section.after .gray .inner { padding: 0 20px; }
+    section.after > .inner h3 { padding: 0 20px; margin-bottom:20px; }
+    section.after .filter { padding: 0 20px; }
+    section.after .tap { padding: 0 20px; }
+    section.after .card.lie img { margin-right: 10px; }
 
-	section.after .tap.scroll.rows_nonscroll{overflow-x: hidden; white-space: normal;}
-	section.after .tap.scroll.rows_nonscroll li.tapt{width: 33.3%; display: block; float: left; padding: 0 5px; margin: 0 0;}
-	section.after .tap.scroll.rows_nonscroll li.tapt:nth-child(1){border-bottom: 0;}
-	section.after .tap.scroll.rows_nonscroll li.tapt:nth-child(2){border-right: 0; border-bottom: 0; border-left: 0;}
-	section.after .tap.scroll.rows_nonscroll li.tapt:nth-child(3){border-bottom: 0;}
-	section.after .tap.scroll.rows_nonscroll li.tapt:nth-child(5){border-right: 0; border-left: 0;}
+    section.after .tap.scroll.rows_nonscroll{overflow-x: hidden; white-space: normal;}
+    section.after .tap.scroll.rows_nonscroll li.tapt{width: 33.3%; display: block; float: left; padding: 0 5px; margin: 0 0;}
+    section.after .tap.scroll.rows_nonscroll li.tapt:nth-child(1){border-bottom: 0;}
+    section.after .tap.scroll.rows_nonscroll li.tapt:nth-child(2){border-right: 0; border-bottom: 0; border-left: 0;}
+    section.after .tap.scroll.rows_nonscroll li.tapt:nth-child(3){border-bottom: 0;}
+    section.after .tap.scroll.rows_nonscroll li.tapt:nth-child(5){border-right: 0; border-left: 0;}
 
-	section.after .table li.th { display: none; }
+    section.after .table li.th { display: none; }
 
-	section.after .table.bic { padding: 0 20px; border: 0; }
-	section.after .table.bic .row { position: relative; display: block; }
-	section.after .table.bic .row .cell { display: block; height: auto; text-align: left; }
-	section.after .table.bic .row .cell.xl { width: auto; }
-	section.after .table.bic .row .cell.lg { width: auto; }
-	section.after .table.bic .row .cell.md { width: auto; }
-	section.after .table.bic .row .cell.sm { width: auto; }
-	section.after .table.bic .row .cell.xs { width: auto; }
-	section.after .table.bic .row .cell { height: auto; padding: 0; }
-	/*section.after .table.bic .row .cell:last-child { position: absolute; right: 0; bottom: 10px; padding: 0; } */
-	section.after .table.bic .row .cell.btn_arb { position:absolute; right:0; bottom:5px; width:70px; padding:0; }
+    section.after .table.bic { padding: 0 20px; border: 0; }
+    section.after .table.bic .row { position: relative; display: block; }
+    section.after .table.bic .row .cell { display: block; height: auto; text-align: left; }
+    section.after .table.bic .row .cell.xl { width: auto; }
+    section.after .table.bic .row .cell.lg { width: auto; }
+    section.after .table.bic .row .cell.md { width: auto; }
+    section.after .table.bic .row .cell.sm { width: auto; }
+    section.after .table.bic .row .cell.xs { width: auto; }
+    section.after .table.bic .row .cell { height: auto; padding: 0; }
+    /*section.after .table.bic .row .cell:last-child { position: absolute; right: 0; bottom: 10px; padding: 0; } */
+    section.after .table.bic .row .cell.btn_arb { position:absolute; right:0; bottom:5px; width:70px; padding:0; }
 
-	section.after.view > .inner { padding: 50px 20px; }
-	section.after.view .table { padding: 0; }
-	section.after.view .tap { padding: 0; width: 100%; overflow-y: hidden; overflow-x: auto; white-space: nowrap; -ms-overflow-style: none; }
-	section.after.view .tap::-webkit-scrollbar { width: 0; display: none !important; }
-	section.after.view .tap .tapt { min-width: 28%; }
-	section.after.view .gray > .inner .btns { position: static; width: 100%; }
-	section.after.view .gray > .inner p.em { position: static; width: 100%; margin-bottom: 10px; }
-	section.after.view .movie { width: 100%; float: none; padding-right: 0; }
+    section.after.view > .inner { padding: 50px 20px; }
+    section.after.view .table { padding: 0; }
+    section.after.view .tap { padding: 0; width: 100%; overflow-y: hidden; overflow-x: auto; white-space: nowrap; -ms-overflow-style: none; }
+    section.after.view .tap::-webkit-scrollbar { width: 0; display: none !important; }
+    section.after.view .tap .tapt { min-width: 28%; }
+    section.after.view .gray > .inner .btns { position: static; width: 100%; }
+    section.after.view .gray > .inner p.em { position: static; width: 100%; margin-bottom: 10px; }
+    section.after.view .movie { width: 100%; float: none; padding-right: 0; }
 
-	section.after.view .gray > .inner .info_notice { position: static; width: 100%; margin: 0 0 10px; }
-	section.after.view .gray > .inner .info_notice strong {position: static; width: 100%;  }
-	section.after.view .gray > .inner .info_notice p { position: static; width: 100%; }
+    section.after.view .gray > .inner .info_notice { position: static; width: 100%; margin: 0 0 10px; }
+    section.after.view .gray > .inner .info_notice strong {position: static; width: 100%;  }
+    section.after.view .gray > .inner .info_notice p { position: static; width: 100%; }
 
-	section.after.view .side h4 { position: relative; text-align: left; padding-left: 20px; }
-	section.after.view .side h4:before { position: absolute; right: 20px; top: 50%; margin-top: -9px; content: ""; display: block; overflow: hidden; width: 11px; height: 11px; border: 1px solid #b0b0b0; border-bottom: 0; border-left: 0; -webkit-transform: rotate(135deg); -moz-transform: rotate(135deg); -o-transform: rotate(135deg); transform: rotate(135deg); }
-	section.after.view .side dl { display: none; }
-	section.after.view .side h4.on:before { margin-top: -2px; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); }
-	section.after.view .side h4.on + dl { display: block; }
+    section.after.view .side h4 { position: relative; text-align: left; padding-left: 20px; }
+    section.after.view .side h4:before { position: absolute; right: 20px; top: 50%; margin-top: -9px; content: ""; display: block; overflow: hidden; width: 11px; height: 11px; border: 1px solid #b0b0b0; border-bottom: 0; border-left: 0; -webkit-transform: rotate(135deg); -moz-transform: rotate(135deg); -o-transform: rotate(135deg); transform: rotate(135deg); }
+    section.after.view .side dl { display: none; }
+    section.after.view .side h4.on:before { margin-top: -2px; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); }
+    section.after.view .side h4.on + dl { display: block; }
 
-	section.after.view .data dt { font-size: 14px; font-weight: 500; padding: 15px 20px; }
-	section.after.view .data dd { font-size: 14px; padding: 15px 20px; }
-	section.after.view .data dt.bg { padding: 0 20px; }
-	section.after.view .data dd.bg { padding: 10px 20px; }
-	section.after.view .data dd.bg i { font-size: 16px; }
-	section.after.view .data dl:last-child { display: block; }
-	section.after.view .data dl:last-child dd { overflow: hidden; height: auto; padding-top: 15px; }
-	section.after.view .data .bt { display: none; }
+    section.after.view .data dt { font-size: 14px; font-weight: 500; padding: 15px 20px; }
+    section.after.view .data dd { font-size: 14px; padding: 15px 20px; }
+    section.after.view .data dt.bg { padding: 0 20px; }
+    section.after.view .data dd.bg { padding: 10px 20px; }
+    section.after.view .data dd.bg i { font-size: 16px; }
+    section.after.view .data dl:last-child { display: block; }
+    section.after.view .data dl:last-child dd { overflow: hidden; height: auto; padding-top: 15px; }
+    section.after.view .data .bt { display: none; }
 
-	section.after.view .filter { padding: 0; }
-	section.after.view .filter > .select:nth-child(3) { width: 100px; margin-bottom: 5px; }
-	section.after.view .filter > .select + .bind.find { float: none; width: 100%; }
+    section.after.view .filter { padding: 0; }
+    section.after.view .filter > .select:nth-child(3) { width: 100px; margin-bottom: 5px; }
+    section.after.view .filter > .select + .bind.find { float: none; width: 100%; }
 
-	section.after.view .teacher + .filter { padding-right: 0; padding-bottom: 90px; }
+    section.after.view .teacher + .filter { padding-right: 0; padding-bottom: 90px; }
 
-	section.after .bt_intro { width: 190px; height: 40px; line-height: 40px; margin-right:20px; font-size: 18px;}
-	/* 이벤트 */
-	section.event > .inner { padding: 50px 20px; }
-	section.event .gray .inner { padding: 0 20px; }
+    section.after .bt_intro { width: 190px; height: 40px; line-height: 40px; margin-right:20px; font-size: 18px;}
+    /* 이벤트 */
+    section.event > .inner { padding: 50px 20px; }
+    section.event .gray .inner { padding: 0 20px; }
 
-	/* 온에어 */
-	section.tv > .inner { padding: 30px 20px; }
-	section.tv > .gray { padding: 50px 20px 20px 20px; }
-	section.tv .movie { float: none; width: 100%; }
-	section.tv .side { float: none; overflow-y: hidden; width: 100%; height: auto !important; }
-	section.tv .side .table .row .cell em { width: 90%; font-size: 12px; line-height: 100%; white-space: normal; text-overflow: inherit; }
-	section.tv .noservice { height: 225px; padding-top: 70px; }
-	section.tv .noservice .text { word-break: keep-all; padding: 0 20px; }
+    /* 온에어 */
+    section.tv > .inner { padding: 30px 20px; }
+    section.tv > .gray { padding: 50px 20px 20px 20px; }
+    section.tv .movie { float: none; width: 100%; }
+    section.tv .side { float: none; overflow-y: hidden; width: 100%; height: auto !important; }
+    section.tv .side .table .row .cell em { width: 90%; font-size: 12px; line-height: 100%; white-space: normal; text-overflow: inherit; }
+    section.tv .noservice { height: 225px; padding-top: 70px; }
+    section.tv .noservice .text { word-break: keep-all; padding: 0 20px; }
 
-	section.tv .state li { width: calc(100% / 3); }
+    section.tv .state li { width: calc(100% / 3); }
 
-	section.tv .table .row .cell .chTable_em { padding: 5px 0 0 0; display: block; width: 75%; height: auto; overflow: hidden; text-overflow: ellipsis; white-space: inherit; word-wrap: break-word; vertical-align: middle;}
+    section.tv .table .row .cell .chTable_em { padding: 5px 0 0 0; display: block; width: 75%; height: auto; overflow: hidden; text-overflow: ellipsis; white-space: inherit; word-wrap: break-word; vertical-align: middle;}
 
-	section.tv .tap.line.scroll {width:100%;}
-	section.tv .tap.line.scroll .tapt:nth-child(1) { display:none; }
-	section.tv .tap.line.scroll .tapt:nth-child(2) { width:20%; }
-	section.tv .tap.line.scroll .tapt:nth-child(3) { width:20%; }
-	section.tv .tap.line.scroll .tapt:nth-child(4) { width:20%; }
-	section.tv .tap.line.scroll .tapt:nth-child(5) { width:20%; }
-	section.tv .tap.line.scroll .tapt:nth-child(6) { width:20%; }
-	section.tv .tap.line.scroll .tapt:nth-child(7) { display:none; }
+    section.tv .tap.line.scroll {width:100%;}
+    section.tv .tap.line.scroll .tapt:nth-child(1) { display:none; }
+    section.tv .tap.line.scroll .tapt:nth-child(2) { width:20%; }
+    section.tv .tap.line.scroll .tapt:nth-child(3) { width:20%; }
+    section.tv .tap.line.scroll .tapt:nth-child(4) { width:20%; }
+    section.tv .tap.line.scroll .tapt:nth-child(5) { width:20%; }
+    section.tv .tap.line.scroll .tapt:nth-child(6) { width:20%; }
+    section.tv .tap.line.scroll .tapt:nth-child(7) { display:none; }
 
-	/* 고객센터 */
-	section.cs > .inner { padding: 50px 20px; }
-	section.cs .gray .inner { padding: 0 20px; }
-	section.cs .gray + .inner { padding: 40px 20px; }
+    /* 고객센터 */
+    section.cs > .inner { padding: 50px 20px; }
+    section.cs .gray .inner { padding: 0 20px; }
+    section.cs .gray + .inner { padding: 40px 20px; }
 
-	section.cs.faq .filter .bind.find .select { width: calc(40% - 10px); }
-	section.cs.faq .filter .bind.find .select + .input { width: 60%; }
+    section.cs.faq .filter .bind.find .select { width: calc(40% - 10px); }
+    section.cs.faq .filter .bind.find .select + .input { width: 60%; }
 
-	section.cs.remote .pic { padding: 100px 20px 50px 20px; }
+    section.cs.remote .pic { padding: 100px 20px 50px 20px; }
 
-	section.cs.mtom .table.view.edit li.info { height: auto; line-height: 120%; padding-top: 10px; }
+    section.cs.mtom .table.view.edit li.info { height: auto; line-height: 120%; padding-top: 10px; }
 
-	section.cs.guide .nav { overflow-y: hidden; overflow-x: auto; width: 100%; text-align: left; white-space: nowrap; -ms-overflow-style: none; }
-	section.cs.guide .nav::-webkit-scrollbar { width: 0; display: none !important; }
-	section.cs.guide .nav .m { float: none; height: 40px; line-height: 40px; padding: 0 20px; }
+    section.cs.guide .nav { overflow-y: hidden; overflow-x: auto; width: 100%; text-align: left; white-space: nowrap; -ms-overflow-style: none; }
+    section.cs.guide .nav::-webkit-scrollbar { width: 0; display: none !important; }
+    section.cs.guide .nav .m { float: none; height: 40px; line-height: 40px; padding: 0 20px; }
 
-	section.cs .list.step li:nth-child(1) .item { background: #8ca0c3 url("../images/cs_Simg1.png") no-repeat center -15px; background-size: 150px; }
-	section.cs .list.step li:nth-child(2) .item { background: #7188b1 url("../images/cs_Simg2.png") no-repeat 10px -15px; background-size: 150px; }
-	section.cs .list.step li:nth-child(3) .item { background: #526ea0 url("../images/cs_Simg3.png") no-repeat 5px -15px; background-size: 150px; }
-	section.cs .list.step li:nth-child(4) .item { background: #284a87 url("../images/cs_Simg4.png") no-repeat 5px -15px; background-size: 150px; }
+    section.cs .list.step li:nth-child(1) .item { background: #8ca0c3 url("../images/cs_Simg1.png") no-repeat center -15px; background-size: 150px; }
+    section.cs .list.step li:nth-child(2) .item { background: #7188b1 url("../images/cs_Simg2.png") no-repeat 10px -15px; background-size: 150px; }
+    section.cs .list.step li:nth-child(3) .item { background: #526ea0 url("../images/cs_Simg3.png") no-repeat 5px -15px; background-size: 150px; }
+    section.cs .list.step li:nth-child(4) .item { background: #284a87 url("../images/cs_Simg4.png") no-repeat 5px -15px; background-size: 150px; }
 
-	/* 마이페이지 */
-	section.my > .inner { padding: 50px 20px; }
-	section.my .gray .inner { padding: 50px 20px; }
+    /* 마이페이지 */
+    section.my > .inner { padding: 50px 20px; }
+    section.my .gray .inner { padding: 50px 20px; }
 
-	section.my .etizen { padding: 0; padding-left: 160px; }
-	section.my .etizen:before { top: 0; margin-top: 0; width: 140px; height: 140px; }
-	section.my .etizen .btns {display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; position: static; width: 100%; margin: 0; }
-	section.my .etizen .btns .bt { display: inline-block; width: 32.5%; float: left; height: 50px; line-height: 50px; font-size: 15px; margin: 0; padding: 0 15px;}
-	section.my .etizen .btns .bt:last-child {float: right; }
-	section.my .etizen .tit { font-size: 20px; }
-	section.my .etizen dl { font-size: 16px; padding-bottom: 30px; }
+    section.my .etizen { padding: 0; padding-left: 160px; }
+    section.my .etizen:before { top: 0; margin-top: 0; width: 140px; height: 140px; }
+    section.my .etizen .btns {display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; position: static; width: 100%; margin: 0; }
+    section.my .etizen .btns .bt { display: inline-block; width: 32.5%; float: left; height: 50px; line-height: 50px; font-size: 15px; margin: 0; padding: 0 15px;}
+    section.my .etizen .btns .bt:last-child {float: right; }
+    section.my .etizen .tit { font-size: 20px; }
+    section.my .etizen dl { font-size: 16px; padding-bottom: 30px; }
 
-	section.my .matching { text-align: center; font-size: 0; }
-	section.my .matching ul { display: block; margin: 0 auto; }
-	section.my .matching ul:before { width: 100%; float: 0; text-align: center; }
-	section.my .matching ul li { padding-right: 0; }
-	section.my .matching ul li:before { display: none; }
-	section.my .matching ul li p { margin: 0 auto; }
-	section.my .matching .me { position: relative; top: auto; left: auto; right: auto; display: block; width: 100%; height: 150px; margin: 0; }
-	section.my .matching .me:before { content: ""; display: block; width: 1px; height: 100%; margin: 0 auto; }
-	section.my .matching .me:after { margin-left: -7px; top: auto; margin-top: 0; bottom: -7px; border-left: 7px solid transparent; border-top: 7px solid #5c7291; }
-	section.my .matching .me p { left: 50%; margin-left: -100px; top: 0; }
+    section.my .matching { text-align: center; font-size: 0; }
+    section.my .matching ul { display: block; margin: 0 auto; }
+    section.my .matching ul:before { width: 100%; float: 0; text-align: center; }
+    section.my .matching ul li { padding-right: 0; }
+    section.my .matching ul li:before { display: none; }
+    section.my .matching ul li p { margin: 0 auto; }
+    section.my .matching .me { position: relative; top: auto; left: auto; right: auto; display: block; width: 100%; height: 150px; margin: 0; }
+    section.my .matching .me:before { content: ""; display: block; width: 1px; height: 100%; margin: 0 auto; }
+    section.my .matching .me:after { margin-left: -7px; top: auto; margin-top: 0; bottom: -7px; border-left: 7px solid transparent; border-top: 7px solid #5c7291; }
+    section.my .matching .me p { left: 50%; margin-left: -100px; top: 0; }
 
-	section.my .matching ul.parent { display: block; float: none; border: 1px solid #5c7291; padding: 10px; padding-top: 0; }
-	section.my .matching ul.parent:after { display: none; }
-	section.my .matching ul.student { display: inline-block; float: none; }
-	section.my .matching ul.student:after { display: none; }
-	section.my .matching ul.student li { padding-left: 0; }
-	section.my .matching ul.student li:after { display: none; }
+    section.my .matching ul.parent { display: block; float: none; border: 1px solid #5c7291; padding: 10px; padding-top: 0; }
+    section.my .matching ul.parent:after { display: none; }
+    section.my .matching ul.student { display: inline-block; float: none; }
+    section.my .matching ul.student:after { display: none; }
+    section.my .matching ul.student li { padding-left: 0; }
+    section.my .matching ul.student li:after { display: none; }
 
-	section.my .matching ul.parent + .me p { top: 50%; margin-top: -50px; }
+    section.my .matching ul.parent + .me p { top: 50%; margin-top: -50px; }
 
-	section.my.etizen .etizen { padding: 20px; padding-left: 180px; }
-	section.my.etizen .etizen:before { left: 20px; top: 20px; }
-	section.my.etizen .etizen .btns { right: 20px; margin-top: 0; }
+    section.my.etizen .etizen { padding: 20px; padding-left: 180px; }
+    section.my.etizen .etizen:before { left: 20px; top: 20px; }
+    section.my.etizen .etizen .btns { right: 20px; margin-top: 0; }
 
-	section.my.qna .filter .order { width: 100%; text-align: center; margin-right: 0; margin-bottom: 20px; }
-	section.my.qna .filter .order .bt { float: none; }
+    section.my.qna .filter .order { width: 100%; text-align: center; margin-right: 0; margin-bottom: 20px; }
+    section.my.qna .filter .order .bt { float: none; }
 
-	section.comunity .words { padding-bottom: 10px; }
+    section.comunity .words { padding-bottom: 10px; }
 }
 @media all and (min-width: 741px) and (max-width: 840px) {
-	section.my .gray_box .box_con.status_con .contents .learning_phrase {max-width: 170px;}
-	section.my .gray_box .box_con.status_con .contents .learning_wrap {padding-left: 10px;}
-	section.my .gray_box .box_con.status_con .contents .learning_stage {transform: translateX(12px);}
-	section.my .gray_box .box_con.status_con .contents .progress {max-width: 170px;}
+    section.my .gray_box .box_con.status_con .contents .learning_phrase {max-width: 170px;}
+    section.my .gray_box .box_con.status_con .contents .learning_wrap {padding-left: 10px;}
+    section.my .gray_box .box_con.status_con .contents .learning_stage {transform: translateX(12px);}
+    section.my .gray_box .box_con.status_con .contents .progress {max-width: 170px;}
 }
 @media all and (max-width: 740px) {
 
-	section.my .t-use .table li.tr .row .cell#t-button {position:static;}
-	section.my .t-myClass .arrow-slide {display:none;}
-	section.my .t-myClass h6 {margin-bottom: 3px;font-size:20px;}
-	section.my .t-myClass .t-myClassWrap {width:100%;}
-	section.my .t-myClass .t-info {overflow:hidden;}
-	section.my .t-myClass .t-info li{float:left;width:50%;}
-	section.my .t-myClass .t-info li + li {margin-top: 0px;}
-	section.my .t-myClass .t-info li:nth-child(n+3) {margin-top:7px;} /* 0730 추가 */
-	section.my .t-myClass .t-Slide div.card {height:auto;padding:15px;}
-	section.my .t-myClass .t-Slide div.card.t-total {height:auto;}
-	section.my .t-myClass .t-Slide div.card + div.card {margin-top:20px;}
-	section.my .t-myClass .t-total h6 {margin-bottom: 17px;}
-	section.my .t-myClass .t-total .c-list { margin-top: 17px;padding-top: 12px;}
-	section.my .t-myClass .t-total .c-list li {margin-top:0;}
-	section.my .t-myClass .t-total .t-info li:nth-child(n+3) {margin-top:7px;}
-	section.my .t-myClass .t-detail ul {margin-top: 16px;}
-	section.my .t-myClass .t-detail .t-publish {margin:11px 0px;}
-
-	body.sub { min-width: 360px; }
-	body.sub nav.gnbWrap .gnb {border-bottom: 1px solid #dcdcdc;}
-	body.sub header.fix nav.gnbWrap .gnb ul.menu { display:none; }
-	body.sub .path { border-top:none; }
-	body.sub .path.fix {top:45px;}
-
-	.ptb_hide{display: block !important;}
-	.mtb_hide{display: none !important;}
-
-
-	/* 프로그램 공통 */
-	body.sub .filter-box { overflow:visible; background: #464646;}
-
-	body.sub .visual:after { height:300px; }
-	body.sub .visual .slider-inner { padding: 10px 0 20px; }
-	body.sub .visual .slider-inner > .bt { display:none;}
-	body.sub .visual .slick-slide { padding: 12px 10px;}
-	body.sub .visual .slick-slider { margin-left: -40px; }
-
-	body.sub .visual .inner {padding:0 20px;}
-	body.sub .visual .inner .bind { width:100%; height:50px; margin-bottom: 10px;}
-	body.sub .visual .inner .bind.find .input { height:50px; font-size: 19px;}
-	body.sub .visual .card {box-shadow: 1px 10px 12px rgba(0,0,0,0.1);}
-	body.sub .visual .card:hover { margin-top:0;}
-
-	body.sub .visual .search { overflow:hidden; max-height: 0; margin:0; transition: max-height 0.25s ease-in; -webkit-transition: max-height 0.25s ease-in;}
-	body.sub .visual .search.on { max-height: 500px; margin:10px 0 20px; }
-	body.sub .visual .search h5 { display: block !important; color:#fff; font-size: 18px; font-weight: 400; line-height: 30px;}
-
-	body.sub .visual .categoryTab li { float:left; width:auto; margin: 4px 8px 4px 0;padding:0 18px; }
-	body.sub .visual .categoryTab li i.keyword{ font-size: 18px;}
-
-	body.sub .visual .pager {text-align: left;width: 100%; height: 60px; margin-left: 0; left: 0; bottom: 5%; padding-left: 5%;}
-	body.sub .visual .pager p { font-size:17px; letter-spacing: 0.1em;font-family: 'Lato', Arial, sans-serif;}
-	body.sub .visual .pager span > p,
-	body.sub .visual .pager span > p {color:#fff; font-weight:400;}
-	body.sub .visual .page_bar { width: 100%; height: 2px; margin-top:15px; background: rgba(255,255,255,0.2); }
-	body.sub .visual .pager .page_bar .page_bar_per { height: 2px; background: #fff;}
-
-	body.sub .visual .v_txt { padding:30px 20px 0; font-size:22px; font-weight:300; line-height: 24px; color:#fff; letter-spacing:-0.025em;}
-	body.sub .visual .v_txt span.name { font-weight:500;}
-
-	body.sub .filter-box { padding:0 20px; }
-	body.sub .filter-box .filter {float:left; margin-top:25px; margin-bottom: 5px;}
-	body.sub .filter-box .tab-box { display:block; }
-	body.sub .filter-box .tab-box > .bt.done {display:none !important;}
-	body.sub .filter-box.on .tab-box > .bt.done { display:block !important; width:100%; height: 45px; font-size: 18px; font-weight: 300; color:#fff; text-indent:0;}
-	body.sub .filter-box .tab-box > .bt.edit { position:relative; width:100%; height: 60px; padding-right: 30px; font-size: 18px; font-weight: 300; color: #fff;}
-	body.sub .filter-box .tab-box > .bt.edit:before { content:''; position:absolute; width:20px; height:17px; top: 22px; right: 50%; margin-right: -46px; background:url(../images/common/sub_arrow_down.png) no-repeat center center; background-size: 100%;}
-	body.sub .filter-box .tab-box > .bt.edit.on:before {-webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -o-transform: rotate(180deg); transform: rotate(180deg);}
-
-	body.sub .filter-box .categoryTab {min-height: 47px;}
-	body.sub .filter-box .categoryTab li { width:auto; margin: 4px 8px 4px 0; padding: 0 16px; }
-	body.sub .filter-box .categoryTab li.off { color:#d3d3d3; border:1px solid #6b6b6b;background: transparent;}
-	body.sub .filter-box .categoryTab li:before { display:none; }
-	body.sub .filter-box .categoryTab li i.keyword{ font-size: 18px;}
-	body.sub .filter-box.on .categoryWrap { margin-bottom:20px; padding: 10px 50px 10px 0; border-top: 1px solid #6a6a6a;border-bottom: 1px solid #6a6a6a;}
-	body.sub .filter-box.on .categoryTab {display:block; }
-	body.sub .filter-box.on .categoryTab li {position:relative; background:none; border: none; width: auto; height: auto; padding:0; color:#fff; font-weight:400; }
-	body.sub .filter-box.on .categoryTab li i.keyword { color:#fff; font-weight:400; }
-	body.sub .filter-box.on .categoryTab li + li { padding-left:9px;}
-	body.sub .filter-box.on .categoryTab li + li:after {content:'/'; position:absolute; left:0; top:50%; margin-top:-8px;color:#fff;}
-
-	body.sub .filter-box .categoryWrap { position:relative; padding-right:50px; }
-	body.sub .filter-box .categoryWrap > .bt.reset { display:none; position:absolute; width:50px; bottom: 0; right:0; text-indent: -9999px;}
-	body.sub .filter-box .categoryWrap > .bt.reset.on:before { position: absolute; right: 0; top: 0; content: ""; display: block; overflow: hidden; width: 50px; height: 40px; background:url(../images/common/bt_done_on.png) no-repeat center center; background-size: 100%;}
-	body.sub .filter-box .categoryWrap > .bt.reset.on { display:block; bottom: 15px;}
-
-	/* e클립 - view */
-	.movie .vote_blue { display: block; overflow: hidden; background-color: #65758f; padding: 5px; }
-	.movie .vote_blue dl dt { display: none; }
-	.movie .vote_blue dl dd { height: 40px; line-height: 100%; text-shadow: 0 0 5px rgba(0,0,0,0.3); padding: 0; padding-left: 10px; }
-	.movie .vote_blue dl dd:before { content: "시청자 수"; display: block; overflow: hidden; color: rgba(255,255,255,0.5); font-size: 12px; line-height: 100%; margin-bottom: 5px; }
-	.movie .vote_blue dl dd:last-child { position: relative; padding-left: 15px; margin-left: 15px; }
-	.movie .vote_blue dl dd:last-child:before { content: "만족도"; }
-	.movie .vote_blue dl dd:last-child:after { position: absolute; left: 0; bottom: 4px; content: ""; display: block; overflow: hidden; width: 1px; height: 18px; background-color: rgba(0,0,0,0.2); }
-	.movie .vote_blue .bt { padding: 0 10px; }
-
-	/* 만족도평가 팝업 */
-	.movie .vote { display: block; overflow: hidden; padding: 10px 5px 15px 5px; }
-	.movie .vote dl dt { display: none; }
-	.movie .vote dl dd { height: 40px; line-height: 100%; font-size:20px; padding: 0; padding-left: 10px; }
-	.movie .vote dl dd:before { content: "시청자 수"; display: block; overflow: hidden; color: #818181; font-size: 12px; line-height: 100%; margin-bottom: 5px; }
-	.movie .vote dl dd:last-child { position: relative; padding-left: 15px; margin-left: 15px; }
-	.movie .vote dl dd:last-child:before { content: "만족도"; }
-	.movie .vote dl dd:last-child:after { position: absolute; left: 0; bottom: 4px; content: ""; display: block; overflow: hidden; width: 1px; height: 18px; }
-	.movie .vote .bt { padding: 0 10px; }
-
-	/* 수강후기  - 댓글 */
-	.reply .table .row { position: relative; display: block; text-align: left; padding: 10px 0; padding-right: 40px; }
-	.reply .table .row .cell { display: inline-block; height: auto; }
-	.reply .table .row .cell.xl { width: auto; }
-	.reply .table .row .cell.lg { width: auto; }
-	.reply .table .row .cell.md { width: auto; }
-	.reply .table .row .cell.sm { width: auto; }
-	.reply .table .row .cell.sm2 { width: auto; }
-	.reply .table .row .cell.xs { width: auto; }
-	.reply .table .row .cell:first-child { display: block; padding: 0; padding-bottom: 5px; }
-	.reply .table .row .bt { position: absolute; right: 0; top: 50%; margin-top: -20px; }
-
-	.reply .info.noti { height: auto; line-height: 120%; text-align: left; padding-top: 12px; }
-	.reply .bind.ment .bt { right: 0; top: 20px; height: 80px; }
-
-	/* 레벨테스트 */
-	section.level .gray .inner { padding: 0 10px; }
-
-	section.level .exam .title .inner { text-align: right; padding-right: 70px; }
-	section.level .exam .title .inner .bt { width: 40px; background: #878fa2 url("../images/ico_out_w.png") no-repeat 50% 50%; background-size: 12px; text-indent: -9999px; }
-	section.level .exam .question + .text { padding: 40px 20px 10px 20px; }
-	section.level .exam .answer.pic li { width: 100%; float: none; }
-	section.level .exam.self .title .words { padding: 20px; }
-	section.level .exam .inner .bt.ico.play { background-color: #fff; margin: 30px auto 0 auto; }
-	section.level .exam > .text .inner { line-height: 22px; letter-spacing: 0.005em; }
-	section.level .exam .bt.round { margin: 30px 0 60px 0; }
-
-	section.level .gray { padding: 30px 0; }
-
-	section.level .list.two li { width: 100%; background-color: #fff; padding: 0; margin: 0; }
-
-	section.level .select { width: 100%; }
-	section.level .result .box h4 { padding-top: 30px; }
-	section.level .result .box h5 { padding-top: 30px; }
-	section.level .result .box { width: 100%; float: none; padding: 0; margin-bottom: 10px; }
-	section.level .result .box:first-child h5 { margin-top: 0; }
-	section.level .result .box:first-child .graph { width: 100%; }
-	section.level .result .box:first-child .text { width: 100%; }
-	section.level .result .box:last-child { float: none; }
-	section.level .result .box .graph { display: block; float: none; width: 100%; text-align: center; }
-	section.level .result .box .text { display: block; float: none; width: 100%; padding: 0 30px 30px 30px; }
-
-	section.level.report h3 i { display: block; }
-	section.level.report h5 mark { display: block; }
-
-	/* 방과후영어 - 썸내일 리스트 */
-	section.after > .inner { padding: 50px 0 30px 0; }
-
-	section.after .card.lie .tit { margin-top: 0; }
-	section.after .card.lie .con { height: 20px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; margin-bottom: 0; }
-
-	/* 방과후영어 - 검색 */
-	section.after .filter > .bt { margin-bottom: 10px; }
-	section.after .filter > .bt ~ .bind { float: none; }
-
-	/* 방과후영어 - 썸내일 테이블 리스트 */
-	section.after .table.bic .row .cell:last-child { position: static; width: 100%; text-align: right; padding: 10px; padding-top: 0; }
-	section.after .table.bic .row .cell.btn_arb { position:absolute; right:0; bottom:5px; width:70px; padding:0; }
-
-	/* 방과후영어 - 강좌소개 테이블 */
-	section.after.view .data h3 { float: none; }
-	section.after.view .data > .bt { margin-bottom: 5px; margin-top: 5px; }
-	section.after.view .data:after { display: none;  }
-	section.after.view .data dt { display: block; width: 100%; float: none; padding-bottom: 0; }
-	section.after.view .data dd { display: block; width: 100%; float: none; border: 0; padding-top: 0; }
-	section.after.view .data dt.bg { height: auto; line-height: 20px; padding-top: 15px; }
-	section.after.view .data dd.bg { height: auto; line-height: 20px; padding: 10px 20px; }
-	section.after.view .data dd.bg img { display: block; float: left; margin-right: 20px; }
-	section.after.view .data dd.bg i { display: block; float: none; }
-	section.after.view .data dd.bg .select { display: block; width: auto; margin-left: 0; }
-	section.after.view .data dl:last-child dt { display: none; }
-	section.after.view h5 { height: auto; line-height: 120%; }
-	section.after.view h5 i {font-size:20px; margin-left: 10px; padding-left: 10px;} /* 2019-03-12 추가  */
-	section.after.view h5 i:before {height: 18px; margin-top: -7px;}
-	section.after.view .gray { padding: 50px 0 30px 0; }
-
-	/* 방과후영어 - 출연자소개 */
-	section.after.view .teacher p { padding: 10px 0; }
-	section.after.view .teacher i { display: block; margin-right: 0; padding-bottom: 5px; }
-
-	/* 방과후영어 - 검색 */
-	section.after.view .teacher + .filter { padding-bottom: 0; }
-	section.after.view .teacher + .filter > .bt { position: static; }
-	section.after.view .filter .bind.find .select {width:100%;padding-bottom: 5px;} /* 2019-03-12 추가  */
-	section.after.view .filter .bind.find .select + .input {float: none; width: 100%;}
-	section.after.view .filter .bind.find .bt {top: auto; bottom: 0;}
-	section.after.view.edit .select {width:100%;} /* 2019-03-12 추가 */
-
-	/* 방과후영어 - 썸내일 테이블 리스트 */
-	section.after.view .filter + .table { border-top: 2px solid #273758; }
-	section.after.view .filter + .table li.th { display: none; }
-	section.after.view .filter + .table .row { position: relative; display: block; text-align: left; padding: 15px 5px 0px 0; }
-	section.after.view .filter + .table .row:before { position: absolute; right: 10px; top: 50%; margin-top: -6px; content: ""; display: block; overflow: hidden; width: 11px; height: 11px; border: 0px solid #b0b0b0; border-bottom: 0; border-left: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
-	section.after.view .filter + .table .row .cell { display: inline-block; float: left; height: auto; text-align: left; font-size: 12px; margin-right: 20px; }
-	section.after.view .filter + .table .row .cell.xxl { width: auto; }
-	section.after.view .filter + .table .row .cell.xl { width: auto; }
-	section.after.view .filter + .table .row .cell.lg { width: auto; }
-	section.after.view .filter + .table .row .cell.md { width: auto; }
-	section.after.view .filter + .table .row .cell.sm { width: auto; }
-	section.after.view .filter + .table .row .cell.xs { width: auto; }
-
-	section.after.view .filter + .table .row .cell.afterNum { position: absolute; left: 5px; top: 50%; margin-top: -20px; width: 40px; height: 40px; line-height: 40px; padding: 0; text-align:center; font-size: 14px; }
-	section.after.view .filter + .table .row .cell.afterHeder { display: inline-block; width: auto; margin-right:2%; padding: 3px 0 0!important; } /* 2019-03-12 수정  */
-	section.after.view .filter + .table .row .cell.afterTit { display: inline-block; width: 87%; font-size: 16px; margin-right:0; padding: 0 !important; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; line-height: 150%;}
-	section.after.view .filter + .table .row .cell.afterDate { font-size: 12px; color:#808080; }
-
-	/* 방과후영어 - 평가응시 */
-	section.after.problem_pop {position:relative;width:100%;height:100%;}
-	section.after.problem_pop .problem_top {width:100%;height:px;background:#30415f;}
-	section.after.problem_pop .problem_top .pt_logo {width:120px;height:75px;background: url("../images/pm_ebse_logo.png") no-repeat center center; }
-	section.after.problem_pop .problem_top .pt_tit {position:absolute;left:0;top:0;width:100%;height:75px;line-height:75px;text-align:center;font-size:25px;color:#fff;}
-	section.after.problem_pop .problem_top .pt_close {position:absolute;right:0;top:0;width:75px;height:75px;}
-	section.after.problem_pop .problem_top .pt_close:before {content:"";display:block;margin-top:-15px;overflow:hidden;width:1px;height:30px;background:#fff;transform:rotate(-45deg);position:absolute;top:50%;left:50%;}
-	section.after.problem_pop .problem_top .pt_close:after {content:"";display:block;margin-top:-15px;overflow:hidden;width:1px;height:30px;background:#fff;transform:rotate(45deg);position:absolute;top:50%;left:50%;}
-
-	section.after.problem_pop .problem_main {padding:30px 20px;}
-	section.after.problem_pop .problem_main .pm_header {width:100%;text-align:center;margin-bottom:10px;}
-	section.after.problem_pop .problem_main .pm_header span {color:#ff5900;}
-	section.after.problem_pop .problem_main .pm_txt {width:100%;text-align:center;font-size:20px;margin-bottom:15px;}
-	section.after.problem_pop .problem_main .pm_select {overflow:hidden;width:100%;background:#f5f5f5;border:1px solid #bebebe;padding:25px;}
-	section.after.problem_pop .problem_main .pm_select select {float:left;width:100%;height:40px;padding-left:10px;border:1px solid #000;margin-right:3%;background: #fff url("../images/select_arrow.png") no-repeat right center;}
-	section.after.problem_pop .problem_main .pm_select select:nth-child(2) {margin:10px 0% 0 0;}
-	section.after.problem_pop .problem_main .pm_desc {text-align:left;font-size:16px;line-height:1.4;margin:15px 0 15px 0px;;padding-left:15px;background: url("../images/pm_arrow.png") no-repeat left 8px;}
-	section.after.problem_pop .problem_main .pm_desc .pmd_c {color:#ff5900;}
-	section.after.problem_pop .problem_main .pal {margin-left:15px;}
-	section.after.problem_pop .problem_main .pac {display:block;width:200px;margin:30px auto;}
-
-
-	/* e클립 */
-	section.eclip .filter-box .categoryTab li { background:#8d3bf9; }
-	section.eclip .filter-box .categoryTab li i.keyword { color:#fff; }
-	section.eclip .filter-box.on .tab-box > .bt.done {background:#8d3bf9;}
-
-	section.eclip.view .side h5{padding-bottom: 10px;}
-	section.eclip.view .side .recom .bt.prev { position: absolute; top: 50%; margin-top: -10%; left: 0; z-index: 1; }
-	section.eclip.view .side .recom .bt.next { position: absolute; top: 50%; margin-top: -10%; right: 0; z-index: 1; }
-
-	/* 통합검색 */
-	section.search .search_result .inner {display: -webkit-box; display: -ms-flexbox;; display: flex; -ms-flex-direction: column; flex-direction: column;  }
-	section.search .search_result .inner > p { width: auto; margin: 0 20px; line-height: 1.5;}
-	section.search .search_result .inner > p:before { top: 3px !important; }
-	section.search .search_result .filter-box .filter .order > div:first-child { margin-right: -2px; }
-	section.search .search_result .filter-box .filter .order .bt {border: 2px solid #8790a2; line-height: 1.5;}
-	section.search .search_result .filter-box { margin: 0; padding: 0; margin-left: auto; width: 100%;background: none; }
-	section.search .search_result .filter-box .filter .order > div.on .bt { color: #ff6600; border: 2px solid #ff6600; line-height: 1.5;}
-	section.search .search_result .filter-box .filter .order > div:before { border: 2px solid #8790a2; border-top: 0; border-right: 0;}
-	section.search .search_result .filter-box .filter .order > div.on:before {border: 2px solid #ff6600; border-top: 0; border-right: 0;}
-
-	header.search .tap .tapt {flex: 30% !important;}
-
-	/* 방송프로그램 */
-	section.program > .inner { padding: 50px 20px; }
-	section.program .filter-box .categoryTab li { background:#583bf8; }
-	section.program .filter-box .categoryTab li i.keyword { color:#fff; }
-	section.program .filter-box.on .tab-box > .bt.done {background:#583bf8;}
-
-	/* 온라인강좌 */
-	section.online .filter-box .categoryTab li { background:#f9613a; }
-	section.online .filter-box .categoryTab li i.keyword { color:#fff; }
-	section.online .filter-box.on .tab-box > .bt.done {background:#f9613a;}
-
-	section.online .card.lie .tit { margin-top: 0; }
-	section.online .card.lie .con { height: 15px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; margin-bottom: 0; }
-
-	section.online.paper .card.lie img { margin-right: 10px; }
-	section.online.paper .card.lie .con { white-space: nowrap; text-overflow: ellipsis; }
-	section.online.paper .table .row { padding: 10px 0; }
-
-	section.online.view h5 i { font-size: 20px; }
-
-	/* 커뮤니티 */
-	section.comunity h5 { padding-top: 50px; }
-
-	section.comunity.etizen .planet li { font-size: 12px; line-height: 16px; }
-	section.comunity.etizen .planet li:before { width: 60px; height: 60px; }
-
-	section.comunity .tap { margin: 0 0 20px 0; }
-	section.comunity .tap + .filter { margin-top: 10px; }
-	section.comunity .tap.line .tapt { padding-top: 22px; }
-
-	section.comunity .filter > .bt { margin-bottom: 10px; }
-	section.comunity .filter .bind.find { margin-bottom: 20px; }
-	section.comunity .filter .bind.find .select { width: 100%; margin-bottom: 5px; }
-	section.comunity .filter .bind.find .select + .input { float: none; width: 100%; }
-	section.comunity .filter .bind.find .bt { top: auto; bottom: 0; }
-
-	section.comunity .words { padding-bottom: 30px; }
-	section.comunity > .inner { padding: 50px 20px; }
-	section.comunity .inner h3 { margin-bottom: 0px; }
-	section.comunity > .inner .table { border-top: 2px solid #273758; }
-	section.comunity > .inner .table li.th { display: none; }
-	section.comunity > .inner .table .row { position: relative; display: block; text-align: left; padding: 0 5px 10px 0; }
-	section.comunity > .inner .table .row:before { position: absolute; right: 10px; top: 50%; margin-top: -6px; content: ""; display: block; overflow: hidden; width: 11px; height: 11px; border: 0px solid #b0b0b0; border-bottom: 0; border-left: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
-	section.comunity > .inner .table .row .cell { display: inline-block; float: left; width:auto; height: auto; }
-	section.comunity > .inner .table .row .cell.xl { width: auto; }
-	section.comunity > .inner .table .row .cell.lg { width: auto; }
-	section.comunity > .inner .table .row .cell.md { width: auto; }
-	section.comunity > .inner .table .row .cell.sm { width: auto; }
-	section.comunity > .inner .table .row .cell.xs { width: auto; }
-
-	section.comunity > .inner .table.view { border-top: 1px solid #273758; }
-	section.comunity > .inner .table.view i { float: none; }
-
-	section.comunity.notice > .inner .table .row .cell.notiNum { width: 15%; font-size: 12px; line-height: 120%; }
-	section.comunity.notice > .inner .table .row .cell.notiTit { width: 85%; padding: 12px 0 10px 0; }
-	section.comunity.notice > .inner .table .row .cell.notiAdmin { clear: both; padding-left: 15%; }
-	section.comunity.notice > .inner .table .row .cell.notiDate { clear: both; position: relative; height: 20px; line-height: 20px; font-size: 12px; color:#808080; margin-right: 10px; padding:0 15px 0 15%; }
-	section.comunity.notice > .inner .table .row .cell.notiDate:after { position: absolute; right: 0; top: 5px; content: ""; display: block; width: 1px; height: 10px; background-color: #eaeaea; }
-	section.comunity.notice > .inner .table .row .cell.notiHit { float:left; height: 20px; line-height: 20px; padding:0; }
-
-	section.comunity.talk .filter > .bt:last-child { float: left; margin-left: 0; /* border: 1px solid #efefef; */ }
-	section.comunity.talk > .inner .table .row .cell.talkNum { width: 15%; font-size: 12px; line-height: 120%; }
-	section.comunity.talk > .inner .table .row .cell.talkTit { width: 85%; padding: 12px 0 10px 0; }
-	section.comunity.talk > .inner .table .row .cell.talkAdmin { clear: both; padding:0 0 0 15%; }
-	section.comunity.talk > .inner .table .row .cell.talkDate {  padding: 0 10px; font-size: 12px; color:#808080; position: relative; float: left; height: 20px; line-height: 20px; font-size: 12px; margin: 0 10px; }
-	section.comunity.talk > .inner .table .row .cell.talkDate:before { position: absolute; left: 0; top: 6px; content: ""; display: block; width: 1px; height: 10px; background-color: #eaeaea; }
-	section.comunity.talk > .inner .table .row .cell.talkDate:after { position: absolute; right: 0; top: 6px; content: ""; display: block; width: 1px; height: 10px; background-color: #eaeaea; }
-	section.comunity.talk > .inner .table .row .cell.talkHit { float:left; height: 20px; line-height: 20px; padding:0; }
-	section.comunity.talk > .inner .table .row .cell.talkreply { position: relative; float:left; height: 20px; line-height: 20px; padding: 0 10px; margin: 0 10px; }
-	section.comunity.talk > .inner .table .row .cell.talkreply:before { position: absolute; left: 0; top: 6px; content: ""; display: block; width: 1px; height: 10px; background-color: #eaeaea; }
-
-	section.comunity.alphabet > .inner .table .row { padding: 5px 45px 10px 0; }
-	section.comunity.alphabet > .inner .table .row:before { display: none; }
-
-	section.comunity.alphabet > .inner .table .row .cell:nth-child(4) { position: absolute; right: 0; top: 0; height:100%; /* margin-top: -20px; */ }
-
-	section.comunity.alphabet > .inner .table .row .cell.talkNum { width: 15%; font-size: 12px; line-height: 120%; padding-bottom:40px; }
-	section.comunity.alphabet > .inner .table .row .cell.talkTit { width: 85%; padding: 12px 0 10px 0; }
-	section.comunity.alphabet > .inner .table .row .cell.talkHit { float:left; height: 20px; line-height: 20px; /* padding:0 0 0 15%; */ padding:0; }
-
-	section.comunity.homeschool > .inner .table .row .cell.talkNum { width: 15%; font-size: 12px; line-height: 120%; padding-bottom:40px; }
-	section.comunity.homeschool > .inner .table .row .cell.talkTit { width: 85%; padding: 12px 0 10px 0; }
-	section.comunity.homeschool > .inner .table .row .cell.talkHit { float:left; height: 20px; line-height: 20px; /* padding:0 0 0 15%; */ padding:0; }
-
-	section.comunity .table.faq { border: 0; }
-	section.comunity .table.faq .row:before { display: none; }
-	section.comunity .table.faq .row .cell:nth-child(1) { width:15%; }
-	section.comunity .table.faq .row .cell:nth-child(2) { width:70%; padding-bottom: 0; }
-
-	section.comunity .table.faq .row .cell.answer_txt { /* clear:both; */ width: 85% !important; }
-
-	/* 이벤트 */
-	section.event .list.two li { width: 100%; float: none; }
-
-	section.event .filter.f_r { width: 100%; }
-	section.event .filter.f_r .bind.find { width: 100%; }
-	section.event .filter > .bt { margin-bottom: 10px; }
-
-	section.event > .inner .table li.th { display: none; }
-	section.event > .inner .table .row { position: relative; display: block; text-align: left; padding: 10px 25px 10px 0; }
-	section.event > .inner .table .row:before { position: absolute; right: 10px; top: 50%; margin-top: -6px; content: ""; display: block; overflow: hidden; width: 11px; height: 11px; border: 1px solid #b0b0b0; border-bottom: 0; border-left: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
-	section.event > .inner .table .row .cell { display: inline-block; float: left; height: auto; }
-	section.event > .inner .table .row .cell.xl { width: auto; }
-	section.event > .inner .table .row .cell.lg { width: auto; }
-	section.event > .inner .table .row .cell.md { width: auto; }
-	section.event > .inner .table .row .cell.sm { width: auto; }
-	section.event > .inner .table .row .cell.xs { width: auto; }
-	section.event > .inner .table .row .cell:nth-child(1) { width: 15%; font-size: 12px; line-height: 120%; }
-	section.event > .inner .table .row .cell:nth-child(2) { width: 85%; padding-bottom: 10px; }
-	section.event > .inner .table .row .cell:nth-child(3) { clear: both; padding-left: 15%; margin-right: 10px; }
-	section.event .table.view li.tit .ev_tit{padding-right: 0;}
-	section.event .table.view li.tit .ev_pos{position: relative; margin-top: 0;}
-	section.event .table.view li.tit .bt.ev_share{display: inline-block; margin-top: 0;}
-	section.event .table.view li.tit .bt_ev_cof{display: inline-block; margin-top: 0;}
-
-	/* 고객센터 메인 */
-	section.cs.faq .table.faq .info { height: auto; line-height: 120%; padding-top: 10px; margin-right:10px; }
-
-	section.cs.main .table { border-top: 2px solid #273758; }
-	section.cs.main .table li.th { display: none; }
-	section.cs.main .table .row { position: relative; display: block; text-align: left; padding: 0px 25px 0px 0; }
-	section.cs.main .table .row:before { position: absolute; right: 10px; top: 50%; margin-top: -6px; content: ""; display: block; overflow: hidden; width: 11px; height: 11px; border: 1px solid #b0b0b0; border-bottom: 0; border-left: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
-	section.cs.main .table .row .cell { display: block; height: auto; text-align: left; }
-	section.cs.main .table .row .cell.xxl { width: auto; }
-	section.cs.main .table .row .cell.xl { width: auto; }
-	section.cs.main .table .row .cell.lg { width: auto; }
-	section.cs.main .table .row .cell.md { width: auto; }
-	section.cs.main .table .row .cell.sm { width: auto; }
-	section.cs.main .table .row .cell.xs { width: auto; }
-	section.cs.main .table .row .cell:nth-child(1) { display: none; }
-	section.cs.main .table .row .cell:nth-child(2) { font-size: 12px; padding-bottom: 5px; }
-
-	section.cs.cont > .gray .tap { display: block; }
-	section.cs.cont > .gray .tap .tapt { width: 50%; }
-	section.cs.cont > .gray .tap .tapt:nth-child(2) { border-right: 0; }
-	section.cs.cont > .gray .tap .tapt:nth-child(3) { border-left: 0; }
-
-	section.cs.faq .filter .bind.find .select { width: 100%; margin-bottom: 10px; }
-	section.cs.faq .filter .bind.find .select + .input { width: 100%; }
-	section.cs.faq .filter .bind.find .bt { top: auto; bottom: 0; margin-top: 0; }
-
-	section.cs.faq .table.faq li:before { top: 30px; }
-	section.cs.faq .table.faq li .row.q { display: block; /* padding: 15px 0; */ padding: 0; }
-	section.cs.faq .table.faq li .row.q .cell { display: block; height: auto; float: none; }
-	section.cs.faq .table.faq li .row.q .cell.xl { width: auto; }
-	section.cs.faq .table.faq li .row.q .cell:nth-child(1) { float: left; }
-	section.cs.faq .table.faq li .row.q .cell:nth-child(2) { font-size: 14px; padding-bottom: 5px; }
-	section.cs.faq .table.faq li .row.q .cell:first-child:before { display: block; }
-	section.cs.faq .table.faq li .row.q .cell:first-child i { display: none; }
-	section.cs.faq .table.faq li.on .row.q .cell:first-child:before { display: block; }
-
-	section.cs.remote .pic { padding: 0; }
-	section.cs.remote .pic li { display: block; float: none; margin: 20px auto; }
-	section.cs.remote .pic li:nth-child(1) { padding-top: 40px; }
-	section.cs.remote .pic li:nth-child(2) { position: absolute; top: 50%; margin-top: -50px; left: 0; margin-left: 0; right: 0; width: 100%; height: 100px; background-image: url("../images/bg_remote_v.png"); background-size: auto 100%; padding-top: 15px; }
-	section.cs.remote .pic li:nth-child(3) { float: none; }
-	section.cs.remote .pic li p { float: left; width: 40%; }
-	section.cs.remote .pic li p:last-child { float: right; margin-top: 0; }
-
-	section.cs.mtom .table.view.edit li .select { float: none; width: 100%; }
-	section.cs.mtom .table.view.edit li .data { float:left; }
-
-	section.cs.down .table li.th { display:none; }
-
-	/* 마이페이지 */
-	section.my > .gray .tap { display: block; width:100%;}
-	section.my > .gray .tap .tapt { float:left; width: 50%; border-bottom: 2px solid #fff; }
-	section.my > .gray .tap .tapt:nth-child(2) { border-right:0; }
-	section.my > .gray .tap .tapt:nth-child(3) { border-left:0; }
-	/* section.my > .gray .tap .tapt:nth-child(4) { display:none; } */
-
-	section.my .etizen { padding-left: 120px; padding-bottom: 70px; }
-	section.my .etizen:before { width: 100px; height: 100px; }
-	section.my .etizen .btns { position: absolute; bottom: 0; top: auto; }
-	section.my .etizen .btns .bt {font-size: 14px; padding: 0 10px 0 10px; letter-spacing: -.5px; min-width: 104px; height: 48px;}
-	section.my .etizen .btns .bt i {display: block; text-align: left; background: url(../images/bt_back_m.png) no-repeat 98% 52%; background-size: 6px; padding-right: 5px;}
-	section.my .etizen .tit { font-size: 16px; }
-	section.my .etizen dl { font-size: 14px; padding-bottom: 10px; }
-
-	section.my .table { border-top: 2px solid #273758; }
-	section.my .table li.th { display: none; }
-	section.my .table .row .cell.xxl { width: auto; }
-	section.my .table .row .cell.xl { width: auto; }
-	section.my .table .row .cell.lg { width: auto; }
-	section.my .table .row .cell.md { width: auto; }
-	section.my .table .row .cell.sm { width: auto; }
-	section.my .table .row .cell.xs { width: auto; }
-	section.my .table .row .cell i.cate { font-size: 12px; padding: 0; padding-bottom: 5px; }
-
-	section.my .filter > .bt { margin-bottom: 10px; }
-
-	section.my .inner h3 { margin-bottom: 20px; }
-
-	section.my .box { padding: 20px; }
-	section.my .box .words { font-size: 30px; }
-	section.my .box .text { font-size: 16px; }
-
-	section.my .non_mah_in{padding: 100px 0;}
-	section.my .non_mah_in > p{padding-top: 100px; background: url(../images/nodata.png) no-repeat 50% 0; background-size: 80px auto; font-size: 18px; color: #838282; line-height: 160%; text-align: center;}
-
-	section.my.main .half { display: block; width: 100%; float: none; }
-	section.my.main .half:first-child { float: none; padding-bottom: 30px; }
-	section.my.main .tap { display: block; background: none; }
-	section.my.main .tap .tapt { width: 50%; border-bottom: 2px solid #fff; background-color: #878fa2;}
-	section.my.main .tap .tapt.on {background-color: #3d4c6b;}
-	section.my.main .tap .tapt:nth-child(1n){float: left;}
-	section.my.main .tap .tapt:nth-child(2n){float: right;}
-	section.my.main .tap .tapt:nth-child(2) { border-right: 0; }
-	section.my.main .tap .tapt:nth-child(3) { border-left: 0; }
-	section.my.main .table .row { position: relative; display: block; padding: 15px 0; padding-right: 30px; }
-	section.my.main .table .row:before { position: absolute; right: 10px; top: 50%; margin-top: -6px; content: ""; display: block; overflow: hidden; width: 11px; height: 11px; border: 0px solid #b0b0b0; border-bottom: 0; border-left: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
-	section.my.main .table .row .cell { display: inline-block; float: left; height: auto; text-align: left; font-size: 14px; line-height: 120%; padding-top: 10px; margin-right: 20px; }
-	section.my.main .table .row .cell:nth-child(1) { display: block; width: 100%; padding-top: 0; margin-right: 0; }
-	section.my.main .table .row .cell:nth-child(2) { display: block; width: 100%; padding-top: 0; margin-right: 0; }
-
-	section.my.use .table .row { position: relative; display: block; padding: 15px 0; padding-right: 30px; }
-	section.my.use .table .row:before { position: absolute; right: 10px; top: 50%; margin-top: -6px; content: ""; display: block; overflow: hidden; width: 11px; height: 11px; border: 0px solid #b0b0b0; border-bottom: 0; border-left: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
-	section.my.use .table .row .cell { display: inline-block; float: left; height: auto; text-align: left; font-size: 18px; line-height: 120%; padding-top: 10px; margin-right: 20px; }
-
-	section.my.use.class .table .row { padding-left: 50px; }
-	section.my.use.class .table .row .cell.myNum { position: absolute; left: 5px; top: 50%; margin-top: -20px; width: 40px; height: 40px; line-height: 40px; padding: 0; text-align:center; font-size: 14px; }
-	section.my.use.class .table .row .cell.myHeder { display: block; width: 100%; padding: 0 0 5px 0 !important; }
-	section.my.use.class .table .row .cell.myTit { display: inline-block; width: 100%; font-size: 16px; padding: 0 0 10px 0 !important; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; line-height: 150%;}
-	section.my.use.class .table .row .cell.myStartDate { font-size: 12px; padding: 0 5px 5px 0 !important; }
-	section.my.use.class .table .row .cell.myStartDate:before { content: "학습시작일"; color: #b0b0b0; padding-right: 5px; }
-	section.my.use.class .table .row .cell.myEndDate { font-size: 12px; padding: 0 5px 0 0 !important; }
-	section.my.use.class .table .row .cell.myEndDate:before { content: "최근학습일"; color: #b0b0b0; padding-right: 5px; }
-
-	section.my.study .table .row { position: relative; display: block; padding: 15px 0 15px 50px; }
-	section.my.study .table .row:before { position: absolute; right: 10px; top: 50%; margin-top: -6px; content: ""; display: block; overflow: hidden; width: 11px; height: 11px; border: 0px solid #b0b0b0; border-bottom: 0; border-left: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
-	section.my.study .table .row .cell { display: inline-block; float: left; height: auto; text-align: left; font-size: 16px; line-height: 120%; padding-top: 5px; margin-right: 20px; }
-
-	section.my.study .table .row .cell.myNum { position: absolute; left: 5px; top: 50%; margin-top: -20px; width: 40px; height: 40px; line-height: 40px; padding: 0; text-align:center; font-size: 14px; }
-	section.my.study .table .row .cell.myHeder { display: block; width: 100%; padding: 0 0 5px 0 !important; }
-	section.my.study .table .row .cell.myTit { display: inline-block; width: 100%; font-size: 16px; padding: 0 0 10px 0 !important; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; line-height: 150%;}
-	section.my.study .table .row .cell.myStartDate { font-size: 12px; padding: 0 5px 5px 0 !important; }
-	section.my.study .table .row .cell.myStartDate:before { content: "학습시작일"; color: #b0b0b0; padding-right: 5px; }
-	section.my.study .table .row .cell.myEndDate { font-size: 12px; padding: 0 5px 0 0 !important; }
-	section.my.study .table .row .cell.myEndDate:before { content: "최근학습일"; color: #b0b0b0; padding-right: 5px; }
-
-	section.my.write .table .row { position: relative; display: block; padding: 15px 0 0 0; padding-right: 30px; padding-left: 50px; }
-	section.my.write .table .row:before { position: absolute; right: 10px; top: 50%; margin-top: -6px; content: ""; display: block; overflow: hidden; width: 11px; height: 11px; border: 0px solid #b0b0b0; border-bottom: 0; border-left: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
-	section.my.write .table .row .cell { display: inline-block; float: left; height: auto; text-align: left; font-size: 14px; line-height: 120%; padding-top: 10px; margin-right: 20px; }
-
-	section.my.write .table .row .cell.myNum { position: absolute; left: 5px; top: 50%; margin-top: -20px; width: 40px; height: 40px; line-height: 40px; padding: 0; text-align:center; font-size: 14px; }
-	section.my.write .table .row .cell.myHeder { display: block; width: 100%; padding: 0 0 5px 0 !important; }
-	section.my.write .table .row .cell.myTit { display: inline-block; width: 100%; font-size: 16px; padding: 0 0 10px 0 !important; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; line-height: 150%;}
-	section.my.write .table .row .cell.myDate { font-size: 12px; color:#808080; }
-
-	section.my.re .table .row { position: relative; display: block; padding: 15px 30px 0 50px; }
-	section.my.re .table .row:before { position: absolute; right: 10px; top: 50%; margin-top: -6px; content: ""; display: block; overflow: hidden; width: 11px; height: 11px; border: 0px solid #b0b0b0; border-bottom: 0; border-left: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
-	section.my.re .table .row .cell { display: inline-block; float: left; height: auto; text-align: left; font-size: 14px; line-height: 120%; padding-top: 10px; margin-right: 20px; }
-
-	section.my.re .table .row .cell.myNum { position: absolute; left: 5px; top: 50%; margin-top: -20px; width: 40px; height: 40px; line-height: 40px; padding: 0; text-align:center; font-size: 14px; }
-	section.my.re .table .row .cell.myHeder { display: block; width: 100%; padding: 0 0 5px 0 !important; }
-	section.my.re .table .row .cell.myTit { display: inline-block; width: 100%; font-size: 16px; padding: 0 0 10px 0 !important; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; line-height: 150%;}
-	section.my.re .table .row .cell.myDate { font-size: 12px; color:#808080; }
-
-	section.my.qna .table .row { position: relative; display: block; padding: 15px 0; padding-right: 0px; padding-left: 50px; }
-	section.my.qna .table .row:before { position: absolute; right: 10px; top: 50%; margin-top: -6px; content: ""; display: block; overflow: hidden; width: 11px; height: 11px; border: 0px solid #b0b0b0; border-bottom: 0; border-left: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
-	section.my.qna .table .row .cell { display: inline-block; float: left; height: auto; text-align: left; font-size: 14px; line-height: 120%; padding-top: 10px; margin-right: 20px; }
-
-	section.my.qna .table .row .cell.myNum { position: absolute; left: 5px; top: 50%; margin-top: -20px; width: 40px; height: 40px; line-height: 40px; padding: 0; text-align:center; font-size: 14px; }
-	section.my.qna .table .row .cell.myHeder { display: block; width: 100%; padding: 0 0 5px 0 !important; }
-	section.my.qna .table .row .cell.myTit { display: inline-block; width: 100%; font-size: 16px; padding: 0 0 10px 0 !important; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; line-height: 150%;}
-	section.my.qna .table .row .cell.myDate { font-size: 12px; color:#808080; }
-
-	/* 마이페이지 1:1문의 - 현재 메뉴 히든 */
-	section.my.mtom .table .row { position: relative; display: block; padding: 15px 0; padding-right: 0px; padding-left: 50px; }
-	section.my.mtom .table .row:before { position: absolute; right: 10px; top: 50%; margin-top: -6px; content: ""; display: block; overflow: hidden; width: 11px; height: 11px; border: 0px solid #b0b0b0; border-bottom: 0; border-left: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
-	section.my.mtom .table .row .cell { display: inline-block; float: left; height: auto; text-align: left; font-size: 14px; line-height: 120%; padding-top: 10px; margin-right: 20px; }
-
-	section.my.mtom .table .row .cell.myNum { position: absolute; left: 5px; top: 50%; margin-top: -20px; width: 40px; height: 40px; line-height: 40px; padding: 0; text-align:center; font-size: 14px; }
-	section.my.mtom .table .row .cell.myHeder { display: block; width: 100%; padding: 0 0 5px 0 !important; }
-	section.my.mtom .table .row .cell.myTit { display: inline-block; width: 100%; font-size: 16px; padding: 0 0 10px 0 !important; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; line-height: 150%;}
-	section.my.mtom .table .row .cell.myDate { font-size: 12px; color:#808080; }
-
-	section.my.match .filter .bind { margin-left: 0; }
-
-	section.my.match .table .row { position: relative; display: block; padding: 15px 0 0 0; padding-right: 30px; }
-	section.my.match .table .row:before { position: absolute; right: 10px; top: 50%; margin-top: -6px; content: ""; display: block; overflow: hidden; width: 11px; height: 11px; border: 0px solid #b0b0b0; border-bottom: 0; border-left: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
-	section.my.match .table .row .cell { display: inline-block; float: left; height: auto; text-align: left; font-size: 18px; line-height: 120%; padding-top: 10px; margin-right: 20px; }
-
-	section.my.match .table .row .cell.myNum { position: absolute; left: 5px; top: 50%; margin-top: -20px; width: 40px; height: 40px; line-height: 40px; padding: 0; text-align:center; font-size: 14px; }
-	section.my.match .table .row .cell.myHeder { display: block; width: 100%; padding: 0 0 5px 0 !important; }
-	section.my.match .table .row .cell.myTit { display: inline-block; width: 100%; font-size: 16px; padding: 0 0 10px 0 !important; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; line-height: 150%;}
-	section.my.match .table .row .cell.myDate { font-size: 12px; color:#808080; }
-
-	section.my.etizen .etizen { padding-left: 140px; padding-bottom: 70px; }
-	section.my.etizen .etizen:before { left: 20px; top: 20px; }
-	section.my.etizen .etizen .btns { left: 20px; right: 20px; bottom: 20px; width: auto; }
-	section.my.etizen .etizen .btns .bt { width: auto; padding: 0 20px; }
-	section.my.etizen .table li.th { display: block; }
-	section.my.etizen .table .row .cell { width: 25%; }
-	section.my.etizen .table .row .cell.xl { width: 25%; }
-
-	section.my.data .table .select { width: 100%; float: none; margin-right: 0; }
-	section.my.data .table .text { float: none; width: 100%; height: auto; line-height: 120%; }
-	section.my.data .table .combo { float: none; width: auto; margin-right: 20px; }
-	section.my.data .table .info { height: auto; line-height: 120%; font-size: 12px; }
-
-	section.my.pw > .inner { padding: 50px 20px 50px 20px; }
-	section.my.pw .check { width: 100%; }
-	section.my.pw .check:before { left: 0; }
-	section.my.pw .btns { width: 100%; }
-
-	section.my > .inner { padding: 50px 20px; }
-	section.my .gray .inner { padding: 50px 20px 30px 20px; }
-	section.my.main .title { clear: both; padding: 30px 0 20px 0; }
-
-	/* 공통 - 수정 20181117 */
+    section.my .t-use .table li.tr .row .cell#t-button {position:static;}
+    section.my .t-myClass .arrow-slide {display:none;}
+    section.my .t-myClass h6 {margin-bottom: 3px;font-size:20px;}
+    section.my .t-myClass .t-myClassWrap {width:100%;}
+    section.my .t-myClass .t-info {overflow:hidden;}
+    section.my .t-myClass .t-info li{float:left;width:50%;}
+    section.my .t-myClass .t-info li + li {margin-top: 0px;}
+    section.my .t-myClass .t-info li:nth-child(n+3) {margin-top:7px;} /* 0730 추가 */
+    section.my .t-myClass .t-Slide div.card {height:auto;padding:15px;}
+    section.my .t-myClass .t-Slide div.card.t-total {height:auto;}
+    section.my .t-myClass .t-Slide div.card + div.card {margin-top:20px;}
+    section.my .t-myClass .t-total h6 {margin-bottom: 17px;}
+    section.my .t-myClass .t-total .c-list { margin-top: 17px;padding-top: 12px;}
+    section.my .t-myClass .t-total .c-list li {margin-top:0;}
+    section.my .t-myClass .t-total .t-info li:nth-child(n+3) {margin-top:7px;}
+    section.my .t-myClass .t-detail ul {margin-top: 16px;}
+    section.my .t-myClass .t-detail .t-publish {margin:11px 0px;}
+
+    body.sub { min-width: 360px; }
+    body.sub nav.gnbWrap .gnb {border-bottom: 1px solid #dcdcdc;}
+    body.sub header.fix nav.gnbWrap .gnb ul.menu { display:none; }
+    body.sub .path { border-top:none; }
+    body.sub .path.fix {top:45px;}
+
+    .ptb_hide{display: block !important;}
+    .mtb_hide{display: none !important;}
+
+
+    /* 프로그램 공통 */
+    body.sub .filter-box { overflow:visible; background: #464646;}
+
+    body.sub .visual:after { height:300px; }
+    body.sub .visual .slider-inner { padding: 10px 0 20px; }
+    body.sub .visual .slider-inner > .bt { display:none;}
+    body.sub .visual .slick-slide { padding: 12px 10px;}
+    body.sub .visual .slick-slider { margin-left: -40px; }
+
+    body.sub .visual .inner {padding:0 20px;}
+    body.sub .visual .inner .bind { width:100%; height:50px; margin-bottom: 10px;}
+    body.sub .visual .inner .bind.find .input { height:50px; font-size: 19px;}
+    body.sub .visual .card {box-shadow: 1px 10px 12px rgba(0,0,0,0.1);}
+    body.sub .visual .card:hover { margin-top:0;}
+
+    body.sub .visual .search { overflow:hidden; max-height: 0; margin:0; transition: max-height 0.25s ease-in; -webkit-transition: max-height 0.25s ease-in;}
+    body.sub .visual .search.on { max-height: 500px; margin:10px 0 20px; }
+    body.sub .visual .search h5 { display: block !important; color:#fff; font-size: 18px; font-weight: 400; line-height: 30px;}
+
+    body.sub .visual .categoryTab li { float:left; width:auto; margin: 4px 8px 4px 0;padding:0 18px; }
+    body.sub .visual .categoryTab li i.keyword{ font-size: 18px;}
+
+    body.sub .visual .pager {text-align: left;width: 100%; height: 60px; margin-left: 0; left: 0; bottom: 5%; padding-left: 5%;}
+    body.sub .visual .pager p { font-size:17px; letter-spacing: 0.1em;font-family: 'Lato', Arial, sans-serif;}
+    body.sub .visual .pager span > p,
+    body.sub .visual .pager span > p {color:#fff; font-weight:400;}
+    body.sub .visual .page_bar { width: 100%; height: 2px; margin-top:15px; background: rgba(255,255,255,0.2); }
+    body.sub .visual .pager .page_bar .page_bar_per { height: 2px; background: #fff;}
+
+    body.sub .visual .v_txt { padding:30px 20px 0; font-size:22px; font-weight:300; line-height: 24px; color:#fff; letter-spacing:-0.025em;}
+    body.sub .visual .v_txt span.name { font-weight:500;}
+
+    body.sub .filter-box { padding:0 20px; }
+    body.sub .filter-box .filter {float:left; margin-top:25px; margin-bottom: 5px;}
+    body.sub .filter-box .tab-box { display:block; }
+    body.sub .filter-box .tab-box > .bt.done {display:none !important;}
+    body.sub .filter-box.on .tab-box > .bt.done { display:block !important; width:100%; height: 45px; font-size: 18px; font-weight: 300; color:#fff; text-indent:0;}
+    body.sub .filter-box .tab-box > .bt.edit { position:relative; width:100%; height: 60px; padding-right: 30px; font-size: 18px; font-weight: 300; color: #fff;}
+    body.sub .filter-box .tab-box > .bt.edit:before { content:''; position:absolute; width:20px; height:17px; top: 22px; right: 50%; margin-right: -46px; background:url(../images/common/sub_arrow_down.png) no-repeat center center; background-size: 100%;}
+    body.sub .filter-box .tab-box > .bt.edit.on:before {-webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -o-transform: rotate(180deg); transform: rotate(180deg);}
+
+    body.sub .filter-box .categoryTab {min-height: 47px;}
+    body.sub .filter-box .categoryTab li { width:auto; margin: 4px 8px 4px 0; padding: 0 16px; }
+    body.sub .filter-box .categoryTab li.off { color:#d3d3d3; border:1px solid #6b6b6b;background: transparent;}
+    body.sub .filter-box .categoryTab li:before { display:none; }
+    body.sub .filter-box .categoryTab li i.keyword{ font-size: 18px;}
+    body.sub .filter-box.on .categoryWrap { margin-bottom:20px; padding: 10px 50px 10px 0; border-top: 1px solid #6a6a6a;border-bottom: 1px solid #6a6a6a;}
+    body.sub .filter-box.on .categoryTab {display:block; }
+    body.sub .filter-box.on .categoryTab li {position:relative; background:none; border: none; width: auto; height: auto; padding:0; color:#fff; font-weight:400; }
+    body.sub .filter-box.on .categoryTab li i.keyword { color:#fff; font-weight:400; }
+    body.sub .filter-box.on .categoryTab li + li { padding-left:9px;}
+    body.sub .filter-box.on .categoryTab li + li:after {content:'/'; position:absolute; left:0; top:50%; margin-top:-8px;color:#fff;}
+
+    body.sub .filter-box .categoryWrap { position:relative; padding-right:50px; }
+    body.sub .filter-box .categoryWrap > .bt.reset { display:none; position:absolute; width:50px; bottom: 0; right:0; text-indent: -9999px;}
+    body.sub .filter-box .categoryWrap > .bt.reset.on:before { position: absolute; right: 0; top: 0; content: ""; display: block; overflow: hidden; width: 50px; height: 40px; background:url(../images/common/bt_done_on.png) no-repeat center center; background-size: 100%;}
+    body.sub .filter-box .categoryWrap > .bt.reset.on { display:block; bottom: 15px;}
+
+    /* e클립 - view */
+    .movie .vote_blue { display: block; overflow: hidden; background-color: #65758f; padding: 5px; }
+    .movie .vote_blue dl dt { display: none; }
+    .movie .vote_blue dl dd { height: 40px; line-height: 100%; text-shadow: 0 0 5px rgba(0,0,0,0.3); padding: 0; padding-left: 10px; }
+    .movie .vote_blue dl dd:before { content: "시청자 수"; display: block; overflow: hidden; color: rgba(255,255,255,0.5); font-size: 12px; line-height: 100%; margin-bottom: 5px; }
+    .movie .vote_blue dl dd:last-child { position: relative; padding-left: 15px; margin-left: 15px; }
+    .movie .vote_blue dl dd:last-child:before { content: "만족도"; }
+    .movie .vote_blue dl dd:last-child:after { position: absolute; left: 0; bottom: 4px; content: ""; display: block; overflow: hidden; width: 1px; height: 18px; background-color: rgba(0,0,0,0.2); }
+    .movie .vote_blue .bt { padding: 0 10px; }
+
+    /* 만족도평가 팝업 */
+    .movie .vote { display: block; overflow: hidden; padding: 10px 5px 15px 5px; }
+    .movie .vote dl dt { display: none; }
+    .movie .vote dl dd { height: 40px; line-height: 100%; font-size:20px; padding: 0; padding-left: 10px; }
+    .movie .vote dl dd:before { content: "시청자 수"; display: block; overflow: hidden; color: #818181; font-size: 12px; line-height: 100%; margin-bottom: 5px; }
+    .movie .vote dl dd:last-child { position: relative; padding-left: 15px; margin-left: 15px; }
+    .movie .vote dl dd:last-child:before { content: "만족도"; }
+    .movie .vote dl dd:last-child:after { position: absolute; left: 0; bottom: 4px; content: ""; display: block; overflow: hidden; width: 1px; height: 18px; }
+    .movie .vote .bt { padding: 0 10px; }
+
+    /* 수강후기  - 댓글 */
+    .reply .table .row { position: relative; display: block; text-align: left; padding: 10px 0; padding-right: 40px; }
+    .reply .table .row .cell { display: inline-block; height: auto; }
+    .reply .table .row .cell.xl { width: auto; }
+    .reply .table .row .cell.lg { width: auto; }
+    .reply .table .row .cell.md { width: auto; }
+    .reply .table .row .cell.sm { width: auto; }
+    .reply .table .row .cell.sm2 { width: auto; }
+    .reply .table .row .cell.xs { width: auto; }
+    .reply .table .row .cell:first-child { display: block; padding: 0; padding-bottom: 5px; }
+    .reply .table .row .bt { position: absolute; right: 0; top: 50%; margin-top: -20px; }
+
+    .reply .info.noti { height: auto; line-height: 120%; text-align: left; padding-top: 12px; }
+    .reply .bind.ment .bt { right: 0; top: 20px; height: 80px; }
+
+    /* 레벨테스트 */
+    section.level .gray .inner { padding: 0 10px; }
+
+    section.level .exam .title .inner { text-align: right; padding-right: 70px; }
+    section.level .exam .title .inner .bt { width: 40px; background: #878fa2 url("../images/ico_out_w.png") no-repeat 50% 50%; background-size: 12px; text-indent: -9999px; }
+    section.level .exam .question + .text { padding: 40px 20px 10px 20px; }
+    section.level .exam .answer.pic li { width: 100%; float: none; }
+    section.level .exam.self .title .words { padding: 20px; }
+    section.level .exam .inner .bt.ico.play { background-color: #fff; margin: 30px auto 0 auto; }
+    section.level .exam > .text .inner { line-height: 22px; letter-spacing: 0.005em; }
+    section.level .exam .bt.round { margin: 30px 0 60px 0; }
+
+    section.level .gray { padding: 30px 0; }
+
+    section.level .list.two li { width: 100%; background-color: #fff; padding: 0; margin: 0; }
+
+    section.level .select { width: 100%; }
+    section.level .result .box h4 { padding-top: 30px; }
+    section.level .result .box h5 { padding-top: 30px; }
+    section.level .result .box { width: 100%; float: none; padding: 0; margin-bottom: 10px; }
+    section.level .result .box:first-child h5 { margin-top: 0; }
+    section.level .result .box:first-child .graph { width: 100%; }
+    section.level .result .box:first-child .text { width: 100%; }
+    section.level .result .box:last-child { float: none; }
+    section.level .result .box .graph { display: block; float: none; width: 100%; text-align: center; }
+    section.level .result .box .text { display: block; float: none; width: 100%; padding: 0 30px 30px 30px; }
+
+    section.level.report h3 i { display: block; }
+    section.level.report h5 mark { display: block; }
+
+    /* 2022 Level Test */
+    section.level .gray_bg {padding-top: 50px}
+    section.level .gray_bg > .inner {padding:0;}
+    section.level .gray_bg > .inner .lv_info_wrap .lv_tit {padding-bottom: 30px;}
+    section.level .gray_bg > .inner {-webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column;}
+    section.level .gray_bg > .inner .lv_info_wrap {max-width: 100%; margin-right: 0;padding: 0 20px;}
+    section.level .gray_bg > .inner .self_assessment_wrap {max-width: 100%; padding: 40px 20px;}
+    section.level .gray_bg > .inner .lv_info_wrap .lv_tit {position:relative;letter-spacing: -1.5px;}
+    section.level .gray_bg > .inner .lv_info_wrap .lv_tit::after {display: inline-block; width: 12px; position: absolute; top: 10px; right: 0; height: 12px; content: ""; vertical-align: middle; border-top: 2px solid #000; border-left: 2px solid #000; -webkit-transform: rotate(-135deg); -moz-transform: rotate(-135deg); -ms-transform: rotate(-135deg); -o-transform: rotate(-135deg); transform: rotate(-135deg); }
+    section.level .gray_bg > .inner .lv_info_wrap .lv_tit.on::after { top: 19px; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg);}
+    section.level .gray_bg > .inner .lv_info_wrap .lv_panal {display: none; overflow: hidden;}
+    section.level .gray_bg p.main_txt {margin-top: 0; font-size: 26px;letter-spacing: -1.95px;}
+    section.level .gray_bg p.main_inline_txt {font-size: 26px;letter-spacing: -1.95px;font-weight: 500;line-height: 1.5;}
+    section.level .gray_bg p.sub_txt, section.level .gray_bg p.sub_inline_txt {font-size: 16px;letter-spacing: -0.8px;line-height: 1.7;}
+    section.level .gray_bg .sub_con .sub_tit {font-size: 20px;letter-spacing:-1.5px;}
+    section.level .gray_bg .sub_con .progress_wrap {display: -webkit-box; display: -ms-flexbox; display: flex;-webkit-box-pack: center; -ms-flex-pack: center;justify-content: center;-webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column;width: 100%; background: #fff; margin-bottom: 40px;margin-top: 14px; padding: 16px 13px;}
+    section.level .gray_bg .sub_con .progress_wrap .progress_step:first-child {margin-top: 0;}
+    section.level .gray_bg .sub_con .progress_wrap .progress_step {margin-top: 12px;}
+    section.level .gray_bg > .inner .lv_progress {background: url(../images/level_test/lv_t_progress.png) 50% 50% no-repeat; background-size: contain; display: block; width: 700px; max-width: 100%; height: 156px; }
+    section.level .gray_bg > .inner .self_assessment_wrap .complete_btn {margin-top: 20px;}
+    section.level .white_bg > .inner .contents_wrap {display: flex; flex-direction: column; width: 100%; margin: 20px auto 40px;}
+    section.level .white_bg > .inner .contents_wrap .contents_map, section.level .white_bg > .inner .contents_wrap .lvtest_result {width: 100%;}
+    section.level .white_bg > .inner .contents_wrap .contents_map .map_con{margin-right: 0;background: #fff;padding: 20px 0px 10px;}
+    section.level .white_bg > .inner .contents_wrap .lvtest_result .lvtest_con {margin-left: 0; background: #fff;padding: 20px 0 10px;}
+    section.level .white_bg > .inner .contents_wrap button {max-width: 100%;}
+    section.level .white_bg > .inner .contents_wrap .contents_map .map_con img, section.level .white_bg > .inner .contents_wrap .lvtest_result .lvtest_con img {margin-right: 5px;}
+    /* 방과후영어 - 썸내일 리스트 */
+    section.after > .inner { padding: 50px 0 30px 0; }
+
+    section.after .card.lie .tit { margin-top: 0; }
+    section.after .card.lie .con { height: 20px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; margin-bottom: 0; }
+
+    /* 방과후영어 - 검색 */
+    section.after .filter > .bt { margin-bottom: 10px; }
+    section.after .filter > .bt ~ .bind { float: none; }
+
+    /* 방과후영어 - 썸내일 테이블 리스트 */
+    section.after .table.bic .row .cell:last-child { position: static; width: 100%; text-align: right; padding: 10px; padding-top: 0; }
+    section.after .table.bic .row .cell.btn_arb { position:absolute; right:0; bottom:5px; width:70px; padding:0; }
+
+    /* 방과후영어 - 강좌소개 테이블 */
+    section.after.view .data h3 { float: none; }
+    section.after.view .data > .bt { margin-bottom: 5px; margin-top: 5px; }
+    section.after.view .data:after { display: none;  }
+    section.after.view .data dt { display: block; width: 100%; float: none; padding-bottom: 0; }
+    section.after.view .data dd { display: block; width: 100%; float: none; border: 0; padding-top: 0; }
+    section.after.view .data dt.bg { height: auto; line-height: 20px; padding-top: 15px; }
+    section.after.view .data dd.bg { height: auto; line-height: 20px; padding: 10px 20px; }
+    section.after.view .data dd.bg img { display: block; float: left; margin-right: 20px; }
+    section.after.view .data dd.bg i { display: block; float: none; }
+    section.after.view .data dd.bg .select { display: block; width: auto; margin-left: 0; }
+    section.after.view .data dl:last-child dt { display: none; }
+    section.after.view h5 { height: auto; line-height: 120%; }
+    section.after.view h5 i {font-size:20px; margin-left: 10px; padding-left: 10px;} /* 2019-03-12 추가  */
+    section.after.view h5 i:before {height: 18px; margin-top: -7px;}
+    section.after.view .gray { padding: 50px 0 30px 0; }
+
+    /* 방과후영어 - 출연자소개 */
+    section.after.view .teacher p { padding: 10px 0; }
+    section.after.view .teacher i { display: block; margin-right: 0; padding-bottom: 5px; }
+
+    /* 방과후영어 - 검색 */
+    section.after.view .teacher + .filter { padding-bottom: 0; }
+    section.after.view .teacher + .filter > .bt { position: static; }
+    section.after.view .filter .bind.find .select {width:100%;padding-bottom: 5px;} /* 2019-03-12 추가  */
+    section.after.view .filter .bind.find .select + .input {float: none; width: 100%;}
+    section.after.view .filter .bind.find .bt {top: auto; bottom: 0;}
+    section.after.view.edit .select {width:100%;} /* 2019-03-12 추가 */
+
+    /* 방과후영어 - 썸내일 테이블 리스트 */
+    section.after.view .filter + .table { border-top: 2px solid #273758; }
+    section.after.view .filter + .table li.th { display: none; }
+    section.after.view .filter + .table .row { position: relative; display: block; text-align: left; padding: 15px 5px 0px 0; }
+    section.after.view .filter + .table .row:before { position: absolute; right: 10px; top: 50%; margin-top: -6px; content: ""; display: block; overflow: hidden; width: 11px; height: 11px; border: 0px solid #b0b0b0; border-bottom: 0; border-left: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
+    section.after.view .filter + .table .row .cell { display: inline-block; float: left; height: auto; text-align: left; font-size: 12px; margin-right: 20px; }
+    section.after.view .filter + .table .row .cell.xxl { width: auto; }
+    section.after.view .filter + .table .row .cell.xl { width: auto; }
+    section.after.view .filter + .table .row .cell.lg { width: auto; }
+    section.after.view .filter + .table .row .cell.md { width: auto; }
+    section.after.view .filter + .table .row .cell.sm { width: auto; }
+    section.after.view .filter + .table .row .cell.xs { width: auto; }
+
+    section.after.view .filter + .table .row .cell.afterNum { position: absolute; left: 5px; top: 50%; margin-top: -20px; width: 40px; height: 40px; line-height: 40px; padding: 0; text-align:center; font-size: 14px; }
+    section.after.view .filter + .table .row .cell.afterHeder { display: inline-block; width: auto; margin-right:2%; padding: 3px 0 0!important; } /* 2019-03-12 수정  */
+    section.after.view .filter + .table .row .cell.afterTit { display: inline-block; width: 87%; font-size: 16px; margin-right:0; padding: 0 !important; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; line-height: 150%;}
+    section.after.view .filter + .table .row .cell.afterDate { font-size: 12px; color:#808080; }
+
+    /* 방과후영어 - 평가응시 */
+    section.after.problem_pop {position:relative;width:100%;height:100%;}
+    section.after.problem_pop .problem_top {width:100%;height:px;background:#30415f;}
+    section.after.problem_pop .problem_top .pt_logo {width:120px;height:75px;background: url("../images/pm_ebse_logo.png") no-repeat center center; }
+    section.after.problem_pop .problem_top .pt_tit {position:absolute;left:0;top:0;width:100%;height:75px;line-height:75px;text-align:center;font-size:25px;color:#fff;}
+    section.after.problem_pop .problem_top .pt_close {position:absolute;right:0;top:0;width:75px;height:75px;}
+    section.after.problem_pop .problem_top .pt_close:before {content:"";display:block;margin-top:-15px;overflow:hidden;width:1px;height:30px;background:#fff;transform:rotate(-45deg);position:absolute;top:50%;left:50%;}
+    section.after.problem_pop .problem_top .pt_close:after {content:"";display:block;margin-top:-15px;overflow:hidden;width:1px;height:30px;background:#fff;transform:rotate(45deg);position:absolute;top:50%;left:50%;}
+
+    section.after.problem_pop .problem_main {padding:30px 20px;}
+    section.after.problem_pop .problem_main .pm_header {width:100%;text-align:center;margin-bottom:10px;}
+    section.after.problem_pop .problem_main .pm_header span {color:#ff5900;}
+    section.after.problem_pop .problem_main .pm_txt {width:100%;text-align:center;font-size:20px;margin-bottom:15px;}
+    section.after.problem_pop .problem_main .pm_select {overflow:hidden;width:100%;background:#f5f5f5;border:1px solid #bebebe;padding:25px;}
+    section.after.problem_pop .problem_main .pm_select select {float:left;width:100%;height:40px;padding-left:10px;border:1px solid #000;margin-right:3%;background: #fff url("../images/select_arrow.png") no-repeat right center;}
+    section.after.problem_pop .problem_main .pm_select select:nth-child(2) {margin:10px 0% 0 0;}
+    section.after.problem_pop .problem_main .pm_desc {text-align:left;font-size:16px;line-height:1.4;margin:15px 0 15px 0px;;padding-left:15px;background: url("../images/pm_arrow.png") no-repeat left 8px;}
+    section.after.problem_pop .problem_main .pm_desc .pmd_c {color:#ff5900;}
+    section.after.problem_pop .problem_main .pal {margin-left:15px;}
+    section.after.problem_pop .problem_main .pac {display:block;width:200px;margin:30px auto;}
+
+
+    /* e클립 */
+    section.eclip .filter-box .categoryTab li { background:#8d3bf9; }
+    section.eclip .filter-box .categoryTab li i.keyword { color:#fff; }
+    section.eclip .filter-box.on .tab-box > .bt.done {background:#8d3bf9;}
+
+    section.eclip.view .side h5{padding-bottom: 10px;}
+    section.eclip.view .side .recom .bt.prev { position: absolute; top: 50%; margin-top: -10%; left: 0; z-index: 1; }
+    section.eclip.view .side .recom .bt.next { position: absolute; top: 50%; margin-top: -10%; right: 0; z-index: 1; }
+
+    /* 통합검색 */
+    section.search .search_result .inner {display: -webkit-box; display: -ms-flexbox;; display: flex; -ms-flex-direction: column; flex-direction: column;  }
+    section.search .search_result .inner > p { width: auto; margin: 0 20px; line-height: 1.5;}
+    section.search .search_result .inner > p:before { top: 3px !important; }
+    section.search .search_result .filter-box .filter .order > div:first-child { margin-right: -2px; }
+    section.search .search_result .filter-box .filter .order .bt {border: 2px solid #8790a2; line-height: 1.5;}
+    section.search .search_result .filter-box { margin: 0; padding: 0; margin-left: auto; width: 100%;background: none; }
+    section.search .search_result .filter-box .filter .order > div.on .bt { color: #ff6600; border: 2px solid #ff6600; line-height: 1.5;}
+    section.search .search_result .filter-box .filter .order > div:before { border: 2px solid #8790a2; border-top: 0; border-right: 0;}
+    section.search .search_result .filter-box .filter .order > div.on:before {border: 2px solid #ff6600; border-top: 0; border-right: 0;}
+
+    header.search .tap .tapt {flex: 30% !important;}
+
+    /* 방송프로그램 */
+    section.program > .inner { padding: 50px 20px; }
+    section.program .filter-box .categoryTab li { background:#583bf8; }
+    section.program .filter-box .categoryTab li i.keyword { color:#fff; }
+    section.program .filter-box.on .tab-box > .bt.done {background:#583bf8;}
+
+    /* 온라인강좌 */
+    section.online .filter-box .categoryTab li { background:#f9613a; }
+    section.online .filter-box .categoryTab li i.keyword { color:#fff; }
+    section.online .filter-box.on .tab-box > .bt.done {background:#f9613a;}
+
+    section.online .card.lie .tit { margin-top: 0; }
+    section.online .card.lie .con { height: 15px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; margin-bottom: 0; }
+
+    section.online.paper .card.lie img { margin-right: 10px; }
+    section.online.paper .card.lie .con { white-space: nowrap; text-overflow: ellipsis; }
+    section.online.paper .table .row { padding: 10px 0; }
+
+    section.online.view h5 i { font-size: 20px; }
+
+    /* 커뮤니티 */
+    section.comunity h5 { padding-top: 50px; }
+
+    section.comunity.etizen .planet li { font-size: 12px; line-height: 16px; }
+    section.comunity.etizen .planet li:before { width: 60px; height: 60px; }
+
+    section.comunity .tap { margin: 0 0 20px 0; }
+    section.comunity .tap + .filter { margin-top: 10px; }
+    section.comunity .tap.line .tapt { padding-top: 22px; }
+
+    section.comunity .filter > .bt { margin-bottom: 10px; }
+    section.comunity .filter .bind.find { margin-bottom: 20px; }
+    section.comunity .filter .bind.find .select { width: 100%; margin-bottom: 5px; }
+    section.comunity .filter .bind.find .select + .input { float: none; width: 100%; }
+    section.comunity .filter .bind.find .bt { top: auto; bottom: 0; }
+
+    section.comunity .words { padding-bottom: 30px; }
+    section.comunity > .inner { padding: 50px 20px; }
+    section.comunity .inner h3 { margin-bottom: 0px; }
+    section.comunity > .inner .table { border-top: 2px solid #273758; }
+    section.comunity > .inner .table li.th { display: none; }
+    section.comunity > .inner .table .row { position: relative; display: block; text-align: left; padding: 0 5px 10px 0; }
+    section.comunity > .inner .table .row:before { position: absolute; right: 10px; top: 50%; margin-top: -6px; content: ""; display: block; overflow: hidden; width: 11px; height: 11px; border: 0px solid #b0b0b0; border-bottom: 0; border-left: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
+    section.comunity > .inner .table .row .cell { display: inline-block; float: left; width:auto; height: auto; }
+    section.comunity > .inner .table .row .cell.xl { width: auto; }
+    section.comunity > .inner .table .row .cell.lg { width: auto; }
+    section.comunity > .inner .table .row .cell.md { width: auto; }
+    section.comunity > .inner .table .row .cell.sm { width: auto; }
+    section.comunity > .inner .table .row .cell.xs { width: auto; }
+
+    section.comunity > .inner .table.view { border-top: 1px solid #273758; }
+    section.comunity > .inner .table.view i { float: none; }
+
+    section.comunity.notice > .inner .table .row .cell.notiNum { width: 15%; font-size: 12px; line-height: 120%; }
+    section.comunity.notice > .inner .table .row .cell.notiTit { width: 85%; padding: 12px 0 10px 0; }
+    section.comunity.notice > .inner .table .row .cell.notiAdmin { clear: both; padding-left: 15%; }
+    section.comunity.notice > .inner .table .row .cell.notiDate { clear: both; position: relative; height: 20px; line-height: 20px; font-size: 12px; color:#808080; margin-right: 10px; padding:0 15px 0 15%; }
+    section.comunity.notice > .inner .table .row .cell.notiDate:after { position: absolute; right: 0; top: 5px; content: ""; display: block; width: 1px; height: 10px; background-color: #eaeaea; }
+    section.comunity.notice > .inner .table .row .cell.notiHit { float:left; height: 20px; line-height: 20px; padding:0; }
+
+    section.comunity.talk .filter > .bt:last-child { float: left; margin-left: 0; /* border: 1px solid #efefef; */ }
+    section.comunity.talk > .inner .table .row .cell.talkNum { width: 15%; font-size: 12px; line-height: 120%; }
+    section.comunity.talk > .inner .table .row .cell.talkTit { width: 85%; padding: 12px 0 10px 0; }
+    section.comunity.talk > .inner .table .row .cell.talkAdmin { clear: both; padding:0 0 0 15%; }
+    section.comunity.talk > .inner .table .row .cell.talkDate {  padding: 0 10px; font-size: 12px; color:#808080; position: relative; float: left; height: 20px; line-height: 20px; font-size: 12px; margin: 0 10px; }
+    section.comunity.talk > .inner .table .row .cell.talkDate:before { position: absolute; left: 0; top: 6px; content: ""; display: block; width: 1px; height: 10px; background-color: #eaeaea; }
+    section.comunity.talk > .inner .table .row .cell.talkDate:after { position: absolute; right: 0; top: 6px; content: ""; display: block; width: 1px; height: 10px; background-color: #eaeaea; }
+    section.comunity.talk > .inner .table .row .cell.talkHit { float:left; height: 20px; line-height: 20px; padding:0; }
+    section.comunity.talk > .inner .table .row .cell.talkreply { position: relative; float:left; height: 20px; line-height: 20px; padding: 0 10px; margin: 0 10px; }
+    section.comunity.talk > .inner .table .row .cell.talkreply:before { position: absolute; left: 0; top: 6px; content: ""; display: block; width: 1px; height: 10px; background-color: #eaeaea; }
+
+    section.comunity.alphabet > .inner .table .row { padding: 5px 45px 10px 0; }
+    section.comunity.alphabet > .inner .table .row:before { display: none; }
+
+    section.comunity.alphabet > .inner .table .row .cell:nth-child(4) { position: absolute; right: 0; top: 0; height:100%; /* margin-top: -20px; */ }
+
+    section.comunity.alphabet > .inner .table .row .cell.talkNum { width: 15%; font-size: 12px; line-height: 120%; padding-bottom:40px; }
+    section.comunity.alphabet > .inner .table .row .cell.talkTit { width: 85%; padding: 12px 0 10px 0; }
+    section.comunity.alphabet > .inner .table .row .cell.talkHit { float:left; height: 20px; line-height: 20px; /* padding:0 0 0 15%; */ padding:0; }
+
+    section.comunity.homeschool > .inner .table .row .cell.talkNum { width: 15%; font-size: 12px; line-height: 120%; padding-bottom:40px; }
+    section.comunity.homeschool > .inner .table .row .cell.talkTit { width: 85%; padding: 12px 0 10px 0; }
+    section.comunity.homeschool > .inner .table .row .cell.talkHit { float:left; height: 20px; line-height: 20px; /* padding:0 0 0 15%; */ padding:0; }
+
+    section.comunity .table.faq { border: 0; }
+    section.comunity .table.faq .row:before { display: none; }
+    section.comunity .table.faq .row .cell:nth-child(1) { width:15%; }
+    section.comunity .table.faq .row .cell:nth-child(2) { width:70%; padding-bottom: 0; }
+
+    section.comunity .table.faq .row .cell.answer_txt { /* clear:both; */ width: 85% !important; }
+
+    /* 이벤트 */
+    section.event .list.two li { width: 100%; float: none; }
+
+    section.event .filter.f_r { width: 100%; }
+    section.event .filter.f_r .bind.find { width: 100%; }
+    section.event .filter > .bt { margin-bottom: 10px; }
+
+    section.event > .inner .table li.th { display: none; }
+    section.event > .inner .table .row { position: relative; display: block; text-align: left; padding: 10px 25px 10px 0; }
+    section.event > .inner .table .row:before { position: absolute; right: 10px; top: 50%; margin-top: -6px; content: ""; display: block; overflow: hidden; width: 11px; height: 11px; border: 1px solid #b0b0b0; border-bottom: 0; border-left: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
+    section.event > .inner .table .row .cell { display: inline-block; float: left; height: auto; }
+    section.event > .inner .table .row .cell.xl { width: auto; }
+    section.event > .inner .table .row .cell.lg { width: auto; }
+    section.event > .inner .table .row .cell.md { width: auto; }
+    section.event > .inner .table .row .cell.sm { width: auto; }
+    section.event > .inner .table .row .cell.xs { width: auto; }
+    section.event > .inner .table .row .cell:nth-child(1) { width: 15%; font-size: 12px; line-height: 120%; }
+    section.event > .inner .table .row .cell:nth-child(2) { width: 85%; padding-bottom: 10px; }
+    section.event > .inner .table .row .cell:nth-child(3) { clear: both; padding-left: 15%; margin-right: 10px; }
+    section.event .table.view li.tit .ev_tit{padding-right: 0;}
+    section.event .table.view li.tit .ev_pos{position: relative; margin-top: 0;}
+    section.event .table.view li.tit .bt.ev_share{display: inline-block; margin-top: 0;}
+    section.event .table.view li.tit .bt_ev_cof{display: inline-block; margin-top: 0;}
+
+    /* 고객센터 메인 */
+    section.cs.faq .table.faq .info { height: auto; line-height: 120%; padding-top: 10px; margin-right:10px; }
+
+    section.cs.main .table { border-top: 2px solid #273758; }
+    section.cs.main .table li.th { display: none; }
+    section.cs.main .table .row { position: relative; display: block; text-align: left; padding: 0px 25px 0px 0; }
+    section.cs.main .table .row:before { position: absolute; right: 10px; top: 50%; margin-top: -6px; content: ""; display: block; overflow: hidden; width: 11px; height: 11px; border: 1px solid #b0b0b0; border-bottom: 0; border-left: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
+    section.cs.main .table .row .cell { display: block; height: auto; text-align: left; }
+    section.cs.main .table .row .cell.xxl { width: auto; }
+    section.cs.main .table .row .cell.xl { width: auto; }
+    section.cs.main .table .row .cell.lg { width: auto; }
+    section.cs.main .table .row .cell.md { width: auto; }
+    section.cs.main .table .row .cell.sm { width: auto; }
+    section.cs.main .table .row .cell.xs { width: auto; }
+    section.cs.main .table .row .cell:nth-child(1) { display: none; }
+    section.cs.main .table .row .cell:nth-child(2) { font-size: 12px; padding-bottom: 5px; }
+
+    section.cs.cont > .gray .tap { display: block; }
+    section.cs.cont > .gray .tap .tapt { width: 50%; }
+    section.cs.cont > .gray .tap .tapt:nth-child(2) { border-right: 0; }
+    section.cs.cont > .gray .tap .tapt:nth-child(3) { border-left: 0; }
+
+    section.cs.faq .filter .bind.find .select { width: 100%; margin-bottom: 10px; }
+    section.cs.faq .filter .bind.find .select + .input { width: 100%; }
+    section.cs.faq .filter .bind.find .bt { top: auto; bottom: 0; margin-top: 0; }
+
+    section.cs.faq .table.faq li:before { top: 30px; }
+    section.cs.faq .table.faq li .row.q { display: block; /* padding: 15px 0; */ padding: 0; }
+    section.cs.faq .table.faq li .row.q .cell { display: block; height: auto; float: none; }
+    section.cs.faq .table.faq li .row.q .cell.xl { width: auto; }
+    section.cs.faq .table.faq li .row.q .cell:nth-child(1) { float: left; }
+    section.cs.faq .table.faq li .row.q .cell:nth-child(2) { font-size: 14px; padding-bottom: 5px; }
+    section.cs.faq .table.faq li .row.q .cell:first-child:before { display: block; }
+    section.cs.faq .table.faq li .row.q .cell:first-child i { display: none; }
+    section.cs.faq .table.faq li.on .row.q .cell:first-child:before { display: block; }
+
+    section.cs.remote .pic { padding: 0; }
+    section.cs.remote .pic li { display: block; float: none; margin: 20px auto; }
+    section.cs.remote .pic li:nth-child(1) { padding-top: 40px; }
+    section.cs.remote .pic li:nth-child(2) { position: absolute; top: 50%; margin-top: -50px; left: 0; margin-left: 0; right: 0; width: 100%; height: 100px; background-image: url("../images/bg_remote_v.png"); background-size: auto 100%; padding-top: 15px; }
+    section.cs.remote .pic li:nth-child(3) { float: none; }
+    section.cs.remote .pic li p { float: left; width: 40%; }
+    section.cs.remote .pic li p:last-child { float: right; margin-top: 0; }
+
+    section.cs.mtom .table.view.edit li .select { float: none; width: 100%; }
+    section.cs.mtom .table.view.edit li .data { float:left; }
+
+    section.cs.down .table li.th { display:none; }
+
+    /* 마이페이지 */
+    section.my > .gray .tap { display: block; width:100%;}
+    section.my > .gray .tap .tapt { float:left; width: 50%; border-bottom: 2px solid #fff; }
+    section.my > .gray .tap .tapt:nth-child(2) { border-right:0; }
+    section.my > .gray .tap .tapt:nth-child(3) { border-left:0; }
+    /* section.my > .gray .tap .tapt:nth-child(4) { display:none; } */
+
+    section.my .etizen { padding-left: 120px; padding-bottom: 70px; }
+    section.my .etizen:before { width: 100px; height: 100px; }
+    section.my .etizen .btns { position: absolute; bottom: 0; top: auto; }
+    section.my .etizen .btns .bt {font-size: 14px; padding: 0 10px 0 10px; letter-spacing: -.5px; min-width: 104px; height: 48px;}
+    section.my .etizen .btns .bt i {display: block; text-align: left; background: url(../images/bt_back_m.png) no-repeat 98% 52%; background-size: 6px; padding-right: 5px;}
+    section.my .etizen .tit { font-size: 16px; }
+    section.my .etizen dl { font-size: 14px; padding-bottom: 10px; }
+
+    section.my .table { border-top: 2px solid #273758; }
+    section.my .table li.th { display: none; }
+    section.my .table .row .cell.xxl { width: auto; }
+    section.my .table .row .cell.xl { width: auto; }
+    section.my .table .row .cell.lg { width: auto; }
+    section.my .table .row .cell.md { width: auto; }
+    section.my .table .row .cell.sm { width: auto; }
+    section.my .table .row .cell.xs { width: auto; }
+    section.my .table .row .cell i.cate { font-size: 12px; padding: 0; padding-bottom: 5px; }
+
+    section.my .filter > .bt { margin-bottom: 10px; }
+
+    section.my .inner h3 { margin-bottom: 20px; }
+
+    section.my .box { padding: 20px; }
+    section.my .box .words { font-size: 30px; }
+    section.my .box .text { font-size: 16px; }
+
+    section.my .non_mah_in{padding: 100px 0;}
+    section.my .non_mah_in > p{padding-top: 100px; background: url(../images/nodata.png) no-repeat 50% 0; background-size: 80px auto; font-size: 18px; color: #838282; line-height: 160%; text-align: center;}
+
+    section.my.main .half { display: block; width: 100%; float: none; }
+    section.my.main .half:first-child { float: none; padding-bottom: 30px; }
+    section.my.main .tap { display: block; background: none; }
+    section.my.main .tap .tapt { width: 50%; border-bottom: 2px solid #fff; background-color: #878fa2;}
+    section.my.main .tap .tapt.on {background-color: #3d4c6b;}
+    section.my.main .tap .tapt:nth-child(1n){float: left;}
+    section.my.main .tap .tapt:nth-child(2n){float: right;}
+    section.my.main .tap .tapt:nth-child(2) { border-right: 0; }
+    section.my.main .tap .tapt:nth-child(3) { border-left: 0; }
+    section.my.main .table .row { position: relative; display: block; padding: 15px 0; padding-right: 30px; }
+    section.my.main .table .row:before { position: absolute; right: 10px; top: 50%; margin-top: -6px; content: ""; display: block; overflow: hidden; width: 11px; height: 11px; border: 0px solid #b0b0b0; border-bottom: 0; border-left: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
+    section.my.main .table .row .cell { display: inline-block; float: left; height: auto; text-align: left; font-size: 14px; line-height: 120%; padding-top: 10px; margin-right: 20px; }
+    section.my.main .table .row .cell:nth-child(1) { display: block; width: 100%; padding-top: 0; margin-right: 0; }
+    section.my.main .table .row .cell:nth-child(2) { display: block; width: 100%; padding-top: 0; margin-right: 0; }
+
+    section.my.use .table .row { position: relative; display: block; padding: 15px 0; padding-right: 30px; }
+    section.my.use .table .row:before { position: absolute; right: 10px; top: 50%; margin-top: -6px; content: ""; display: block; overflow: hidden; width: 11px; height: 11px; border: 0px solid #b0b0b0; border-bottom: 0; border-left: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
+    section.my.use .table .row .cell { display: inline-block; float: left; height: auto; text-align: left; font-size: 18px; line-height: 120%; padding-top: 10px; margin-right: 20px; }
+
+    section.my.use.class .table .row { padding-left: 50px; }
+    section.my.use.class .table .row .cell.myNum { position: absolute; left: 5px; top: 50%; margin-top: -20px; width: 40px; height: 40px; line-height: 40px; padding: 0; text-align:center; font-size: 14px; }
+    section.my.use.class .table .row .cell.myHeder { display: block; width: 100%; padding: 0 0 5px 0 !important; }
+    section.my.use.class .table .row .cell.myTit { display: inline-block; width: 100%; font-size: 16px; padding: 0 0 10px 0 !important; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; line-height: 150%;}
+    section.my.use.class .table .row .cell.myStartDate { font-size: 12px; padding: 0 5px 5px 0 !important; }
+    section.my.use.class .table .row .cell.myStartDate:before { content: "학습시작일"; color: #b0b0b0; padding-right: 5px; }
+    section.my.use.class .table .row .cell.myEndDate { font-size: 12px; padding: 0 5px 0 0 !important; }
+    section.my.use.class .table .row .cell.myEndDate:before { content: "최근학습일"; color: #b0b0b0; padding-right: 5px; }
+
+    section.my.study .table .row { position: relative; display: block; padding: 15px 0 15px 50px; }
+    section.my.study .table .row:before { position: absolute; right: 10px; top: 50%; margin-top: -6px; content: ""; display: block; overflow: hidden; width: 11px; height: 11px; border: 0px solid #b0b0b0; border-bottom: 0; border-left: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
+    section.my.study .table .row .cell { display: inline-block; float: left; height: auto; text-align: left; font-size: 16px; line-height: 120%; padding-top: 5px; margin-right: 20px; }
+
+    section.my.study .table .row .cell.myNum { position: absolute; left: 5px; top: 50%; margin-top: -20px; width: 40px; height: 40px; line-height: 40px; padding: 0; text-align:center; font-size: 14px; }
+    section.my.study .table .row .cell.myHeder { display: block; width: 100%; padding: 0 0 5px 0 !important; }
+    section.my.study .table .row .cell.myTit { display: inline-block; width: 100%; font-size: 16px; padding: 0 0 10px 0 !important; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; line-height: 150%;}
+    section.my.study .table .row .cell.myStartDate { font-size: 12px; padding: 0 5px 5px 0 !important; }
+    section.my.study .table .row .cell.myStartDate:before { content: "학습시작일"; color: #b0b0b0; padding-right: 5px; }
+    section.my.study .table .row .cell.myEndDate { font-size: 12px; padding: 0 5px 0 0 !important; }
+    section.my.study .table .row .cell.myEndDate:before { content: "최근학습일"; color: #b0b0b0; padding-right: 5px; }
+
+    section.my.write .table .row { position: relative; display: block; padding: 15px 0 0 0; padding-right: 30px; padding-left: 50px; }
+    section.my.write .table .row:before { position: absolute; right: 10px; top: 50%; margin-top: -6px; content: ""; display: block; overflow: hidden; width: 11px; height: 11px; border: 0px solid #b0b0b0; border-bottom: 0; border-left: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
+    section.my.write .table .row .cell { display: inline-block; float: left; height: auto; text-align: left; font-size: 14px; line-height: 120%; padding-top: 10px; margin-right: 20px; }
+
+    section.my.write .table .row .cell.myNum { position: absolute; left: 5px; top: 50%; margin-top: -20px; width: 40px; height: 40px; line-height: 40px; padding: 0; text-align:center; font-size: 14px; }
+    section.my.write .table .row .cell.myHeder { display: block; width: 100%; padding: 0 0 5px 0 !important; }
+    section.my.write .table .row .cell.myTit { display: inline-block; width: 100%; font-size: 16px; padding: 0 0 10px 0 !important; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; line-height: 150%;}
+    section.my.write .table .row .cell.myDate { font-size: 12px; color:#808080; }
+
+    section.my.re .table .row { position: relative; display: block; padding: 15px 30px 0 50px; }
+    section.my.re .table .row:before { position: absolute; right: 10px; top: 50%; margin-top: -6px; content: ""; display: block; overflow: hidden; width: 11px; height: 11px; border: 0px solid #b0b0b0; border-bottom: 0; border-left: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
+    section.my.re .table .row .cell { display: inline-block; float: left; height: auto; text-align: left; font-size: 14px; line-height: 120%; padding-top: 10px; margin-right: 20px; }
+
+    section.my.re .table .row .cell.myNum { position: absolute; left: 5px; top: 50%; margin-top: -20px; width: 40px; height: 40px; line-height: 40px; padding: 0; text-align:center; font-size: 14px; }
+    section.my.re .table .row .cell.myHeder { display: block; width: 100%; padding: 0 0 5px 0 !important; }
+    section.my.re .table .row .cell.myTit { display: inline-block; width: 100%; font-size: 16px; padding: 0 0 10px 0 !important; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; line-height: 150%;}
+    section.my.re .table .row .cell.myDate { font-size: 12px; color:#808080; }
+
+    section.my.qna .table .row { position: relative; display: block; padding: 15px 0; padding-right: 0px; padding-left: 50px; }
+    section.my.qna .table .row:before { position: absolute; right: 10px; top: 50%; margin-top: -6px; content: ""; display: block; overflow: hidden; width: 11px; height: 11px; border: 0px solid #b0b0b0; border-bottom: 0; border-left: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
+    section.my.qna .table .row .cell { display: inline-block; float: left; height: auto; text-align: left; font-size: 14px; line-height: 120%; padding-top: 10px; margin-right: 20px; }
+
+    section.my.qna .table .row .cell.myNum { position: absolute; left: 5px; top: 50%; margin-top: -20px; width: 40px; height: 40px; line-height: 40px; padding: 0; text-align:center; font-size: 14px; }
+    section.my.qna .table .row .cell.myHeder { display: block; width: 100%; padding: 0 0 5px 0 !important; }
+    section.my.qna .table .row .cell.myTit { display: inline-block; width: 100%; font-size: 16px; padding: 0 0 10px 0 !important; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; line-height: 150%;}
+    section.my.qna .table .row .cell.myDate { font-size: 12px; color:#808080; }
+
+    /* 마이페이지 1:1문의 - 현재 메뉴 히든 */
+    section.my.mtom .table .row { position: relative; display: block; padding: 15px 0; padding-right: 0px; padding-left: 50px; }
+    section.my.mtom .table .row:before { position: absolute; right: 10px; top: 50%; margin-top: -6px; content: ""; display: block; overflow: hidden; width: 11px; height: 11px; border: 0px solid #b0b0b0; border-bottom: 0; border-left: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
+    section.my.mtom .table .row .cell { display: inline-block; float: left; height: auto; text-align: left; font-size: 14px; line-height: 120%; padding-top: 10px; margin-right: 20px; }
+
+    section.my.mtom .table .row .cell.myNum { position: absolute; left: 5px; top: 50%; margin-top: -20px; width: 40px; height: 40px; line-height: 40px; padding: 0; text-align:center; font-size: 14px; }
+    section.my.mtom .table .row .cell.myHeder { display: block; width: 100%; padding: 0 0 5px 0 !important; }
+    section.my.mtom .table .row .cell.myTit { display: inline-block; width: 100%; font-size: 16px; padding: 0 0 10px 0 !important; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; line-height: 150%;}
+    section.my.mtom .table .row .cell.myDate { font-size: 12px; color:#808080; }
+
+    section.my.match .filter .bind { margin-left: 0; }
+
+    section.my.match .table .row { position: relative; display: block; padding: 15px 0 0 0; padding-right: 30px; }
+    section.my.match .table .row:before { position: absolute; right: 10px; top: 50%; margin-top: -6px; content: ""; display: block; overflow: hidden; width: 11px; height: 11px; border: 0px solid #b0b0b0; border-bottom: 0; border-left: 0; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
+    section.my.match .table .row .cell { display: inline-block; float: left; height: auto; text-align: left; font-size: 18px; line-height: 120%; padding-top: 10px; margin-right: 20px; }
+
+    section.my.match .table .row .cell.myNum { position: absolute; left: 5px; top: 50%; margin-top: -20px; width: 40px; height: 40px; line-height: 40px; padding: 0; text-align:center; font-size: 14px; }
+    section.my.match .table .row .cell.myHeder { display: block; width: 100%; padding: 0 0 5px 0 !important; }
+    section.my.match .table .row .cell.myTit { display: inline-block; width: 100%; font-size: 16px; padding: 0 0 10px 0 !important; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; line-height: 150%;}
+    section.my.match .table .row .cell.myDate { font-size: 12px; color:#808080; }
+
+    section.my.etizen .etizen { padding-left: 140px; padding-bottom: 70px; }
+    section.my.etizen .etizen:before { left: 20px; top: 20px; }
+    section.my.etizen .etizen .btns { left: 20px; right: 20px; bottom: 20px; width: auto; }
+    section.my.etizen .etizen .btns .bt { width: auto; padding: 0 20px; }
+    section.my.etizen .table li.th { display: block; }
+    section.my.etizen .table .row .cell { width: 25%; }
+    section.my.etizen .table .row .cell.xl { width: 25%; }
+
+    section.my.data .table .select { width: 100%; float: none; margin-right: 0; }
+    section.my.data .table .text { float: none; width: 100%; height: auto; line-height: 120%; }
+    section.my.data .table .combo { float: none; width: auto; margin-right: 20px; }
+    section.my.data .table .info { height: auto; line-height: 120%; font-size: 12px; }
+
+    section.my.pw > .inner { padding: 50px 20px 50px 20px; }
+    section.my.pw .check { width: 100%; }
+    section.my.pw .check:before { left: 0; }
+    section.my.pw .btns { width: 100%; }
+
+    section.my > .inner { padding: 50px 20px; }
+    section.my .gray .inner { padding: 50px 20px 30px 20px; }
+    section.my.main .title { clear: both; padding: 30px 0 20px 0; }
+
+    /* 공통 - 수정 20181117 */
     .table .row {position: relative; display: table; overflow: inherit; width: 100%;/*padding:10px 0 65px 0;*/ }
     .table .ech_Box {padding:20px 0 65px 0;}
     .table .row .cell{ width:auto;height: auto;}
@@ -2432,80 +2511,83 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
     .table .row .cellHome .btn_home { width:auto;line-height:38px;}
     .table .row .cellCart .btn_cart { width:auto;line-height:38px;}
 
-	/* 2021-03-29 펀리딩 에그붐 */
-	.funList .table .row {position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column; overflow: inherit; width: 100%;}
-	.funList .table .row .cell {display: block;}
-	.funList .table .row .cell.download {display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-direction: row-reverse; flex-flow: row-reverse; margin: 10px 0;}
-	.funList .table .row .cell.download a {width: 33.3333%}
-	.funList .table .row .cell.download a + a { margin-top: 0; margin-right: 5px !important;}
-	.funList .table .card .tit {height: auto !important; line-height: 1.3;}
+    /* 2021-03-29 펀리딩 에그붐 */
+    .funList .table .row {position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -ms-flex-direction: column; flex-direction: column; overflow: inherit; width: 100%;}
+    .funList .table .row .cell {display: block;}
+    .funList .table .row .cell.download {display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-direction: row-reverse; flex-flow: row-reverse; margin: 10px 0;}
+    .funList .table .row .cell.download a {width: 33.3333%}
+    .funList .table .row .cell.download a + a { margin-top: 0; margin-right: 5px !important;}
+    .funList .table .card .tit {height: auto !important; line-height: 1.3;}
 
 
     /* 온에어 */
-	section.tv .inner > .bt.bd { width: 80px; padding: 0; }
-	section.tv .tap.line .tapt p { padding-top: 30px; }
+    section.tv .inner > .bt.bd { width: 80px; padding: 0; }
+    section.tv .tap.line .tapt p { padding-top: 30px; }
 
     /* 수정 20181117 */
     section.tv .table .row .cell { float:left; height: auto; width:80%; }
-	section.tv .table .row .cell:first-child { display: table-cell; min-width: 60px;width:15%;vertical-align: middle; padding-top: 2px;font-size: 18px; }
+    section.tv .table .row .cell:first-child { display: table-cell; min-width: 60px;width:15%;vertical-align: middle; padding-top: 2px;font-size: 18px; }
     section.tv .table .row .cell strong {display:initial; vertical-align:middle;max-width:80%;height:auto;font-size: 16px; margin-right: 10px; overflow:hidden;text-overflow:ellipsis; white-space:normal; word-wrap:break-word; }
     section.tv .table .row .cell em { display: block; padding-left: 0; vertical-align:middle;width:100%;height:auto;font-size: 16px; margin-right: 10px; overflow:hidden;text-overflow:ellipsis; white-space:inherit; word-wrap:break-word; }
-	section.tv .table .row .cell .chTable_em { padding: 5px 0 0 0; display: block; width: 100%; height: auto; overflow: hidden; text-overflow: ellipsis; white-space: inherit; word-wrap: break-word; vertical-align: middle;}
-	section.tv .side .table .row .cell em { display: block; padding:5px 0 0 0; line-height: inherit; }
+    section.tv .table .row .cell .chTable_em { padding: 5px 0 0 0; display: block; width: 100%; height: auto; overflow: hidden; text-overflow: ellipsis; white-space: inherit; word-wrap: break-word; vertical-align: middle;}
+    section.tv .side .table .row .cell em { display: block; padding:5px 0 0 0; line-height: inherit; }
 
-	section.tv .list.three li { width: 49%; margin: 5px 0; }
-	section.tv .list.three li:nth-child(even) { float: right; }
-	section.tv .list.three li:nth-child(4n-2) { margin: 5px 0; }
-	section.tv .list.three li:nth-child(4n-1) { margin: 5px 0; }
-	section.tv .list.three li:nth-child(3n-1) { margin: 5px 0; }
+    section.tv .list.three li { width: 49%; margin: 5px 0; }
+    section.tv .list.three li:nth-child(even) { float: right; }
+    section.tv .list.three li:nth-child(4n-2) { margin: 5px 0; }
+    section.tv .list.three li:nth-child(4n-1) { margin: 5px 0; }
+    section.tv .list.three li:nth-child(3n-1) { margin: 5px 0; }
 
-	section.tv .state { padding: 10px 0; }
-	section.tv .state li { width: 50%; }
-	section.tv .state li p { padding-left: 5px; }
+    section.tv .state { padding: 10px 0; }
+    section.tv .state li { width: 50%; }
+    section.tv .state li p { padding-left: 5px; }
 
-	section.tv .tap.line.scroll {width:100%;}
-	section.tv .tap.line.scroll .tapt:nth-child(1) { display:none; }
-	section.tv .tap.line.scroll .tapt:nth-child(2) { display:none; }
-	section.tv .tap.line.scroll .tapt:nth-child(3) { width:33.333%; }
-	section.tv .tap.line.scroll .tapt:nth-child(4) { width:33.333%; }
-	section.tv .tap.line.scroll .tapt:nth-child(5) { width:33.333%; }
-	section.tv .tap.line.scroll .tapt:nth-child(6) { display:none; }
-	section.tv .tap.line.scroll .tapt:nth-child(7) { display:none; }
+    section.tv .tap.line.scroll {width:100%;}
+    section.tv .tap.line.scroll .tapt:nth-child(1) { display:none; }
+    section.tv .tap.line.scroll .tapt:nth-child(2) { display:none; }
+    section.tv .tap.line.scroll .tapt:nth-child(3) { width:33.333%; }
+    section.tv .tap.line.scroll .tapt:nth-child(4) { width:33.333%; }
+    section.tv .tap.line.scroll .tapt:nth-child(5) { width:33.333%; }
+    section.tv .tap.line.scroll .tapt:nth-child(6) { display:none; }
+    section.tv .tap.line.scroll .tapt:nth-child(7) { display:none; }
 
-	/* 공통 */
-	body.sub .page { padding: 30px 0 0 0; }
+    /* 공통 */
+    body.sub .page { padding: 30px 0 0 0; }
 
-	.movie h3 { width:85%; padding-bottom:20px; vertical-align:middle; }
+    .movie h3 { width:85%; padding-bottom:20px; vertical-align:middle; }
 }
 
 @media all and (max-width: 575px) {
-	/* 커뮤니티 */
-	section.comunity > .inner .table .row .cell.talkDate_ml { margin-left:50px;}
-	/* e클립 */
-	section.eclip.view .side .recom .bt.prev { position: absolute; top: 50%; margin-top: -22%; left: 0; z-index: 1; }
-	section.eclip.view .side .recom .bt.next { position: absolute; top: 50%; margin-top: -22%; right: 0; z-index: 1; }
+    /* 커뮤니티 */
+    section.comunity > .inner .table .row .cell.talkDate_ml { margin-left:50px;}
+    /* e클립 */
+    section.eclip.view .side .recom .bt.prev { position: absolute; top: 50%; margin-top: -22%; left: 0; z-index: 1; }
+    section.eclip.view .side .recom .bt.next { position: absolute; top: 50%; margin-top: -22%; right: 0; z-index: 1; }
+    section.my .gray_box .box_con.etizen_con .etizen_wrap {transform: translateX(-18px);}
+    section.level .gray_bg > .inner .lv_progress {background: url(../images/level_test/lv_m_progress.png) no-repeat; background-size: 100%; padding-top: 45%;}
+
 }
 @media all and (max-width: 440px) {
-	section.my .etizen .btns .bt {font-size: 13px;padding: 0 10px 0 10px;letter-spacing: -1px;}
-	section.my .gray_box .box_con.status_con .contents .learning_stage > img {max-width: 104px; max-height: 104px;}
-	section.my .gray_box .box_con.used_nodata .legend-div, section.my .gray_box .box_con.study_nodata .legend-div {padding-left: 0;}
-	section.my .gray_box .box_con.status_con .contents .learning_stage {transform: translateX(0px);}
-	section.my .gray_box .box_con.reading_activities_con .single_chart {margin-right: 0px; width: 120px; height: 120px; min-width: 120px; min-height: 120px; transform: translate(-7px,0px);}
-	section.my .gray_box .box_con.reading_activities_con .num_detail_con {margin-right: 0px;}
-	section.my .gray_box .box_con.etizen_con .ico_etizen {transform: translateX(-38%);}
-	section.my .content_used_con .contents .pie_wrap,section.my .study_room_con .contents .pie_wrap {width: 160px; height: 160px; transform: translate(7px,-25px);}
-	section.my .gray_box .box_con.etizen_con .ico_etizen {transform: translateX(-50px); width: 120px; height: 120px;}
-	section.my .gray_box .box_con.status_con .contents .progress.step_100 .learning_icon {background-position: bottom; background-size: 77%;left: calc(100% - 24px);}
-	section.my .gray_box .box_con.reading_activities_con .circular_chart {max-width: 106px; max-height: 106px;}
-	section.my .gray_box .box_con.etizen_con .ico_etizen:before {width: 104px; height: 104px; max-width: 104px; max-height: 104px;}
-	section.my .content_used_con .contents ul {transform: translateX(10px);}
-	section.my .study_room_con .contents ul {transform: translateX(10px);}
+    section.my .etizen .btns .bt {font-size: 13px;padding: 0 10px 0 10px;letter-spacing: -1px;}
+    section.my .gray_box .box_con.status_con .contents .learning_stage > img {max-width: 104px; max-height: 104px;}
+    section.my .gray_box .box_con.used_nodata .legend-div, section.my .gray_box .box_con.study_nodata .legend-div {padding-left: 0;}
+    section.my .gray_box .box_con.status_con .contents .learning_stage {transform: translateX(0px);}
+    section.my .gray_box .box_con.reading_activities_con .single_chart {margin-right: 0px; width: 120px; height: 120px; min-width: 120px; min-height: 120px; transform: translate(-7px,9px);}
+    section.my .gray_box .box_con.reading_activities_con .num_detail_con {margin-right: 0px;}
+    section.my .gray_box .box_con.etizen_con .ico_etizen {transform: translateX(-38%);}
+    section.my .content_used_con .contents .pie_wrap,section.my .study_room_con .contents .pie_wrap {width: 160px; height: 160px; transform: translate(7px,-25px);}
+    section.my .gray_box .box_con.etizen_con .ico_etizen {transform: translateX(-40px); width: 120px; height: 120px;}
+    section.my .gray_box .box_con.status_con .contents .progress.step_100 .learning_icon {background-position: bottom; background-size: 77%;left: calc(100% - 24px);}
+    section.my .gray_box .box_con.reading_activities_con .circular_chart {max-width: 106px; max-height: 106px;}
+    section.my .gray_box .box_con.etizen_con .ico_etizen:before {width: 104px; height: 104px; max-width: 104px; max-height: 104px;}
+    section.my .content_used_con .contents ul {transform: translateX(10px);}
+    section.my .study_room_con .contents ul {transform: translateX(10px);}
 }
 
 @media all and (max-width: 360px) {
-	/* 레벨 테스트 */
-	section.level .exam.self .title { height: auto; }
-	section.level .exam.self .title .words { padding: 20px 10px 30px 10px; }
-	section.level .result .box .text { display: block; float: none; width: 100%; padding: 0 20px 30px 20px;}
-	section.my .etizen .btns .bt {padding: 0 5px 0 5px;}
+    /* 레벨 테스트 */
+    section.level .exam.self .title { height: auto; }
+    section.level .exam.self .title .words { padding: 20px 10px 30px 10px; }
+    section.level .result .box .text { display: block; float: none; width: 100%; padding: 0 20px 30px 20px;}
+    section.my .etizen .btns .bt {padding: 0 5px 0 5px;}
 }
