@@ -410,6 +410,10 @@ section.level .white_bg > .inner .contents_wrap .contents_map .map_con .map_box,
 section.level .white_bg > .inner .contents_wrap button {position: relative;background: #30415F; width: 100%; max-width: 390px; height: 50px; color: #fff; text-align: left; padding: 15px 40px; line-height: 1;}
 section.level .white_bg > .inner .contents_wrap button:after {content: ""; background: url(../images/bt_back_w.png) no-repeat; background-size: 25px; padding-right: 40px; position: absolute; margin-top: 2px; right: 0; width: 25px; height: 8px;}
 
+/* 레벨테스트 결과 */
+section.level .inner .lv_result_btn {display: block;width: 200px; height: 50px;border: 1px solid #B6B6B6;font-size: 16px; margin: 50px auto 60px;}
+section.level .inner .lv_result_btn:hover {background: #F57E25; color: #fff; border: 1px solid #F57E25}
+
 /* funList */
 section.level.report .goList {position:relative;padding-right:15px;display:block;float:right;font-size:0.875rem;font-weight: 400;color:#000;letter-spacing: 0px;}
 section.level.report .goList:before {position: absolute;right:2px;top:12px;content: "";display: block;overflow: hidden;width: 7px;height: 7px;border: 1px solid #000;border-bottom: 0;border-left: 0;-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);-o-transform: rotate(45deg);transform: rotate(45deg);}
@@ -1341,17 +1345,25 @@ section.my .study_room_con .contents ul li:first-child::before {content: ''; pos
 section.my .study_room_con .contents ul li:last-child::before {content: ''; position: absolute; top: 7.5px; left: 0; width: 12px;height: 12px;border-radius: 100px;background-color: #583BF8;}
 
 /******************** 기타 ********************/
-/* 온에어 & 편성표 */
+/* 2022 온에어 & 편성표 */
 section.tv > .inner { padding: 60px 0; }
 section.tv .non_data{display: block; min-height: 280px; padding: 100px 0;border-bottom: 1px solid #dbdbdb;}
 section.tv .non_data > p{padding-top: 160px; background: url(../images/nodata.png) no-repeat 50% 0; font-size: 28px; color: #838282; line-height: 160%; text-align: center;}
-
+section.tv .onair_banner { padding: 70px 0 10px;}
 section.tv .inner h3 { margin-bottom: 20px; }
 section.tv > .gray { padding: 60px 0 20px 0; }
 section.tv .inner > .bt { width: 120px; margin-bottom: 10px; }
+section.tv .inner > #tabContents > .bt { margin-bottom: 10px; }
+section.tv .inner > #tabContents > .bt + .bt { margin-left: 5px; }
 section.tv .inner > .bt + .bt { margin-left: 5px; }
+section.tv .movie_wrap {border: 1px solid #DFDFDF;height: 427px;}
 section.tv .movie { float: left; width: 70%; }
 section.tv .movie .media { margin: 0; }
+
+section.tv .onair_tab {display: -webkit-box; display: -ms-flexbox; display: flex;-webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between;margin-bottom: 40px;}
+section.tv .onair_tab li {width: 49.8%;max-width: 488px;}
+section.tv .onair_tab li a { display: block; width: 100%; height: 50px; padding: 17px 0; margin: 0; text-align: center; font-size: 1rem; color: #fff; background: #888fa2; -webkit-transition: all 0.2s; transition: all 0.2s; }
+section.tv .onair_tab li a:hover, section.tv .onair_tab li a.on { color: #fff; background: #3d4c6b; }
 
 section.tv .noservice { display: block; width: 100%; height: 425px; text-align: center; background-color: #000; padding-top: 150px; }
 section.tv .noservice .tit { position: relative; display: inline-block; color: #ff8200; font-size: 18px; padding-left: 30px; margin-bottom: 20px; }
@@ -1412,7 +1424,7 @@ section.tv .list.three li { width: 32%; }
 section.tv .list.three li:nth-child(4n-2) { margin: 5px 0; }
 section.tv .list.three li:nth-child(4n-1) { margin: 5px 0; }
 section.tv .list.three li:nth-child(3n-1) { margin: 5px 2%; }
-section.tv .bnr { display: block; overflow: hidden; width: 100%; margin-top: 20px; }
+section.tv .bnr { display: block; overflow: hidden; width: 100%; padding: 0; }
 section.tv .bnr img { width: 100%; }
 
 section.tv i.condi { display: inline-block; min-width: 18px; height: 18px; line-height: 18px; text-align: center; color: #fff; font-size: 11px; border-radius: 2px; padding: 0 3px; }
@@ -1433,6 +1445,8 @@ section.tv i.condi.tion12 { background-color: #db94a2; }
 section.tv .state { display: block; overflow: hidden; border: 1px solid #b6b6b6; padding: 20px; margin: 30px 0; }
 section.tv .state li { display: inline-block; overflow: hidden; float: left; width: 25%; text-align: right; padding: 5px 0; }
 section.tv .state li p { display: inline-block; width: 70%; text-align: left; color: #232323; font-size: 12px; padding-left: 10px; }
+
+
 
 /* CS - guide 사이트 이용안내 */
 section.guide .gray h3 {margin-bottom:48px;}
@@ -1820,9 +1834,12 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
     section.event .gray .inner { padding: 0 20px; }
 
     /* 온에어 */
-    section.tv > .inner { padding: 30px 20px; }
+    section.tv .onair_banner { padding: 70px 0 0; }
+    section.tv .onair_tab {margin-bottom: 20px;}
     section.tv > .gray { padding: 50px 20px 20px 20px; }
     section.tv .movie { float: none; width: 100%; }
+    section.tv .movie_wrap {height: auto}
+    section.tv > .inner { padding: 30px 20px; }
     section.tv .side { float: none; overflow-y: hidden; width: 100%; height: auto !important; }
     section.tv .side .table .row .cell em { width: 90%; font-size: 12px; line-height: 100%; white-space: normal; text-overflow: inherit; }
     section.tv .noservice { height: 225px; padding-top: 70px; }
@@ -2088,6 +2105,11 @@ section.guide .guideCont .stepCont .mgB15 {margin-bottom:15px;}
     section.level .white_bg > .inner .contents_wrap .lvtest_result .lvtest_con {margin-left: 0; background: #fff;padding: 20px 0 10px;}
     section.level .white_bg > .inner .contents_wrap button {max-width: 100%;}
     section.level .white_bg > .inner .contents_wrap .contents_map .map_con img, section.level .white_bg > .inner .contents_wrap .lvtest_result .lvtest_con img {margin-right: 5px;}
+
+    /* 레벨테스트 결과 */
+    section.level .inner .lv_result_btn { margin: 50px auto 50px;}
+    section.tv .bnr {padding: 0;}
+
     /* 방과후영어 - 썸내일 리스트 */
     section.after > .inner { padding: 50px 0 30px 0; }
 
