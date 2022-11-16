@@ -1107,7 +1107,7 @@ $(document).ready(function() {
 		}
 	});
 
-	/* 비회원 콘텐츠 이용안내 팝업 */
+	/* 교과서 영어 내보내기 팝업 */
 	var acodian = {
 	  click: function(target) {
 		var _self = this,
@@ -1140,6 +1140,75 @@ $(document).ready(function() {
 
 	};
 	acodian.click('.accordion');
+
+	/* 레벨테스트 js */
+		var item_li =$('.self_item ul li');
+		var item_ck = $('.item_check input[type="radio"]');
+		$(item_li).on('click',function() {
+			if($(this).hasClass('on')){
+				$(this).removeClass('on');
+				$(this).children().removeClass('active');
+				$(this).children().children('input[type="radio"]').prop("checked", false);
+			}else {
+				$(this).addClass('on').siblings().removeClass('on');
+				$(this).children().addClass('active').parent().siblings().children().removeClass('active');
+				$(this).children().children('input[type="radio"]').prop("checked", true);
+			}
+		});
+		$(item_ck).on('click',function() {
+			if ($(this).parent().parent('li').hasClass('on')) {
+				$(this).parent().parent('li').removeClass('on');
+				$(this).prop("checked", false);
+			} else{
+				$(this).parent().parent('li').addClass('on').siblings().removeClass('on');
+				$(this).prop("checked", true);
+			}
+		});
+
+		var lv_acodian = {
+			click: function(target) {
+				var _self = this, $target = $(target);
+
+				$target.on('click', function() {
+					var $this = $(this);
+					if ($this.next('.lv_panal').css('display') == 'none') {
+						$('.lv_panal').slideUp();
+						_self.onremove($target);
+
+						$this.addClass('on');
+						$this.next().slideDown(200);
+					} else {
+						$('.lv_panal').slideUp(0);
+						_self.onremove($target);
+					}
+				});
+			},
+			onremove: function($target) {
+				$target.removeClass('on');
+			}
+		};
+		lv_acodian.click('.lv_tit');
+
+	function panal_open() {
+		var lvPanal = $('.lv_info_wrap .lv_panal');
+		var lvTit = $('.lv_info_wrap .lv_tit');
+		ww = $(window).width();
+		if (ww > 739){
+			lvPanal.css('display', 'block');
+		}else{
+			lvTit.removeClass('on');
+			lvPanal.css('display', 'none');
+		}
+	}
+	panal_open();
+
+	$(window).on('resize', function () {
+		var lvPanal = $('.lv_info_wrap .lv_panal');
+		ww = $(window).width();
+		if (ww > 739){
+			lvPanal.css('display', 'block');
+		}
+	});
 
 	/* FIX 20200804 수정 */
 	$(function(){

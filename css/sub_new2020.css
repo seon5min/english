@@ -406,8 +406,8 @@ section.level .white_bg > .inner .contents_wrap .lvtest_result {display: table-c
 section.level .white_bg > .inner .contents_wrap .contents_map .map_con {position: relative;background-color: #F8F8F8; min-height: 170px; padding: 30px 40px 20px; margin-right: 20px;}
 section.level .white_bg > .inner .contents_wrap .lvtest_result .lvtest_con {position: relative;background-color: #F8F8F8; min-height: 170px; padding: 30px 40px 20px; margin-left: 20px;}
 section.level .white_bg > .inner .contents_wrap .contents_map .map_con .map_txt,section.level .white_bg > .inner .contents_wrap .lvtest_result .lvtest_con .lvtest_txt {font-size: 18px; line-height: 1.4; letter-spacing: -0.9px; color: #30415F;}
-section.level .white_bg > .inner .contents_wrap .contents_map .map_con .map_box,section.level .white_bg > .inner .contents_wrap .lvtest_con .lvtest_box {display: -webkit-box; display: -ms-flexbox; display: flex;-webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between;-webkit-box-align: center; -ms-flex-align: center;align-items: center;}
-section.level .white_bg > .inner .contents_wrap button {position: relative;background: #30415F; width: 100%; max-width: 390px; height: 50px; color: #fff; text-align: left; padding: 15px 40px; line-height: 1; margin-top: 15px;}
+section.level .white_bg > .inner .contents_wrap .contents_map .map_con .map_box,section.level .white_bg > .inner .contents_wrap .lvtest_con .lvtest_box {display: -webkit-box; display: -ms-flexbox; display: flex;-webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between;-webkit-box-align: center; -ms-flex-align: center;align-items: center;margin-bottom: 15px;}
+section.level .white_bg > .inner .contents_wrap button {position: relative;background: #30415F; width: 100%; max-width: 390px; height: 50px; color: #fff; text-align: left; padding: 15px 40px; line-height: 1;}
 section.level .white_bg > .inner .contents_wrap button:after {content: ""; background: url(../images/bt_back_w.png) no-repeat; background-size: 25px; padding-right: 40px; position: absolute; margin-top: 2px; right: 0; width: 25px; height: 8px;}
 
 /* funList */
