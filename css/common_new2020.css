@@ -1062,10 +1062,13 @@ nav.gnbWrap .gnb ul.menu li .smenu .sm.w42:hover:after { content: ""; width: 42p
 nav.gnbWrap .gnb ul.menu li .smenu .sm.w48:hover:after { content: ""; width: 48px; }
 nav.gnbWrap .gnb ul.menu li .smenu .sm.w59:hover:after { content: ""; width: 59px; }
 nav.gnbWrap .gnb ul.menu li .smenu .sm.w74:hover:after { content: ""; width: 74px; }
+nav.gnbWrap .gnb ul.menu li .smenu .sm.w81:hover:after { content: ""; width: 81px; }
 nav.gnbWrap .gnb ul.menu li .smenu .sm.w89:hover:after { content: ""; width: 89px; }
 nav.gnbWrap .gnb ul.menu li .smenu .sm.w92:hover:after { content: ""; width: 92px; }
 nav.gnbWrap .gnb ul.menu li .smenu .sm.w98:hover:after { content: ""; width: 98px; }
-nav.gnbWrap .gnb ul.menu li .smenu .sm.w111:hover:after { content: ""; width: 108px; }
+nav.gnbWrap .gnb ul.menu li .smenu .sm.w104:hover:after { content: ""; width: 104px; }
+nav.gnbWrap .gnb ul.menu li .smenu .sm.w111:hover:after { content: ""; width: 111px; }
+nav.gnbWrap .gnb ul.menu li .smenu .sm.w117:hover:after { content: ""; width: 117px; }
 nav.gnbWrap .gnb ul.menu li .smenu .sm.w120:hover:after { content: ""; width: 120px; }
 nav.gnbWrap .gnb ul.menu li:hover .mm { color: #ff8400; }
 nav.gnbWrap .gnb ul.menu:hover:before { height: 335px; }
@@ -1302,12 +1305,25 @@ article.popup .box .table.docu .row .cell { font-size: 14px; padding: 5px 10px; 
 article.popup .box .bind.yorn { padding: 10px 0; }
 article.popup .box .bind.yorn p { font-size: 16px; float: left; }
 article.popup .box .bind.yorn .combo { margin-left: 30px; float: left; }
-
-article.popup.bbs .title + .content .con { color: #2c4268; }
-
 article.popup #satisfactionForm { height: 100%; }
 
+/* 2022-11-29 게시판 운영방침 */
+article.popup.bbs .box .title h6 {color:#222;}
+article.popup.bbs .title + .content .con { color: #343434; line-height: 1.4; }
+article.popup.bbs .box.md {width: 600px;}
+article.popup.bbs .content {padding: 10px 50px;}
+article.popup.bbs .content .line_box {border: 1px solid #222; padding: 15px;}
+article.popup.bbs .content .line_box .bold {font-weight: 500; color: #222; line-height: 1.5; font-size: 14px;letter-spacing: -.5px;}
+article.popup.bbs .content .line_box p {margin: 10px 0;}
 
+article.popup.talk .box .title h6 {color:#222;}
+article.popup.talk .title + .content .con { color: #343434; line-height: 1.4; }
+article.popup.talk .box.md {width: 600px;}
+article.popup.talk .content {padding: 10px 50px;}
+article.popup.talk p.con {margin-bottom:10px;}
+article.popup.talk .content .line_box {border: 1px solid #222; padding: 15px;margin: 20px 0;}
+article.popup.talk .content .line_box .bold {font-weight: 500; color: #222; line-height: 1.5; font-size: 14px;letter-spacing: -.5px;}
+article.popup.talk .content .line_box p {margin: 10px 0;}
 
 
 /* 동영상문제 */
@@ -1338,7 +1354,7 @@ article.popup.nonmember .box .nonmember_btn .nonlogin_btn {background-color: #2f
 article.popup.engout .box.lg { width: 100%; height: 100%; max-width: 448px; max-height: 370px; border: 4px solid #e2e5ec; transition: all 0.2s ease;}
 article.popup.engout.active .box.lg { max-height: 446px;  transition: all 0.2s ease;}
 article.popup.engout .box .title {padding: 10px 20px;}
-article.popup.engout .box .title h6 { color: #1f3153; font-size: 20px; letter-spacing: -.85px; font-weight: 500;}
+article.popup.engout .box .title h6 { color: #1f3153; font-size: 18px; letter-spacing: -.85px; font-weight: 500;}
 article.popup.engout .box .title .bt.x {width: 20px; height: 20px; top: 32px; right: 5%; }
 article.popup.engout .box .title .bt.ico.x:before { background-color: #717171; }
 article.popup.engout .box .title .bt.ico.x:after { background-color: #717171; }
@@ -1823,6 +1839,7 @@ article.popup.funApp .bt.bg:hover { background-color: #2f405f; }
  article.popup .box.sm { width: auto; }
  article.popup .box.md { width: auto; }
  article.popup .box.lg { width: auto; }
+ article.popup.bbs .box.md, article.popup.talk .box.md {width: auto;}
  article.popup .box .title { padding: 20px 20px; }
  article.popup .box .title .bt.x { right: 0; top: 10px; }
  article.popup .box .content { padding: 20px 30px; }
