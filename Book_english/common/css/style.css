@@ -116,11 +116,12 @@ h1 { display: inline-block; overflow: hidden; }
 .bt.ico.stop:before { position: absolute; left: 50%; margin-left: -6px; top: 50%; margin-top: -7px; content: ""; display: block; overflow: hidden; width: 6px; height: 14px; border-left: 3px solid #000; border-right: 3px solid #000; vertical-align: middle; }
 .bt.ico.play:before { position: absolute; left: 50%; top: 50%; margin-top: -10px; content: ""; display: block; overflow: hidden; width: 0; height: 0; border: 10px solid transparent; border-right: 15px solid transparent; border-left: 15px solid #323232; }
 .bt.ico.play.red:before { border-left: 10px solid #ff780a; }
-.bt.ico.sns.e { background: url('../../images/common/sns_e.png') no-repeat center center; }
-.bt.ico.sns.n { background: url('../../images/common/sns_n.png') no-repeat center center; }
-.bt.ico.sns.f { background: url('../../images/common/sns_f.png') no-repeat center center; }
-.bt.ico.sns.k { background: url('../../images/common/sns_k.png') no-repeat center center; }
-.bt.ico.sns.a { background: url('../../images/common/sns_a.png') no-repeat center center; }
+.bt.ico.sns.e { background: url('../../images/common/sns_e.png') no-repeat center center; width: 30px;}
+.bt.ico.sns.n { background: url('../../images/common/sns_n.png') no-repeat center center; width: 30px;}
+.bt.ico.sns.f { background: url('../../images/common/sns_f.png') no-repeat center center; width: 30px;}
+.bt.ico.sns.k { background: url('../../images/common/sns_k.png') no-repeat center center; width: 30px;}
+.bt.ico.sns.a { background: url('../../images/common/sns_a.png') no-repeat center center; width: 30px;}
+.bt.ico.sns.g { background: url('../../images/common/sns_g.png') no-repeat center center; width: 30px;}
 .bt.ico.sns.on:before { position: absolute; top: 0; right: 0; content: ""; display: block; overflow: hidden; width: 15px; height: 15px; border-radius: 50%; background: #f07f09 url('../../images/common/ico_check.png') no-repeat center 50%; background-size: 10px; }
 .bt.ico.find { background: url('../../images/common/ico_search.png') no-repeat center 50%; background-size: 28px; }
 .bt.ico.down { height:100%; background: url('../images/ico_down.png') no-repeat center 50%; background-size: 20px; }
@@ -726,6 +727,7 @@ h1 { display: inline-block; overflow: hidden; }
 .table_reply_userBoard li .reply_userBoardList .rublName i.sns.n {float:left;height:40px;line-height:40px;background: url('../../images/common/sns_n.png') no-repeat 10px center;background-size: auto 18px; padding-left:35px;}
 .table_reply_userBoard li .reply_userBoardList .rublName i.sns.e {float:left;height:40px;line-height:40px;background: url('../../images/common/sns_e.png') no-repeat 10px center;background-size: auto 18px; padding-left:35px;}
 .table_reply_userBoard li .reply_userBoardList .rublName i.sns.a {float:left;height:40px;line-height:40px;background: url('../../images/common/sns_a.png') no-repeat 10px center;background-size: auto 18px; padding-left:35px;}
+.table_reply_userBoard li .reply_userBoardList .rublName i.sns.g {float:left;height:40px;line-height:40px;background: url('../../images/common/sns_g.png') no-repeat 10px center;background-size: auto 18px; padding-left:35px;}
 .table_reply_userBoard li .reply_userBoardList .rublTit{display:block;float:left;width:100%;padding:6px 15px 15px 30px;text-align:left;font-size:1rem;color:#010101;line-height:1.2;word-break:break-all;}
 .table_reply_userBoard li .reply_userBoardList .rublDate{display:block;float:left;font-size:0.8rem;color:#808080;padding:0 0 10px 30px;}
 

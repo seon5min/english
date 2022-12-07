@@ -223,16 +223,18 @@ section.login .area_login .box_sns > strong { position: relative; display: block
 section.login .area_login .box_sns > strong span { position: relative; z-index: 10; display: inline-block; padding: 0 10px; background-color: #fff; font-weight: normal; }
 section.login .area_login .box_sns > strong:before { content: ""; position: absolute; top: 8px; left: 0; z-index: 1; width: 100%; height: 1px; background-color: #000; }
 section.login .area_login .box_sns .sns { display: flex; justify-content: center; }
-section.login .area_login .box_sns .sns > a { display: block; flex: 1; height: 56px; border-radius: 30px 30px; margin-left: 5px; }
+section.login .area_login .box_sns .sns > a { display: block; flex: 1; height: 46px; border-radius: 100px; margin: 1px 0 1px 2px;}
 section.login .area_login .box_sns .sns > a:first-child { margin-left: 0; }
-section.login .area_login .box_sns .sns .naver { background-color: #1dc800; text-align: center; }
-section.login .area_login .box_sns .sns .icon_naver { line-height: 56px; background: url("../images/icn_n.png") no-repeat left center; background-size: 20px auto; padding-left: 25px; color: #fff; }
-section.login .area_login .box_sns .sns .kakao { background-color: #f9e000; text-align: center; }
-section.login .area_login .box_sns .sns .icon_kakao { line-height: 56px; background: url("../images/icn_c.png") no-repeat left center; background-size: 20px auto; padding-left: 25px; color: #000; }
-section.login .area_login .box_sns .sns .facebook { background-color: #3b5998; text-align: center; }
-section.login .area_login .box_sns .sns .icon_facebook { line-height: 56px; background: url("../images/icn_f.png") no-repeat left center; background-size: 20px auto; padding-left: 25px; color: #fff; }
+section.login .area_login .box_sns .sns .naver { background-color: #1dc800; text-align: center;}
+section.login .area_login .box_sns .sns .icon_naver {line-height: 46px; background: url("../images/icn_n.png") no-repeat left 3px; background-size: 16px auto; padding-left: 19px; color: #fff;}
+section.login .area_login .box_sns .sns .kakao { background-color: #f9e000; text-align: center;padding: 0 5px 0 3px;}
+section.login .area_login .box_sns .sns .icon_kakao { line-height: 46px; background: url("../images/icn_c.png") no-repeat left 3px; background-size: 16px auto; padding-left: 19px; color: #000; }
+section.login .area_login .box_sns .sns .facebook { background-color: #3b5998; text-align: center;padding: 0 5px 0 0;}
+section.login .area_login .box_sns .sns .icon_facebook { line-height: 46px; background: url("../images/icn_f.png") no-repeat left center; background-size: 16px auto; padding-left: 20px; color: #fff; }
 section.login .area_login .box_sns .sns .apple { background-color: #000; text-align: center; }
-section.login .area_login .box_sns .sns .icon_apple { line-height: 56px; background: url("../images/icn_a.png") no-repeat left center; background-size: 20px auto; padding-left: 25px; color: #fff; }
+section.login .area_login .box_sns .sns .icon_apple { line-height: 46px; background: url("../images/icn_a.png") no-repeat left center; background-size: 16px auto; padding-left: 19px; color: #fff; }
+section.login .area_login .box_sns .sns .google { background-color: #fff; text-align: center; border:1px solid #000; }
+section.login .area_login .box_sns .sns .icon_google { line-height: 46px; background: url("../images/icn_g.png") no-repeat left center; background-size: 16px auto; padding-left: 19px; color: #000; }
 section.login .area_login .box_sns .sns > a > img { width: 100%; height: 100%; }
 
 section.login .banner { position: absolute; top: 23px; right: 0; width: 497px; height: 341px; }
@@ -702,7 +704,7 @@ article.popup
  > div:first-child { margin-right: 40px; }
 article.popup .event_des_btm { padding: 40px 40px; }
 article.popup .event_des_btm .tit_ev_btm { display: block; padding-bottom: 5px; font-size: 16px; color: #2c4167; font-weight: normal; }
-article.popup .event_des_btm .color_red { font-weight: 500;color: #ff0000; }
+article.popup .color_red { font-weight: 500;color: #ff0000; }
 article.popup .event_des_btm .color_blue {font-weight: 500; color: #0f2ba6; }
 article.popup .event_des_btm .color_black {font-weight: 500; border-bottom: 1px solid #000; color: #000;}
 article.popup .event_des_btm li > p { display: block;}
@@ -814,8 +816,9 @@ section.eclip.view .side .page .prev.end + .prev { border-left: 1px solid #cacac
 
  section.login .area_login .box_sns .sns .apple { background-color: #fff; text-align: center; }
  section.login .area_login .box_sns .sns .icon_naver { display: inline-block; width: 24px; height: 24px; transform: translateY(7px); background: url("../images/icn_n.png") no-repeat center center; background-size: 20px auto; padding-left: 25px; color: #fff; text-indent: 100%; white-space: nowrap; overflow: hidden; }
- section.login .area_login .box_sns .sns .icon_kakao { display: inline-block; width: 24px; height: 24px; transform: translateY(7px); background: url("../images/icn_c.png") no-repeat center center; background-size: 20px auto; padding-left: 25px; color: #000; text-indent: 100%; white-space: nowrap; overflow: hidden; }
- section.login .area_login .box_sns .sns .icon_facebook { display: inline-block; width: 24px; height: 24px; transform: translate(-3px, 7px); background: url("../images/icn_f.png") no-repeat center center; background-size: 20px auto; padding-left: 25px; color: #fff; text-indent: 100%; white-space: nowrap; overflow: hidden; }
+ section.login .area_login .box_sns .sns .icon_kakao { display: inline-block; width: 24px; height: 24px; transform: translate(1px, 7px); background: url("../images/icn_c.png") no-repeat center center; background-size: 20px auto; padding-left: 25px; color: #000; text-indent: 100%; white-space: nowrap; overflow: hidden; }
+ section.login .area_login .box_sns .sns .icon_facebook { display: inline-block; width: 24px; height: 24px; transform: translate(-1px, 7px); background: url("../images/icn_f.png") no-repeat center center; background-size: 20px auto; padding-left: 25px; color: #fff; text-indent: 100%; white-space: nowrap; overflow: hidden; }
+ section.login .area_login .box_sns .sns .icon_google { display: inline-block; width: 24px; height: 24px; transform: translate(0px, 6px); background: url("../images/icn_g.png") no-repeat center center; background-size: 20px auto; padding-left: 25px; color: #fff; text-indent: 100%; white-space: nowrap; overflow: hidden; }
 
  section.login .area_login .box_input .btn_login { margin-top: 5px; padding: 17px 0; }
  section.login .btm_btn > p { line-height: 140%; }

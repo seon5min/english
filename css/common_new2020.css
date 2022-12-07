@@ -182,7 +182,7 @@ h6 { display: block; color: #404b5e; font-size: 25px; font-weight: 400; line-hei
 .info { height: 40px; line-height: 40px; color: #818181; font-size: 14px; }
 .info.count { color: #6c6c6c; }
 .info.count i { color: #2553a3; font-weight: 700; padding: 0 5px; }
-.info.user { color: #4b4b4b; font-size: 12px; background: url(../images/ico_user.png) no-repeat 0 50%; background-size: 12px; padding-left: 17px; }
+.info.user { color: #4b4b4b; font-size: 12px; background: url(../images/ico_user.png) no-repeat 0 50%; background-size: 12px; padding-left: 17px; margin-left: 5px; }
 .info.byte { font-size: 11px; }
 .info.byte i { font-weight: 700; }
 .info.noti { font-size: 12px; background: url(../images/info_bg.png) no-repeat 0 12px; background-size: 18px; padding-left: 20px; }
@@ -289,12 +289,13 @@ h6 { display: block; color: #404b5e; font-size: 25px; font-weight: 400; line-hei
 .bt.ico.play:before { position: absolute; left: 50%; top: 50%; margin-left: 2px; margin-top: -5px; content: ""; display: block; overflow: hidden; width: 0; height: 0; border: 6px solid transparent; border-right: 8px solid transparent; border-left: 8px solid #323232; }
 .bt.ico.play.red:before { border-left: 10px solid #ff780a; }
 
-.bt.ico.sns.e { background: url(../images/sns_ebs.png) no-repeat center 50%; background-size: 20px; }
-.bt.ico.sns.n { background: url(../images/sns_n.png) no-repeat center 50%; background-size: 20px; }
-.bt.ico.sns.f { background: url(../images/sns_f.png) no-repeat center 50%; background-size: 20px; }
-.bt.ico.sns.k { background: url(../images/sns_k.png) no-repeat center 50%; background-size: 20px; }
-.bt.ico.sns.a { background: url(../images/sns_a.png) no-repeat center 50%; background-size: 20px; }
-.bt.ico.sns.on:before { position: absolute; top: 0; right: 0; content: ""; display: block; overflow: hidden; width: 15px; height: 15px; border-radius: 50%; background: #f07f09 url(../images/ico_check.png) no-repeat center 50%; background-size: 10px; }
+.bt.ico.sns.e { background: url(../images/sns_ebs.png) no-repeat center 50%; background-size: 20px; width: 30px;margin-right: 0;}
+.bt.ico.sns.n { background: url(../images/sns_n.png) no-repeat center 50%; background-size: 20px; width: 30px;margin-right: 0;}
+.bt.ico.sns.f { background: url(../images/sns_f.png) no-repeat center 50%; background-size: 20px; width: 30px;margin-right: 0;}
+.bt.ico.sns.k { background: url(../images/sns_k.png) no-repeat center 50%; background-size: 20px; width: 30px;margin-right: 0;}
+.bt.ico.sns.a { background: url(../images/sns_a.png) no-repeat center 50%; background-size: 20px; width: 30px;margin-right: 0;}
+.bt.ico.sns.g { background: url(../images/sns_g.png) no-repeat center 50%; background-size: 20px; width: 30px;margin-right: 0;}
+.bt.ico.sns.on:before { position: absolute; top: 0; right: 0; content: ""; display: block; overflow: hidden; width: 15px; height: 15px; border-radius: 50%; background: #f07f09 url(../images/ico_check.png) no-repeat center 3px; background-size: 10px; }
 
 .bt.ico.find { background: url(../images/ico_search.png) no-repeat center 50%; background-size: 30px; }
 .bt.ico.down { height: 100%; background: url(../images/ico_down.png) no-repeat center 50%; background-size: 20px; }
@@ -708,6 +709,7 @@ section.search .table .card.lie.fun {display: -ms-flexbox; display:flex;min-heig
 .table_reply_userBoard li .reply_userBoardList .rublName i.sns.n { float: left; height: 40px; line-height: 40px; background: url(../images/sns_n.png) no-repeat left center; background-size: 20px; padding-left: 28px; }
 .table_reply_userBoard li .reply_userBoardList .rublName i.sns.ebs { float: left; height: 40px; line-height: 40px; background: url(../images/sns_ebs.png) no-repeat left center; background-size: 20px; padding-left: 28px; }
 .table_reply_userBoard li .reply_userBoardList .rublName i.sns.a { float: left; height: 40px; line-height: 40px; background: url(../images/sns_a.png) no-repeat left center; background-size: 20px; padding-left: 28px; }
+.table_reply_userBoard li .reply_userBoardList .rublName i.sns.g { float: left; height: 40px; line-height: 40px; background: url(../images/sns_g.png) no-repeat left center; background-size: 20px; padding-left: 28px; }
 .table_reply_userBoard li .reply_userBoardList .rublTit { display: block; float: left; width: 100%; padding: 6px 15px 15px 30px; text-align: left; font-size: 16px; color: #010101; line-height: 1.2; word-break: break-all; }
 .table_reply_userBoard li .reply_userBoardList .rublDate { display: block; float: left; font-size: 12px; color: #808080; padding: 0 0 10px 30px; }
 
