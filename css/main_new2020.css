@@ -365,7 +365,7 @@ body.main .pop_floating .popup_M.main_noti .bt.ico.x:before, body.main .popup_M.
 body.main .pop_floating .popup_M.main_noti .combo label { color: #444 !important; font-weight: 400 !important; }
 body.main .pop_floating .popup_M.main_noti .combo label:before { width: 15px; height: 15px; top: 12px !important; left: 7px; }
 body.main .pop_floating .popup_M.main_noti .noti_check.combo { width: 180px; position: absolute; left: 5px; bottom: -40px; }
-body.main .pop_floating .popup_M.main_noti .noti_check.combo .bt.ico.n { width: 15px; height: 10px; top: 15px; right: 25px; background: url(../images/main/floating_close.png) no-repeat center center; background-size: contain; }
+body.main .pop_floating .popup_M.main_noti .noti_check.combo .bt.ico.n {width: 15px; height: 9px; top: 15.5px; right: 25px;background: url(../images/main/floating_close.png) no-repeat center center; background-size: contain; }
 body.main .mo_ver { display: none; }
 body.main .pc_ver { display: block; }
 
